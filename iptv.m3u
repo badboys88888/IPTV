@@ -1,13 +1,13 @@
 #EXTM3U
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/1_0_1_1F5_45_1_FFFF0000_0_0_0.png" tvg-name="CCTV4K" group-title="央视",CCTV4K
 http://112.17.40.140/PLTV/88888888/224/3221226758/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/NjpjlJSKDXTB.png" tvg-name="" group-title="四川移动组播",NEWTV精品纪录
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/NEWTV精品纪录.png" tvg-name="" group-title="四川移动组播",NEWTV精品纪录
 rtp://239.11.0.132:5140
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/NjtjcJSKDXTB.png" tvg-name="" group-title="四川移动组播",NEWTV家庭剧场
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/NEWTV家庭剧场.png" tvg-name="" group-title="四川移动组播",NEWTV家庭剧场
 rtp://239.11.0.131:5140
 #EXTINF:-1 tvg-logo="" tvg-name="" group-title="四川移动组播",NEWTV健康有约
 rtp://239.11.0.133:5140
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/NjptyJSKDXTB.png" tvg-name="" group-title="四川移动组播",NEWTV精品体育
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/NEWTV精品体育.png" tvg-name="" group-title="四川移动组播",NEWTV精品体育
 rtp://239.11.0.134:5140
 #EXTINF:-1 tvg-logo="" tvg-name="" group-title="四川移动组播",NEWTV军事评论
 rtp://239.11.0.136:5140
@@ -15,27 +15,27 @@ rtp://239.11.0.136:5140
 rtp://239.11.0.137:5140
 #EXTINF:-1 tvg-logo="" tvg-name="" group-title="四川移动组播",NEWTV古装剧场
 rtp://239.11.0.141:5140
-#EXTINF:-1 tvg-logo="" tvg-name="" group-title="四川移动组播",NEWTV动作电影
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/NEWTV动作电影.png" tvg-name="" group-title="四川移动组播",NEWTV动作电影
 rtp://239.11.0.142:5140
 #EXTINF:-1 tvg-logo="" tvg-name="" group-title="四川移动组播",NEWTV军旅剧场
 rtp://239.11.0.143:5140
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/NjsxyJSKDXTB.png" tvg-name="" group-title="四川移动组播",NEWTV惊悚悬疑
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/NEWTV惊悚悬疑.png" tvg-name="" group-title="四川移动组播",NEWTV惊悚悬疑
 rtp://239.11.0.144:5140
-#EXTINF:-1 tvg-logo="" tvg-name="" group-title="四川移动组播",NewTV海外剧场
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/NewTV海外剧场.png" tvg-name="" group-title="四川移动组播",NEWTV海外剧场
 rtp://239.11.0.145:5140
 #EXTINF:-1 tvg-logo="" tvg-name="" group-title="四川移动组播",NewTV搏击
 rtp://239.11.0.146:5140
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/NmxdpJSKDXTB.png" tvg-name="" group-title="四川移动组播",NewTV明星大片
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/NewTV明星大片.png" tvg-name="" group-title="四川移动组播",NEWTV明星大片
 rtp://239.11.0.147:5140
 #EXTINF:-1 tvg-logo="" tvg-name="" group-title="四川移动组播",黑莓电影
 rtp://239.11.0.148:5140
-#EXTINF:-1 tvg-logo="" tvg-name="" group-title="四川移动组播",NewTV爱情喜剧
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/NewTV爱情喜剧.png" tvg-name="" group-title="四川移动组播",NEWTV爱情喜剧
 rtp://239.11.0.149:5140
-#EXTINF:-1 tvg-logo="" tvg-name="" group-title="四川移动组播",NewTV精品大剧
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/NewTV精品大剧.png" tvg-name="" group-title="四川移动组播",NEWTV精品大剧
 rtp://239.11.0.150:5140
 #EXTINF:-1 tvg-logo="" tvg-name="" group-title="四川移动组播",NewTV中国功夫
 rtp://239.11.0.151:5140
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/NjpzyJSKDXTB.png" tvg-name="" group-title="四川移动组播",NewTV金牌综艺
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/NEWTV金牌综艺.png" tvg-name="" group-title="四川移动组播",NewTV金牌综艺
 rtp://239.11.0.152:5140
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/RTHK31.png" group-title="四川移动组播",港台電視31
 http://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/index_2052_av-p.m3u8?sd=10&rebase=on
