@@ -3,7 +3,7 @@
 http://112.17.40.140/PLTV/88888888/224/3221226758/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/NEWTV%E7%B2%BE%E5%93%81%E7%BA%AA%E5%BD%95.png?raw=true" tvg-name="" group-title="四川移动组播",NEWTV精品纪录
 rtp://239.11.0.132:5140
-#EXTINF:-1 tvg-logo="https://github.com/badboys88888/photo/main/NEWTV%E5%AE%B6%E5%BA%AD%E5%89%A7%E5%9C%BA.png" tvg-name="" group-title="四川移动组播",NEWTV家庭剧场
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/badboys88888/photo/main/NEWTV%E5%AE%B6%E5%BA%AD%E5%89%A7%E5%9C%BA.png" tvg-name="" group-title="四川移动组播",NEWTV家庭剧场
 rtp://239.11.0.131:5140
 #EXTINF:-1 tvg-logo="" tvg-name="" group-title="四川移动组播",NEWTV健康有约
 rtp://239.11.0.133:5140
@@ -37,7 +37,17 @@ rtp://239.11.0.150:5140
 rtp://239.11.0.151:5140
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/NEWTV%E9%87%91%E7%89%8C%E7%BB%BC%E8%89%BA.png" tvg-name="" group-title="四川移动组播",NewTV金牌综艺
 rtp://239.11.0.152:5140
+#EXTINF:-1 tvg-logo="" tvg-name="CBN每日影院" group-title="四川移动组播",CBN每日影院
+http://home.lpfcdn.com:4000/udp/235.254.198.192:7980
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CBN-%E5%B9%B8%E7%A6%8F%E5%89%A7%E5%9C%BA.png" tvg-name="CBN幸福剧场" group-title="四川移动组播",CBN幸福剧场
+http://home.lpfcdn.com:4000/udp/235.254.198.193:7980
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CBN-%E9%A3%8E%E5%B0%9A%E7%94%9F%E6%B4%BB.png" tvg-name="CBN风尚生活" group-title="四川移动组播",CBN风尚生活
+http://home.lpfcdn.com:4000/udp/235.254.198.194:7980
+#EXTINF:-1 tvg-logo="" tvg-name="CBN幸福娱乐" group-title="四川移动组播",CBN幸福娱乐
+http://home.lpfcdn.com:4000/udp/235.254.198.195:7980
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/RTHK31.png" group-title="四川移动组播",港台電視31
 http://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/index_2052_av-p.m3u8?sd=10&rebase=on
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/RTHK32.png" group-title="四川移动组播",港台電視32
 https://rthklive2-lh.akamaihd.net/i/rthk32_1@168450/index_1080_av-b.m3u8?sd=10&rebase=on
+#EXTINF:-1 tvg-id="V99.HK" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/Viu%20TV.png" tvg-name="ViuTV" group-title="四川移动组播",ViuTV
+http://61.238.6.49:8000/bysid/99
