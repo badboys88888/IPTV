@@ -3,7 +3,7 @@
 http://112.17.40.140/PLTV/88888888/224/3221226758/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/NEWTV%E7%B2%BE%E5%93%81%E7%BA%AA%E5%BD%95.png?raw=true" tvg-name="" group-title="四川移动组播",NEWTV精品纪录
 rtp://239.11.0.132:5140
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/badboys88888/photo/main/NEWTV%E5%AE%B6%E5%BA%AD%E5%89%A7%E5%9C%BA.png" tvg-name="" group-title="四川移动组播",NEWTV家庭剧场
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/NEWTV%E5%AE%B6%E5%BA%AD%E5%89%A7%E5%9C%BA.png" tvg-name="" group-title="四川移动组播",NEWTV家庭剧场
 rtp://239.11.0.131:5140
 #EXTINF:-1 tvg-logo="" tvg-name="" group-title="四川移动组播",NEWTV健康有约
 rtp://239.11.0.133:5140
