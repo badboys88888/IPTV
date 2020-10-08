@@ -1,7 +1,0 @@
-#EXTM3U
-#EXTINF:-1 tvg-id="FHJ.CN" tvg-name="凤凰资讯" tvg-logo="https://poster.starhubgo.com/Linear_channels2/806_1920x1080_HTV.png" group-title="四川移动组播",凤凰资讯台
-http://220.158.149.26:8182/hls/TV00000000000000000066@HHZT.m3u8
-#EXTINF:-1 tvg-id="FHW.CN" tvg-name="凤凰中文" tvg-logo="https://poster.starhubgo.com/Linear_channels2/805_1920x1080_HTV.png" group-title="四川移动组播",凤凰卫视中文台
-http://220.158.149.26:8182/hls/TV00000000000000000067@HHZT.m3u8
-#EXTINF:-1 tvg-id="FHX.CN" tvg-name="凤凰香港" tvg-logo="http://tv.sason.xyz/logo/fhxg.png" group-title="四川移动组播",鳳凰衛視香港台
-http://220.158.149.28:8180/TV00000000000000000068@HHZT;LIVE
