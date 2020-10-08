@@ -61,6 +61,10 @@ http://112.50.243.8/PLTV/88888888/224/3221226695/1.m3u8
 http://112.50.243.8/PLTV/88888888/224/3221226833/1.m3u8
 #EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/.png" tvg-name="CCTV4K" group-title="央视",4K体育
 http://39.134.52.153/PLTV/88888888/224/3221226193/1.m3u8
+#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV4k.png" tvg-name="" group-title="央视",学而思网校
+http://39.134.52.153/PLTV/88888888/224/3221226162/1.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="" group-title="央视",新华社
+http://livecdn1.news.cn/cnccn/manifest.m3u8
 #EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/ws/hunan.png" tvg-name="湖南卫视" group-title="卫视",湖南卫视
 http://111.40.205.76/PLTV/88888888/224/3221225610/index.m3u8
 #EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/ws/hunan.png" tvg-name="湖南卫视" group-title="卫视",湖南卫视
@@ -73,6 +77,8 @@ http://140.207.241.2:8080/live/program/live/zjwshd/4000000/mnf.m3u8
 http://111.40.205.76/PLTV/88888888/224/3221225613/index.m3u8
 #EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/ws/jiangsu.png" tvg-name="江苏卫视" group-title="卫视",江苏卫视
 http://140.207.241.2:8080/live/program/live/jswshd/4000000/mnf.m3u8
+#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/ws/beijing.png" tvg-name="北京卫视" group-title="卫视",北京卫视
+http://39.135.34.143:18890/000000001000/1000000001000017156/1.m3u8?channel-id=ystenlive&Contentid=1000000001000017156
 #EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/ws/beijing.png" tvg-name="北京卫视" group-title="卫视",北京卫视
 http://140.207.241.2:8080/live/program/live/bjwshd/4000000/mnf.m3u8
 #EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/ws/dongfang.png" tvg-name="东方卫视" group-title="卫视",东方卫视
@@ -316,11 +322,9 @@ http://39.135.15.70:6610/PLTV/88888888/224/3221225675/1/index.m3u8?fmt=ts2hls
 #EXTINF:-1 tvg-logo="" tvg-name="幸福娱乐" group-title="数字付费",CBN幸福娱乐
 http://itv.abazhou.cn/gz.php?id=cbnxfyl
 #EXTINF:-1 tvg-logo="" tvg-name="幸福娱乐" group-title="数字付费",CBN幸福剧场
-http://itv.abazhou.cn/gz.php?id=cbnxfjc
-#EXTINF:-1 tvg-logo="" tvg-name="幸福娱乐" group-title="数字付费",CBN风尚生活
+http://itv.abazhou.cn/gz.php?id=cbnxfjc#EXTINF:-1 tvg-logo="" tvg-name="幸福娱乐" group-title="数字付费",CBN风尚生活
 http://itv.abazhou.cn/gz.php?id=cbnfssh
-#EXTINF:-1 tvg-logo="" tvg-name="幸福娱乐" group-title="数字付费",CBN每日影院
-ttp://abc613283.bj01.bdysite.com/gz.php?id=cbnmryy
+#EXTINF:-1 tvg-logo="" tvg-name="幸福娱乐" group-title="数字付费",CBN每日影院ttp://abc613283.bj01.bdysite.com/gz.php?id=cbnmryy
 #EXTINF:-1 tvg-logo="http://static2.tvzhe.com/channel/logo/YOUERJIAOYU.jpg" tvg-name="幼儿教育" group-title="数字付费",中数幼儿教育
 http://192.168.2.1:1111/111.ts
 #EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTVlaogushi.png" tvg-name="老故事" group-title="数字付费",中数CCTV老故事
@@ -1694,8 +1698,7 @@ http://39.135.10.66/gz.ucdn.10086.cn/PLTV/88888888/224/3221225743/index.m3u8?fmt
 https://myun-hw-s3.myun.tv/melj80jz/56xk36p7/1583754037503666897.m3u8
 #EXTINF:-1 tvg-logo="" group-title="四川移动组播",CCTV欧洲
 http://zzq12345.gearhostpreview.com/11/migu2.php?id=608807419
-#EXTINF:-1 tvg-logo="" group-title="四川移动组播",CCTV-4美洲
-http://zzq12345.gearhostpreview.com/11/migu2.php?id=608807416
+#EXTINF:-1 tvg-logo="" group-title="四川移动组播",CCTV-4美洲http://zzq12345.gearhostpreview.com/11/migu2.php?id=608807416
 #EXTINF:-1 tvg-logo="" group-title="四川移动组播",yy电影
 http://hpull.kktv8.com/livekktv/99350550/playlist.m3u8
 #EXTINF:-1 tvg-logo="" group-title="四川移动组播",yy金典
@@ -2421,22 +2424,14 @@ http://112.17.40.142/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/322123013
 #EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",HOT爱动漫
 http://112.17.40.142/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221230136/index.m3u8
 #EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",内蒙卫视
-http://live.m2oplus.nmtv.cn/1/sd/live.m3u8
-#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",内蒙卫视
-http://live.m2oplus.nmtv.cn/1/playlist.m3u8
-#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",内蒙经济
-http://live5.m2oplus.nmtv.cn/2/sd/live.m3u8
-#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",内蒙蒙语
-http://live5.m2oplus.nmtv.cn/3/sd/live.m3u8
-#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",内蒙少儿
-http://live5.m2oplus.nmtv.cn/4/sd/live.m3u8
-#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",内蒙蒙语2
-http://live5.m2oplus.nmtv.cn/5/sd/live.m3u8
-#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",内蒙农牧频道
-http://live4.m2oplus.nmtv.cn/6/sd/live.m3u8
-#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",新闻综合
-http://live4.m2oplus.nmtv.cn/7/sd/live.m3u8
-#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",内蒙文体娱乐
+http://live.m2oplus.nmtv.cn/1/sd/live.m3u8#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",内蒙卫视
+http://live.m2oplus.nmtv.cn/1/playlist.m3u8#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",内蒙经济
+http://live5.m2oplus.nmtv.cn/2/sd/live.m3u8#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",内蒙蒙语
+http://live5.m2oplus.nmtv.cn/3/sd/live.m3u8#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",内蒙少儿
+http://live5.m2oplus.nmtv.cn/4/sd/live.m3u8#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",内蒙蒙语2
+http://live5.m2oplus.nmtv.cn/5/sd/live.m3u8#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",内蒙农牧频道
+http://live4.m2oplus.nmtv.cn/6/sd/live.m3u8#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",新闻综合
+http://live4.m2oplus.nmtv.cn/7/sd/live.m3u8#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",内蒙文体娱乐
 http://live4.m2oplus.nmtv.cn/8/sd/live.m3u8
 #EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",大庆教育
 http://39.134.65.208/PLTV/88888888/224/3221225731/index.m3u8
