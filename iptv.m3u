@@ -51,3 +51,13 @@ http://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/index_2052_av-p.m3u8?sd=10&re
 https://rthklive2-lh.akamaihd.net/i/rthk32_1@168450/index_1080_av-b.m3u8?sd=10&rebase=on
 #EXTINF:-1 tvg-id="V99.HK" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/Viu%20TV.png" tvg-name="ViuTV" group-title="四川移动组播",ViuTV
 http://61.238.6.49:8000/bysid/99
+#EXTINF:-1 tvg-id="FCT.HK" tvg-logo="https://poster.starhubgo.com/Linear_channels2/838_1920x1080_HTV.png" tvg-name="翡翠台" group-title="四川移动组播",翡翠台                  
+http://61.238.6.49:8000/bysid/1
+#EXTINF:-1 tvg-id="FC2.HK" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/TVBJ2.png" tvg-name="J2" group-title="四川移动组播",J2台                  
+http://61.238.6.49:8001/bysid/82
+#EXTINF:-1 tvg-id="MZT.HK" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/TVB明珠台.png" tvg-name="明珠台" group-title="四川移动组播",明珠台
+http://61.238.6.49:8001/bysid/2.mpeg
+#EXTINF:-1 tvg-id="WXX.HK" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/wuxianxinwentai.png" tvg-name="无线新闻" group-title="四川移动组播",無綫新聞台                
+http://61.238.6.49:8001/bysid/83
+#EXTINF:-1 tvg-id="WXC.HK" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/wuxiancaijingzixuntai.png" tvg-name="无线财经" group-title="四川移动组播",無綫財經資訊台
+http://61.238.6.49:8001/bysid/85
