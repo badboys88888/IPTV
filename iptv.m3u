@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/1_0_1_1F5_45_1_FFFF0000_0_0_0.png" tvg-name="CCTV4K" group-title="央视",CCTV4K
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV4K.png" tvg-name="CCTV4K" group-title="央视",CCTV4K
 http://112.17.40.140/PLTV/88888888/224/3221226758/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV1.png" tvg-name="CCTV1" group-title="央视",CCTV1
 http://hdtv.haust.edu.cn/hls/cctv1hd.m3u8
@@ -155,4 +155,39 @@ http://112.17.40.142/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/322123011
 http://112.17.40.142/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221230130/index.m3u8
 #EXTINF:-49 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/IHOT-爱动漫.png" tvg-name="" group-title="四川移动组播",HOT爱动漫
 http://112.17.40.142/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221230136/index.m3u8
+EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府经典再现.png" tvg-name="" group-title="四川移动组播",天府经典再现
+rtp://239.10.0.130:5140
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府军旅谍战.png" tvg-name="" group-title="四川移动组播",天府军旅谍战
+rtp://239.10.0.131:5140
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府教育综合.png" tvg-name="" group-title="四川移动组播",天府教育综合
+rtp://239.10.0.136:5140
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府辣妈学院.png" tvg-name="" group-title="四川移动组播",天府辣妈学院
+rtp://239.10.0.137:5140
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府风尚美食.png" tvg-name="" group-title="四川移动组播",天府风尚美食
+rtp://239.10.0.138:5140
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府名医在线.png" tvg-name="" group-title="四川移动组播",天府名医在线
+rtp://239.10.0.139:5140
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府魔力荟萃.png" tvg-name="" group-title="四川移动组播",天府魔力荟萃
+rtp://239.10.0.140:5140
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府时尚走秀.png" tvg-name="" group-title="四川移动组播",天府时尚走秀
+rtp://239.10.0.141:5140
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府星动娱乐.png" tvg-name="" group-title="四川移动组播",天府星动娱乐
+rtp://239.10.0.142:5140
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府时尚生活.png" tvg-name="" group-title="四川移动组播",天府时尚生活
+rtp://239.10.0.144:5140
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府魔力TV.png" tvg-name="" group-title="四川移动组播",天府魔力TV
+rtp://239.10.0.145:5140
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府积木宝贝.png" tvg-name="" group-title="四川移动组播",天府积木宝贝
+rtp://239.10.0.157:5140
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府启蒙乐园.png" tvg-name="" group-title="四川移动组播",天府启蒙乐园
+rtp://239.10.0.158:5140
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府绚影高清影院" tvg-name="" group-title="四川移动组播",天府绚影高清影院
+rtp://239.10.0.188:5140
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府TV综合.png" tvg-name="" group-title="四川移动组播",天府TV-综合
+rtp://239.10.0.189:5140
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府财经频道.png" tvg-name="" group-title="四川移动组播",天府财经频道
+rtp://239.10.0.194:5140
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府乐趣综合.png" tvg-name="" group-title="四川移动组播",天府乐趣综合
+rtp://239.10.0.195:5140
+
 
