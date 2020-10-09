@@ -1,6 +1,40 @@
 #EXTM3U
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/1_0_1_1F5_45_1_FFFF0000_0_0_0.png" tvg-name="CCTV4K" group-title="央视",CCTV4K
 http://112.17.40.140/PLTV/88888888/224/3221226758/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV1.png" tvg-name="CCTV1" group-title="四川移动组播",CCTV1
+http://hdtv.haust.edu.cn/hls/cctv1hd.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV2.png" tvg-name="CCTV2" group-title="四川移动组播",CCTV2
+http://hdtv.haust.edu.cn/hls/hls135.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV3.png" tvg-name="CCTV3" group-title="四川移动组播",CCTV3
+http://hdtv.haust.edu.cn/hls/cctv3hd.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV4.png" tvg-name="CCTV4" group-title="四川移动组播",CCTV4
+http://hdtv.haust.edu.cn/hls/cctv4hd.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV5.png" tvg-name="CCTV5" group-title="四川移动组播",CCTV5
+http://hdtv.haust.edu.cn/hls/cctv5hd.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV5+.png" tvg-name="CCTV5+" group-title="四川移动组播",CCTV5+
+http://hdtv.haust.edu.cn/hls/cctv5phd.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV6.png" tvg-name="CCTV6" group-title="四川移动组播",CCTV6
+http://hdtv.haust.edu.cn/hls/cctv6hd.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV7.png" tvg-name="CCTV7" group-title="四川移动组播",CCTV7
+http://hdtv.haust.edu.cn/hls/hls136.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV8.png" tvg-name="CCTV8" group-title="四川移动组播",CCTV8
+http://hdtv.haust.edu.cn/hls/cctv8hd.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV9.png" tvg-name="CCTV9" group-title="四川移动组播",CCTV9
+http://hdtv.haust.edu.cn/hls/hls137.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV10.png" tvg-name="CCTV10" group-title="四川移动组播",CCTV10
+http://hdtv.haust.edu.cn/hls/hls138.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV11.png" tvg-name="CCTV11" group-title="四川移动组播",CCTV11
+http://ott.fj.chinamobile.com/PLTV/88888888/224/3221225815/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV12.png" tvg-name="CCTV12" group-title="四川移动组播",CCTV12
+http://hdtv.haust.edu.cn/hls/hls139.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV13.png" tvg-name="CCTV13" group-title="四川移动组播",CCTV13
+http://hdtv.haust.edu.cn/hls/jlu_cctv13.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV14.png" tvg-name="CCTV14" group-title="四川移动组播",CCTV14
+http://hdtv.haust.edu.cn/hls/hls140.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV15.png" tvg-name="CCTV15" group-title="四川移动组播",CCTV15
+http://ott.fj.chinamobile.com/PLTV/88888888/224/3221225818/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV17.png" tvg-name="CCTV17" group-title="四川移动组播",CCTV17
+http://hdtv.haust.edu.cn/hls/cctv17hd.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/NEWTV精品纪录.png" tvg-name="" group-title="四川移动组播",NEWTV精品纪录
 rtp://239.11.0.132:5140
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/NEWTV家庭剧场.png" tvg-name="" group-title="四川移动组播",NEWTV家庭剧场
