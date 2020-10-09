@@ -181,7 +181,7 @@ rtp://239.10.0.145:5140
 rtp://239.10.0.157:5140
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府启蒙乐园.png" tvg-name="" group-title="四川移动组播",天府启蒙乐园
 rtp://239.10.0.158:5140
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府绚影高清影院" tvg-name="" group-title="四川移动组播",天府绚影高清影院
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府绚丽高清影院" tvg-name="" group-title="四川移动组播",天府绚影高清影院
 rtp://239.10.0.188:5140
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府TV综合.png" tvg-name="" group-title="四川移动组播",天府TV-综合
 rtp://239.10.0.189:5140
@@ -189,5 +189,15 @@ rtp://239.10.0.189:5140
 rtp://239.10.0.194:5140
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府乐趣综合.png" tvg-name="" group-title="四川移动组播",天府乐趣综合
 rtp://239.10.0.195:5140
-
-
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/求索生活.png" tvg-name="求索生活" group-title="四川移动组播",求索生活
+http://39.135.98.8/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221228983/01.m3u8?fmt=ts2hls
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/求索动物.png" tvg-name="求索动物" group-title="四川移动组播",求索动物
+http://39.135.98.8/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221228980/01.m3u8?fmt=ts2hls
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/求索科学.png" tvg-name="求索科学" group-title="四川移动组播",求索科学
+http://39.135.98.8/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221228975/01.m3u8?fmt=ts2hls
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/求索纪录.png" tvg-name="求索纪录" group-title="四川移动组播",求索纪录
+http://39.135.98.8/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221228972/01.m3u8?fmt=ts2hls
+#EXTINF:-22 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/动漫秀场.png" tvg-name="动漫秀场" group-title="上海地区",动漫秀场
+http://140.207.241.2:8080/live/program/live/dmxchd/4000000/mnf.m3u8
+#EXTINF:-28 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/都市剧场.png" tvg-name="都市剧场" group-title="上海地区",都市剧场
+http://140.207.241.2:8080/live/program/live/dsjchd/4000000/mnf.m3u8
