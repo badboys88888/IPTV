@@ -259,4 +259,25 @@ http://video.blivenyc.com/broadcast/prod/2061/22/file-3192k.m3u8
 http://lb.streaming.sk/fashiontv/stream/chunklist_w1702070444.m3u8
 #EXTINF:-1 tvg-logo="" tvg-name="茶频道" group-title="四川移动组播",茶频道
 http://221.179.217.9//otttv.bj.chinamobile.com/PLTV/88888888/224/3221226548/1.m3u8
-#EXTINF:-1 tvg-logo="" tvg-name="快乐垂钓" group-title="四川移动组播",快乐垂钓
+#EXTINF:-1 tvg-logo="http://www.sctv.com/live/pdmk/pdnav/201801/W020181031582930276337.png" tvg-name="SCTV2" group-title="四川移动组播",四川文化旅游
+http://scgctvshow.sctv.com/hdlive/sctv2/index.m3u8
+#EXTINF:-1 tvg-logo="http://www.sctv.com/live/pdmk/pdnav/201801/W020181031583013117037.png" tvg-name="SCTV3" group-title="四川移动组播",四川经济
+http://scgctvshow.sctv.com/hdlive/sctv3/index.m3u8
+#EXTINF:-1 tvg-logo="http://www.sctv.com/live/pdmk/pdnav/201801/W020181031583176595774.png" tvg-name="SCTV4" group-title="四川移动组播",四川新闻
+http://scgctvshow.sctv.com/sdlive/sctv4/index.m3u8
+#EXTINF:-1 tvg-logo="http://www.sctv.com/live/pdmk/pdnav/201801/W020181031583488284000.png" tvg-name="SCTV5" group-title="四川移动组播",四川影视文艺频道
+http://scgctvshow.sctv.com/hdlive/sctv5/index.m3u8
+#EXTINF:-1 tvg-logo="http://www.sctv.com/live/pdmk/pdnav/201801/W020181031583604507485.png" tvg-name="SCTV6" group-title="四川移动组播",四川星空购物频道
+http://scgctvshow.sctv.com/hdlive/sctv6/index.m3u8
+#EXTINF:-1 tvg-logo="http://www.sctv.com/live/pdmk/pdnav/201801/W020181031583712926914.png" tvg-name="SCTV7" group-title="四川移动组播",四川妇女儿童频道
+http://scgctvshow.sctv.com/hdlive/sctv7/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/四川峨眉电影频道.png" tvg-name="峨嵋电影" group-title="四川移动组播",峨嵋电影频道
+http://scgctvshow.sctv.com/hdlive/emei/index.m3u8
+#EXTINF:-1 tvg-logo="http://www.sctv.com/live/pdmk/pdnav/201801/W020190505398080699973.png" tvg-name="SCTV9" group-title="四川移动组播",四川公共频道
+http://scgctvshow.sctv.com/hdlive/sctv9/index.m3u8
+#EXTINF:-1 tvg-logo="http://www.sctv.com/live/pdmk/pdnav/201801/W020181031601081372735.png" tvg-name="SCTV8" group-title="四川移动组播",四川科教频道
+http://182.138.51.79/PLTV/88888920/224/3221225644/index.m3u8
+#EXTINF:-1 tvg-logo="http://www.sctv.com/live/pdmk/pdnav/201801/W020181031600928497907.png" tvg-name="Kangba" group-title="四川移动组播",四川康巴卫视
+http://scgctvshow.sctv.com/hdlive/kangba/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/四川熊猫新闻.png" tvg-name="Kangba" group-title="四川移动组播",panda新闻
+http://182.138.51.79/PLTV/88888920/224/3221225693/index.m3u8
