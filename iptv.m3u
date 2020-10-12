@@ -289,7 +289,7 @@ http://hdtv.haust.edu.cn/hls/zjhd.m3u8
 http://hdtv.haust.edu.cn/hls/dfhd.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/江苏卫视.png" tvg-name="江苏卫视" group-title="全国卫视",江苏卫视
 http://hdtv.haust.edu.cn/hls/jshd.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/深圳卫视.png" tvg-name="深圳卫视" group-title="全国卫视",深圳卫视
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/深圳.png" tvg-name="深圳卫视" group-title="全国卫视",深圳卫视
 http://hdtv.haust.edu.cn/hls/szhd.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/吉林卫视.png" tvg-name="吉林卫视" group-title="全国卫视",吉林卫视
 http://hdtv.haust.edu.cn/hls/jlhd.m3u8
@@ -323,11 +323,11 @@ http://live.m2oplus.nmtv.cn/1/playlist.m3u8
 http://www.nxtv.com.cn/m2o/channel/play.php?channel_id=6
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/甘肃卫视.png" tvg-name="甘肃卫视" group-title="全国卫视",甘肃卫视
 http://39.134.39.39/PLTV/88888888/224/3221226240/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/延边卫视.png.png" tvg-name="延边卫视" group-title="全国卫视",延边卫视
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/延边卫视.png" tvg-name="延边卫视" group-title="全国卫视",延边卫视
 http://live.ybtvyun.com/video/s10006-a772df604950/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/陕西卫视.png" tvg-name="陕西卫视" group-title="全国卫视",陕西卫视
 http://61.151.179.192/zycfcdn.gdwlcloud.com/PLTV/88888888/224/3221225498/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/南方卫视.png" tvg-name="南方卫视" group-title="全国卫视",南方卫视
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/广东南方卫视.png" tvg-name="南方卫视" group-title="全国卫视",南方卫视
 http://211.137.115.110:8080/gitv_live/G_NANFANG/G_NANFANG.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/香港卫视.png" tvg-name="HKS" group-title="全国卫视",香港卫视
 http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8
@@ -341,5 +341,5 @@ http://live.geermurmt.com/qhws/sd/live.m3u8
 http://player.ioioz.com:80/1786/hunan/hnyx2m3u8.php?id=54
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/云南卫视.png" tvg-name="云南卫视" group-title="全国卫视",云南卫视
 http://39.130.215.166:6410/gitv_live/G_YUNNAN-HD/G_YUNNAN-HD.m3u8
-#EXTINF:-1 tvg-id="TJW.CN" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/云南卫视.png" group-title="全国卫视",天津卫视
+#EXTINF:-1 tvg-id="TJW.CN" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天津卫视.png" group-title="全国卫视",天津卫视
 http://39.130.206.213:6410/gitv_live/G_TIANJIN-HD/G_TIANJIN-HD.m3u8 
