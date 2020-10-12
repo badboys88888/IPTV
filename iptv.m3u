@@ -123,7 +123,6 @@ http://livetv.dnsfor.me/channel.7.m3u8
 http://livetv.dnsfor.me:80/channel.5.m3u8
 #EXTINF:-1 tvg-ID="YCJ.HK" tvg-logo="http://utvhk.com/maint/images/channel/be75ddf0144b7fccdd03bf8016a61f64.png" tvg-name="有線财经资讯" group-title="香港澳门",有線財經資訊
 http://livetv.dnsfor.me/channel.6.m3u8
-
 #EXTINF:-22 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/IHOT-爱奇谈.png" tvg-name="" group-title="四川移动组播",HOT爱奇谈
 http://112.17.40.142/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221230023/index.m3u8
 #EXTINF:-23 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/IHOT-爱玩具.png" tvg-name="" group-title="四川移动组播",HOT爱玩具
@@ -228,7 +227,7 @@ http://140.207.241.2:8080/live/program/live/dsjchd/4000000/mnf.m3u8
 http://140.207.241.2:8080/live/program/live/hhxdhd/4000000/mnf.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/上海七彩戏剧.png" tvg-name="七彩戏剧" group-title="上海地区",七彩戏剧
 http://140.207.241.2:8080/live/program/live/qcxj/1300000/mnf.m3u8
-#EXTINF:-1 tug-logo="http://epg.51zmt.top:8000/tb1/qt/xinshijue.png" tvg-name="新视觉" group-title="上海地区",新视觉
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/新视觉.png" tvg-name="新视觉" group-title="上海地区",新视觉
 http://140.207.241.2:8080/live/program/live/xsjhd/4000000/mnf.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/上海劲爆体育.png" tvg-name="劲爆体育" group-title="上海地区",劲爆体育
 http://140.207.241.2:8080/live/program/live/jbtyhd/4000000/mnf.m3u8
@@ -266,7 +265,7 @@ http://221.179.217.9//otttv.bj.chinamobile.com/PLTV/88888888/224/3221226550/1.m3
 http://111.13.42.42/PLTV/88888888/224/3221226551/1.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/北京IPTV淘BABY.png" tvg-name="" group-title="北京地区",北京IPTV淘BABY
 http://221.179.217.9/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226554/1.m3u8
-#EXTINF:-1 tug-logo="https://raw.githubusercontent.com/badboys88888/photo/main/北京IPTV-淘电影.png" tvg-name="" group-title="北京地区",北京IPTV淘电影
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/北京IPTV-淘电影.png" tvg-name="" group-title="北京地区",北京IPTV淘电影
 http://221.179.217.9/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226552/1.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/北京IPTV淘剧场.png" tvg-name="" group-title="北京地区",北京IPTV淘剧场
 http://221.179.217.9/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226553/1.m3u8
