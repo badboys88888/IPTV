@@ -155,7 +155,7 @@ http://112.17.40.142/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/322123011
 http://112.17.40.142/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221230130/index.m3u8
 #EXTINF:-49 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/IHOT-爱动漫.png" tvg-name="" group-title="四川移动组播",HOT爱动漫
 http://112.17.40.142/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221230136/index.m3u8
-EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府经典再现.png" tvg-name="" group-title="四川移动组播",天府经典再现
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府经典再现.png" tvg-name="" group-title="四川移动组播",天府经典再现
 rtp://239.10.0.130:5140
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府军旅谍战.png" tvg-name="" group-title="四川移动组播",天府军旅谍战
 rtp://239.10.0.131:5140
