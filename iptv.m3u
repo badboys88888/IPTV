@@ -570,3 +570,51 @@ https://liveorigin01.hbogoasia.com:8443/origin/live/main/SIG/index.m3u8
 https://liveorigin01.hbogoasia.com:8443/origin/live/main/RED/index.m3u8
 #EXTINF:-1 tvg-ID="CHV.Asia" tvg-logo="https://static.epg.best/in/ChannelV.in.png" group-title="音乐频道",Channel [V]
 https://livecdn.fptplay.net/foxlive/channelvhd_hls.smil/chunklist_b2500000.m3u8
+#EXTINF:-1 tvg-id="BF1.Asia" tvg-logo="https://static.epg.best/us/BabyFirstTV.us.png" group-title="台湾地区",Baby First
+https://livecdn.fptplay.net/qnetlive/babyfirst_hls.smil/chunklist_b2500000.m3u8
+#EXTINF:-1 tvg-id="BOM.Asia" tvg-logo="https://static.epg.best/br/Boomerang.br.png" group-title="台湾地区",Boomerang
+https://livecdn.fptplay.net/qnetlive/boomerang_hls.smil/chunklist_b2500000.m3u8
+#EXTINF:-1 tvg-id="CBE.UK" tvg-logo="https://static.epg.best/gb/CBeebies.uk.png" group-title="台湾地区",CBeebies
+http://iptv1.privateiptv.club:80/live/random-robbie/random-robbie/823.m3u8
+#EXTINF:-1 tvg-id="DAV.Asia" tvg-logo="https://static.epg.best/ua/DaVinciLearningEurope.ua.png" group-title="台湾地区",Da Vinci
+https://livecdn.fptplay.net/world/davincihd_hls.smil/chunklist_b2500000.m3u8
+#EXTINF:-1 tvg-id="DIS.MY" tvg-logo="https://static.epg.best/es/DisneyChannel.es.png" group-title="台湾地区",Disney Channel
+http://103.47.132.164/PLTV/88888888/224/3221227183/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="http://images.squarespace-cdn.com/content/569ff0561115e0973545a242/1453322587420-THFQ3VWPKVSYVDXE0MYJ/bPOP+logo+medium.png" group-title="台湾地区",Battery Pop
+https://dai2.xumo.com/amagi_hls_data_xumo1212A-redboxbatterypop/CDN/playlist.m3u8
+#EXTINF:-1 tvg-id="POP.UK" tvg-logo="http://static.epg.best/gb/Pop.uk.png" group-title="台湾地区",Pop UK
+https://edge-1192-ch-gv.filmon.com/live/320.high.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="PMX.UK" tvg-logo="https://static.epg.best/gb/POPMax.uk.png" group-title="台湾地区",POP Max
+https://edge-1192-ch-gv.filmon.com/live/316.high.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="NIC.IN" tvg-logo="http://static.epg.best/sa/NickJr.sa.png" group-title="台湾地区",Nick Jr
+https://itpolly.iptv.digijadoo.net/live/nick_jr/chunks.m3u8
+#EXTINF:-1 tvg-id="TPO.UK" tvg-logo="https://static.epg.best/gb/Tinypop.uk.png" group-title="台湾地区",Tiny Pop
+https://edge-1192-ch-gv.filmon.com/live/318.high.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tvokids-logo.svg/1920px-Tvokids-logo.svg.png" group-title="台湾地区",tvo KIDS
+https://bcsecurelivehls-i.akamaihd.net/hls/live/623607/15364602001/tvokids/master.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://images.squarespace-cdn.com/content/5313acf2e4b0ff95a87283a8/1575342477559-XKHTVQD59I8XDQD71U3A/NEW+ZOOMOO+LOGO.png" group-title="台湾地区",ZooMoo
+http://103.47.132.164/PLTV/88888888/224/3221227323/index.m3u8
+#EXTINF:-1 tvg-ID="AFN.MY" tvg-logo="https://astrocontent.s3.amazonaws.com/Images/ChannelLogo/Pos/709_300.png" group-title="台湾地区",Asian Food Network
+https://livecdn.fptplay.net/world/afchd_hls.smil/chunklist_b2500000.m3u8
+#EXTINF:-1 tvg-id="ANI.US" tvg-logo="https://astrocontent.s3.amazonaws.com/Images/ChannelLogo/Pos/556_300.png" group-title="台湾地区",Animal Planet
+https://livecdn.fptplay.net/qnetlive/animalplanet_hls.smil/chunklist_b2500000.m3u8
+#EXTINF:-1 tvg-id="BBE.UK" tvg-logo="https://static.epg.best/kr/BBCEarth.kr.png" group-title="台湾地区",BBC Earth
+https://livecdn.fptplay.net/qnetlive/bbcearth_hls.smil/chunklist_b2500000.m3u8
+#EXTINF:-1 tvg-id="DIS.US" tvg-logo="http://i.imgur.com/lB0VeoB.png" group-title="台湾地区",Discovery
+https://livecdn.fptplay.net/qnetlive/discovery_hls.smil/chunklist_b2500000.m3u8
+#EXTINF:-1 tvg-ID="DIS.Asia" tvg-logo="https://stagingcms.cignal.tv/Upload/Images/Discovery-Asia.png" group-title="台湾地区",Discovery Asia
+https://livecdn.fptplay.net/qnetlive/discoveryasia_hls.smil/chunklist_b2500000.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="http://static.epg.best/bg/FoodNetwork.bg.png" group-title="台湾地区",Food Network
+http://5.135.92.133:52841/out/u/502_1.m3u8
+#EXTINF:-1 tvg-logo="https://www.bestmediainfo.com/wp-content/uploads/2013/12/foodfood-new-logo.jpg" group-title="台湾地区",Food Food
+https://sonyent.pc.cdn.bitgravity.com/sonyent/live/food_food.smil/chunklist_b1300000.m3u8
+#EXTINF:-1 tvg-id="FXB.US" tvg-logo="https://static.epg.best/us/FoxBusiness.us.png" group-title="台湾地区",FOX Business
+https://gma2.blab.email/espnu.m3u8
+#EXTINF:-1 tvg-id="WEA.US" tvg-logo="http://www.weathernationtv.com/app/uploads/WNTV.jpg" group-title="台湾地区",WeatherNation TV
+http://cdnapi.kaltura.com/p/931702/sp/93170200/playManifest/entryId/1_oorxcge2/format/applehttp/protocol/http/uiConfId/28428751.m3u8
+#EXTINF:-1 tvg-id="B01.th" tvg-logo="https://static.epg.best/qa/beINSports1.qa.png" group-title="体育频道",beIN Sports 1 Asia
+https://www.livedoomovies.com/02_epl1_720p/chunklist.m3u8
+#EXTINF:-1 tvg-id="B02.th" tvg-logo="https://static.epg.best/qa/beINSports2.qa.png" group-title="体育频道",beIN Sports 2 Asia
+https://www.livedoomovies.com/02_epl2_720p/chunklist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://www.beinsportsxtra.com/images/icons/logo/beIN-SPORTS-XTRA_LOGO.png" group-title="体育频道",beIN Xtra
+https://bein-plutolive-vo.akamaized.net/playlist.m3u8
