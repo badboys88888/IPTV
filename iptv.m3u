@@ -321,6 +321,8 @@ http://hdtv.haust.edu.cn/hls/jxhd.m3u8
 http://hdtv.haust.edu.cn/hls/gzhd.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/内蒙古卫视.png" tvg-name="内蒙古卫视" group-title="全国卫视",内蒙古卫视
 http://live.m2oplus.nmtv.cn/1/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/安徽卫视.png" tvg-name="安徽卫视" group-title="四川移动组播",安徽卫视
+http://hdtv.haust.edu.cn/hls/hls141.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/宁夏卫视.png" tvg-name="宁夏卫视" group-title="全国卫视",宁夏卫视
 http://www.nxtv.com.cn/m2o/channel/play.php?channel_id=6
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/甘肃卫视.png" tvg-name="甘肃卫视" group-title="全国卫视",甘肃卫视
@@ -359,25 +361,25 @@ http://hdtv.haust.edu.cn/hls/hls78a47.m3u8
 http://hdtv.haust.edu.cn/hls/hls78a46.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/高清时光剧场.png" tvg-name="时光剧场(高清)" group-title="四川移动组播",时光剧场(高清)
 http://hdtv.haust.edu.cn/hls/hls78a48.m3u8
-#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/sheng/BTV文艺.png" tvg-name="BTV文艺" group-title="各地地方台",北京文艺
+#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/sheng/BTV文艺.png" tvg-name="BTV文艺" group-title="北京地区",北京文艺
 http://hdtv.haust.edu.cn/hls/btv2hd.m3u8
-#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/sheng/BTV科教.png" tvg-name="BTV科教" group-title="各地地方台",北京科教
+#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/sheng/BTV科教.png" tvg-name="BTV科教" group-title="北京地区",北京科教
 http://hdtv.haust.edu.cn/hls/btv3.m3u8
-#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/sheng/BTV影视.png" tvg-name="BTV影视" group-title="各地地方台",北京影视
+#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/sheng/BTV影视.png" tvg-name="BTV影视" group-title="北京地区",北京影视
 http://hdtv.haust.edu.cn/hls/btv4hd.m3u8
-#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/sheng/BTV财经.png" tvg-name="BTV财经" group-title="各地地方台",北京财经
+#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/sheng/BTV财经.png" tvg-name="BTV财经" group-title="北京地区",北京财经
 http://hdtv.haust.edu.cn/hls/btv5.m3u8
-#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/sheng/BTV生活.png" tvg-name="BTV生活" group-title="各地地方台",北京生活
+#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/sheng/BTV生活.png" tvg-name="BTV生活" group-title="北京地区",北京生活
 http://hdtv.haust.edu.cn/hls/btv7.m3u8
-#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/sheng/BTV青年.png" tvg-name="BTV青年" group-title="各地地方台",北京青年
+#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/sheng/BTV青年.png" tvg-name="BTV青年" group-title="北京地区",北京青年
 http://hdtv.haust.edu.cn/hls/btv8.m3u8
-#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/sheng/BTV新闻.png" tvg-name="BTV新闻" group-title="各地地方台",北京新闻
+#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/sheng/BTV新闻.png" tvg-name="BTV新闻" group-title="北京地区",北京新闻
 http://hdtv.haust.edu.cn/hls/btv9hd.m3u8
-#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/qt/kaku.png" tvg-name="卡酷动画" group-title="各地地方台",卡酷少儿
+#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/qt/kaku.png" tvg-name="卡酷动画" group-title="北京地区",卡酷少儿
 http://221.179.136.150/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226558/1.m3u8
-#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/qt/xuandong.png" tvg-name="哈哈炫动" group-title="各地地方台",哈哈炫动
+#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/qt/xuandong.png" tvg-name="哈哈炫动" group-title="北京地区",哈哈炫动
 http://140.207.241.2:8080/live/program/live/hhxdhd/4000000/mnf.m3u8
-#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/ws/beijingjishi.png" tvg-name="北京纪实" group-title="各地地方台",北京冬奥纪实
+#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/ws/beijingjishi.png" tvg-name="北京纪实" group-title="北京地区",北京冬奥纪实
 http://hdtv.haust.edu.cn/hls/btv11hd.m3u8
 #EXTINF:-1 tvg-logo="http://tv.sason.xyz/logo/tvbsxw.png" tvg-name="TVBS新闻台" group-title="台湾地区",TVBS新闻
 http://seb.sason.top/sc/tvbsxw_fhd.m3u8
@@ -413,3 +415,13 @@ http://pluto-live.plutotv.net/egress/chandler/pluto01/live/VIACBS03/master.m3u8
 http://pluto-live.plutotv.net/egress/chandler/pluto01/live/VIACBS07/master.m3u8
 #EXTINF:-1, tvg-name="" tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/MTVWMA.png" group-title="音乐频道",MTV WMA
 http://pluto-live.plutotv.net/egress/chandler/pluto01/live/VIACBS08/master.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CHANNELV中国.png" tvg-name="CHANNEL[V]" group-title="音乐频道",channelv
+http://hdtv.haust.edu.cn/hls/channelv.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/星空卫视.png" tvg-name="星空卫视" group-title="香港澳门",星空卫视
+http://hdtv.haust.edu.cn/hls/startv.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/星空体育.png" tvg-name="星空体育" group-title="香港澳门",星空体育
+http://hdtv.haust.edu.cn/hls/starsports.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/探索频道.png" tvg-name="探索频道" group-title="香港澳门",探索频道
+http://hdtv.haust.edu.cn/hls/discovery.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/国家地理.png" tvg-name="国家地理" group-title="香港澳门",国家地理
+http://hdtv.haust.edu.cn/hls/natlgeo.m3u8
