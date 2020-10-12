@@ -411,7 +411,7 @@ http://seb.sason.top/sc/tvbsxw_fhd.m3u8
 http://seb.sason.top/sc/dscjxw_fhd.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/东森新闻.png" tvg-name="东森新闻台" group-title="台湾地区",东森新闻台
 http://seb.sason.top/sc/dsxw_fhd.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/华视新闻资讯.png" tvg-name="华视新闻台" group-title="台湾地区",华视新闻台
+#EXTINF:-1 tvg-id="HSX.TW" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/华视新闻资讯.png" tvg-name="华视新闻台" group-title="台湾地区",华视新闻台
 http://seb.sason.top/sc/hsxw_fhd.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/民视新闻台.png" tvg-name="民视新闻台" group-title="台湾地区",民视新闻台
 http://seb.sason.top/sc/msxw_fhd.m3u8
@@ -543,9 +543,11 @@ https://tjktv-live.tjk.org/tjktv.m3u8
 https://skylivesky-i.akamaihd.net/hls/live/569780/skylive/stcsd_extreme@569780.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://www.tennistv.com/images/og-image.png" group-title="体育频道",ATP Tennis
 http://203.154.243.89:11739
-#EXTINF:-1 tvg-id="" tvg-logo="http://static.epg.best/us/TennisChannel.us.png" group-title="体育频道",Tennis Channel
+#EXTINF:-1 tvg-ID="MLB.US" tvg-logo="https://static.epg.best/us/MLBNetwork.us.png" group-title="体育频道",MLB Network
+http://hlslive-akc-med1.media.mlb.com/ls01/mlbnetwork/NETWORK_LINEAR_1/master_wired.m3u8
+#EXTINF:-1 tvg-id="TEN.US" tvg-logo="http://static.epg.best/us/TennisChannel.us.png" group-title="体育频道",Tennis Channel
 https://playoutengine.sinclairstoryline.com/playout/9f87522c-5a0e-4ff4-b82c-d5564216132f/g.m3u8
-#EXTINF:-1 tvg-id="TEN.US" tvg-logo="http://tennischanneleverywhere.com/resources/assets/tennischanneleverywhere/images/logos/tcplus-logo-1x-01.png" group-title="体育频道",Tennis Channel+
+#EXTINF:-1 tvg-id="" tvg-logo="http://tennischanneleverywhere.com/resources/assets/tennischanneleverywhere/images/logos/tcplus-logo-1x-01.png" group-title="体育频道",Tennis Channel+
 https://playoutengine.sinclairstoryline.com/playout/f2f8b269-dd85-4434-bdd3-b3a64ca9cd60/g.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://tennischanneleverywhere.com/resources/assets/tennischanneleverywhere/images/logos/tcplus-logo-1x-01.png" group-title="体育频道",Tennis Channel+ 2
 https://playoutengine.sinclairstoryline.com/playout/e1838c44-dcb6-47b5-93d4-a0547833518f/g.m3u8
@@ -619,3 +621,43 @@ https://www.livedoomovies.com/02_epl1_720p/chunklist.m3u8
 https://www.livedoomovies.com/02_epl2_720p/chunklist.m3u8
 #EXTINF:-1 tvg-id="BXT.US" tvg-logo="https://www.beinsportsxtra.com/images/icons/logo/beIN-SPORTS-XTRA_LOGO.png" group-title="体育频道",beIN Xtra
 https://bein-plutolive-vo.akamaized.net/playlist.m3u8
+#EXTINF:-1 tvg-name="055" tvg-ID="KS1.KR" tvg-logo="https://static.epg.best/kr/KBS1.kr.png" group-title="日韩频道",KBS 1
+http://211.245.55.198:1024/m2u/239.192.67.100:49220
+#EXTINF:-1 tvg-name="056" tvg-ID="MBC.KR" tvg-logo="https://static.epg.best/kr/MBC.kr.png" group-title="日韩频道",MBC
+http://211.54.140.36/hdmi
+#EXTINF:-1 tvg-name="057" tvg-ID="SBS.KR" tvg-logo="https://static.epg.best/kr/SBS.kr.png" group-title="日韩频道",SBS
+http://211.245.55.198:1024/m2u/239.192.41.2:49220
+#EXTINF:-1 tvg-name="058" tvg-ID="JB1.KR" tvg-logo="https://static.epg.best/kr/JTBC.kr.png" group-title="日韩频道",JTBC
+http://211.245.55.198:1024/m2u/239.192.58.7:49220
+#EXTINF:-1 tvg-name="059" tvg-id="tvN.KR" tvg-logo="https://static.epg.best/kr/tvN.kr.png" group-title="日韩频道",tvN
+http://211.245.55.198:1024/m2u/239.192.53.7:49220
+#EXTINF:-1 tvg-name="050" tvg-id="NHG.JP" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/NHK_General_TV_logo.svg/1920px-NHK_General_TV_logo.svg.png" group-title="日韩频道",NHK総合
+http://203.162.235.41:16903
+#EXTINF:-1 tvg-name="051" tvg-name="050" tvg-id="ASH.JP" tvg-logo="https://static.epg.best/jp/Asahi1.jp.png" group-title="日韩频道",テレビ朝日
+http://203.162.235.41:16906
+#EXTINF:-1 tvg-name="052" tvg-name="050" tvg-id="TOK.JP" tvg-logo="https://static.epg.best/jp/TVTokyo.jp.png" group-title="日韩频道",テレビ東京
+http://203.162.235.41:16908
+#EXTINF:-1 tvg-name="053" tvg-name="051" tvg-id="TBS.JP" tvg-logo="https://www.abu.org.my/images/articles/news/tbs_logo.jpg" group-title="日韩频道",TBSテレビ
+http://203.162.235.41:16907
+#EXTINF:-1 tvg-name="054" tvg-name="052" tvg-id="FUJ.JP" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Fuji_TV_logo.svg/150px-Fuji_TV_logo.svg.png" group-title="日韩频道",フジテレビ
+http://203.162.235.41:16904
+#EXTINF:-1 tvg-id="TBL.TW" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/fa/Tvbs-logo-42.png" group-title="台湾地区",TVBS歡樂
+http://220.158.149.28:8180/live/TV00000000000000000079@HHZT
+#EXTINF:-1 tvg-name="028" tvg-id="MSW.TW" tvg-logo="https://www.ftv.com.tw/images/Ch_01.png" group-title="台湾地区",民視
+http://seb.sason.top/ptv/ftv.php?id=ms
+#EXTINF:-1 tvg-id="MS1.TW" tvg-logo="https://www.ftv.com.tw/images/Ch_02.png" group-title="台湾地区",民視第一
+http://seb.sason.top/ptv/ftv.php?id=dy
+#EXTINF:-1 tvg-id="MST.TW" tvg-logo="https://www.ftv.com.tw/images/Ch_03.png" group-title="台湾地区",民視台灣
+http://seb.sason.top/ptv/ftv.php?id=tw
+#EXTINF:-1 tvg-id="MST.TW" group-title="台湾地区" tvg-logo="https://www.ftv.com.tw/images/Ch_05.png",民視影劇台
+http://seb.sason.top/ptv/ftv.php?id=yj
+#EXTINF:-1  tvg-name="民视综艺台" group-title="台湾地区" tvg-logo="https://www.ftv.com.tw/images/Ch_06.png",民視綜藝台
+http://seb.sason.top/ptv/ftv.php?id=zy
+#EXTINF:-1  group-title="台湾地区" tvg-logo="https://www.ftv.com.tw/images/Ch_07.png",民視旅遊台
+http://seb.sason.top/ptv/ftv.php?id=ly
+#EXTINF:-1 tvg-id="DA1.TW" tvg-logo="http://www.daai.tv/images/logo.png" tvg-name="大爱一台" group-title="台湾地区,大愛1
+https://pulltv1.wanfudaluye.com/live/tv1.m3u8
+#EXTINF:-1 tvg-id="DA2.TW" tvg-logo="https://www.cns.net.tw/web/upload/20141017171303RmzVY9Z.png" tvg-name="大爱二台" group-title="台湾地区",大愛2
+https://pulltv2.wanfudaluye.com/live/tv2.m3u8
+#EXTINF:-1 tvg-id="DA3.TW" tvg-logo="http://www.daai.tv/images/logo.png" tvg-name="大爱海外" group-title="台湾地区",大愛海外
+https://pulltv3.wanfudaluye.com/live/tv3.m3u8
