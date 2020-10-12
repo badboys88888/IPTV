@@ -67,8 +67,6 @@ rtp://239.11.0.145:5140
 rtp://239.11.0.146:5140
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/NEWTV明星大片.png" tvg-name="" group-title="四川移动组播",NEWTV明星大片
 rtp://239.11.0.147:5140
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/黑莓电影.png" tvg-name="" group-title="四川移动组播",黑莓电影
-rtp://239.11.0.148:5140
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/NEWTV爱情喜剧.png" tvg-name="" group-title="四川移动组播",NEWTV爱情喜剧
 rtp://239.11.0.149:5140
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/NEWTV精品大剧.png" tvg-name="" group-title="四川移动组播",NEWTV精品大剧
@@ -77,6 +75,8 @@ rtp://239.11.0.150:5140
 rtp://239.11.0.151:5140
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/NEWTV金牌综艺.png" tvg-name="" group-title="四川移动组播",NewTV金牌综艺
 rtp://239.11.0.152:5140
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/黑莓电影.png" tvg-name="" group-title="四川移动组播",黑莓电影
+rtp://239.11.0.148:5140
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CBN-%E6%AF%8F%E6%97%A5%E5%BD%B1%E9%99%A2.png" tvg-name="CBN每日影院" group-title="四川移动组播",CBN每日影院
 http://home.lpfcdn.com:4000/udp/235.254.198.192:7980
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CBN-%E5%B9%B8%E7%A6%8F%E5%89%A7%E5%9C%BA.png" tvg-name="CBN幸福剧场" group-title="四川移动组播",CBN幸福剧场
@@ -85,21 +85,21 @@ http://home.lpfcdn.com:4000/udp/235.254.198.193:7980
 http://home.lpfcdn.com:4000/udp/235.254.198.194:7980
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CBN-%E5%B9%B8%E7%A6%8F%E5%A8%B1%E4%B9%90.png" tvg-name="CBN幸福娱乐" group-title="四川移动组播",CBN幸福娱乐
 http://home.lpfcdn.com:4000/udp/235.254.198.195:7980
-#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/RTHK31.png" group-title="四川移动组播",港台電視31
+#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/RTHK31.png" group-title="香港澳门",港台電視31
 http://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/index_2052_av-p.m3u8?sd=10&rebase=on
-#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/RTHK32.png" group-title="四川移动组播",港台電視32
+#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/RTHK32.png" group-title="香港澳门",港台電視32
 https://rthklive2-lh.akamaihd.net/i/rthk32_1@168450/index_1080_av-b.m3u8?sd=10&rebase=on
-#EXTINF:-1 tvg-id="V99.HK" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/Viu%20TV.png" tvg-name="ViuTV" group-title="四川移动组播",ViuTV
+#EXTINF:-1 tvg-id="V99.HK" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/Viu%20TV.png" tvg-name="ViuTV" group-title="香港澳门",ViuTV
 http://61.238.6.49:8000/bysid/99
-#EXTINF:-1 tvg-id="FCT.HK" tvg-logo="https://poster.starhubgo.com/Linear_channels2/838_1920x1080_HTV.png" tvg-name="翡翠台" group-title="四川移动组播",翡翠台                  
+#EXTINF:-1 tvg-id="FCT.HK" tvg-logo="https://poster.starhubgo.com/Linear_channels2/838_1920x1080_HTV.png" tvg-name="翡翠台" group-title="香港澳门",翡翠台                  
 http://61.238.6.49:8000/bysid/1
-#EXTINF:-1 tvg-id="FC2.HK" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/TVBJ2.png" tvg-name="J2" group-title="四川移动组播",J2台                  
+#EXTINF:-1 tvg-id="FC2.HK" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/TVBJ2.png" tvg-name="J2" group-title="香港澳门",J2台                  
 http://61.238.6.49:8001/bysid/82
-#EXTINF:-1 tvg-id="MZT.HK" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/TVB明珠台.png" tvg-name="明珠台" group-title="四川移动组播",明珠台
+#EXTINF:-1 tvg-id="MZT.HK" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/TVB明珠台.png" tvg-name="明珠台" group-title="香港澳门",明珠台
 http://61.238.6.49:8001/bysid/2.mpeg
-#EXTINF:-1 tvg-id="WXX.HK" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/wuxianxinwentai.png" tvg-name="无线新闻" group-title="四川移动组播",無綫新聞台                
+#EXTINF:-1 tvg-id="WXX.HK" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/wuxianxinwentai.png" tvg-name="无线新闻" group-title="香港澳门",無綫新聞台                
 http://61.238.6.49:8001/bysid/83
-#EXTINF:-1 tvg-id="WXC.HK" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/wuxiancaijingzixuntai.png" tvg-name="无线财经" group-title="四川移动组播",無綫財經資訊台
+#EXTINF:-1 tvg-id="WXC.HK" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/wuxiancaijingzixuntai.png" tvg-name="无线财经" group-title="香港澳门",無綫財經資訊台
 http://61.238.6.49:8001/bysid/85
 #EXTINF:-22 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/IHOT-爱奇谈.png" tvg-name="" group-title="四川移动组播",HOT爱奇谈
 http://112.17.40.142/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221230023/index.m3u8
@@ -175,8 +175,6 @@ rtp://239.10.0.141:5140
 rtp://239.10.0.142:5140
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府时尚生活.png" tvg-name="" group-title="四川移动组播",天府时尚生活
 rtp://239.10.0.144:5140
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府魔力TV.png" tvg-name="" group-title="四川移动组播",天府魔力TV
-rtp://239.10.0.145:5140
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府积木宝贝.png" tvg-name="" group-title="四川移动组播",天府积木宝贝
 rtp://239.10.0.157:5140
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府启蒙乐园.png" tvg-name="" group-title="四川移动组播",天府启蒙乐园
@@ -189,13 +187,15 @@ rtp://239.10.0.189:5140
 rtp://239.10.0.194:5140
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府乐趣综合.png" tvg-name="" group-title="四川移动组播",天府乐趣综合
 rtp://239.10.0.195:5140
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/求索生活.png" tvg-name="求索生活" group-title="四川移动组播",求索生活
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天府魔力TV.png" tvg-name="" group-title="四川移动组播",天府魔力TV
+rtp://239.10.0.145:5140
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/求索生活.png" tvg-name="求索生活" group-title="上海地区",求索生活
 http://39.135.98.8/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221228983/01.m3u8?fmt=ts2hls
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/求索动物.png" tvg-name="求索动物" group-title="四川移动组播",求索动物
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/求索动物.png" tvg-name="求索动物" group-title="上海地区",求索动物
 http://39.135.98.8/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221228980/01.m3u8?fmt=ts2hls
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/求索科学.png" tvg-name="求索科学" group-title="四川移动组播",求索科学
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/求索科学.png" tvg-name="求索科学" group-title="上海地区",求索科学
 http://39.135.98.8/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221228975/01.m3u8?fmt=ts2hls
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/求索纪录.png" tvg-name="求索纪录" group-title="四川移动组播",求索纪录
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/求索纪录.png" tvg-name="求索纪录" group-title="上海地区",求索纪录
 http://39.135.98.8/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221228972/01.m3u8?fmt=ts2hls
 #EXTINF:-22 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/动漫秀场.png" tvg-name="动漫秀场" group-title="上海地区",动漫秀场
 http://140.207.241.2:8080/live/program/live/dmxchd/4000000/mnf.m3u8
@@ -251,13 +251,13 @@ http://221.179.217.9/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226553/1.m3u
 http://221.179.217.9/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226555/1.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/北京IPTV@大健康.png" tvg-name="" group-title="北京地区",北京IPTV@大健康
 http://221.179.217.9/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226556/1.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/北京卡酷少儿.png" tag-name="" group-title="四川移动组播",北京IPTV卡酷少儿
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/北京卡酷少儿.png" tag-name="卡酷少儿" group-title="四川移动组播",北京卡酷少儿
 http://221.179.217.9/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226558/1.m3u8
-#EXTINF:-1 tvg-logo="" tvg-name="" group-title="四川移动组播",狗狗宠物
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/狗狗宠物.png" tvg-name="" group-title="四川移动组播",狗狗宠物
 http://video.blivenyc.com/broadcast/prod/2061/22/file-3192k.m3u8
 #EXTINF:-1 tvg-logo="" tvg-name="" group-title="四川移动组播",法国时尚
 http://lb.streaming.sk/fashiontv/stream/chunklist_w1702070444.m3u8
-#EXTINF:-1 tvg-logo="" tvg-name="茶频道" group-title="四川移动组播",茶频道
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/湖南茶频道.png" tvg-name="茶频道" group-title="四川移动组播",茶频道
 http://221.179.217.9//otttv.bj.chinamobile.com/PLTV/88888888/224/3221226548/1.m3u8
 #EXTINF:-1 tvg-logo="http://www.sctv.com/live/pdmk/pdnav/201801/W020181031582930276337.png" tvg-name="SCTV2" group-title="四川移动组播",四川文化旅游
 http://scgctvshow.sctv.com/hdlive/sctv2/index.m3u8
@@ -327,7 +327,7 @@ http://39.134.39.39/PLTV/88888888/224/3221226240/index.m3u8
 http://live.ybtvyun.com/video/s10006-a772df604950/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/陕西卫视.png" tvg-name="陕西卫视" group-title="全国卫视",陕西卫视
 http://61.151.179.192/zycfcdn.gdwlcloud.com/PLTV/88888888/224/3221225498/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/广东南方卫视.png" tvg-name="南方卫视" group-title="全国卫视",南方卫视
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/南方.png" tvg-name="南方卫视" group-title="全国卫视",南方卫视
 http://211.137.115.110:8080/gitv_live/G_NANFANG/G_NANFANG.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/香港卫视.png" tvg-name="HKS" group-title="全国卫视",香港卫视
 http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8
