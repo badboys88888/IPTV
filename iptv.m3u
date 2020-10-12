@@ -343,18 +343,17 @@ http://player.ioioz.com:80/1786/hunan/hnyx2m3u8.php?id=54
 http://39.130.215.166:6410/gitv_live/G_YUNNAN-HD/G_YUNNAN-HD.m3u8
 #EXTINF:-1 tvg-id="TJW.CN" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天津卫视.png" group-title="全国卫视",天津卫视
 http://39.130.206.213:6410/gitv_live/G_TIANJIN-HD/G_TIANJIN-HD.m3u8 
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/高清时光剧场.png" tvg-name="时光剧场(高清)" group-title="四川移动组播",时光剧场(高清)
-http://hdtv.haust.edu.cn/hls/hls78a48.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/高清大众影视.png" tvg-name="大众影视(高清)" group-title="四川移动组播",大众影视(高清)
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/高清HD大众影视.png" tvg-name="大众影视(高清)" group-title="四川移动组播",大众影视(高清)
 http://hdtv.haust.edu.cn/hls/hls75a27.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/高清家庭剧场.png" tvg-name="家庭剧场(高清)" group-title="四川移动组播",家庭剧场(高清)
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/高清HD家庭剧场.png" tvg-name="家庭剧场(高清)" group-title="四川移动组播",家庭剧场(高清)
 http://hdtv.haust.edu.cn/hls/hls75a28.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/高清家庭影院.png" tvg-name="家庭影院(高清)" group-title="四川移动组播",家庭影院(高清)
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/高清HD家庭影院.png" tvg-name="家庭影院(高清)" group-title="四川移动组播",家庭影院(高清)
 http://hdtv.haust.edu.cn/hls/hls75a29.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/高清卡通剧场.png" tvg-name="卡通剧场(高清)" group-title="四川移动组播",卡通剧场(高清)
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/高清HD卡通剧场.png" tvg-name="卡通剧场(高清)" group-title="四川移动组播",卡通剧场(高清)
 http://hdtv.haust.edu.cn/hls/hls77a30.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/晴天动画馆.png" tvg-name="晴天动画馆(高清)" group-title="四川移动组播",晴天动画馆(高清)
 http://hdtv.haust.edu.cn/hls/hls78a47.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/爱映画.png" tvg-name="爱映画" group-title="四川移动组播",爱映画
 http://hdtv.haust.edu.cn/hls/hls78a46.m3u8
-
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/高清时光剧场.png" tvg-name="时光剧场(高清)" group-title="四川移动组播",时光剧场(高清)
+http://hdtv.haust.edu.cn/hls/hls78a48.m3u8
