@@ -425,3 +425,29 @@ http://hdtv.haust.edu.cn/hls/starsports.m3u8
 http://hdtv.haust.edu.cn/hls/discovery.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/国家地理.png" tvg-name="国家地理" group-title="香港澳门",国家地理
 http://hdtv.haust.edu.cn/hls/natlgeo.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV第一剧场.png" tvg-name="第一剧场" group-title="央视",CCTV第一剧场
+http://hdtv.haust.edu.cn/hls/dyjctv.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV第一剧场.png" tvg-name="第一剧场" group-title="央视",CCTV第一剧场
+http://39.135.9.77/gz.ucdn.10086.cn/PLTV/88888888/224/3221225702/1/index.m3u8?fmt=ts2hls
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV风云足球.png" tvg-name="风云足球" group-title="央视",CCTV风云足球
+http://hdtv.haust.edu.cn/hls/fyzqtv.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV风云音乐.png" tvg-name="风云音乐" group-title="央视",CCTV风云音乐
+http://39.135.9.77/gz.ucdn.10086.cn/PLTV/88888888/224/3221225698/1/index.m3u8?fmt=ts2hls
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV风云剧场.png" tvg-name="风云剧场" group-title="央视",CCTV风云剧场
+http://39.135.9.77/gz.ucdn.10086.cn/PLTV/88888888/224/3221225700/1/index.m3u8?fmt=ts2hls
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV世界地理.png" tvg-name="世界地理" group-title="央视",CCTV世界地理
+http://39.135.9.77/gz.ucdn.10086.cn/PLTV/88888888/224/3221225733/1/index.m3u8?fmt=ts2hls
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV怀旧剧场.png" tvg-name="怀旧剧场" group-title="央视",CCTV怀旧剧场
+http://hdtv.haust.edu.cn/hls/hjjctv.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV兵器科技.png" tvg-name="兵器科技" group-title="央视",CCTV兵器科技
+http://hdtv.haust.edu.cn/hls/gfjstv.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV央视文化.png" tvg-name="央视精品" group-title="央视",CCTV央视文化精品
+http://hdtv.haust.edu.cn/hls/hls61.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV女性时尚.png" tvg-name="女性时尚" group-title="央视",CCTV女性时尚
+http://hdtv.haust.edu.cn/hls/hls44.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/央视老故事.png" tvg-name="老故事" group-title="央视",CCTV老故事
+http://hdtv.haust.edu.cn/hls/hls113.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CGTN英语.png" tvg-name="CGTN" group-title="央视",CGTN
+http://hdtv.haust.edu.cn/hls/hls67a43.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CGTN纪录.png" tvg-name="CGTNDocumentary" group-title="央视",CGTN纪录
+http://hdtv.haust.edu.cn/hls/hls67a44.m3u8
