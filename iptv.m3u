@@ -472,3 +472,19 @@ http://hdtv.haust.edu.cn/hls/hls113.m3u8
 http://hdtv.haust.edu.cn/hls/hls67a43.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CGTN纪录.png" tvg-name="CGTNDocumentary" group-title="央视",CGTN纪录
 http://hdtv.haust.edu.cn/hls/hls67a44.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/成都新闻综合.png" tvg-name="CDTV1" group-title="四川移动组播",成都新闻综合频道
+http://live.826pc.com/cdtv/live.php?id=1
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/成都经济资讯.png" tvg-name="CDTV2" group-title="四川移动组播",成都经济资讯频道
+http://live.826pc.com/cdtv/live.php?id=2
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/成都都市生活.png" tvg-name="CDTV3" group-title="四川移动组播",成都都市生活频道
+http://live.826pc.com/cdtv/live.php?id=3
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/成都影视文艺.png" tvg-name="CDTV4" group-title="四川移动组播",成都影视文艺频道
+http://live.826pc.com/cdtv/live.php?id=45
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/成都公共.png" tvg-name="CDTV5" group-title="四川移动组播",成都公共频道
+http://live.826pc.com/cdtv/live.php?id=5
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/成都少儿.png" tvg-name="CDTV6" group-title="四川移动组播",成都少儿频道
+http://live.826pc.com/cdtv/live.php?id=6
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/成都移动.png" tvg-name="CDTV-M" group-title="四川移动组播",成都移动频道
+http://www.ootori.xyz/tv/cditv.php?cid=2762&id=1152
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/成都金牛有线.png" tvg-name="金牛区有线电视台" group-title="四川移动组播",金牛区有线电视台
+http://www.ootori.xyz/tv/cditv.php?cid=2762&id=556
