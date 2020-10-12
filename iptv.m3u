@@ -459,13 +459,13 @@ http://pluto-live.plutotv.net/egress/chandler/pluto01/live/VIACBS07/master.m3u8
 http://pluto-live.plutotv.net/egress/chandler/pluto01/live/VIACBS08/master.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CHANNELV中国.png" tvg-name="CHANNEL[V]" group-title="音乐频道",channelv
 http://hdtv.haust.edu.cn/hls/channelv.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/星空卫视.png" tvg-name="星空卫视" group-title="香港澳门",星空卫视
+#EXTINF:-1 tvg-id="XKW.CN" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/星空卫视.png" tvg-name="星空卫视" group-title="香港澳门",星空卫视
 http://hdtv.haust.edu.cn/hls/startv.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/星空体育.png" tvg-name="星空体育" group-title="香港澳门",星空体育
 http://hdtv.haust.edu.cn/hls/starsports.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/探索频道.png" tvg-name="探索频道" group-title="香港澳门",探索频道
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/探索频道.png" tvg-name="探索发现频道" group-title="香港澳门",探索频道
 http://hdtv.haust.edu.cn/hls/discovery.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/国家地理.png" tvg-name="国家地理" group-title="香港澳门",国家地理
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/国家地理.png" tvg-name="国家地理频道" group-title="香港澳门",国家地理
 http://hdtv.haust.edu.cn/hls/natlgeo.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV第一剧场.png" tvg-name="第一剧场" group-title="央视",CCTV第一剧场
 http://hdtv.haust.edu.cn/hls/dyjctv.m3u8
