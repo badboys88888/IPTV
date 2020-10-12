@@ -1,4 +1,22 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="CNN.News" tvg-logo="http://static.epg.best/gb/CNN.uk.png" tvg-name="CNN" group-title="台湾地区",CNN
+http://1111296894.rsc.cdn77.org/ls-54548-1/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-ID="CNG.GO" tvg-logo="https://blog.roku.com/wp-content/uploads/2015/11/CNNgo-logo.png" group-title="台湾地区",CNN Go
+https://tve-live-lln.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_0_3564000.m3u8
+#EXTINF:-1 tvg-id="Jaz.News" tvg-logo="http://www.aljazeera.com/assets/images/aj-logo-lg-124.png" tvg-name="aljazeera" group-title="台湾地区",Al Jazeera English
+https://live-hls-web-aje.getaj.net/AJE/01.m3u8
+#EXTINF:-1  tvg-id="TV5.Asia" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/tv5monde.png" tvg-name="TV5Monde" group-title="台湾地区",TV5 MONDE OPT 3
+http://v3plusinfo247hls-i.akamaihd.net/hls/live/218877-b/v3plusinfo247hls/v3plusinfo247hls_1_2.m3u8
+#EXTINF:-1 tvg-id="Dwe.News" tvg-logo="http://static.epg.best/de/DeutscheWelleEn.de.png" tvg-name="DW" group-title="台湾地区",DW德国之声
+https://dwstream4-lh.akamaihd.net/i/dwstream4_live@131329/index_1_av-p.m3u8
+#EXTINF:-1 tvg-id="RT.News" tvg-name="russia-today" tvg-logo="http://static.epg.best/ru/RTInternational.ru.png" group-title="台湾地区",今日俄罗斯
+http://rt-news.secure.footprint.net:80/1103_2500Kb.m3u8
+#EXTINF:-1 tvg-id="TRT.News" tvg-logo="http://static.epg.best/tr/TRTWorld.tr.png" tvg-name="TRT World" group-title="台湾地区",TRT World
+https://tv-trtworld.live.trt.com.tr/master_1080.m3u8
+#EXTINF:-1 tvg-id="Fox.News" tvg-logo="http://static.epg.best/us/FoxNews.us.png" tvg-name="FoxNews" group-title="台湾地区",FOX News
+https://bk7l2w4nlx53-hls-live.5centscdn.com/FOXNEWS/961ac1c875f5884f31bdd177365ef1e3.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="Sky.News" tvg-ID="Sky.News" tvg-logo="http://static.epg.best/uk/SkyNews.uk.png" tvg-name="SkyNews" group-title="台湾地区",Sky News
+https://skynews2-plutolive-vo.akamaized.net/cdhlsskynewsamericas/1013/latest.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV4k.png" tvg-name="CCTV4K" group-title="央视",CCTV4K
 http://112.17.40.140/PLTV/88888888/224/3221226758/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV4k.png" tvg-name="CCTV4K" group-title="央视",CCTV4KHDR
@@ -105,7 +123,7 @@ http://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/index_2052_av-p.m3u8?sd=10&re
 https://rthklive2-lh.akamaihd.net/i/rthk32_1@168450/index_1080_av-b.m3u8?sd=10&rebase=on
 #EXTINF:-1 tvg-id="V99.HK" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/Viu%20TV.png" tvg-name="ViuTV" group-title="香港澳门",ViuTV
 http://61.238.6.49:8000/bysid/99
-#EXTINF:-1 tvg-id="V96.HK" tvg-logo="https://static.iptv-epg.com/hk/ViuTV96.hk.png" group-title="港澳台",ViuTV Six
+#EXTINF:-1 tvg-id="V96.HK" tvg-logo="https://static.iptv-epg.com/hk/ViuTV96.hk.png" group-title="香港澳门",ViuTV Six
 http://61.238.6.49:8000/bysid/96
 #EXTINF:-1 tvg-id="FCT.HK" tvg-logo="https://poster.starhubgo.com/Linear_channels2/838_1920x1080_HTV.png" tvg-name="翡翠台" group-title="香港澳门",翡翠台                  
 http://61.238.6.49:8000/bysid/1
@@ -641,6 +659,8 @@ http://203.162.235.41:16908
 http://203.162.235.41:16907
 #EXTINF:-1 tvg-name="054" tvg-name="052" tvg-id="FUJ.JP" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Fuji_TV_logo.svg/150px-Fuji_TV_logo.svg.png" group-title="日韩频道",フジテレビ
 http://203.162.235.41:16904
+#EXTINF:-1 tvg-id="" tvg-logo="http://www.golfnetwork.co.jp/assets/img/pc/layout/header/logo_new.png" group-title="四川移动组播",ゴルフネットワーク
+http://203.162.235.41:16924
 #EXTINF:-1 tvg-id="TBL.TW" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/fa/Tvbs-logo-42.png" group-title="台湾地区",TVBS歡樂
 http://220.158.149.28:8180/live/TV00000000000000000079@HHZT
 #EXTINF:-1 tvg-name="028" tvg-id="MSW.TW" tvg-logo="https://www.ftv.com.tw/images/Ch_01.png" group-title="台湾地区",民視
