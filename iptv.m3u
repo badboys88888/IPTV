@@ -375,7 +375,7 @@ http://live.ybtvyun.com/video/s10006-a772df604950/index.m3u8
 http://61.151.179.192/zycfcdn.gdwlcloud.com/PLTV/88888888/224/3221225498/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/南方.png" tvg-name="南方卫视" group-title="全国卫视",南方卫视
 http://211.137.115.110:8080/gitv_live/G_NANFANG/G_NANFANG.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/香港卫视.png" tvg-name="HKS" group-title="全国卫视",香港卫视
+#EXTINF:-1 tvg-id="HKS.HK" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/香港卫视.png" group-title="全国卫视",香港卫视
 http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/新疆卫视.png" tvg-name="新疆卫视" group-title="全国卫视",新疆卫视
 http://livehyw5.chinamcache.com/hyw/zb01.m3u8
