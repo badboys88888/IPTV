@@ -123,14 +123,24 @@ http://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/index_2052_av-p.m3u8?sd=10&re
 https://rthklive2-lh.akamaihd.net/i/rthk32_1@168450/index_1080_av-b.m3u8?sd=10&rebase=on
 #EXTINF:-1 tvg-id="V99.HK" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/Viu%20TV.png" tvg-name="ViuTV" group-title="香港澳门",ViuTV
 http://61.238.6.49:8000/bysid/99
+#EXTINF:-1 tvg-id="V99.HK" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/Viu%20TV.png" tvg-name="ViuTV" group-title="香港澳门",ViuTV
+https://cdn.hkdtmb.com/hls/99/index.m3u8
 #EXTINF:-1 tvg-id="V96.HK" tvg-logo="https://static.iptv-epg.com/hk/ViuTV96.hk.png" group-title="香港澳门",ViuTV Six
 http://61.238.6.49:8000/bysid/96
+#EXTINF:-1 tvg-id="V96.HK" tvg-logo="https://static.iptv-epg.com/hk/ViuTV96.hk.png" group-title="香港澳门",ViuTV Six
+https://cdn.hkdtmb.com/hls/96/index.m3u8
 #EXTINF:-1 tvg-id="FCT.HK" tvg-logo="https://poster.starhubgo.com/Linear_channels2/838_1920x1080_HTV.png" tvg-name="翡翠台" group-title="香港澳门",翡翠台                  
 http://61.238.6.49:8000/bysid/1
+#EXTINF:-1 tvg-id="FCT.HK" tvg-logo="https://poster.starhubgo.com/Linear_channels2/838_1920x1080_HTV.png" tvg-name="翡翠台" group-title="香港澳门",翡翠台 
+https://cdn.hkdtmb.com/hls/81/index.m3u8
 #EXTINF:-1 tvg-id="FC2.HK" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/TVBJ2.png" tvg-name="J2" group-title="香港澳门",J2台                  
 http://61.238.6.49:8001/bysid/82
+#EXTINF:-1 tvg-id="FC2.HK" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/TVBJ2.png" tvg-name="J2" group-title="香港澳门",J2台  
+https://cdn.hkdtmb.com/hls/82/index.m3u8
 #EXTINF:-1 tvg-id="MZT.HK" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/TVB明珠台.png" tvg-name="明珠台" group-title="香港澳门",明珠台
 http://61.238.6.49:8001/bysid/2.mpeg
+#EXTINF:-1 tvg-id="MZT.HK" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/TVB明珠台.png" tvg-name="明珠台" group-title="香港澳门",明珠台
+https://cdn.hkdtmb.com/hls/84/index.m3u8
 #EXTINF:-1 tvg-id="WXX.HK" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/wuxianxinwentai.png" tvg-name="无线新闻" group-title="香港澳门",無綫新聞台                
 http://61.238.6.49:8001/bysid/83
 #EXTINF:-1 tvg-id="WXC.HK" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/wuxiancaijingzixuntai.png" tvg-name="无线财经" group-title="香港澳门",無綫財經資訊台
@@ -143,6 +153,16 @@ http://livetv.dnsfor.me/channel.7.m3u8
 http://livetv.dnsfor.me:80/channel.5.m3u8
 #EXTINF:-1 tvg-ID="YCJ.HK" tvg-logo="http://utvhk.com/maint/images/channel/be75ddf0144b7fccdd03bf8016a61f64.png" tvg-name="有線财经资讯" group-title="香港澳门",有線財經資訊
 http://livetv.dnsfor.me/channel.6.m3u8
+#EXTINF:-1 tvg-id="NOP.HK" tvg-logo="http://static.epg.best/hk/NowSportsPrime.hk.png" group-title="香港澳门",Now Sports Prime
+http://teslagram.com/live/channel_630.m3u8
+#EXTINF:-1 tvg-ID="668.HK" tvg-logo="https://upload.wikimedia.org/wikipedia/zh/b/bf/HKJC_Horse_Racing.jpg" group-title="香港澳门",赛马直击
+http://liveima.utvlive.top/livehls/MOB-HR/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="http://mo.heytv.org/wp-content/uploads/2018/12/1-1P5121Q245326.jpg" group-title="香港澳门",澳視澳門台
+http://live4.tdm.com.mo/ch1/_definst_/ch1.live/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/zh/0/09/TDM-Macau_Sat%C3%A9llite.png" group-title="香港澳门",澳視MACAU
+http://live4.tdm.com.mo/ch3/_definst_/ch3.live/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/zh/9/9d/TDM_Informa%C3%A7%C3%A3o.jpg" group-title="香港澳门",澳視資訊
+http://live4.tdm.com.mo/ch5/_definst_/info_ch5.live/playlist.m3u8
 #EXTINF:-22 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/IHOT-爱奇谈.png" tvg-name="" group-title="四川移动组播",HOT爱奇谈
 http://112.17.40.142/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221230023/index.m3u8
 #EXTINF:-23 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/IHOT-爱玩具.png" tvg-name="" group-title="四川移动组播",HOT爱玩具
@@ -649,6 +669,32 @@ http://211.245.55.198:1024/m2u/239.192.41.2:49220
 http://211.245.55.198:1024/m2u/239.192.58.7:49220
 #EXTINF:-1 tvg-name="059" tvg-id="tvN.KR" tvg-logo="https://static.epg.best/kr/tvN.kr.png" group-title="日韩频道",tvN
 http://211.245.55.198:1024/m2u/239.192.53.7:49220
+#EXTINF:-1 tvg-ID="SBM.KR" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/MBC_M_logo.svg/330px-MBC_M_logo.svg.png" group-title="日韩频道",MBC M
+http://211.245.55.198:1024/m2u/239.192.53.4:49220
+#EXTINF:-1 tvg-ID="SBM.KR" tvg-logo="https://static.epg.best/kr/SBSMTV.kr.png" group-title="日韩频道",SBS MTV
+http://211.245.55.198:1024/m2u/239.192.55.4:49220
+#EXTINF:-1 tvg-ID="MNE.KR" tvg-logo="https://static.epg.best/kr/Mnet.kr.png" group-title="日韩频道",M-NET
+http://live2.abcdsky.com:1935/live/MNET/playlist.m3u8
+#EXTINF:-1 tvg-id="OCN.KR" tvg-logo="https://static.epg.best/kr/OCN.kr.png" group-title="日韩频道",OCN
+http://live2.abcdsky.com:1935/live/OCN/playlist.m3u8
+#EXTINF:-1 tvg-ID="KS1.KR" tvg-logo="https://static.epg.best/kr/KBS1.kr.png" group-title="日韩频道",KBS 1
+http://live2.abcdsky.com:1935/live/KBS1/playlist.m3u8
+#EXTINF:-1 tvg-ID="KS2.KR" tvg-logo="https://static.epg.best/kr/KBS2.kr.png" group-title="日韩频道",KBS 2
+http://live2.abcdsky.com:1935/live/KBS2/playlist.m3u8
+#EXTINF:-1 tvg-ID="KSW.KR" tvg-logo="https://static.epg.best/us/KBSWorld.us.png" group-title="日韩频道",KBS World
+https://livecdn.fptplay.net/sdb/kbs_hls.smil/chunklist_b2500000.m3u8
+#EXTINF:-1 tvg-ID="MBC.KR" tvg-logo="https://static.epg.best/kr/MBC.kr.png" group-title="日韩频道",MBC
+http://live2.abcdsky.com:1935/live/MBC/playlist.m3u8
+#EXTINF:-1 tvg-ID="SBS.KR" tvg-logo="https://static.epg.best/kr/SBS.kr.png" group-title="日韩频道",SBS
+http://live2.abcdsky.com:1935/live/SBS/playlist.m3u8
+#EXTINF:-1 tvg-ID="JB1.KR" tvg-logo="https://static.epg.best/kr/JTBC.kr.png" group-title="日韩频道",JTBC
+http://live2.abcdsky.com:1935/live/JTBC/playlist.m3u8
+#EXTINF:-1 tvg-ID="JBG.KR" tvg-logo="http://image.jtbcgolfnsports.joins.com/common/logo_20200102.png" group-title="日韩频道",JTBC Sports
+http://live.yingtaotvapp.com/JTBCGolf/index.m3u8
+#EXTINF:-1 tvg-id="tvN.KR" tvg-logo="https://static.epg.best/kr/tvN.kr.png" group-title="日韩频道",tVN
+http://live2.abcdsky.com:1935/live/TVN/playlist.m3u8
+#EXTINF:-1 tvg-id="YTN.KR" tvg-logo="https://static.epg.best/kr/YTN.kr.png" group-title="日韩频道",YTN
+http://slive.ytn.co.kr/ytn/_definst_/ytn_stream_20190306/playlist.m3u8
 #EXTINF:-1 tvg-name="050" tvg-id="NHG.JP" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/NHK_General_TV_logo.svg/1920px-NHK_General_TV_logo.svg.png" group-title="日韩频道",NHK総合
 http://203.162.235.41:16903
 #EXTINF:-1 tvg-name="051" tvg-name="050" tvg-id="ASH.JP" tvg-logo="https://static.epg.best/jp/Asahi1.jp.png" group-title="日韩频道",テレビ朝日
@@ -659,8 +705,26 @@ http://203.162.235.41:16908
 http://203.162.235.41:16907
 #EXTINF:-1 tvg-name="054" tvg-name="052" tvg-id="FUJ.JP" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Fuji_TV_logo.svg/150px-Fuji_TV_logo.svg.png" group-title="日韩频道",フジテレビ
 http://203.162.235.41:16904
-#EXTINF:-1 tvg-id="" tvg-logo="http://www.golfnetwork.co.jp/assets/img/pc/layout/header/logo_new.png" group-title="四川移动组播",ゴルフネットワーク
+#EXTINF:-1 tvg-id="" tvg-logo="http://www.golfnetwork.co.jp/assets/img/pc/layout/header/logo_new.png" group-title="日韩频道",ゴルフネットワーク
 http://203.162.235.41:16924
+#EXTINF:-1 tvg-id="NIP.JP" tvg-logo="https://static.epg.best/jp/NipponTV.jp.png" group-title="日韩频道",日テレ
+http://203.162.235.41:16905
+#EXTINF:-1 tvg-id="N24.JP" tvg-logo="https://startpoint.jp/wp-content/uploads/fb.jpg" group-title="日韩频道",日テレNEWS24
+https://n24-cdn-live-b.ntv.co.jp/ch01/High.m3u8
+#EXTINF:-1 tvg-id="BST.JP" tvg-logo="https://static.epg.best/jp/BSTBS.jp.png" group-title="日韩频道",BS TBS
+http://203.162.235.41:16913
+#EXTINF:-1 tvg-id="BSA.JP" tvg-logo="https://www.bs-asahi.co.jp/wordpress/wp-content/themes/bs-master/img/no_image.png" group-title="日韩频道",BS 朝日
+http://203.162.235.41:16914
+#EXTINF:-1 tvg-id="BSF.JP" tvg-logo="https://www.bsfuji.tv/top/common/img/head_logo.png" group-title="日韩频道",BSフジ
+http://203.162.235.41:16911
+#EXTINF:-1 tvg-id="BTK.JP" tvg-logo="https://www.tv-tokyo.co.jp/information/blog/images/24606404907f11e880a6cbdce0444b13.jpg" group-title="日韩频道",BS 東京
+http://203.162.235.41:16915
+#EXTINF:-1 tvg-id="BSN.JP" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/BS4_logo.svg/400px-BS4_logo.svg.png" group-title="日韩频道",BS 日テレ
+http://203.162.235.41:16912
+#EXTINF:-1 tvg-id="WOW.JP" tvg-logo="https://www.abu.org.my/images/articles/news/tbs_logo.jpg" group-title="日韩频道",シネフィルWOWOW
+http://203.162.235.41:16916
+#EXTINF:-1 tvg-id="GEM.JP" tvg-logo="https://www.gemtvasia.com/sites/gemtvasia.com/files/logos/logo-small.png" group-title="日韩频道",GEM TV
+http://103.47.132.164/PLTV/88888888/224/3221227187/index.m3u8
 #EXTINF:-1 tvg-id="TBL.TW" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/fa/Tvbs-logo-42.png" group-title="台湾地区",TVBS歡樂
 http://220.158.149.28:8180/live/TV00000000000000000079@HHZT
 #EXTINF:-1 tvg-name="028" tvg-id="MSW.TW" tvg-logo="https://www.ftv.com.tw/images/Ch_01.png" group-title="台湾地区",民視
@@ -681,5 +745,15 @@ https://pulltv1.wanfudaluye.com/live/tv1.m3u8
 https://pulltv2.wanfudaluye.com/live/tv2.m3u8
 #EXTINF:-1 tvg-id="DA3.TW" tvg-logo="http://www.daai.tv/images/logo.png" tvg-name="大爱海外" group-title="台湾地区",大愛海外
 https://pulltv3.wanfudaluye.com/live/tv3.m3u8
-#EXTINF:-1 tvg-ID="Ch5.SG" tvg-logo="https://video.toggle.sg/image/5253176/16x9/236/133/b49cfbbdfadcac8183438a67da78f60a/bW/channel-5.png" group-title="新马",5頻道
-https://tglmp02.akamaized.net/out/v1/5081e069e08140c9b95f89a1659cf4dd/manifest.mpd
+#EXTINF:-1 tvg-id="DLD.TW" tvg-logo="http://www.sjtv.com.tw/sjtvlive/views/img/live_web_logo.png" group-title="台湾地区",信吉電視
+http://220.130.241.203:1935/sjtv/livestream/chunklist_w1048671923.m3u8
+#EXTINF:-1 tvg-id="HZW.TW" tvg-logo="https://www.hwazan.org/statics/images/newhztv_logo.png" group-title="台湾地区",華藏衛視
+http://118.163.88.61:1935/hwazanlivetv/live.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="RJW.TW" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/BeautifulLife.png" group-title="台湾地区",人間衛視
+https://bcovlive-a.akamaihd.net/a735d612667b460185bd29f9978178bd/ap-northeast-1/6169276188001/profile_2/chunklist.m3u8
+#EXTINF:-1 tvg-id="WXD.TW" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/weixin.png" group-title="台湾地区",唯心電視
+http://mobile.ccdntech.com/transcoder/_definst_/vod164_Live/live/chunklist_w1177047531.m3u8
+#EXTINF:-1 tvg-id="YZM.TW" tvg-logo="http://titv.ipcf.org.tw/images/logo.png?v1.1" group-title="台湾地区",原住民電視
+http://streamipcf.akamaized.net/live/_definst_/live_720/key_b1500.m3u8
+#EXTINF:-1 tvg-id="FSD.TW" tvg-logo="http://www.fanstv.tw/images/logo.png" group-title="台湾地区",番薯電視
+http://210.209.3.1/live/C02DD98E-593E-47A8-905C-3B101183A555.m3u8?fmt=x264_500K_ts&cpid=admin
