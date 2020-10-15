@@ -826,3 +826,35 @@ https://edge-1192-ch-gv.filmon.com/live/27.high.stream/playlist.m3u8
 https://uk.easyview.eu/hls/bbc-alba.m3u8|Referer=https://easyview.eu/watch.php?stream=bbc-alba
 #EXTINF:-1 tvg-id="STA.US" tvg-logo="https://upload.wikimedia.org/wikipedia/en/b/b2/Stadium_TV_network_logo.png" group-title="欧美频道",Stadium Network
 https://stadiumlivein-i.akamaihd.net/hls/live/522512/mux_4/master_2000k.m3u8
+#EXTINF:-1 tvg-id="national-geographic" group-title="欧美频道",National Geographic HD
+http://live-ng-01.more.tv/hls/NGC_HD/master.m3u8
+#EXTINF:-1 tvg-id="nat-geo-wild-hd" group-title="欧美频道",National Geographic Wild HD
+https://sc.id-tv.kz/NatGeoWildHD_34_35.m3u8
+#EXTINF:-1 tvg-id="viasat-sport" tvg-logo="" tvg-name="viasat-sport" group-title="四川移动组播",Viasat Sport
+http://109.239.208.82/viasatshd/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="discovery-science" group-title="四川移动组播",Discovery Science HD
+http://live02-cdn.tv.ti.ru/dtv/id248_NBN_SG--DiscoveryScienceHD/04/plst.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="欧美频道",Bollywood HD
+https://sc.id-tv.kz/bollywood_hd_34_35.m3u8
+#EXTINF:-1 tvg-id="Eurosport-4K" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/eurosport.png" tvg-name="Eurosport-4K" group-title="体育频道",Eurosport 4K
+http://dmitry-tv.my1.ru/his/itv_zabava/01/CH_EUROSPORT4K_HLSUHD.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/eurosport.png" tvg-name="EUROSPORT" group-title="体育频道",Eurosport 4K
+http://a3569457550-zabava-htlive.cdn.ngenix.net/hls/CH_EUROSPORT4K_HLS/bw20000000/playlist.m3u8
+#EXTINF:-1 tvg-id="world-fashion" tvg-name="world-fashion" tvg-logo="" group-title="欧美频道",HD FASHION (FR)
+rtmp://95.67.47.115/live/hdfashion_ua_hi?_=1536181340
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="欧美频道",Первый Музыкальный BY 4K
+http://rtmp.one.by:1499
+#EXTINF:-1 tvg-id="ultra-hd-cinema" tvg-logo="" group-title="欧美频道",Ultra HD Cinema 4K UHD
+http://dmitry-tv.my1.ru/his/itv_zabava/04/CH_ULTRAHDCINEMA_HLSUHD.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="欧美频道",REX 4K UHD
+http://dmitry-tv.my1.ru/his/itv_zabava/03/CH_RUSSIANEXTREMEULTRA_HLSUHD.m3u8
+#EXTINF:-1 tvg-id="love-nature-4k" tvg-logo="" group-title="欧美频道",LOVE NATURE 4K UHD
+http://a3569457544-zabava-htlive.cdn.ngenix.net/hls/CH_LOVENATURE4K_HLS/bw20000000/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="http://i.imgur.com/D4vJyy9.png" group-title="欧美频道",Weather Channel
+https://weather-lh.akamaihd.net/i/twc_1@92006/index_2400_av-b.m3u8?sd=10&rebase=on
+#EXTINF:-1 tvg-id="WEA.US" tvg-logo="http://www.weathernationtv.com/app/uploads/WNTV.jpg" group-title="欧美频道",WeatherNation TV
+http://cdnapi.kaltura.com/p/931702/sp/93170200/playManifest/entryId/1_oorxcge2/format/applehttp/protocol/http/uiConfId/28428751.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="http://static.epg.best/us/BloombergTV.us.png" tvg-name="Bloomberg" group-title="欧美频道",Bloomberg US
+https://liveproduseast.global.ssl.fastly.net/us/Channel-USTV-AWS-virginia-1/Source-USTV-1000-1_live.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="http://www.bloomberght.com/images/logo.png" group-title="欧美频道",Bloomberg HT
+https://ciner.daioncdn.net/bloomberght/bloomberght_720p.m3u8
