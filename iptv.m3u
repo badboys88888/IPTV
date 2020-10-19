@@ -121,6 +121,10 @@ rtp://239.11.0.151:5140
 rtp://239.11.0.152:5140
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/黑莓电影.png" tvg-name="" group-title="四川移动组播",黑莓电影
 rtp://239.11.0.148:5140
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/黑莓电竞.png" tvg-name="" group-title="四川移动组播",黑莓电竞
+http://221.179.217.9/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226262/1.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/黑莓动画.png" tvg-name="" group-title="四川移动组播",黑莓动画
+http://221.179.217.9/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226289/1.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CBN-%E6%AF%8F%E6%97%A5%E5%BD%B1%E9%99%A2.png" tvg-name="CBN每日影院" group-title="四川移动组播",CBN每日影院
 http://home.lpfcdn.com:4000/udp/235.254.198.192:7980
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CBN-%E5%B9%B8%E7%A6%8F%E5%89%A7%E5%9C%BA.png" tvg-name="CBN幸福剧场" group-title="四川移动组播",CBN幸福剧场
