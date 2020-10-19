@@ -375,7 +375,7 @@ http://scgctvshow.sctv.com/hdlive/emei/index.m3u8
 http://scgctvshow.sctv.com/hdlive/sctv9/index.m3u8
 #EXTINF:-1 tvg-logo="http://www.sctv.com/live/pdmk/pdnav/201801/W020181031601081372735.png" tvg-name="SCTV8" group-title="四川移动组播",四川科教频道
 http://182.138.51.79/PLTV/88888920/224/3221225644/index.m3u8
-#EXTINF:-1 tvg-logo="http://www.sctv.com/live/pdmk/pdnav/201801/W020181031600928497907.png" tvg-name="Kangba" group-title="四川移动组播",四川康巴卫视
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/康巴卫视.png" tvg-name="Kangba" group-title="四川移动组播",四川康巴卫视
 http://scgctvshow.sctv.com/hdlive/kangba/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/四川熊猫新闻.png" tvg-name="Kangba" group-title="四川移动组播",panda新闻
 http://182.138.51.79/PLTV/88888920/224/3221225693/index.m3u8
