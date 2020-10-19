@@ -834,7 +834,7 @@ https://stadiumlivein-i.akamaihd.net/hls/live/522512/mux_4/master_2000k.m3u8
 http://live-ng-01.more.tv/hls/NGC_HD/master.m3u8
 #EXTINF:-1 tvg-id="nat-geo-wild-hd" group-title="欧美频道",National Geographic Wild HD
 https://sc.id-tv.kz/NatGeoWildHD_34_35.m3u8
-#EXTINF:-1 tvg-id="viasat-sport" tvg-logo="" tvg-name="viasat-sport" group-title="四川移动组播",Viasat Sport
+#EXTINF:-1 tvg-id="viasat-sport" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/viasatsport.png" tvg-name="viasat-sport" group-title="体育频道",Viasat Sport
 http://109.239.208.82/viasatshd/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="discovery-science" group-title="四川移动组播",Discovery Science HD
 http://live02-cdn.tv.ti.ru/dtv/id248_NBN_SG--DiscoveryScienceHD/04/plst.m3u8
@@ -864,5 +864,3 @@ https://liveproduseast.global.ssl.fastly.net/us/Channel-USTV-AWS-virginia-1/Sour
 https://ciner.daioncdn.net/bloomberght/bloomberght_720p.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/songtv.png" group-title="音乐频道",songtv
 https://songtvru.ru/hd/playlist.m3u8
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="成人频道",大鸡
-http://live.redtraffic.xyz/bigdick.m3u8
