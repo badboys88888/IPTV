@@ -1,6 +1,54 @@
 #EXTM3U
+#EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",USA
+http://92.246.85.106:8000/play/a051/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",SELECT
+http://92.246.85.106:8000/play/a052/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",AL Arabia HD
+http://92.246.85.106:8000/play/a05s/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",AL SHARQIYA HD
+http://92.246.85.106:8000/play/a05r/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",AL-MAYADEEN
+http://92.246.85.106:8000/play/a05i/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",BBC One HD
+http://92.246.85.106:8000/play/a05f/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",BBC Two HD
+http://92.246.85.106:8000/play/a05g/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",Channel 5
+http://92.246.85.106:8000/play/a050/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",DMAX
+http://92.246.85.106:8000/play/a04v/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",Food Network
+http://92.246.85.106:8000/play/a04u/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",Iraqia News HD
+http://92.246.85.106:8000/play/a05d/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",POP
+http://92.246.85.106:8000/play/a04o/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",POP Max
+http://92.246.85.106:8000/play/a04p/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",Paramount
+http://92.246.85.106:8000/play/a054/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",QUEST
+http://92.246.85.106:8000/play/a04x/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",Quest Red
+http://92.246.85.106:8000/play/a04y/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",Sky News Arabia
+http://92.246.85.106:8000/play/a05t/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",Sony Action
+http://92.246.85.106:8000/play/a04k/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",Sony Channel
+http://92.246.85.106:8000/play/a04q/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",Sony Classic
+http://92.246.85.106:8000/play/a04m/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",Sony Movies
+http://92.246.85.106:8000/play/a04l/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",Tiny Pop
+http://92.246.85.106:8000/play/a04n/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",ZAD TV
+http://92.246.85.106:8000/play/a05q/index.m3u8
 #EXTINF:-1 tvg-ID="Cna.SG" tvg-logo="https://video.toggle.sg/image/11392878/16x9/947/533/136b251885c179748ce154d52f50a25f/nm/cna.png" group-title="新马",亚洲新闻台(CNA)
 https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8
+#EXTINF:-1 tvg-ID="" tvg-logo="" group-title="新马",Thai PBS 3
+http://thaipbs-live.cdn.byteark.com/live/playlist_1080p/index.m3u8
 #EXTINF:-1 tvg-ID="TV1.MY" tvg-logo="https://tv1.rtm.gov.my/assets/img/logo3.png" group-title="新马",TV1
 https://rtm1mobile.secureswiftcontent.com/Origin01/ngrp:RTM1/chunklist_b2064000.m3u8
 #EXTINF:-1 tvg-ID="TV2.MY" tvg-logo="https://astrocontent.s3.amazonaws.com/Images/ChannelLogo/Pos/102_300.png" group-title="新马",TV2
@@ -513,6 +561,8 @@ http://pluto-live.plutotv.net/egress/chandler/pluto01/live/VIACBS03/master.m3u8
 http://pluto-live.plutotv.net/egress/chandler/pluto01/live/VIACBS07/master.m3u8
 #EXTINF:-1, tvg-name="" tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/MTVWMA.png" group-title="音乐频道",MTV WMA
 http://pluto-live.plutotv.net/egress/chandler/pluto01/live/VIACBS08/master.m3u8
+#EXTINF:-1, tvg-name="" tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/MTVWMA.png" group-title="音乐频道",MTV HITS
+http://185.186.81.50:8008/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CHANNELV中国.png" tvg-name="CHANNEL[V]" group-title="音乐频道",channelv
 http://hdtv.haust.edu.cn/hls/channelv.m3u8
 #EXTINF:-1 tvg-id="XKW.CN" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/星空卫视.png" tvg-name="星空卫视" group-title="香港澳门",星空卫视
@@ -747,10 +797,16 @@ http://5.135.92.133:52841/out/u/502_1.m3u8
 https://gma2.blab.email/espnu.m3u8
 #EXTINF:-1 tvg-id="WEA.US" tvg-logo="http://www.weathernationtv.com/app/uploads/WNTV.jpg" group-title="欧美频道",WeatherNation TV
 http://cdnapi.kaltura.com/p/931702/sp/93170200/playManifest/entryId/1_oorxcge2/format/applehttp/protocol/http/uiConfId/28428751.m3u8
+#EXTINF:-1 tvg-id="cuatroHD" tvg-logo="" group-title="欧美频道",cuatroHD
+https://linear02-i.akamaihd.net/hls/live/837811/cuatro/03.m3u8
+#EXTINF:-1 tvg-id="CH8" tvg-logo="" group-title="欧美频道",CH8
+http://usa.login.in.th/ch8/ch8/playlist.m3u8
 #EXTINF:-1 tvg-id="B01.QA" tvg-logo="https://static.epg.best/qa/beINSports1.qa.png" group-title="体育频道",beIN Sports 1 Asia
 https://www.livedoomovies.com/02_epl1_720p/chunklist.m3u8
 #EXTINF:-1 tvg-id="B02.QA" tvg-logo="https://static.epg.best/qa/beINSports2.qa.png" group-title="体育频道",beIN Sports 2 Asia
 https://www.livedoomovies.com/02_epl2_720p/chunklist.m3u8
+#EXTINF:-1 tvg-id="B02.QA" tvg-logo="https://static.epg.best/qa/beINSports2.qa.png" group-title="体育频道",beIN Sports 2 
+http://116.203.182.40/hls/bein2.m3u8
 #EXTINF:-1 tvg-id="BXT.US" tvg-logo="https://www.beinsportsxtra.com/images/icons/logo/beIN-SPORTS-XTRA_LOGO.png" group-title="体育频道",beIN Xtra
 https://bein-plutolive-vo.akamaized.net/playlist.m3u8
 #EXTINF:-1 tvg-name="055" tvg-ID="KS1.KR" tvg-logo="https://static.epg.best/kr/KBS1.kr.png" group-title="日韩频道",KBS 1
@@ -858,7 +914,9 @@ https://nhkworld.webcdn.stream.ne.jp/www11/nhkworld-tv/global/2003458/live.m3u8
 #EXTINF:-1 tvg-id="B4M.IN" tvg-logo="https://b4umusic.in/images/logo.png" group-title="音乐频道",B4U Music
 http://103.199.161.254/Content/B4Umusic/Live/Channel(B4Umusic)/index.m3u8
 http://sportportal1.akamaized.net/hls/live/702646/itvlive/ITV1PORTAL2/master_Main1800.m3u8
-#EXTINF:-1 tvg-id="IT2.UK" tvg-logo="http://static.epg.best/gb/ITV2.uk.png" group-title="欧美频道",ITV2
+#EXTINF:-1 tvg-id="IT2.UK" tvg-logo="" group-title="欧美频道",HollywoodHD
+http://185.251.208.2:8080/HollywoodHD/index.m3u8
+#EXTINF:-1 tvg-id="HollywoodHD" tvg-logo="http://static.epg.best/gb/ITV2.uk.png" group-title="欧美频道",ITV2
 http://51.52.156.22:8888/http/005
 #EXTINF:-1 tvg-id="IT3.UK" tvg-logo="http://static.epg.best/gb/ITV3.uk.png" group-title="欧美频道",ITV3
 http://51.52.156.22:8888/http/006
@@ -1615,3 +1673,67 @@ http://hls.tmacaraibes.com/live/index.m3u8
 http://stream4.swecom.cm/star21/chunklist_b2038272.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://viaoccitanie.tv/fileadmin/via_main/img/logos/viaOccitanie-header.png" group-title="欧美频道",Vià Occitanie
 https://streamer01.myvideoplace.tv/streamer02/hls/MDS_VIA_PAD_301117_medium/index.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="MTV" group-title="音乐频道",MTV
+http://unilivemtveu-lh.akamaihd.net/i/mtvno_1@346424/index_3500_av-p.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="m2otv" group-title="音乐频道",m2otv
+http://m2otv-lh.akamaihd.net/i/m2oTv_1@186074/index_600_av-b.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="sport2" group-title="体育频道",sport2
+http://144.76.91.70:8081/streamrtmp/ss2/playlist.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="djing" group-title="音乐频道",djing
+https://www.djing.com/tv/underground.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="starsports2" group-title="体育频道",starsports1
+http://global.thunderbd.com/25/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="starsports2" group-title="体育频道",starsports1 HD
+http://global.thunderbd.com/27/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="starsports2" group-title="体育频道",starsports2
+http://global.thunderbd.com/26/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="starsports2" group-title="体育频道",starsports2 HD
+http://global.thunderbd.com/28/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="starsports2" group-title="印度地区",stars HD
+http://global.thunderbd.com/30/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="starsports2" group-title="印度地区",印度卫视合家欢
+http://global.thunderbd.com/31/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="SonyMax" group-title="印度地区",Sony Max
+http://global.thunderbd.com/37/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="STARPLUSHD" group-title="印度地区",STAR PLUS HD
+http://global.thunderbd.com/37/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="GTV" group-title="印度地区",GTV HD
+http://global.thunderbd.com/1/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="STARPLUSHD" group-title="印度地区",9 HD
+http://global.thunderbd.com/4/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="VIVAMusic" group-title="音乐频道",VIVA Music
+https://hls.myvideocontent.ru/hls2/vivarussia/index.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="v2beat" group-title="音乐频道",v2beat
+https://abr.de1se01.v2beat.live/playlist.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="" group-title="音乐频道",Gospel Truth TV (USA) Music
+https://bstna.tulix.tv/live/bs_2m/index.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="" group-title="音乐频道",Music
+https://azroe0x-lh.akamaihd.net/i/test_1@775856/master.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="" group-title="音乐频道",COMPANY TV HD Music
+http://wma10.fluidstream.net/CompanyTV/_definst_/mp4:livestream_720p/playlist.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="" group-title="音乐频道",Classic Arts Showcase Music
+https://classicarts.global.ssl.fastly.net/live/cas/master_3000k.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="" group-title="音乐频道",CMC (USA)
+https://cmctv.ios.internapcdn.net/cmctv_vitalstream_com/live_1/CMC-TV/master.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="" group-title="音乐频道",skyfolk Music 
+http://www.skyfolk.mk/live.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="" group-title="体育频道",MBC SPORTS+
+http://211.245.55.198:1024/m2u/239.192.59.3:49220
+#EXTINF:-1 tvg-logo="" tvg-name="" group-title="欧美频道",HBO
+http://136.243.177.164/HBO/playlist.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="" group-title="欧美频道",HBO2
+http://136.243.177.164/HBO2/playlist.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="" group-title="欧美频道",HBO3
+http://136.243.177.164/HBO3/playlist.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="" group-title="体育频道",TRT sport2hd
+http://iptvmasterlink.dyndns.org:8080/Entry/trtspor2hd_yeni/playlist.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="" group-title="体育频道",BT SPORT 1 HD
+https://www.livedoomovie.com/02_BTSPORTHD_1_720p/chunklist.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="" group-title="体育频道",BT SPORT 2 HD
+https://www.livedoomovie.com/02_BTSPORTHD_2_720p/chunklist.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="" group-title="台湾地区",GOODTV1
+http://live.streamingfast.net/hls-live/goodtv/_definst_/liveevent/live-ch1-1.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="" group-title="台湾地区",GOODTV2
+http://live.streamingfast.net/hls-live/goodtv/_definst_/liveevent/live-ch2-1.m3u8
+#EXTINF:-1 tvg-logo="" tvg-name="" group-title="体育频道",J SPROTS 1 HD
+http://193.42.99.130:23455/3640/playlist.m3u8
