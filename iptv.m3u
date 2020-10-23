@@ -194,13 +194,15 @@ http://223.110.245.136/PLTV/3/224/3221226975/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/RTHK31.png" group-title="香港澳门",港台電視31
 http://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/index_2052_av-p.m3u8?sd=10&rebase=on
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/RTHK32.png" group-title="香港澳门",港台電視32
-https://rthklive2-lh.akamaihd.net/i/rthk32_1@168450/index_1080_av-b.m3u8?sd=10&rebase=on
+https://rthklive2-lh.akamaihd.net/i/rthk32_1@168450/index_1080_av-p.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/RTHK31.png" group-title="香港澳门",港台電視31
 https://cdn.hkdtmb.com/hls/31/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/RTHK32.png" group-title="香港澳门",港台電視32
 https://cdn.hkdtmb.com/hls/32/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/rtk33.png" group-title="香港澳门",港台電視33
 https://cdn.hkdtmb.com/hls/33/index.m3u8
+#EXTINF：-1 tvg-id =“” tvg-name =“ ATV经典台” tvg-language =“” tvg-logo =“ https://www.hkatv.com/images/atv_logo_200x200.png” tvg-country =“ HK” tvg-url =“” group-title =“香港澳门”，ATV经典台
+https://15813114727637862976168173814320.live.prod.hkatv.com/a1_cbr_lo_720p.m3u8
 #EXTINF:-1 tvg-id="V99.HK" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/Viu%20TV.png" tvg-name="ViuTV" group-title="香港澳门",ViuTV
 http://61.238.6.49:8000/bysid/99
 #EXTINF:-1 tvg-id="V99.HK" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/Viu%20TV.png" tvg-name="ViuTV" group-title="香港澳门",ViuTV
@@ -235,8 +237,24 @@ http://livetv.dnsfor.me/channel.7.m3u8
 http://livetv.dnsfor.me:80/channel.5.m3u8
 #EXTINF:-1 tvg-ID="YCJ.HK" tvg-logo="http://utvhk.com/maint/images/channel/be75ddf0144b7fccdd03bf8016a61f64.png" tvg-name="有線财经资讯" group-title="香港澳门",有線財經資訊
 http://livetv.dnsfor.me/channel.6.m3u8
+#EXTINF:-1 tvg-ID="YXW.HK" tvg-logo="http://utvhk.com/maint/images/channel/be75ddf0144b7fccdd03bf8016a61f64.png" tvg-name="有線直播新闻台" group-title="香港澳门",有線直播新闻台
+http://teslagram.com/live/channel_110.m3u8
 #EXTINF:-1 tvg-id="NOP.HK" tvg-logo="http://static.epg.best/hk/NowSportsPrime.hk.png" group-title="香港澳门",Now Sports Prime
-http://teslagram.com/live/channel_630.m3u8
+http://hls.globaliptv.ml/now630.php
+#EXTINF:-1 tvg-id="NOW.HK" tvg-logo="http://static.epg.best/hk/NowSportsPrime.hk.png" group-title="香港澳门",Now新闻台
+http://hls.globaliptv.ml/now332.php
+#EXTINF:-1 tvg-id="" tvg-logo="http://static.epg.best/hk/NowSportsPrime.hk.png" group-title="香港澳门",Now直播新闻台
+http://hls.globaliptv.ml/now331.php
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="香港澳门",香港电台直播
+https://rthkcnews-lh.akamaihd.net/i/rthknews_1@312607/index_190000011_av-b.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="香港澳门",NHK华语视界
+http://nhkw-zh-hlscomp.akamaized.net/8thz5iufork8wjip/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="香港澳门",美国之音中文
+http://voa-lh.akamaihd.net/i/voa_mpls_tvmc8@326847/master.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="香港澳门",EuroNews
+http://raw.githubusercontent.com/exodiver/IPTV/master/M3U8/Token/EuroNews.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="香港澳门",耀才財經台
+http://fc_video.bsgroup.com.hk:443/webcast/bshdlive-pc/playlist.m3u8
 #EXTINF:-1 tvg-ID="668.HK" tvg-logo="https://upload.wikimedia.org/wikipedia/zh/b/bf/HKJC_Horse_Racing.jpg" group-title="香港澳门",赛马直击
 http://liveima.utvlive.top/livehls/MOB-HR/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://mo.heytv.org/wp-content/uploads/2018/12/1-1P5121Q245326.jpg" group-title="香港澳门",澳視澳門台
@@ -809,6 +827,10 @@ http://116.203.182.40/hls/bein2.m3u8
 https://bein-plutolive-vo.akamaized.net/playlist.m3u8
 #EXTINF:-1 tvg-name="055" tvg-ID="KS1.KR" tvg-logo="https://static.epg.best/kr/KBS1.kr.png" group-title="日韩频道",KBS 1
 http://211.245.55.198:1024/m2u/239.192.67.100:49220
+#EXTINF:-1 tvg-name="057" tvg-ID="SBS.KR" tvg-logo="https://static.epg.best/kr/SBS.kr.png" group-title="日韩频道",SBS国际
+http://streaming-a-802.cdn.nextologies.com/SBS_Live_HD/live/SBS_Live_HD_1500k/chunks.m3u8
+#EXTINF:-1 tvg-name="057" tvg-ID="SBS.KR" tvg-logo="https://static.epg.best/kr/SBS.kr.png" group-title="日韩频道",SBS Plus International
+https://streaming-a-802.cdn.nextologies.com/SBS_Plus/live/SBS_Plus_1500k/chunks.m3u8
 #EXTINF:-1 tvg-name="056" tvg-ID="MBC.KR" tvg-logo="https://static.epg.best/kr/MBC.kr.png" group-title="日韩频道",MBC
 http://211.54.140.36/hdmi
 #EXTINF:-1 tvg-name="057" tvg-ID="SBS.KR" tvg-logo="https://static.epg.best/kr/SBS.kr.png" group-title="日韩频道",SBS
@@ -1735,3 +1757,118 @@ http://live.streamingfast.net/hls-live/goodtv/_definst_/liveevent/live-ch1-1.m3u
 http://live.streamingfast.net/hls-live/goodtv/_definst_/liveevent/live-ch2-1.m3u8
 #EXTINF:-1 tvg-logo="" tvg-name="" group-title="体育频道",J SPROTS 1 HD
 http://193.42.99.130:23455/3640/playlist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“四川移动组播”，首映电影
+http://szdl.3322.org:8888/rtp/233.50.201.239:5140
+#EXTINF：-1 tvg-logo =“” group-title =“四川移动组播”，环球电影
+http://szdl.3322.org:8888/rtp/233.50.201.231:5140
+#EXTINF：-1 tvg-logo =“” group-title =“四川移动组播”，动作影院
+http://szdl.3322.org:8888/rtp/233.50.201.232:5140
+#EXTINF：-1 tvg-logo =“” group-title =“四川移动组播”，欧洲影院
+http://szdl.3322.org:8888/rtp/233.50.201.230:5140
+#EXTINF：-1 tvg-logo =“” group-title =“四川移动组播”，华语影院
+http://szdl.3322.org:8888/rtp/233.50.201.240:5140
+#EXTINF：-1 tvg-logo =“” group-title =“四川移动组播”，4K超清
+http://szdl.3322.org:8888/rtp/233.50.201.243:5140
+#EXTINF：-1 tvg-logo =“” group-title =“四川移动组播”，古装剧场
+http://szdl.3322.org:8888/rtp/233.50.201.236:5140
+#EXTINF：-1 tvg-logo =“” group-title =“四川移动组播”，谍战剧场
+http://szdl.3322.org:8888/rtp/233.50.201.235:5140
+#EXTINF：-1 tvg-logo =“” group-title =“四川移动组播”，白金剧场
+http://szdl.3322.org:8888/rtp/233.50.201.234:5140
+#EXTINF：-1 tvg-logo =“” group-title =“四川移动组播”，热门综艺
+http://szdl.3322.org:8888/rtp/233.50.201.233:5140
+#EXTINF：-1 tvg-logo =“https://freetvdd.com/wp-content/uploads/2019/12/3-channel.png” group-title =“泰国地区”，3HD
+https://www.livedoomovie.com/02_3HD_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“https://freetvdd.com/wp-content/uploads/2019/12/5-channel.png” group-title =“泰国地区”，5HD
+https://www.livedoomovie.com/02_5HD_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“https://freetvdd.com/wp-content/uploads/2019/12/7-channel.png” group-title =“泰国地区”，7HD
+https://www.livedoomovie.com/02_7HD_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“https://freetvdd.com/wp-content/uploads/2019/12/mcot-hd.png” group-title =“泰国地区”，MCOT HD
+https://www.livedoomovie.com/02_MCOTHD_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“https://freetvdd.com/wp-content/uploads/2019/12/pptv-channel.png” group-title =“泰国地区”，PPTV HD
+https://www.livedoomovie.com/02_PPTVHD_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“https://freetvdd.com/wp-content/uploads/2019/12/thai-pbs.png” group-title =“泰国地区”，THAIRATH HD
+https://www.livedoomovie.com/02_THAIRATH_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“https://sv1.picz.in.th/images/2020/09/21/OO26PR.png” group-title =“泰国地区”，TRUE4U
+https://www.livedoomovie.com/02_TRUE4U_480p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“http://mcotdigital-pnnouc.cdn.byteark.com/mcothd1080p_edge/smil:mcothd1080p.smil/chunklist.m3u8” group-title =“泰国地区”，MCOT FAMILY
+https://www.livedoomovie.com/02_MCOTFAMILY_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，FANMUSICHD
+https://www.livedoomovie.com/02_FANMUSICHD_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，PremierHD1
+https://www.livedoomovie.com/02_PremierHD1_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，PremierHD2
+https://www.livedoomovie.com/02_PremierHD2_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，PremierHD3
+https://www.livedoomovie.com/02_PremierHD3_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，PremierHD4
+https://www.livedoomovie.com/02_PremierHD4_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，PremierHD5
+https://www.livedoomovie.com/02_PremierHD5_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，True Sport HD1
+https://www.livedoomovie.com/02_2sporthd1_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，True Sport HD2
+https://www.livedoomovie.com/02_2sporthd2_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，True Sport HD3
+https://www.livedoomovie.com/02_2sporthd3_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，True Sport HD4
+https://www.livedoomovie.com/02_2sporthd4_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，Fox Sport1
+https://www.livedoomovie.com/02_foxsport_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，Fox Sport2
+https://www.livedoomovie.com/02_FoxSport2_TH_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，Fox Sport3
+https://www.livedoomovie.com/02_FoxSport3_TH_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，Tennis HD
+https://www.livedoomovie.com/02_TennisHD_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，NBA HD
+https://www.livedoomovie.com/02_nbahd_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，Golf HD
+https://www.livedoomovie.com/02_golfhd_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，HBO HD
+https://www.livedoomovie.com/02_HBOHD_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，HBO Hit
+https://www.livedoomovie.com/02_HBOHit_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，FoxMovies_TH
+https://www.livedoomovie.com/02_FoxMoviesTH_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，FoxMovies
+https://www.livedoomovie.com/02_FoxMoviesHD_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，FoxThai_TH
+https://www.livedoomovie.com/02_FoxThai_TH_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，RedbyHBO
+https://www.livedoomovie.com/02_RedbyHBO_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，AXN HD
+https://www.livedoomovie.com/02_AXNHD_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，WarnerTV HD
+https://www.livedoomovie.com/02_WarnerTVHD_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，HISTORY HD
+https://www.livedoomovie.com/02_HISTORYHD_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，H2 HD
+https://www.livedoomovie.com/02_H2HD_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，DiscoveryChannel
+https://www.livedoomovie.com/02_DiscoveryChannel/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，DiscoveryHDWorld
+https://www.livedoomovie.com/02_DiscoveryHDWorld/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，AnimalPlanet
+https://www.livedoomovie.com/02_AnimalPlanet/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，Sumrujlok
+https://www.livedoomovie.com/sumrujlok_goodtv/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，CartoonNetwork
+https://www.livedoomovie.com/02_CartoonNetwork_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，DisneyXD
+https://www.livedoomovie.com/02_DisneyXD_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，T_Sports
+https://www.livedoomovie.com/02_T_Sports_480p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，MANGORN
+https://www.livedoomovie.com/02_MANGORN_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，FANMUSICHD
+https://www.livedoomovie.com/02_FANMUSICHD_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，Wish_Channel
+https://www.livedoomovie.com/02_Wish_Channel_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，NHK_WORLD_TV
+https://www.livedoomovie.com/02_NHK_WORLD_TV_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，TrueFilmHD1
+Https://www.livedoomovie.com/02_TrueFilmHD1_720p/chunklist.m3u8
+#EXTINF：-1 tvg-logo =“” group-title =“泰国地区”，TrueFilmHD2
+Https://www.livedoomovie.com/02_TrueFilmHD2_720p/chunklist.m3u8
+
