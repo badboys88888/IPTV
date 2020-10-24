@@ -1883,9 +1883,11 @@ Https://www.livedoomovie.com/02_TrueFilmHD2_720p/chunklist.m3u8
 http://96.30.124.100:1935/edgepsi/PSIHD.stream_720p/playlist.m3u8
 #EXTINF:-1 tvg-logo="" group-title ="体育频道",西甲1
 https://storage.googleapis.com/dailyseg1/1/1.m3u8
-#EXTINF:-1 tvg-logo="" group-title ="体育频道",西甲2
+#EXTINF:-1 tvg-logo="" group-title ="体育频道",西甲1
+https://cdn.dailysport.pw/1/1.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="体育频道",BEIN SPORTS
 https://storage.googleapis.com/dailyseg1/2/2.m3u8
-#EXTINF:-1 tvg-logo="" group-title ="体育频道",西甲3
+#EXTINF:-1 tvg-logo="" group-title ="体育频道",BEIN SPORTS N
 https://storage.googleapis.com/dailyseg1/3/3.m3u8
 #EXTINF:-1 tvg-logo="" group-title ="体育频道",西甲4
 https://storage.googleapis.com/dailyseg1/4/4.m3u8
@@ -1911,8 +1913,32 @@ http://103.194.171.164/hls/bt1.m3u8
 http://45.134.21.230/hls/T1.m3u8
 #EXTINF:-1 tvg-logo="" group-title ="体育频道",BT SPORTS 2
 http://hhdstreams.club/page/ch2.php
+#EXTINF:-1 tvg-logo="" group-title ="体育频道",bein sports n
+https://cdn.dailysport.pw/3/3.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="体育频道",BEIN SPORTS 1 HD
+http://arb.ssltv.net:9263/AR_4K_-_BEIN_SPORTS_1_HD/index.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="体育频道",BEIN SPORTS 2 HD
+http://arb.ssltv.net:9263/AR_4K_-_BEIN_SPORTS_2_HD/index.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="体育频道",BEIN SPORTS 3 HD
+http://arb.ssltv.net:9263/AR_4K_-_BEIN_SPORTS_3_HD/index.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="体育频道",BEIN SPORTS 4 HD
+http://arb.ssltv.net:9263/AR_4K_-_BEIN_SPORTS_4_HD/index.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="体育频道",BEIN SPORTS 5 HD
+http://arb.ssltv.net:9263/AR_4K_-_BEIN_SPORTS_5_HD/index.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="体育频道",BEIN SPORTS 7 HD
+http://arb.ssltv.net:9263/AR_4K_-_BEIN_SPORTS_6_HD/index.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="体育频道",BEIN SPORTS 8 HD
+http://arb.ssltv.net:9263/AR_4K_-_BEIN_SPORTS_7_HD/index.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="体育频道",BEIN SPORTS 9 HD
+http://arb.ssltv.net:9263/AR_4K_-_BEIN_SPORTS_8_HD/index.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="体育频道",BEIN SPORTS 10 HD
+http://arb.ssltv.net:9263/AR_4K_-_BEIN_SPORTS_9_HD/index.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="体育频道",DUBAI SPORTS
+http://arb.ssltv.net:9263/AR_4K_-_BEIN_SPORTS_10_HD/index.m3u8
 #EXTINF:-1 tvg-logo="" group-title ="体育频道",premier SPORTS 1
 http://45.134.21.230/hls/T2.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="体育频道",fightbox
+http://185.36.100.33/fightboxhd/index.m3u8
 #EXTINF:-1 tvg-logo="" group-title ="体育频道",ETBSTR1
 https://etbvnogeo-lh.akamaihd.net/i/ETBSTR1_1@595581/index_2596_av-b.m3u8
 #EXTINF:-1 tvg-logo="" group-title ="体育频道",fox sports 55 hd
