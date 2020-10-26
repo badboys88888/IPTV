@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="CNN.News" tvg-logo="http://static.epg.best/gb/CNN.uk.png" tvg-name="CNN" group-title="欧美频道",CNN
+http://60.251.61.66:4014/VideoInput/play.ts
 #EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",USA
 http://92.246.85.106:8000/play/a051/index.m3u8
 #EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",SELECT
@@ -1909,4 +1911,9 @@ http://cdn.wakds.xyz:25461/live/hls/live/1437.m3u8
 http://cdn.wakds.xyz:25461/live/hls/live/1439.m3u8
 #EXTINF:-1 tvg-logo="" group-title ="台湾地区",翡翠台
 http://cdn.wakds.xyz:25461/live/hls/live/1440.m3u8
-
+#EXTINF:-1 tvg-logo="" group-title ="台湾地区",寰宇新闻
+http://520574.xyz/dl/hyxw.php?id=1
+#EXTINF:-1 tvg-logo="" group-title ="台湾地区",寰宇新闻台湾台
+http://520574.xyz/dl/hyxw.php?id=2
+#EXTINF:-1 tvg-logo="" group-title ="日韩频道",SKYSPORTS
+http://live2.abcdsky.com:1935/live/SKYSPO/playlist.m3u8
