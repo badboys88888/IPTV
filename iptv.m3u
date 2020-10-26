@@ -841,23 +841,23 @@ http://116.203.182.40/hls/bein2.m3u8
 https://bein-plutolive-vo.akamaized.net/playlist.m3u8
 #EXTINF:-1 tvg-id="B01.QA" tvg-logo="https://static.epg.best/qa/beINSports1.qa.png" group-title="体育频道",beIN Sports 1 
 http://116.203.155.242/hls/bein1.m3u8
-#EXTINF:-1 tvg-id="B01.QA" tvg-logo="https://static.epg.best/qa/beINSports2.qa.png" group-title="体育频道",beIN Sports 2 
+#EXTINF:-1 tvg-id="B02.QA" tvg-logo="https://static.epg.best/qa/beINSports2.qa.png" group-title="体育频道",beIN Sports 2 
 http://116.203.155.242/hls/bein2.m3u8
-#EXTINF:-1 tvg-id="B01.QA" tvg-logo="https://static.epg.best/qa/beINSports3.qa.png" group-title="体育频道",beIN Sports 3 
+#EXTINF:-1 tvg-id="B03.QA" tvg-logo="https://static.epg.best/qa/beINSports3.qa.png" group-title="体育频道",beIN Sports 3 
 http://116.203.155.242/hls/bein3.m3u8
-#EXTINF:-1 tvg-id="B01.QA" tvg-logo="https://static.epg.best/qa/beINSports4.qa.png" group-title="体育频道",beIN Sports 4 
+#EXTINF:-1 tvg-id="B04.QA" tvg-logo="https://static.epg.best/qa/beINSports4.qa.png" group-title="体育频道",beIN Sports 4 
 http://116.203.155.242/hls/bein4.m3u8
-#EXTINF:-1 tvg-id="B01.QA" tvg-logo="https://static.epg.best/qa/beINSports5.qa.png" group-title="体育频道",beIN Sports 5 
+#EXTINF:-1 tvg-id="B05.QA" tvg-logo="https://static.epg.best/qa/beINSports5.qa.png" group-title="体育频道",beIN Sports 5 
 http://116.203.155.242/hls/bein5.m3u8
-#EXTINF:-1 tvg-id="B01.QA" tvg-logo="https://static.epg.best/qa/beINSports6.qa.png" group-title="体育频道",beIN Sports 6
+#EXTINF:-1 tvg-id="B06.QA" tvg-logo="https://static.epg.best/qa/beINSports6.qa.png" group-title="体育频道",beIN Sports 6
 http://116.203.155.242/hls/bein6.m3u8
-#EXTINF:-1 tvg-id="B01.QA" tvg-logo="https://static.epg.best/qa/beINSports7.qa.png" group-title="体育频道",beIN Sports 7 
+#EXTINF:-1 tvg-id="B07.QA" tvg-logo="https://static.epg.best/qa/beINSports7.qa.png" group-title="体育频道",beIN Sports 7 
 http://116.203.155.242/hls/bein7.m3u8
-#EXTINF:-1 tvg-id="B01.QA" tvg-logo="https://static.epg.best/qa/beINSports8.qa.png" group-title="体育频道",beIN Sports 8 
+#EXTINF:-1 tvg-id="B08.QA" tvg-logo="https://static.epg.best/qa/beINSports8.qa.png" group-title="体育频道",beIN Sports 8 
 http://116.203.155.242/hls/bein8.m3u8
-#EXTINF:-1 tvg-id="B01.QA" tvg-logo="https://static.epg.best/qa/beINSports9.qa.png" group-title="体育频道",beIN Sports 9 
+#EXTINF:-1 tvg-id="B09.QA" tvg-logo="https://static.epg.best/qa/beINSports9.qa.png" group-title="体育频道",beIN Sports 9 
 http://116.203.155.242/hls/bein9.m3u8
-#EXTINF:-1 tvg-id="B01.QA" tvg-logo="https://static.epg.best/qa/beINSports10.qa.png" group-title="体育频道",beIN Sports 10 
+#EXTINF:-1 tvg-id="B10.QA" tvg-logo="https://static.epg.best/qa/beINSports10.qa.png" group-title="体育频道",beIN Sports 10 
 http://116.203.155.242/hls/bein10.m3u8
 #EXTINF:-1 tvg-name="055" tvg-ID="KS1.KR" tvg-logo="https://static.epg.best/kr/KBS1.kr.png" group-title="日韩频道",KBS 1
 http://211.245.55.198:1024/m2u/239.192.67.100:49220
