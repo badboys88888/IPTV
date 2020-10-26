@@ -245,6 +245,12 @@ http://hls.globaliptv.ml/now630.php
 http://hls.globaliptv.ml/now332.php
 #EXTINF:-1 tvg-id="" tvg-logo="http://static.epg.best/hk/NowSportsPrime.hk.png" group-title="香港澳门",Now直播新闻台
 http://hls.globaliptv.ml/now331.php
+#EXTINF:-1 tvg-id="NOW.HK" tvg-logo="http://static.epg.best/hk/NowSportsPrime.hk.png" group-title="香港澳门",Now新闻台
+http://teslagram.com/live/channel_332.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="http://static.epg.best/hk/NowSportsPrime.hk.png" group-title="香港澳门",Now直播新闻台
+http://teslagram.com/live/channel_331.m3u8
+#EXTINF:-1 tvg-id="NOP.HK" tvg-logo="http://static.epg.best/hk/NowSportsPrime.hk.png" group-title="香港澳门",Now Sports Prime
+http://teslagram.com/live/channel_630.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="香港澳门",香港电台直播
 https://rthkcnews-lh.akamaihd.net/i/rthknews_1@312607/index_190000011_av-b.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="香港澳门",NHK华语视界
@@ -1889,3 +1895,18 @@ https://etbvnogeo-lh.akamaihd.net/i/ETBSTR1_1@595581/index_2596_av-b.m3u8
 https://overtakefans.com/f1-live-stream/f1tv-pro-stream-web-player/master2.m3u8
 #EXTINF:-1 tvg-logo="" group-title ="体育频道",皇马体育台
 https://rmtv24hweblive-lh.akamaihd.net/i/rmtv24hwebes_1@300661/index_3_av-p.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="台湾地区",天映经典频道
+http://cdn.wakds.xyz:25461/live/hls/live/1433.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="台湾地区",CI犯罪纪录
+http://cdn.wakds.xyz:25461/live/hls/live/1434.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="台湾地区",CNEX
+http://cdn.wakds.xyz:25461/live/hls/live/1435.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="台湾地区",影迷纪实台
+http://cdn.wakds.xyz:25461/live/hls/live/1436.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="台湾地区",影迷数位电影台
+http://cdn.wakds.xyz:25461/live/hls/live/1437.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="台湾地区",TVB经典台
+http://cdn.wakds.xyz:25461/live/hls/live/1439.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="台湾地区",翡翠台
+http://cdn.wakds.xyz:25461/live/hls/live/1440.m3u8
+
