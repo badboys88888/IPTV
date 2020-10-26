@@ -1891,9 +1891,9 @@ https://www.livedoomovie.com/02_FoxSport2_TH_720p/chunklist.m3u8
 https://www.livedoomovie.com/02_FoxSport3_TH_720p/chunklist.m3u8
 #EXTINF:-1 tvg-logo="https://teevee-hd.com/img/tennis.png" group-title ="泰国地区",Tennis HD
 https://www.livedoomovie.com/02_TennisHD_720p/chunklist.m3u8
-#EXTINF:-1 tvg-logo="https://teevee-hd.com/img/nba.png" group-title ="泰国地区",NBA HD
+#EXTINF:-1 tvg-id="NBA.US" tvg-logo="https://poster.starhubgo.com/Linear_channels2/217_1920x1080_HTV.png" group-title ="体育频道",NBA HD
 https://www.livedoomovie.com/02_nbahd_720p/chunklist.m3u8
-#EXTINF:-1 tvg-logo="https://teevee-hd.com/img/golf.png" group-title ="泰国地区",Golf HD
+#EXTINF:-1 tvg-id="GOF.Int" tvg-logo="https://teevee-hd.com/img/golf.png" group-title ="体育频道",Golf HD
 https://www.livedoomovie.com/02_golfhd_720p/chunklist.m3u8
 #EXTINF:-1 tvg-logo="https://teevee-hd.com/img/hbohd.png" group-title ="泰国地区",HBO HD
 https://www.livedoomovie.com/02_HBOHD_720p/chunklist.m3u8
