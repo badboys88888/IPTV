@@ -875,6 +875,18 @@ http://116.203.155.242/hls/bein8.m3u8
 http://116.203.155.242/hls/bein9.m3u8
 #EXTINF:-1 tvg-id="B10.QA" tvg-logo="https://static.epg.best/qa/beINSports10.qa.png" group-title="体育频道",beIN Sports 10 
 http://116.203.155.242/hls/bein10.m3u8
+#EXTINF：-1 tvg-id="ES2.BR" tvg-logo =“https://www.net.com.br/imagens/logo/espn_2_hd-2251_95x39.png” tvg-name =“ ESPN 2” group-title =“体育频道”，ESPN 2
+https://gma2.blab.email/espn2.m3u8
+#EXTINF：-1 tvg-id="ESU.US" tvg-logo =“” tvg-name =“ ESPN U” group-title =“体育频道”，ESPN U
+https://gma2.blab.email/espnu.m3u8 
+#EXTINF：-1 tvg-id="ESN.US tvg-logo =“” tvg-name =“ ESPN新闻” group-title =“体育频道”，ESPN新闻
+https://gma2.blab.email/espnews.m3u8
+#EXTINF：-1 tvg-id="" tvg-logo =“” tvg-name =“ ESPN ACCN” group-title =“体育频道”，ESPN ACCN
+https://gma2.blab.email/acc.m3u8 
+#EXTINF：-1 tvg-id="" tvg-logo =“” tvg-name =“ ESPN sec” group-title =“体育频道”，ESPN sec
+https://gma2.blab.email/sec.m3u8
+#EXTINF：-1 tvg-id="" tvg-logo =“” tvg-name =“ ESPN FS2” group-title =“体育频道”，ESPN FS2
+https://gma2.blab.email/fs2.m3u8
 #EXTINF:-1 tvg-name="055" tvg-ID="KS1.KR" tvg-logo="https://static.epg.best/kr/KBS1.kr.png" group-title="日韩频道",KBS 1
 http://211.245.55.198:1024/m2u/239.192.67.100:49220
 #EXTINF:-1 tvg-name="057" tvg-ID="SBS.KR" tvg-logo="https://static.epg.best/kr/SBS.kr.png" group-title="日韩频道",SBS国际
