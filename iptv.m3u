@@ -849,9 +849,9 @@ http://cdnapi.kaltura.com/p/931702/sp/93170200/playManifest/entryId/1_oorxcge2/f
 https://linear02-i.akamaihd.net/hls/live/837811/cuatro/03.m3u8
 #EXTINF:-1 tvg-id="CH8" tvg-logo="" group-title="欧美频道",CH8
 http://usa.login.in.th/ch8/ch8/playlist.m3u8
-#EXTINF:-1 tvg-id="B01.QA" tvg-logo="https://static.epg.best/qa/beINSports1.qa.png" group-title="体育频道",beIN Sports 1 Asia
+#EXTINF:-1 tvg-id="B01.th" tvg-logo="https://static.epg.best/qa/beINSports1.qa.png" group-title="体育频道",beIN Sports 1 Asia
 https://www.livedoomovies.com/02_epl1_720p/chunklist.m3u8
-#EXTINF:-1 tvg-id="B02.QA" tvg-logo="https://static.epg.best/qa/beINSports2.qa.png" group-title="体育频道",beIN Sports 2 Asia
+#EXTINF:-1 tvg-id="B02.th" tvg-logo="https://static.epg.best/qa/beINSports2.qa.png" group-title="体育频道",beIN Sports 2 Asia
 https://www.livedoomovies.com/02_epl2_720p/chunklist.m3u8
 #EXTINF:-1 tvg-id="BXT.US" tvg-logo="https://www.beinsportsxtra.com/images/icons/logo/beIN-SPORTS-XTRA_LOGO.png" group-title="体育频道",beIN Xtra
 https://bein-plutolive-vo.akamaized.net/playlist.m3u8
@@ -2065,3 +2065,5 @@ http://520574.xyz/dl/nbtv.php?id=4
 http://520574.xyz/dl/nbtv.php?id=5
 #EXTINF:-1 tvg-logo="" group-title ="地方台",宁波6套
 http://520574.xyz/dl/nbtv.php?id=6
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/OneSportsPlus_logo.svg/200px-OneSportsPlus_logo.svg.png" group-title="Pilipinas",One Sports
+http://stream2.tv5.com.ph:1935/live3/smil:onesports.smil/chunklist_w730697820_b628000.m3u8
