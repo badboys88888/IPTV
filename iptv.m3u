@@ -69,6 +69,8 @@ https://fvtv.mywire.org/playlist/c6pxxm7rgq-maywremf1e.m3u8|Referer=https://www.
 https://fvtv.mywire.org/playlist/v6wy5rq4af-qs2njy69km.m3u8
 #EXTINF:-1 tvg-ID="8TV.MY" tvg-logo="https://www.xtra.com.my/wp-content/themes/xtra_revamp/assets/img/tv8.png" group-title="新马",八度空间
 https://fvtv.mywire.org/playlist/8dscyy8nb0-hatkqxr4hm.m3u8
+#EXTINF:-1 tvg-ID="8TV.MY" tvg-logo="https://www.xtra.com.my/wp-content/themes/xtra_revamp/assets/img/tv8.png" group-title="新马",八度空间
+http://b.315600.xyz/8tv.php?qu=1080
 #EXTINF:-1 tvg-ID="TV9.MY" tvg-logo="https://www.xtra.com.my/wp-content/themes/xtra_revamp/assets/img/tv9.png" group-title="新马",TV9
 https://fvtv.mywire.org/playlist/cyxua17hra-kspk2qfm7h.m3u8
 #EXTINF:-1 tvg-ID="Awa.MY" tvg-logo="https://img.astroawani.com/template/awani.jpg" group-title="新马",Astro Awani
@@ -1991,3 +1993,35 @@ http://520574.xyz/dl/hyxw.php?id=2
 http://live2.abcdsky.com:1935/live/SKYSPO/playlist.m3u8
 #EXTINF:-1 tvg-logo="" group-title ="台湾地区",HBO
 http://a.315600.xyz/dl/iptv.php?id=27
+#EXTINF:-1 tvg-logo="" group-title ="台湾地区",FX
+http://60.251.61.66:4015/VideoInput/play.ts
+#EXTINF:-1 tvg-logo="" group-title ="台湾地区",国家地理频道
+http://60.251.61.66:4020/VideoInput/play.ts
+#EXTINF:-1 tvg-logo="" group-title ="台湾地区",中天娱乐
+http://60.251.61.66:4007/VideoInput/play.ts
+#EXTINF:-1 tvg-logo="" group-title ="台湾地区",大爱
+http://60.251.61.66:4032/VideoInput/play.ts
+#EXTINF:-1 tvg-logo="" group-title ="台湾地区",放送大学
+http://60.251.61.66:4039/VideoInput/play.ts
+#EXTINF:-1 tvg-logo="" group-title ="台湾地区",放送大学
+http://60.251.61.66:4013/VideoInput/play.ts
+#EXTINF:-1 tvg-logo="" group-title ="台湾地区",YTN
+http://slive.ytn.co.kr/ytn/_definst_/ytn_stream_20190306/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="体育频道",otesport1 GR
+http://37.48.86.45:8182/OTEsport1/index.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="地方台",罗田旅游
+http://luotian.live.cjyun.org/video/s10013-LTLY/index.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="音乐频道",MTV
+http://81.30.182.82:18092/hls/live.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="地方台",宁波1套
+http://520574.xyz/dl/nbtv.php?id=1
+#EXTINF:-1 tvg-logo="" group-title ="地方台",宁波2套
+http://520574.xyz/dl/nbtv.php?id=2
+#EXTINF:-1 tvg-logo="" group-title ="地方台",宁波3套
+http://520574.xyz/dl/nbtv.php?id=3
+#EXTINF:-1 tvg-logo="" group-title ="地方台",宁波4套
+http://520574.xyz/dl/nbtv.php?id=4
+#EXTINF:-1 tvg-logo="" group-title ="地方台",宁波5套
+http://520574.xyz/dl/nbtv.php?id=5
+#EXTINF:-1 tvg-logo="" group-title ="地方台",宁波6套
+http://520574.xyz/dl/nbtv.php?id=6
