@@ -2019,9 +2019,9 @@ http://cdn.wakds.xyz:25461/live/hls/live/1430.m3u8
 http://cdn.wakds.xyz:25461/live/hls/live/1431.m3u8
 #EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/gt/History2.png" group-title ="台湾地区",HISTORY2
 http://cdn.wakds.xyz:25461/live/hls/live/1432.m3u8
-#EXTINF:-1 tvg-logo="https://poster.starhubgo.com/Linear_channels2/869_1920x1080_HTV.png" group-title ="台湾地区",天映经典频道
+#EXTINF:-1 tvg-logo="https://poster.starhubgo.com/Linear_channels2/869_1920x1080_HTV.png" tvg-name="天映经典" group-title ="台湾地区",天映经典频道
 http://cdn.wakds.xyz:25461/live/hls/live/1433.m3u8
-#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/gt/CrimeInvestigation.png" group-title ="台湾地区",CI 罪案侦查频道
+#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/gt/CrimeInvestigation.png" tvg-name="CI" group-title ="台湾地区",CI 罪案侦查频道
 http://cdn.wakds.xyz:25461/live/hls/live/1434.m3u8
 #EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/gt/cnex.png" group-title ="台湾地区",CNEX
 http://cdn.wakds.xyz:25461/live/hls/live/1435.m3u8
