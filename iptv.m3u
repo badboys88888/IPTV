@@ -1,7 +1,7 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="CNN.News" tvg-logo="http://static.epg.best/gb/CNN.uk.png" tvg-name="CNN" group-title="欧美频道",CNN
+#EXTINF:-1 tvg-id="CNN.News" tvg-logo="https://poster.starhubgo.com/Linear_channels2/711_1920x1080_HTV.png" tvg-name="CNN" group-title="欧美频道",CNN
 http://60.251.61.66:4014/VideoInput/play.ts
-#EXTINF:-1 tvg-id="CNN.News" tvg-logo="http://static.epg.best/gb/CNN.uk.png" tvg-name="CNN" group-title="欧美频道",CNC
+#EXTINF:-1 tvg-id="CNN.News" tvg-logo="https://poster.starhubgo.com/Linear_channels2/711_1920x1080_HTV.png" tvg-name="CNN" group-title="欧美频道",CNC
 http://source07.v.news.cn/live/CNC_EN/playlist.m3u8
 #EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",USA
 http://92.246.85.106:8000/play/a051/index.m3u8
@@ -657,7 +657,7 @@ http://hdtv.haust.edu.cn/hls/startv.m3u8
 http://hdtv.haust.edu.cn/hls/starsports.m3u8
 #EXTINF:-1 tvg-id="DIS.US" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/探索频道.png" tvg-name="探索发现频道" group-title="香港澳门",探索频道
 http://hdtv.haust.edu.cn/hls/discovery.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/国家地理.png" tvg-name="国家地理频道" group-title="香港澳门",国家地理
+#EXTINF:-1 tvg-logo="https://poster.starhubgo.com/Linear_channels2/411_1920x1080_HTV.png" tvg-name="国家地理频道" group-title="香港澳门",国家地理
 http://hdtv.haust.edu.cn/hls/natlgeo.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV第一剧场.png" tvg-name="第一剧场" group-title="央视",CCTV第一剧场
 http://hdtv.haust.edu.cn/hls/dyjctv.m3u8
@@ -1050,7 +1050,7 @@ http://rtmp.one.by:1499
 http://dmitry-tv.my1.ru/his/itv_zabava/04/CH_ULTRAHDCINEMA_HLSUHD.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="欧美频道",REX 4K UHD
 http://dmitry-tv.my1.ru/his/itv_zabava/03/CH_RUSSIANEXTREMEULTRA_HLSUHD.m3u8
-#EXTINF:-1 tvg-id="love-nature-4k" tvg-logo="" group-title="欧美频道",LOVE NATURE 4K UHD
+#EXTINF:-1 tvg-id="love-nature-4k" tvg-logo="https://poster.starhubgo.com/Linear_channels2/416_1920x1080_HTV.png" group-title="欧美频道",LOVE NATURE 4K UHD
 http://a3569457544-zabava-htlive.cdn.ngenix.net/hls/CH_LOVENATURE4K_HLS/bw20000000/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://i.imgur.com/D4vJyy9.png" group-title="欧美频道",Weather Channel
 https://weather-lh.akamaihd.net/i/twc_1@92006/index_2400_av-b.m3u8?sd=10&rebase=on
@@ -1955,7 +1955,7 @@ https://rmtv24hweblive-lh.akamaihd.net/i/rmtv24hwebes_1@300661/index_3_av-p.m3u8
 http://cdn.wakds.xyz:25461/live/hls/live/1399.m3u8
 #EXTINF:-1 tvg-logo="" group-title ="台湾地区",TVB星河
 http://cdn.wakds.xyz:25461/live/hls/live/1400.m3u8
-#EXTINF:-1 tvg-logo="" group-title ="台湾地区",卫视卡式台
+#EXTINF:-1 tvg-logo="https://poster.starhubgo.com/Linear_channels2/867_1920x1080_HTV.png" group-title ="台湾地区",卫视卡式台
 http://cdn.wakds.xyz:25461/live/hls/live/1401.m3u8
 #EXTINF:-1 tvg-logo="" group-title ="台湾地区",壹新闻
 http://cdn.wakds.xyz:25461/live/hls/live/1402.m3u8
@@ -2015,11 +2015,11 @@ http://cdn.wakds.xyz:25461/live/hls/live/1428.m3u8
 http://cdn.wakds.xyz:25461/live/hls/live/1429.m3u8
 #EXTINF:-1 tvg-logo="" group-title ="台湾地区",猪哥会社
 http://cdn.wakds.xyz:25461/live/hls/live/1430.m3u8
-#EXTINF:-1 tvg-logo="" group-title ="台湾地区",HISTORY
+#EXTINF:-1 tvg-logo="https://static.epg.best/co/HistoryChannel.co.png" group-title ="台湾地区",HISTORY
 http://cdn.wakds.xyz:25461/live/hls/live/1431.m3u8
-#EXTINF:-1 tvg-logo="" group-title ="台湾地区",H2
+#EXTINF:-1 tvg-logo="" group-title ="台湾地区",HISTORY2
 http://cdn.wakds.xyz:25461/live/hls/live/1432.m3u8
-#EXTINF:-1 tvg-logo="" group-title ="台湾地区",天映经典频道
+#EXTINF:-1 tvg-logo="https://poster.starhubgo.com/Linear_channels2/869_1920x1080_HTV.png" group-title ="台湾地区",天映经典频道
 http://cdn.wakds.xyz:25461/live/hls/live/1433.m3u8
 #EXTINF:-1 tvg-logo="" group-title ="台湾地区",CI犯罪纪录
 http://cdn.wakds.xyz:25461/live/hls/live/1434.m3u8
@@ -2029,9 +2029,9 @@ http://cdn.wakds.xyz:25461/live/hls/live/1435.m3u8
 http://cdn.wakds.xyz:25461/live/hls/live/1436.m3u8
 #EXTINF:-1 tvg-logo="" group-title ="台湾地区",影迷数位电影台
 http://cdn.wakds.xyz:25461/live/hls/live/1437.m3u8
-#EXTINF:-1 tvg-logo="" group-title ="台湾地区",TVB经典台
+#EXTINF:-1 tvg-logo="https://static.epg.best/hk/TVBClassic.hk.png" group-title ="台湾地区",TVB经典台
 http://cdn.wakds.xyz:25461/live/hls/live/1439.m3u8
-#EXTINF:-1 tvg-logo="" group-title ="台湾地区",翡翠台
+#EXTINF:-1 tvg-logo="https://poster.starhubgo.com/Linear_channels2/838_1920x1080_HTV.png" group-title ="台湾地区",翡翠台
 http://cdn.wakds.xyz:25461/live/hls/live/1440.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/纬来体育.png" group-title ="台湾地区",纬来体育
 http://220.158.149.28:8180/live/TV00000000000000000078@HHZT
@@ -2045,7 +2045,7 @@ http://live2.abcdsky.com:1935/live/SKYSPO/playlist.m3u8
 http://a.315600.xyz/dl/iptv.php?id=27
 #EXTINF:-1 tvg-logo="" group-title ="台湾地区",FX
 http://60.251.61.66:4015/VideoInput/play.ts
-#EXTINF:-1 tvg-logo="" group-title ="台湾地区",国家地理频道
+#EXTINF:-1 tvg-logo="https://poster.starhubgo.com/Linear_channels2/411_1920x1080_HTV.png" tvg-name="国家地理频道" group-title ="台湾地区",国家地理频道频道
 http://60.251.61.66:4020/VideoInput/play.ts
 #EXTINF:-1 tvg-logo="" group-title ="台湾地区",中天娱乐
 http://60.251.61.66:4007/VideoInput/play.ts
