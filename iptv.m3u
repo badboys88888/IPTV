@@ -2009,7 +2009,7 @@ http://cdn.wakds.xyz:25461/live/hls/live/1425.m3u8
 http://cdn.wakds.xyz:25461/live/hls/live/1426.m3u8
 #EXTINF:-1 tvg-logo="" group-title ="台湾地区",空中英语教室
 http://cdn.wakds.xyz:25461/live/hls/live/1427.m3u8
-#EXTINF:-1 tvg-logo="" group-title ="台湾地区",ELTV生活英语台
+#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/gt/eltv.png" group-title ="台湾地区",ELTV生活英语台
 http://cdn.wakds.xyz:25461/live/hls/live/1428.m3u8
 #EXTINF:-1 tvg-logo="" group-title ="台湾地区",民视综艺
 http://cdn.wakds.xyz:25461/live/hls/live/1429.m3u8
@@ -2017,17 +2017,17 @@ http://cdn.wakds.xyz:25461/live/hls/live/1429.m3u8
 http://cdn.wakds.xyz:25461/live/hls/live/1430.m3u8
 #EXTINF:-1 tvg-logo="https://static.epg.best/co/HistoryChannel.co.png" group-title ="台湾地区",HISTORY
 http://cdn.wakds.xyz:25461/live/hls/live/1431.m3u8
-#EXTINF:-1 tvg-logo="" group-title ="台湾地区",HISTORY2
+#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/gt/History2.png" group-title ="台湾地区",HISTORY2
 http://cdn.wakds.xyz:25461/live/hls/live/1432.m3u8
 #EXTINF:-1 tvg-logo="https://poster.starhubgo.com/Linear_channels2/869_1920x1080_HTV.png" group-title ="台湾地区",天映经典频道
 http://cdn.wakds.xyz:25461/live/hls/live/1433.m3u8
-#EXTINF:-1 tvg-logo="" group-title ="台湾地区",CI犯罪纪录
+#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/gt/CrimeInvestigation.png" group-title ="台湾地区",CI 罪案侦查频道
 http://cdn.wakds.xyz:25461/live/hls/live/1434.m3u8
-#EXTINF:-1 tvg-logo="" group-title ="台湾地区",CNEX
+#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/gt/cnex.png" group-title ="台湾地区",CNEX
 http://cdn.wakds.xyz:25461/live/hls/live/1435.m3u8
-#EXTINF:-1 tvg-logo="" group-title ="台湾地区",影迷纪实台
+#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/gt/影迷电影.png" group-title ="台湾地区",影迷数位纪实
 http://cdn.wakds.xyz:25461/live/hls/live/1436.m3u8
-#EXTINF:-1 tvg-logo="" group-title ="台湾地区",影迷数位电影台
+#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/gt/影迷电影.png" group-title ="台湾地区",影迷数位电影
 http://cdn.wakds.xyz:25461/live/hls/live/1437.m3u8
 #EXTINF:-1 tvg-logo="https://static.epg.best/hk/TVBClassic.hk.png" group-title ="台湾地区",TVB经典台
 http://cdn.wakds.xyz:25461/live/hls/live/1439.m3u8
@@ -2035,13 +2035,13 @@ http://cdn.wakds.xyz:25461/live/hls/live/1439.m3u8
 http://cdn.wakds.xyz:25461/live/hls/live/1440.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/纬来体育.png" group-title ="台湾地区",纬来体育
 http://220.158.149.28:8180/live/TV00000000000000000078@HHZT
-#EXTINF:-1 tvg-logo="" group-title ="台湾地区",寰宇新闻
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/寰宇新闻A.png" group-title ="台湾地区",寰宇新闻
 http://520574.xyz/dl/hyxw.php?id=1
 #EXTINF:-1 tvg-logo="" group-title ="台湾地区",寰宇新闻台湾台
 http://520574.xyz/dl/hyxw.php?id=2
 #EXTINF:-1 tvg-logo="" group-title ="日韩频道",SKYSPORTS
 http://live2.abcdsky.com:1935/live/SKYSPO/playlist.m3u8
-#EXTINF:-1 tvg-logo="" group-title ="台湾地区",HBO
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/hbo.png" group-title ="台湾地区",HBO
 http://a.315600.xyz/dl/iptv.php?id=27
 #EXTINF:-1 tvg-logo="" group-title ="台湾地区",FX
 http://60.251.61.66:4015/VideoInput/play.ts
