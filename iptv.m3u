@@ -1809,9 +1809,9 @@ http://136.243.177.164/HBO2/playlist.m3u8
 http://136.243.177.164/HBO3/playlist.m3u8
 #EXTINF:-1 tvg-logo="" tvg-name="" group-title="体育频道",TRT sport2hd
 http://iptvmasterlink.dyndns.org:8080/Entry/trtspor2hd_yeni/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://www.doomovie-hd.com/assets/img/ch_logo/uk-btsport1.jpg" tvg-name="" group-title="体育频道",BT SPORT 1 HD
+#EXTINF:-1 tvg-id="BT1.UK" tvg-logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/320/320/skychb3661.png" tvg-name="" group-title="体育频道",BT SPORT 1 HD
 https://www.livedoomovie.com/02_BTSPORTHD_1_720p/chunklist.m3u8
-#EXTINF:-1 tvg-logo="https://www.doomovie-hd.com/assets/img/ch_logo/uk-btsport2.jpg" tvg-name="" group-title="体育频道",BT SPORT 2 HD
+#EXTINF:-1 tvg-id="BT2.UK"tvg-logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/320/320/skychb3663.png" tvg-name="" group-title="体育频道",BT SPORT 2 HD
 https://www.livedoomovie.com/02_BTSPORTHD_2_720p/chunklist.m3u8
 #EXTINF:-1 tvg-logo="" tvg-name="" group-title="台湾地区",GOODTV1
 http://live.streamingfast.net/hls-live/goodtv/_definst_/liveevent/live-ch1-1.m3u8
