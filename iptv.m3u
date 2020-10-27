@@ -1959,7 +1959,7 @@ http://cdn.wakds.xyz:25461/live/hls/live/1400.m3u8
 http://cdn.wakds.xyz:25461/live/hls/live/1401.m3u8
 #EXTINF:-1 tvg-logo="" group-title ="台湾地区",壹新闻
 http://cdn.wakds.xyz:25461/live/hls/live/1402.m3u8
-#EXTINF:-1 tvg-logo="" group-title ="台湾地区",东森新闻台
+#EXTINF:-1 tvg-logo="" group-title ="台湾地区",東森新聞
 http://cdn.wakds.xyz:25461/live/hls/live/1403.m3u8
 #EXTINF:-1 tvg-logo="" group-title ="台湾地区",中天新闻台
 http://cdn.wakds.xyz:25461/live/hls/live/1404.m3u8
@@ -1969,9 +1969,9 @@ http://cdn.wakds.xyz:25461/live/hls/live/1405.m3u8
 http://cdn.wakds.xyz:25461/live/hls/live/1406.m3u8
 #EXTINF:-1 tvg-logo="" group-title ="台湾地区",TVBS新闻台
 http://cdn.wakds.xyz:25461/live/hls/live/1407.m3u8
-#EXTINF:-1 tvg-logo="" group-title ="台湾地区",东森财经新闻台
+#EXTINF:-1 tvg-logo="" group-title ="台湾地区",東森財經新聞
 http://cdn.wakds.xyz:25461/live/hls/live/1408.m3u8
-#EXTINF:-1 tvg-logo="" group-title ="台湾地区",中视新闻台
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/中视新闻.png" tvg-name="中视新闻" group-title ="台湾地区",中视新闻台
 http://cdn.wakds.xyz:25461/live/hls/live/1409.m3u8
 #EXTINF:-1 tvg-logo="" group-title ="台湾地区",华视新闻台
 http://cdn.wakds.xyz:25461/live/hls/live/1410.m3u8
@@ -2055,9 +2055,9 @@ http://60.251.61.66:4032/VideoInput/play.ts
 http://60.251.61.66:4039/VideoInput/play.ts
 #EXTINF:-1 tvg-logo="" group-title ="台湾地区",放送大学
 http://60.251.61.66:4013/VideoInput/play.ts
-#EXTINF:-1 tvg-logo="" group-title ="台湾地区",探索亚洲频道
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/探索亚洲.png" tvg-name="DiscoveryAsia" group-title ="台湾地区",探索亚洲频道
 http://60.251.61.66:4046/VideoInput/play.ts
-#EXTINF:-1 tvg-logo="" group-title ="台湾地区",CinemaWorld
+#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/gt/cinemaworld.png" tvg-name="CinemaWorld" group-title ="台湾地区",CinemaWorld
 http://60.251.61.66:4047/VideoInput/play.ts
 #EXTINF:-1 tvg-logo="" group-title ="台湾地区",YTN
 http://slive.ytn.co.kr/ytn/_definst_/ytn_stream_20190306/playlist.m3u8
