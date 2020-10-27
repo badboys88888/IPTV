@@ -1763,16 +1763,30 @@ http://m2otv-lh.akamaihd.net/i/m2oTv_1@186074/index_600_av-b.m3u8
 http://144.76.91.70:8081/streamrtmp/ss2/playlist.m3u8
 #EXTINF:-1 tvg-logo="" tvg-name="djing" group-title="音乐频道",djing
 https://www.djing.com/tv/underground.m3u8
-#EXTINF:-1 tvg-logo="" tvg-name="starsports2" group-title="体育频道",starsports1
-http://global.thunderbd.com/25/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-logo="" tvg-name="starsports2" group-title="体育频道",starsports1 HD
-http://global.thunderbd.com/27/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-logo="" tvg-name="starsports2" group-title="体育频道",starsports2
-http://global.thunderbd.com/26/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-logo="" tvg-name="starsports2" group-title="体育频道",starsports2 HD
-http://global.thunderbd.com/28/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-logo="" tvg-name="starsports2" group-title="印度地区",stars HD
-http://global.thunderbd.com/30/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://1.bp.blogspot.com/-tsKZsHqSQoU/W4w83bgaWlI/AAAAAAAAJb4/sAkfyNpX2HYZqdEr9yKecKV1WgMM2v51wCLcBGAs/s320/1-%25D8%25AA%25D8%25B1%25D8%25AF%25D8%25AF-%25D9%2582%25D9%2586%25D8%25A7%25D8%25A9-%25D8%25A3%25D8%25A8%25D9%2588%25D8%25B8%25D8%25A8%25D9%258A-%25D8%25A7%25D9%2584%25D8%25B1%25D9%258A%25D8%25A7%25D8%25B6%25D9%258A%25D8%25A9-abu-dhabi-sports.png" tvg-name="starsports2" group-title="体育频道",Abu Dhabi Sports 1
+https://admdn1.cdn.mangomolo.com/adsports1/smil:adsports1.stream.smil/chunklist_b1800000_t64NzIwcA==.m3u8
+#EXTINF:-1 tvg-logo="https://1.bp.blogspot.com/-L3rKS3yeX54/W4w83l7qBAI/AAAAAAAAJb8/r8wQ5MoE5NUJCyjzyLOgwLVyl6rn9oyrwCLcBGAs/s320/2-%25D8%25AA%25D8%25B1%25D8%25AF%25D8%25AF-%25D9%2582%25D9%2586%25D8%25A7%25D8%25A9-%25D8%25A3%25D8%25A8%25D9%2588%25D8%25B8%25D8%25A8%25D9%258A-%25D8%25A7%25D9%2584%25D8%25B1%25D9%258A%25D8%25A7%25D8%25B6%25D9%258A%25D8%25A9-abu-dhabi-sports.png" tvg-name="starsports2" group-title="体育频道",Abu Dhabi Sports 2
+https://admdn5.cdn.mangomolo.com/adsports2/smil:adsports2.stream.smil/chunklist_b1800000_t64NzIwcA==.m3u8
+#EXTINF:-1 tvg-logo="https://3.bp.blogspot.com/-jEOMRzJrWy8/XNwx0lb3eMI/AAAAAAAAMIc/aovqwl3NtjIfVN0aVXpe-NPwBmn6x0naACLcBGAs/s320/ADSp3.png" tvg-name="starsports2" group-title="体育频道",Abu Dhabi Sports 3
+https://admdn3.cdn.mangomolo.com/adsports3/smil:adsports3.stream.smil/chunklist_b1800000_t64NzIwcA==.m3u8
+#EXTINF:-1 tvg-logo="https://3.bp.blogspot.com/-RBiNLoDOKSU/XNwx0lYjKPI/AAAAAAAAMIg/oXZJNmGl6hU1CPXoiPEjZ7hEqQovzAWUQCLcBGAs/s320/ADSp4.png" tvg-name="starsports2" group-title="体育频道",Abu Dhabi Sports 4
+https://admdn4.cdn.mangomolo.com/adsports4/smil:adsports4.stream.smil/chunklist_b1800000_t64NzIwcA==.m3u8
+#EXTINF:-1 tvg-id="Abu Dhabi Drama ARB" tvg-name="Abu Dhabi Drama ARB" tvg-language="" tvg-logo="https://i.imgur.com/7Bx66K7.jpg" group-title="体育频道",Abu Dhabi Drama
+https://admdn5.cdn.mangomolo.com/drama/smil:drama.stream.smil/chunklist_b1800000_t64NzIwcA==.m3u8
+#EXTINF:-1 tvg-logo="https://1.bp.blogspot.com/-E8OYQzFAAME/XXbgb_OqNcI/AAAAAAAAMaA/oUEvlQcLeb01BA8rF2oy5h8O3D4XIlVGQCLcBGAs/s1600/logo2.png" tvg-name="starsports2" group-title="体育频道",du bai sports 2 hd
+http://dmitwlvvll.cdn.mangomolo.com/dubaisportshd/smil:dubaisportshd.smil/chunklist_b1600000.m3u8
+#EXTINF:-1 tvg-logo="https://1.bp.blogspot.com/-uFbtmm5gjCQ/XXbgb-QPWCI/AAAAAAAAMZ4/QgSC3Xm4xQkjf0Jw035x8RGdg1NXtLemwCLcBGAs/s1600/logo1.png" tvg-name="starsports2" group-title="体育频道",du bai sports 1
+http://dmitnthvll.cdn.mangomolo.com/dubaisports/smil:dubaisports.smil/chunklist_b1600000.m3u8
+#EXTINF:-1 tvg-logo="https://1.bp.blogspot.com/-544wqYjM_ns/XXbgb8l43fI/AAAAAAAAMZ8/CEyF1EoTRJkv7lZBuBV_MbGT6zfA_9tngCLcBGAs/s1600/logo3.png" tvg-name="starsports2" group-title="体育频道",du bai sports 3
+http://dmitwlvvll.cdn.mangomolo.com/dubaisportshd5/smil:dubaisportshd5.smil/chunklist_b1600000.m3u8
+#EXTINF:-1 tvg-id="Bahrain Sport 1 ARB" tvg-name="Bahrain Sport 1 ARB" tvg-language="Arabic" tvg-logo="https://i.imgur.com/G9BMhDS.png" group-title="体育频道",Bahrain Sport 1
+http://185.105.4.106:1935/live/Bahrain%20Sports/chunklist.m3u8?v=1548640033
+#EXTINF:-1 tvg-id="Bahrain Sport 1 ARB" tvg-name="Bahrain Sport 1 ARB" tvg-language="Arabic" tvg-logo="https://i.imgur.com/G9BMhDS.png" group-title="体育频道",Bahrain Sport 1
+http://185.105.4.106:1935/live/Bahrain%20Sports/chunklist.m3u8?v=1558393494
+#EXTINF:-1 tvg-id="Bahrain Sport 1 ARB" tvg-name="Bahrain Sport 1 ARB" tvg-language="Arabic" tvg-logo="https://i.imgur.com/G9BMhDS.png" group-title="体育频道",Bahrain Sport 1
+https://5c7b683162943.streamlock.net/live/ngrp:Bahrain%20Sports_all/playlist.m3u8
+#EXTINF:-1 tvg-id="Bahrain Sport 2 ARB" tvg-name="Bahrain Sport 2 ARB" tvg-language="Arabic" tvg-logo="https://i.imgur.com/G9BMhDS.png" group-title="体育频道",Bahrain Sport 2
+https://5c7b683162943.streamlock.net/live/ngrp:Bahrain%20Sports%202_all/playlist.m3u8
 #EXTINF:-1 tvg-logo="" tvg-name="starsports2" group-title="印度地区",印度卫视合家欢
 http://global.thunderbd.com/31/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="" tvg-name="SonyMax" group-title="印度地区",Sony Max
