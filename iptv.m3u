@@ -3,7 +3,7 @@
 http://60.251.61.66:4014/VideoInput/play.ts
 #EXTINF:-1 tvg-id="CNN.News" tvg-logo="https://poster.starhubgo.com/Linear_channels2/711_1920x1080_HTV.png" tvg-name="CNN" group-title="欧美频道",CNC
 http://source07.v.news.cn/live/CNC_EN/playlist.m3u8
-#EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",USA
+#EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",5USA
 http://92.246.85.106:8000/play/a051/index.m3u8
 #EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",SELECT
 http://92.246.85.106:8000/play/a052/index.m3u8
@@ -13,13 +13,13 @@ http://92.246.85.106:8000/play/a05s/index.m3u8
 http://92.246.85.106:8000/play/a05r/index.m3u8
 #EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",AL-MAYADEEN
 http://92.246.85.106:8000/play/a05i/index.m3u8
-#EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",BBC One HD
+#EXTINF:-1 tvg-ID="BB1.UK" tvg-logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/320/320/skychb2076.png" group-title="欧美频道",BBC One HD
 http://92.246.85.106:8000/play/a05f/index.m3u8
-#EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",BBC Two HD
+#EXTINF:-1 tvg-ID="BB2.UK" tvg-logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/320/320/skychb2006.png" group-title="欧美频道",BBC Two HD
 http://92.246.85.106:8000/play/a05g/index.m3u8
 #EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",Channel 5
 http://92.246.85.106:8000/play/a050/index.m3u8
-#EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",DMAX
+#EXTINF:-1 tvg-ID="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/DMAX.png" tvg-name="DMAX" group-title="欧美频道",DMAX
 http://92.246.85.106:8000/play/a04v/index.m3u8
 #EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",Food Network
 http://92.246.85.106:8000/play/a04u/index.m3u8
@@ -799,9 +799,9 @@ https://hlshac-i.akamaihd.net/hls/live/854653/haclinear/HNC_AUSTRALIA/1080p_live
 http://vs8.live.opencaster.com/20100152275/jcpstream/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://static.epg.best/au/RacingCom.au.png" group-title="体育频道",Racing.com
 https://racingvic-i.akamaized.net/hls/live/598695/racingvic/1500.m3u8
-#EXTINF:-1 tvg-id="" tvg-logo="https://static.epg.best/au/SKYRacing.au.png" group-title="体育频道",Sky 1 Racing
+#EXTINF:-1 tvg-id="SK1.AU" tvg-logo="https://static.epg.best/au/SKYRacing.au.png" group-title="体育频道",Sky 1 Racing
 https://skylivesky-i.akamaihd.net/hls/live/569780/skylive/sky1_extreme@569780.m3u8
-#EXTINF:-1 tvg-id="" tvg-logo="https://static.epg.best/au/SKYRacing.au.png" group-title="体育频道",Sky 2 Racing
+#EXTINF:-1 tvg-id="SK2.AU" tvg-logo="https://static.epg.best/au/SKYRacing.au.png" group-title="体育频道",Sky 2 Racing
 https://skylivesky-i.akamaihd.net/hls/live/569780/skylive/sky2_extreme@569780.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://www.hipodromo.com.mx/desktop/images/LOGO_HIPODROMO_bco.png" group-title="体育频道",Hipódromo de las Américas
 http://wms.tecnoxia.com:1935/8158/8158/chunklist.m3u8
@@ -809,7 +809,7 @@ http://wms.tecnoxia.com:1935/8158/8158/chunklist.m3u8
 https://tjktv-live.tjk.org/tjktv.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://static.epg.best/au/SKYTbredCent.au.png" group-title="体育频道",Throughbred Central
 https://skylivesky-i.akamaihd.net/hls/live/569780/skylive/stcsd_extreme@569780.m3u8
-#EXTINF:-1 tvg-id="" tvg-logo="https://www.tennistv.com/images/og-image.png" group-title="体育频道",ATP Tennis
+#EXTINF:-1 tvg-id="TEN.US" tvg-logo="https://www.tennistv.com/images/og-image.png" group-title="体育频道",ATP Tennis
 http://203.154.243.89:11739
 #EXTINF:-1 tvg-ID="MLB.US" tvg-logo="https://static.epg.best/us/MLBNetwork.us.png" group-title="体育频道",MLB Network
 http://hlslive-akc-med1.media.mlb.com/ls01/mlbnetwork/NETWORK_LINEAR_1/master_wired.m3u8
