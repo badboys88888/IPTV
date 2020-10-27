@@ -49,6 +49,8 @@ http://92.246.85.106:8000/play/a04l/index.m3u8
 http://92.246.85.106:8000/play/a04n/index.m3u8
 #EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",ZAD TV
 http://92.246.85.106:8000/play/a05q/index.m3u8
+#EXTINF:-1 tvg-ID="BNE.QA" tvg-logo="https://i.imgur.com/vnCFJ5a.png" group-title="体育频道",beIN Sport News
+https://dl.dropbox.com/s/a16m1s4w7ctosro/Bein%20Sports%20News.m3u8?dl=1
 #EXTINF:-1 tvg-id="B01.th" tvg-logo="https://static.epg.best/qa/beINSports1.qa.png" group-title="体育频道",beIN Sports 1 Asia
 https://www.livedoomovies.com/02_epl1_720p/chunklist.m3u8
 #EXTINF:-1 tvg-id="B02.th" tvg-logo="https://static.epg.best/qa/beINSports2.qa.png" group-title="体育频道",beIN Sports 2 Asia
@@ -841,8 +843,12 @@ https://liveorigin01.hbogoasia.com:8443/origin/live/main/FAMILY/index.m3u8
 https://liveorigin01.hbogoasia.com:8443/origin/live/main/HITS/index.m3u8
 #EXTINF:-1 tvg-id="Hbs.Asia" tvg-logo="https://static.epg.best/us/HBOSignature.us.png" group-title="台湾地区",HBO Signature
 https://liveorigin01.hbogoasia.com:8443/origin/live/main/SIG/index.m3u8
+#EXTINF:-1 tvg-id="CNX.Asia" tvg-logo="https://poster.starhubgo.com/Linear_channels2/611_1920x1080_HTV.png" group-title="台湾地区",CINEMAX
+https://liveorigin01.hbogoasia.com:8443/origin/live/main/MAX/index.m3u8
 #EXTINF:-1 tvg-id="Red.Asia" tvg-logo="https://www.mewatch.sg/image/11230416/16x9/947/533/25177e0a801178d5b705f85f42655107/sh/red-by-hbo.png" group-title="台湾地区",Red by HBO
 https://liveorigin01.hbogoasia.com:8443/origin/live/main/RED/index.m3u8
+#EXTINF:-1 tvg-id="PAR.US"  group-title="台湾地区" tvg-logo="https://static.epg.best/us/ParamountNetwork.us.png",Paramount Network
+http://htv-drm-live-cdn.fptplay.net/CDN-FPT02/PARAMOUNT-HD-720p/playlist.m3u8
 #EXTINF:-1 tvg-ID="CHV.Asia" tvg-logo="https://static.epg.best/in/ChannelV.in.png" group-title="音乐频道",Channel [V]
 https://livecdn.fptplay.net/foxlive/channelvhd_hls.smil/chunklist_b2500000.m3u8
 #EXTINF:-1 tvg-id="BF1.Asia" tvg-logo="https://static.epg.best/us/BabyFirstTV.us.png" group-title="台湾地区",Baby First
@@ -1905,6 +1911,28 @@ https://www.livedoomovie.com/02_foxsport_720p/chunklist.m3u8
 https://www.livedoomovie.com/02_FoxSport2_TH_720p/chunklist.m3u8
 #EXTINF:-1 tvg-logo="https://teevee-hd.com/img/foxsport3.png" group-title ="体育频道",Fox Sport3
 https://www.livedoomovie.com/02_FoxSport3_TH_720p/chunklist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/AQz4nRW.png" group-title="体育频道", Sport TV 1
+https://www.livedoomovies.com/02_SPORTTV_1_720p/chunklist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/AQz4nRW.png" group-title="体育频道", Sport TV 2
+https://www.livedoomovies.com/02_SPORTTV_2_720p/chunklist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/AQz4nRW.png" group-title="体育频道", Sport TV 3
+https://www.livedoomovies.com/02_SPORTTV_3_720p/chunklist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/AQz4nRW.png" group-title="体育频道", Sport TV 4
+https://www.livedoomovies.com/02_SPORTTV_4_720p/chunklist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/AQz4nRW.png" group-title="体育频道", Sport TV 5
+https://www.livedoomovies.com/02_SPORTTV_5_720p/chunklist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/mOkpenX.png" group-title="体育频道", Adjarasport 1
+https://receiver.adjara.com/adjarasport_live/LiveTV/index.m3u8?checkedby
+#EXTINF:-1 tvg-logo="https://i.imgur.com/mOkpenX.png" group-title="体育频道", Adjarasport 2
+https://receiver.adjara.com/adjarasport_live/LiveTV2/index.m3u8?checkedby
+#EXTINF:-1 tvg-logo="https://i.imgur.com/ZgkFY1Z.jpg" group-title="体育频道, Arena Sport 1
+http://43.255.241.173/arena1/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/ZgkFY1Z.jpg" group-title="体育频道", Arena Sport 2 
+http://43.255.241.173/arena2/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/ZgkFY1Z.jpg" group-title="体育频道", Arena Sport 3 
+http://43.255.241.173/arena3/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/ZgkFY1Z.jpg" group-title="体育频道", Arena Sport 4 
+http://43.255.241.173/arena4/tracks-v1a1/index.m3u8
 #EXTINF:-1 tvg-logo="https://teevee-hd.com/img/tennis.png" group-title ="体育频道",Tennis HD
 https://www.livedoomovie.com/02_TennisHD_720p/chunklist.m3u8
 #EXTINF:-1 tvg-id="NBA.US" tvg-logo="https://poster.starhubgo.com/Linear_channels2/217_1920x1080_HTV.png" group-title ="体育频道",NBA HD
@@ -2095,5 +2123,7 @@ http://520574.xyz/dl/nbtv.php?id=4
 http://520574.xyz/dl/nbtv.php?id=5
 #EXTINF:-1 tvg-logo="" group-title ="地方台",宁波6套
 http://520574.xyz/dl/nbtv.php?id=6
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/OneSportsPlus_logo.svg/200px-OneSportsPlus_logo.svg.png" group-title="Pilipinas",One Sports
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/OneSportsPlus_logo.svg/200px-OneSportsPlus_logo.svg.png" group-title="体育频道",One Sports
 http://stream2.tv5.com.ph:1935/live3/smil:onesports.smil/chunklist_w730697820_b628000.m3u8
+#EXTINF:-1 tvg-ID="OLY.US" tvg-logo="http://static.epg.best/us/OlympicChannel.us.png" group-title="体育频道",Olympic Channel
+https://iocchannel-i.akamaihd.net/hls/live/514135/olylinear0629221316/DomesticOlympicsLinear_VIDEO_0_7064000.m3u8
