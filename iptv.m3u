@@ -242,9 +242,9 @@ http://home.lpfcdn.com:4000/udp/235.254.198.194:7980
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CBN-%E5%B9%B8%E7%A6%8F%E5%A8%B1%E4%B9%90.png" tvg-name="CBN幸福娱乐" group-title="四川移动组播",CBN幸福娱乐
 http://home.lpfcdn.com:4000/udp/235.254.198.195:7980
 #EXTINF:-1 tvg-id="FHJ.CN" tvg-name="凤凰资讯" tvg-logo="https://poster.starhubgo.com/Linear_channels2/806_1920x1080_HTV.png" group-title="香港澳门",凤凰资讯台
-http://220.158.149.26:8182/hls/TV00000000000000000066@HHZT.m3u8
+http://220.158.149.26:8180/hls/TV00000000000000000066@HHZT;LIVE
 #EXTINF:-1 tvg-id="FHW.CN" tvg-name="凤凰中文" tvg-logo="https://poster.starhubgo.com/Linear_channels2/805_1920x1080_HTV.png" group-title="香港澳门",凤凰卫视中文台
-http://220.158.149.26:8182/hls/TV00000000000000000067@HHZT.m3u8
+http://220.158.149.26:8180/hls/TV00000000000000000067@HHZT;LIVE
 #EXTINF:-1 tvg-id="FHX.CN" tvg-name="凤凰香港" tvg-logo="http://tv.sason.xyz/logo/fhxg.png" group-title="香港澳门",鳳凰衛視香港台
 http://220.158.149.28:8180/TV00000000000000000068@HHZT;LIVE
 #EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/gt/fenghuangzixun.png" tvg-name="凤凰资讯" group-title="香港澳门",凤凰卫视资讯台
