@@ -844,7 +844,7 @@ https://dai.google.com/linear/hls/event/gaDje967RoSDD5llid2OBA/master.m3u8
 #EXTINF:-1 tvg-id="Hbo.Asia" tvg-logo="https://static.epg.best/us/HBO.us.png" group-title="台湾地区",HBO
 https://liveorigin01.hbogoasia.com:8443/origin/live/main/HBO/index.m3u8
 #EXTINF:-1 tvg-id="Hbo.Asia" tvg-logo="https://static.epg.best/us/HBO.us.png" group-title="台湾地区",HBO
-https://github.com/badboys88888/IPTV/raw/main/index.m3u8
+https://raw.githubusercontent.com/badboys88888/IPTV/main/hbo.m3u8
 #EXTINF:-1 tvg-id="Hbf.Asia" tvg-logo="https://static.epg.best/us/HBOFamily.us.png" group-title="台湾地区",HBO Family
 https://liveorigin01.hbogoasia.com:8443/origin/live/main/FAMILY/index.m3u8
 #EXTINF:-1 tvg-id="Hbh.Asia" tvg-logo="https://static.epg.best/id/HBOHits.id.png" group-title="台湾地区",HBO Hits
