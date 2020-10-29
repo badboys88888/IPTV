@@ -843,15 +843,15 @@ https://nimble.dashstreams.net/onestudio/fightplustv/playlist.m3u8
 https://sniffercat002.akamaized.net/scheduler/scheduleMaster/109/variant/22099397/a0ff0a6a-a465-47c9-adde-db2f84df7053.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://pbs.twimg.com/profile_images/1112616272741621760/Od1saD2b_400x400.png" group-title="体育频道",CombatGo
 https://dai.google.com/linear/hls/event/gaDje967RoSDD5llid2OBA/master.m3u8
-#EXTINF:-1 tvg-id="Hbo.Asia" tvg-logo="https://static.epg.best/us/HBO.us.png" group-title="台湾地区",HBO
+#EXTINF:-1 tvg-id="Hbo.Asia" tvg-logo="https://static.epg.best/us/HBO.us.png" tvg-name="HBO" group-title="台湾地区",HBO
 https://liveorigin01.hbogoasia.com:8443/origin/live/main/HBO/index.m3u8
-#EXTINF:-1 tvg-id="Hbf.Asia" tvg-logo="https://static.epg.best/us/HBOFamily.us.png" group-title="台湾地区",HBO Family
+#EXTINF:-1 tvg-id="Hbf.Asia" tvg-logo="https://static.epg.best/us/HBOFamily.us.png" tvg-name="HBOFamily" group-title="台湾地区",HBO Family
 https://liveorigin01.hbogoasia.com:8443/origin/live/main/FAMILY/index.m3u8
-#EXTINF:-1 tvg-id="Hbh.Asia" tvg-logo="https://static.epg.best/id/HBOHits.id.png" group-title="台湾地区",HBO Hits
+#EXTINF:-1 tvg-id="Hbh.Asia" tvg-logo="https://static.epg.best/id/HBOHits.id.png" tvg-name="HBOHits" group-title="台湾地区",HBO Hits
 https://liveorigin01.hbogoasia.com:8443/origin/live/main/HITS/index.m3u8
-#EXTINF:-1 tvg-id="Hbs.Asia" tvg-logo="https://static.epg.best/us/HBOSignature.us.png" group-title="台湾地区",HBO Signature
+#EXTINF:-1 tvg-id="Hbs.Asia" tvg-logo="https://static.epg.best/us/HBOSignature.us.png" tvg-name="HBOSignature" group-title="台湾地区",HBO Signature
 https://liveorigin01.hbogoasia.com:8443/origin/live/main/SIG/index.m3u8
-#EXTINF:-1 tvg-id="CNX.Asia" tvg-logo="https://poster.starhubgo.com/Linear_channels2/611_1920x1080_HTV.png" group-title="台湾地区",CINEMAX
+#EXTINF:-1 tvg-id="CNX.Asia" tvg-logo="https://poster.starhubgo.com/Linear_channels2/611_1920x1080_HTV.png" tvg-name="CINEMAX" group-title="台湾地区",CINEMAX
 https://liveorigin01.hbogoasia.com:8443/origin/live/main/MAX/index.m3u8
 #EXTINF:-1 tvg-id="Red.Asia" tvg-logo="https://www.mewatch.sg/image/11230416/16x9/947/533/25177e0a801178d5b705f85f42655107/sh/red-by-hbo.png" group-title="台湾地区",Red by HBO
 https://liveorigin01.hbogoasia.com:8443/origin/live/main/RED/index.m3u8
@@ -2131,13 +2131,13 @@ http://cdn.wakds.xyz:25461/hls/live/1439
 http://cdn.wakds.xyz:25461/hls/live/1440
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/纬来体育.png" group-title ="台湾地区",纬来体育
 http://220.158.149.28:8180/live/TV00000000000000000078@HHZT
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/寰宇新闻A.png" group-title ="台湾地区",寰宇新闻
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/寰宇新闻台A.png" group-title ="台湾地区",寰宇新闻
 http://520574.xyz/dl/hyxw.php?id=1
-#EXTINF:-1 tvg-logo="" group-title ="台湾地区",寰宇新闻台湾台
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/寰宇新闻台湾台.png" group-title ="台湾地区",寰宇新闻台湾台
 http://520574.xyz/dl/hyxw.php?id=2
 #EXTINF:-1 tvg-logo="" group-title ="日韩频道",SKYSPORTS
 http://live2.abcdsky.com:1935/live/SKYSPO/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/hbo.png" group-title ="台湾地区",HBO
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/hbo.png" tvg-name="HBO" group-title ="台湾地区",HBO
 http://a.315600.xyz/dl/iptv.php?id=27
 #EXTINF:-1 tvg-logo="https://poster.starhubgo.com/Linear_channels2/507_1920x1080_HTV.png" tvg-name="FXHD" group-title ="台湾地区",FXHD
 http://60.251.61.66:4015/VideoInput/play.ts
