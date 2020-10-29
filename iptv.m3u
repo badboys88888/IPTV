@@ -845,18 +845,12 @@ https://sniffercat002.akamaized.net/scheduler/scheduleMaster/109/variant/2209939
 https://dai.google.com/linear/hls/event/gaDje967RoSDD5llid2OBA/master.m3u8
 #EXTINF:-1 tvg-id="Hbo.Asia" tvg-logo="https://static.epg.best/us/HBO.us.png" group-title="台湾地区",HBO
 https://liveorigin01.hbogoasia.com:8443/origin/live/main/HBO/index.m3u8
-#EXTINF:-1 tvg-id="Hbo.Asia" tvg-logo="https://static.epg.best/us/HBO.us.png" group-title="台湾地区",HBO
-https://github.com/badboys88888/IPTV/raw/main/cs.m3u8
 #EXTINF:-1 tvg-id="Hbf.Asia" tvg-logo="https://static.epg.best/us/HBOFamily.us.png" group-title="台湾地区",HBO Family
 https://liveorigin01.hbogoasia.com:8443/origin/live/main/FAMILY/index.m3u8
 #EXTINF:-1 tvg-id="Hbh.Asia" tvg-logo="https://static.epg.best/id/HBOHits.id.png" group-title="台湾地区",HBO Hits
 https://liveorigin01.hbogoasia.com:8443/origin/live/main/HITS/index.m3u8
-#EXTINF:-1 tvg-id="Hbh.Asia" tvg-logo="https://static.epg.best/id/HBOHits.id.png" group-title="台湾地区",HBO Hits
-https://raw.githubusercontent.com/badboys88888/IPTV/main/hbohits.m3u8
 #EXTINF:-1 tvg-id="Hbs.Asia" tvg-logo="https://static.epg.best/us/HBOSignature.us.png" group-title="台湾地区",HBO Signature
 https://liveorigin01.hbogoasia.com:8443/origin/live/main/SIG/index.m3u8
-#EXTINF:-1 tvg-id="Hbs.Asia" tvg-logo="https://static.epg.best/us/HBOSignature.us.png" group-title="台湾地区",HBO Signature
-https://github.com/badboys88888/IPTV/raw/main/HBOSignature.m3u8
 #EXTINF:-1 tvg-id="CNX.Asia" tvg-logo="https://poster.starhubgo.com/Linear_channels2/611_1920x1080_HTV.png" group-title="台湾地区",CINEMAX
 https://liveorigin01.hbogoasia.com:8443/origin/live/main/MAX/index.m3u8
 #EXTINF:-1 tvg-id="Red.Asia" tvg-logo="https://www.mewatch.sg/image/11230416/16x9/947/533/25177e0a801178d5b705f85f42655107/sh/red-by-hbo.png" group-title="台湾地区",Red by HBO
@@ -1887,14 +1881,58 @@ https://www.livedoomovie.com/02_MCOTHD_720p/chunklist.m3u8
 http://mcotdigital-pnnouc.cdn.byteark.com/mcothd1080p_edge/smil:mcothd1080p.smil/chunklist.m3u8
 #EXTINF:-1 tvg-logo="https://teevee-hd.com/img/pptv.png" group-title ="泰国地区",PPTV HD
 https://www.livedoomovie.com/02_PPTVHD_720p/chunklist.m3u8
+#EXTINF:-1 tvg-logo="https://sv1.picz.in.th/images/2020/09/21/OO2qW2.png" group-title ="泰国地区",workpoint
+https://cdn6.goprimetime.info//feed//chworkpoint//index.m3u8
+#EXTINF:-1 tvg-logo="https://sv1.picz.in.th/images/2020/09/21/OO2kRe.png" group-title ="泰国地区",amarin
+https://doofootball.livestream-cdn.com/iptv/hd-amarin.stream/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://sv1.picz.in.th/images/2020/10/09/OeiYQt.png" group-title ="泰国地区",ALTV4
+https://thaipbs-ujxrch.cdn.byteark.com/live/playlist_720p/index.m3u8
 #EXTINF:-1 tvg-logo="https://teevee-hd.com/img/thairath.png" group-title ="泰国地区",THAIRATH HD
 https://www.livedoomovie.com/02_THAIRATH_720p/chunklist.m3u8
 #EXTINF:-1 tvg-logo="https://teevee-hd.com/img/true4u.png" group-title ="泰国地区",TRUE4U
 https://www.livedoomovie.com/02_TRUE4U_480p/chunklist.m3u8
+#EXTINF:-1 tvg-logo="https://sv1.picz.in.th/images/2020/10/17/b7cOc9.png" group-title ="泰国地区",StreamToCTV
+http://www5.cabletv.co.th/StreamToCTV/cablechannel/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://sv1.picz.in.th/images/2020/10/13/OI9RpP.jpg" group-title ="泰国地区",KIX
+http://45.126.83.51/uq2663/h/h07/01.m3u8
 #EXTINF:-1 tvg-logo="https://teevee-hd.com/img/mcot.png" group-title ="泰国地区",MCOT FAMILY
 https://www.livedoomovie.com/02_MCOTFAMILY_720p/chunklist.m3u8
 #EXTINF:-1 tvg-logo="https://teevee-hd.com/img/fantv.png" group-title ="泰国地区",FANMUSICHD
 https://www.livedoomovie.com/02_FANMUSICHD_720p/chunklist.m3u8
+#EXTINF:-1 tvg-logo="https://sv1.picz.in.th/images/2020/10/07/OG4q4P.png" group-title ="泰国地区",TRUEMUSI
+https://www.livedoomovie.com/02_TRUEMUSIC_720p/chunklist.m3u8
+#EXTINF:-1 tvg-logo="https://sv1.picz.in.th/images/2020/10/19/bzn1hJ.png" group-title ="体育频道",S1
+http://magco.rip/live/41246671289321/41604451921808/78991.m3u8
+#EXTINF:-1 tvg-logo="https://sv1.picz.in.th/images/2020/10/19/bznKEb.png" group-title ="体育频道",S2
+http://magco.rip/live/41246671289321/41604451921808/78992.m3u8
+#EXTINF:-1 tvg-logo="https://sv1.picz.in.th/images/2020/10/19/bznZXf.png" group-title ="体育频道",S3
+http://magco.rip/live/41246671289321/41604451921808/78993.m3u8
+#EXTINF:-1 tvg-logo="https://sv1.picz.in.th/images/2020/10/20/bzvawa.png" group-title ="体育频道",S4
+http://magco.rip/live/41246671289321/41604451921808/78994.m3u8
+#EXTINF:-1 tvg-logo="https://sv1.picz.in.th/images/2020/10/19/bzr7dz.png" group-title ="体育频道",S5
+http://magco.rip/live/41246671289321/41604451921808/78995.m3u8
+#EXTINF:-1 tvg-logo="https://sv1.picz.in.th/images/2020/10/19/bzrYPR.png" group-title ="体育频道",S6
+http://magco.rip/live/41246671289321/41604451921808/78996.m3u8
+#EXTINF:-1 tvg-logo="https://sv1.picz.in.th/images/2020/10/19/bzrryR.png" group-title ="体育频道",S7
+http://magco.rip/live/41246671289321/41604451921808/78997.m3u8
+#EXTINF:-1 tvg-logo="https://sv1.picz.in.th/images/2020/10/19/bzrHT0.png" group-title ="体育频道",S8
+http://magco.rip/live/41246671289321/41604451921808/78998.m3u8
+#EXTINF:-1 tvg-logo="https://sv1.picz.in.th/images/2020/10/19/bzrpNI.png" group-title ="体育频道",S9
+http://magco.rip/live/41246671289321/41604451921808/78999.m3u8
+#EXTINF:-1 tvg-logo="https://sv1.picz.in.th/images/2020/10/20/bzvvLz.png" group-title ="体育频道",S10
+http://magco.rip/live/41246671289321/41604451921808/79000.m3u8
+#EXTINF:-1 tvg-logo="https://sv1.picz.in.th/images/2020/10/19/bzrITE.png" group-title ="体育频道",S11
+http://magco.rip/live/41246671289321/41604451921808/79001.m3u8
+#EXTINF:-1 tvg-logo="https://sv1.picz.in.th/images/2020/10/19/bzrMlN.png" group-title ="体育频道",S12
+http://magco.rip/live/41246671289321/41604451921808/79002.m3u8
+#EXTINF:-1 tvg-logo="https://sv1.picz.in.th/images/2020/10/20/bzXWG0.png" group-title ="体育频道",S13
+http://magco.rip/live/41246671289321/41604451921808/79003.m3u8
+#EXTINF:-1 tvg-logo="https://sv1.picz.in.th/images/2020/10/19/bzVKm8.png" group-title ="体育频道",S14
+http://magco.rip/live/41246671289321/41604451921808/79004.m3u8
+#EXTINF:-1 tvg-logo="https://sv1.picz.in.th/images/2020/10/20/bzVn2W.png" group-title ="体育频道",S15
+http://magco.rip/live/41246671289321/41604451921808/79007.m3u8
+#EXTINF:-1 tvg-logo="https://sv1.picz.in.th/images/2020/10/20/bzVG8b.png" group-title ="体育频道",S16
+http://magco.rip/live/41246671289321/41604451921808/79008.m3u8
 #EXTINF:-1 tvg-logo="https://teevee-hd.com/img/premierfootball1.png" group-title ="体育频道",PremierHD1
 https://www.livedoomovie.com/02_PremierHD1_720p/chunklist.m3u8
 #EXTINF:-1 tvg-logo="https://teevee-hd.com/img/premierfootball2.png" group-title ="体育频道",PremierHD2
