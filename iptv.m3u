@@ -281,6 +281,8 @@ http://117.169.124.43:6610/ysten-businessmobile/live/fhzixun/index.m3u8
 http://117.169.124.43:6610/ysten-businessmobile/live/fhchinese/index.m3u8
 #EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/gt/fenghuangxianggang.png" tvg-name="凤凰香港" group-title="香港澳门",凤凰卫视香港台
 http://223.110.245.136/PLTV/3/224/3221226975/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/凤凰电影.png" tvg-name="凤凰电影" group-title="香港澳门",凤凰电影台
+https://www.fanmingming.cn/hls/fhdy.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/RTHK31.png" group-title="香港澳门",港台電視31
 http://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/index_2052_av-p.m3u8?sd=10&rebase=on
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/RTHK32.png" group-title="香港澳门",港台電視32
@@ -675,6 +677,8 @@ http://hdtv.haust.edu.cn/hls/starsports.m3u8
 http://hdtv.haust.edu.cn/hls/discovery.m3u8
 #EXTINF:-1 tvg-logo="https://poster.starhubgo.com/Linear_channels2/411_1920x1080_HTV.png" tvg-name="国家地理频道" group-title="香港澳门",国家地理
 http://hdtv.haust.edu.cn/hls/natlgeo.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV-高尔夫网球.png" tvg-name="第一剧场" group-title="央视",CCTV高尔夫网球
+http://39.135.9.77/gz.ucdn.10086.cn/PLTV/88888888/224/3221225674/1/index.m3u8?fmt=ts2hls
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV第一剧场.png" tvg-name="第一剧场" group-title="央视",CCTV第一剧场
 http://hdtv.haust.edu.cn/hls/dyjctv.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV第一剧场.png" tvg-name="第一剧场" group-title="央视",CCTV第一剧场
@@ -692,15 +696,28 @@ http://hdtv.haust.edu.cn/hls/hjjctv.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV兵器科技.png" tvg-name="兵器科技" group-title="央视",CCTV兵器科技
 http://hdtv.haust.edu.cn/hls/gfjstv.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV央视文化.png" tvg-name="央视精品" group-title="央视",CCTV央视文化精品
-http://hdtv.haust.edu.cn/hls/hls61.m3u8
+http://39.135.9.77/gz.ucdn.10086.cn/PLTV/88888888/224/3221225675/1/index.m3u8?fmt=ts2hls
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV女性时尚.png" tvg-name="女性时尚" group-title="央视",CCTV女性时尚
-http://hdtv.haust.edu.cn/hls/hls44.m3u8
+http://39.135.9.77/gz.ucdn.10086.cn/PLTV/88888888/224/3221225699/1/index.m3u8?fmt=ts2hls
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV老故事.png" tvg-name="老故事" group-title="央视",CCTV老故事
 http://hdtv.haust.edu.cn/hls/hls113.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CGTN英语.png" tvg-name="CGTN" group-title="央视",CGTN
 http://hdtv.haust.edu.cn/hls/hls67a43.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CGTN纪录.png" tvg-name="CGTNDocumentary" group-title="央视",CGTN纪录
 http://hdtv.haust.edu.cn/hls/hls67a44.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/G+TV谍战剧场.png" tvg-name="" group-title="央视",G+TV谍战剧场
+http://39.135.9.77/gz.ucdn.10086.cn/PLTV/88888888/224/3221225784//index.m3u8?fmt=ts2hls
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/G+TV动画乐园.png" tvg-name="" group-title="央视",G+TV动画乐园
+http://39.135.9.77/gz.ucdn.10086.cn/PLTV/88888888/224/3221225785//index.m3u8?fmt=ts2hls
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/G+TV海外佳片.png" tvg-name="" group-title="央视",G+TV海外佳片
+http://39.135.9.77/gz.ucdn.10086.cn/PLTV/88888888/224/3221225786//index.m3u8?fmt=ts2hls
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/G+TV华语影院.png" tvg-name="" group-title="央视",G+TV华语影院
+http://39.135.9.77/gz.ucdn.10086.cn/PLTV/88888888/224/3221225787//index.m3u8?fmt=ts2hls
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/G+TV经典剧场.png" tvg-name="" group-title="央视",G+TV经典剧场
+http://39.135.9.77/gz.ucdn.10086.cn/PLTV/88888888/224/3221225999//index.m3u8?fmt=ts2hls
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/G+TV热门综艺.png" tvg-name="" group-title="央视",G+TV热门综艺
+http://39.135.9.77/gz.ucdn.10086.cn/PLTV/88888888/224/3221226004//index.m3u8?fmt=ts2hls
+https://gitee.com/heimaiptv/heimaiptv/raw/master/hmiptv.txt
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/成都新闻综合.png" tvg-name="CDTV1" group-title="四川移动组播",成都新闻综合频道
 http://live.826pc.com/cdtv/live.php?id=1
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/成都经济资讯.png" tvg-name="CDTV2" group-title="四川移动组播",成都经济资讯频道
@@ -2256,7 +2273,7 @@ https://movie.mcas.jp/switcher/mcas8_2/chunklist.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/欢笑剧场.png" tvg-name="欢笑剧场" group-title="4K频道",欢笑剧场
 http://183.207.248.71/gitv/live1/HD-15M-2160P-jshuanxiaojc/HD-15M-2160P-jshuanxiaojc
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/DOXTV4K.png" tvg-name="DOXTV" group-title="4K频道",DOX 4K
-http://223.110.243.211/PLTV/3/224/3221227715/index.m3u8?servicetype=1&icpid=88888888&from=1&hms_devid=143
+http://39.135.10.66/gz.ucdn.10086.cn/PLTV/88888888/224/3221226019/1/index.m3u8?fmt=ts2hls
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV4K-(1).png" tvg-name="CCTV4K" group-title="4K频道",CCTV 4K
 http://112.17.40.140/PLTV/88888888/224/3221226758/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/BesTV-4K.png" tvg-name="BEST4K" group-title="4K频道",BEST 4K
