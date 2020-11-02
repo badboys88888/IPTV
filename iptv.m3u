@@ -51,8 +51,12 @@ http://92.246.85.106:8000/play/a04n/index.m3u8
 http://92.246.85.106:8000/play/a05q/index.m3u8
 #EXTINF:-1 tvg-id="B01.th" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/eleven1.png" group-title="体育频道",ELEVEN 1
 https://www.livedoomovies.com/02_epl1_720p/chunklist.m3u8
-#EXTINF:-1 tvg-id="B02.th" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/beinsports2.png" group-title="体育频道",ELEVEN 2
+#EXTINF:-1 tvg-id="B01.th" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/eleven1.png" group-title="体育频道",ELEVEN 1
+http://77.54.145.209:81/play/a00a
+#EXTINF:-1 tvg-id="B02.th" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/eleven2.png" group-title="体育频道",ELEVEN 2
 https://www.livedoomovies.com/02_epl2_720p/chunklist.m3u8
+#EXTINF:-1 tvg-id="B02.th" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/eleven2.png" group-title="体育频道",ELEVEN 2
+http://77.54.145.209:81/play/a03d
 #EXTINF:-1 tvg-ID="BNE.QA" tvg-logo="https://i.imgur.com/vnCFJ5a.png" group-title="体育频道",beIN Sport News
 https://dl.dropbox.com/s/a16m1s4w7ctosro/Bein%20Sports%20News.m3u8?dl=1
 #EXTINF:-1 tvg-id="BXT.US" tvg-logo="https://www.beinsportsxtra.com/images/icons/logo/beIN-SPORTS-XTRA_LOGO.png" group-title="体育频道",beIN Xtra
@@ -85,6 +89,18 @@ https://load.airtelxstream.in/sonyten3hd/smil:common.smil/chunklist_b896000_slen
 https://load.airtelxstream.in/sonymax/smil:common.smil/chunklist_b896000_sleng.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="印度地区",SONY MAX 2
 https://load.airtelxstream.in/sonymax2/smil:common.smil/chunklist_b896000_sleng.m3u8
+#EXTINF:-1 tvg-logo="" group-title="体育频道",SETANTA SPORTS 1
+http://92.43.140.204/s81/index.m3u8
+#EXTINF:-1 tvg-logo="" group-title="体育频道",SETANTA SPORTS 2
+http://92.43.140.204/s82/index.m3u8
+#EXTINF:-1 tvg-logo="" group-title="体育频道",ru sport tv 
+https://live-k2301-kbp.1plus1.video/sport/smil:sport.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="TEST" group-title="体育频道",SUPER SPORT 1 
+http://144.76.91.70:8081/streamrtmp/ss1/playlist.m3u8 
+#EXTINF:-1 tvg-logo="TEST" group-title="体育频道",SUPER SPORT 2 
+http://144.76.91.70:8081/streamrtmp/ss2/playlist.m3u8 
+#EXTINF:-1 tvg-logo="TEST" group-title="体育频道",SUPER SPORT 3 
+http://144.76.91.70:8081/streamrtmp/ss3/playlist.m3u8
 #EXTINF:-1 tvg-id="ES2.US" tvg-logo="" tvg-name="ESPN2" group-title="体育频道",ESPN 2
 https://gma2.blab.email/espn2.m3u8
 #EXTINF:-1 tvg-id="ESU.US" tvg-logo="" tvg-name="ESPN U" group-title="体育频道",ESPN U
@@ -159,6 +175,8 @@ http://rt-news.secure.footprint.net:80/1103_2500Kb.m3u8
 https://tv-trtworld.live.trt.com.tr/master_1080.m3u8
 #EXTINF:-1 tvg-id="Fox.News" tvg-logo="http://static.epg.best/us/FoxNews.us.png" tvg-name="FoxNews" group-title="欧美频道",FOX News
 https://bk7l2w4nlx53-hls-live.5centscdn.com/FOXNEWS/961ac1c875f5884f31bdd177365ef1e3.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="体育频道",Fox Sport News
+https://austchannel-live.akamaized.net/hls/live/2002736/austchannel-sport/master1280x720.m3u8
 #EXTINF:-1 tvg-id="Sky.News" tvg-ID="Sky.News" tvg-logo="http://static.epg.best/uk/SkyNews.uk.png" tvg-name="SkyNews" group-title="欧美频道",Sky News
 https://skynews2-plutolive-vo.akamaized.net/cdhlsskynewsamericas/1013/latest.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV4k.png" tvg-name="CCTV4K" group-title="央视",CCTV4K
