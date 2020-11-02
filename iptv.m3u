@@ -49,12 +49,12 @@ http://92.246.85.106:8000/play/a04l/index.m3u8
 http://92.246.85.106:8000/play/a04n/index.m3u8
 #EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",ZAD TV
 http://92.246.85.106:8000/play/a05q/index.m3u8
+#EXTINF:-1 tvg-id="B01.th" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/eleven1.png" group-title="体育频道",ELEVEN 1
+https://www.livedoomovies.com/02_epl1_720p/chunklist.m3u8
+#EXTINF:-1 tvg-id="B02.th" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/beinsports2.png" group-title="体育频道",ELEVEN 2
+https://www.livedoomovies.com/02_epl2_720p/chunklist.m3u8
 #EXTINF:-1 tvg-ID="BNE.QA" tvg-logo="https://i.imgur.com/vnCFJ5a.png" group-title="体育频道",beIN Sport News
 https://dl.dropbox.com/s/a16m1s4w7ctosro/Bein%20Sports%20News.m3u8?dl=1
-#EXTINF:-1 tvg-id="B01.th" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/beinsports1.png" group-title="体育频道",beIN Sports 1 Asia
-https://www.livedoomovies.com/02_epl1_720p/chunklist.m3u8
-#EXTINF:-1 tvg-id="B02.th" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/beinsports2.png" group-title="体育频道",beIN Sports 2 Asia
-https://www.livedoomovies.com/02_epl2_720p/chunklist.m3u8
 #EXTINF:-1 tvg-id="BXT.US" tvg-logo="https://www.beinsportsxtra.com/images/icons/logo/beIN-SPORTS-XTRA_LOGO.png" group-title="体育频道",beIN Xtra
 https://bein-plutolive-vo.akamaized.net/playlist.m3u8
 #EXTINF:-1 tvg-id="B01.QA" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/beinsports1.png" group-title="体育频道",beIN Sports 1 
