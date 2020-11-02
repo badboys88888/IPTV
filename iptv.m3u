@@ -1058,14 +1058,14 @@ http://109.239.208.82/viasatshd/index.m3u8
 http://live02-cdn.tv.ti.ru/dtv/id248_NBN_SG--DiscoveryScienceHD/04/plst.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="欧美频道",Bollywood HD
 https://sc.id-tv.kz/bollywood_hd_34_35.m3u8
-#EXTINF:-1 tvg-id="Eurosport-4K" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/eurosport.png" tvg-name="Eurosport-4K" group-title="体育频道",Eurosport 4K
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/北京4K超清IPTV.png" tvg-name="" group-title="4K频道",北京IPTV4K超高清电影
+http://221.179.217.9//otttv.bj.chinamobile.com/PLTV/88888888/224/3221226550/1.m3u8
+#EXTINF:-1 tvg-id="Eurosport-4K" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/eurosport.png" tvg-name="Eurosport-4K" group-title="4K频道",Eurosport 4K
 http://dmitry-tv.my1.ru/his/itv_zabava/01/CH_EUROSPORT4K_HLSUHD.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/eurosport.png" tvg-name="EUROSPORT" group-title="体育频道",Eurosport 4K
 http://a3569457550-zabava-htlive.cdn.ngenix.net/hls/CH_EUROSPORT4K_HLS/bw20000000/playlist.m3u8
 #EXTINF:-1 tvg-id="world-fashion" tvg-name="world-fashion" tvg-logo="" group-title="欧美频道",HD FASHION (FR)
 rtmp://95.67.47.115/live/hdfashion_ua_hi?_=1536181340
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="欧美频道",Первый Музыкальный BY 4K
-http://rtmp.one.by:1499
 #EXTINF:-1 tvg-id="ultra-hd-cinema" tvg-logo="" group-title="欧美频道",Ultra HD Cinema 4K UHD
 http://dmitry-tv.my1.ru/his/itv_zabava/04/CH_ULTRAHDCINEMA_HLSUHD.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="欧美频道",REX 4K UHD
@@ -2255,15 +2255,15 @@ http://movie.mcas.jp/mcas/mx2_2/chunklist.m3u8
 https://movie.mcas.jp/switcher/mcas8_2/chunklist.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/欢笑剧场.png" tvg-name="欢笑剧场" group-title="4K频道",欢笑剧场
 http://183.207.248.71/gitv/live1/HD-15M-2160P-jshuanxiaojc/HD-15M-2160P-jshuanxiaojc
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/DOXTV4K.png" tvg-name="DOXTV" group-title="四川移动组播",DOX 4K
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/DOXTV4K.png" tvg-name="DOXTV" group-title="4K频道",DOX 4K
 http://183.207.248.71/gitv/live1/HD-15M-2160P-jshuanxiaojc/HD-15M-2160P-jshuanxiaojc
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV4K-(1).png" tvg-name="CCTV4K" group-title="四川移动组播",CCTV 4K
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV4K-(1).png" tvg-name="CCTV4K" group-title="4K频道",CCTV 4K
 http://112.17.40.140/PLTV/88888888/224/3221226758/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/BesTV-4K.png" tvg-name="BEST4K" group-title="四川移动组播",BEST 4K
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/BesTV-4K.png" tvg-name="BEST4K" group-title="4K频道",BEST 4K
 http://111.0.93.25/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221229311/index.m3u8?fmt=ts2hls
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/纯享4K超高清.png" tvg-name="纯享4K" group-title="四川移动组播",纯享 4K
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/纯享4K超高清.png" tvg-name="纯享4K" group-title="4K频道",纯享 4K
 http://39.134.156.15/PLTV/88888888/224/3221225670/.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/海看4K.png" tvg-name="海看4K" group-title="四川移动组播",海看4K
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/海看4K.png" tvg-name="海看4K" group-title="4K频道",海看4K
 http://120.221.5.105:8089/PLTV/88888888/224/3221225833/1.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/云南少儿.png" tvg-name="云南少儿频道" group-title="地方台",云南少儿频道
 http://39.130.215.166:6410/gitv_live/G_YNTVSE-HD/G_YNTVSE-HD.m3u8
@@ -2491,3 +2491,11 @@ http://jsylivealone302.iqilu.com/live/hedong_tv01/index.m3u8
 http://jsylivealone302.iqilu.com/live/jiyang_tv01/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://www.tvyan.com/uploads/dianshi/rzggpd.jpg" group-title="地方台",濟陽影視
 http://jsylivealone302.iqilu.com/live/jiyang_tv02/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/eurosport.png" tvg-name="EUROSPORT" group-title="4K频道",Eurosport 4K
+http://a3569457550-zabava-htlive.cdn.ngenix.net/hls/CH_EUROSPORT4K_HLS/bw20000000/playlist.m3u8
+#EXTINF:-1 tvg-id="ultra-hd-cinema" tvg-logo="" group-title="4K频道",Ultra HD Cinema 4K UHD
+http://dmitry-tv.my1.ru/his/itv_zabava/04/CH_ULTRAHDCINEMA_HLSUHD.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="4K频道",REX 4K UHD
+http://dmitry-tv.my1.ru/his/itv_zabava/03/CH_RUSSIANEXTREMEULTRA_HLSUHD.m3u8
+#EXTINF:-1 tvg-id="love-nature-4k" tvg-logo="" group-title="4K频道",LOVE NATURE 4K UHD
+http://a3569457544-zabava-htlive.cdn.ngenix.net/hls/CH_LOVENATURE4K_HLS/bw20000000/playlist.m3u8
