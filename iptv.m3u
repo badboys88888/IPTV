@@ -866,6 +866,10 @@ https://sniffercat002.akamaized.net/scheduler/scheduleMaster/109/variant/2209939
 https://dai.google.com/linear/hls/event/gaDje967RoSDD5llid2OBA/master.m3u8
 #EXTINF:-1 tvg-id="Hbo.Asia" tvg-logo="https://static.epg.best/us/HBO.us.png" tvg-name="HBO" group-title="台湾地区",HBO
 https://liveorigin01.hbogoasia.com:8443/origin/live/main/HBO/index.m3u8
+#EXTINF:-1 tvg-id="Hbo.Asia" tvg-logo="https://static.epg.best/us/HBO.us.png" tvg-name="HBO" group-title="台湾地区",HBO 960p
+https://liveorigin01.hbogoasia.com:8443/origin/live/main/HBO/hbo.m3u8
+#EXTINF:-1 tvg-id="Hbo.Asia" tvg-logo="https://static.epg.best/us/HBO.us.png" tvg-name="HBO" group-title="台湾地区",HBO 1080P
+https://liveorigin01.hbogoasia.com:8443/origin/live/main/HBO/hbohd.m3u8
 #EXTINF:-1 tvg-id="Hbf.Asia" tvg-logo="https://static.epg.best/us/HBOFamily.us.png" tvg-name="HBOFamily" group-title="台湾地区",HBO Family
 https://liveorigin01.hbogoasia.com:8443/origin/live/main/FAMILY/index.m3u8
 #EXTINF:-1 tvg-id="Hbh.Asia" tvg-logo="https://static.epg.best/id/HBOHits.id.png" tvg-name="HBOHits" group-title="台湾地区",HBO Hits
