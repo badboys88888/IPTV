@@ -294,7 +294,7 @@ http://117.169.124.43:6610/ysten-businessmobile/live/fhchinese/index.m3u8
 #EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/gt/fenghuangxianggang.png" tvg-name="凤凰香港" group-title="香港澳门",凤凰卫视香港台
 http://223.110.245.136/PLTV/3/224/3221226975/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/凤凰电影.png" tvg-name="凤凰电影" group-title="香港澳门",凤凰电影台
-https://www.fanmingming.cn/hls/fhdy.m3u8
+http://hdtv.haust.edu.cn/hls/fhdy.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/RTHK31.png" group-title="香港澳门",港台電視31
 http://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/index_2052_av-p.m3u8?sd=10&rebase=on
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/RTHK32.png" group-title="香港澳门",港台電視32
@@ -2548,27 +2548,27 @@ http://dmitry-tv.my1.ru/his/itv_zabava/04/CH_ULTRAHDCINEMA_HLSUHD.m3u8
 http://dmitry-tv.my1.ru/his/itv_zabava/03/CH_RUSSIANEXTREMEULTRA_HLSUHD.m3u8
 #EXTINF:-1 tvg-id="love-nature-4k" tvg-logo="" group-title="4K频道",LOVE NATURE 4K UHD
 http://a3569457544-zabava-htlive.cdn.ngenix.net/hls/CH_LOVENATURE4K_HLS/bw20000000/playlist.m3u8
-#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",TVB 翡翠台	
+#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/翡翠台.png" tvg-name="翡翠台" group-title="台湾地区",翡翠台	
 http://jtfl.mx27.top/jttv.php?vid=jtzb&id=1
-#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",TVB 明珠台	
+#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/明珠台.png" tvg-name="明珠台" group-title="台湾地区",明珠台	
 http://jtfl.mx27.top/jttv.php?vid=jtzb&id=2
-#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",TVB J2	
+#EXTINF:-1 tvg-id="" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/TVBJ2.png" tvg-name="J2" group-title="台湾地区",TVB J2	
 http://jtfl.mx27.top/jttv.php?vid=jtzb&id=3
-#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",TVB 星河台	
+#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/TVB星河.png" tvg-name="TVB星河频道" group-title="台湾地区",TVB星河频道	
 http://jtfl.mx27.top/jttv.php?vid=jtzb&id=4
-#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",TVB 经典台	
+#EXTINF:-1 tvg-id="" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/TVBclassic.png" tvg-name="TVB经典台" group-title="台湾地区",TVB经典台	
 http://jtfl.mx27.top/jttv.php?vid=jtzb&id=5
 #EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",TVB 华丽台	
 http://jtfl.mx27.top/jttv.php?vid=jtzb&id=6
-#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",无线新闻	
+#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/TVB无线新闻台png.png" tvg-name="无线新闻" group-title="台湾地区",无线新闻	
 http://jtfl.mx27.top/jttv.php?vid=jtzb&id=7
-#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",无线财经	
+#EXTINF:-1 tvg-id="" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/tvbfinanceinformationchannel.png" tvg-name="无线财经" group-title="台湾地区",无线财经	
 http://jtfl.mx27.top/jttv.php?vid=jtzb&id=8
-#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",有线新闻	
+#EXTINF:-1 tvg-id="" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/youxianxinwen.png" tvg-name="有线新闻台" group-title="台湾地区",有线新闻	
 http://jtfl.mx27.top/jttv.php?vid=jtzb&id=9
 #EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",NOW新闻	
 http://jtfl.mx27.top/jttv.php?vid=jtzb&id=10
-#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",有线603	
+#EXTINF:-1 tvg-id="" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/hongkong603.png" tvg-name="香港603" group-title="台湾地区",有线603	
 http://jtfl.mx27.top/jttv.php?vid=jtzb&id=11
 #EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",有线18	
 http://jtfl.mx27.top/jttv.php?vid=jtzb&id=12
