@@ -1,6 +1,18 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="CNN.News" tvg-logo="https://poster.starhubgo.com/Linear_channels2/711_1920x1080_HTV.png" tvg-name="CNN" group-title="欧美频道",CNN
 http://60.251.61.66:4014/VideoInput/play.ts
+#EXTINF:-1 tvg-id="BS1.JP" tvg-logo="" group-title="欧美频道",NHK BS 1
+http://125.227.210.37:8939/VideoInput/play.ts
+#EXTINF:-1 tvg-id="BSP.JP" tvg-logo="" group-title="欧美频道",NHK BS Premium
+http://125.227.210.37:8940/VideoInput/play.ts
+#EXTINF:-1 tvg-id="RS1.RU" tvg-logo="https://cdn-st1.rtr-vesti.ru/lrt_cdn/i/logo/ch-logo-1.png" group-title="欧美频道",Россия 1 (Сочи)
+http://sochi.camera:8080/cam_255/index.m3u8?token=null
+#EXTINF:-1 tvg-id="YTN.KR" tvg-logo="" group-title="欧美频道",YTN
+http://125.227.210.37:8932/VideoInput/play.ts
+#EXTINF:-1 tvg-id="Ari.KR" tvg-logo="" group-title="欧美频道",Arirang TV
+http://125.227.210.37:8933/VideoInput/play.ts
+#EXTINF:-1 tvg-id="KBS.Int" tvg-logo="" group-title="欧美频道",KBS World
+http://125.227.210.37:8935/VideoInput/play.ts
 #EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="欧美频道",CNC
 http://source07.v.news.cn/live/CNC_EN/playlist.m3u8
 #EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",5USA
@@ -49,12 +61,12 @@ http://92.246.85.106:8000/play/a04l/index.m3u8
 http://92.246.85.106:8000/play/a04n/index.m3u8
 #EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",ZAD TV
 http://92.246.85.106:8000/play/a05q/index.m3u8
-#EXTINF:-1 tvg-id="B01.th" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/eleven1.png" group-title="体育频道",ELEVEN 1
+#EXTINF:-1 tvg-id="B01.th" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/beinsports1.png" group-title="体育频道",beIN Asia Sports 1 
 https://www.livedoomovies.com/02_epl1_720p/chunklist.m3u8
+#EXTINF:-1 tvg-id="B02.th" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/beinsports2.png" group-title="体育频道",beIN Asia Sports 2 
+https://www.livedoomovies.com/02_epl2_720p/chunklist.m3u8
 #EXTINF:-1 tvg-id="B01.th" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/eleven1.png" group-title="体育频道",ELEVEN 1
 http://77.54.145.209:81/play/a00a
-#EXTINF:-1 tvg-id="B02.th" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/eleven2.png" group-title="体育频道",ELEVEN 2
-https://www.livedoomovies.com/02_epl2_720p/chunklist.m3u8
 #EXTINF:-1 tvg-id="B02.th" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/eleven2.png" group-title="体育频道",ELEVEN 2
 http://77.54.145.209:81/play/a03d
 #EXTINF:-1 tvg-ID="BNE.QA" tvg-logo="https://i.imgur.com/vnCFJ5a.png" group-title="体育频道",beIN Sport News
@@ -1047,6 +1059,8 @@ http://51.52.156.22:8888/http/006
 http://51.52.156.22:8888/http/007
 #EXTINF:-1 tvg-id="CTV.UK" tvg-logo="https://static.epg.best/gb/CITV.uk.png" group-title="欧美频道",CITV
 http://51.52.156.22:8888/http/001
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/BBCCBEEBIES.png" group-title="欧美频道",BBC Cbeebies
+http://51.52.156.22:8888/http/003
 #EXTINF:-1 tvg-id="TG4.IE" tvg-logo="https://static.epg.best/ie/TG4.ie.png" group-title="欧美频道",TG4
 http://csm-e.cds1.yospace.com/csm/live/74246610.m3u8
 #EXTINF:-1 tvg-ID="Sky.AU" tvg-logo="http://static.epg.best/au/Action.au.png" group-title="欧美频道",Australia Channel
@@ -2094,6 +2108,12 @@ http://520574.xyz/dl/hyxw.php?id=2
 http://live2.abcdsky.com:1935/live/SKYSPO/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/hbo.png" tvg-name="HBO" group-title ="台湾地区",HBO
 http://a.315600.xyz/dl/iptv.php?id=27
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/天映频道.png" tvg-name="" group-title ="台湾地区",天映频道
+http://45.126.83.51/qwr9ew/s/s33/01.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/kix.png" tvg-id="Kix.Asia" group-title ="台湾地区",KIX
+http://45.126.83.51/uq2663/h/h07/01.m3u8
+#EXTINF:-1 tvg-logo="https://pbs.twimg.com/profile_images/1013612851406069760/JU8V4wcQ_400x400.jpg" group-title="台湾地区",ELSHINTA TV
+http://45.126.83.51/qwr9ew/s/s10/01.m3u8
 #EXTINF:-1 tvg-logo="https://poster.starhubgo.com/Linear_channels2/507_1920x1080_HTV.png" tvg-name="FXHD" group-title ="台湾地区",FXHD
 http://60.251.61.66:4015/VideoInput/play.ts
 #EXTINF:-1 tvg-logo="https://poster.starhubgo.com/Linear_channels2/411_1920x1080_HTV.png" tvg-name="国家地理频道" group-title ="台湾地区",国家地理频道频道
