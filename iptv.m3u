@@ -645,6 +645,8 @@ http://140.207.241.2:8080/live/program/live/hhxdhd/4000000/mnf.m3u8
 http://hdtv.haust.edu.cn/hls/btv11hd.m3u8
 #EXTINF:-1 tvg-logo="http://tv.sason.xyz/logo/tvbsxw.png" tvg-name="TVBS新闻台" group-title="台湾地区",TVBS新闻
 http://seb.sason.top/sc/tvbsxw_fhd.m3u8
+#EXTINF:-1 tvg-logo="http://tv.sason.xyz/logo/tvbsxw.png" tvg-name="TVBS新闻台" group-title="台湾地区",TVBS新闻
+http://220.158.149.28:8180/live/TV00000000000000000082@HHZT
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/东森财经新闻.png" tvg-name="东森财经新闻台" group-title="台湾地区",东森财经新闻台
 http://seb.sason.top/sc/dscjxw_fhd.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/东森新闻.png" tvg-name="东森新闻台" group-title="台湾地区",东森新闻台
@@ -667,6 +669,12 @@ http://seb.sason.top/sc/ztxw_fhd.m3u8
 http://stream.nexttv.com.tw/n001/hd/live.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/民视新闻台.png" tvg-name="民视新闻台" group-title="台湾地区",民视新闻台
 https://6.mms.vlog.xuite.net/hls/ftvtv/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/东森幼幼.png" tvg-name="东森幼幼台" group-title="台湾地区",东森幼幼
+http://220.158.149.28:8180/TV00000000000000000076@HHZT;LIVE
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/.png" tvg-name="" group-title="台湾地区",空中英语教室
+http://220.158.149.28:8180/live/TV00000000000000000077@HHZT
+#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/gt/cnex.png" tvg-name="cnex" group-title="台湾地区",视纳华仁纪实频道
+http://220.158.149.28:8180/live/TV00000000000000000083@HHZT
 #EXTINF:-1, tvg-name="" tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/MTVYO.png" group-title="音乐频道",MTV Yo!
 http://pluto-live.plutotv.net/egress/chandler/pluto01/live/VIACBS01/master.m3u8
 #EXTINF:-1, tvg-name="" tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/MTVBiggestPop.png" group-title="音乐频道",MTV Biggest Pop
@@ -2540,3 +2548,303 @@ http://dmitry-tv.my1.ru/his/itv_zabava/04/CH_ULTRAHDCINEMA_HLSUHD.m3u8
 http://dmitry-tv.my1.ru/his/itv_zabava/03/CH_RUSSIANEXTREMEULTRA_HLSUHD.m3u8
 #EXTINF:-1 tvg-id="love-nature-4k" tvg-logo="" group-title="4K频道",LOVE NATURE 4K UHD
 http://a3569457544-zabava-htlive.cdn.ngenix.net/hls/CH_LOVENATURE4K_HLS/bw20000000/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",TVB 翡翠台	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=1
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",TVB 明珠台	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=2
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",TVB J2	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=3
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",TVB 星河台	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=4
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",TVB 经典台	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=5
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",TVB 华丽台	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=6
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",无线新闻	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=7
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",无线财经	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=8
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",有线新闻	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=9
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",NOW新闻	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=10
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",有线603	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=11
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",有线18	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=12
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",有线体育1	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=13
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",有线体育2	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=14
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",有线娱乐	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=15
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",有线电影	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=16
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",香港开电视	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=17 
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",VIUTV	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=18
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",VIUTV6	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=19
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",NOW直播	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=20
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",RTHK31	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=21
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",RTHK32	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=22
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",卫视卡式	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=23
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",美亚电影	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=24
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",凤凰中文台	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=25
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",凤凰资讯台	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=26
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",凤凰资讯台	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=27
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",凤凰香港台	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=28
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",香港卫视	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=29
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",澳视澳门	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=30
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",澳门莲花	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=31
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",澳视葡语	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=32
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",澳门卫星	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=33
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",亚美卫视	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=34
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",天映频道	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=35
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",全佳	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=36
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",TVBS综合	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=37
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",TVBS综合	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=38
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",TVBS精采	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=39
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",TVBS欢乐	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=40
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",TVBS新闻	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=41
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",壹综合	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=42
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",壹新闻	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=43
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",三立iNEWS	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=44
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",三立LIVE新闻	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=45
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",三立综合	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=46
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",三立都会	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=47
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",三立台湾	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=48
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",三立戏剧	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=49
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",东森新闻	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=50
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",东森财经	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=51
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",东森超视	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=52
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",东森综合	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=53
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",东森电影	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=54
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",东森洋片	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=55
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",东森戏剧	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=56
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",东森幼幼	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=57
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",东森购物1	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=58
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",东森购物2	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=59
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",寰宇综合	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=60
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",寰宇新闻	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=61
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",寰宇台湾	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=62
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",民视	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=63
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",民视新闻	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=64
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",民视第一	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=65
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",民视台湾	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=66
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",民视影剧	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=67
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",民视综艺	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=68
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",民视旅游	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=69
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",华视	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=70
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",华视新闻	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=71
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",中视	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=72
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",中视新闻	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=73
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",中视经典	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=74
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",中视菁采	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=75
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",台视	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=76
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",台视新闻	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=77
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",台视财经	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=78
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",公视	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=79
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",公视戏剧	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=80
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",中天新闻	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=81
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",中天亚洲	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=82
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",中天综合	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=83
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",中天娱乐	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=84
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",年代新闻	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=85
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",非凡新闻	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=86
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",非凡商业	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=87
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",中华财经	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=88
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",纬来日本	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=89
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",纬来育乐	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=90
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",纬来电影	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=91
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",纬来体育	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=92
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",八大综合	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=93
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",八大第一	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=94
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",八大精彩	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=95
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",八大戏剧	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=96
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",靖天国际	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=97
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",靖天综合	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=98
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",靖天育乐	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=99
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",靖天日本	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=100
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",靖天欢乐	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=101
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",靖天资讯	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=102
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",靖天电影	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=103
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",靖天映画	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=104
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",靖天戏剧	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=105
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",靖天卡通	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=106
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",龙华日韩	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=107
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",龙华偶像	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=108
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",龙华经典	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=109
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",龙华戏剧	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=110
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",龙华电影	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=111
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",龙华动画	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=112
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",靖洋戏剧	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=113
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",靖洋卡通	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=114
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",JET综合	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=115
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",高点综合	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=116
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",世新综合	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=117
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",国兴卫视	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=118
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",国兴卫视	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=119
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",星卫娱乐	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=120
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",VTV4	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=121
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",韩国娱乐	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=122
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",猪哥亮歌厅秀	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=123
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",好消息1	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=124
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",好消息2	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=125
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",希望电视	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=126
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",龙祥时代	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=127
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",卫视电影	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=128
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",星卫电影	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=129
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",华纳电影	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=130
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",天映经典	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=131
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",好莱坞电影	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=132
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",凤凰电影
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=133
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",卫视西片	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=134
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",金光布袋	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=135
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",采昌影剧	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=136
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",影迷数位电影	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=137
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",CATCHPLAY电影	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=138
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",龙华经典	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=139
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",国家地理	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=140
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",国家野生	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=141
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",探索EVE	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=142
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",动物星球	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=143
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",爱放1	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=144
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",爱放2	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=145
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",爱放3	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=146
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",MOMO亲子	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=147
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",MOMO	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=148
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",纬来体育	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=149
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",卫视体育	
+http://jtfl.mx27.top/jttv.php?vid=jtzb&id=150
