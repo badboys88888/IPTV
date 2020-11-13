@@ -61,6 +61,18 @@ http://92.246.85.106:8000/play/a04l/index.m3u8
 http://92.246.85.106:8000/play/a04n/index.m3u8
 #EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",ZAD TV
 http://92.246.85.106:8000/play/a05q/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://static.epg.best/ca/TSN1.ca.png" group-title="体育频道",TSN 1
+http://digitalxpress2.gcdn.co/live1/tsn11/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://static.epg.best/ca/TSN2ca.png" group-title="体育频道",TSN 2
+http://digitalxpress2.gcdn.co/live1/tsn22/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://static.epg.best/ca/TSN3.ca.png" group-title="体育频道",TSN 3
+http://digitalxpress2.gcdn.co/live1/tsn33/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://static.epg.best/ca/TSN4.ca.png" group-title="体育频道",TSN 4
+http://digitalxpress2.gcdn.co/live1/tsn44/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://static.epg.best/ca/TSN4.ca.png" group-title="体育频道",TSN 5
+http://digitalxpress2.gcdn.co/live1/tsn55/index.m3u8
+#EXTINF:-1 tvg-id="FXS.US" tvg-logo="https://static.epg.best/us/FOXSoccerPlus.us.png" group-title="体育频道",Fox Soccer Plus
+https://e10.habrox.xyz/ingestnb4s/fsp/f.m3u8|Referer=https://espn-live.stream/stream/56872.html
 #EXTINF:-1 tvg-id="B01.th" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/beinsports1.png" group-title="体育频道",beIN Asia Sports 1 
 https://www.livedoomovies.com/02_epl1_720p/chunklist.m3u8
 #EXTINF:-1 tvg-id="B02.th" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/beinsports2.png" group-title="体育频道",beIN Asia Sports 2 
