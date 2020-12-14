@@ -65,6 +65,10 @@ http://92.246.85.106:8000/play/a04l/index.m3u8
 http://92.246.85.106:8000/play/a04n/index.m3u8
 #EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",ZAD TV
 http://92.246.85.106:8000/play/a05q/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://static.epg.best/my/AstroSuperSport.my.png" group-title="Malaysia",Astro Supersport
+http://36.37.252.114:888/Apple/OneTV-043/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://static.epg.best/my/AstroSuperSport3.my.png" group-title="Malaysia",Astro Supersport 3
+http://36.37.252.114:888/Apple/OneTV-044/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://ndhsaanow.com/uploads/images/bek_sports_LOGO.jpg" group-title="体育频道",Bek Sports East
 https://wowzaprod188-i.akamaihd.net/hls/live/728897/54d0bcd5/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://ndhsaanow.com/uploads/images/bek_sports_LOGO.jpg" group-title="体育频道",Bek Sports West
@@ -277,6 +281,8 @@ http://117.169.124.43:6610/ysten-businessmobile/live/fhchinese/index.m3u8
 http://223.110.245.136/PLTV/3/224/3221226975/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/凤凰电影.png" tvg-name="凤凰电影" group-title="香港澳门",凤凰电影台
 http://ivi.bupt.edu.cn/hls/fhdy.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/澳门莲花.png" tvg-name="莲花卫视" group-title="香港澳门",澳门莲花
+http://36.37.252.114:888/Apple/OneTV-075/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/RTHK31.png" group-title="香港澳门",港台電視31
 http://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/index_2052_av-p.m3u8?sd=10&rebase=on
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/RTHK32.png" group-title="香港澳门",港台電視32
@@ -332,7 +338,7 @@ http://nhkw-zh-hlscomp.akamaized.net/8thz5iufork8wjip/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="香港澳门",美国之音中文
 http://voa-lh.akamaihd.net/i/voa_mpls_tvmc8@326847/master.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="香港澳门",EuroNews
-http://raw.githubusercontent.com/exodiver/IPTV/master/M3U8/Token/EuroNews.m3u8
+http://36.37.252.114:888/Apple/OneTV-047/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="香港澳门",耀才財經台
 http://fc_video.bsgroup.com.hk:443/webcast/bshdlive-pc/playlist.m3u8
 #EXTINF:-1 tvg-ID="668.HK" tvg-logo="https://upload.wikimedia.org/wikipedia/zh/b/bf/HKJC_Horse_Racing.jpg" group-title="香港澳门",赛马直击
@@ -810,6 +816,8 @@ https://fash1043.cloudycdn.services/slive/_definst_/ftv_ftv_paris_pg_4dg_27027_p
 https://fash1043.cloudycdn.services/slive/_definst_/ftv_ftv_pg16_d9y_27042_ftv_pg16_194_hls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://www.fashiontv.com/wp-content/uploads/2017/01/fashuiontvlogo-horisontal-300x90.png" group-title="Fashion",Fashion TV Midnight Secert
 https://fash1043.cloudycdn.services/slive/_definst_/ftv_midnite_secrets_adaptive.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://www.fashiontv.com/wp-content/uploads/2017/01/fashuiontvlogo-horisontal-300x90.png" group-title="Fashion",Fashion TV Midnight Secert
+http://36.37.252.114:888/Apple/OneTV-059/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://wfc.tv/images/Logo-WF.png" group-title="Fashion",World Fashion TV 
 http://wfc.bonus-tv.ru:80/cdn/wfcint/tracks-v2a1/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://a3bikini.com/wp-content/uploads/2018/02/a3_Bikini-1.png" group-title="Fashion",A3 Bikini Network
