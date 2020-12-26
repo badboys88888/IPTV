@@ -1,6 +1,6 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="HBOMAX",黑暗物质第一季第一集
-https://v1.szjal.cn/20191104/ckiomr8A/index.m3u8
+https://v1.monidai.com/20191104/ckiomr8A/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="HBOMAX",黑暗物质第一季第二集
 https://v1.monidai.com/20191111/1THGE1d8/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="HBOMAX",黑暗物质第一季第三集
@@ -141,6 +141,10 @@ http://92.246.85.106:8000/play/a04l/index.m3u8
 http://92.246.85.106:8000/play/a04n/index.m3u8
 #EXTINF:-1 tvg-ID="" tvg-logo="" group-title="欧美频道",ZAD TV
 http://92.246.85.106:8000/play/a05q/index.m3u8
+#EXTINF:-1 tvg-ID="MLB.US" tvg-logo="https://static.epg.best/us/MLBNetwork.us.png" group-title="体育频道",MLB Network
+http://hlslive-akc-med1.media.mlb.com/ls01/mlbnetwork/NETWORK_LINEAR_1/master_wired.m3u8
+#EXTINF:-1 tvg-ID="NFL.US" tvg-logo="https://static.epg.best/us/NFLNetwork.us.png" group-title="体育频道",NFL Network
+http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5ced7d5df64be98e07ed47b6/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=708&deviceId=5ced7d5df64be98e07ed47b6&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false
 #EXTINF:-1 tvg-id="" tvg-logo="https://static.epg.best/my/AstroSuperSport.my.png" group-title="体育频道",Astro Supersport
 http://36.37.252.114:888/Apple/OneTV-043/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://static.epg.best/my/AstroSuperSport3.my.png" group-title="体育频道",Astro Supersport 3
@@ -707,8 +711,6 @@ http://140.207.241.2:8080/live/program/live/hhxdhd/4000000/mnf.m3u8
 http://ivi.bupt.edu.cn/hls/btv11hd.m3u8
 #EXTINF:-1 tvg-logo="http://tv.sason.xyz/logo/tvbsxw.png" tvg-name="TVBS新闻台" group-title="台湾地区",TVBS新闻
 http://seb.sason.top/sc/tvbsxw_fhd.m3u8
-#EXTINF:-1 tvg-logo="http://tv.sason.xyz/logo/tvbsxw.png" tvg-name="TVBS新闻台" group-title="台湾地区",TVBS新闻
-http://220.158.149.28:8180/live/TV00000000000000000082@HHZT
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/东森财经新闻.png" tvg-name="东森财经新闻台" group-title="台湾地区",东森财经新闻台
 http://seb.sason.top/sc/dscjxw_fhd.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/东森新闻.png" tvg-name="东森新闻台" group-title="台湾地区",东森新闻台
@@ -731,12 +733,6 @@ http://seb.sason.top/sc/ztxw_fhd.m3u8
 http://stream.nexttv.com.tw/n001/hd/live.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/民视新闻台.png" tvg-name="民视新闻台" group-title="台湾地区",民视新闻台
 https://6.mms.vlog.xuite.net/hls/ftvtv/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/东森幼幼.png" tvg-name="东森幼幼台" group-title="台湾地区",东森幼幼
-http://220.158.149.28:8180/TV00000000000000000076@HHZT;LIVE
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/.png" tvg-name="" group-title="台湾地区",空中英语教室
-http://220.158.149.28:8180/live/TV00000000000000000077@HHZT
-#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/gt/cnex.png" tvg-name="cnex" group-title="台湾地区",视纳华仁纪实频道
-http://220.158.149.28:8180/live/TV00000000000000000083@HHZT
 #EXTINF:-1, tvg-name="" tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/MTVYO.png" group-title="音乐频道",MTV Yo!
 http://pluto-live.plutotv.net/egress/chandler/pluto01/live/VIACBS01/master.m3u8
 #EXTINF:-1, tvg-name="" tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/MTVBiggestPop.png" group-title="音乐频道",MTV Biggest Pop
@@ -760,27 +756,27 @@ http://ivi.bupt.edu.cn/hls/discovery.m3u8
 #EXTINF:-1 tvg-logo="https://poster.starhubgo.com/Linear_channels2/411_1920x1080_HTV.png" tvg-name="国家地理频道" group-title="香港澳门",国家地理
 http://ivi.bupt.edu.cn/hls/natlgeo.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV-高尔夫网球.png" tvg-name="第一剧场" group-title="央视",CCTV高尔夫网球
-http://39.135.9.77/gz.ucdn.10086.cn/PLTV/88888888/224/3221225674/1/index.m3u8?fmt=ts2hls
+http://39.136.11.19/gz.ucdn.10086.cn/PLTV/88888888/224/3221225674/1/index.m3u8?fmt=ts2hls
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV第一剧场.png" tvg-name="第一剧场" group-title="央视",CCTV第一剧场
 http://ivi.bupt.edu.cn/hls/dyjctv.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV第一剧场.png" tvg-name="第一剧场" group-title="央视",CCTV第一剧场
-http://39.135.9.77/gz.ucdn.10086.cn/PLTV/88888888/224/3221225702/1/index.m3u8?fmt=ts2hls
+http://39.136.11.19/gz.ucdn.10086.cn/PLTV/88888888/224/3221225702/1/index.m3u8?fmt=ts2hls
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV风云足球.png" tvg-name="风云足球" group-title="央视",CCTV风云足球
 http://ivi.bupt.edu.cn/hls/fyzqtv.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV风云音乐.png" tvg-name="风云音乐" group-title="央视",CCTV风云音乐
-http://39.135.9.77/gz.ucdn.10086.cn/PLTV/88888888/224/3221225698/1/index.m3u8?fmt=ts2hls
+http://39.136.11.19/gz.ucdn.10086.cn/PLTV/88888888/224/3221225698/1/index.m3u8?fmt=ts2hls
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV风云剧场.png" tvg-name="风云剧场" group-title="央视",CCTV风云剧场
-http://39.135.9.77/gz.ucdn.10086.cn/PLTV/88888888/224/3221225700/1/index.m3u8?fmt=ts2hls
+http://39.136.11.19/gz.ucdn.10086.cn/PLTV/88888888/224/3221225700/1/index.m3u8?fmt=ts2hls
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV世界地理.png" tvg-name="世界地理" group-title="央视",CCTV世界地理
-http://39.135.9.77/gz.ucdn.10086.cn/PLTV/88888888/224/3221225733/1/index.m3u8?fmt=ts2hls
+http://39.136.11.19/gz.ucdn.10086.cn/PLTV/88888888/224/3221225733/1/index.m3u8?fmt=ts2hls
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV怀旧剧场.png" tvg-name="怀旧剧场" group-title="央视",CCTV怀旧剧场
 http://ivi.bupt.edu.cn/hls/hjjctv.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV兵器科技.png" tvg-name="兵器科技" group-title="央视",CCTV兵器科技
 http://ivi.bupt.edu.cn/hls/gfjstv.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV央视文化.png" tvg-name="央视精品" group-title="央视",CCTV央视文化精品
-http://39.135.9.77/gz.ucdn.10086.cn/PLTV/88888888/224/3221225675/1/index.m3u8?fmt=ts2hls
+http://39.136.11.19/gz.ucdn.10086.cn/PLTV/88888888/224/3221225675/1/index.m3u8?fmt=ts2hls
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV女性时尚.png" tvg-name="女性时尚" group-title="央视",CCTV女性时尚
-http://39.135.9.77/gz.ucdn.10086.cn/PLTV/88888888/224/3221225699/1/index.m3u8?fmt=ts2hls
+http://39.136.11.19/gz.ucdn.10086.cn/PLTV/88888888/224/3221225699/1/index.m3u8?fmt=ts2hls
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CCTV老故事.png" tvg-name="老故事" group-title="央视",CCTV老故事
 http://ivi.bupt.edu.cn/hls/hls113.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CGTN英语.png" tvg-name="CGTN" group-title="央视",CGTN
@@ -788,17 +784,17 @@ http://ivi.bupt.edu.cn/hls/hls67a43.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CGTN纪录.png" tvg-name="CGTNDocumentary" group-title="央视",CGTN纪录
 http://ivi.bupt.edu.cn/hls/hls67a44.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/G+TV谍战剧场.png" tvg-name="" group-title="央视",G+TV谍战剧场
-http://39.135.9.77/gz.ucdn.10086.cn/PLTV/88888888/224/3221225784//index.m3u8?fmt=ts2hls
+http://39.136.11.19/gz.ucdn.10086.cn/PLTV/88888888/224/3221225784//index.m3u8?fmt=ts2hls
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/G+TV动画乐园.png" tvg-name="" group-title="央视",G+TV动画乐园
-http://39.135.9.77/gz.ucdn.10086.cn/PLTV/88888888/224/3221225785//index.m3u8?fmt=ts2hls
+http://39.136.11.19/gz.ucdn.10086.cn/PLTV/88888888/224/3221225785//index.m3u8?fmt=ts2hls
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/G+TV海外佳片.png" tvg-name="" group-title="央视",G+TV海外佳片
-http://39.135.9.77/gz.ucdn.10086.cn/PLTV/88888888/224/3221225786//index.m3u8?fmt=ts2hls
+http://39.136.11.19/gz.ucdn.10086.cn/PLTV/88888888/224/3221225786//index.m3u8?fmt=ts2hls
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/G+TV华语影院.png" tvg-name="" group-title="央视",G+TV华语影院
-http://39.135.9.77/gz.ucdn.10086.cn/PLTV/88888888/224/3221225787//index.m3u8?fmt=ts2hls
+http://39.136.11.19/gz.ucdn.10086.cn/PLTV/88888888/224/3221225787//index.m3u8?fmt=ts2hls
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/G+TV经典剧场.png" tvg-name="" group-title="央视",G+TV经典剧场
-http://39.135.9.77/gz.ucdn.10086.cn/PLTV/88888888/224/3221225999//index.m3u8?fmt=ts2hls
+http://39.136.11.19/gz.ucdn.10086.cn/PLTV/88888888/224/3221225999//index.m3u8?fmt=ts2hls
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/G+TV热门综艺.png" tvg-name="" group-title="央视",G+TV热门综艺
-http://39.135.9.77/gz.ucdn.10086.cn/PLTV/88888888/224/3221226004//index.m3u8?fmt=ts2hls
+http://39.136.11.19/gz.ucdn.10086.cn/PLTV/88888888/224/3221226004//index.m3u8?fmt=ts2hls
 https://gitee.com/heimaiptv/heimaiptv/raw/master/hmiptv.txt
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/成都新闻综合.png" tvg-name="CDTV1" group-title="四川移动组播",成都新闻综合频道
 http://live.826pc.com/cdtv/live.php?id=1
@@ -880,6 +876,32 @@ https://livecdn.fptplay.net/qnetlive/foxsports_2000.stream/chunklist.m3u8
 https://livecdn.fptplay.net/qnetlive/foxsports2_2000.stream/chunklist.m3u8
 #EXTINF:-1 tvg-id="FS3.Asia" tvg-logo="https://tv.foxsportsasia.com/logos/logo_foxsports3.png" group-title="体育频道",Fox Sports 3 Asia
 https://livecdn.fptplay.net/qnetlive/foxsports3_hls.smil/chunklist_b2500000.m3u8
+#EXTINF:-1 group-title="欧美频道" tvg-logo="https://www.digitalsimon.com/uploads/5/9/5/7/59574985/foxmovies-white-rgb_orig.png",FOX Movies HD
+http://htv-drm-live-cdn.fptplay.net/CDN-FPT02/FOXMOVIES-HD-1080p/playlist.m3u8
+#EXTINF:-1 group-title="欧美频道" tvg-logo="https://static.epg.best/es/Fox.es.png",Fox
+https://livecdn.fptplay.net/foxlive/foxhd_hls.smil/chunklist_b2500000.m3u8
+#EXTINF:-1 group-title="欧美频道" tvg-logo="https://static.epg.best/in/FOXLife.in.png",Fox Life
+https://livecdn.fptplay.net/foxlive/foxlifehd_hls.smil/chunklist_b2500000.m3u8
+#EXTINF:-1 group-title="欧美频道" tvg-logo="https://astrocontent.s3.amazonaws.com/Images/ChannelLogo/Pos/724_300.png",Fox HD
+https://livecdn.fptplay.net/foxlive/foxhd_hls.smil/chunklist_b2500000.m3u8
+#EXTINF:-1 group-title="欧美频道" tvg-logo="http://singteltv.com.sg/_channels/pic_ch414.jpg",Fox Movies
+https://livecdn.fptplay.net/foxlive/foxmovieshd_hls.smil/chunklist_b2500000.m3u8
+#EXTINF:-1 group-title="欧美频道" tvg-logo="https://foxfamilymovies.foxmoviesasia.com/images/ffm.png",Fox Family Movies
+https://livecdn.fptplay.net/hda/foxfamilymovies_hls.smil/chunklist_b2500000.m3u8
+#EXTINF:-1 group-title="欧美频道" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/57/Fox_Family_Movies_logo.png",FOX FAMILY HD
+http://htv-drm-live-cdn.fptplay.net/CDN-FPT02/FOXFAMILY-HD-1080p/playlist.m3u8?
+#EXTINF:-1 group-title="欧美频道" tvg-logo="https://i.imgur.com/Lf4lZrG.png",FOX FAMILY MOVIES
+http://htv-drm-live-cdn.fptplay.net/CDN-FPT02/FOXFAMILY-HD-1080p/playlist.m3u8
+#EXTINF:-1 group-title=="欧美频道" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/57/Fox_Family_Movies_logo.png",FOX FAMILY MOVIES
+https://livecdn.fptplay.net/hda/foxfamilymovies_2000.stream/chunklist.m3u8
+#EXTINF:-1 group-title="欧美频道" tvg-logo="http://img.hplus.com.vn/355x200/poster/2020/08/03/744316-Paramount-xanh-fix.png",Paramount HD
+http://htv-drm-live-cdn.fptplay.net:80/CDN-FPT02/PARAMOUNT-HD-720p/chunks.m3u8
+#EXTINF:-1 group-title="欧美频道" tvg-logo="http://img.hplus.com.vn/355x200/poster/2020/08/03/744316-Paramount-xanh-fix.png",Paramount HD,PARAMOUNT CHANNEL
+http://htv-drm-live-cdn.fptplay.net/CDN-FPT02/PARAMOUNT-HD-720p/playlist.m3u8
+#EXTINF:-1 group-title="欧美频道" tvg-logo="http://www.kix-tv.com/assets/favicon.ico",KIX
+https://livecdn.fptplay.net/hda/kixhd_hls.smil/chunklist_b2500000.m3u8
+#EXTINF:-1 tvg-ID="Ari.KR" logo="https://static.epg.best/kr/ArirangTV.kr.png" group-title="日韩频道",Arirang(韩国)
+http://amdlive-ch01.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="GOF.Int" tvg-logo="http://onegolftv.com/wp-content/uploads/2018/08/onegolf-HD-with-image-100px.png" group-title="体育频道",One Golf
 http://162.250.201.58:6211/pk/ONEGOLF/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://www.golfnetwork.co.jp/assets/img/pc/layout/header/logo_new.png" group-title="体育频道",ゴルフネットワーク
