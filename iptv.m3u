@@ -1191,6 +1191,8 @@ https://sc.id-tv.kz/bollywood_hd_34_35.m3u8
 http://221.179.217.9//otttv.bj.chinamobile.com/PLTV/88888888/224/3221226550/1.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/eurosport.png" tvg-name="EUROSPORT" group-title="体育频道",Eurosport 4K
 http://a3569457550-zabava-htlive.cdn.ngenix.net/hls/CH_EUROSPORT4K_HLS/bw20000000/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/4K花园.png" tvg-name="" group-title="4K频道",4K花园
+http://223.110.243.150/ott.js.chinamobile.com/PLTV/3/224/3221227749/index.m3u8?
 #EXTINF:-1 tvg-id="world-fashion" tvg-name="world-fashion" tvg-logo="" group-title="欧美频道",HD FASHION (FR)
 rtmp://95.67.47.115/live/hdfashion_ua_hi?_=1536181340
 #EXTINF:-1 tvg-id="ultra-hd-cinema" tvg-logo="" group-title="欧美频道",Ultra HD Cinema 4K UHD
