@@ -1,6 +1,4 @@
 #EXTM3U
-#EXTINF:-49 tvg-logo="" tvg-name="" group-title="央视",CCTV4K
-http://117.148.165.254/livews-4k.5club.cctv.cn/live/4K0205.stream/playlist.m3u8
 #EXTINF:-49 tvg-logo="" tvg-name="" group-title="福建地区",海峡卫视
 http://39.135.53.199/ott.fj.chinamobile.com/PLTV/88888888/224/3221226977/index.m3u8
 #EXTINF:-1 tvg-ID="" tvg-logo="" group-title="福建地区",福建乡村振兴公共
@@ -100,7 +98,7 @@ https://wowzaprod188-i.akamaihd.net/hls/live/728897/54d0bcd5/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://ndhsaanow.com/uploads/images/bek_sports_LOGO.jpg" group-title="体育频道",Bek Sports West
 https://wowzaprod188-i.akamaihd.net/hls/live/728897/89b077e6/playlist.m3u8
 #EXTINF:-1 tvg-id="B01.th" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/beinsports1.png" group-title="体育频道",bein sports 1
-https://www.livedoomovies.com/02_epl1_720p/chunklist.m3u8
+http://36.37.252.114:888/Apple/OneTV-035/playlist.m3u8
 #EXTINF:-1 tvg-id="B02.th" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/beinsports2.png" group-title="体育频道",bein sports 2
 https://www.livedoomovies.com/02_epl2_720p/chunklist.m3u8
 #EXTINF:-1 tvg-ID="BNE.QA" tvg-logo="https://i.imgur.com/vnCFJ5a.png" group-title="体育频道",beIN Sport News
@@ -1251,22 +1249,14 @@ http://cctvtxyh5ca.liveplay.myqcloud.com/cstv/tianjinbh2_2/index.m3u8
 #EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",新科动漫
 http://cctvtxyh5ca.liveplay.myqcloud.com/live/xinkedongman_2/index.m3u8
 #EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",内蒙卫视
-http://live.m2oplus.nmtv.cn/1/sd/live.m3u8
-#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",内蒙卫视
-http://live.m2oplus.nmtv.cn/1/playlist.m3u8
-#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",内蒙经济
-http://live5.m2oplus.nmtv.cn/2/sd/live.m3u8
-#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",内蒙蒙语
-http://live5.m2oplus.nmtv.cn/3/sd/live.m3u8
-#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",内蒙少儿
-http://live5.m2oplus.nmtv.cn/4/sd/live.m3u8
-#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",内蒙蒙语2
-http://live5.m2oplus.nmtv.cn/5/sd/live.m3u8
-#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",内蒙农牧频道
-http://live4.m2oplus.nmtv.cn/6/sd/live.m3u8
-#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",新闻综合
-http://live4.m2oplus.nmtv.cn/7/sd/live.m3u8
-#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",内蒙文体娱乐
+http://live.m2oplus.nmtv.cn/1/sd/live.m3u8#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",内蒙卫视
+http://live.m2oplus.nmtv.cn/1/playlist.m3u8#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",内蒙经济
+http://live5.m2oplus.nmtv.cn/2/sd/live.m3u8#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",内蒙蒙语
+http://live5.m2oplus.nmtv.cn/3/sd/live.m3u8#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",内蒙少儿
+http://live5.m2oplus.nmtv.cn/4/sd/live.m3u8#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",内蒙蒙语2
+http://live5.m2oplus.nmtv.cn/5/sd/live.m3u8#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",内蒙农牧频道
+http://live4.m2oplus.nmtv.cn/6/sd/live.m3u8#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",新闻综合
+http://live4.m2oplus.nmtv.cn/7/sd/live.m3u8#EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",内蒙文体娱乐
 http://live4.m2oplus.nmtv.cn/8/sd/live.m3u8
 #EXTINF:-49 tvg-logo="" tvg-name="" group-title="四川移动组播",大庆教育
 http://39.134.65.208/PLTV/88888888/224/3221225731/index.m3u8
@@ -1964,6 +1954,80 @@ http://szdl.3322.org:8888/rtp/233.50.201.235:5140
 http://szdl.3322.org:8888/rtp/233.50.201.234:5140
 #EXTINF:-1 tvg-logo="" group-title ="四川移动组播",热门综艺
 http://szdl.3322.org:8888/rtp/233.50.201.233:5140
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",Bayon
+http://36.37.252.114:888/Apple/OneTV-011/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",CTN HD
+http://36.37.252.114:888/Apple/OneTV-008/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",BTV NEWS
+http://36.37.252.114:888/Apple/OneTV-012/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",ONE TV E-SCHOOL
+http://36.37.252.114:888/Apple/OneTV-013/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",HANG means
+http://36.37.252.114:888/Apple/OneTV-014/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",RHM
+http://36.37.252.114:888/Apple/OneTV-015/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",seats
+http://36.37.252.114:888/Apple/OneTV-016/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",tVK
+http://36.37.252.114:888/Apple/OneTV-017/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",apsara
+http://36.37.252.114:888/Apple/OneTV-018/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",PNN HD
+http://36.37.252.114:888/Apple/OneTV-019/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",TV3 Cam
+http://36.37.252.114:888/Apple/OneTV-020/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",TV5
+http://36.37.252.114:888/Apple/OneTV-021/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",TV9
+http://36.37.252.114:888/Apple/OneTV-022/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",ntV
+http://36.37.252.114:888/Apple/OneTV-023/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",TOWN TV
+http://36.37.252.114:888/Apple/OneTV-024/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",baby first
+http://36.37.252.114:888/Apple/OneTV-025/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://teevee-hd.com/img/ch3-hd.png" group-title ="泰国地区",3HD
+http://36.37.252.114:888/Apple/OneTV-026/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",RTR
+http://36.37.252.114:888/Apple/OneTV-027/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",TV3 THAI HD
+http://36.37.252.114:888/Apple/OneTV-036/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://teevee-hd.com/img/ch7.png" group-title ="泰国地区",7HD
+http://36.37.252.114:888/Apple/OneTV-037/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",韩国阿里郎
+http://36.37.252.114:888/Apple/OneTV-039/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",KBS World
+http://36.37.252.114:888/Apple/OneTV-040/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",1TV rusasia
+http://36.37.252.114:888/Apple/OneTV-041/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",ture sprots 3 HD
+http://36.37.252.114:888/Apple/OneTV-042/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",france 24 HD
+http://36.37.252.114:888/Apple/OneTV-045/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",THVL HD
+http://36.37.252.114:888/Apple/OneTV-046/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",euro news
+http://36.37.252.114:888/Apple/OneTV-047/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",半岛电视台
+http://36.37.252.114:888/Apple/OneTV-048/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",france paris
+http://36.37.252.114:888/Apple/OneTV-049/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",TV5 moden
+http://36.37.252.114:888/Apple/OneTV-052/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",DW
+http://36.37.252.114:888/Apple/OneTV-053/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",ONE TV SPROTS
+http://36.37.252.114:888/Apple/OneTV-055/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",国家地理红牛
+http://36.37.252.114:888/Apple/OneTV-056/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",RT
+http://36.37.252.114:888/Apple/OneTV-057/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",ONE9
+http://36.37.252.114:888/Apple/OneTV-058/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",fashion tv
+http://36.37.252.114:888/Apple/OneTV-059/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title ="泰国地区",MTV
+http://36.37.252.114:888/Apple/OneTV-060/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://teevee-hd.com/img/ch3-hd.png" group-title ="泰国地区",3HD
 https://www.livedoomovies.com/02_3HD_720p/chunklist.m3u8
 #EXTINF:-1 tvg-logo="https://teevee-hd.com/img/ch5.png" group-title ="泰国地区",5HD
