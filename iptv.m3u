@@ -695,6 +695,10 @@ http://pluto-live.plutotv.net/egress/chandler/pluto01/live/VIACBS07/master.m3u8
 http://pluto-live.plutotv.net/egress/chandler/pluto01/live/VIACBS08/master.m3u8
 #EXTINF:-1, tvg-name="" tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/MTVWMA.png" group-title="音乐频道",MTV HITS
 http://185.186.81.50:8008/playlist.m3u8
+#EXTINF:-1, tvg-name="" tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/MTVWMA.png" group-title="音乐频道",РџРµСЂРІС‹Р№ РњСѓР·С‹РєР°Р»СЊРЅС‹Р№ BY [UHD]
+http://rtmp.one.by:1400
+#EXTINF:-1, tvg-name="" tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/MTVWMA.png" group-title="音乐频道",РџРµСЂРІС‹Р№ РњСѓР·С‹РєР°Р»СЊРЅС‹Р№ BY
+http://rtmp.one.by:1200
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CHANNELV中国.png" tvg-name="CHANNEL[V]" group-title="音乐频道",channelv
 http://ivi.bupt.edu.cn/hls/channelv.m3u8
 #EXTINF:-1 tvg-id="XKW.CN" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/星空卫视.png" tvg-name="星空卫视" group-title="香港澳门",星空卫视
