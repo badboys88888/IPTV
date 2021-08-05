@@ -525,6 +525,8 @@ http://otttv.bj.chinamobile.com/TVOD/88888888/224/3221226554/1.m3u8
 http://otttv.bj.chinamobile.com/TVOD/88888888/224/3221226552/1.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/北京IPTV淘剧场.png" tvg-name="" group-title="北京地区",北京IPTV淘剧场
 http://otttv.bj.chinamobile.com/TVOD/88888888/224/3221226553/1.m3u8
+#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/ws/beijingjishi.png" tvg-name="北京纪实" group-title="北京地区",北京冬奥纪实
+http://221.179.217.94/PLTV/88888888/224/3221226563/1.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/%E5%8C%97%E4%BA%ACIPTV%E8%90%8C%E5%AE%A0TV.png" tvg-name="" group-title="北京地区",北京IPTV萌宠TV
 http://otttv.bj.chinamobile.com/TVOD/88888888/224/3221226555/1.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/北京IPTV@大健康.png" tvg-name="" group-title="北京地区",北京IPTV@大健康
@@ -1614,7 +1616,7 @@ rtp://239.11.0.123:5140
 rtp://239.11.0.127:5140
 #EXTINF:-1 tvg-logo="" tvg-name="" group-title="四川移动组播",卡酷少儿
 rtp://239.11.0.129:5140
-#EXTINF:-1 tvg-logo="" tvg-name="" group-title="四川移动组播",爱上4K
+#EXTINF:-1 tvg-logo="" tvg-name="爱上4K" group-title="四川移动组播",爱上4K
 rtp://239.11.0.120:5140
 #EXTINF:-1 tvg-logo="" tvg-name="" group-title="四川移动组播",真4K
 rtp://239.11.0.122:5140
