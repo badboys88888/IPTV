@@ -304,6 +304,18 @@ rtmp://58.200.131.2:1935/livetv/fhdy
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/澳门莲花.png" tvg-name="莲花卫视" group-title="香港澳门",澳门莲花
 http://36.37.252.114:888/Apple/OneTV-075/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/RTHK31.png" group-title="香港澳门",港台電視31
+http://185.207.176.189:8080/channels/tv-31/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/RTHK32.png" group-title="香港澳门",港台電視32
+http://185.207.176.189:8080/channels/tv-32/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/RTHK33.png" group-title="香港澳门",港台電視33
+http://185.207.176.189:8080/channels/tv-33/playlist.m3u8
+#EXTINF:-1 tvg-id="232" tvg-logo="https://poster.starhubgo.com/Linear_channels2/838_1920x1080_HTV.png" tvg-name="翡翠台" group-title="香港澳门",翡翠台   
+http://185.207.176.189:8080/channels/tv-81/playlist.m3u8
+#EXTINF:-1 tvg-id="V99.HK" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/Viu%20TV.png" tvg-name="ViuTV" group-title="香港澳门",ViuTV
+http://185.207.176.189:8080/channels/tv-99/playlist.m3u8
+#EXTINF:-1 tvg-id="V96.HK" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/VIU6.png" group-title="香港澳门",ViuTV Six
+http://185.207.176.189:8080/channels/tv-96/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/RTHK31.png" group-title="香港澳门",港台電視31
 http://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/index_2052_av-p.m3u8?sd=10&rebase=on
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/RTHK32.png" group-title="香港澳门",港台電視32
 https://rthklive2-lh.akamaihd.net/i/rthk32_1@168450/index_1080_av-p.m3u8
