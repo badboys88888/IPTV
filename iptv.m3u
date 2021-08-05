@@ -166,11 +166,35 @@ http://b.315600.xyz/8tv.php?qu=1080
 #EXTINF:-1 tvg-ID="TV9.MY" tvg-logo="https://www.xtra.com.my/wp-content/themes/xtra_revamp/assets/img/tv9.png" group-title="新马",TV9
 https://fvtv.mywire.org/playlist/cyxua17hra-kspk2qfm7h.m3u8
 #EXTINF:-1 tvg-ID="Awa.MY" tvg-logo="https://img.astroawani.com/template/awani.jpg" group-title="新马",Astro Awani
-https://fvtv.mywire.org/playlist/fa1sdnjufp-bg4c8c1dp3.m3u8
+https://awanitv.akamaized.net/hls/live/2017836/LiveTV1/index.m3u8
 #EXTINF:-1 tvg-logo="https://img.astroawani.com/template/awani.jpg" group-title="新马",Astro Awani
-https://fvtv.mywire.org/playlist/fa1sdnjufp-bg4c8c1dp3.m3u8
+http://50.7.161.82:8278/streams/d/Awani/playlist.m3u8
 #EXTINF:-1 tvg-id="Cer.MY" tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/55_144.png" group-title="新马",Astro Ceria
-http://ts.lemmovie.com/ec85b2d2-8539-4d40-bfc2-64abcf7e8984.m3u8
+http://50.7.161.82:8278/streams/d/Ceria/playlist.m3u8  
+#EXTINF:-1 tvg-id="Cer.MY" tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/55_144.png" group-title="新马",Astro Citra
+http://50.7.161.82:8278/streams/d/Citra/playlist.m3u8 
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/f5/Astro_Oasis.png" group-title="新马",Astro Oasis 
+http://50.7.161.82:8278/streams/d/Oasis/playlist.m3u8 
+#EXTINF:-1 tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/3_144.png" group-title="新马",Astro Prima  
+http://185.180.221.194:8278/streams/d/Prima/playlist.m3u8  
+#EXTINF:-1 tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/183_144.png" group-title="新马",Astro Shuang Xing
+http://50.7.161.82:8278/streams/d/Shuangxing/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/2_144.png" group-title="新马",Astro 华丽台 (Astro Wah Lai Toi) 
+http://185.180.221.194:8278/streams/d/Wlt/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/49_144.png" group-title="新马",Astro 小太阳 (Astro Xiao Tai Yang) [Not 24/7] 
+http://50.7.161.82:8278/streams/d/Xiaotaiyang/playlist.m3u8  
+#EXTINF:-1 tvg-logo="https://astrocontent.s3.amazonaws.com/Images/ChannelLogo/Pos/118_300.png" group-title="新马",Astro 欢喜台 (Astro Hua Hee Dai)
+http://185.180.221.194:8278/streams/d/Huahee/playlist.m3u8  
+#EXTINF:-1 tvg-logo="https://astrocontent.s3.amazonaws.com/Images/ChannelLogo/Pos/118_300.png" group-title="新马",Astro·BOO
+http://50.7.161.82:8278/streams/d/Boo/playlist.m3u8   
+#EXTINF:-1 tvg-logo="https://astrocontent.s3.amazonaws.com/Images/ChannelLogo/Pos/118_300.png" group-title="新马",Astro·Citra  
+http://50.7.161.82:8278/streams/d/Citra/playlist.m3u8  
+#EXTINF:-1 tvg-logo="https://astrocontent.s3.amazonaws.com/Images/ChannelLogo/Pos/118_300.png" group-title="新马",Astro·全佳台  
+http://50.7.161.82:8278/streams/d/Quanjia/playlist.m3u8  
+#EXTINF:-1 tvg-logo="https://astrocontent.s3.amazonaws.com/Images/ChannelLogo/Pos/118_300.png" group-title="新马",Astro·双星台  
+http://50.7.161.82:8278/streams/d/Shuangxing/playlist.m3u8  
+#EXTINF:-1 tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/49_144.png" group-title="新马",Astro·小太阳  
+http://50.7.161.82:8278/streams/d/Xiaotaiyang/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://astrocontent.s3.amazonaws.com/Images/ChannelLogo/Pos/118_300.png" group-title="新马",Astro Go Shop
 https://agplayback03.aotg-video.astro.com.my/CH1/master_GOSHOP.m3u8
 #EXTINF:-1 tvg-logo="https://astrocontent.s3.amazonaws.com/Images/ChannelLogo/Pos/120_300.png" group-title="新马",Astro Go Shop Malaya
