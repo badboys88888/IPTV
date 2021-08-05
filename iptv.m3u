@@ -315,6 +315,8 @@ http://185.207.176.189:8080/channels/tv-81/playlist.m3u8
 http://185.207.176.189:8080/channels/tv-99/playlist.m3u8
 #EXTINF:-1 tvg-id="V96.HK" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/VIU6.png" group-title="香港澳门",ViuTV Six
 http://185.207.176.189:8080/channels/tv-96/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="香港澳门",C+
+http://gslbmeiah.cdn.hk.chinamobile.com/livehls/MOB-U1-NO/03.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/RTHK31.png" group-title="香港澳门",港台電視31
 http://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/index_2052_av-p.m3u8?sd=10&rebase=on
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/RTHK32.png" group-title="香港澳门",港台電視32
@@ -482,7 +484,7 @@ rtp://239.10.0.145:5140
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/求索生活.png" tvg-name="求索生活" group-title="上海地区",求索生活
 http://39.134.65.162/PLTV/88888888/224/3221225715/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/求索动物.png" tvg-name="求索动物" group-title="上海地区",求索动物
-http://39.135.98.8/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221228980/01.m3u8?fmt=ts2hls
+http://39.134.65.162/PLTV/88888888/224/3221225730/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/求索科学.png" tvg-name="求索科学" group-title="上海地区",求索科学
 http://39.134.65.162/PLTV/88888888/224/3221225728/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/求索纪录.png" tvg-name="求索纪录" group-title="上海地区",求索纪录
@@ -714,7 +716,7 @@ http://rtmp.one.by:1400
 #EXTINF:-1, tvg-name="" tvg-id="" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/MTVWMA.png" group-title="音乐频道",РџРµСЂРІС‹Р№ РњСѓР·С‹РєР°Р»СЊРЅС‹Р№ BY
 http://rtmp.one.by:1200
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/CHANNELV中国.png" tvg-name="CHANNEL[V]" group-title="音乐频道",channelv
-http://ivi.bupt.edu.cn/hls/channelv.m3u8
+http://htv-drm-live-cdn.fptplay.net/CDN-FPT02/CHANNELV-HD-1080p/playlist.m3u8
 #EXTINF:-1 tvg-id="XKW.CN" tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/星空卫视.png" tvg-name="星空卫视" group-title="香港澳门",星空卫视
 http://ivi.bupt.edu.cn/hls/startv.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/photo/main/星空体育.png" tvg-name="星空体育" group-title="香港澳门",星空体育
@@ -848,6 +850,8 @@ https://livecdn.fptplay.net/qnetlive/foxsports3_hls.smil/chunklist_b2500000.m3u8
 http://htv-drm-live-cdn.fptplay.net/CDN-FPT02/FOXMOVIES-HD-1080p/playlist.m3u8
 #EXTINF:-1 group-title="欧美频道" tvg-logo="https://static.epg.best/es/Fox.es.png",Fox
 https://livecdn.fptplay.net/foxlive/foxhd_hls.smil/chunklist_b2500000.m3u8
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="欧美频道", Outdoor Channel
+http://livecdn.fptplay.net/world/outdoorfhd_hls.smil/chunklist_b2500000.m3u8
 #EXTINF:-1 group-title="欧美频道" tvg-logo="https://static.epg.best/in/FOXLife.in.png",Fox Life
 https://livecdn.fptplay.net/foxlive/foxlifehd_hls.smil/chunklist_b2500000.m3u8
 #EXTINF:-1 group-title="欧美频道" tvg-logo="https://astrocontent.s3.amazonaws.com/Images/ChannelLogo/Pos/724_300.png",Fox HD
@@ -938,12 +942,64 @@ https://nimble.dashstreams.net/onestudio/fightplustv/playlist.m3u8
 https://sniffercat002.akamaized.net/scheduler/scheduleMaster/109/variant/22099397/a0ff0a6a-a465-47c9-adde-db2f84df7053.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://pbs.twimg.com/profile_images/1112616272741621760/Od1saD2b_400x400.png" group-title="体育频道",CombatGo
 https://dai.google.com/linear/hls/event/gaDje967RoSDD5llid2OBA/master.m3u8
+#EXTINF:-1 tvg-id="Hbo.Asia" tvg-logo="" tvg-name="华视" group-title="台湾地区",华视体育文化
+http://185.207.176.189:8080/channels/tw-502/playlist.m3u8
+#EXTINF:-1 tvg-id="Hbo.Asia" tvg-logo="" tvg-name="" group-title="台湾地区",华视新闻资讯
+http://185.207.176.189:8080/channels/tw-503/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",国会频道1
+http://185.207.176.189:8080/channels/tw-504/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",国会频道2
+http://185.207.176.189:8080/channels/tw-505/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/FTV.png" tvg-name="民视无线台" group-title="台湾地区",民视
+http://185.207.176.189:8080/channels/tw-300/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/FTV.png" tvg-name="民视无线台" group-title="台湾地区",民视
+http://198.16.106.62:8278/streams/d/ftvhd_taiwan/playlist.m3u8
+#EXTINF:-1 tvg-id="MS1.TW" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/ftv-1.png" group-title="台湾地区",民视第一台
+http://185.207.176.189:8080/channels/tw-301/playlist.m3u8
+#EXTINF:-1 tvg-id="MS1.TW" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/FTVNews.png" group-title="台湾地区",民视新闻台
+http://185.207.176.189:8080/channels/tw-302/playlist.m3u8
+#EXTINF:-1 tvg-id="MS1.TW" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/ftv-taiwan.png" group-title="台湾地区",民视台湾台
+http://198.16.106.62:8278/streams/d/ftvtaiwan_twn/playlist.m3u8
+#EXTINF:-1 tvg-id="MS1.TW" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/ftv-taiwan.png" group-title="台湾地区",民视台湾台
+http://185.207.176.189:8080/channels/tw-304/playlist.m3u8
+#EXTINF:-1 tvg-id="298" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/SETNews.png" group-title="台湾地区",三立新闻台
+http://198.16.106.62:8278/streams/d/sanlinews_zero/playlist.m3u8
+#EXTINF:-1 tvg-id="279" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/SETTaiwan.png" group-title="台湾地区",三立台湾台
+http://198.16.106.62:8278/streams/d/sanlitaiwan/playlist.m3u8
+#EXTINF:-1 tvg-id="310" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/VideolandSportsHD.png" group-title="台湾地区",纬来体育台
+http://198.16.106.62:8278/streams/d/videolandsport_zero/playlist.m3u8
+#EXTINF:-1 tvg-id="311" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/VideolandJapanese.png" group-title="台湾地区",纬来日本台
+http://198.16.106.62:8278/streams/d/videolandjapan_zero/playlist.m3u8
+#EXTINF:-1 tvg-id="291" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/VideolandDrama.png" group-title="台湾地区",纬来戏剧台
+http://198.16.106.62:8278/streams/d/videolandxiju_zero/playlist.m3u8 
+#EXTINF:-1 tvg-id="305" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/VideolandMovies.png" group-title="台湾地区",纬来电影台
+http://198.16.106.62:8278/streams/d/videolandmovie_zero/playlist.m3u8
+#EXTINF:-1 tvg-id="410" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/weilaojingcai.png" group-title="台湾地区",纬来精采
+http://198.16.106.62:8278/streams/d/videolandspecial_zero/playlist.m3u8 
+#EXTINF:-1 tvg-id="427" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/elta_zonghehd.png" group-title="台湾地区",爱尔达综合
+http://198.16.106.62:8278/streams/d/eltazonghe_zero/playlist.m3u8  
+#EXTINF:-1 tvg-id="414" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/elta_yingju.png" group-title="台湾地区",爱尔达影剧
+http://198.16.106.62:8278/streams/d/eltadrama_zero/playlist.m3u8
+#EXTINF:-1 tvg-id="474" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/FOXHD.png" group-title="台湾地区",FOX
+http://198.16.106.62:8278/streams/d/foxhd_zero/playlist.m3u8
+#EXTINF:-1 tvg-id="474" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/FOXCRIME.png" group-title="台湾地区",FOXCRIME
+http://198.16.106.62:8278/streams/d/foxcrime_zero/playlist.m3u8
+#EXTINF:-1 tvg-id="455" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/FOXActionMovies.png" tvg-name="FOXActionMovies" group-title="台湾地区",FOX動作電影 
+http://198.16.106.62:8278/streams/d/foxaction_zero/playlist.m3u8
+#EXTINF:-1 tvg-id="448" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/FoxFamilyMovies.png" tvg-name="FoxFamilyMovies" group-title="台湾地区",Fox Family Movies
+http://198.16.106.62:8278/streams/d/foxfamily_zero/playlist.m3u8
+#EXTINF:-1 tvg-id="350" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/FoodNetwork.png" tvg-name="FoodNetwork美食台" group-title="台湾地区",FoodNetwork美食台 
+http://198.16.106.62:8278/streams/d/foodplanet_zero/playlist.m3u8
+#EXTINF:-1 tvg-id="425" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/fooldplanet.png" tvg-name="美食星球" group-title="台湾地区",美食星球
+http://198.16.106.62:8278/streams/d/asiafood_zero/playlist.m3u8
+#EXTINF:-1 tvg-id="498" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/Nickelodeon.png" tvg-name="Nickelodeon" group-title="台湾地区",尼克儿童频道
+http://198.16.106.62:8278/streams/d/Nickelodeon/playlist.m3u8
+#EXTINF:-1 tvg-id="499" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/NickJr.png" tvg-name="NickJr." group-title="台湾地区",小尼克频道
+http://198.16.106.62:8278/streams/d/Nickjr/playlist.m3u8
+#EXTINF:-1 tvg-id="438" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/natgeowild.png" tvg-name="国家地理野生频道" group-title="台湾地区",国家地理野生频道
+http://50.7.161.82:8278/streams/d/Natgeowild/playlist.m3u8
 #EXTINF:-1 tvg-id="Hbo.Asia" tvg-logo="https://static.epg.best/us/HBO.us.png" tvg-name="HBO" group-title="台湾地区",HBO
 https://liveorigin01.hbogoasia.com:8443/origin/live/main/HBO/index.m3u8
-#EXTINF:-1 tvg-id="Hbo.Asia" tvg-logo="https://static.epg.best/us/HBO.us.png" tvg-name="HBO" group-title="台湾地区",HBO 960p
-https://github.com/badboys88888/IPTV/raw/main/hbo.m3u8
-#EXTINF:-1 tvg-id="Hbo.Asia" tvg-logo="https://static.epg.best/us/HBO.us.png" tvg-name="HBO" group-title="台湾地区",HBO 1080P
-https://github.com/badboys88888/IPTV/raw/main/hbohd.m3u8
 #EXTINF:-1 tvg-id="Hbf.Asia" tvg-logo="https://static.epg.best/us/HBOFamily.us.png" tvg-name="HBOFamily" group-title="台湾地区",HBO Family
 https://liveorigin01.hbogoasia.com:8443/origin/live/main/FAMILY/index.m3u8
 #EXTINF:-1 tvg-id="Hbh.Asia" tvg-logo="https://static.epg.best/id/HBOHits.id.png" tvg-name="HBOHits" group-title="台湾地区",HBO Hits
@@ -1134,9 +1190,9 @@ https://bdz47wk-lh.akamaihd.net/i/bdz47wkvo0zjom_1@1017167/index_0500_av-p.m3u8
 #EXTINF:-1 tvg-ID="ZLI.US" tvg-logo="https://www.zliving.com/wp-content/uploads/2018/02/Zliving-Logo.png" group-title="欧美频道",Z Living
 https://y5w8j4a9.ssl.hwcdn.net/zlivingusa_r_prod/mono.m3u8
 #EXTINF:-1 tvg-id="BB1.UK" tvg-logo="http://static.epg.best/gb/BBC1.uk.png" group-title="欧美频道",BBC 1
-https://uk.easyview.eu/hls/bbc-london.m3u8|Referer=https://easyview.eu/watch.php?stream=bbc-london
+http://93.190.139.35:8278/streams/d/bbc1_antik/playlist.m3u8  
 #EXTINF:-1 tvg-id="BB2.UK" tvg-logo="http://static.epg.best/gb/BBC2.uk.png" group-title="欧美频道",BBC 2
-https://uk.easyview.eu/hls/bbc-two.m3u8|Referer=https://easyview.eu/watch.php?stream=bbc-two
+http://93.190.139.35:8278/streams/d/bbc2_antik/playlist.m3u8  
 #EXTINF:-1 tvg-id="CB4.UK" tvg-logo="http://static.epg.best/gb/BBC4.uk.png" group-title="欧美频道",BBC 4
 https://uk.easyview.eu/hls/bbc-four.m3u8|Referer=https://easyview.eu/watch.php?stream=bbc-four
 #EXTINF:-1 tvg-id="BBN.UK" tvg-logo="http://static.epg.best/gb/BBCNews.uk.png" group-title="欧美频道",BBC News
@@ -1888,6 +1944,8 @@ http://m2otv-lh.akamaihd.net/i/m2oTv_1@186074/index_600_av-b.m3u8
 http://144.76.91.70:8081/streamrtmp/ss2/playlist.m3u8
 #EXTINF:-1 tvg-logo="" tvg-name="djing" group-title="音乐频道",djing
 https://www.djing.com/tv/underground.m3u8
+#EXTINF:-1 tvg-logo="https://www.admedia.ae/images/Brands/202022311593025IL.png" tvg-name="starsports2" group-title="体育频道",ASTRO SPORT 2
+http://50.7.161.82:8278/streams/d/Assp2/playlist.m3u8 
 #EXTINF:-1 tvg-logo="https://www.admedia.ae/images/Brands/202022311593025IL.png" tvg-name="starsports2" group-title="体育频道",Abu Dhabi Sports 1
 https://admdn1.cdn.mangomolo.com/adsports1/smil:adsports1.stream.smil/chunklist_b1800000_t64NzIwcA==.m3u8
 #EXTINF:-1 tvg-logo="https://www.admedia.ae/images/Brands/2020223115944993BD.png" tvg-name="starsports2" group-title="体育频道",Abu Dhabi Sports 2
