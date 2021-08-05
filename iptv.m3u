@@ -989,11 +989,15 @@ http://198.16.106.62:8278/streams/d/foxaction_zero/playlist.m3u8
 #EXTINF:-1 tvg-id="448" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/FoxFamilyMovies.png" tvg-name="FoxFamilyMovies" group-title="台湾地区",Fox Family Movies
 http://198.16.106.62:8278/streams/d/foxfamily_zero/playlist.m3u8
 #EXTINF:-1 tvg-id="350" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/FoodNetwork.png" tvg-name="FoodNetwork美食台" group-title="台湾地区",FoodNetwork美食台 
-http://198.16.106.62:8278/streams/d/foodplanet_zero/playlist.m3u8
-#EXTINF:-1 tvg-id="425" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/fooldplanet.png" tvg-name="美食星球" group-title="台湾地区",美食星球
 http://198.16.106.62:8278/streams/d/asiafood_zero/playlist.m3u8
+#EXTINF:-1 tvg-id="425" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/fooldplanet.png" tvg-name="美食星球" group-title="台湾地区",美食星球
+http://198.16.106.62:8278/streams/d/foodplanet_zero/playlist.m3u8
 #EXTINF:-1 tvg-id="498" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/Nickelodeon.png" tvg-name="Nickelodeon" group-title="台湾地区",尼克儿童频道
 http://198.16.106.62:8278/streams/d/Nickelodeon/playlist.m3u8
+#EXTINF:-1 tvg-id="271" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/GoodTV.png" tvg-name="GoodTV" group-title="台湾地区",好消息频道
+https://dqhxk7sbp7xog.cloudfront.net/osmflivech1.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-name="" group-title="台湾地区",GOODTV卡通
+https://dqhxk7sbp7xog.cloudfront.net/osmflivech45.m3u8  
 #EXTINF:-1 tvg-id="499" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/NickJr.png" tvg-name="NickJr." group-title="台湾地区",小尼克频道
 http://198.16.106.62:8278/streams/d/Nickjr/playlist.m3u8
 #EXTINF:-1 tvg-id="438" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/natgeowild.png" tvg-name="国家地理野生频道" group-title="台湾地区",国家地理野生频道
