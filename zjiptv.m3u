@@ -1,5 +1,5 @@
 #EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"
-EXTINF:-1 tvg-name="宁波电视台" tvg-id="宁波电视台" group-title="浙江电信[A]",宁波一套
+#EXTINF:-1 group-title="浙江电信[A]",宁波一套
 http://115.194.8.237:9999/udp/233.50.201.168:5140
 #EXTINF:-1 group-title="浙江电信[A]",宁波二套
 http://115.194.8.237:9999/udp/233.50.201.178:5140
