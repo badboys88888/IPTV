@@ -1,19 +1,39 @@
 #EXTM3U x-tvg-url="http://192.168.6.15:5678/t.xml.gz"
-#EXTINF:-1 group-title="重庆电信",重庆卫视
-http://www.745612.xyz:7788/udp/235.254.199.173:7980
+#EXTINF:-1 group-title="重庆电信",东方卫视4K
+http://www.745612.xyz:7788/udp/235.254.197.190:7980
+#EXTINF:-1 group-title="重庆电信",江苏卫视4K
+http://www.745612.xyz:7788/udp/235.254.197.191:7980
+#EXTINF:-1 group-title="重庆电信",浙江卫视4K
+http://www.745612.xyz:7788/udp/235.254.197.194:7980
+#EXTINF:-1 group-title="重庆电信",山东卫视4K
+http://www.745612.xyz:7788/udp/235.254.197.195:7980
+#EXTINF:-1 group-title="重庆电信",湖南卫视4K
+http://www.745612.xyz:7788/udp/235.254.197.196:7980  
+#EXTINF:-1 group-title="重庆电信",湖南卫视4K
+http://www.745612.xyz:7788/udp/235.254.197.196:7980 
+#EXTINF:-1 group-title="重庆电信",四川卫视4K
+http://www.745612.xyz:7788/udp/235.254.197.197:7980
+#EXTINF:-1 group-title="重庆电信",深圳卫视4K
+http://www.745612.xyz:7788/udp/235.254.197.56:7980
+#EXTINF:-1 group-title="重庆电信",广东卫视4K
+http://www.745612.xyz:7788/udp/235.254.197.55:7980
+#EXTINF:-1 group-title="重庆电信",北京卫视4K
+http://www.745612.xyz:7788/udp/235.254.197.50:7980
+#EXTINF:-1 group-title="重庆电信",华数电影4K
+http://www.745612.xyz:7788/udp/235.254.199.102:7980
 #EXTINF:-1 group-title="重庆电信",重庆新闻
 http://www.745612.xyz:7788/udp/235.254.197.199:7980
-#EXTINF:-1 group-title="重庆电信",重庆影视
+#EXTINF:-1 group-title="重庆电信",重庆影视剧
 http://www.745612.xyz:7788/udp/235.254.199.180:7980
-#EXTINF:-1 group-title="重庆电信",重庆都市
+#EXTINF:-1 group-title="重庆电信",重庆社会与法
 http://www.745612.xyz:7788/udp/235.254.199.181:7980
-#EXTINF:-1 group-title="重庆电信",重庆时尚
+#EXTINF:-1 group-title="重庆电信",重庆红岩文化
 http://www.745612.xyz:7788/udp/235.254.199.182:7980
-#EXTINF:-1 group-title="重庆电信",重庆娱乐
+#EXTINF:-1 group-title="重庆电信",重庆文体娱乐
 http://www.745612.xyz:7788/udp/235.254.199.187:7980
-#EXTINF:-1 group-title="重庆电信",重庆公共农村
+#EXTINF:-1 group-title="重庆电信",重庆新农村
 http://www.745612.xyz:7788/udp/235.254.199.186:7980
-#EXTINF:-1 group-title="重庆电信",重庆科教
+#EXTINF:-1 group-title="重庆电信",重庆红叶
 http://www.745612.xyz:7788/udp/235.254.199.188:7980
 #EXTINF:-1 group-title="重庆电信",重庆少儿
 http://www.745612.xyz:7788/udp/235.254.199.166:7980
