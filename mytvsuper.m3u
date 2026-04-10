@@ -1,189 +1,193 @@
-#EXTM3U
-#EXTINF:-1 tvg-id="J" tvg-name="翡翠台" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",翡翠台(超高清)
+#EXTM3U url-tvg="https://raw.githubusercontent.com/badboys88888/EPGCollector/main/mytvsuper/epg.xml,,https://raw.githubusercontent.com/badboys88888/EPGCollector/main/hoytv/hoytv.xml" catchup-time="10800" catchup-type="timeshift"
+#EXTINF:-1 tvg-id="J" tvg-name="翡翠台" tvg-logo="https://php.946985.xyz/logo/翡翠台.png" group-title="myTVSUPER",翡翠台(超高清)
 http://192.168.6.16:18480/stream/null/4k/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CWIN" tvg-name="SUPER" tvg-logo="https://assets.mytvsuper.com/channel/1679473718355177_CWIN.png" group-title="myTVSUPER",SUPER
+#EXTINF:-1 tvg-id="CWIN" tvg-name="SUPER" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",SUPER
 http://192.168.6.16:18480/stream/null/mytvsuperfree1/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="SVAR" tvg-name="SUPER獎門人" tvg-logo="https://assets.mytvsuper.com/channel/1745985345748344_SVAR.png" group-title="myTVSUPER",SUPER獎門人
+#EXTINF:-1 tvg-id="SVAR" tvg-name="SUPER獎門人" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",SUPER獎門人
 http://192.168.6.16:18480/stream/null/super6/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="SEYT" tvg-name="觀眾票選-追劇馬拉松" group-title="myTVSUPER",觀眾票選-追劇馬拉松
+#EXTINF:-1 tvg-id="SEYT" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" tvg-name="觀眾票選-追劇馬拉松" group-title="myTVSUPER",觀眾票選-追劇馬拉松
 http://192.168.6.16:18480/stream/null/supereyt/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="SFOO" tvg-name="SUPER識食" tvg-logo="https://assets.mytvsuper.com/channel/1745985725790287_SFOO.png" group-title="myTVSUPER",SUPER識食
+#EXTINF:-1 tvg-id="SFOO" tvg-name="SUPER識食" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",SUPER識食
 http://192.168.6.16:18480/stream/null/super5/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="STRA" tvg-name="SUPER識嘆" group-title="myTVSUPER",SUPER識嘆
+#EXTINF:-1 tvg-id="STRA" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" tvg-name="SUPER識嘆" group-title="myTVSUPER",SUPER識嘆
 http://192.168.6.16:18480/stream/null/super4/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="SMUS" tvg-name="SUPER Music" group-title="myTVSUPER",SUPER Music
+#EXTINF:-1 tvg-id="SMUS" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" tvg-name="SUPER Music" group-title="myTVSUPER",SUPER Music
 http://192.168.6.16:18480/stream/null/supermusic/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="SGOL" tvg-name="SUPER金曲" group-title="myTVSUPER",SUPER金曲
+#EXTINF:-1 tvg-id="SGOL" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" tvg-name="SUPER金曲" group-title="myTVSUPER",SUPER金曲
 http://192.168.6.16:18480/stream/null/super3/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="SSIT" tvg-name="SUPER煲劇" group-title="myTVSUPER",SUPER煲劇
+#EXTINF:-1 tvg-id="SSIT" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" tvg-name="SUPER煲劇" group-title="myTVSUPER",SUPER煲劇
 http://192.168.6.16:18480/stream/null/super2/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="STVM" tvg-name="SUPER單元劇" group-title="myTVSUPER",SUPER單元劇
+#EXTINF:-1 tvg-id="STVM" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" tvg-name="SUPER單元劇" group-title="myTVSUPER",SUPER單元劇
 http://192.168.6.16:18480/stream/null/super21/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="SDOC" tvg-name="真情SUPER煲" group-title="myTVSUPER",真情SUPER煲
+#EXTINF:-1 tvg-id="SDOC" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" tvg-name="真情SUPER煲" group-title="myTVSUPER",真情SUPER煲
 http://192.168.6.16:18480/stream/null/super11/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="SSPT" tvg-name="SUPER Sports" group-title="myTVSUPER",SUPER Sports
+#EXTINF:-1 tvg-id="SSPT" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" tvg-name="SUPER Sports" group-title="myTVSUPER",SUPER Sports
 http://192.168.6.16:18480/stream/null/supersports/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="C18" tvg-name="myTV SUPER 18台" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",myTV SUPER 18台
+#EXTINF:-1 tvg-id="C18" tvg-name="myTV SUPER 18台" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",myTV SUPER 18台
 http://192.168.6.16:18480/stream/null/mytvsuper18/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="TVG" tvg-name="黃金翡翠台" tvg-logo="https://assets.mytvsuper.com/channel/1651032648621471_TVG.png" group-title="myTVSUPER",黃金翡翠台
+#EXTINF:-1 tvg-id="TVG" tvg-name="黃金翡翠台" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",黃金翡翠台
 http://192.168.6.16:18480/stream/null/null211/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="J" tvg-name="翡翠台" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",翡翠台
+#EXTINF:-1 tvg-id="J" tvg-name="翡翠台" tvg-logo="https://php.946985.xyz/logo/翡翠台.png" group-title="myTVSUPER",翡翠台
 http://192.168.6.16:18480/stream/null/null21/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="B" tvg-name="TVB Plus" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",TVB Plus
+#EXTINF:-1 tvg-id="B" tvg-name="TVB Plus" tvg-logo="https://xiaotan.860775.xyz/TVB Plus.png" group-title="myTVSUPER",TVB Plus
 http://192.168.6.16:18480/stream/null/tvbplus/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="C" tvg-name="無綫新聞台" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",無綫新聞台
+#EXTINF:-1 tvg-id="C" tvg-name="無綫新聞台" tvg-logo="https://php.946985.xyz/logo/无线新闻.png" group-title="myTVSUPER",無綫新聞台
 http://192.168.6.16:18480/stream/null/null41/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="P" tvg-name="明珠台" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",明珠台
+#EXTINF:-1 tvg-id="P" tvg-name="明珠台" tvg-logo="https://php.946985.xyz/logo/明珠台.png" group-title="myTVSUPER",明珠台
 http://192.168.6.16:18480/stream/null/null31/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CTVC" tvg-name="千禧經典台" tvg-logo="https://assets.mytvsuper.com/channel/1651032673030814_CTVC.png" group-title="myTVSUPER",千禧經典台
+#EXTINF:-1 tvg-id="CTVC" tvg-name="千禧經典台" tvg-logo="https://php.946985.xyz/logo/千禧经典.png" group-title="myTVSUPER",千禧經典台
 http://192.168.6.16:18480/stream/null/null5/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CTVS" tvg-name="亞洲劇台" tvg-logo="https://assets.mytvsuper.com/channel/1651032687467218_CTVS.png" group-title="myTVSUPER",亞洲劇台
+#EXTINF:-1 tvg-id="CTVS" tvg-name="亞洲劇台" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",亞洲劇台
 http://192.168.6.16:18480/stream/null/null21111/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CDR3" tvg-name="華語劇台" tvg-logo="https://assets.mytvsuper.com/channel/1651032713939760_CDR3.png" group-title="myTVSUPER",華語劇台
+#EXTINF:-1 tvg-id="CDR3" tvg-name="華語劇台" tvg-logo="https://php.946985.xyz/logo/华语剧.png" group-title="myTVSUPER",華語劇台
 http://192.168.6.16:18480/stream/null/null4111/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="TVO" tvg-name="黃金華劇台" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",黃金華劇台
+#EXTINF:-1 tvg-id="TVO" tvg-name="黃金華劇台" tvg-logo="https://php.946985.xyz/logo/黄金华剧.png" group-title="myTVSUPER",黃金華劇台
 http://192.168.6.16:18480/stream/null/null11111/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CTVE" tvg-name="娛樂新聞台" tvg-logo="https://assets.mytvsuper.com/channel/1651033225649707_CTVE.png" group-title="myTVSUPER",娛樂新聞台
+#EXTINF:-1 tvg-id="CTVE" tvg-name="娛樂新聞台" tvg-logo="https://php.946985.xyz/logo/娱乐新闻.png" group-title="myTVSUPER",娛樂新聞台
 http://192.168.6.16:18480/stream/null/null111/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CCOC" tvg-name="戲曲台" tvg-logo="https://assets.mytvsuper.com/channel/1651033348934776_CCOC.png" group-title="myTVSUPER",戲曲台
+#EXTINF:-1 tvg-id="CCOC" tvg-name="戲曲台" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",戲曲台
 http://192.168.6.16:18480/stream/null/null51/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="KID" tvg-name="SUPER Kids Channel" tvg-logo="https://assets.mytvsuper.com/channel/1651033359059853_KID.png" group-title="myTVSUPER",SUPER Kids Channel
+#EXTINF:-1 tvg-id="KID" tvg-name="SUPER Kids Channel" tvg-logo="https://php.946985.xyz/logo/SUPERKidsChannel.png" group-title="myTVSUPER",SUPER Kids Channel
 http://192.168.6.16:18480/stream/null/superkidschannel/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="ZOO" tvg-name="ZooMoo" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",ZooMoo
+#EXTINF:-1 tvg-id="ZOO" tvg-name="ZooMoo" tvg-logo="https://php.946985.xyz/logo/ZooMoo.png" group-title="myTVSUPER",ZooMoo
 http://192.168.6.16:18480/stream/null/zoomoo/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CNIKO" tvg-name="Nickelodeon" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",Nickelodeon
+#EXTINF:-1 tvg-id="CNIKO" tvg-name="Nickelodeon" tvg-logo="https://php.946985.xyz/logo/Nickelodeon.png" group-title="myTVSUPER",Nickelodeon
 http://192.168.6.16:18480/stream/null/nickelodeon/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CNIJR" tvg-name="Nick Jr" tvg-logo="https://assets.mytvsuper.com/channel/1651033388527501_CNIJR.png" group-title="myTVSUPER",Nick Jr.
+#EXTINF:-1 tvg-id="CNIJR" tvg-name="Nick Jr" tvg-logo="https://php.946985.xyz/logo/Nickjr.png" group-title="myTVSUPER",Nick Jr.
 http://192.168.6.16:18480/stream/null/nickjr/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CCLM" tvg-name="粵語片台" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",粵語片台
+#EXTINF:-1 tvg-id="CCLM" tvg-name="粵語片台" tvg-logo="https://php.946985.xyz/logo/粤语片.png" group-title="myTVSUPER",粵語片台
 http://192.168.6.16:18480/stream/null/null31111/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CMAM" tvg-name="美亞電影台" tvg-logo="https://assets.mytvsuper.com/channel/1651033399435307_CMAM.png" group-title="myTVSUPER",美亞電影台
+#EXTINF:-1 tvg-id="CMAM" tvg-name="美亞電影台" tvg-logo="https://php.946985.xyz/logo/美亚电影.png" group-title="myTVSUPER",美亞電影台
 http://192.168.6.16:18480/stream/null/null1111/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CTHR" tvg-name="Thrill" tvg-logo="https://assets.mytvsuper.com/channel/1651033409415375_CTHR.png" group-title="myTVSUPER",Thrill
+#EXTINF:-1 tvg-id="CTHR" tvg-name="Thrill" tvg-logo="https://php.946985.xyz/logo/Thrill.png" group-title="myTVSUPER",Thrill
 http://192.168.6.16:18480/stream/null/b22355363ab2b09a6def54be0c89b9f24b196c2bf24b37e82a81031246de6efe/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CCCM" tvg-name="天映經典頻道" tvg-logo="https://assets.mytvsuper.com/channel/1651033418318599_CCCM.png" group-title="myTVSUPER",天映經典頻道
+#EXTINF:-1 tvg-id="CCCM" tvg-name="天映經典頻道" tvg-logo="https://php.946985.xyz/logo/天映经典.png" group-title="myTVSUPER",天映經典頻道
 http://192.168.6.16:18480/stream/null/null12/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CMC" tvg-name="中國電影頻道" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",中國電影頻道
+#EXTINF:-1 tvg-id="CMC" tvg-name="中國電影頻道" tvg-logo="https://php.946985.xyz/logo/ChinaMovie.png" group-title="myTVSUPER",中國電影頻道
 http://192.168.6.16:18480/stream/null/null61/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CRTX" tvg-name="ROCK Action" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",ROCK Action
+#EXTINF:-1 tvg-id="CRTX" tvg-name="ROCK Action" tvg-logo="https://php.946985.xyz/logo/RockAction.png" group-title="myTVSUPER",ROCK Action
 http://192.168.6.16:18480/stream/null/rockaction/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="POPC" tvg-name="PopC" group-title="myTVSUPER",PopC
+#EXTINF:-1 tvg-id="POPC" tvg-logo="https://php.946985.xyz/logo/PopC.png" tvg-name="PopC" group-title="myTVSUPER",PopC
 http://192.168.6.16:18480/stream/null/popc/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="ACTM" tvg-name="Action Hollywood Movies" tvg-logo="https://assets.mytvsuper.com/channel/1745931648041810_ACTM.png" group-title="myTVSUPER",Action Hollywood Movies
+#EXTINF:-1 tvg-id="ACTM" tvg-name="Action Hollywood Movies" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",Action Hollywood Movies
 http://192.168.6.16:18480/stream/null/actionhollywoodmovies/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="RCM" tvg-name="Rialto Classic Movies (RCM)" tvg-logo="https://assets.mytvsuper.com/channel/1745931759705569_RCM.png" group-title="myTVSUPER",Rialto Classic Movies (RCM)
+#EXTINF:-1 tvg-id="RCM" tvg-name="Rialto Classic Movies (RCM)" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",Rialto Classic Movies (RCM)
 http://192.168.6.16:18480/stream/null/rialtoclassicmoviesrcm/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CKIX" tvg-name="KIX" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",KIX
+#EXTINF:-1 tvg-id="CKIX" tvg-name="KIX" tvg-logo="https://php.946985.xyz/logo/Kix.png" group-title="myTVSUPER",KIX
 http://192.168.6.16:18480/stream/null/kix/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="TRSP" tvg-name="TRACE Sport Stars" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",TRACE Sport Stars
+#EXTINF:-1 tvg-id="TRSP" tvg-name="TRACE Sport Stars" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",TRACE Sport Stars
 http://192.168.6.16:18480/stream/null/tracesportstars/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="LNH" tvg-name="Love Nature HD" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",Love Nature HD
+#EXTINF:-1 tvg-id="LNH" tvg-name="Love Nature HD" tvg-logo="https://php.946985.xyz/logo/LoveNature.png" group-title="myTVSUPER",Love Nature HD
 http://192.168.6.16:18480/stream/null/lovenaturehd/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="LN4" tvg-name="Love Nature 4K" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",Love Nature 4K
+#EXTINF:-1 tvg-id="LN4" tvg-name="Love Nature 4K" tvg-logo="https://php.946985.xyz/logo/LoveNature4K.png" group-title="myTVSUPER",Love Nature 4K
 http://192.168.6.16:18480/stream/null/tvb/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="SMS" tvg-name="Global Trekker" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",Global Trekker
+#EXTINF:-1 tvg-id="SMS" tvg-name="Global Trekker" tvg-logo="https://php.946985.xyz/logo/GlobalTrekker.png" group-title="myTVSUPER",Global Trekker
 http://192.168.6.16:18480/stream/null/globaltrekker/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="PETC" tvg-name="Pet Club TV" tvg-logo="https://assets.mytvsuper.com/channel/1745932012475990_PETC.png" group-title="myTVSUPER",Pet Club TV
+#EXTINF:-1 tvg-id="PETC" tvg-name="Pet Club TV" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",Pet Club TV
 http://192.168.6.16:18480/stream/null/cgtn2/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="GLBT" tvg-name="Globetrotter" tvg-logo="https://assets.mytvsuper.com/channel/1745932063837509_GLBT.png" group-title="myTVSUPER",Globetrotter
+#EXTINF:-1 tvg-id="GLBT" tvg-name="Globetrotter" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",Globetrotter
 http://192.168.6.16:18480/stream/null/globetrotter/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="DOCV" tvg-name="Docsville" group-title="myTVSUPER",Docsville
+#EXTINF:-1 tvg-id="DOCV" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" tvg-name="Docsville" group-title="myTVSUPER",Docsville
 http://192.168.6.16:18480/stream/null/docsville/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="PULS" tvg-name="Wild Stuff" tvg-logo="https://assets.mytvsuper.com/channel/1745932190537668_DOCV.png" group-title="myTVSUPER",Wild Stuff
+#EXTINF:-1 tvg-id="PULS" tvg-name="Wild Stuff" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",Wild Stuff
 http://192.168.6.16:18480/stream/null/pulsedocumentaries/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CRTE" tvg-name="ROCK綜藝娛樂" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",ROCK綜藝娛樂
+#EXTINF:-1 tvg-id="CRTE" tvg-name="ROCK綜藝娛樂" tvg-logo="https://php.946985.xyz/logo/RockEntertainment.png" group-title="myTVSUPER",ROCK綜藝娛樂
 http://192.168.6.16:18480/stream/null/rock/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CAXN" tvg-name="AXN" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",AXN
+#EXTINF:-1 tvg-id="CAXN" tvg-name="AXN" tvg-logo="https://php.946985.xyz/logo/AXN.png" group-title="myTVSUPER",AXN
 http://192.168.6.16:18480/stream/null/axn/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="RKEX" tvg-name="ROCK X Stream" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",ROCK X Stream
+#EXTINF:-1 tvg-id="RKEX" tvg-name="ROCK X Stream" tvg-logo="https://php.946985.xyz/logo/RockExtreme.png" group-title="myTVSUPER",ROCK X Stream
 http://192.168.6.16:18480/stream/null/rockextreme/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CANI" tvg-name="Animax" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",Animax
+#EXTINF:-1 tvg-id="CANI" tvg-name="Animax" tvg-logo="https://php.946985.xyz/logo/Animax.png" group-title="myTVSUPER",Animax
 http://192.168.6.16:18480/stream/null/mytvsuperfree/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CJTV" tvg-name="tvN" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",tvN
+#EXTINF:-1 tvg-id="CJTV" tvg-name="tvN" tvg-logo="https://php.946985.xyz/logo/tvN.png" group-title="myTVSUPER",tvN
 http://192.168.6.16:18480/stream/null/tvn/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CTS1" tvg-name="無線衛星亞洲台" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",無線衛星亞洲台
+#EXTINF:-1 tvg-id="CTS1" tvg-name="無線衛星亞洲台" tvg-logo="https://php.946985.xyz/logo/TVBS亚洲.png" group-title="myTVSUPER",無線衛星亞洲台
 http://192.168.6.16:18480/stream/null/null311/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CRE" tvg-name="創世電視" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",創世電視
+#EXTINF:-1 tvg-id="CRE" tvg-name="創世電視" tvg-logo="https://xiaotan.860775.xyz/創世電視.png" group-title="myTVSUPER",創世電視
 http://192.168.6.16:18480/stream/null/null411/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="FBX" tvg-name="FashionBox" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",FashionBox
+#EXTINF:-1 tvg-id="FBX" tvg-name="FashionBox" tvg-logo="https://php.946985.xyz/logo/FashionBox.png" group-title="myTVSUPER",FashionBox
 http://192.168.6.16:18480/stream/null/fashionbox/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CMEZ" tvg-name="Mezzo Live HD" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",Mezzo Live HD
+#EXTINF:-1 tvg-id="CMEZ" tvg-name="Mezzo Live HD" tvg-logo="https://php.946985.xyz/logo/MezzoLive.png" group-title="myTVSUPER",Mezzo Live HD
 http://192.168.6.16:18480/stream/null/mezzolivehd/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CC1" tvg-name="中央電視台綜合頻道 (港澳版)" group-title="myTVSUPER",中央電視台綜合頻道 (港澳版)
+#EXTINF:-1 tvg-id="CC1" tvg-logo="https://php.946985.xyz/logo/CCTV1.png" tvg-name="中央電視台綜合頻道 (港澳版)" group-title="myTVSUPER",中央電視台綜合頻道 (港澳版)
 http://192.168.6.16:18480/stream/null/null2111/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CGD" tvg-name="CGTN (中國環球電視網)記錄頻道" group-title="myTVSUPER",CGTN (中國環球電視網)記錄頻道
+#EXTINF:-1 tvg-id="CGD" tvg-logo="https://php.946985.xyz/logo/CGTN纪录.png" tvg-name="CGTN (中國環球電視網)記錄頻道" group-title="myTVSUPER",CGTN (中國環球電視網)記錄頻道
 http://192.168.6.16:18480/stream/null/null23/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CGE" tvg-name="CGTN (中國環球電視網)英語頻道" group-title="myTVSUPER",CGTN (中國環球電視網)英語頻道
+#EXTINF:-1 tvg-id="CGE" tvg-logo="https://php.946985.xyz/logo/CGTN.png" tvg-name="CGTN (中國環球電視網)英語頻道" group-title="myTVSUPER",CGTN (中國環球電視網)英語頻道
 http://192.168.6.16:18480/stream/null/cgtn1/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="DTV" tvg-name="東方衛視國際頻道" tvg-logo="https://assets.mytvsuper.com/channel/1681274162227607_DTV.png" group-title="myTVSUPER",東方衛視國際頻道
+#EXTINF:-1 tvg-id="DTV" tvg-name="東方衛視國際頻道" tvg-logo="https://php.946985.xyz/logo/东方卫视.png" group-title="myTVSUPER",東方衛視國際頻道
 http://192.168.6.16:18480/stream/null/axn1/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="PCC" tvg-name="鳳凰衛視中文台" tvg-logo="https://assets.mytvsuper.com/channel/1687317650120517_PCC.png" group-title="myTVSUPER",鳳凰衛視中文台
+#EXTINF:-1 tvg-id="PCC" tvg-name="鳳凰衛視中文台" tvg-logo="https://php.946985.xyz/logo/凤凰中文.png" group-title="myTVSUPER",鳳凰衛視中文台
 http://192.168.6.16:18480/stream/null/null19/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="PIN" tvg-name="鳳凰衛視資訊台" tvg-logo="https://assets.mytvsuper.com/channel/1687317778284878_PIN.png" group-title="myTVSUPER",鳳凰衛視資訊台
+#EXTINF:-1 tvg-id="PIN" tvg-name="鳳凰衛視資訊台" tvg-logo="https://php.946985.xyz/logo/凤凰资讯.png" group-title="myTVSUPER",鳳凰衛視資訊台
 http://192.168.6.16:18480/stream/null/null20/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="PHK" tvg-name="鳳凰衛視香港台" tvg-logo="https://assets.mytvsuper.com/channel/1687317856889913_PHK.png" group-title="myTVSUPER",鳳凰衛視香港台
+#EXTINF:-1 tvg-id="PHK" tvg-name="鳳凰衛視香港台" tvg-logo="https://php.946985.xyz/logo/凤凰香港.png" group-title="myTVSUPER",鳳凰衛視香港台
 http://192.168.6.16:18480/stream/null/null11/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CC4" tvg-name="中國中央電視台中文國際頻道" tvg-logo="https://assets.mytvsuper.com/channel/1744698032334475_CC4.png" group-title="myTVSUPER",中國中央電視台中文國際頻道
+#EXTINF:-1 tvg-id="CC4" tvg-name="中國中央電視台中文國際頻道" tvg-logo="https://php.946985.xyz/logo/CCTV4.png" group-title="myTVSUPER",中國中央電視台中文國際頻道
 http://192.168.6.16:18480/stream/null/null34/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CCO" tvg-name="中國中央電視台戲曲頻道" tvg-logo="https://assets.mytvsuper.com/channel/1744698101514218_CCO.png" group-title="myTVSUPER",中國中央電視台戲曲頻道
+#EXTINF:-1 tvg-id="CCO" tvg-name="中國中央電視台戲曲頻道" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",中國中央電視台戲曲頻道
 http://192.168.6.16:18480/stream/null/null32/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="YNTV" tvg-name="雲南瀾湄國際衛視" tvg-logo="https://assets.mytvsuper.com/channel/1744698246712152_YNTV.png" group-title="myTVSUPER",雲南瀾湄國際衛視
+#EXTINF:-1 tvg-id="YNTV" tvg-name="雲南瀾湄國際衛視" tvg-logo="https://php.946985.xyz/logo/澜湄国际.png" group-title="myTVSUPER",雲南瀾湄國際衛視
 http://192.168.6.16:18480/stream/null/null3111/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="AHTV" tvg-name="安徽廣播電視台國際頻道" tvg-logo="https://assets.mytvsuper.com/channel/1744698398526127_AHTV.png" group-title="myTVSUPER",安徽廣播電視台國際頻道
+#EXTINF:-1 tvg-id="AHTV" tvg-name="安徽廣播電視台國際頻道" tvg-logo="https://php.946985.xyz/logo/安徽卫视.png" group-title="myTVSUPER",安徽廣播電視台國際頻道
 http://192.168.6.16:18480/stream/null/null30/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="BJTV" tvg-name="北京電視台國際頻道" tvg-logo="https://assets.mytvsuper.com/channel/1744698452166744_BJTV.png" group-title="myTVSUPER",北京電視台國際頻道
+#EXTINF:-1 tvg-id="BJTV" tvg-name="北京電視台國際頻道" tvg-logo="https://php.946985.xyz/logo/北京卫视.png" group-title="myTVSUPER",北京電視台國際頻道
 http://192.168.6.16:18480/stream/null/null29/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="FJTV" tvg-name="福建海峽衛視國際頻道" tvg-logo="https://assets.mytvsuper.com/channel/1744698901041616_FJTV.png" group-title="myTVSUPER",福建海峽衛視國際頻道
+#EXTINF:-1 tvg-id="FJTV" tvg-name="福建海峽衛視國際頻道" tvg-logo="https://php.946985.xyz/logo/海峡卫视.png" group-title="myTVSUPER",福建海峽衛視國際頻道
 http://192.168.6.16:18480/stream/null/null27/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="HNTV" tvg-name="湖南電視台國際頻道" tvg-logo="https://assets.mytvsuper.com/channel/1744698965997689_HNTV.png" group-title="myTVSUPER",湖南電視台國際頻道
+#EXTINF:-1 tvg-id="HNTV" tvg-name="湖南電視台國際頻道" tvg-logo="https://php.946985.xyz/logo/湖南卫视.png" group-title="myTVSUPER",湖南電視台國際頻道
 http://192.168.6.16:18480/stream/null/null26/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="JSTV" tvg-name="江蘇電視台國際頻道" tvg-logo="https://assets.mytvsuper.com/channel/1744699023385650_JSTV.png" group-title="myTVSUPER",江蘇電視台國際頻道
+#EXTINF:-1 tvg-id="JSTV" tvg-name="江蘇電視台國際頻道" tvg-logo="https://php.946985.xyz/logo/江苏卫视.png" group-title="myTVSUPER",江蘇電視台國際頻道
 http://192.168.6.16:18480/stream/null/null25/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="GBTV" tvg-name="廣東廣播電視台大灣區衛視頻道" tvg-logo="https://assets.mytvsuper.com/channel/1744699073258168_GBTV.png" group-title="myTVSUPER",廣東廣播電視台大灣區衛視頻道
+#EXTINF:-1 tvg-id="GBTV" tvg-name="廣東廣播電視台大灣區衛視頻道" tvg-logo="https://php.946985.xyz/logo/广东卫视.png" group-title="myTVSUPER",廣東廣播電視台大灣區衛視頻道
 http://192.168.6.16:18480/stream/null/null24/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="ZJTV" tvg-name="浙江電視台國際頻道" tvg-logo="https://assets.mytvsuper.com/channel/1744699142762349_ZJTV.png" group-title="myTVSUPER",浙江電視台國際頻道
+#EXTINF:-1 tvg-id="ZJTV" tvg-name="浙江電視台國際頻道" tvg-logo="https://php.946985.xyz/logo/浙江卫视.png" group-title="myTVSUPER",浙江電視台國際頻道
 http://192.168.6.16:18480/stream/null/28ai/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="SZTV" tvg-name="深圳衛視國際頻道" tvg-logo="https://assets.mytvsuper.com/channel/1744699192744305_SZTV.png" group-title="myTVSUPER",深圳衛視國際頻道
+#EXTINF:-1 tvg-id="SZTV" tvg-name="深圳衛視國際頻道" tvg-logo="https://php.946985.xyz/logo/深圳卫视.png" group-title="myTVSUPER",深圳衛視國際頻道
 http://192.168.6.16:18480/stream/null/null13/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="NOW7" tvg-name="that's 70s" tvg-logo="https://assets.mytvsuper.com/channel/1745932338100361_NOW7.png" group-title="myTVSUPER",that's 70s
+#EXTINF:-1 tvg-id="NOW7" tvg-name="that's 70s" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",that's 70s
 http://192.168.6.16:18480/stream/null/now70s/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="NOW8" tvg-name="that's 80s" tvg-logo="https://assets.mytvsuper.com/channel/1745932390285250_NOW8.png" group-title="myTVSUPER",that's 80s
+#EXTINF:-1 tvg-id="NOW8" tvg-name="that's 80s" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",that's 80s
 http://192.168.6.16:18480/stream/null/now80s/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="NOWR" tvg-name="that's Rock" tvg-logo="https://assets.mytvsuper.com/channel/1745932445714549_NOWR.png" group-title="myTVSUPER",that's Rock
+#EXTINF:-1 tvg-id="NOWR" tvg-name="that's Rock" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",that's Rock
 http://192.168.6.16:18480/stream/null/nowrock/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="NOW9" tvg-name="that's 90s00s" tvg-logo="https://assets.mytvsuper.com/channel/1745932498130891_NOW9.png" group-title="myTVSUPER",that's 90s00s
+#EXTINF:-1 tvg-id="NOW9" tvg-name="that's 90s00s" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",that's 90s00s
 http://192.168.6.16:18480/stream/null/now90s00s/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CONC" tvg-name="Concerto" group-title="myTVSUPER",Concerto
+#EXTINF:-1 tvg-id="CONC" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" tvg-name="Concerto" group-title="myTVSUPER",Concerto
 http://192.168.6.16:18480/stream/null/concerto/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="TRUR" tvg-name="TRACE Urban" group-title="myTVSUPER",TRACE Urban
+#EXTINF:-1 tvg-id="TRUR" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" tvg-name="TRACE Urban" group-title="myTVSUPER",TRACE Urban
 http://192.168.6.16:18480/stream/null/traceurban/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CTSN" tvg-name="無線衛星新聞台" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",無線衛星新聞台
+#EXTINF:-1 tvg-id="CTSN" tvg-name="無線衛星新聞台" tvg-logo="https://php.946985.xyz/logo/TVBS新闻.png" group-title="myTVSUPER",無線衛星新聞台
 http://192.168.6.16:18480/stream/null/null16/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CCNA" tvg-name="亞洲新聞台" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",亞洲新聞台
+#EXTINF:-1 tvg-id="CCNA" tvg-name="亞洲新聞台" tvg-logo="https://php.946985.xyz/logo/CNA.png" group-title="myTVSUPER",亞洲新聞台
 http://192.168.6.16:18480/stream/null/null17/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CJAZ" tvg-name="半島電視台英語頻道" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",半島電視台英語頻道
+#EXTINF:-1 tvg-id="CJAZ" tvg-name="半島電視台英語頻道" tvg-logo="https://php.946985.xyz/logo/半岛电视台.png" group-title="myTVSUPER",半島電視台英語頻道
 http://192.168.6.16:18480/stream/null/null18/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CF24" tvg-name="France 24" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",France 24
+#EXTINF:-1 tvg-id="CF24" tvg-name="France 24" tvg-logo="https://php.946985.xyz/logo/FRANCE24.png" group-title="myTVSUPER",France 24
 http://192.168.6.16:18480/stream/null/france24/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CDW1" tvg-name="DW" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",DW
+#EXTINF:-1 tvg-id="CDW1" tvg-name="DW" tvg-logo="https://php.946985.xyz/logo/DW.png" group-title="myTVSUPER",DW
 http://192.168.6.16:18480/stream/null/dw/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CNHK" tvg-name="NHK World-Japan" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",NHK World-Japan
+#EXTINF:-1 tvg-id="CNHK" tvg-name="NHK World-Japan" tvg-logo="https://php.946985.xyz/logo/NHKWORLD.png" group-title="myTVSUPER",NHK World-Japan
 http://192.168.6.16:18480/stream/null/nhkworldjapan/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="CARI" tvg-name="Arirang TV" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",Arirang TV
+#EXTINF:-1 tvg-id="CARI" tvg-name="Arirang TV" tvg-logo="https://php.946985.xyz/logo/Arirang.png" group-title="myTVSUPER",Arirang TV
 http://192.168.6.16:18480/stream/null/arirangtv/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="NSWD" tvg-name="NewsWorld" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",NewsWorld
+#EXTINF:-1 tvg-id="NSWD" tvg-name="NewsWorld" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",NewsWorld
 http://192.168.6.16:18480/stream/null/newsworld/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="EVT2" tvg-name="myTV SUPER直播足球2台" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",myTV SUPER直播足球2台
+#EXTINF:-1 tvg-id="EVT2" tvg-name="myTV SUPER直播足球2台" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",myTV SUPER直播足球2台
 http://192.168.6.16:18480/stream/null/mytvsuper2/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="EVT3" tvg-name="myTV SUPER直播足球3台" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",myTV SUPER直播足球3台
+#EXTINF:-1 tvg-id="EVT3" tvg-name="myTV SUPER直播足球3台" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",myTV SUPER直播足球3台
 http://192.168.6.16:18480/stream/null/mytvsuper3/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="EVT4" tvg-name="myTV SUPER直播足球4台" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",myTV SUPER直播足球4台
+#EXTINF:-1 tvg-id="EVT4" tvg-name="myTV SUPER直播足球4台" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",myTV SUPER直播足球4台
 http://192.168.6.16:18480/stream/null/mytvsuper4/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="EVT5" tvg-name="myTV SUPER直播足球5台" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",myTV SUPER直播足球5台
+#EXTINF:-1 tvg-id="EVT5" tvg-name="myTV SUPER直播足球5台" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",myTV SUPER直播足球5台
 http://192.168.6.16:18480/stream/null/mytvsuper5/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="EVT6" tvg-name="myTV SUPER直播足球6台" tvg-logo="https://assets.mytvsuper.com/channel/1672992594257554_EVT6.png" group-title="myTVSUPER",myTV SUPER直播足球6台
+#EXTINF:-1 tvg-id="EVT6" tvg-name="myTV SUPER直播足球6台" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",myTV SUPER直播足球6台
 http://192.168.6.16:18480/stream/null/mytvsuper6/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="EVT7" tvg-name="myTV SUPER直播足球7台" tvg-logo="https://assets.mytvsuper.com/channel/1684393675758879_EVT7.png" group-title="myTVSUPER",myTV SUPER直播足球7台
+#EXTINF:-1 tvg-id="EVT7" tvg-name="myTV SUPER直播足球7台" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",myTV SUPER直播足球7台
 http://192.168.6.16:18480/stream/null/null22/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
-#EXTINF:-1 tvg-id="TEST" tvg-name="測試頻道" tvg-logo="https://assets.mytvsuper.com/channel/1651032626745665_C18.png" group-title="myTVSUPER",測試頻道
-TEST.m3u8
+#EXTINF:-1 tvg-id="76" tvg-logo="https://storage.hoy.tv/v1/image/channel/1.jpg" group-title="香港电视台",HOY 國際財經台
+http://192.168.6.16:18480/stream/tvb2/null2/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
+#EXTINF:-1 tvg-id="77" tvg-logo="https://storage.hoy.tv/v1/image/channel/2.jpg" provider="香港电视台" provider-logo="" group-title="香港电视台",HOY TV
+http://192.168.6.16:18480/stream/tvb2/hoytv77/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
+#EXTINF:-1 tvg-id="78" tvg-logo="https://storage.hoy.tv/v1/image/channel/3.jpg" provider="香港电视台" group-title="香港电视台",HOY 資訊台
+http://192.168.6.16:18480/stream/tvb2/hoy78/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
