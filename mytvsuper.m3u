@@ -2,7 +2,8 @@
 #EXTINF:-1 tvg-id="Eleven Sports 1" tvg-logo="" group-title="myTVSUPER",Eleven Sports 1 4K PL
 http://192.168.6.16:18480/stream/null/ufc1/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
 #EXTINF:-1 tvg-id="J" tvg-name="翡翠台" tvg-logo="https://php.946985.xyz/logo/翡翠台.png" group-title="myTVSUPER",翡翠台(超高清)
-http://192.168.6.16:18480/stream/null/4k/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
+#http://192.168.6.16:18480/stream/null/4k/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
+http://192.168.6.15:9100/live/stream-40a9aa8681cb45ce/index.m3u8
 #EXTINF:-1 tvg-id="CWIN" tvg-name="SUPER" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",SUPER
 http://192.168.6.16:18480/stream/null/mytvsuperfree1/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
 #EXTINF:-1 tvg-id="SVAR" tvg-name="SUPER獎門人" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",SUPER獎門人
