@@ -5,6 +5,10 @@ https://hoytv-live-stream.hoy.tv/ch76/va2-index.m3u8
 https://hoytv-live-stream.hoy.tv/ch77/index-fhd.m3u8
 #EXTINF:-1 tvg-id="78" tvg-logo="https://storage.hoy.tv/v1/image/channel/3.jpg" provider="香港电视台" group-title="香港电视台",HOY 資訊台
 https://hoytv-live-stream.hoy.tv/ch78/index-fhd.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://viu.tv/staticV3/images/nav/icon_viutv.png" provider="香港电视台" group-title="香港电视台",ViuTV
+https://t.ttvb.eu.org/tvb/ViuTV/index.m3u8
+#EXTINF:-1 tvg-id="78" tvg-logo="https://viu.tv/staticV3/images/nav/icon_ViuTVsix.png" provider="香港电视台" group-title="香港电视台",ViuTVsix
+https://t.ttvb.eu.org/tvb/ViuTVsix/index.m3u8
 #EXTINF:-1 tvg-id="Eleven Sports 1 4K PL" tvg-name="Eleven Sports 1 4K PL" tvg-logo="https://php.946985.xyz/logo/AXN.png" group-title="tvb",Eleven Sports 1 4K PL
 http://ef90a6cd.rossteleccom.net/iptv/2TBC4G2WWDG6RSUSN5SXSQEC/20068/index.m3u8
 #EXTINF:-1 tvg-id="CAXN" tvg-name="AXN" tvg-logo="https://php.946985.xyz/logo/AXN.png" group-title="tvb",AXN
