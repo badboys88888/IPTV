@@ -1,0 +1,171 @@
+#EXTM3U url-tvg="https://mytvsuperepg.860775.xyz/epg.xml,https://github.com/badboys88888/EPGCollector/raw/refs/heads/main/hoytv/hoytv.xml.gz"
+#EXTINF:-1 tvg-id="76" tvg-logo="https://storage.hoy.tv/v1/image/channel/1.jpg" group-title="香港电视台",HOY 國際財經台
+https://hoytv-live-stream.hoy.tv/ch76/va2-index.m3u8
+#EXTINF:-1 tvg-id="77" tvg-logo="https://storage.hoy.tv/v1/image/channel/2.jpg" provider="香港电视台" provider-logo="" group-title="香港电视台",HOY TV
+https://hoytv-live-stream.hoy.tv/ch77/index-fhd.m3u8
+#EXTINF:-1 tvg-id="78" tvg-logo="https://storage.hoy.tv/v1/image/channel/3.jpg" provider="香港电视台" group-title="香港电视台",HOY 資訊台
+https://hoytv-live-stream.hoy.tv/ch78/index-fhd.m3u8
+#EXTINF:-1 tvg-id="Eleven Sports 1 4K PL" tvg-name="Eleven Sports 1 4K PL" tvg-logo="https://php.946985.xyz/logo/AXN.png" group-title="tvb",Eleven Sports 1 4K PL
+http://ef90a6cd.rossteleccom.net/iptv/2TBC4G2WWDG6RSUSN5SXSQEC/20068/index.m3u8
+#EXTINF:-1 tvg-id="CAXN" tvg-name="AXN" tvg-logo="https://php.946985.xyz/logo/AXN.png" group-title="tvb",AXN
+http://192.168.6.15:9100/live/stream-0499bac084f38925/index.m3u8
+#EXTINF:-1 tvg-id="CANI" tvg-name="Animax" tvg-logo="https://php.946985.xyz/logo/Animax.png" group-title="tvb",Animax
+http://192.168.6.15:9100/live/stream-046a1fc084cb1102/index.m3u8
+#EXTINF:-1 tvg-id="CARI" tvg-name="Arirang TV" tvg-logo="https://php.946985.xyz/logo/Arirang.png" group-title="tvb",Arirang TV
+http://192.168.6.15:9100/live/stream-04ae17c08504d036/index.m3u8
+#EXTINF:-1 tvg-id="CGE" tvg-name="CGTN (中國環球電視網)英語頻道" tvg-logo="https://php.946985.xyz/logo/CGTN.png" group-title="tvb",CGTN (中國環球電視網)英語頻道
+http://192.168.6.15:9100/live/stream-2ad2873ab474aa68/index.m3u8
+#EXTINF:-1 tvg-id="CGD" tvg-name="CGTN (中國環球電視網)記錄頻道" tvg-logo="https://php.946985.xyz/logo/CGTN纪录.png" group-title="tvb",CGTN (中國環球電視網)記錄頻道
+http://192.168.6.15:9100/live/stream-2ad2883ab474ac1b/index.m3u8
+#EXTINF:-1 tvg-id="CDW1" tvg-name="DW" tvg-logo="https://php.946985.xyz/logo/DW.png" group-title="tvb",DW
+http://192.168.6.15:9100/live/stream-1eada6c093bf3508/index.m3u8
+#EXTINF:-1 tvg-id="FBX" tvg-name="FashionBox" tvg-logo="https://php.946985.xyz/logo/FashionBox.png" group-title="tvb",FashionBox
+http://192.168.6.15:9100/live/stream-5603453acce28705/index.m3u8
+#EXTINF:-1 tvg-id="CF24" tvg-name="France 24" tvg-logo="https://php.946985.xyz/logo/FRANCE24.png" group-title="tvb",France 24
+http://192.168.6.15:9100/live/stream-2f907bc09d2ff294/index.m3u8
+#EXTINF:-1 tvg-id="SMS" tvg-name="Global Trekker" tvg-logo="https://php.946985.xyz/logo/GlobalTrekker.png" group-title="tvb",Global Trekker
+http://192.168.6.15:9100/live/stream-9e65ed3a64666a34/index.m3u8
+#EXTINF:-1 tvg-id="CKIX" tvg-name="KIX" tvg-logo="https://php.946985.xyz/logo/Kix.png" group-title="tvb",KIX
+http://192.168.6.15:9100/live/stream-ceb40cc065e0dcb8/index.m3u8
+#EXTINF:-1 tvg-id="LN4" tvg-name="Love Nature 4K" tvg-logo="https://php.946985.xyz/logo/LoveNature4K.png" group-title="tvb",Love Nature 4K
+http://192.168.6.15:9100/live/stream-20725f3aae17bb6f/index.m3u8
+#EXTINF:-1 tvg-id="LNH" tvg-name="Love Nature HD" tvg-logo="https://php.946985.xyz/logo/LoveNature.png" group-title="tvb",Love Nature HD
+http://192.168.6.15:9100/live/stream-2072333aae1770ab/index.m3u8
+#EXTINF:-1 tvg-id="CMEZ" tvg-name="Mezzo Live HD" tvg-logo="https://php.946985.xyz/logo/MezzoLive.png" group-title="tvb",Mezzo Live HD
+http://192.168.6.15:9100/live/stream-e1c728c0712d397c/index.m3u8
+#EXTINF:-1 tvg-id="CNHK" tvg-name="NHK World-Japan" tvg-logo="https://php.946985.xyz/logo/NHKWORLD.png" group-title="tvb",NHK World-Japan
+http://192.168.6.15:9100/live/stream-e8ea42c074c9ecbf/index.m3u8
+#EXTINF:-1 tvg-id="Nick Jr." tvg-name="Nick Jr." group-title="tvb",Nick Jr.
+http://192.168.6.15:9100/live/stream-97336b0676cae3b9/index.m3u8
+#EXTINF:-1 tvg-id="CNIKO" tvg-name="Nickelodeon" tvg-logo="https://php.946985.xyz/logo/Nickelodeon.png" group-title="tvb",Nickelodeon
+http://192.168.6.15:9100/live/stream-972f860676c728c3/index.m3u8
+#EXTINF:-1 tvg-id="POPC" tvg-name="PopC" tvg-logo="https://php.946985.xyz/logo/PopC.png" group-title="tvb",PopC
+http://192.168.6.15:9100/live/stream-f60e3351e961d827/index.m3u8
+#EXTINF:-1 tvg-id="CRTX" tvg-name="ROCK Action" tvg-logo="https://php.946985.xyz/logo/RockAction.png" group-title="tvb",ROCK Action
+http://192.168.6.15:9100/live/stream-963587c0d6f57ba2/index.m3u8
+#EXTINF:-1 tvg-id="ROCK Extreme" tvg-name="ROCK Extreme" group-title="tvb",ROCK Extreme
+http://192.168.6.15:9100/live/stream-3b3a1a433b724fc5/index.m3u8
+#EXTINF:-1 tvg-id="ROCK 綜藝音樂綜藝" tvg-name="ROCK 綜藝音樂綜藝" group-title="tvb",ROCK 綜藝音樂綜藝
+http://192.168.6.15:9100/live/stream-96357cc0d6f568f1/index.m3u8
+#EXTINF:-1 tvg-id="SUPER EYT" tvg-name="SUPER EYT" group-title="tvb",SUPER EYT
+http://192.168.6.15:9100/live/stream-d156d638bff135aa/index.m3u8
+#EXTINF:-1 tvg-id="KID" tvg-name="SUPER Kids Channel" tvg-logo="https://php.946985.xyz/logo/SUPERKidsChannel.png" group-title="tvb",SUPER Kids Channel
+http://192.168.6.15:9100/live/stream-e3da043a8bc81cad/index.m3u8
+#EXTINF:-1 tvg-id="SMUS" tvg-name="SUPER Music" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="tvb",SUPER Music
+http://192.168.6.15:9100/live/stream-8d9551389a005cc7/index.m3u8
+#EXTINF:-1 tvg-id="SSPT" tvg-name="SUPER Sports" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="tvb",SUPER Sports
+http://192.168.6.15:9100/live/stream-369aa63868a246e5/index.m3u8
+#EXTINF:-1 tvg-id="STVM" tvg-name="SUPER單元劇" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="tvb",SUPER單元劇
+http://192.168.6.15:9100/live/stream-3df726386c6f6cc1/index.m3u8
+#EXTINF:-1 tvg-id="SSIT" tvg-name="SUPER煲劇" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="tvb",SUPER煲劇
+http://192.168.6.15:9100/live/stream-36e8f03868e4e5f4/index.m3u8
+#EXTINF:-1 tvg-id="SVAR" tvg-name="SUPER獎門人" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="tvb",SUPER獎門人
+http://192.168.6.15:9100/live/stream-4f1e5b38761a9a39/index.m3u8
+#EXTINF:-1 tvg-id="STRA" tvg-name="SUPER識嘆" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="tvb",SUPER識嘆
+http://192.168.6.15:9100/live/stream-3e04ba386c7af299/index.m3u8
+#EXTINF:-1 tvg-id="SFOO" tvg-name="SUPER識食" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="tvb",SUPER識食
+http://192.168.6.15:9100/live/stream-d9a1a638c4893040/index.m3u8
+#EXTINF:-1 tvg-id="SGOL" tvg-name="SUPER金曲" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="tvb",SUPER金曲
+http://192.168.6.15:9100/live/stream-e3e9d038cad190be/index.m3u8
+#EXTINF:-1 tvg-id="TNT SPORTS 1" tvg-name="TNT SPORTS 1" group-title="tvb",TNT SPORTS 1
+http://192.168.6.15:9100/live/stream-6748dea0e5b32c8e/index.m3u8
+#EXTINF:-1 tvg-id="B" tvg-name="TVB Plus" tvg-logo="https://xiaotan.860775.xyz/TVB Plus.png" group-title="tvb",TVB Plus
+http://192.168.6.15:9100/live/stream-e63555b01154da3b/index.m3u8
+#EXTINF:-1 tvg-id="CTHR" tvg-name="Thrill" tvg-logo="https://php.946985.xyz/logo/Thrill.png" group-title="tvb",Thrill
+http://192.168.6.15:9100/live/stream-a77acfc0e0b9c6f2/index.m3u8
+#EXTINF:-1 tvg-id="ZOO" tvg-name="ZooMoo" tvg-logo="https://php.946985.xyz/logo/ZooMoo.png" group-title="tvb",ZooMoo
+http://192.168.6.15:9100/live/stream-61ebd23a423035c1/index.m3u8
+#EXTINF:-1 tvg-id="C18" tvg-name="myTV SUPER 18台" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="tvb",myTV SUPER 18台
+http://192.168.6.15:9100/live/stream-2a87903ab434ce39/index.m3u8
+#EXTINF:-1 tvg-id="myTV SUPER FREE" tvg-name="myTV SUPER FREE" group-title="tvb",myTV SUPER FREE
+http://192.168.6.15:9100/live/stream-c13d7ec0ef40b406/index.m3u8
+#EXTINF:-1 tvg-id="myTV SUPER 直播足球2台" tvg-name="myTV SUPER 直播足球2台" group-title="tvb",myTV SUPER 直播足球2台
+http://192.168.6.15:9100/live/stream-4298b9f240a8dda6/index.m3u8
+#EXTINF:-1 tvg-id="myTV SUPER 直播足球3台" tvg-name="myTV SUPER 直播足球3台" group-title="tvb",myTV SUPER 直播足球3台
+http://192.168.6.15:9100/live/stream-4298baf240a8df59/index.m3u8
+#EXTINF:-1 tvg-id="myTV SUPER 直播足球4台" tvg-name="myTV SUPER 直播足球4台" group-title="tvb",myTV SUPER 直播足球4台
+http://192.168.6.15:9100/live/stream-4298bbf240a8e10c/index.m3u8
+#EXTINF:-1 tvg-id="myTV SUPER 直播足球5台" tvg-name="myTV SUPER 直播足球5台" group-title="tvb",myTV SUPER 直播足球5台
+http://192.168.6.15:9100/live/stream-4298bcf240a8e2bf/index.m3u8
+#EXTINF:-1 tvg-id="myTV SUPER 直播足球6台" tvg-name="myTV SUPER 直播足球6台" group-title="tvb",myTV SUPER 直播足球6台
+http://192.168.6.15:9100/live/stream-4298bdf240a8e472/index.m3u8
+#EXTINF:-1 tvg-id="myTV SUPER 直播足球7台" tvg-name="myTV SUPER 直播足球7台" group-title="tvb",myTV SUPER 直播足球7台
+http://192.168.6.15:9100/live/stream-4298bef240a8e625/index.m3u8
+#EXTINF:-1 tvg-id="CJTV" tvg-name="tvN" tvg-logo="https://php.946985.xyz/logo/tvN.png" group-title="tvb",tvN
+http://192.168.6.15:9100/live/stream-c804e1c062a6fd20/index.m3u8
+#EXTINF:-1 tvg-id="CMC" tvg-name="中國電影頻道" tvg-logo="https://php.946985.xyz/logo/ChinaMovie.png" group-title="tvb",中國電影頻道
+http://192.168.6.15:9100/live/stream-2ab08d3ab457ce34/index.m3u8
+#EXTINF:-1 tvg-id="CC1" tvg-name="中央電視台綜合頻道 (港澳版)" tvg-logo="https://php.946985.xyz/logo/CCTV1.png" group-title="tvb",中央電視台綜合頻道 (港澳版)
+http://192.168.6.15:9100/live/stream-2ac4833ab4686640/index.m3u8
+#EXTINF:-1 tvg-id="互動窗 1" tvg-name="互動窗 1" group-title="tvb",互動窗 1
+http://192.168.6.15:9100/live/stream-8177a22d732c45c1/index.m3u8
+#EXTINF:-1 tvg-id="互動窗 2" tvg-name="互動窗 2" group-title="tvb",互動窗 2
+http://192.168.6.15:9100/live/stream-8177a12d732c440e/index.m3u8
+#EXTINF:-1 tvg-id="CTVS" tvg-name="亞洲劇台" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="tvb",亞洲劇台
+http://192.168.6.15:9100/live/stream-a72210c0e06e0c8f/index.m3u8
+#EXTINF:-1 tvg-id="CCNA" tvg-name="亞洲新聞台" tvg-logo="https://php.946985.xyz/logo/CNA.png" group-title="tvb",亞洲新聞台
+http://192.168.6.15:9100/live/stream-144e15c08d6346a4/index.m3u8
+#EXTINF:-1 tvg-id="CRE" tvg-name="創世電視" tvg-logo="https://xiaotan.860775.xyz/創世電視.png" group-title="tvb",創世電視
+http://192.168.6.15:9100/live/stream-2af76b3ab4939711/index.m3u8
+#EXTINF:-1 tvg-id="BJTV" tvg-name="北京電視台國際頻道" tvg-logo="https://php.946985.xyz/logo/北京卫视.png" group-title="tvb",北京電視台國際頻道
+http://192.168.6.15:9100/live/stream-457455c8a5530599/index.m3u8
+#EXTINF:-1 tvg-id="CTVC" tvg-name="千禧經典台" tvg-logo="https://php.946985.xyz/logo/千禧经典.png" group-title="tvb",千禧經典台
+http://192.168.6.15:9100/live/stream-a72200c0e06df15f/index.m3u8
+#EXTINF:-1 tvg-id="CJAZ" tvg-name="半島電視台英語頻道" tvg-logo="https://php.946985.xyz/logo/半岛电视台.png" group-title="tvb",半島電視台英語頻道
+http://192.168.6.15:9100/live/stream-c7dfafc062878bed/index.m3u8
+#EXTINF:-1 tvg-id="CCCM" tvg-name="天映經典頻道" tvg-logo="https://php.946985.xyz/logo/天映经典.png" group-title="tvb",天映經典頻道
+http://192.168.6.15:9100/live/stream-14216dc08d3cee41/index.m3u8
+#EXTINF:-1 tvg-id="CTVE" tvg-name="娛樂新聞台" tvg-logo="https://php.946985.xyz/logo/娱乐新闻.png" group-title="tvb",娛樂新聞台
+http://192.168.6.15:9100/live/stream-a721fec0e06dedf9/index.m3u8
+#EXTINF:-1 tvg-id="AHTV" tvg-name="安徽廣播電視台國際頻道" tvg-logo="https://php.946985.xyz/logo/安徽卫视.png" group-title="tvb",安徽廣播電視台國際頻道
+http://192.168.6.15:9100/live/stream-a197bbce90fd0bac/index.m3u8
+#EXTINF:-1 tvg-id="GBTV" tvg-name="廣東廣播電視台大灣區衛視頻道" tvg-logo="https://php.946985.xyz/logo/广东卫视.png" group-title="tvb",廣東廣播電視台大灣區衛視頻道
+http://192.168.6.15:9100/live/stream-36e5c1df6d637e7c/index.m3u8
+#EXTINF:-1 tvg-id="廣西電視台國際頻道" tvg-name="廣西電視台國際頻道" group-title="tvb",廣西電視台國際頻道
+http://192.168.6.15:9100/live/stream-e02c27df3c3d1c72/index.m3u8
+#EXTINF:-1 tvg-id="CCOC" tvg-name="戲曲台" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="tvb",戲曲台
+http://192.168.6.15:9100/live/stream-144a2fc08d5f89fb/index.m3u8
+#EXTINF:-1 tvg-id="P" tvg-name="明珠台" tvg-logo="https://php.946985.xyz/logo/明珠台.png" group-title="tvb",明珠台
+http://192.168.6.15:9100/live/stream-e63547b01154c271/index.m3u8
+#EXTINF:-1 tvg-id="DTV" tvg-name="東方衛視國際頻道" tvg-logo="https://php.946985.xyz/logo/东方卫视.png" group-title="tvb",東方衛視國際頻道
+http://192.168.6.15:9100/live/stream-65d2593ad5689397/index.m3u8
+#EXTINF:-1 tvg-id="JSTV" tvg-name="江蘇電視台國際頻道" tvg-logo="https://php.946985.xyz/logo/江苏卫视.png" group-title="tvb",江蘇電視台國際頻道
+http://192.168.6.15:9100/live/stream-0ab9628662af3f2e/index.m3u8
+#EXTINF:-1 tvg-id="ZJTV" tvg-name="浙江電視台國際頻道" tvg-logo="https://php.946985.xyz/logo/浙江卫视.png" group-title="tvb",浙江電視台國際頻道
+http://192.168.6.15:9100/live/stream-79aea4fe68fbf391/index.m3u8
+#EXTINF:-1 tvg-id="SZTV" tvg-name="深圳衛視國際頻道" tvg-logo="https://php.946985.xyz/logo/深圳卫视.png" group-title="tvb",深圳衛視國際頻道
+http://192.168.6.15:9100/live/stream-e75171383b5985e0/index.m3u8
+#EXTINF:-1 tvg-id="HNTV" tvg-name="湖南電視台國際頻道" tvg-logo="https://php.946985.xyz/logo/湖南卫视.png" group-title="tvb",湖南電視台國際頻道
+http://192.168.6.15:9100/live/stream-cac59996c73a8cef/index.m3u8
+#EXTINF:-1 tvg-id="無線新聞台" tvg-name="無線新聞台" group-title="tvb",無線新聞台
+http://192.168.6.15:9100/live/stream-e63554b01154d888/index.m3u8
+#EXTINF:-1 tvg-id="CTS1" tvg-name="無線衛星亞洲台" tvg-logo="https://php.946985.xyz/logo/TVBS亚洲.png" group-title="tvb",無線衛星亞洲台
+http://192.168.6.15:9100/live/stream-a7332ec0e07cb2bc/index.m3u8
+#EXTINF:-1 tvg-id="CTSN" tvg-name="無線衛星新聞台" tvg-logo="https://php.946985.xyz/logo/TVBS新闻.png" group-title="tvb",無線衛星新聞台
+http://192.168.6.15:9100/live/stream-a73305c0e07c6d11/index.m3u8
+#EXTINF:-1 tvg-id="SDOC" tvg-name="真情SUPER煲" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="tvb",真情SUPER煲
+http://192.168.6.15:9100/live/stream-ca2a8838bc4d8886/index.m3u8
+#EXTINF:-1 tvg-id="FJTV" tvg-name="福建海峽衛視國際頻道" tvg-logo="https://php.946985.xyz/logo/海峡卫视.png" group-title="tvb",福建海峽衛視國際頻道
+http://192.168.6.15:9100/live/stream-4dbc4dea4ac5b6bd/index.m3u8
+#EXTINF:-1 tvg-id="CCLM" tvg-name="粵語片台" tvg-logo="https://php.946985.xyz/logo/粤语片.png" group-title="tvb",粵語片台
+http://192.168.6.15:9100/live/stream-14474dc08d5d871e/index.m3u8
+#EXTINF:-1 tvg-id="CMAM" tvg-name="美亞電影台" tvg-logo="https://php.946985.xyz/logo/美亚电影.png" group-title="tvb",美亞電影台
+http://192.168.6.15:9100/live/stream-e1d537c071399055/index.m3u8
+#EXTINF:-1 tvg-id="J" tvg-name="翡翠台" tvg-logo="https://php.946985.xyz/logo/翡翠台.png" group-title="tvb",翡翠台
+http://192.168.6.15:9100/live/stream-e6354db01154cca3/index.m3u8
+#EXTINF:-1 tvg-id="翡翠台(超高清)" tvg-name="翡翠台(超高清)" group-title="tvb",翡翠台(超高清)
+http://192.168.6.15:9100/live/stream-40a9aa8681cb45ce/index.m3u8
+#EXTINF:-1 tvg-id="CDR3" tvg-name="華語劇台" tvg-logo="https://php.946985.xyz/logo/华语剧.png" group-title="tvb",華語劇台
+http://192.168.6.15:9100/live/stream-1eb818c093c84b43/index.m3u8
+#EXTINF:-1 tvg-id="YNTV" tvg-name="雲南瀾湄國際衛視" tvg-logo="https://php.946985.xyz/logo/澜湄国际.png" group-title="tvb",雲南瀾湄國際衛視
+http://192.168.6.15:9100/live/stream-4d7485092103af56/index.m3u8
+#EXTINF:-1 tvg-id="PCC" tvg-name="鳳凰衛視中文台" tvg-logo="https://php.946985.xyz/logo/凤凰中文.png" group-title="tvb",鳳凰衛視中文台
+http://192.168.6.15:9100/live/stream-b86f683a7329018f/index.m3u8
+#EXTINF:-1 tvg-id="PIN" tvg-name="鳳凰衛視資訊台" tvg-logo="https://php.946985.xyz/logo/凤凰资讯.png" group-title="tvb",鳳凰衛視資訊台
+http://192.168.6.15:9100/live/stream-b8844b3a733b2c52/index.m3u8
+#EXTINF:-1 tvg-id="PHK" tvg-name="鳳凰衛視香港台" tvg-logo="https://php.946985.xyz/logo/凤凰香港.png" group-title="tvb",鳳凰衛視香港台
+http://192.168.6.15:9100/live/stream-b887283a733d26b0/index.m3u8
+#EXTINF:-1 tvg-id="TVO" tvg-name="黃金華劇台" tvg-logo="https://php.946985.xyz/logo/黄金华剧.png" group-title="tvb",黃金華劇台
+http://192.168.6.15:9100/live/stream-dc87d03a8803cc7a/index.m3u8
+#EXTINF:-1 tvg-id="黄金翡翠台" tvg-name="黄金翡翠台" group-title="tvb",黄金翡翠台
+http://192.168.6.15:9100/live/stream-dc87c83a8803bee2/index.m3u8
