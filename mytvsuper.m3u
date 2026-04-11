@@ -1,4 +1,4 @@
-#EXTM3U url-tvg="https://raw.githubusercontent.com/badboys88888/EPGCollector/main/mytvsuper/epg.xml.gz,https://github.com/badboys88888/EPGCollector/raw/refs/heads/main/hoytv/hoytv.xml.gz"
+#EXTM3U url-tvg="https://mytvsuperepg.860775.xyz/epg.xml,https://github.com/badboys88888/EPGCollector/raw/refs/heads/main/hoytv/hoytv.xml.gz"
 #EXTINF:-1 tvg-id="Eleven Sports 1" tvg-logo="" group-title="myTVSUPER",Eleven Sports 1 4K PL
 http://192.168.6.16:18480/stream/null/ufc1/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
 #EXTINF:-1 tvg-id="J" tvg-name="翡翠台" tvg-logo="https://php.946985.xyz/logo/翡翠台.png" group-title="myTVSUPER",翡翠台(超高清)
