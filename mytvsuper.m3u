@@ -2,8 +2,7 @@
 #EXTINF:-1 tvg-id="Eleven Sports 1" tvg-logo="" group-title="myTVSUPER",Eleven Sports 1 4K PL
 http://192.168.6.16:18480/stream/null/ufc1/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
 #EXTINF:-1 tvg-id="J" tvg-name="翡翠台" tvg-logo="https://php.946985.xyz/logo/翡翠台.png" group-title="myTVSUPER",翡翠台(超高清)
-http://192.168.6.15:9100/live/stream-40a9aa8681cb45ce/index.m3u8
-#http://192.168.6.16:18480/stream/null/4k/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
+http://192.168.6.16:18480/stream/null/4k/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
 #EXTINF:-1 tvg-id="CWIN" tvg-name="SUPER" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",SUPER
 http://192.168.6.16:18480/stream/null/mytvsuperfree1/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
 #EXTINF:-1 tvg-id="SVAR" tvg-name="SUPER獎門人" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",SUPER獎門人
@@ -31,16 +30,13 @@ http://192.168.6.16:18480/stream/null/mytvsuper18/master.m3u8?u=admin&p=240be518
 #EXTINF:-1 tvg-id="TVG" tvg-name="黃金翡翠台" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",黃金翡翠台
 http://192.168.6.16:18480/stream/null/null211/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
 #EXTINF:-1 tvg-id="J" tvg-name="翡翠台" tvg-logo="https://php.946985.xyz/logo/翡翠台.png" group-title="myTVSUPER",翡翠台
-http://192.168.6.15:9100/live/stream-e6354db01154cca3/index.m3u8
-#http://192.168.6.16:18480/stream/null/null21/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
+http://192.168.6.16:18480/stream/null/null21/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
 #EXTINF:-1 tvg-id="B" tvg-name="TVB Plus" tvg-logo="https://xiaotan.860775.xyz/TVB Plus.png" group-title="myTVSUPER",TVB Plus
-http://192.168.6.15:9100/live/stream-e63555b01154da3b/index.m3u8
-#http://192.168.6.16:18480/stream/null/tvbplus/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
+http://192.168.6.16:18480/stream/null/tvbplus/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
 #EXTINF:-1 tvg-id="C" tvg-name="無綫新聞台" tvg-logo="https://php.946985.xyz/logo/无线新闻.png" group-title="myTVSUPER",無綫新聞台
 http://192.168.6.16:18480/stream/null/null41/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
 #EXTINF:-1 tvg-id="P" tvg-name="明珠台" tvg-logo="https://php.946985.xyz/logo/明珠台.png" group-title="myTVSUPER",明珠台
-http://192.168.6.15:9100/live/stream-e63547b01154c271/index.m3u8
-#http://192.168.6.16:18480/stream/null/null31/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
+http://192.168.6.16:18480/stream/null/null31/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
 #EXTINF:-1 tvg-id="CTVC" tvg-name="千禧經典台" tvg-logo="https://php.946985.xyz/logo/千禧经典.png" group-title="myTVSUPER",千禧經典台
 http://192.168.6.16:18480/stream/null/null5/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
 #EXTINF:-1 tvg-id="CTVS" tvg-name="亞洲劇台" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",亞洲劇台
@@ -48,8 +44,7 @@ http://192.168.6.16:18480/stream/null/null21111/master.m3u8?u=admin&p=240be518fa
 #EXTINF:-1 tvg-id="CDR3" tvg-name="華語劇台" tvg-logo="https://php.946985.xyz/logo/华语剧.png" group-title="myTVSUPER",華語劇台
 http://192.168.6.16:18480/stream/null/null4111/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
 #EXTINF:-1 tvg-id="TVO" tvg-name="黃金華劇台" tvg-logo="https://php.946985.xyz/logo/黄金华剧.png" group-title="myTVSUPER",黃金華劇台
-http://192.168.6.15:9100/live/stream-dc87d03a8803cc7a/index.m3u8
-#http://192.168.6.16:18480/stream/null/null11111/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
+http://192.168.6.16:18480/stream/null/null11111/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
 #EXTINF:-1 tvg-id="CTVE" tvg-name="娛樂新聞台" tvg-logo="https://php.946985.xyz/logo/娱乐新闻.png" group-title="myTVSUPER",娛樂新聞台
 http://192.168.6.16:18480/stream/null/null111/master.m3u8?u=admin&p=240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9
 #EXTINF:-1 tvg-id="CCOC" tvg-name="戲曲台" tvg-logo="https://php.946985.xyz/logo/MytvSuper.png" group-title="myTVSUPER",戲曲台
