@@ -210,7 +210,7 @@ http://36.46.98.155:8010/udp/239.112.205.221:5140
 #EXTINF:-1 tvg-name="CCTV4" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV4.png" group-title="陕西电信[B]",CCTV4
 http://36.46.98.155:8010/udp/239.112.205.202:5140
 #EXTINF:-1 tvg-name="CCTV5" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV5.png" group-title="陕西电信[B]",CCTV5
-http://36.46.98.155:8010/udp/http://192.168.50.1:8686/rtp/239.112.205.222:5140
+http://36.46.98.155:8010/udp/239.112.205.222:5140
 #EXTINF:-1 tvg-name="CCTV5+" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV5+.png" group-title="陕西电信[B]",CCTV5+
 http://36.46.98.155:8010/udp/239.111.205.13:5140
 #EXTINF:-1 tvg-name="CCTV6" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV6.png" group-title="陕西电信[B]",CCTV6
