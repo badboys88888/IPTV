@@ -1,4 +1,8 @@
 #EXTM3U x-tvg-url="http://192.168.6.15:5678/t.xml.gz"
+#EXTINF:-1 tvg-name="湖南卫视" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/湖南卫视.png" group-title="湖北电信[A]",湖南卫视4K
+http://192.168.1.1/udp/239.69.2.35:11364
+#EXTINF:-1 tvg-name="江苏卫视" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/江苏卫视.png" group-title="湖北电信[A]",江苏卫视4K
+http://192.168.1.1/udp/239.69.2.36:11370
 #EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV1.png" group-title="湖北电信[A]",CCTV1
 http://192.168.1.1/udp/239.254.97.96:8550
 #EXTINF:-1 tvg-name="CCTV2" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV2.png" group-title="湖北电信[A]",CCTV2
