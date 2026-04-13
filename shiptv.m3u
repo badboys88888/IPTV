@@ -1,8 +1,4 @@
 #EXTM3U x-tvg-url="http://192.168.6.15:5678/t.xml.gz"
-#EXTINF:-1 group-title="上海电信[A]",4K高清
-http://a.708d.com:10010/udp/239.45.0.33:5140
-#EXTINF:-1 group-title="上海电信[A]",4K测试
-http://a.708d.com:10010/udp/239.45.1.109:5140
 #EXTINF:-1 tvg-name="CCTV4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV4K.png" group-title="上海电信[A]",CCTV4K
 http://a.708d.com:10010/udp/233.18.204.188:5140
 #EXTINF:-1 tvg-name="CCTV4K" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV4K.png" group-title="上海电信[A]",CCTV4K
