@@ -1,4 +1,6 @@
 #EXTM3U url-tvg="https://epg.deny.vip/sh/tel-epg.xml" x-tvg-url="https://epg.deny.vip/sh/tel-epg.xml"
+#EXTINF:-1 tvg-id="天翼高清4K" tvg-logo="" group-title="上海电信[A]",天翼高清4K
+http://raytitor.cn:8888/udp/233.18.204.201:5140
 #EXTINF:-1 tvg-id="180" tvg-name="欢笑剧场" tvg-logo="https://epg.deny.vip/df/欢笑剧场4K.png" group-title="上海电信[A]",多彩文体 4K
 http://raytitor.cn:8888/udp/233.18.204.205:5140
 #EXTINF:-1 tvg-id="67" tvg-name="CGTN" tvg-logo="https://epg.deny.vip/cctv/CGTN.png" group-title="上海电信[A]",CGTN
@@ -195,6 +197,8 @@ http://raytitor.cn:8888/udp/233.18.204.154:5140
 http://raytitor.cn:8888/udp/233.18.204.155:5140
 #EXTINF:-1 tvg-id="350" tvg-name="家庭理财" tvg-logo="https://epg.deny.vip/df/家庭理财.png" group-title="上海电信[A]",家庭理财
 http://raytitor.cn:8888/udp/233.18.204.157:5140
+#EXTINF:-1 tvg-id="天翼高清4K" tvg-logo="" group-title="上海电信[B]",天翼高清4K
+http://180.165.22.227:8888/udp//233.18.204.201:5140
 #EXTINF:-1 tvg-id="180" tvg-name="欢笑剧场" tvg-logo="https://epg.deny.vip/df/欢笑剧场4K.png" group-title="上海电信[B]",多彩文体 4K
 http://180.165.22.227:8888/udp/233.18.204.205:5140
 #EXTINF:-1 tvg-id="67" tvg-name="CGTN" tvg-logo="https://epg.deny.vip/cctv/CGTN.png" group-title="上海电信[B]",CGTN
