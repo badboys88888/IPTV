@@ -1,5 +1,5 @@
 #EXTM3U
-# 更新时间: 2026-04-29 09:57:20
+# 更新时间: 2026-04-29 10:09:33
 
 # ── BE ──
 #EXTINF:-1 group-title="BE",xteve [140频道]
@@ -13,11 +13,9 @@ http://152.67.56.199:8082/m3u/xteve.m3u
 #EXTINF:-1 group-title="CA",xteve [194频道]
 http://144.217.68.109:8181/m3u/xteve.m3u
 #EXTINF:-1 group-title="CA",xteve [92频道]
-http://169.150.219.152:12151/m3u/xteve.m3u
-#EXTINF:-1 group-title="CA",xteve [92频道]
 http://169.150.219.151:12151/m3u/xteve.m3u
-#EXTINF:-1 group-title="CA",xteve [10频道]
-http://xteve.tv.ncbr.wtf/m3u/xteve.m3u
+#EXTINF:-1 group-title="CA",xteve [92频道]
+http://169.150.219.152:12151/m3u/xteve.m3u
 #EXTINF:-1 group-title="CA",xteve [10频道]
 http://xteve.tv.ncbr.wtf/m3u/xteve.m3u
 
@@ -42,18 +40,16 @@ http://46.4.77.157:4000/m3u/xteve.m3u
 http://46.4.77.157:4004/m3u/xteve.m3u
 #EXTINF:-1 group-title="DE",xteve [136频道]
 http://46.4.77.157:4003/m3u/xteve.m3u
+#EXTINF:-1 group-title="DE",xteve [98频道]
+http://188.245.230.44:8000/m3u/xteve.m3u
 
 # ── EE ──
-#EXTINF:-1 group-title="EE",xteve [9频道]
-http://kava.uf0.space/m3u/xteve.m3u
 #EXTINF:-1 group-title="EE",xteve [9频道]
 http://kava.uf0.space/m3u/xteve.m3u
 
 # ── ES ──
 #EXTINF:-1 group-title="ES",xteve [132频道]
 http://79.116.195.102:8000/m3u/xteve.m3u
-#EXTINF:-1 group-title="ES",xteve [86频道]
-http://xteve.dsgmobile.com/m3u/xteve.m3u
 #EXTINF:-1 group-title="ES",xteve [86频道]
 http://xteve.dsgmobile.com/m3u/xteve.m3u
 #EXTINF:-1 group-title="ES",xteve [62频道]
@@ -114,18 +110,10 @@ http://202.165.235.59:8099/m3u/xteve.m3u
 # ── US ──
 #EXTINF:-1 group-title="US",xteve [353频道]
 http://tv.kinte.net/m3u/xteve.m3u
-#EXTINF:-1 group-title="US",xteve [353频道]
-http://tv.kinte.net/m3u/xteve.m3u
-#EXTINF:-1 group-title="US",xteve [102频道]
-http://xteve.top/m3u/xteve.m3u
 #EXTINF:-1 group-title="US",xteve [102频道]
 http://xteve.top/m3u/xteve.m3u
 #EXTINF:-1 group-title="US",xteve [69频道]
 http://xteve.szepe.sk/m3u/xteve.m3u
-#EXTINF:-1 group-title="US",xteve [69频道]
-http://xteve.szepe.sk/m3u/xteve.m3u
-#EXTINF:-1 group-title="US",xteve [16频道]
-http://xteve.cineworld.ovh/m3u/xteve.m3u
 #EXTINF:-1 group-title="US",xteve [16频道]
 http://xteve.cineworld.ovh/m3u/xteve.m3u
 
