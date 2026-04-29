@@ -29,6 +29,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add xteve/xteve.m3u xteve/fofa_hosts.csv
+          git add xteve/xteve.m3u xteve/xteve_expanded.m3u xteve/fofa_hosts.csv
           git commit -m "自动更新 xteve M3U $(date '+%Y-%m-%d %H:%M UTC')" || echo "无变化，跳过提交"
           git push
