@@ -1,0 +1,38 @@
+mkdir -p /mnt/user-data/outputs/.github/workflows
+cat > /mnt/user-data/outputs/.github/workflows/update_xteve.yml << 'YAMLEOF'
+name: 更新 xteve M3U
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'   # 每6小时自动运行
+  workflow_dispatch:          # 支持手动触发
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 安装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 安装依赖
+        run: pip install requests
+
+      - name: 运行脚本
+        env:
+          FOFA_KEY: ${{ secrets.FOFA_KEY }}
+        run: python xteve/fofa_xteve.py
+
+      - name: 提交更新结果
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add xteve/xteve.m3u xteve/fofa_hosts.csv
+          git commit -m "🔄 自动更新 xteve M3U $(date '+%Y-%m-%d %H:%M UTC')" || echo "无变化，跳过提交"
+          git push
+YAMLEOF
+echo "done"
