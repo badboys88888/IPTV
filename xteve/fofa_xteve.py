@@ -222,6 +222,75 @@ def main():
 
         save_m3u(valid_by_country)
 
+        print("\n🔄 正在展开详细频道列表...")
+        expand_m3u(valid_by_country)
+
 
 if __name__ == "__main__":
     main()
+
+
+def expand_m3u(valid_by_country):
+    """把每个有效的 xteve 链接展开成里面的实际频道，生成详细 M3U"""
+    expanded_file = "xteve/xteve_expanded.m3u"
+    os.makedirs(os.path.dirname(expanded_file), exist_ok=True)
+
+    seen_urls = set()   # 去重，避免同一个频道出现两次
+    total_channels = 0
+
+    with open(expanded_file, "w", encoding="utf-8") as out:
+        out.write("#EXTM3U\n")
+        out.write(f"# 展开版，更新时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
+
+        for country in sorted(valid_by_country.keys()):
+            entries = sorted(valid_by_country[country], key=lambda x: x[1], reverse=True)
+            # 去重同一国家下的重复 URL
+            seen_in_country = set()
+
+            for url, ch_count in entries:
+                if url in seen_in_country:
+                    continue
+                seen_in_country.add(url)
+
+                print(f"  📥 展开 {url} ...")
+                try:
+                    r = requests.get(url, timeout=15, allow_redirects=True)
+                    if r.status_code != 200:
+                        print(f"     ❌ HTTP {r.status_code}")
+                        continue
+
+                    lines = r.text.splitlines()
+                    i = 0
+                    ch_added = 0
+                    while i < len(lines):
+                        line = lines[i].strip()
+                        if line.startswith("#EXTINF"):
+                            # 加上国家分组
+                            if 'group-title=' in line:
+                                # 替换原有 group-title
+                                import re
+                                line = re.sub(r'group-title="[^"]*"', f'group-title="{country}"', line)
+                            else:
+                                line = line.replace("#EXTINF:", f'#EXTINF:') 
+                                line += f' group-title="{country}"'
+
+                            # 下一行是频道 URL
+                            if i + 1 < len(lines):
+                                ch_url = lines[i + 1].strip()
+                                if ch_url and not ch_url.startswith("#"):
+                                    if ch_url not in seen_urls:
+                                        seen_urls.add(ch_url)
+                                        out.write(f"{line}\n{ch_url}\n")
+                                        ch_added += 1
+                                        total_channels += 1
+                                    i += 2
+                                    continue
+                        i += 1
+
+                    print(f"     ✅ 新增 {ch_added} 个频道")
+
+                except Exception as e:
+                    print(f"     ❌ 错误: {e}")
+
+    print(f"\n✔ 展开完成，共 {total_channels} 个唯一频道，保存到 {expanded_file}")
+    return expanded_file
