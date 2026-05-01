@@ -1,12 +1,12 @@
 #EXTM3U
-# 更新时间: 2026-04-29 10:09:33
+# 更新时间: 2026-05-01 01:56:45
 
 # ── BE ──
 #EXTINF:-1 group-title="BE",xteve [140频道]
 http://109.136.59.215:61616/m3u/xteve.m3u
 
 # ── BR ──
-#EXTINF:-1 group-title="BR",xteve [194频道]
+#EXTINF:-1 group-title="BR",xteve [191频道]
 http://152.67.56.199:8082/m3u/xteve.m3u
 
 # ── CA ──
@@ -48,8 +48,6 @@ http://188.245.230.44:8000/m3u/xteve.m3u
 http://kava.uf0.space/m3u/xteve.m3u
 
 # ── ES ──
-#EXTINF:-1 group-title="ES",xteve [132频道]
-http://79.116.195.102:8000/m3u/xteve.m3u
 #EXTINF:-1 group-title="ES",xteve [86频道]
 http://xteve.dsgmobile.com/m3u/xteve.m3u
 #EXTINF:-1 group-title="ES",xteve [62频道]
@@ -110,6 +108,8 @@ http://202.165.235.59:8099/m3u/xteve.m3u
 # ── US ──
 #EXTINF:-1 group-title="US",xteve [353频道]
 http://tv.kinte.net/m3u/xteve.m3u
+#EXTINF:-1 group-title="US",xteve [159频道]
+http://67.161.193.132:32768/m3u/xteve.m3u
 #EXTINF:-1 group-title="US",xteve [102频道]
 http://xteve.top/m3u/xteve.m3u
 #EXTINF:-1 group-title="US",xteve [69频道]
