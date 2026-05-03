@@ -1,5 +1,5 @@
 #EXTM3U
-# 更新时间: 2026-05-03 01:15:15
+# 更新时间: 2026-05-03 01:49:10
 
 # ── BE ──
 #EXTINF:-1 group-title="BE",xteve [140频道]
@@ -75,9 +75,9 @@ http://211.225.62.76:5678/m3u/xteve.m3u
 
 # ── NL ──
 #EXTINF:-1 group-title="NL",xteve [365频道]
-http://46.232.211.27:12134/m3u/xteve.m3u
-#EXTINF:-1 group-title="NL",xteve [365频道]
 http://46.232.211.19:12134/m3u/xteve.m3u
+#EXTINF:-1 group-title="NL",xteve [365频道]
+http://46.232.211.27:12134/m3u/xteve.m3u
 #EXTINF:-1 group-title="NL",xteve [365频道]
 http://45.86.221.191:12134/m3u/xteve.m3u
 #EXTINF:-1 group-title="NL",xteve [365频道]
