@@ -3,18 +3,18 @@ name: Update IPTV Sources
 on:
   schedule:
     - cron: '0 2 * * *'          # 北京时间 10:00
-  workflow_dispatch:              # 支持手动触发
+  workflow_dispatch:
   push:
     branches:
       - main
     paths:
-      - 'config.json'            # 当配置文件更新时自动运行
+      - 'config.json'
 
 jobs:
   update:
     runs-on: ubuntu-latest
     permissions:
-      contents: write            # 必须，用于推送变更
+      contents: write
 
     steps:
       - name: Checkout repository
@@ -28,31 +28,18 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Ensure output directory exists
-        run: mkdir -p output
-
       - name: Run IPTV updater
         env:
           FOFA_KEY: ${{ secrets.FOFA_KEY }}
         run: python udp/update_iptv.py
-        
-      - name: Debug - show real labels
-        run: |
-          echo "=== zjiptv.m3u group-title ==="
-          grep -Po 'group-title="\K[^"]*' output/zjiptv.m3u | sort -u
-          echo "=== zjiptv.txt genre ==="
-          grep '#genre#' output/zjiptv.txt
-          echo "=== gdiptv.m3u group-title ==="
-          grep -Po 'group-title="\K[^"]*' output/gdiptv.m3u | sort -u
-          echo "=== gdiptv.txt genre ==="
-          grep '#genre#' output/gdiptv.txt
-          
+
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add output/
-          # 检查暂存区是否有变更，没有则正常退出
+          if [ -f output_files.txt ]; then
+            xargs -a output_files.txt git add
+          fi
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
