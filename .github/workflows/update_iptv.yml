@@ -31,5 +31,5 @@ jobs:
       - name: Run updater script
         env:
           FOFA_KEY: ${{ secrets.FOFA_KEY }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python udp/update_iptv.py
