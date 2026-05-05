@@ -2,19 +2,19 @@ name: Update IPTV Sources
 
 on:
   schedule:
-    - cron: '0 2 * * *'
-  workflow_dispatch:
+    - cron: '0 2 * * *'          # 北京时间 10:00
+  workflow_dispatch:              # 支持手动触发
   push:
     branches:
       - main
     paths:
-      - 'config.json'
+      - 'config.json'            # 当配置文件更新时自动运行
 
 jobs:
   update:
     runs-on: ubuntu-latest
     permissions:
-      contents: write          # 明确要求写入权限
+      contents: write            # 必须，用于推送变更
 
     steps:
       - name: Checkout repository
@@ -28,31 +28,23 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Ensure output directory
+      - name: Ensure output directory exists
         run: mkdir -p output
 
-      - name: Run updater script
+      - name: Run IPTV updater
         env:
           FOFA_KEY: ${{ secrets.FOFA_KEY }}
         run: python udp/update_iptv.py
-
-      - name: Show git status
-        run: |
-          echo "=== Git status ==="
-          git status
-          echo "=== Git remote ==="
-          git remote -v
 
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # 检查 output/ 目录是否有变更
-          if [ -z "$(git status --porcelain output/)" ]; then
-            echo "output/ 目录无变更，跳过提交和推送。"
+          git add output/
+          # 检查暂存区是否有变更，没有则正常退出
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
           else
-            echo "检测到变更，开始提交..."
-            git add output/
-            git commit -m "🔄 自动更新 IPTV 源 ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+            git commit -m "🔄 自动更新 IPTV 源 ($(date -u '+%Y-%m-%d %H:%M UTC'))"
             git push
           fi
