@@ -1,14 +1,14 @@
-# .github/workflows/update_iptv.yml
 name: Update IPTV Sources
 
 on:
   schedule:
-    # 每天 UTC 2:00 运行一次（北京时间 10:00），按需修改
-    - cron: '0 2 * * *'
-  workflow_dispatch:        # 允许手动触发
+    - cron: '0 2 * * *'          # 每天 UTC 2:00 (北京时间 10:00)
+  workflow_dispatch:
   push:
     branches:
-      - main               # 如果你推代码到 main 也想跑一次，保留
+      - main
+    paths:
+      - 'config.json'            # config 变化时自动运行
 
 jobs:
   update:
@@ -31,5 +31,12 @@ jobs:
       - name: Run updater script
         env:
           FOFA_KEY: ${{ secrets.FOFA_KEY }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python udp/update_iptv.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/              # 假设所有输出均在 output/ 目录下
+          git commit -m "🔄 自动更新 IPTV 源 ($(date -u +'%Y-%m-%d %H:%M UTC'))" || echo "No changes"
+          git push
