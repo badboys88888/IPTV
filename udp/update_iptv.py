@@ -87,26 +87,50 @@ def test_stream_http(host, stream):
     return None
 
 def find_best_host(candidates, test_udp, require_domain, group_name):
+    """从 candidates 中找可用 host；若 require_domain 则优先域名，失败后尝试 IP"""
     global USED_HOSTS
     fresh = [h for h in candidates if h not in USED_HOSTS]
     if not fresh:
-        print(f"[{group_name}] 无未使用的候选 host")
+        print(f"[{group_name}] 没有未使用的候选 host")
         return None
-    print(f"[{group_name}] 测试 {len(fresh)} 个 host (流: {test_udp})...")
-    with ThreadPoolExecutor(max_workers=THREADS) as ex:
-        futures = {ex.submit(test_stream_http, h, test_udp): h for h in fresh}
-        for f in as_completed(futures):
-            host = f.result()
-            if host:
-                if require_domain and re.match(r'\d+\.\d+\.\d+\.\d+', host.split(":")[0]):
-                    continue
-                USED_HOSTS.add(host)
-                print(f"[{group_name}] ✅ 选定 host: {host}")
-                ex.shutdown(wait=False)
-                return host
-    print(f"[{group_name}] 未找到可用 host")
-    return None
 
+    # 辅助函数：测试一个列表并返回第一个可用 host
+    def _test(c_list, label):
+        if not c_list:
+            return None
+        print(f"[{group_name}] {label} ({len(c_list)} 个)...")
+        with ThreadPoolExecutor(max_workers=THREADS) as ex:
+            fut = {ex.submit(test_stream_http, h, test_udp): h for h in c_list}
+            for f in as_completed(fut):
+                host = f.result()
+                if host:
+                    USED_HOSTS.add(host)
+                    print(f"[{group_name}] ✅ 选定 host: {host}")
+                    ex.shutdown(wait=False)
+                    return host
+        return None
+
+    if require_domain:
+        # 分离域名和 IP
+        domains = [h for h in fresh if not re.match(r'\d+\.\d+\.\d+\.\d+', h.split(":")[0])]
+        ips     = [h for h in fresh if re.match(r'\d+\.\d+\.\d+\.\d+', h.split(":")[0])]
+
+        # 先测域名
+        best = _test(domains, "测试域名")
+        if best:
+            return best
+
+        # 域名不行，退回到测 IP
+        best = _test(ips, "域名不可用，退回测试 IP")
+        if best:
+            return best
+
+        print(f"[{group_name}] 未找到可用的域名或 IP")
+        return None
+    else:
+        # 不要求域名，全部混合测试
+        return _test(fresh, "测试全部候选 host")
+        
 def replace_in_m3u_group(text, group_name, new_host):
     lines = text.splitlines()
     out = []
