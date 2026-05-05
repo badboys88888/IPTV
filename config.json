@@ -193,7 +193,7 @@
         "require_domain": false,
         "test_udp": "239.69.1.102:10250"
     },
-   {
+    {
         "name": "江苏电信组播[A]",
         "fofa_query": "server=\"udpxy\" && region=\"Jiangsu\" && is_domain=true",
         "target_repo": "badboys88888/IPTV",
@@ -215,7 +215,7 @@
         "require_domain": false,
         "test_udp": "239.49.8.16:9602"
     },
-        {
+    {
         "name": "江苏电信组播[C]",
         "fofa_query": "server=\"udpxy\" && region=\"Jiangsu\" && is_domain=true",
         "target_repo": "badboys88888/IPTV",
@@ -226,7 +226,7 @@
         "require_domain": true,
         "test_udp": "239.49.8.16:9602"
     },
-        {
+     {
         "name": "福建电信[A]",
         "fofa_query": "server=\"udpxy\" && region=\"Fujian\" && is_domain=true",
         "target_repo": "badboys88888/IPTV",
@@ -237,7 +237,7 @@
         "require_domain": true,
         "test_udp": "239.61.4.175:1025"
     },
-        {
+    {
         "name": "福建电信[B]",
         "fofa_query": "server=\"udpxy\" && region=\"Fujian\"",
         "target_repo": "badboys88888/IPTV",
@@ -247,6 +247,28 @@
         "output_m3u": "fjiptv.m3u",
         "require_domain": false,
         "test_udp": "239.61.4.175:1025"
+    },
+         {
+        "name": "北京联通[A]",
+        "fofa_query": "server=\"udpxy\" && region=\"Beijing\" && is_domain=true",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "bjiptv.txt",
+        "target_m3u": "bjiptv.m3u",
+        "output_txt": "bjiptv.txt",
+        "output_m3u": "bjiptv.m3u",
+        "require_domain": true,
+        "test_udp": "239.3.1.129:8008"
+    },
+    {
+        "name": "北京联通[B]",
+        "fofa_query": "server=\"udpxy\" && region=\"Beijing\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "bjiptv.txt",
+        "target_m3u": "bjiptv.m3u",
+        "output_txt": "bjiptv.txt",
+        "output_m3u": "bjiptv.m3u",
+        "require_domain": false,
+        "test_udp": "239.3.1.129:8008"
     }
 
 ]
