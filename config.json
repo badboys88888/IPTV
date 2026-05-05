@@ -89,13 +89,13 @@
     },
         {
         "name": "广西电信[C]",
-        "fofa_query": "server=\"udpxy\" && region=\"Guangxi Zhuangzu\" && is_domain=true",
+        "fofa_query": "server=\"udpxy\" && region=\"Guangxi Zhuangzu\"",
         "target_repo": "badboys88888/IPTV",
         "target_txt": "gxiptv.txt",
         "target_m3u": "gxiptv.m3u",
         "output_txt": "gxiptv.txt",
         "output_m3u": "gxiptv.m3u",
-        "require_domain": true,
+        "require_domain": false,
         "test_udp": "239.81.0.107:4056"
     },
     {
