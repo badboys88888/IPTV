@@ -1,0 +1,35 @@
+# .github/workflows/update_iptv.yml
+name: Update IPTV Sources
+
+on:
+  schedule:
+    # 每天 UTC 2:00 运行一次（北京时间 10:00），按需修改
+    - cron: '0 2 * * *'
+  workflow_dispatch:        # 允许手动触发
+  push:
+    branches:
+      - main               # 如果你推代码到 main 也想跑一次，保留
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install requests opencv-python-headless
+
+      - name: Run updater script
+        env:
+          FOFA_KEY: ${{ secrets.FOFA_KEY }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: python udp/update_iptv.py
