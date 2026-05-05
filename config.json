@@ -17,9 +17,33 @@ GROUPS = [
     },
     # 可以轻松扩展其他分组，推送到不同仓库
     {
-        "name": "广东电信",
+        "name": "广东电信[A]",
+        "fofa_query": 'server="udpxy" && region="Zhejiang" && is_domain=true',  # 原始 base64 也可
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "zjiptv.txt",
+        "target_m3u": "zjiptv.m3u",
+        "require_domain": True   # A频道强制域名
+    },
+    {
+        "name": "广东电信[B]",
+        "fofa_query": 'server="udpxy" && region="Zhejiang"',
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "gdiptv.txt",
+        "target_m3u": "gdiptv.m3u",
+        "require_domain": False
+    },
+    {
+        "name": "广东电信[C]",
         "fofa_query": 'server="udpxy" && region="Guangdong"',
-        "target_repo": "other-org/gd-iptv",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "gdiptv.txt",
+        "target_m3u": "gdiptv.m3u",
+        "require_domain": False
+    },
+    {
+        "name": "广东电信[D]",
+        "fofa_query": 'server="udpxy" && region="Guangdong"',
+        "target_repo": "badboys88888/IPTV",
         "target_txt": "gdiptv.txt",
         "target_m3u": "gdiptv.m3u",
         "require_domain": False
