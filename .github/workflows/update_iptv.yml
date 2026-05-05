@@ -3,22 +3,24 @@ name: Update IPTV Sources
 on:
   schedule:
     - cron: '0 2 * * *'          # 北京时间 10:00
-  workflow_dispatch:
+  workflow_dispatch:              # 支持手动触发
   push:
     branches:
       - main
     paths:
-      - 'config.json'
+      - 'config.json'            # 当配置文件更新时自动运行
 
 jobs:
   update:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write            # 必须，用于安全的强制推送
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0          # 关键！拉取所有历史以保证强制推送安全
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -37,13 +39,23 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # 根据脚本输出的列表添加文件
           if [ -f output_files.txt ]; then
             xargs -a output_files.txt git add
           fi
+          
+          # 检查是否有变更需要提交
           if git diff --cached --quiet; then
-            echo "没有需要提交的变更。"
+            echo "No changes to commit."
           else
             git commit -m "🔄 自动更新 IPTV 源 ($(date -u '+%Y-%m-%d %H:%M UTC'))"
-            # 使用 --force-with-lease 安全地强制推送，避免因远程有新提交而冲突
-            git push --force-with-lease
+            
+            # ★ 核心解决步骤：用最新信息安全地变基并强制推送
+            # 1. 先获取远程仓库的最新状态
+            git fetch origin main
+            # 2. 基于远程最新的 main 分支进行变基 (rebase)，把我们的新提交“重放”到最新处
+            git rebase origin/main
+            # 3. 最后使用 --force-with-lease 安全地强制推送
+            git push --force-with-lease origin main
           fi
