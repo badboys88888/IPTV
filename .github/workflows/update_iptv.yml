@@ -2,13 +2,13 @@ name: Update IPTV Sources
 
 on:
   schedule:
-    - cron: '0 2 * * *'          # 每天 UTC 2:00（北京时间 10:00）
+    - cron: '0 2 * * *'          # 每天 UTC 2:00
   workflow_dispatch:
   push:
     branches:
       - main
     paths:
-      - 'config.json'            # 配置文件变更时自动运行
+      - 'config.json'
 
 jobs:
   update:
@@ -40,10 +40,13 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add output/
-          if git diff --cached --quiet; then
-            echo "No changes to commit, exiting gracefully."
+
+          # 检查 output/ 目录是否有任何变更（包括新增、修改、删除）
+          if [ -z "$(git status --porcelain output/)" ]; then
+            echo "output/ 目录无变化，跳过提交与推送。"
           else
+            echo "检测到 output/ 变更，正在提交..."
+            git add output/
             git commit -m "🔄 自动更新 IPTV 源 ($(date -u +'%Y-%m-%d %H:%M UTC'))"
             git push
           fi
