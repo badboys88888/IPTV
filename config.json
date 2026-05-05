@@ -225,6 +225,28 @@
         "output_m3u": "jsiptv.m3u",
         "require_domain": true,
         "test_udp": "239.49.8.16:9602"
+    },
+        {
+        "name": "福建电信[A]",
+        "fofa_query": "server=\"udpxy\" && region=\"Fujian\" && is_domain=true",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "fjiptv.txt",
+        "target_m3u": "fjiptv.m3u",
+        "output_txt": "fjiptv.txt",
+        "output_m3u": "fjiptv.m3u",
+        "require_domain": true,
+        "test_udp": "239.61.4.175:1025"
+    },
+        {
+        "name": "福建电信[B]",
+        "fofa_query": "server=\"udpxy\" && region=\"Fujian\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "fjiptv.txt",
+        "target_m3u": "fjiptv.m3u",
+        "output_txt": "fjiptv.txt",
+        "output_m3u": "fjiptv.m3u",
+        "require_domain": false,
+        "test_udp": "239.61.4.175:1025"
     }
 
 ]
