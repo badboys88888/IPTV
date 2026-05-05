@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-config.json 驱动的 IPTV 源更新脚本（HTTP 探测版，彻底解决卡死）
+config.json 驱动的 IPTV 源更新脚本（HTTP 探测版，修复缓存冲突）
 环境变量: FOFA_KEY
 """
 
@@ -10,10 +10,11 @@ from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 CONFIG_PATH   = os.path.join(os.path.dirname(__file__), "..", "config.json")
-THREADS       = 50                # 并发数
-HTTP_TIMEOUT  = 2                 # HTTP 请求超时(秒)
+THREADS       = 50
+HTTP_TIMEOUT  = 2
 USED_HOSTS    = set()
-FILE_CACHE    = {}                # {输出路径: 内容}
+RAW_CACHE     = {}   # 原始文件缓存
+FILE_CACHE    = {}   # 输出文件缓存
 
 
 # ─── 基础工具 ────────────────────────────────────────
@@ -51,7 +52,6 @@ def search_fofa_icu(key, query):
             h = r[0] if r[0] else r[1]
             p = r[2] if len(r) > 2 and r[2] else ""
             if h: hosts.append(f"{h}:{p}" if p else h)
-    # 去重
     seen = set()
     uniq = []
     for h in hosts:
@@ -75,7 +75,6 @@ def extract_one_udp(text):
     return None
 
 def test_stream_http(host, stream):
-    """HTTP 快速探测，超时短，不卡死"""
     url = f"http://{host}/udp/{stream}"
     try:
         r = requests.get(url, stream=True, timeout=HTTP_TIMEOUT)
@@ -87,17 +86,12 @@ def test_stream_http(host, stream):
     return None
 
 def find_best_host(candidates, test_udp, require_domain, group_name):
-    """从 candidates 中找可用 host；若 require_domain 则优先域名，失败后尝试 IP"""
     global USED_HOSTS
     fresh = [h for h in candidates if h not in USED_HOSTS]
-    if not fresh:
-        print(f"[{group_name}] 没有未使用的候选 host")
-        return None
+    if not fresh: return None
 
-    # 辅助函数：测试一个列表并返回第一个可用 host
     def _test(c_list, label):
-        if not c_list:
-            return None
+        if not c_list: return None
         print(f"[{group_name}] {label} ({len(c_list)} 个)...")
         with ThreadPoolExecutor(max_workers=THREADS) as ex:
             fut = {ex.submit(test_stream_http, h, test_udp): h for h in c_list}
@@ -111,26 +105,17 @@ def find_best_host(candidates, test_udp, require_domain, group_name):
         return None
 
     if require_domain:
-        # 分离域名和 IP
         domains = [h for h in fresh if not re.match(r'\d+\.\d+\.\d+\.\d+', h.split(":")[0])]
         ips     = [h for h in fresh if re.match(r'\d+\.\d+\.\d+\.\d+', h.split(":")[0])]
-
-        # 先测域名
         best = _test(domains, "测试域名")
-        if best:
-            return best
-
-        # 域名不行，退回到测 IP
-        best = _test(ips, "域名不可用，退回测试 IP")
-        if best:
-            return best
-
-        print(f"[{group_name}] 未找到可用的域名或 IP")
+        if best: return best
+        best = _test(ips, "域名不可用，退回测试IP")
+        if best: return best
+        print(f"[{group_name}] 未找到可用的域名或IP")
         return None
     else:
-        # 不要求域名，全部混合测试
         return _test(fresh, "测试全部候选 host")
-        
+
 def replace_in_m3u_group(text, group_name, new_host):
     lines = text.splitlines()
     out = []
@@ -143,12 +128,9 @@ def replace_in_m3u_group(text, group_name, new_host):
                 stream = lines[i+1].split("/udp/")[-1].strip()
                 out.append(f"http://{new_host}/udp/{stream}")
                 i += 2
-            else:
-                out.append(lines[i+1] if i+1 < len(lines) else "")
-                i += 2
-        else:
-            out.append(line)
-            i += 1
+                continue
+        out.append(line)
+        i += 1
     return "\n".join(out)
 
 def replace_in_txt_genre(text, group_name, new_host):
@@ -175,7 +157,7 @@ def update_global_file(path, content):
 
 def write_all_output():
     for path, content in FILE_CACHE.items():
-        os.makedirs(os.path.dirname(path), exist_ok=True)
+        os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
         with open(path, "w", encoding="utf-8") as f:
             f.write(content)
         print(f"  已写入: {path}")
@@ -203,18 +185,18 @@ def process_group(g, fofa_key):
     except Exception as e:
         print(f"FOFA 搜索失败: {e}"); return
 
-    # 2. 下载原始文件
+    # 2. 下载原始文件（存入 RAW_CACHE）
     dl = []
     if repo and m3u_file: dl.append((repo, m3u_file))
     if repo and txt_file: dl.append((repo, txt_file))
     for r, f in dl:
-        if f not in FILE_CACHE:
+        if f not in RAW_CACHE:
             print(f"  下载 {r}/{f} ...")
             content = download_file(r, f)
-            FILE_CACHE[f] = content if content is not None else ""
+            RAW_CACHE[f] = content if content is not None else ""
 
-    m3u_raw = FILE_CACHE.get(m3u_file, "") if m3u_file else ""
-    txt_raw = FILE_CACHE.get(txt_file, "") if txt_file else ""
+    m3u_raw = RAW_CACHE.get(m3u_file, "") if m3u_file else ""
+    txt_raw = RAW_CACHE.get(txt_file, "") if txt_file else ""
 
     # 3. 测试流
     if not test_udp:
@@ -227,7 +209,7 @@ def process_group(g, fofa_key):
     best = find_best_host(candidates, test_udp, require_domain, name)
     if not best: return
 
-    # 5. 替换并更新缓存
+    # 5. 替换并更新输出缓存
     ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     if m3u_raw:
         new_m3u = replace_in_m3u_group(m3u_raw, name, best)
