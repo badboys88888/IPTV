@@ -5,7 +5,10 @@
         "target_repo": "badboys88888/IPTV",
         "target_txt": "zjiptv.txt",
         "target_m3u": "zjiptv.m3u",
-        "require_domain": true
+        "output_txt": "output/zjiptv.txt",
+        "output_m3u": "output/zjiptv.m3u",
+        "require_domain": true,
+        "test_udp": "233.50.201.118:5140"
     },
     {
         "name": "浙江电信[B]",
@@ -13,7 +16,10 @@
         "target_repo": "badboys88888/IPTV",
         "target_txt": "zjiptv.txt",
         "target_m3u": "zjiptv.m3u",
-        "require_domain": false
+        "output_txt": "output/zjiptv.txt",
+        "output_m3u": "output/zjiptv.m3u",
+        "require_domain": false,
+        "test_udp": "233.50.201.118:5140"
     },
     {
         "name": "广东电信[A]",
@@ -21,30 +27,42 @@
         "target_repo": "badboys88888/IPTV",
         "target_txt": "gdiptv.txt",
         "target_m3u": "gdiptv.m3u",
-        "require_domain": true
+        "output_txt": "output/gdiptv.txt",
+        "output_m3u": "output/gdiptv.m3u",
+        "require_domain": true,
+        "test_udp": "239.77.0.1:5146"
     },
     {
         "name": "广东电信[B]",
         "fofa_query": "server=\"udpxy\" && region=\"Guangdong\"",
-        "target_repo": "other-org/gd-iptv",
+        "target_repo": "badboys88888/IPTV",
         "target_txt": "gdiptv.txt",
         "target_m3u": "gdiptv.m3u",
-        "require_domain": false
+        "output_txt": "output/gdiptv.txt",
+        "output_m3u": "output/gdiptv.m3u",
+        "require_domain": false,
+        "test_udp": "239.77.0.1:5146"
     },
     {
         "name": "广东电信[C]",
-        "fofa_query": "server=\"udpxy\" && region=\"Guangdong\"",
-        "target_repo": "other-org/gd-iptv",
+        "fofa_query": "server=\"udpxy\" && region=\"Guangdong\" && is_domain=true",
+        "target_repo": "badboys88888/IPTV",
         "target_txt": "gdiptv.txt",
         "target_m3u": "gdiptv.m3u",
-        "require_domain": false
+        "output_txt": "output/gdiptv.txt",
+        "output_m3u": "output/gdiptv.m3u",
+        "require_domain": true,
+        "test_udp": "239.77.0.1:5146"
     },
     {
         "name": "广东电信[D]",
         "fofa_query": "server=\"udpxy\" && region=\"Guangdong\"",
-        "target_repo": "other-org/gd-iptv",
+        "target_repo": "badboys88888/IPTV",
         "target_txt": "gdiptv.txt",
         "target_m3u": "gdiptv.m3u",
-        "require_domain": false
+        "output_txt": "output/gdiptv.txt",
+        "output_m3u": "output/gdiptv.m3u",
+        "require_domain": false,
+        "test_udp": "239.77.0.1:5146"
     }
 ]
