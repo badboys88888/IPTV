@@ -41,9 +41,9 @@ jobs:
             xargs -a output_files.txt git add
           fi
           if git diff --cached --quiet; then
-            echo "No changes to commit."
+            echo "没有需要提交的变更。"
           else
             git commit -m "🔄 自动更新 IPTV 源 ($(date -u '+%Y-%m-%d %H:%M UTC'))"
-            git pull --rebase origin main
-            git push
+            # 使用 --force-with-lease 安全地强制推送，避免因远程有新提交而冲突
+            git push --force-with-lease
           fi
