@@ -1,42 +1,30 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-IPTV 源自动更新 (HTTP 探测版, 支持分组叠加修改)
-
-特性:
-  - 使用 fofa.icu API 搜索候选 host
-  - 仅探测一个测试 UDP 流，第一个可用 host 即被采纳
-  - 域名优先 / IP 回退 策略
-  - 同一输出文件可被多个分组顺序修改（叠加更新）
-  - 全局去重 host，避免不同分组使用相同 IP
-  - 下载原始文件仅一次，修改在内存中累积后统一写入
-  - 直接生成符合 xteve/udpxy 格式的 M3U/TXT 文件
+IPTV 源自动更新 - HTTP 探测版 (配置驱动, 支持分组叠加修改)
+使用 fofa.icu API 搜索候选 host，仅探测一个测试 UDP 流。
+找到可用 host 后，统一替换对应分组内所有频道的 IP。
+同一输出文件可被多个分组顺序修改，不覆盖其他分组的频道。
+全局 host 去重，避免分组间重复使用同一 IP。
+输出文件列表写入 output_files.txt，供 CI 动态 git add。
 
 环境变量: FOFA_KEY (fofa.icu 的 API Key)
 """
 
-import os
-import re
-import json
-import base64
-import requests
+import os, re, json, base64, requests
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-# ── 配置常量 ──────────────────────────────────────────
-CONFIG_PATH   = os.path.join(os.path.dirname(__file__), "..", "config.json")
-THREADS       = 50          # 并发测试线程数
-HTTP_TIMEOUT  = 3           # 单次 HTTP 探测超时(秒)
-# ──────────────────────────────────────────────────────
+CONFIG_PATH  = os.path.join(os.path.dirname(__file__), "..", "config.json")
+THREADS      = 50
+HTTP_TIMEOUT = 3
 
-USED_HOSTS  = set()        # 全局已用 host
-RAW_CACHE   = {}           # 原始下载文件 {文件名: 内容}
-FILE_CACHE  = {}           # 输出文件当前累积内容 {输出路径: 内容}
+USED_HOSTS  = set()
+RAW_CACHE   = {}        # 原始下载文件  {文件名: 内容}
+FILE_CACHE  = {}        # 输出文件累积内容 {输出路径: 内容}
 
 
-# ══════════════════════════════════════════════════════
-#  基础工具
-# ══════════════════════════════════════════════════════
+# ─────────────── 基础工具 ───────────────
 
 def load_config():
     if not os.path.exists(CONFIG_PATH):
@@ -44,7 +32,7 @@ def load_config():
     with open(CONFIG_PATH, "r", encoding="utf-8") as f:
         raw = f.read().strip()
     if not raw:
-        raise ValueError("config.json 是空的")
+        raise ValueError("config.json 为空")
     config = json.loads(raw)
     for i, g in enumerate(config):
         for field in ("name", "fofa_query", "output_m3u"):
@@ -61,7 +49,6 @@ def get_fofa_key():
 
 
 def search_fofa(key, query):
-    """调用 fofa.icu，返回去重后的 host:port 列表（正确处理端口）"""
     q_b64 = base64.b64encode(query.encode()).decode()
     resp = requests.get(
         "https://fofa.icu/api/v1/search/all",
@@ -77,9 +64,8 @@ def search_fofa(key, query):
     if data.get("error"):
         raise RuntimeError(data.get("errmsg", "FOFA API 错误"))
 
-    results = data.get("results", [])
     hosts = []
-    for r in results:
+    for r in data.get("results", []):
         if not isinstance(r, list):
             continue
         h  = (r[0] or "").strip()
@@ -88,14 +74,14 @@ def search_fofa(key, query):
         base = h if h else ip
         if not base:
             continue
-        # 如果 base 中已含冒号，说明端口已包含，不再重复
+        # 避免重复端口
         if p and ":" not in base:
             hosts.append(f"{base}:{p}")
         else:
             hosts.append(base)
 
-    # 去重保序
-    seen, uniq = set(), []
+    seen = set()
+    uniq = []
     for x in hosts:
         if x not in seen:
             seen.add(x)
@@ -104,7 +90,6 @@ def search_fofa(key, query):
 
 
 def download_raw(repo, filename):
-    """从 GitHub raw 下载文件，失败返回 None"""
     url = f"https://raw.githubusercontent.com/{repo}/main/{filename}"
     try:
         r = requests.get(url, timeout=15)
@@ -114,7 +99,6 @@ def download_raw(repo, filename):
 
 
 def extract_test_stream(text):
-    """从 M3U 文本中提取第一个 /udp/... 流地址，如 '233.50.201.118:5140'"""
     for line in text.splitlines():
         if line.startswith("http") and "/udp/" in line:
             s = line.split("/udp/")[-1].strip()
@@ -124,16 +108,11 @@ def extract_test_stream(text):
 
 
 def test_host_http(host, udp_stream):
-    """
-    快速探测 host 是否可代理 udp 流。
-    成功返回 host，否则返回 None。
-    """
     url = f"http://{host}/udp/{udp_stream}"
     try:
         r = requests.get(url, stream=True, timeout=HTTP_TIMEOUT)
         if r.status_code == 200:
             chunk = r.raw.read(4096)
-            # 排除返回 HTML 错误页的情况
             if chunk and b"<html" not in chunk[:500]:
                 return host
     except Exception:
@@ -141,49 +120,41 @@ def test_host_http(host, udp_stream):
     return None
 
 
-# ══════════════════════════════════════════════════════
-#  主探测逻辑（找到即停）
-# ══════════════════════════════════════════════════════
+# ─────────────── 探测与选择 ───────────────
 
 def find_best_host(candidates, test_udp, require_domain, group_name):
-    """
-    并发测试候选 host，返回第一个可用的。
-    - require_domain: True → 优先域名，失败后回落 IP
-    - 已使用的 host 被排除（全局去重）
-    """
     fresh = [h for h in candidates if h not in USED_HOSTS]
     if not fresh:
-        print(f"[{group_name}] 所有候选 host 均已被占用")
+        print(f"[{group_name}] 所有候选 host 已被占用")
         return None
 
-    def _test_list(hlist, label):
+    def _test_batch(hlist, label):
         if not hlist:
             return None
         print(f"[{group_name}] {label}，共 {len(hlist)} 个")
-        count = 0
-        with ThreadPoolExecutor(max_workers=THREADS) as executor:
-            futures = {executor.submit(test_host_http, h, test_udp): h for h in hlist}
-            for f in as_completed(futures):
-                count += 1
-                if count % 30 == 0 or count == 1:
-                    print(f"  进度: {count}/{len(hlist)}")
+        cnt = 0
+        with ThreadPoolExecutor(max_workers=THREADS) as ex:
+            fut = {ex.submit(test_host_http, h, test_udp): h for h in hlist}
+            for f in as_completed(fut):
+                cnt += 1
+                if cnt % 30 == 0 or cnt == 1:
+                    print(f"  进度: {cnt}/{len(hlist)}")
                 host = f.result()
                 if host:
-                    print(f"  在第 {count} 次测试成功！")
-                    # 立即终止剩余任务
-                    executor.shutdown(wait=False, cancel_futures=True)
+                    print(f"  在第 {cnt} 次测试成功！")
+                    ex.shutdown(wait=False, cancel_futures=True)
                     return host
         return None
 
     if require_domain:
         domains = [h for h in fresh if not re.match(r"\d+\.\d+\.\d+\.\d+", h.split(":")[0])]
         ips     = [h for h in fresh if re.match(r"\d+\.\d+\.\d+\.\d+", h.split(":")[0])]
-        best = _test_list(domains, "优先测试域名")
+        best = _test_batch(domains, "优先测试域名")
         if best is None:
-            print(f"[{group_name}] 域名均不可用，回落到 IP")
-            best = _test_list(ips, "回落测试 IP")
+            print(f"[{group_name}] 域名均不可用，回落测试 IP")
+            best = _test_batch(ips, "回落测试 IP")
     else:
-        best = _test_list(fresh, "测试全部候选")
+        best = _test_batch(fresh, "测试全部候选")
 
     if best:
         USED_HOSTS.add(best)
@@ -193,12 +164,9 @@ def find_best_host(candidates, test_udp, require_domain, group_name):
     return best
 
 
-# ══════════════════════════════════════════════════════
-#  文本替换（叠加修改，不覆盖其他分组）
-# ══════════════════════════════════════════════════════
+# ─────────────── 文本替换 ───────────────
 
 def replace_in_m3u(text, group_name, new_host):
-    """替换 M3U 中 group-title="group_name" 的所有频道的 IP"""
     lines = text.splitlines()
     out, i = [], 0
     while i < len(lines):
@@ -216,7 +184,6 @@ def replace_in_m3u(text, group_name, new_host):
 
 
 def replace_in_txt(text, group_name, new_host):
-    """替换 TXT 中 #genre# 分组内的所有频道的 IP"""
     lines = text.splitlines()
     out, in_group = [], False
     for line in lines:
@@ -240,9 +207,7 @@ def replace_in_txt(text, group_name, new_host):
     return "\n".join(out)
 
 
-# ══════════════════════════════════════════════════════
-#  分组处理
-# ══════════════════════════════════════════════════════
+# ─────────────── 分组处理 ───────────────
 
 def process_group(cfg, fofa_key):
     name           = cfg["name"]
@@ -260,14 +225,14 @@ def process_group(cfg, fofa_key):
     try:
         candidates = search_fofa(fofa_key, cfg["fofa_query"])
         if not candidates:
-            print(f"[{name}] 未搜到任何 host")
+            print(f"[{name}] 未搜到 host")
             return
         print(f"[{name}] 候选 host: {len(candidates)} 个")
     except Exception as e:
         print(f"[{name}] FOFA 搜索失败: {e}")
         return
 
-    # 2. 下载原始文件（同名文件只下载一次）
+    # 2. 下载原始文件（同名文件仅下载一次）
     if m3u_file and m3u_file not in RAW_CACHE:
         print(f"[{name}] 下载 {repo}/{m3u_file}")
         RAW_CACHE[m3u_file] = download_raw(repo, m3u_file) or ""
@@ -282,11 +247,11 @@ def process_group(cfg, fofa_key):
     if not test_udp:
         test_udp = extract_test_stream(m3u_raw)
         if not test_udp:
-            print(f"[{name}] 无法提取测试流，跳过")
+            print(f"[{name}] 无法获取测试流，跳过")
             return
     print(f"[{name}] 测试流: udp/{test_udp}")
 
-    # 4. 探测可用 host
+    # 4. 寻找可用 host
     best = find_best_host(candidates, test_udp, require_domain, name)
     if not best:
         return
@@ -295,7 +260,7 @@ def process_group(cfg, fofa_key):
     ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     if m3u_raw:
-        cur = FILE_CACHE.get(out_m3u, m3u_raw)   # 之前修改过的版本
+        cur = FILE_CACHE.get(out_m3u, m3u_raw)
         updated = replace_in_m3u(cur, name, best)
         updated = re.sub(r"# 更新时间:.*", f"# 更新时间: {ts}", updated)
         FILE_CACHE[out_m3u] = updated
@@ -310,21 +275,17 @@ def process_group(cfg, fofa_key):
 
 
 def write_output():
-    """将内存中的输出文件写入磁盘"""
     for path, content in FILE_CACHE.items():
-        dirname = os.path.dirname(path) or "."
-        os.makedirs(dirname, exist_ok=True)
+        os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
         with open(path, "w", encoding="utf-8") as f:
             f.write(content)
         print(f"  已写入: {path}")
 
 
-# ══════════════════════════════════════════════════════
-#  主入口
-# ══════════════════════════════════════════════════════
+# ─────────────── 入口 ───────────────
 
 def main():
-    print(f"=== IPTV 源更新开始 {datetime.now():%Y-%m-%d %H:%M:%S} ===")
+    print(f"=== IPTV 更新开始 {datetime.now():%Y-%m-%d %H:%M:%S} ===")
     try:
         groups   = load_config()
         fofa_key = get_fofa_key()
@@ -340,6 +301,13 @@ def main():
 
     print("\n写入所有输出文件...")
     write_output()
+
+    # ★ 关键：将输出文件列表写入 output_files.txt，供 CI 动态 git add
+    with open("output_files.txt", "w", encoding="utf-8") as f:
+        for path in FILE_CACHE.keys():
+            f.write(path + "\n")
+    print("输出文件列表已写入 output_files.txt")
+
     print(f"=== 任务结束 {datetime.now():%Y-%m-%d %H:%M:%S} ===")
 
 
