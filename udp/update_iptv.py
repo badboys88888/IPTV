@@ -1,14 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-config.json 驱动的 IPTV 源更新脚本
-读取 ../config.json，使用 foFa.icu API 搜索每组指定主机，
-从目标仓库拉取 M3U/TXT 文件，提取现有 UDP 流地址，
-通过并发测试找到可用 IP，替换并推送回对应仓库。
-
-环境变量：
-  FOFA_KEY      foFa.icu 的 API Key
-  GH_TOKEN      GitHub Personal Access Token (需有目标仓库写入权限)
+config.json 驱动的 IPTV 源更新脚本（本地输出版）
+仅需环境变量: FOFA_KEY (fofa.icu API key)
 """
 
 import os
@@ -17,50 +11,51 @@ import json
 import base64
 import requests
 import cv2
-import time
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-# ── 配置 ──────────────────────────────────────────────
+# ── 配置常量 ─────────────────────────────────────────
 CONFIG_PATH   = os.path.join(os.path.dirname(__file__), "..", "config.json")
-THREADS       = 20          # 并发测试线程数
-TEST_TIMEOUT  = 5           # 流测试超时(秒)
-MIN_CHANNELS  = 0           # 最低频道数过滤，暂不使用
+THREADS       = 50               # 并发测试线程数
+TEST_TIMEOUT  = 3                # 流测试超时(秒)
 # ──────────────────────────────────────────────────────
 
-# 全局去重集合，避免同一 IP 被多个分组重复使用
-USED_HOSTS = set()
+USED_HOSTS = set()               # 全局去重（同一 IP 不会被不同分组重复使用）
+FILE_CACHE = {}                  # 输出文件内容缓存 {filepath: content}
 
-# ────────────────── 工具函数 ──────────────────────────
+
+# ══════════════════ 基础工具 ══════════════════════════
 
 def load_config():
-    """加载 config.json"""
     if not os.path.exists(CONFIG_PATH):
         raise FileNotFoundError(f"配置文件不存在: {CONFIG_PATH}")
     with open(CONFIG_PATH, "r", encoding="utf-8") as f:
-        config = json.load(f)
-    if not isinstance(config, list):
-        raise ValueError("config.json 应为一个数组")
+        raw = f.read().strip()
+        if not raw:
+            raise ValueError("config.json 是空的")
+        config = json.loads(raw)
+    for i, g in enumerate(config):
+        if "name" not in g or "fofa_query" not in g or "output_m3u" not in g:
+            raise ValueError(f"分组 {i} 缺少必填字段: name, fofa_query, output_m3u")
     return config
 
 
-def load_env_token(name):
-    """读取环境变量并检查"""
-    token = os.getenv(name)
-    if not token:
-        raise EnvironmentError(f"缺少环境变量: {name}")
-    return token
+def load_fofa_key():
+    key = os.getenv("FOFA_KEY")
+    if not key:
+        raise EnvironmentError("环境变量 FOFA_KEY 未设置")
+    return key
 
 
 def search_fofa_icu(key, query):
-    """调用 fofa.icu API 搜索主机，返回去重后的 host:port 列表"""
+    """调用 fofa.icu API，返回去重后的 host:port 列表"""
     q_b64 = base64.b64encode(query.encode()).decode()
     params = {
         "key": key,
         "qbase64": q_b64,
         "fields": "host,ip,port",
         "page": 1,
-        "size": 10000,          # 一次性取足够多
+        "size": 10000,
         "full": "false",
     }
     resp = requests.get("https://fofa.icu/api/v1/search/all", params=params, timeout=30)
@@ -90,27 +85,18 @@ def search_fofa_icu(key, query):
     return uniq
 
 
-def extract_udp_streams(m3u_content):
-    """
-    从 M3U 内容中提取所有 /udp/xxx 流地址
-    返回 [(stream, line_index?), ...] 简单起见只返回流列表
-    """
-    streams = set()
-    lines = m3u_content.splitlines()
-    for line in lines:
+def extract_one_udp_stream(m3u_text):
+    """从 M3U 文本中提取第一个 UDP 流地址，返回 'ip:port' 部分"""
+    for line in m3u_text.splitlines():
         if line.startswith("http") and "/udp/" in line:
             stream = line.split("/udp/")[-1].strip()
             if stream and not stream.startswith("#"):
-                streams.add(stream)
-    return list(streams)
+                return stream
+    return None
 
 
 def test_stream(host, stream):
-    """
-    测试单个 host 是否可以播放指定的 UDP 流
-    stream 格式: "233.50.201.118:5140"
-    返回 host 如果成功，否则 None
-    """
+    """测试单个 host 是否可以播放指定的 UDP 流，成功返回 host，否则 None"""
     try:
         url = f"http://{host}/udp/{stream}"
         cap = cv2.VideoCapture(url)
@@ -123,48 +109,102 @@ def test_stream(host, stream):
     return None
 
 
-def find_best_host(candidates, streams, require_domain=False, group_name=""):
-    """
-    从 candidates 中并发测试 streams，找到第一个能用的 host。
-    如果 require_domain 为 True，则仅返回域名类型的 host（非纯 IP）。
-    排除全局已使用的 host。
-    """
+def find_best_host(candidates, test_udp, require_domain, group_name):
+    """从 candidates 中并发测试 test_udp 这一个流，返回第一个可用的 host"""
     global USED_HOSTS
-    # 过滤掉已使用的
     fresh = [h for h in candidates if h not in USED_HOSTS]
     if not fresh:
-        print(f"[{group_name}] 无未使用的候选 host，跳过")
+        print(f"[{group_name}] 无未使用的候选 host")
         return None
 
-    best = None
-    print(f"[{group_name}] 开始测试 {len(fresh)} 个候选 host...")
-
+    print(f"[{group_name}] 测试 {len(fresh)} 个候选 host (流: {test_udp})...")
     with ThreadPoolExecutor(max_workers=THREADS) as executor:
-        futures = {}
-        for host in fresh:
-            for stream in streams:
-                futures[executor.submit(test_stream, host, stream)] = (host, stream)
-
+        futures = {executor.submit(test_stream, h, test_udp): h for h in fresh}
         for future in as_completed(futures):
-            res = future.result()
-            if res:
-                host = res
-                # 检查域名要求
-                if require_domain:
-                    # 简单判断：包含字母且至少有一个点，非纯 IP
-                    if re.match(r'\d+\.\d+\.\d+\.\d+', host.split(":")[0]):
-                        continue   # 是 IP，但要求域名，跳过
-                # 找到可用，记录并返回
+            host = future.result()
+            if host:
+                # 要求域名时跳过纯 IP
+                if require_domain and re.match(r'\d+\.\d+\.\d+\.\d+', host.split(":")[0]):
+                    continue
                 USED_HOSTS.add(host)
                 print(f"[{group_name}] 选定可用 host: {host}")
+                executor.shutdown(wait=False)   # 找到就取消剩余任务
                 return host
     print(f"[{group_name}] 未找到满足要求的 host")
     return None
 
 
-def replace_in_txt(txt_content, group_name, new_host):
-    """在 TXT 格式内容中替换指定分组内的主机地址"""
-    lines = txt_content.splitlines()
+def download_file(repo, filename):
+    """从 GitHub raw 下载文件内容，成功返回文本，失败返回 None"""
+    url = f"https://raw.githubusercontent.com/{repo}/main/{filename}"
+    try:
+        resp = requests.get(url, timeout=15)
+        if resp.status_code == 200:
+            return resp.text
+        else:
+            print(f"  下载失败: {url} (HTTP {resp.status_code})")
+    except Exception as e:
+        print(f"  下载异常: {url} ({e})")
+    return None
+
+
+def load_original_content(repo_filename_pairs):
+    """批量下载原始文件，存入全局 FILE_CACHE（仅当缓存中没有时下载）"""
+    global FILE_CACHE
+    for repo, filename in repo_filename_pairs:
+        if filename not in FILE_CACHE:
+            print(f"  下载原始文件: {repo}/{filename}")
+            content = download_file(repo, filename)
+            if content is not None:
+                FILE_CACHE[filename] = content
+            else:
+                # 如果下载失败，设为空字符串，后续写入时可能覆盖，但最好先警告
+                print(f"  ⚠️  无法获取 {filename}，将创建新文件")
+                FILE_CACHE[filename] = ""
+
+
+def replace_in_m3u_group(m3u_text, group_name, new_host):
+    """
+    在 M3U 文本中，将所有 group-title="group_name" 的频道 URL 的 IP 替换为 new_host。
+    保留 /udp/ 后面的流地址不变。
+    """
+    lines = m3u_text.splitlines()
+    new_lines = []
+    # 标记是否正在处理目标分组 (用于连续频道)
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        # 检查当前行是否为 #EXTINF 且包含目标分组
+        if line.startswith("#EXTINF") and f'group-title="{group_name}"' in line:
+            new_lines.append(line)          # 保留 EXTINF 行
+            # 下一行应该是 URL
+            if i + 1 < len(lines):
+                url_line = lines[i + 1]
+                if url_line.startswith("http") and "/udp/" in url_line:
+                    stream = url_line.split("/udp/")[-1].strip()
+                    new_url = f"http://{new_host}/udp/{stream}"
+                    new_lines.append(new_url)
+                    i += 2
+                    continue
+                else:
+                    new_lines.append(url_line)
+                    i += 2
+                    continue
+        else:
+            new_lines.append(line)
+            i += 1
+    return "\n".join(new_lines)
+
+
+def replace_in_txt_genre(txt_text, group_name, new_host):
+    """
+    在 TXT 文本中，找到 #genre# 分隔的 group_name 分组，替换该分组下所有频道的 IP。
+    TXT 格式示例：
+        浙江电信[A] #genre#
+        频道1,http://old_ip/udp/stream
+        频道2,http://old_ip/udp/stream
+    """
+    lines = txt_text.splitlines()
     new_lines = []
     in_group = False
     for line in lines:
@@ -172,168 +212,135 @@ def replace_in_txt(txt_content, group_name, new_host):
             in_group = True
             new_lines.append(line)
             continue
-        if in_group and "#genre#" in line:
+        if in_group and "#genre#" in line:   # 遇到下一个 genre 则退出
             in_group = False
-
-        if in_group and "," in line:
-            name, old_url = line.split(",", 1)
-            stream = old_url.split("/udp/")[-1].strip()
-            new_lines.append(f"{name},http://{new_host}/udp/{stream}")
-        else:
-            new_lines.append(line)
-    return "\n".join(new_lines)
-
-
-def replace_in_m3u(m3u_content, group_name, new_host):
-    """在 M3U 格式内容中替换指定分组内的主机地址"""
-    lines = m3u_content.splitlines()
-    new_lines = []
-    in_group = False
-    for line in lines:
-        if "#EXTINF" in line and group_name in line:
-            in_group = True
             new_lines.append(line)
             continue
-        if in_group and line.startswith("http"):
-            stream = line.split("/udp/")[-1].strip()
-            new_lines.append(f"http://{new_host}/udp/{stream}")
-            in_group = False
+        if in_group and "," in line:
+            # 频道名,URL 格式
+            parts = line.split(",", 1)
+            name = parts[0]
+            old_url = parts[1]
+            if "/udp/" in old_url:
+                stream = old_url.split("/udp/")[-1].strip()
+                new_lines.append(f"{name},http://{new_host}/udp/{stream}")
+            else:
+                new_lines.append(line)
         else:
             new_lines.append(line)
     return "\n".join(new_lines)
 
 
-def push_to_github(repo, file_name, content, token):
-    """通过 GitHub API 更新文件内容"""
-    url = f"https://api.github.com/repos/{repo}/contents/{file_name}"
-    headers = {
-        "Authorization": f"token {token}",
-        "Accept": "application/vnd.github.v3+json",
-        "User-Agent": "iptv-updater"
-    }
-    # 获取当前文件的 sha
-    resp = requests.get(url, headers=headers, timeout=15)
-    if resp.status_code != 200:
-        print(f"  ⚠️  获取 {repo}/{file_name} 失败: {resp.status_code} {resp.text[:200]}")
-        return False
-    sha = resp.json().get("sha")
-    if not sha:
-        print(f"  ⚠️  未找到 sha，可能文件不存在")
-        return False
-
-    # 提交更新
-    data = {
-        "message": f"Update {file_name} ({datetime.now().strftime('%Y-%m-%d %H:%M')})",
-        "content": base64.b64encode(content.encode("utf-8")).decode("utf-8"),
-        "sha": sha,
-    }
-    put_resp = requests.put(url, headers=headers, json=data, timeout=15)
-    if put_resp.status_code in [200, 201]:
-        print(f"  ✅ 推送成功: {repo}/{file_name}")
-        return True
-    else:
-        print(f"  ❌ 推送失败: {put_resp.status_code} {put_resp.text[:200]}")
-        return False
+def update_global_file(filename, new_content):
+    """将修改后的内容写回全局缓存（覆盖）"""
+    FILE_CACHE[filename] = new_content
 
 
-def process_group(group, fofa_key, gh_token):
-    """处理单个分组：搜索、测试、替换、推送"""
+def write_all_output():
+    """将所有缓存的输出文件写入磁盘"""
+    for filepath, content in FILE_CACHE.items():
+        os.makedirs(os.path.dirname(filepath), exist_ok=True)
+        with open(filepath, "w", encoding="utf-8") as f:
+            f.write(content)
+        print(f"  写入文件: {filepath}")
+
+
+# ══════════════════ 分组处理 ══════════════════════════
+
+def process_group(group, fofa_key):
     name = group["name"]
-    repo = group["target_repo"]
-    txt_file = group.get("target_txt")
-    m3u_file = group.get("target_m3u")
     require_domain = group.get("require_domain", False)
-    query = group["fofa_query"]
-
-    if not txt_file or not m3u_file:
-        print(f"[{name}] 未指定目标文件，跳过")
-        return
+    test_udp = group.get("test_udp")          # 如果配置了就直接用
+    target_repo = group.get("target_repo")
+    target_m3u = group.get("target_m3u")      # 源 M3U 文件名（从仓库下载）
+    target_txt = group.get("target_txt")      # 源 TXT 文件名（可选）
+    output_m3u = group["output_m3u"]          # 输出 M3U 路径（本地）
+    output_txt = group.get("output_txt")      # 输出 TXT 路径（可选）
 
     print(f"\n{'='*60}\n处理分组: {name}\n{'='*60}")
 
     # 1. FOFA 搜索
     try:
-        print(f"[{name}] 搜索 FOFA: {query[:60]}...")
-        candidates = search_fofa_icu(fofa_key, query)
+        print("搜索 FOFA ...")
+        candidates = search_fofa_icu(fofa_key, group["fofa_query"])
         if not candidates:
-            print(f"[{name}] 未搜到任何 host")
+            print("未搜到任何 host")
             return
-        print(f"[{name}] 获得 {len(candidates)} 个候选 host")
+        print(f"获得 {len(candidates)} 个候选 host")
     except Exception as e:
-        print(f"[{name}] FOFA 搜索失败: {e}")
+        print(f"FOFA 搜索失败: {e}")
         return
 
-    # 2. 获取目标文件的原始内容
-    base_url = f"https://raw.githubusercontent.com/{repo}/main"
-    try:
-        print(f"[{name}] 下载目标文件...")
-        m3u_resp = requests.get(f"{base_url}/{m3u_file}", timeout=15)
-        if m3u_resp.status_code != 200:
-            print(f"[{name}] 无法下载 {m3u_file}: HTTP {m3u_resp.status_code}")
+    # 2. 确保原始文件已下载到缓存
+    #    需要下载的文件：target_m3u 和 target_txt（如果存在）
+    dl_list = []
+    if target_repo and target_m3u:
+        dl_list.append((target_repo, target_m3u))
+    if target_repo and target_txt:
+        dl_list.append((target_repo, target_txt))
+    if dl_list:
+        load_original_content(dl_list)
+
+    # 获取缓存中的原始内容
+    m3u_content = FILE_CACHE.get(target_m3u, "") if target_m3u else ""
+    txt_content = FILE_CACHE.get(target_txt, "") if target_txt else ""
+
+    # 3. 确定测试 UDP 流
+    if not test_udp:
+        # 从 M3U 中提取第一个流
+        test_udp = extract_one_udp_stream(m3u_content)
+        if not test_udp:
+            print("未配置 test_udp 且无法从 M3U 提取，跳过")
             return
-        m3u_content = m3u_resp.text
-
-        txt_content = ""
-        if txt_file:
-            txt_resp = requests.get(f"{base_url}/{txt_file}", timeout=15)
-            if txt_resp.status_code == 200:
-                txt_content = txt_resp.text
-            else:
-                print(f"[{name}] 无法下载 {txt_file}，将跳过 TXT 更新")
-    except Exception as e:
-        print(f"[{name}] 下载失败: {e}")
-        return
-
-    # 3. 提取需要测试的 UDP 流
-    streams = extract_udp_streams(m3u_content)
-    if not streams:
-        print(f"[{name}] 目标 M3U 中没有找到 UDP 流，跳过")
-        return
-    print(f"[{name}] 待测试 UDP 流: {len(streams)} 个")
+    print(f"测试 UDP 流: {test_udp}")
 
     # 4. 寻找最佳 host
-    best_host = find_best_host(candidates, streams, require_domain, group_name=name)
+    best_host = find_best_host(candidates, test_udp, require_domain, name)
     if not best_host:
         return
 
-    # 5. 替换内容
-    print(f"[{name}] 更新文件内容...")
-    m3u_new = replace_in_m3u(m3u_content, name, best_host)
+    # 5. 替换并更新全局缓存
     update_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    m3u_new = re.sub(r"# 更新时间:.*", f"# 更新时间: {update_time}", m3u_new)
 
-    txt_new = None
-    if txt_content:
-        txt_new = replace_in_txt(txt_content, name, best_host)
-        txt_new = re.sub(r"# 更新时间:.*", f"# 更新时间: {update_time}", txt_new)
+    # 更新 M3U
+    if m3u_content:
+        new_m3u = replace_in_m3u_group(m3u_content, name, best_host)
+        new_m3u = re.sub(r"# 更新时间:.*", f"# 更新时间: {update_time}", new_m3u)
+        update_global_file(output_m3u, new_m3u)
+        print(f"已更新 M3U 缓存 → {output_m3u}")
+    else:
+        print(f"⚠️  未获取到 M3U 原始内容，无法更新")
 
-    # 6. 推送更新
-    print(f"[{name}] 推送更新到 {repo}...")
-    push_to_github(repo, m3u_file, m3u_new, gh_token)
-    if txt_new:
-        push_to_github(repo, txt_file, txt_new, gh_token)
+    # 更新 TXT
+    if txt_content and output_txt:
+        new_txt = replace_in_txt_genre(txt_content, name, best_host)
+        new_txt = re.sub(r"# 更新时间:.*", f"# 更新时间: {update_time}", new_txt)
+        update_global_file(output_txt, new_txt)
+        print(f"已更新 TXT 缓存 → {output_txt}")
 
-    print(f"[{name}] 分组处理完成。\n")
 
+# ══════════════════ 主流程 ══════════════════════════
 
 def main():
-    print(f"=== IPTV 源更新任务开始: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ===")
+    print(f"=== IPTV 源更新开始: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ===")
 
-    # 加载配置和环境变量
     try:
         groups = load_config()
-        fofa_key = load_env_token("FOFA_KEY")
-        gh_token = load_env_token("GH_TOKEN")
+        fofa_key = load_fofa_key()
     except Exception as e:
         print(f"初始化失败: {e}")
         return
 
-    # 依次处理每个分组
+    # 按顺序处理每个分组（后续分组可以复用已下载的原始文件）
     for group in groups:
         try:
-            process_group(group, fofa_key, gh_token)
+            process_group(group, fofa_key)
         except Exception as e:
-            print(f"分组 [{group.get('name', 'unknown')}] 发生未捕获异常: {e}")
+            print(f"分组 [{group.get('name', 'unknown')}] 异常: {e}")
+
+    # 一次性写入所有输出文件
+    print("\n写入所有输出文件...")
+    write_all_output()
 
     print(f"\n=== 任务结束: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ===")
 
