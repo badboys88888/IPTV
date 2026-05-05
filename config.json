@@ -74,7 +74,7 @@
         "output_txt": "gxiptv.txt",
         "output_m3u": "gxiptv.m3u",
         "require_domain": true,
-        "test_udp": "239.81.0.248:4056"
+        "test_udp": "239.81.0.107:4056"
     },
     {
         "name": "广西电信[B]",
@@ -85,7 +85,7 @@
         "output_txt": "gxiptv.txt",
         "output_m3u": "gxiptv.m3u",
         "require_domain": false,
-        "test_udp": "239.81.0.248:4056"
+        "test_udp": "239.81.0.107:4056"
     },
         {
         "name": "广西电信[C]",
@@ -96,7 +96,7 @@
         "output_txt": "gxiptv.txt",
         "output_m3u": "gxiptv.m3u",
         "require_domain": true,
-        "test_udp": "239.81.0.248:4056"
+        "test_udp": "239.81.0.107:4056"
     },
     {
         "name": "广西电信[D]",
@@ -107,7 +107,7 @@
         "output_txt": "gxiptv.txt",
         "output_m3u": "gxiptv.m3u",
         "require_domain": false,
-        "test_udp": "239.81.0.248:4056"
+        "test_udp": "239.81.0.107:4056"
     },
         {
         "name": "安徽电信[A]",
