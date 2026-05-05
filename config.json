@@ -1,4 +1,48 @@
 [
+        {
+        "name": "四川电信[A]",
+        "fofa_query": "server=\"udpxy\" && region=\"Sichuan\" && is_domain=true",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "sciptv.txt",
+        "target_m3u": "sciptv.m3u",
+        "output_txt": "sciptv.txt",
+        "output_m3u": "sciptv.m3u",
+        "require_domain": true,
+        "test_udp": "239.94.0.31:5140"
+    },
+    {
+        "name": "四川电信[B]",
+        "fofa_query": "server=\"udpxy\" && region=\"Sichuan\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "sciptv.txt",
+        "target_m3u": "sciptv.m3u",
+        "output_txt": "sciptv.txt",
+        "output_m3u": "sciptv.m3u",
+        "require_domain": false,
+        "test_udp": "239.94.0.31:5140"
+    },
+        {
+        "name": "四川电信[C]",
+        "fofa_query": "server=\"udpxy\" && region=\"Sichuan\" && is_domain=true",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "sciptv.txt",
+        "target_m3u": "sciptv.m3u",
+        "output_txt": "sciptv.txt",
+        "output_m3u": "sciptv.m3u",
+        "require_domain": true,
+        "test_udp": "239.94.0.31:5140"
+    },
+    {
+        "name": "四川电信[D]",
+        "fofa_query": "server=\"udpxy\" && region=\"Sichuan\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "sciptv.txt",
+        "target_m3u": "sciptv.m3u",
+        "output_txt": "sciptv.txt",
+        "output_m3u": "sciptv.m3u",
+        "require_domain": false,
+        "test_udp": "239.94.0.31:5140"
+    },
     {
         "name": "浙江电信[A]",
         "fofa_query": "server=\"udpxy\" && region=\"Zhejiang\" && is_domain=true",
@@ -126,5 +170,27 @@
         "output_m3u": "anhui.m3u",
         "require_domain": false,
         "test_udp": "238.1.78.240:7792"
+    },
+            {
+        "name": "湖北电信[A]",
+        "fofa_query": "server=\"udpxy\" && region=\"Hubei\" && is_domain=true",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "hbiptv.txt",
+        "target_m3u": "hbiptv.m3u",
+        "output_txt": "hbiptv.txt",
+        "output_m3u": "hbiptv.m3u",
+        "require_domain": true,
+        "test_udp": "239.69.1.102:10250"
+    },
+    {
+        "name": "湖北电信[B]",
+        "fofa_query": "server=\"udpxy\" && region=\"Hubei\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_m3u": "hbiptv.m3u",
+        "target_m3u": "hbiptv.m3u",
+        "output_txt": "hbiptv.txt",
+        "output_m3u": "hbiptv.m3u",
+        "require_domain": false,
+        "test_udp": "239.69.1.102:10250"
     }
 ]
