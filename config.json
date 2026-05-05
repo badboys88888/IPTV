@@ -64,5 +64,49 @@
         "output_m3u": "gdiptv.m3u",
         "require_domain": false,
         "test_udp": "239.77.0.1:5146"
+    },
+        {
+        "name": "广西电信[A]",
+        "fofa_query": "server=\"udpxy\" && region=\"Zhejiang\" && is_domain=true",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "gxiptv.txt",
+        "target_m3u": "gxiptv.m3u",
+        "output_txt": "gxiptv.txt",
+        "output_m3u": "gxiptv.m3u",
+        "require_domain": true,
+        "test_udp": "239.81.0.248:4056"
+    },
+    {
+        "name": "广西电信[B]",
+        "fofa_query": "server=\"udpxy\" && region=\"Zhejiang\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "gxiptv.txt",
+        "target_m3u": "gxiptv.m3u",
+        "output_txt": "gxiptv.txt",
+        "output_m3u": "gxiptv.m3u",
+        "require_domain": false,
+        "test_udp": "239.81.0.248:4056"
+    },
+        {
+        "name": "广西电信[C]",
+        "fofa_query": "server=\"udpxy\" && region=\"Zhejiang\" && is_domain=true",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "gxiptv.txt",
+        "target_m3u": "gxiptv.m3u",
+        "output_txt": "gxiptv.txt",
+        "output_m3u": "gxiptv.m3u",
+        "require_domain": true,
+        "test_udp": "239.81.0.248:4056"
+    },
+    {
+        "name": "广西电信[D]",
+        "fofa_query": "server=\"udpxy\" && region=\"Zhejiang\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "gxiptv.txt",
+        "target_m3u": "gxiptv.m3u",
+        "output_txt": "gxiptv.txt",
+        "output_m3u": "gxiptv.m3u",
+        "require_domain": false,
+        "test_udp": "239.81.0.248:4056"
     }
 ]
