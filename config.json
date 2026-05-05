@@ -5,8 +5,8 @@
         "target_repo": "badboys88888/IPTV",
         "target_txt": "zjiptv.txt",
         "target_m3u": "zjiptv.m3u",
-        "output_txt": "output/zjiptv.txt",
-        "output_m3u": "output/zjiptv.m3u",
+        "output_txt": "zjiptv.txt",
+        "output_m3u": "zjiptv.m3u",
         "require_domain": true,
         "test_udp": "233.50.201.118:5140"
     },
@@ -16,8 +16,8 @@
         "target_repo": "badboys88888/IPTV",
         "target_txt": "zjiptv.txt",
         "target_m3u": "zjiptv.m3u",
-        "output_txt": "output/zjiptv.txt",
-        "output_m3u": "output/zjiptv.m3u",
+        "output_txt": "zjiptv.txt",
+        "output_m3u": "zjiptv.m3u",
         "require_domain": false,
         "test_udp": "233.50.201.118:5140"
     },
@@ -27,8 +27,8 @@
         "target_repo": "badboys88888/IPTV",
         "target_txt": "gdiptv.txt",
         "target_m3u": "gdiptv.m3u",
-        "output_txt": "output/gdiptv.txt",
-        "output_m3u": "output/gdiptv.m3u",
+        "output_txt": "gdiptv.txt",
+        "output_m3u": "gdiptv.m3u",
         "require_domain": true,
         "test_udp": "239.77.0.1:5146"
     },
@@ -38,8 +38,8 @@
         "target_repo": "badboys88888/IPTV",
         "target_txt": "gdiptv.txt",
         "target_m3u": "gdiptv.m3u",
-        "output_txt": "output/gdiptv.txt",
-        "output_m3u": "output/gdiptv.m3u",
+        "output_txt": "gdiptv.txt",
+        "output_m3u": "gdiptv.m3u",
         "require_domain": false,
         "test_udp": "239.77.0.1:5146"
     },
@@ -49,8 +49,8 @@
         "target_repo": "badboys88888/IPTV",
         "target_txt": "gdiptv.txt",
         "target_m3u": "gdiptv.m3u",
-        "output_txt": "output/gdiptv.txt",
-        "output_m3u": "output/gdiptv.m3u",
+        "output_txt": "gdiptv.txt",
+        "output_m3u": "gdiptv.m3u",
         "require_domain": true,
         "test_udp": "239.77.0.1:5146"
     },
@@ -60,8 +60,8 @@
         "target_repo": "badboys88888/IPTV",
         "target_txt": "gdiptv.txt",
         "target_m3u": "gdiptv.m3u",
-        "output_txt": "output/gdiptv.txt",
-        "output_m3u": "output/gdiptv.m3u",
+        "output_txt": "gdiptv.txt",
+        "output_m3u": "gdiptv.m3u",
         "require_domain": false,
         "test_udp": "239.77.0.1:5146"
     }
