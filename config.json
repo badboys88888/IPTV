@@ -22,7 +22,7 @@
         "test_udp": "233.50.201.118:5140"
     },
     {
-        "name": "广东电信[A]",
+        "name": "广东频道[A]",
         "fofa_query": "server=\"udpxy\" && region=\"Guangdong\" && is_domain=true",
         "target_repo": "badboys88888/IPTV",
         "target_txt": "gdiptv.txt",
@@ -33,7 +33,7 @@
         "test_udp": "239.77.0.1:5146"
     },
     {
-        "name": "广东电信[B]",
+        "name": "广东频道[B]",
         "fofa_query": "server=\"udpxy\" && region=\"Guangdong\"",
         "target_repo": "badboys88888/IPTV",
         "target_txt": "gdiptv.txt",
@@ -44,7 +44,7 @@
         "test_udp": "239.77.0.1:5146"
     },
     {
-        "name": "广东电信[C]",
+        "name": "广东频道[C]",
         "fofa_query": "server=\"udpxy\" && region=\"Guangdong\" && is_domain=true",
         "target_repo": "badboys88888/IPTV",
         "target_txt": "gdiptv.txt",
@@ -55,7 +55,7 @@
         "test_udp": "239.77.0.1:5146"
     },
     {
-        "name": "广东电信[D]",
+        "name": "广东频道[D]",
         "fofa_query": "server=\"udpxy\" && region=\"Guangdong\"",
         "target_repo": "badboys88888/IPTV",
         "target_txt": "gdiptv.txt",
