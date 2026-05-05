@@ -108,5 +108,23 @@
         "output_m3u": "gxiptv.m3u",
         "require_domain": false,
         "test_udp": "239.81.0.248:4056"
+    },
+        {
+        "name": "安徽电信[A]",
+        "fofa_query": "server=\"udpxy\" && region=\"Anhui\" && is_domain=true",
+        "target_repo": "badboys88888/IPTV",
+        "target_m3u": "anhui.m3u",
+        "output_m3u": "anhui.m3u",
+        "require_domain": true,
+        "test_udp": "238.1.78.240:7792"
+    },
+    {
+        "name": "安徽电信[A]",
+        "fofa_query": "server=\"udpxy\" && region=\"Anhui\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_m3u": "anhui.m3u",
+        "output_m3u": "anhui.m3u",
+        "require_domain": false,
+        "test_udp": "238.1.78.240:7792"
     }
 ]
