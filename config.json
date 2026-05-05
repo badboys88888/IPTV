@@ -269,6 +269,17 @@
         "output_m3u": "bjiptv.m3u",
         "require_domain": false,
         "test_udp": "239.3.1.129:8008"
-    }
+    },
+     {
+        "name": "重庆电信",
+        "fofa_query": "server=\"udpxy\" && region=\"Chongqing\" && is_domain=true",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "cqiptv.txt",
+        "target_m3u": "cqiptv.m3u",
+        "output_txt": "cqiptv.txt",
+        "output_m3u": "cqiptv.m3u",
+        "require_domain": true,
+        "test_udp": "235.254.197.199:7980"
+    },
 
 ]
