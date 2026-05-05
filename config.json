@@ -67,7 +67,7 @@
     },
         {
         "name": "广西电信[A]",
-        "fofa_query": "server=\"udpxy\" && region=\"Zhejiang\" && is_domain=true",
+        "fofa_query": "server=\"udpxy\" && region=\"Guangxi Zhuangzu\" && is_domain=true",
         "target_repo": "badboys88888/IPTV",
         "target_txt": "gxiptv.txt",
         "target_m3u": "gxiptv.m3u",
@@ -78,7 +78,7 @@
     },
     {
         "name": "广西电信[B]",
-        "fofa_query": "server=\"udpxy\" && region=\"Zhejiang\"",
+        "fofa_query": "server=\"udpxy\" && region=\"Guangxi Zhuangzu\"",
         "target_repo": "badboys88888/IPTV",
         "target_txt": "gxiptv.txt",
         "target_m3u": "gxiptv.m3u",
@@ -89,7 +89,7 @@
     },
         {
         "name": "广西电信[C]",
-        "fofa_query": "server=\"udpxy\" && region=\"Zhejiang\" && is_domain=true",
+        "fofa_query": "server=\"udpxy\" && region=\"Guangxi Zhuangzu\" && is_domain=true",
         "target_repo": "badboys88888/IPTV",
         "target_txt": "gxiptv.txt",
         "target_m3u": "gxiptv.m3u",
@@ -100,7 +100,7 @@
     },
     {
         "name": "广西电信[D]",
-        "fofa_query": "server=\"udpxy\" && region=\"Zhejiang\"",
+        "fofa_query": "server=\"udpxy\" && region=\"Guangxi Zhuangzu\"",
         "target_repo": "badboys88888/IPTV",
         "target_txt": "gxiptv.txt",
         "target_m3u": "gxiptv.m3u",
