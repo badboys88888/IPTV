@@ -1,5 +1,5 @@
 [
-        {
+    {
         "name": "四川电信[A]",
         "fofa_query": "server=\"udpxy\" && region=\"Sichuan\" && is_domain=true",
         "target_repo": "badboys88888/IPTV",
@@ -192,5 +192,39 @@
         "output_m3u": "hbiptv.m3u",
         "require_domain": false,
         "test_udp": "239.69.1.102:10250"
+    },
+   {
+        "name": "江苏电信组播[A]",
+        "fofa_query": "server=\"udpxy\" && region=\"Jiangsu\" && is_domain=true",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "jsiptv.txt",
+        "target_m3u": "jsiptv.m3u",
+        "output_txt": "jsiptv.txt",
+        "output_m3u": "jsiptv.m3u",
+        "require_domain": true,
+        "test_udp": "239.49.8.16:9602"
+    },
+    {
+        "name": "江苏电信组播[B]",
+        "fofa_query": "server=\"udpxy\" && region=\"Jiangsu\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "jsiptv.txt",
+        "target_m3u": "jsiptv.m3u",
+        "output_txt": "jsiptv.txt",
+        "output_m3u": "jsiptv.m3u",
+        "require_domain": false,
+        "test_udp": "239.49.8.16:9602"
+    },
+        {
+        "name": "江苏电信组播[C]",
+        "fofa_query": "server=\"udpxy\" && region=\"Jiangsu\" && is_domain=true",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "jsiptv.txt",
+        "target_m3u": "jsiptv.m3u",
+        "output_txt": "jsiptv.txt",
+        "output_m3u": "jsiptv.m3u",
+        "require_domain": true,
+        "test_udp": "239.49.8.16:9602"
     }
+
 ]
