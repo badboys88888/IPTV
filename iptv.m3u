@@ -569,6 +569,8 @@ http://221.143.128.159:4022/udp/239.192.81.39:49220
 http://221.143.128.159:4022/udp/239.192.81.34:49220
 #EXTINF:-1 tvg-id="1" tvg-logo="http://gaekona.com/tv/btv.jpg" tvh-chnum="1" tvh-tags="Btv" group-title="韩国SK Telecom组播",Btv
 http://221.143.128.159:4022/udp/239.192.67.34:49220
+#EXTINF:-1 tvg-id="93" tvg-logo="http://i.imgur.com/81Fshnn.png" tvh-chnum="127" tvh-tags=" group-title="韩国SK Telecom组播",SPOTV+",SPOTV+
+http://221.143.128.159:4022/udp/239.192.67.163:49220
 #EXTINF:-1 tvg-id="1" tvg-logo="http://gaekona.com/tv/btv.jpg" tvh-chnum="1" tvh-tags="Btv" group-title="韩国SK Telecom组播",Btv
 http://221.143.128.159:4022/udp/239.192.67.35:49220
 #EXTINF:-1 tvg-id="2" tvg-logo="http://i.imgur.com/asfyrTm.png" tvh-chnum="2" tvh-tags="SBS Plus" group-title="韩国SK Telecom组播",SBS 플러스
@@ -757,8 +759,6 @@ http://221.143.128.159:4022/udp/239.192.48.7:49220
 http://221.143.128.159:4022/udp/239.192.67.162:49220
 #EXTINF:-1 tvg-id="92" tvg-logo="http://i.imgur.com/KvGwEc1.png" tvh-chnum="126" tvh-tags="" group-title="韩国SK Telecom组播",JTBC3 FOXSPORTS
 http://221.143.128.159:4022/udp/239.192.69.7:49220
-#EXTINF:-1 tvg-id="93" tvg-logo="http://i.imgur.com/81Fshnn.png" tvh-chnum="127" tvh-tags=" group-title="韩国SK Telecom组播",SPOTV+",SPOTV+
-http://221.143.128.159:4022/udp/239.192.67.163:49220
 #EXTINF:-1 tvg-id="94" tvg-logo="http://i.imgur.com/GNicmGY.png" tvh-chnum="128" tvh-tags="" group-title="韩国SK Telecom组播",SPOTV2
 http://221.143.128.159:4022/udp/239.192.69.42:49220
 #EXTINF:-1 tvg-id="95" tvg-logo="http://i.imgur.com/wOOQEC1.png" tvh-chnum="129" tvh-tags="IB SPORTS" group-title="韩国SK Telecom组播",IB Sports
