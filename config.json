@@ -8,7 +8,8 @@
         "output_txt": "sciptv.txt",
         "output_m3u": "sciptv.m3u",
         "require_domain": true,
-        "test_udp": "239.94.0.31:5140"
+        "test_udp": "239.94.0.31:5140",
+        "prefer_region": "四川"
     },
     {
         "name": "四川电信[B]",
@@ -19,7 +20,8 @@
         "output_txt": "sciptv.txt",
         "output_m3u": "sciptv.m3u",
         "require_domain": false,
-        "test_udp": "239.94.0.31:5140"
+        "test_udp": "239.94.0.31:5140",
+        "prefer_region": "四川"
     },
         {
         "name": "四川电信[C]",
@@ -30,7 +32,8 @@
         "output_txt": "sciptv.txt",
         "output_m3u": "sciptv.m3u",
         "require_domain": true,
-        "test_udp": "239.94.0.31:5140"
+        "test_udp": "239.94.0.31:5140",
+        "prefer_region": "四川"
     },
     {
         "name": "四川电信[D]",
@@ -41,7 +44,8 @@
         "output_txt": "sciptv.txt",
         "output_m3u": "sciptv.m3u",
         "require_domain": false,
-        "test_udp": "239.94.0.31:5140"
+        "test_udp": "239.94.0.31:5140",
+        "prefer_region": "四川"
     },
     {
         "name": "浙江电信[A]",
@@ -52,7 +56,8 @@
         "output_txt": "zjiptv.txt",
         "output_m3u": "zjiptv.m3u",
         "require_domain": true,
-        "test_udp": "233.50.201.118:5140"
+        "test_udp": "233.50.201.118:5140",
+        "prefer_region": "浙江"
     },
     {
         "name": "浙江电信[B]",
@@ -63,7 +68,8 @@
         "output_txt": "zjiptv.txt",
         "output_m3u": "zjiptv.m3u",
         "require_domain": false,
-        "test_udp": "233.50.201.118:5140"
+        "test_udp": "233.50.201.118:5140",
+        "prefer_region": "浙江"
     },
      {
         "name": "广东移动组播",
@@ -72,7 +78,8 @@
         "target_m3u": "iptv.m3u",
         "output_m3u": "iptv.m3u",
         "require_domain": true,
-        "test_udp": "239.10.0.45:1025"
+        "test_udp": "239.10.0.45:1025",
+        "prefer_region": "广东"
     },
 
     {
@@ -84,7 +91,8 @@
         "output_txt": "gdiptv.txt",
         "output_m3u": "gdiptv.m3u",
         "require_domain": true,
-        "test_udp": "239.77.0.1:5146"
+        "test_udp": "239.77.0.1:5146",
+        "prefer_region": "广东"
     },
     {
         "name": "广东频道[B]",
@@ -95,7 +103,8 @@
         "output_txt": "gdiptv.txt",
         "output_m3u": "gdiptv.m3u",
         "require_domain": false,
-        "test_udp": "239.77.0.1:5146"
+        "test_udp": "239.77.0.1:5146",
+        "prefer_region": "广东"
     },
     {
         "name": "广东频道[C]",
@@ -106,7 +115,8 @@
         "output_txt": "gdiptv.txt",
         "output_m3u": "gdiptv.m3u",
         "require_domain": true,
-        "test_udp": "239.77.0.1:5146"
+        "test_udp": "239.77.0.1:5146"，
+        "prefer_region": "广东"
     },
     {
         "name": "广东频道[D]",
@@ -117,7 +127,8 @@
         "output_txt": "gdiptv.txt",
         "output_m3u": "gdiptv.m3u",
         "require_domain": false,
-        "test_udp": "239.77.0.1:5146"
+        "test_udp": "239.77.0.1:5146",
+        "prefer_region": "广东"
     },
         {
         "name": "广西电信[A]",
@@ -129,6 +140,7 @@
         "output_m3u": "gxiptv.m3u",
         "require_domain": true,
         "test_udp": "239.81.0.107:4056"
+        "prefer_region": "广西壮族自治区"
     },
     {
         "name": "广西电信[B]",
@@ -139,9 +151,10 @@
         "output_txt": "gxiptv.txt",
         "output_m3u": "gxiptv.m3u",
         "require_domain": false,
-        "test_udp": "239.81.0.107:4056"
+        "test_udp": "239.81.0.107:4056",
+        "prefer_region": "广西壮族自治区"
     },
-        {
+    {
         "name": "广西电信[C]",
         "fofa_query": "server=\"udpxy\" && region=\"Guangxi Zhuangzu\"",
         "target_repo": "badboys88888/IPTV",
@@ -150,7 +163,8 @@
         "output_txt": "gxiptv.txt",
         "output_m3u": "gxiptv.m3u",
         "require_domain": false,
-        "test_udp": "239.81.0.107:4056"
+        "test_udp": "239.81.0.107:4056",
+        "prefer_region": "广西壮族自治区"
     },
     {
         "name": "广西电信[D]",
@@ -161,7 +175,8 @@
         "output_txt": "gxiptv.txt",
         "output_m3u": "gxiptv.m3u",
         "require_domain": false,
-        "test_udp": "239.81.0.107:4056"
+        "test_udp": "239.81.0.107:4056",
+        "prefer_region": "广西壮族自治区"
     },
         {
         "name": "安徽电信[A]",
@@ -170,7 +185,8 @@
         "target_m3u": "anhui.m3u",
         "output_m3u": "anhui.m3u",
         "require_domain": true,
-        "test_udp": "238.1.78.240:7792"
+        "test_udp": "238.1.78.240:7792",
+        "prefer_region": "安徽"
     },
     {
         "name": "安徽电信[A]",
@@ -179,7 +195,8 @@
         "target_m3u": "anhui.m3u",
         "output_m3u": "anhui.m3u",
         "require_domain": false,
-        "test_udp": "238.1.78.240:7792"
+        "test_udp": "238.1.78.240:7792",
+        "prefer_region": "安徽"
     },
             {
         "name": "湖北电信[A]",
@@ -190,7 +207,8 @@
         "output_txt": "hbiptv.txt",
         "output_m3u": "hbiptv.m3u",
         "require_domain": true,
-        "test_udp": "239.69.1.102:10250"
+        "test_udp": "239.69.1.102:10250",
+        "prefer_region": "湖北"
     },
     {
         "name": "湖北电信[B]",
@@ -201,7 +219,8 @@
         "output_txt": "hbiptv.txt",
         "output_m3u": "hbiptv.m3u",
         "require_domain": false,
-        "test_udp": "239.69.1.102:10250"
+        "test_udp": "239.69.1.102:10250",
+        "prefer_region": "湖北"
     },
     {
         "name": "江苏电信组播[A]",
@@ -212,7 +231,8 @@
         "output_txt": "jsiptv.txt",
         "output_m3u": "jsiptv.m3u",
         "require_domain": true,
-        "test_udp": "239.49.8.16:9602"
+        "test_udp": "239.49.8.16:9602",
+        "prefer_region": "江苏"
     },
     {
         "name": "江苏电信组播[B]",
@@ -223,7 +243,8 @@
         "output_txt": "jsiptv.txt",
         "output_m3u": "jsiptv.m3u",
         "require_domain": false,
-        "test_udp": "239.49.8.16:9602"
+        "test_udp": "239.49.8.16:9602",
+        "prefer_region": "江苏"
     },
     {
         "name": "江苏电信组播[C]",
@@ -234,7 +255,8 @@
         "output_txt": "jsiptv.txt",
         "output_m3u": "jsiptv.m3u",
         "require_domain": true,
-        "test_udp": "239.49.8.16:9602"
+        "test_udp": "239.49.8.16:9602",
+        "prefer_region": "江苏"
     },
      {
         "name": "福建电信[A]",
@@ -245,7 +267,8 @@
         "output_txt": "fjiptv.txt",
         "output_m3u": "fjiptv.m3u",
         "require_domain": true,
-        "test_udp": "239.61.4.175:1025"
+        "test_udp": "239.61.4.175:1025",
+        "prefer_region": "福建"
     },
     {
         "name": "福建电信[B]",
@@ -256,7 +279,8 @@
         "output_txt": "fjiptv.txt",
         "output_m3u": "fjiptv.m3u",
         "require_domain": false,
-        "test_udp": "239.61.4.175:1025"
+        "test_udp": "239.61.4.175:1025",
+        "prefer_region": "福建"
     },
          {
         "name": "北京联通[A]",
@@ -267,7 +291,8 @@
         "output_txt": "bjiptv.txt",
         "output_m3u": "bjiptv.m3u",
         "require_domain": true,
-        "test_udp": "239.3.1.129:8008"
+        "test_udp": "239.3.1.129:8008",
+        "prefer_region": "北京"
     },
     {
         "name": "北京联通[B]",
@@ -278,7 +303,8 @@
         "output_txt": "bjiptv.txt",
         "output_m3u": "bjiptv.m3u",
         "require_domain": false,
-        "test_udp": "239.3.1.129:8008"
+        "test_udp": "239.3.1.129:8008",
+        "prefer_region": "北京"
     },
      {
         "name": "重庆电信",
@@ -289,7 +315,8 @@
         "output_txt": "cqiptv.txt",
         "output_m3u": "cqiptv.m3u",
         "require_domain": true,
-        "test_udp": "235.254.197.199:7980"
+        "test_udp": "235.254.197.199:7980",
+        "prefer_region": "重庆"
     },
     {
         "name": "河北联通[A]",
@@ -300,7 +327,8 @@
         "output_txt": "hebiptv.txt",
         "output_m3u": "hebiptv.m3u",
         "require_domain": true,
-        "test_udp": "239.253.92.83:8012"
+        "test_udp": "239.253.92.83:8012",
+        "prefer_region": "河北"
     },
     {
         "name": "河北联通[B]",
@@ -311,7 +339,8 @@
         "output_txt": "hebiptv.txt",
         "output_m3u": "hebiptv.m3u",
         "require_domain": false,
-        "test_udp": "239.253.92.83:8012"
+        "test_udp": "239.253.92.83:8012",
+        "prefer_region": "河北"
     },
     {
         "name": "河南联通[A]",
@@ -322,7 +351,8 @@
         "output_txt": "henaniptv.txt",
         "output_m3u": "henaniptv.m3u",
         "require_domain": true,
-        "test_udp": "225.1.4.254:1300"
+        "test_udp": "225.1.4.254:1300",
+        "prefer_region": "河南"
     },
     {
         "name": "河南联通[B]",
@@ -333,7 +363,8 @@
         "output_txt": "henaniptv.txt",
         "output_m3u": "henaniptv.m3u",
         "require_domain": false,
-        "test_udp": "225.1.4.254:1300"
+        "test_udp": "225.1.4.254:1300",
+        "prefer_region": "河南"
     },
     {
         "name": "内蒙古联通[A]",
@@ -344,7 +375,8 @@
         "output_txt": "nmiptv.txt",
         "output_m3u": "nmiptv.m3u",
         "require_domain": true,
-        "test_udp": "239.125.1.74:4120"
+        "test_udp": "239.125.1.74:4120",
+        "prefer_region": "内蒙古自治区"
     },
     {
         "name": "内蒙古联通[B]",
@@ -355,7 +387,8 @@
         "output_txt": "nmiptv.txt",
         "output_m3u": "nmiptv.m3u",
         "require_domain": false,
-        "test_udp": "239.125.1.74:4120"
+        "test_udp": "239.125.1.74:4120",
+        "prefer_region": "内蒙古自治区"
     },
     {
         "name": "天津联通[A]",
@@ -366,7 +399,8 @@
         "output_txt": "tjiptv.txt",
         "output_m3u": "tjiptv.m3u",
         "require_domain": true,
-        "test_udp": "225.1.1.149:5002"
+        "test_udp": "225.1.1.149:5002",
+        "prefer_region": "天津"
     },
     {
         "name": "天津联通[B]",
@@ -377,7 +411,8 @@
         "output_txt": "tjiptv.txt",
         "output_m3u": "tjiptv.m3u",
         "require_domain": false,
-        "test_udp": "225.1.1.149:5002"
+        "test_udp": "225.1.1.149:5002",
+        "prefer_region": "天津"
     },
     {
         "name": "上海电信[A]",
@@ -388,7 +423,8 @@
         "output_txt": "shiptv.txt",
         "output_m3u": "shiptv.m3u",
         "require_domain": true,
-        "test_udp": "233.18.204.205:5140"
+        "test_udp": "233.18.204.205:5140",
+        "prefer_region": "上海"
     },
     {
         "name": "上海电信[B]",
@@ -399,7 +435,8 @@
         "output_txt": "shiptv.txt",
         "output_m3u": "shiptv.m3u",
         "require_domain": false,
-        "test_udp": "233.18.204.205:5140"
+        "test_udp": "233.18.204.205:5140",
+        "prefer_region": "上海"
     },
         {
         "name": "陕西电信[A]",
@@ -410,7 +447,8 @@
         "output_txt": "shxiptv.txt",
         "output_m3u": "shxiptv.m3u",
         "require_domain": true,
-        "test_udp": "239.111.205.78:5140"
+        "test_udp": "239.111.205.78:5140",
+        "prefer_region": "陕西"
     },
     {
         "name": "陕西电信[B]",
@@ -421,7 +459,8 @@
         "output_txt": "shxiptv.txt",
         "output_m3u": "shxiptv.m3u",
         "require_domain": false,
-        "test_udp": "239.111.205.78:5140"
+        "test_udp": "239.111.205.78:5140",
+        "prefer_region": "陕西"
     },
     {
         "name": "山西联通[A]",
@@ -432,7 +471,8 @@
         "output_txt": "sxiptv.txt",
         "output_m3u": "sxiptv.m3u",
         "require_domain": true,
-        "test_udp": "226.0.2.155:9172"
+        "test_udp": "226.0.2.155:9172",
+        "prefer_region": "山西"
     },
     {
         "name": "山西联通[B]",
@@ -443,7 +483,8 @@
         "output_txt": "sxiptv.txt",
         "output_m3u": "sxiptv.m3u",
         "require_domain": false,
-        "test_udp": "226.0.2.155:9172"
+        "test_udp": "226.0.2.155:9172",
+        "prefer_region": "山西"
     },
     {
         "name": "新疆电信[A]",
@@ -454,7 +495,8 @@
         "output_txt": "xjiptv.txt",
         "output_m3u": "xjiptv.m3u",
         "require_domain": true,
-        "test_udp": "238.125.5.1:5140"
+        "test_udp": "238.125.5.1:5140",
+        "prefer_region": "新疆维吾尔自治区"
     },
     {
         "name": "新疆电信[B]",
@@ -465,7 +507,8 @@
         "output_txt": "xjiptv.txt",
         "output_m3u": "xjiptv.m3u",
         "require_domain": false,
-        "test_udp": "238.125.5.1:5140"
+        "test_udp": "238.125.5.1:5140",
+        "prefer_region": "新疆维吾尔自治区"
     },
     {
         "name": "山东青岛联通[A]",
@@ -474,7 +517,8 @@
         "target_m3u": "sdltqd.m3u",
         "output_m3u": "sdltqd.m3u",
         "require_domain": true,
-        "test_udp": "239.253.254.77:8000"
+        "test_udp": "239.253.254.77:8000",
+        "prefer_region": "山东"
     },
     {
         "name": "山东青岛联通[B]",
@@ -483,7 +527,8 @@
         "target_m3u": "sdltqd.m3u",
         "output_m3u": "sdltqd.m3u",
         "require_domain": false,
-        "test_udp": "239.253.254.77:8000"
+        "test_udp": "239.253.254.77:8000",
+        "prefer_region": "山东"
     },
     {
         "name": "江西电信[A]",
@@ -492,7 +537,8 @@
         "target_m3u": "jxiptv.m3u",
         "output_m3u": "jxiptv.m3u",
         "require_domain": true,
-        "test_udp": "239.252.220.63:5140"
+        "test_udp": "239.252.220.63:5140",
+        "prefer_region": "江西"
     },
     {
         "name": "江西电信[B]",
@@ -501,7 +547,8 @@
         "target_m3u": "jxiptv.m3u",
         "output_m3u": "jxiptv.m3u",
         "require_domain": false,
-        "test_udp": "239.252.220.63:5140"
+        "test_udp": "239.252.220.63:5140",
+        "prefer_region": "江西"
     },
      {
         "name": "辽宁电信组播",
@@ -510,7 +557,8 @@
         "target_m3u": "iptv.m3u",
         "output_m3u": "iptv.m3u",
         "require_domain": true,
-        "test_udp": "239.33.3.1:22570"
+        "test_udp": "239.33.3.1:22570",
+        "prefer_region": "辽宁"
     },
      {
         "name": "韩国SK Telecom组播",
@@ -519,7 +567,8 @@
         "target_m3u": "iptv.m3u",
         "output_m3u": "iptv.m3u",
         "require_domain": true,
-        "test_udp": "239.192.38.1:49220"
+        "test_udp": "239.192.38.1:49220",
+        "prefer_region": "韩国"
     }
 
 ]
