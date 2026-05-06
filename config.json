@@ -9,7 +9,17 @@
         "test_udp": "239.33.3.1:22570",
         "prefer_region": "辽宁"
     },
-        {
+    {
+        "name": "黑龙江联通",
+        "fofa_query": "server=\"udpxy\" && region=\"Heilongjiang\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_m3u": "iptv.m3u",
+        "output_m3u": "iptv.m3u",
+        "require_domain": true,
+        "test_udp": "229.58.190.121:5000",
+        "prefer_region": "黑龙江"
+    },
+    {
         "name": "吉林电信",
         "fofa_query": "server=\"udpxy\" && region=\"Jilin\"",
         "target_repo": "badboys88888/IPTV",
