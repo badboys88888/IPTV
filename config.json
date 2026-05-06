@@ -272,7 +272,7 @@
     },
      {
         "name": "重庆电信",
-        "fofa_query": "server=\"udpxy\" && region=\"Chongqing\",
+        "fofa_query": "server=\"udpxy\" && region=\"Chongqing\"",
         "target_repo": "badboys88888/IPTV",
         "target_txt": "cqiptv.txt",
         "target_m3u": "cqiptv.m3u",
