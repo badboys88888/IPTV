@@ -391,5 +391,27 @@
         "require_domain": false,
         "test_udp": "225.1.1.149:5002"
     }
+    {
+        "name": "上海电信[A]",
+        "fofa_query": "server=\"udpxy\" && region=\"Shanghai\" && is_domain=true",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "shiptv.txt",
+        "target_m3u": "shiptv.m3u",
+        "output_txt": "shiptv.txt",
+        "output_m3u": "shiptv.m3u",
+        "require_domain": true,
+        "test_udp": "233.18.204.205:5140"
+    },
+    {
+        "name": "上海电信[A]",
+        "fofa_query": "server=\"udpxy\" && region=\"Shanghai\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "shiptv.txt",
+        "target_m3u": "shiptv.m3u",
+        "output_txt": "shiptv.txt",
+        "output_m3u": "shiptv.m3u",
+        "require_domain": false,
+        "test_udp": "233.18.204.205:5140"
+    }
 
 ]
