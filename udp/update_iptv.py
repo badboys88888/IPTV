@@ -101,7 +101,7 @@ def search_fofa(key, query, group_name):
         params={
             "key": key, "qbase64": q_b64,
             "fields": "host,ip,port,country,province,city",
-            "page": 1, "size": 1000,   # 单次下载上限，足够使用
+            "page": 1, "size": 100,   # 单次下载上限，足够使用
             "full": "false"
         },
         timeout=30
