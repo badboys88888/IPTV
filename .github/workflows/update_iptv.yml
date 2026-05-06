@@ -20,7 +20,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0          # 关键！拉取所有历史以保证强制推送安全
+          fetch-depth: 0          # 拉取所有历史以保证强制推送安全
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -30,10 +30,27 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
+      # ★ 恢复 FOFA 缓存（避免重复下载消耗额度）
+      - name: Restore FOFA cache
+        uses: actions/cache@v4
+        with:
+          path: udp/fofa_cache.json
+          key: fofa-cache-${{ hashFiles('config.json') }}
+          restore-keys: |
+            fofa-cache-
+
       - name: Run IPTV updater
         env:
           FOFA_KEY: ${{ secrets.FOFA_KEY }}
         run: python udp/update_iptv.py
+
+      # ★ 保存 FOFA 缓存（即使后续步骤失败也保存）
+      - name: Save FOFA cache
+        if: always()
+        uses: actions/cache@v4
+        with:
+          path: udp/fofa_cache.json
+          key: fofa-cache-${{ hashFiles('config.json') }}
 
       - name: Commit and push changes
         run: |
@@ -51,11 +68,8 @@ jobs:
           else
             git commit -m "🔄 自动更新 IPTV 源 ($(date -u '+%Y-%m-%d %H:%M UTC'))"
             
-            # ★ 核心解决步骤：用最新信息安全地变基并强制推送
-            # 1. 先获取远程仓库的最新状态
+            # 用最新信息安全地变基并强制推送
             git fetch origin main
-            # 2. 基于远程最新的 main 分支进行变基 (rebase)，把我们的新提交“重放”到最新处
             git rebase origin/main
-            # 3. 最后使用 --force-with-lease 安全地强制推送
             git push --force-with-lease origin main
           fi
