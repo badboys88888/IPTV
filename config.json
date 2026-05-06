@@ -1,5 +1,25 @@
 [
     {
+        "name": "辽宁电信组播",
+        "fofa_query": "server=\"udpxy\" && region=\"Liaoning\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_m3u": "iptv.m3u",
+        "output_m3u": "iptv.m3u",
+        "require_domain": true,
+        "test_udp": "239.33.3.1:22570",
+        "prefer_region": "辽宁"
+    },
+     {
+        "name": "韩国SK Telecom组播",
+        "fofa_query": "server=\"udpxy\" && country=\"KR\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_m3u": "iptv.m3u",
+        "output_m3u": "iptv.m3u",
+        "require_domain": true,
+        "test_udp": "239.192.38.1:49220",
+        "prefer_region": "韩国"
+    },
+    {
         "name": "四川电信[A]",
         "fofa_query": "server=\"udpxy\" && region=\"Sichuan\" && is_domain=true",
         "target_repo": "badboys88888/IPTV",
@@ -549,26 +569,6 @@
         "require_domain": false,
         "test_udp": "239.252.220.63:5140",
         "prefer_region": "江西"
-    },
-     {
-        "name": "辽宁电信组播",
-        "fofa_query": "server=\"udpxy\" && region=\"Liaoning\"",
-        "target_repo": "badboys88888/IPTV",
-        "target_m3u": "iptv.m3u",
-        "output_m3u": "iptv.m3u",
-        "require_domain": true,
-        "test_udp": "239.33.3.1:22570",
-        "prefer_region": "辽宁"
-    },
-     {
-        "name": "韩国SK Telecom组播",
-        "fofa_query": "server=\"udpxy\" && country=\"KR\"",
-        "target_repo": "badboys88888/IPTV",
-        "target_m3u": "iptv.m3u",
-        "output_m3u": "iptv.m3u",
-        "require_domain": true,
-        "test_udp": "239.192.38.1:49220",
-        "prefer_region": "韩国"
     }
-
+    
 ]
