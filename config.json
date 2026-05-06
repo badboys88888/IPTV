@@ -390,7 +390,7 @@
         "output_m3u": "tjiptv.m3u",
         "require_domain": false,
         "test_udp": "225.1.1.149:5002"
-    }
+    },
     {
         "name": "上海电信[A]",
         "fofa_query": "server=\"udpxy\" && region=\"Shanghai\" && is_domain=true",
@@ -403,7 +403,7 @@
         "test_udp": "233.18.204.205:5140"
     },
     {
-        "name": "上海电信[A]",
+        "name": "上海电信[B]",
         "fofa_query": "server=\"udpxy\" && region=\"Shanghai\"",
         "target_repo": "badboys88888/IPTV",
         "target_txt": "shiptv.txt",
@@ -412,6 +412,72 @@
         "output_m3u": "shiptv.m3u",
         "require_domain": false,
         "test_udp": "233.18.204.205:5140"
+    },
+        {
+        "name": "陕西电信[A]",
+        "fofa_query": "server=\"udpxy\" && region=\"Shaanxi\" && is_domain=true",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "shxiptv.txt",
+        "target_m3u": "shxiptv.m3u",
+        "output_txt": "shxiptv.txt",
+        "output_m3u": "shxiptv.m3u",
+        "require_domain": true,
+        "test_udp": "239.111.205.78:5140"
+    },
+    {
+        "name": "陕西电信[B]",
+        "fofa_query": "server=\"udpxy\" && region=\"Shaanxi\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "shxiptv.txt",
+        "target_m3u": "shxiptv.m3u",
+        "output_txt": "shxiptv.txt",
+        "output_m3u": "shxiptv.m3u",
+        "require_domain": false,
+        "test_udp": "239.111.205.78:5140"
+    },
+    {
+        "name": "山西联通[A]",
+        "fofa_query": "server=\"udpxy\" && region=\"Shanxi\" && is_domain=true",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "sxiptv.txt",
+        "target_m3u": "sxiptv.m3u",
+        "output_txt": "sxiptv.txt",
+        "output_m3u": "sxiptv.m3u",
+        "require_domain": true,
+        "test_udp": "226.0.2.155:9172"
+    },
+    {
+        "name": "山西联通[B]",
+        "fofa_query": "server=\"udpxy\" && region=\"Shanxi\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "sxiptv.txt",
+        "target_m3u": "sxiptv.m3u",
+        "output_txt": "sxiptv.txt",
+        "output_m3u": "sxiptv.m3u",
+        "require_domain": false,
+        "test_udp": "226.0.2.155:9172"
+    },
+    {
+        "name": "新疆电信[A]",
+        "fofa_query": "server=\"udpxy\" && region=\"Xinjiang Uygur\" && is_domain=true",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "xjiptv.txt",
+        "target_m3u": "xjiptv.m3u",
+        "output_txt": "xjiptv.txt",
+        "output_m3u": "xjiptv.m3u",
+        "require_domain": true,
+        "test_udp": "238.125.5.1:5140"
+    },
+    {
+        "name": "新疆电信[B]",
+        "fofa_query": "server=\"udpxy\" && region=\"Xinjiang Uygur\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "xjiptv.txt",
+        "target_m3u": "xjiptv.m3u",
+        "output_txt": "xjiptv.txt",
+        "output_m3u": "xjiptv.m3u",
+        "require_domain": false,
+        "test_udp": "238.125.5.1:5140"
     }
 
 ]
