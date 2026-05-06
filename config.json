@@ -496,6 +496,24 @@
         "output_m3u": "sdltqd.m3u",
         "require_domain": false,
         "test_udp": "239.253.254.77:8000"
+    },
+    {
+        "name": "江西电信[A]",
+        "fofa_query": "server=\"udpxy\" && region=\"Jiangxi\" && is_domain=true",
+        "target_repo": "badboys88888/IPTV",
+        "target_m3u": "jxiptv.m3u",
+        "output_m3u": "jxiptv.m3u",
+        "require_domain": true,
+        "test_udp": "239.252.220.238:5140"
+    },
+    {
+        "name": "江西电信[B]",
+        "fofa_query": "server=\"udpxy\" && region=\"Jiangxi\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_m3u": "jxiptv.m3u",
+        "output_m3u": "jxiptv.m3u",
+        "require_domain": false,
+        "test_udp": "239.252.220.238:5140"
     }
 
 ]
