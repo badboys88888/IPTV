@@ -583,6 +583,8 @@ http://221.143.128.159:4022/udp/239.192.67.130:49220
 http://221.143.128.159:4022/udp/239.192.67.131:49220
 #EXTINF:-1 tvg-id="91" tvg-logo="http://i.imgur.com/QHV9bdA.png" tvh-chnum="125" tvh-tags="SkySports" group-title="韩国SK Telecom组播",sky Sports
 http://221.143.128.159:4022/udp/239.192.67.162:49220
+#EXTINF:-1 tvg-id="218" tvg-logo="http://i.imgur.com/ByeeX5e.png" tvh-chnum="410" tvh-tags="" group-title="韩国SK Telecom组播", YTN
+http://221.143.128.159:4022/udp/239.192.47.7:49220
 #EXTINF:-1 tvg-id="2" tvg-logo="http://i.imgur.com/asfyrTm.png" tvh-chnum="2" tvh-tags="SBS Plus" group-title="韩国SK Telecom组播",SBS 플러스
 http://221.143.128.159:4022/udp/239.192.49.7:49220
 #EXTINF:-1 tvg-id="3" tvg-logo="http://i.imgur.com/E3pJ5Jz.png" tvh-chnum="3" tvh-tags="아임쇼핑" group-title="韩国SK Telecom组播",아임쇼핑
@@ -997,5 +999,3 @@ http://221.143.128.159:4022/udp/239.192.69.197:49220
 http://221.143.128.159:4022/udp/239.192.70.228:49220
 #EXTINF:-1 tvg-id="217" tvg-logo="http://i.imgur.com/ByeeX5e.png" tvh-chnum="409" tvh-tags="" group-title="韩国SK Telecom组播",채널A
 http://221.143.128.159:4022/udp/239.192.64.6:49220
-#EXTINF:-1 tvg-id="218" tvg-logo="http://i.imgur.com/ByeeX5e.png" tvh-chnum="410" tvh-tags="" group-title="韩国SK Telecom组播", YTN
-http://221.143.128.159:4022/udp/239.192.47.7:49220
