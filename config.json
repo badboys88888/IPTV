@@ -34,7 +34,7 @@
         "fofa_query": "server=\"udpxy\" && region=\"Yunnan\"",
         "target_repo": "badboys88888/IPTV",
         "target_m3u": "yniptv.m3u",
-        "output_m3u": "iptv.m3u",
+        "output_m3u": "yniptv.m3u",
         "require_domain": true,
         "test_udp": "239.200.201.79:8876",
         "prefer_region": "云南"
@@ -58,7 +58,7 @@
         "target_txt": "sciptv.txt",
         "target_m3u": "sciptv.m3u",
         "output_txt": "sciptv.txt",
-        "output_m3u": "iptv.m3u",
+        "output_m3u": "sciptv.m3u",
         "require_domain": false,
         "test_udp": "239.94.0.31:5140",
         "prefer_region": "四川"
