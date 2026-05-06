@@ -368,6 +368,28 @@
         "output_m3u": "nmiptv.m3u",
         "require_domain": false,
         "test_udp": "239.125.1.74:4120"
+    },
+    {
+        "name": "天津联通[A]",
+        "fofa_query": "server=\"udpxy\" && region=\"Tianjin\" && is_domain=true",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "tjiptv.txt",
+        "target_m3u": "tjiptv.m3u",
+        "output_txt": "tjiptv.txt",
+        "output_m3u": "tjiptv.m3u",
+        "require_domain": true,
+        "test_udp": "225.1.1.149:5002"
+    },
+    {
+        "name": "天津联通[B]",
+        "fofa_query": "server=\"udpxy\" && region=\"Tianjin\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "tjiptv.txt",
+        "target_m3u": "tjiptv.m3u",
+        "output_txt": "tjiptv.txt",
+        "output_m3u": "tjiptv.m3u",
+        "require_domain": false,
+        "test_udp": "225.1.1.149:5002"
     }
 
 ]
