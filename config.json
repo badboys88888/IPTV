@@ -280,7 +280,7 @@
         "output_m3u": "cqiptv.m3u",
         "require_domain": true,
         "test_udp": "235.254.197.199:7980"
-    }
+    },
     {
         "name": "河北联通[A]",
         "fofa_query": "server=\"udpxy\" && region=\"Hebei\" && is_domain=true",
