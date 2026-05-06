@@ -9,6 +9,16 @@
         "test_udp": "239.33.3.1:22570",
         "prefer_region": "辽宁"
     },
+     {
+        "name": "宁夏电信",
+        "fofa_query": "server=\"udpxy\" && region=\"Ningxia Huizu\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_m3u": "iptv.m3u",
+        "output_m3u": "iptv.m3u",
+        "require_domain": true,
+        "test_udp": "239.121.4.91:8520",
+        "prefer_region": "宁夏回族自治区"
+    },
     {
         "name": "贵州电信组播",
         "fofa_query": "server=\"udpxy\" && region=\"Guizhou\"",
