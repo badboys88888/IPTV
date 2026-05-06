@@ -272,7 +272,7 @@
     },
      {
         "name": "重庆电信",
-        "fofa_query": "server=\"udpxy\" && region=\"Chongqing\" && is_domain=true",
+        "fofa_query": "server=\"udpxy\" && region=\"Chongqing\",
         "target_repo": "badboys88888/IPTV",
         "target_txt": "cqiptv.txt",
         "target_m3u": "cqiptv.m3u",
@@ -371,7 +371,7 @@
     },
     {
         "name": "天津联通[A]",
-        "fofa_query": "server=\"udpxy\" && region=\"Tianjin\" && is_domain=true",
+        "fofa_query": "server=\"udpxy\" && region=\"Tianjin\"",
         "target_repo": "badboys88888/IPTV",
         "target_txt": "tjiptv.txt",
         "target_m3u": "tjiptv.m3u",
@@ -499,12 +499,12 @@
     },
     {
         "name": "江西电信[A]",
-        "fofa_query": "server=\"udpxy\" && region=\"Jiangxi\" && is_domain=true",
+        "fofa_query": "server=\"udpxy\" && region=\"Jiangxi\"",
         "target_repo": "badboys88888/IPTV",
         "target_m3u": "jxiptv.m3u",
         "output_m3u": "jxiptv.m3u",
         "require_domain": true,
-        "test_udp": "239.252.220.238:5140"
+        "test_udp": "239.252.220.63:5140"
     },
     {
         "name": "江西电信[B]",
@@ -513,7 +513,7 @@
         "target_m3u": "jxiptv.m3u",
         "output_m3u": "jxiptv.m3u",
         "require_domain": false,
-        "test_udp": "239.252.220.238:5140"
+        "test_udp": "239.252.220.63:5140"
     }
 
 ]
