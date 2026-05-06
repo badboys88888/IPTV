@@ -20,7 +20,7 @@ CACHE_FILE   = "xteve/fofa_hosts.csv"
 OUTPUT_M3U   = "xteve/xteve.m3u"
 EXPANDED_M3U = "xteve/xteve_expanded.m3u"
 QUERY        = 'header="Content-Type: application/xml" && body="xteve"'
-PAGE_SIZE    = 10000
+PAGE_SIZE    = 100           # 改为 100 条，避免浪费下载量
 TIMEOUT      = 10
 MAX_WORKERS  = 30
 MIN_CHANNELS = 5
@@ -88,7 +88,7 @@ def search_fofa_icu(key):
         "qbase64": q_b64,
         "fields": "host,country",
         "page": 1,
-        "size": PAGE_SIZE,
+        "size": PAGE_SIZE,     # 现在是 100 条
         "full": "false",
     }, timeout=30)
     resp.raise_for_status()
@@ -219,7 +219,7 @@ def main():
     if cache_valid():
         items = load_cache()
     else:
-        print("\n🔍 正在从 FOFA 获取数据...")
+        print("\n🔍 正在从 FOFA 获取数据（最多 100 条）...")
         try:
             items, total = search_fofa_icu(key)
             print(f"   总结果数: {total} 条，获取 {len(items)} 条")
