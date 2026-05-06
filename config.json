@@ -65,6 +65,16 @@
         "require_domain": false,
         "test_udp": "233.50.201.118:5140"
     },
+     {
+        "name": "广东移动组播",
+        "fofa_query": "server=\"udpxy\" && region=\"Guangdong\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_m3u": "iptv.m3u",
+        "output_m3u": "iptv.m3u",
+        "require_domain": true,
+        "test_udp": "239.10.0.45:1025"
+    },
+
     {
         "name": "广东频道[A]",
         "fofa_query": "server=\"udpxy\" && region=\"Guangdong\" && is_domain=true",
@@ -492,6 +502,24 @@
         "output_m3u": "jxiptv.m3u",
         "require_domain": false,
         "test_udp": "239.252.220.63:5140"
+    },
+     {
+        "name": "辽宁电信组播",
+        "fofa_query": "server=\"udpxy\" && region=\"Liaoning\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_m3u": "iptv.m3u",
+        "output_m3u": "iptv.m3u",
+        "require_domain": true,
+        "test_udp": "239.33.3.1:22570"
+    },
+     {
+        "name": "韩国SK Telecom组播",
+        "fofa_query": "server=\"udpxy\" && country=\"KR\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_m3u": "iptv.m3u",
+        "output_m3u": "iptv.m3u",
+        "require_domain": true,
+        "test_udp": "239.192.38.1:49220"
     }
 
 ]
