@@ -280,6 +280,94 @@
         "output_m3u": "cqiptv.m3u",
         "require_domain": true,
         "test_udp": "235.254.197.199:7980"
+    }
+    {
+        "name": "河北联通[A]",
+        "fofa_query": "server=\"udpxy\" && region=\"Hebei\" && is_domain=true",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "hebiptv.txt",
+        "target_m3u": "hebiptv.m3u",
+        "output_txt": "hebiptv.txt",
+        "output_m3u": "hebiptv.m3u",
+        "require_domain": true,
+        "test_udp": "239.253.92.83:8012"
     },
+    {
+        "name": "河北联通[B]",
+        "fofa_query": "server=\"udpxy\" && region=\"Hebei\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "hebiptv.txt",
+        "target_m3u": "hebiptv.m3u",
+        "output_txt": "hebiptv.txt",
+        "output_m3u": "hebiptv.m3u",
+        "require_domain": false,
+        "test_udp": "239.253.92.83:8012"
+    },
+    {
+        "name": "河南联通[A]",
+        "fofa_query": "server=\"udpxy\" && region=\"Henan\" && is_domain=true",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "henaniptv.txt",
+        "target_m3u": "henaniptv.m3u",
+        "output_txt": "henaniptv.txt",
+        "output_m3u": "henaniptv.m3u",
+        "require_domain": true,
+        "test_udp": "225.1.4.254:1300"
+    },
+    {
+        "name": "河南联通[B]",
+        "fofa_query": "server=\"udpxy\" && region=\"Henan\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "henaniptv.txt",
+        "target_m3u": "henaniptv.m3u",
+        "output_txt": "henaniptv.txt",
+        "output_m3u": "henaniptv.m3u",
+        "require_domain": false,
+        "test_udp": "225.1.4.254:1300"
+    },
+    {
+        "name": "河南联通[A]",
+        "fofa_query": "server=\"udpxy\" && region=\"Hunan\" && is_domain=true",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "hniptv.txt",
+        "target_m3u": "hniptv.m3u",
+        "output_txt": "hniptv.txt",
+        "output_m3u": "hniptv.m3u",
+        "require_domain": true,
+        "test_udp": "239.76.253.62:9000"
+    },
+    {
+        "name": "河南联通[B]",
+        "fofa_query": "server=\"udpxy\" && region=\"Hunan\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "hniptv.txt",
+        "target_m3u": "hniptv.m3u",
+        "output_txt": "hniptv.txt",
+        "output_m3u": "hniptv.m3u",
+        "require_domain": false,
+        "test_udp": "239.76.253.62:9000"
+    },
+    {
+        "name": "内蒙古联通[A]",
+        "fofa_query": "server=\"udpxy\" && region=\"Nei Mongol\" && is_domain=true",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "nmiptv.txt",
+        "target_m3u": "nmiptv.m3u",
+        "output_txt": "nmiptv.txt",
+        "output_m3u": "nmiptv.m3u",
+        "require_domain": true,
+        "test_udp": "239.125.1.74:4120"
+    },
+    {
+        "name": "内蒙古联通[B]",
+        "fofa_query": "server=\"udpxy\" && region=\"Nei Mongol\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "nmiptv.txt",
+        "target_m3u": "nmiptv.m3u",
+        "output_txt": "nmiptv.txt",
+        "output_m3u": "nmiptv.m3u",
+        "require_domain": false,
+        "test_udp": "239.125.1.74:4120"
+    }
 
 ]
