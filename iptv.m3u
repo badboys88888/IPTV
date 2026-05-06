@@ -35,6 +35,43 @@ http://14.112.103.41:8000/udp/239.10.0.254:1025
 http://14.112.103.41:8000/udp/239.10.0.75:1025
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="广东移动组播",珠江电影
 http://14.112.103.41:8000/udp/239.10.0.235:1025
+#EXTM3U x-tvg-url="http://192.168.6.15:5678/t.xml.gz"
+#EXTINF:-1 tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/哈尔滨生活.png" group-title="黑龙江联通",哈尔滨生活
+http://192.168.123.1:8888/udp/229.58.190.22:5000
+#EXTINF:-1 tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/哈尔滨新闻综合.png" group-title="黑龙江联通",哈尔滨新闻综合HD
+http://192.168.123.1:8888/udp/229.58.190.195:5000
+#EXTINF:-1 tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/哈尔滨影视.png" group-title="黑龙江联通",哈尔滨影视
+http://192.168.123.1:8888/udp/229.58.190.1:5000
+#EXTINF:-1 tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/黑龙江都市.png" group-title="黑龙江联通",黑龙江都市
+http://192.168.123.1:8888/udp/229.58.190.121:5000
+#EXTINF:-1 tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/黑龙江都市.png" group-title="黑龙江联通",黑龙江都市HD
+http://192.168.123.1:8888/udp/229.58.190.34:5000
+#EXTINF:-1 group-title="黑龙江联通",黑龙江农业科教
+http://192.168.123.1:8888/udp/229.58.190.123:5000
+#EXTINF:-1 group-title="黑龙江联通",黑龙江农业科教HD
+http://192.168.123.1:8888/udp/229.58.190.7:5000
+#EXTINF:-1 tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/黑龙江少儿.png" group-title="黑龙江联通",黑龙江少儿
+http://192.168.123.1:8888/udp/229.58.190.124:5000
+#EXTINF:-1 tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/黑龙江少儿.png" group-title="黑龙江联通",黑龙江少儿HD
+http://192.168.123.1:8888/udp/229.58.190.39:5000
+#EXTINF:-1 tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/黑龙江文体.png" group-title="黑龙江联通",黑龙江文体
+http://192.168.123.1:8888/udp/229.58.190.116:5000
+#EXTINF:-1 tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/黑龙江文体.png" group-title="黑龙江联通",黑龙江文体HD
+http://192.168.123.1:8888/udp/229.58.190.30:5000
+#EXTINF:-1 tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/黑龙江新闻法治.png" group-title="黑龙江联通",黑龙江新闻法治
+http://192.168.123.1:8888/udp/229.58.190.122:5000
+#EXTINF:-1 tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/黑龙江新闻法治.png" group-title="黑龙江联通",黑龙江新闻法治HD
+http://192.168.123.1:8888/udp/229.58.190.16:5000
+#EXTINF:-1 tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/黑龙江影视.png" group-title="黑龙江联通",黑龙江影视
+http://192.168.123.1:8888/udp/229.58.190.126:5000
+#EXTINF:-1 tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/黑龙江影视.png" group-title="黑龙江联通",黑龙江影视HD
+http://192.168.123.1:8888/udp/229.58.190.14:5000
+#EXTINF:-1 group-title="黑龙江联通",佳木斯新闻综合HD
+http://192.168.123.1:8888/udp/229.58.190.163:5000
+#EXTINF:-1 group-title="黑龙江联通",齐齐哈尔1新闻综合HD
+http://192.168.123.1:8888/udp/229.58.190.193:5000
+#EXTINF:-1 group-title="黑龙江联通",齐齐哈尔2经济法治HD
+http://192.168.123.1:8888/udp/229.58.190.171:5000
 #EXTINF:-1 group-title="宁夏电信",宁煤频道
 http://111.113.151.191:9999/udp/239.121.4.105:8410
 #EXTINF:-1 tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/宁夏公共.png" group-title="宁夏电信",宁夏公共高清
