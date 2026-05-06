@@ -561,7 +561,7 @@ http://111.122.65.219:4000/udp/238.255.2.179:5999
 http://221.143.128.159:4022/udp/239.192.81.36:49220
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="韩国SK Telecom组播",Dream UHD
 http://221.143.128.159:4022/udp/239.192.81.37:49220
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="韩国SK Telecom组播",UXN UHD
+#EXTINF:-1 tvg-id="55" tvg-logo="http://i.imgur.com/1u80OGN.png" tvh-chnum="72" tvh-tags="" group-title="韩国SK Telecom组播",Asia UHD
 http://221.143.128.159:4022/udp/239.192.81.38:49220
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="韩国SK Telecom组播",INSIGHT TV UHD
 http://221.143.128.159:4022/udp/239.192.81.39:49220
@@ -683,8 +683,6 @@ http://221.143.128.159:4022/udp/239.192.69.107:49220
 http://221.143.128.159:4022/udp/239.192.69.168:49220
 #EXTINF:-1 tvg-id="54" tvg-logo="http://i.imgur.com/xDXM13Q.png" tvh-chnum="62" tvh-tags="" group-title="韩国SK Telecom组播",Celestial Movies
 http://221.143.128.159:4022/udp/239.192.69.14:49220
-#EXTINF:-1 tvg-id="55" tvg-logo="http://i.imgur.com/1u80OGN.png" tvh-chnum="72" tvh-tags="" group-title="韩国SK Telecom组播",Asia UHD
-http://221.143.128.159:4022/udp/239.192.81.38:49220
 #EXTINF:-1 tvg-id="56" tvg-logo="http://i.imgur.com/D1o9by9.png" tvh-chnum="80" tvh-tags="" group-title="韩国SK Telecom组播",KBS joy
 http://221.143.128.159:4022/udp/239.192.56.6:49220
 #EXTINF:-1 tvg-id="57" tvg-logo="http://i.imgur.com/D1EYJmr.png" tvh-chnum="81" tvh-tags="" group-title="韩国SK Telecom组播",SBS fun E
