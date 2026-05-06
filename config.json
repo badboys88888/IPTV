@@ -480,7 +480,7 @@
         "test_udp": "238.125.5.1:5140"
     },
     {
-        "name": "新疆电信[A]",
+        "name": "山东青岛联通[A]",
         "fofa_query": "server=\"udpxy\" && region=\"Shandong\" && is_domain=true",
         "target_repo": "badboys88888/IPTV",
         "target_m3u": "sdltqd.m3u",
@@ -489,7 +489,7 @@
         "test_udp": "239.253.254.77:8000"
     },
     {
-        "name": "新疆电信[B]",
+        "name": "山东青岛联通[B]",
         "fofa_query": "server=\"udpxy\" && region=\"Shandong\"",
         "target_repo": "badboys88888/IPTV",
         "target_m3u": "sdltqd.m3u",
