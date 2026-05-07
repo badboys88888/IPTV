@@ -1000,6 +1000,20 @@ http://118.220.11.82:4022/udp/239.192.69.197:49220
 http://118.220.11.82:4022/udp/239.192.70.228:49220
 #EXTINF:-1 tvg-id="217" tvg-logo="http://i.imgur.com/ByeeX5e.png" tvh-chnum="409" tvh-tags="" group-title="韩国SK Telecom组播",채널A
 http://118.220.11.82:4022/udp/239.192.64.6:49220
+#EXTINF:-1 tvg-logo="https://vtvapi03.sys.init7.net/media/logos/1102_SRF1.ch.png" "tvg-name="SRF1.ch" tvg-chno="1108" group-title="瑞士init7-tv7组播",SRF 1 FHD
+http://85.195.251.56:4022/udp/233.50.230.1:5000
+#EXTINF:-1 tvg-logo="https://vtvapi03.sys.init7.net/media/logos/1104_SRFzwei.ch.png" "tvg-name="SRFzwei.ch" tvg-chno="1110" group-title="瑞士init7-tv7组播",SRF zwei FHD
+http://85.195.251.56:4022/udp/233.50.230.2:5000
+#EXTINF:-1 tvg-logo="https://vtvapi03.sys.init7.net/media/logos/1106_SRFinfo.ch.png" "tvg-name="SRFinfo.ch" tvg-chno="1112" group-title="瑞士init7-tv7组播",SRF info FHD
+http://85.195.251.56:4022/udp/233.50.230.3:5000
+#EXTINF:-1 tvg-logo="https://vtvapi03.sys.init7.net/media/logos/2103_RTS1.ch.png" "tvg-name="RTS1.ch" tvg-chno="2109" group-title="瑞士init7-tv7组播",RTS 1 FHD
+http://85.195.251.56:4022/udp/233.50.230.84:5000
+#EXTINF:-1 tvg-logo="https://vtvapi03.sys.init7.net/media/logos/2106_RTS2.ch.png" "tvg-name="RTS2.ch" tvg-chno="2112" group-title="瑞士init7-tv7组播",RTS 2 FHD
+http://85.195.251.56:4022/udp/233.50.230.85:5000
+#EXTINF:-1 tvg-logo="https://vtvapi03.sys.init7.net/media/logos/3104_RSILa1.ch.png" "tvg-name="RSILa1.ch" tvg-chno="3112" group-title="瑞士init7-tv7组播",RSI LA 1 FHD
+http://85.195.251.56:4022/udp/233.50.230.118:5000
+#EXTINF:-1 tvg-logo="https://vtvapi03.sys.init7.net/media/logos/3108_RSILa2.ch.png" "tvg-name="RSILa2.ch" tvg-chno="3116" group-title="瑞士init7-tv7组播",RSI LA 2 FHD
+http://85.195.251.56:4022/udp/233.50.230.119:5000
 #EXTINF:-1 tvg-logo="https://api.tv.init7.net/media/logos/1102_SRF1.ch.png" tvg-name="SRF1.ch" group-title="瑞士init7-tv7组播",SRF 1
 http://85.195.251.56:4022/udp/233.50.230.80:5000
 #EXTINF:-1 tvg-logo="https://api.tv.init7.net/media/logos/1104_SRFzwei.ch.png" tvg-name="SRFzwei.ch" group-title="瑞士init7-tv7组播",SRF zwei
