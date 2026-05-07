@@ -10,6 +10,16 @@
         "prefer_region": "辽宁"
     },
     {
+        "name": "瑞士init7-tv7组播",
+        "fofa_query": "server=\"udpxy\" && country=\"CH\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_m3u": "iptv.m3u",
+        "output_m3u": "iptv.m3u",
+        "require_domain": true,
+        "test_udp": "233.50.230.80:5000",
+        "prefer_region": "瑞士"
+    },
+    {
         "name": "黑龙江联通",
         "fofa_query": "server=\"udpxy\" && region=\"Heilongjiang\"",
         "target_repo": "badboys88888/IPTV",
