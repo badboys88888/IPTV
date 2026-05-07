@@ -1,0 +1,35 @@
+name: Check Proxy IPs
+
+on:
+  schedule:
+    - cron: '30 1 * * *'
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install aiohttp geoip2
+
+      - name: Run check.py
+        run: python proxyip/check.py
+
+      - name: Commit and push results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add proxyip/results.csv
+          git diff --cached --quiet && echo "无变化，跳过提交" && exit 0
+          git commit -m "chore: update proxy check results [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          git pull --rebase origin main
+          git push
