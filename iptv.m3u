@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://github.com/badboys88888/epg/raw/refs/heads/main/epg.xml.gz"
+#EXTM3U x-tvg-url="https://github.com/badboys88888/epg/raw/refs/heads/main/epg.xml.gz,https://xmltv.ch/xmltv/xmltv-complet.xml"
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="广东移动组播",肇庆公共高清
 http://14.112.103.41:8000/udp/239.11.0.54:1025
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="广东移动组播",肇庆新闻综合高清
@@ -1436,8 +1436,6 @@ http://85.195.251.56:4022/udp/233.50.230.222:5000
 http://85.195.251.56:4022/udp/233.50.230.223:5000
 #EXTINF:-1 tvg-logo="https://api.tv.init7.net/media/logos/5448_TGRTEU.tr.png" tvg-name="TGRTEU.tr" group-title="瑞士init7-tv7组播",TGRT EU
 http://85.195.251.56:4022/udp/233.50.230.83:5000
-#EXTM3U url-tvg="#EXTM3U url-tvg="https://xmltv.ch/xmltv/xmltv-complet.xml""
-#EXTREM:french
 #EXTINF:-1 tvg-id="C202.api.telerama.fr" tvg-name="RTS Un" tvg-logo="http://static.epg.best/ch/RTS1.ch.png" tvg-chno="91" channel-id="91" group-title="瑞士Swisscom组播",RTS Un
 http://188.62.126.203:19022/udp/239.186.64.5:10000
 #EXTINF:-1 tvg-id="C202.api.telerama.fr" tvg-name="RTS Un" tvg-logo="http://static.epg.best/ch/RTS1.ch.png" tvg-chno="92" channel-id="92" group-title="瑞士Swisscom组播",RTS Un HD
@@ -1666,7 +1664,6 @@ http://188.62.126.203:19022/udp/239.186.64.98:10000
 http://188.62.126.203:19022/udp/239.186.70.21:10000
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" tvg-chno="102" channel-id="102" group-title="瑞士Swisscom组播",TV Onex HD
 http://188.62.126.203:19022/udp/239.186.70.132:10000
-#EXTREM:english
 #EXTINF:-1 tvg-id="AlJazeeraEnglish.qa" tvg-name="Al Jazeera English QA" tvg-logo="http://static.epg.best/qa/AlJazeeraEnglish.qa.png" tvg-chno="115" channel-id="115" group-title="瑞士Swisscom组播",Al Jazeera E
 http://188.62.126.203:19022/udp/239.186.64.173:10000
 #EXTINF:-1 tvg-id="AlJazeeraEnglish.qa" tvg-name="Al Jazeera English QA" tvg-logo="http://static.epg.best/qa/AlJazeeraEnglish.qa.png" tvg-chno="116" channel-id="116" group-title="瑞士Swisscom组播",Al Jazeera E HD
@@ -2123,7 +2120,6 @@ http://188.62.126.203:19022/udp/239.186.64.66:10000
 http://188.62.126.203:19022/udp/239.186.68.31:10000
 #EXTINF:-1 tvg-id="ZeeOne.de" tvg-name="Zee One DE" tvg-logo="http://static.epg.best/de/ZeeOne.de.png" tvg-chno="345" channel-id="345" group-title="瑞士Swisscom组播",ZEEONE HD
 http://188.62.126.203:19022/udp/239.186.70.70:10000
-#EXTREM:italian
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" tvg-chno="346" channel-id="346" group-title="瑞士Swisscom组播",7G Telecity
 http://188.62.126.203:19022/udp/239.186.74.23:10000
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" tvg-chno="347" channel-id="347" group-title="瑞士Swisscom组播",ALICE
@@ -2268,7 +2264,6 @@ http://188.62.126.203:19022/udp/239.186.66.184:10000
 http://188.62.126.203:19022/udp/239.186.66.240:10000
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" tvg-chno="415" channel-id="415" group-title="瑞士Swisscom组播",TV2000
 http://188.62.126.203:19022/udp/239.186.66.108:10000
-#EXTREM:others
 #EXTINF:-1 tvg-id="2MMonde.ma" tvg-name="2M Monde MA" tvg-logo="http://static.epg.best/ma/2MMonde.ma.png" tvg-chno="419" channel-id="419" group-title="瑞士Swisscom组播",2M MONDE
 http://188.62.126.203:19022/udp/239.186.64.194:10000
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" tvg-chno="420" channel-id="420" group-title="瑞士Swisscom组播",360
