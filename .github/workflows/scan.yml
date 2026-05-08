@@ -19,15 +19,18 @@ jobs:
 
       # --- 关键修改处 ---
       - name: Run Scanner
-        run: python scan/scanner.py 
-      # ------------------
+        run: |
+          mkdir -p scan
+          python scan/scanner.py
 
       - name: Commit results
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          # 明确指定添加 scan 文件夹下的结果文件
+          # 如果没有生成文件，创建一个空的，防止报错
+          touch scan/results.txt
           git add scan/results.txt
-          git commit -m "Update scan results from scan folder" || exit 0
+          git commit -m "Update scan results" || exit 0
           git push
+
 
