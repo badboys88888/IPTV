@@ -30,7 +30,7 @@ async def main():
     if not os.path.exists('scan/ip.txt'): return
     
     tasks = []
-    with open("ip.txt", "r") as f:
+    with open("scan/ip.txt", "r") as f:
         for line in f:
             net = line.strip()
             if not net: continue
