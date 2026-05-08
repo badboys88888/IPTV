@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-Cloudflare ProxyIP 筛选 - 全自动版（筛选+测速+映射）
-- HTTP 连通性 + WebSocket 握手 + 实际下载测速
-- 状态码白名单，速度不达标自动淘汰
+Cloudflare ProxyIP 筛选 - 全自动版（筛选+映射）
+- HTTP 连通性 + WebSocket 握手（ping/pong 验证连接真实存活）
+- 状态码白名单，延迟不考核
 - 自动查询地理位置（带限速，防封）
-- 输出带国家/运营商/速度标签的节点列表
+- 输出带国家/运营商标签的节点列表
 """
 
 import csv
@@ -29,17 +29,12 @@ TEST_HOST = "cloudflare.snippets1.dpdns.org"
 TEST_PATH = "/?ed=2560"
 TEST_UUID = "362cbd17-f2d0-4b37-8d2c-10a2a45ddefc"
 
-# 测速目标（Cloudflare 官方，与 ProxyIP 同属 CF 网络，最公平）
-SPEED_HOST       = "speed.cloudflare.com"
-SPEED_PATH       = "/__down?bytes=102400"  # 拉 100KB
-SPEED_MIN_BYTES  = 20480    # 至少收到 20KB 才算有效
-MIN_SPEED_KBPS   = 50       # 最低合格速度 KB/s（低于此值淘汰）
-SPEED_TIMEOUT    = 10       # 测速超时秒数
+WS_TIMEOUT      = 6         # WebSocket ping/pong 超时秒数
 
 LATENCY_ROUNDS  = 1
 CONNECT_TIMEOUT = 5
 REQ_TIMEOUT     = 6
-MAX_WORKERS     = 10        # 测速占带宽，并发不宜过高
+MAX_WORKERS     = 30
 
 DEFAULT_PORTS   = [443, 80]
 ALLOWED_CODES   = {101, 200, 301, 302, 403}
@@ -135,121 +130,76 @@ def http_connectivity_measure(ip, port):
         return ok, lat, detail
     return False, 9999, detail
 
-# ================== WebSocket 握手（内部复用） ==================
+# ================== WebSocket 验证（握手 + ping/pong） ==================
 
-def _ws_handshake(s, use_tls, ip, port, family):
+def test_websocket(ip, port) -> bool:
     """
-    建立 TCP（可选 TLS）连接并完成 WebSocket 101 握手。
-    成功返回已连接的 socket，失败返回 None。
-    """
-    try:
-        if use_tls:
-            ctx = ssl.create_default_context()
-            ctx.check_hostname = False
-            ctx.verify_mode = ssl.CERT_NONE
-            s = ctx.wrap_socket(s, server_hostname=TEST_HOST)
-        s.connect((ip, port))
-        ws_req = (
-            f"GET {TEST_PATH} HTTP/1.1\r\n"
-            f"Host: {TEST_HOST}\r\n"
-            f"Upgrade: websocket\r\n"
-            f"Connection: Upgrade\r\n"
-            f"User-Agent: Clash/1.18.0\r\n"
-            f"Sec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==\r\n"
-            f"Sec-WebSocket-Version: 13\r\n"
-            f"Sec-WebSocket-Protocol: {TEST_UUID}\r\n\r\n"
-        ).encode()
-        s.sendall(ws_req)
-        resp = b""
-        while b"\r\n\r\n" not in resp:
-            chunk = s.recv(1024)
-            if not chunk:
-                return None
-            resp += chunk
-        first_line = resp.split(b"\r\n")[0].decode(errors="ignore")
-        if "101" not in first_line:
-            return None
-        return s
-    except Exception:
-        return None
-
-def _make_ws_frame(payload: bytes, opcode=0x82) -> bytes:
-    """封装无 mask 的 WebSocket 帧（服务端→客户端方向）"""
-    ln = len(payload)
-    if ln < 126:
-        return bytes([opcode, ln]) + payload
-    elif ln < 65536:
-        return bytes([opcode, 126]) + ln.to_bytes(2, 'big') + payload
-    else:
-        return bytes([opcode, 127]) + ln.to_bytes(8, 'big') + payload
-
-# ================== 测速（含 WS 握手验证） ==================
-
-def test_speed(ip, port) -> tuple[bool, float, float]:
-    """
-    完整流程：WS 握手 → 通过隧道拉 Cloudflare 测速文件 → 计算速度
-    返回: (ws_ok: bool, speed_kbps: float, avg_latency_ms: float)
-    
-    注意：ProxyIP 是 L4 转发层，Worker 会将内层 HTTP 请求透传给目标。
-    直接发 HTTP 明文帧，让 CF Worker 代理到 speed.cloudflare.com。
+    WS 握手成功后发送 ping 帧，等待 pong 回包。
+    比单纯检查 101 状态码更可靠：确认连接双向存活。
     """
     family = socket.AF_INET6 if ":" in ip else socket.AF_INET
 
-    inner_http = (
-        f"GET {SPEED_PATH} HTTP/1.1\r\n"
-        f"Host: {SPEED_HOST}\r\n"
-        f"User-Agent: curl/7.88.0\r\n"
-        f"Connection: close\r\n\r\n"
-    ).encode()
-    ws_frame = _make_ws_frame(inner_http)
-
     def _attempt(use_tls):
         s = socket.socket(family, socket.SOCK_STREAM)
-        s.settimeout(SPEED_TIMEOUT)
+        s.settimeout(WS_TIMEOUT)
         try:
-            conn = _ws_handshake(s, use_tls, ip, port, family)
-            if conn is None:
-                return False, 0.0, 0.0
-            # 握手成功，发内层 HTTP 请求
-            t0 = time.perf_counter()
-            conn.sendall(ws_frame)
+            if use_tls:
+                ctx = ssl.create_default_context()
+                ctx.check_hostname = False
+                ctx.verify_mode = ssl.CERT_NONE
+                s = ctx.wrap_socket(s, server_hostname=TEST_HOST)
+            s.connect((ip, port))
 
-            # 接收数据，最多收 110KB 或超时
-            received = 0
-            first_byte_time = None
-            conn.settimeout(SPEED_TIMEOUT)
-            while received < 112640:
-                try:
-                    chunk = conn.recv(8192)
-                    if not chunk:
-                        break
-                    if first_byte_time is None:
-                        first_byte_time = time.perf_counter()
-                    received += len(chunk)
-                except socket.timeout:
-                    break
+            # Step 1: WS 握手
+            ws_req = (
+                f"GET {TEST_PATH} HTTP/1.1\r\n"
+                f"Host: {TEST_HOST}\r\n"
+                f"Upgrade: websocket\r\n"
+                f"Connection: Upgrade\r\n"
+                f"User-Agent: Clash/1.18.0\r\n"
+                f"Sec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==\r\n"
+                f"Sec-WebSocket-Version: 13\r\n"
+                f"Sec-WebSocket-Protocol: {TEST_UUID}\r\n\r\n"
+            ).encode()
+            s.sendall(ws_req)
 
-            elapsed = time.perf_counter() - t0
-            ttfb_ms = (first_byte_time - t0) * 1000 if first_byte_time else 9999
+            resp = b""
+            while b"\r\n\r\n" not in resp:
+                chunk = s.recv(1024)
+                if not chunk:
+                    return False
+                resp += chunk
 
-            if received < SPEED_MIN_BYTES or elapsed < 0.05:
-                return False, 0.0, ttfb_ms
+            if b"101" not in resp.split(b"\r\n")[0]:
+                return False
 
-            speed_kbps = (received / 1024) / elapsed
-            return True, round(speed_kbps, 1), round(ttfb_ms, 1)
+            # Step 2: 发 WS ping 帧（opcode=0x89，无 payload）
+            # 客户端发送需要 masking（RFC 6455 要求）
+            import os as _os
+            mask = _os.urandom(4)
+            ping_frame = bytes([0x89, 0x80]) + mask  # fin=1,opcode=9,masked,len=0
+            s.sendall(ping_frame)
 
+            # Step 3: 等待 pong（opcode=0x0A）
+            s.settimeout(3)
+            pong = s.recv(16)
+            if not pong:
+                return False
+            opcode = pong[0] & 0x0F
+            return opcode == 0x0A  # 0x0A = pong
+
+        except socket.timeout:
+            # 超时：握手可能通了但 pong 没回，也算失败
+            return False
         except Exception:
-            return False, 0.0, 9999.0
+            return False
         finally:
             try:
                 s.close()
             except:
                 pass
 
-    ok, speed, ttfb = _attempt(True)
-    if not ok:
-        ok, speed, ttfb = _attempt(False)
-    return ok, speed, ttfb
+    return _attempt(True) or _attempt(False)
 
 # ================== 单节点筛选 ==================
 
@@ -282,27 +232,19 @@ def filter_one(addr, region):
 
         avg_lat = statistics.mean(samples)
 
-        # Step 3: WebSocket 握手 + 实际下载测速
-        ws_ok, speed_kbps, ttfb = test_speed(ip, port)
-
-        if not ws_ok:
-            print(f"  ✗ {addr} WebSocket 握手失败或无数据回包", flush=True)
+        # Step 3: WebSocket 握手 + ping/pong 验证
+        if not test_websocket(ip, port):
+            print(f"  ✗ {addr} WebSocket ping/pong 失败", flush=True)
             continue
 
-        if speed_kbps < MIN_SPEED_KBPS:
-            print(f"  ✗ {addr} 速度不达标: {speed_kbps:.0f} KB/s < {MIN_SPEED_KBPS} KB/s", flush=True)
-            continue
-
-        print(f"  ✓ {addr} 延迟={avg_lat:.0f}ms  首字节={ttfb:.0f}ms  速度={speed_kbps:.0f}KB/s", flush=True)
+        print(f"  ✓ {addr} 延迟={avg_lat:.0f}ms  WS ping/pong 通过", flush=True)
 
         r = {
             "addr": addr, "ip": ip, "port": port,
             "avg_ms": round(avg_lat, 1),
-            "ttfb_ms": ttfb,
-            "speed_kbps": speed_kbps,
             "region": region,
         }
-        if best is None or speed_kbps > best["speed_kbps"]:
+        if best is None or avg_lat < best["avg_ms"]:
             best = r
 
     if best:
@@ -508,22 +450,11 @@ def geo_enrich(passed):
             "addr": it["addr"],
             "org": org,
             "avg_ms": it["avg_ms"],
-            "ttfb_ms": it["ttfb_ms"],
-            "speed_kbps": it["speed_kbps"],
         })
 
     return groups
 
 # ================== 输出 ==================
-
-def speed_label(kbps):
-    """把速度转成易读标签"""
-    if kbps >= 10240:
-        return f"{kbps/1024:.0f}MB/s"
-    elif kbps >= 1024:
-        return f"{kbps/1024:.1f}MB/s"
-    else:
-        return f"{kbps:.0f}KB/s"
 
 def save_output(passed):
     groups = geo_enrich(passed)
@@ -531,16 +462,14 @@ def save_output(passed):
     lines = []
     total = 0
     for country, items in sorted(groups.items()):
-        # 按速度降序排列（速度越高越好）
-        items.sort(key=lambda x: x["speed_kbps"], reverse=True)
+        items.sort(key=lambda x: x["avg_ms"])
         lines.append(f"#{country}")
         for idx, it in enumerate(items, 1):
             org_part = it["org"] if it["org"] and it["org"] != "未知" else ""
-            spd = speed_label(it["speed_kbps"])
             if org_part:
-                label = f"{country}-{idx:03d}-{org_part}-{spd}"
+                label = f"{country}-{idx:03d}-{org_part}"
             else:
-                label = f"{country}-{idx:03d}-{spd}"
+                label = f"{country}-{idx:03d}"
             lines.append(f"{it['addr']}#{label}")
             total += 1
         lines.append("")
@@ -552,9 +481,9 @@ def save_output(passed):
 # ================== 主程序 ==================
 
 def main():
-    print(f"🚀 全自动筛选+测速+映射：{TEST_HOST}{TEST_PATH}", flush=True)
-    print(f"   白名单状态码: {sorted(ALLOWED_CODES)}", flush=True)
-    print(f"   最低合格速度: {MIN_SPEED_KBPS} KB/s  |  并发: {MAX_WORKERS}", flush=True)
+    print(f"🚀 全自动筛选+映射：{TEST_HOST}{TEST_PATH}", flush=True)
+    print(f"   白名单状态码: {sorted(ALLOWED_CODES)}，WS ping/pong 验证，延迟不考核", flush=True)
+    print(f"   并发: {MAX_WORKERS}", flush=True)
     proxies = read_csv()
     if not proxies:
         return
@@ -578,11 +507,6 @@ def main():
     print(f"\n📊 总计 {len(proxies)} | ✅ 通过 {len(passed)} | ❌ 淘汰 {failed}", flush=True)
 
     if passed:
-        # 打印速度排行榜
-        top = sorted(passed, key=lambda x: x["speed_kbps"], reverse=True)[:10]
-        print("\n🏆 速度 Top 10:")
-        for i, it in enumerate(top, 1):
-            print(f"  {i:2d}. {it['addr']:<30} {speed_label(it['speed_kbps']):>10}  延迟={it['avg_ms']:.0f}ms", flush=True)
         save_output(passed)
     else:
         print("❌ 无节点通过", flush=True)
