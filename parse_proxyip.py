@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Cloudflare ProxyIP 筛选 - 全自动版（筛选+映射）
-- HTTP 连通性 + WebSocket 握手（ping/pong 验证连接真实存活）
-- 状态码白名单，延迟不考核
-- 自动查询地理位置（带限速，防封）
+Cloudflare ProxyIP 筛选 - 全自动版（筛选+映射+下载验证）
+- HTTP 连通性 + WebSocket 验证 + HTTPS 实际下载验证
+- 状态码白名单，最低速度不达标自动淘汰
+- 自动通过多个 IP 接口查询地理位置（带限速，防封）
 - 输出带国家/运营商标签的节点列表
 """
 
@@ -15,7 +15,6 @@ import time
 import json
 import socket
 import statistics
-import threading
 import urllib.request
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -29,9 +28,10 @@ TEST_HOST = "cloudflare.snippets1.dpdns.org"
 TEST_PATH = "/?ed=2560"
 TEST_UUID = "362cbd17-f2d0-4b37-8d2c-10a2a45ddefc"
 
-WS_TIMEOUT      = 6         # WebSocket ping/pong 超时秒数
-
+MAX_AVG_LATENCY = 9000
+MAX_JITTER      = 9000
 LATENCY_ROUNDS  = 1
+
 CONNECT_TIMEOUT = 5
 REQ_TIMEOUT     = 6
 MAX_WORKERS     = 30
@@ -39,7 +39,13 @@ MAX_WORKERS     = 30
 DEFAULT_PORTS   = [443, 80]
 ALLOWED_CODES   = {101, 200, 301, 302, 403}
 
-GEO_MIN_INTERVAL = 1.5     # 地理位置接口限速（秒）
+# 下载验证配置（HTTPS 实际拉文件测速）
+SPEED_TEST_URL = "https://speed.cloudflare.com/__down?bytes=102400"  # 100KB
+MIN_SPEED_KBPS = 50       # 最低合格速度 KB/s（低于此值淘汰）
+SPEED_TIMEOUT  = 10       # 下载超时秒数
+
+# 接口限速（秒）
+GEO_MIN_INTERVAL = 1.5
 
 # ================== 工具函数 ==================
 
@@ -130,18 +136,22 @@ def http_connectivity_measure(ip, port):
         return ok, lat, detail
     return False, 9999, detail
 
-# ================== WebSocket 验证（握手 + ping/pong） ==================
-
-def test_websocket(ip, port) -> bool:
-    """
-    WS 握手成功后发送 ping 帧，等待 pong 回包。
-    比单纯检查 101 状态码更可靠：确认连接双向存活。
-    """
+def test_websocket(ip, port, timeout=5):
     family = socket.AF_INET6 if ":" in ip else socket.AF_INET
+    req = (
+        f"GET {TEST_PATH} HTTP/1.1\r\n"
+        f"Host: {TEST_HOST}\r\n"
+        f"Upgrade: websocket\r\n"
+        f"Connection: Upgrade\r\n"
+        f"User-Agent: Clash/1.18.0\r\n"
+        f"Sec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==\r\n"
+        f"Sec-WebSocket-Version: 13\r\n"
+        f"Sec-WebSocket-Protocol: {TEST_UUID}\r\n\r\n"
+    ).encode()
 
-    def _attempt(use_tls):
+    def _try(use_tls):
         s = socket.socket(family, socket.SOCK_STREAM)
-        s.settimeout(WS_TIMEOUT)
+        s.settimeout(timeout)
         try:
             if use_tls:
                 ctx = ssl.create_default_context()
@@ -149,57 +159,104 @@ def test_websocket(ip, port) -> bool:
                 ctx.verify_mode = ssl.CERT_NONE
                 s = ctx.wrap_socket(s, server_hostname=TEST_HOST)
             s.connect((ip, port))
-
-            # Step 1: WS 握手
-            ws_req = (
-                f"GET {TEST_PATH} HTTP/1.1\r\n"
-                f"Host: {TEST_HOST}\r\n"
-                f"Upgrade: websocket\r\n"
-                f"Connection: Upgrade\r\n"
-                f"User-Agent: Clash/1.18.0\r\n"
-                f"Sec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==\r\n"
-                f"Sec-WebSocket-Version: 13\r\n"
-                f"Sec-WebSocket-Protocol: {TEST_UUID}\r\n\r\n"
-            ).encode()
-            s.sendall(ws_req)
-
+            s.sendall(req)
             resp = b""
             while b"\r\n\r\n" not in resp:
                 chunk = s.recv(1024)
                 if not chunk:
-                    return False
+                    break
                 resp += chunk
-
-            if b"101" not in resp.split(b"\r\n")[0]:
+            s.close()
+            if not resp:
                 return False
-
-            # Step 2: 发 WS ping 帧（opcode=0x89，无 payload）
-            # 客户端发送需要 masking（RFC 6455 要求）
-            import os as _os
-            mask = _os.urandom(4)
-            ping_frame = bytes([0x89, 0x80]) + mask  # fin=1,opcode=9,masked,len=0
-            s.sendall(ping_frame)
-
-            # Step 3: 等待 pong（opcode=0x0A）
-            s.settimeout(3)
-            pong = s.recv(16)
-            if not pong:
-                return False
-            opcode = pong[0] & 0x0F
-            return opcode == 0x0A  # 0x0A = pong
-
-        except socket.timeout:
-            # 超时：握手可能通了但 pong 没回，也算失败
-            return False
+            line = resp.split(b"\r\n")[0].decode(errors="ignore")
+            return line.startswith("HTTP/1.1 101")
         except Exception:
             return False
-        finally:
-            try:
-                s.close()
-            except:
-                pass
 
-    return _attempt(True) or _attempt(False)
+    return _try(True) or _try(False)
+
+# ================== HTTPS 下载验证（实际拉取文件） ==================
+
+def download_speed_test(ip, port):
+    """
+    通过 HTTPS 下载一个文件，返回 (速度 kbps, 首字节延迟 ms)
+    失败返回 (0.0, 9999.0)
+    """
+    family = socket.AF_INET6 if ":" in ip else socket.AF_INET
+    # 解析测速 URL 得到主机和路径
+    # 固定使用 speed.cloudflare.com:443，路径 /__down?bytes=102400
+    speed_host = "speed.cloudflare.com"
+    speed_port = 443
+    speed_path = "/__down?bytes=102400"
+
+    req = (
+        f"GET {speed_path} HTTP/1.1\r\n"
+        f"Host: {speed_host}\r\n"
+        f"User-Agent: Clash/1.18.0\r\n"
+        f"Connection: close\r\n\r\n"
+    ).encode()
+
+    s = socket.socket(family, socket.SOCK_STREAM)
+    s.settimeout(SPEED_TIMEOUT)
+    try:
+        # TLS 包装
+        ctx = ssl.create_default_context()
+        ctx.check_hostname = False
+        ctx.verify_mode = ssl.CERT_NONE
+        tls_sock = ctx.wrap_socket(s, server_hostname=speed_host)
+        tls_sock.connect((ip, port))   # 通过 ProxyIP 连接到 speed.cloudflare.com:443
+        t0 = time.perf_counter()
+        tls_sock.sendall(req)
+
+        # 读取响应头，找到 body 起始位置
+        response = b""
+        header_end = -1
+        while header_end == -1:
+            chunk = tls_sock.recv(8192)
+            if not chunk:
+                break
+            response += chunk
+            header_end = response.find(b"\r\n\r\n")
+        if header_end == -1:
+            return 0.0, 9999.0
+
+        # 解析状态码
+        first_line = response.split(b"\r\n")[0].decode(errors="ignore")
+        if "200" not in first_line:
+            return 0.0, 9999.0
+
+        # 记录首字节时间（实际收到第一个字节的时刻）
+        # 这里简单用收到 header 结束的时间近似
+        ttfb = (time.perf_counter() - t0) * 1000
+
+        # 继续读取 body 剩余部分
+        body = response[header_end+4:]
+        received = len(body)
+        while received < 112640 and time.perf_counter() - t0 < SPEED_TIMEOUT:
+            try:
+                chunk = tls_sock.recv(8192)
+                if not chunk:
+                    break
+                body += chunk
+                received += len(chunk)
+            except socket.timeout:
+                break
+
+        elapsed = time.perf_counter() - t0
+        if received < 20480 or elapsed < 0.05:   # 至少收到 20KB
+            return 0.0, ttfb
+
+        speed_kbps = (received / 1024) / elapsed
+        return round(speed_kbps, 1), round(ttfb, 1)
+
+    except Exception:
+        return 0.0, 9999.0
+    finally:
+        try:
+            s.close()
+        except:
+            pass
 
 # ================== 单节点筛选 ==================
 
@@ -209,48 +266,48 @@ def filter_one(addr, region):
     best = None
 
     for ip, port in candidates:
-        # Step 1: TCP 连通
         if not tcp_ok(ip, port):
             print(f"  ✗ {addr} TCP 不通", flush=True)
             continue
 
-        # Step 2: HTTP 连通性 + 延迟采样
         samples = []
-        http_failed = False
         for rnd in range(LATENCY_ROUNDS):
             ok, lat, info = http_connectivity_measure(ip, port)
             if ok:
                 samples.append(lat)
             else:
-                print(f"  ✗ {addr} HTTP 失败: {info}", flush=True)
-                http_failed = True
+                print(f"  ✗ {addr} 第{rnd+1}轮 HTTP 失败: {info}", flush=True)
                 break
             time.sleep(0.05)
+        else:
+            avg = statistics.mean(samples)
 
-        if http_failed or not samples:
+            if not test_websocket(ip, port):
+                print(f"  ✗ {addr} HTTP 通过但 WebSocket 失败", flush=True)
+                continue
+
+            # ----- 新增：HTTPS 下载验证 -----
+            speed_kbps, ttfb = download_speed_test(ip, port)
+            if speed_kbps < MIN_SPEED_KBPS:
+                print(f"  ✗ {addr} 下载速度不足: {speed_kbps:.0f} KB/s < {MIN_SPEED_KBPS} KB/s", flush=True)
+                continue
+
+            print(f"  ✓ {addr} 验证通过 (延迟={avg:.0f}ms, 速度={speed_kbps:.0f}KB/s)", flush=True)
+            r = {
+                "addr": addr, "ip": ip, "port": port,
+                "avg_ms": round(avg, 1),
+                "speed_kbps": speed_kbps,   # 内部用，输出时不显示
+                "region": region
+            }
+            if best is None or speed_kbps > best["speed_kbps"]:
+                best = r
             continue
-
-        avg_lat = statistics.mean(samples)
-
-        # Step 3: WebSocket 握手 + ping/pong 验证
-        if not test_websocket(ip, port):
-            print(f"  ✗ {addr} WebSocket ping/pong 失败", flush=True)
-            continue
-
-        print(f"  ✓ {addr} 延迟={avg_lat:.0f}ms  WS ping/pong 通过", flush=True)
-
-        r = {
-            "addr": addr, "ip": ip, "port": port,
-            "avg_ms": round(avg_lat, 1),
-            "region": region,
-        }
-        if best is None or avg_lat < best["avg_ms"]:
-            best = r
+        continue
 
     if best:
         return {"pass": True, **best}
     else:
-        print(f"  ✗ {addr} 所有端口淘汰", flush=True)
+        print(f"  ✗ {addr} 所有端口不可用", flush=True)
         return {"pass": False, "addr": addr, "region": region}
 
 # ================== CSV 读取（去重） ==================
@@ -266,13 +323,13 @@ def read_csv():
     proxies = []
     seen = set()
     for row in reader:
-        if str(row.get("success", "")).upper() != "TRUE":
+        if str(row.get("success","")).upper() != "TRUE":
             continue
-        ip = row.get("input", "").strip()
+        ip = row.get("input","").strip()
         if not ip or ip in seen:
             continue
         seen.add(ip)
-        loc = row.get("location", "").strip()
+        loc = row.get("location","").strip()
         region = loc.split("(")[0].strip() if loc else "未知"
         proxies.append((ip, region))
     print(f"📊 候选 {len(proxies)} 个（已去重）", flush=True)
@@ -320,14 +377,13 @@ COUNTRY_MAP = {
     "NI": "尼加拉瓜", "NE": "尼日尔", "NG": "尼日利亚", "MK": "北马其顿",
     "OM": "阿曼", "PW": "帕劳", "PS": "巴勒斯坦", "PA": "巴拿马",
     "PG": "巴布亚新几内亚", "PY": "巴拉圭", "PE": "秘鲁", "QA": "卡塔尔",
-    "RW": "卢旺达", "KN": "圣基茨和尼维斯", "LC": "圣卢西亚",
-    "VC": "圣文森特和格林纳丁斯", "WS": "萨摩亚", "SM": "圣马力诺",
-    "ST": "圣多美和普林西比", "SN": "塞内加尔", "RS": "塞尔维亚",
-    "SC": "塞舌尔", "SL": "塞拉利昂", "SK": "斯洛伐克", "SI": "斯洛文尼亚",
-    "SB": "所罗门群岛", "SO": "索马里", "SS": "南苏丹", "LK": "斯里兰卡",
-    "SD": "苏丹", "SR": "苏里南", "SY": "叙利亚", "TJ": "塔吉克斯坦",
-    "TZ": "坦桑尼亚", "TL": "东帝汶", "TG": "多哥", "TO": "汤加",
-    "TT": "特立尼达和多巴哥", "TN": "突尼斯", "TM": "土库曼斯坦",
+    "RW": "卢旺达", "KN": "圣基茨和尼维斯", "LC": "圣卢西亚", "VC": "圣文森特和格林纳丁斯",
+    "WS": "萨摩亚", "SM": "圣马力诺", "ST": "圣多美和普林西比", "SN": "塞内加尔",
+    "RS": "塞尔维亚", "SC": "塞舌尔", "SL": "塞拉利昂", "SK": "斯洛伐克",
+    "SI": "斯洛文尼亚", "SB": "所罗门群岛", "SO": "索马里", "SS": "南苏丹",
+    "LK": "斯里兰卡", "SD": "苏丹", "SR": "苏里南", "SY": "叙利亚",
+    "TJ": "塔吉克斯坦", "TZ": "坦桑尼亚", "TL": "东帝汶", "TG": "多哥",
+    "TO": "汤加", "TT": "特立尼达和多巴哥", "TN": "突尼斯", "TM": "土库曼斯坦",
     "TV": "图瓦卢", "UG": "乌干达", "UY": "乌拉圭", "UZ": "乌兹别克斯坦",
     "VU": "瓦努阿图", "VA": "梵蒂冈", "VE": "委内瑞拉", "YE": "也门",
     "ZM": "赞比亚", "ZW": "津巴布韦",
@@ -339,15 +395,14 @@ ORG_MAP = {
     "google": "谷歌云", "microsoft": "Azure", "azure": "Azure",
     "cloudflare": "Cloudflare", "alibaba": "阿里云", "tencent": "腾讯云",
     "huawei": "华为云", "ibm": "IBM云",
-    "comcast": "康卡斯特", "verizon": "威瑞森电信", "at&t": "AT&T",
-    "spectrum": "特许通讯", "vodafone": "沃达丰",
-    "hinet": "中华电信", "chunghwa": "中华电信", "twm": "台湾大哥大",
-    "fareastone": "远传电信", "sk telecom": "SK电信", "kt corp": "韩国电信",
-    "lg uplus": "LG U+", "hkbn": "香港宽频", "hkt": "香港电讯", "pccw": "香港电讯",
-    "digitalocean": "机房", "linode": "机房", "vultr": "机房", "ovh": "机房",
-    "hetzner": "机房", "serverius": "机房", "m247": "机房", "cogent": "机房",
-    "zenlayer": "机房", "choopa": "机房", "leaseweb": "机房",
-    "fdcservers": "FDC机房", "ctgserver": "CTG机房",
+    "comcast": "康卡斯特", "verizon": "威瑞森电信", "at&t": "AT&T", "spectrum": "特许通讯",
+    "vodafone": "沃达丰",
+    "hinet": "中华电信", "chunghwa": "中华电信", "twm": "台湾大哥大", "fareastone": "远传电信",
+    "sk telecom": "SK电信", "kt corp": "韩国电信", "lg uplus": "LG U+",
+    "hkbn": "香港宽频", "hkt": "香港电讯", "pccw": "香港电讯",
+    "digitalocean": "机房", "linode": "机房", "vultr": "机房", "ovh": "机房", "hetzner": "机房",
+    "serverius": "机房", "m247": "机房", "cogent": "机房", "zenlayer": "机房", "choopa": "机房",
+    "leaseweb": "机房", "fdcservers": "FDC机房", "ctgserver": "CTG机房",
     "private customer": "家宽", "private": "家宽", "customer": "家宽",
     "charter": "Spectrum", "frontier": "Frontier", "sky digital": "Sky",
     "sk broadband": "SK宽带", "korea telecom": "韩国电信", "sony network": "So-net",
@@ -357,16 +412,13 @@ ORG_MAP = {
     "veesp": "机房", "sakura": "机房", "pittqiao": "机房",
     "fomo crew": "机房", "emagine": "机房", "dromatics": "机房",
     "digital united": "机房", "akile": "机房", "akari": "机房",
-    "a.i.p. italia": "机房", "enterprise": "企宽", "cake home": "家宽",
+    "a.i.p. italia": "机房", "enterprise": "企宽", "cake home": "家宽"
 }
 
 def org_cn(org):
-    if not org:
-        return "未知"
-    lo = org.lower()
-    for k, v in ORG_MAP.items():
-        if k in lo:
-            return v
+    if not org: return "未知"
+    for k,v in ORG_MAP.items():
+        if k in org.lower(): return v
     return org
 
 def load_geo_cache():
@@ -400,13 +452,13 @@ def query_ip_info(ip_str, cache, lock, last_req):
         last_req[0] = time.time()
 
     country, org = "未知", "未知"
-
+    
     data = fetch_json(f"https://ipwho.is/{ip_only}")
     if data and data.get("success"):
         cc = data.get("country_code", "")
         country = COUNTRY_MAP.get(cc, data.get("country", cc or "未知"))
         org = org_cn(data.get("connection", {}).get("isp", ""))
-
+    
     if country == "未知":
         data = fetch_json(f"https://freeipapi.com/api/json/{ip_only}")
         if data:
@@ -427,17 +479,21 @@ def query_ip_info(ip_str, cache, lock, last_req):
 
 def geo_enrich(passed):
     cache = load_geo_cache()
-    lock = threading.Lock()
+    lock = __import__('threading').Lock()
     last_req = [0.0]
 
-    uncached = [it["ip"] for it in passed
-                if it["ip"].split(":")[0] not in cache]
+    uncached = []
+    for it in passed:
+        ip_only = it["ip"].split(":")[0]
+        if ip_only not in cache:
+            uncached.append(it["ip"])
 
-    if uncached:
-        print(f"🌍 查询 {len(uncached)} 个新 IP 地理位置（限速 {GEO_MIN_INTERVAL}s/次）...", flush=True)
+    total_uncached = len(uncached)
+    if total_uncached > 0:
+        print(f"🌍 开始查询 {total_uncached} 个新 IP 的地理位置（限速 {GEO_MIN_INTERVAL}s/次）...", flush=True)
         for i, ip_str in enumerate(uncached, 1):
             ip_only, country, org = query_ip_info(ip_str, cache, lock, last_req)
-            print(f"  🌍 [{i}/{len(uncached)}] {ip_only} → {country} / {org}", flush=True)
+            print(f"  🌍 [{i}/{total_uncached}] {ip_only} → {country} / {org}", flush=True)
         save_geo_cache(cache)
 
     groups = defaultdict(list)
@@ -451,7 +507,6 @@ def geo_enrich(passed):
             "org": org,
             "avg_ms": it["avg_ms"],
         })
-
     return groups
 
 # ================== 输出 ==================
@@ -462,7 +517,7 @@ def save_output(passed):
     lines = []
     total = 0
     for country, items in sorted(groups.items()):
-        items.sort(key=lambda x: x["avg_ms"])
+        items.sort(key=lambda x: x["avg_ms"])   # 按延迟排序
         lines.append(f"#{country}")
         for idx, it in enumerate(items, 1):
             org_part = it["org"] if it["org"] and it["org"] != "未知" else ""
@@ -481,9 +536,8 @@ def save_output(passed):
 # ================== 主程序 ==================
 
 def main():
-    print(f"🚀 全自动筛选+映射：{TEST_HOST}{TEST_PATH}", flush=True)
-    print(f"   白名单状态码: {sorted(ALLOWED_CODES)}，WS ping/pong 验证，延迟不考核", flush=True)
-    print(f"   并发: {MAX_WORKERS}", flush=True)
+    print(f"🚀 全自动筛选+映射，包含下载验证（最低 {MIN_SPEED_KBPS} KB/s）", flush=True)
+    print(f"   白名单状态码: {sorted(ALLOWED_CODES)}，403 需 CF 头", flush=True)
     proxies = read_csv()
     if not proxies:
         return
@@ -505,7 +559,6 @@ def main():
                 print(f"  ⚠ 异常 [{futs[future]}]: {e}", flush=True)
 
     print(f"\n📊 总计 {len(proxies)} | ✅ 通过 {len(passed)} | ❌ 淘汰 {failed}", flush=True)
-
     if passed:
         save_output(passed)
     else:
