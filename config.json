@@ -10,6 +10,16 @@
         "prefer_region": "辽宁"
     },
     {
+        "name": "瑞士Swisscom组播",
+        "fofa_query": "server=\"udpxy\" && country=\"CH\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_m3u": "iptv.m3u",
+        "output_m3u": "iptv.m3u",
+        "require_domain": true,
+        "test_udp": "239.186.68.242:10000",
+        "prefer_region": "瑞士"
+    },
+     {
         "name": "瑞士init7-tv7组播",
         "fofa_query": "server=\"udpxy\" && country=\"CH\"",
         "target_repo": "badboys88888/IPTV",
@@ -506,7 +516,7 @@
     },
     {
         "name": "上海电信[A]",
-        "fofa_query": "server=\"udpxy\" && region=\"Shanghai\" && is_domain=true",
+        "fofa_query": "server=\"udpxy\" && region=\"Shanghai\"",
         "target_repo": "badboys88888/IPTV",
         "target_txt": "shiptv.txt",
         "target_m3u": "shiptv.m3u",
