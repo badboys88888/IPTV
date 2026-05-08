@@ -27,7 +27,7 @@ async def worker(queue, results):
         queue.task_done()
 
 async def main():
-    if not os.path.exists('ip.txt'): return
+    if not os.path.exists('scan/ip.txt'): return
     
     tasks = []
     with open("ip.txt", "r") as f:
