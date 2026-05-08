@@ -1,36 +1,57 @@
-name: Auto Port Scanner
+name: Auto Port and Interface Scanner
 
+# 触发条件
 on:
   schedule:
-    - cron: '0 0 * * *'  # 每天自动运行
-  workflow_dispatch:      # 支持手动触发
+    - cron: '0 0 * * *'  # 每天凌晨自动运行
+  workflow_dispatch:      # 支持手动点击按钮立即运行
 
+# 任务配置
 jobs:
   build:
     runs-on: ubuntu-latest
+    
+    # 给予读写权限，否则无法提交 scan/useful_proxies.txt
+    permissions:
+      contents: write
+      
     steps:
+      # 1. 拉取仓库代码
       - name: Checkout code
         uses: actions/checkout@v3
 
+      # 2. 安装 Python 环境
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
 
-      # --- 关键修改处 ---
+      # 3. 安装必要的第三方库 (aiohttp)
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install aiohttp
+
+      # 4. 执行扫描脚本
       - name: Run Scanner
         run: |
+          # 确保 scan 文件夹存在，并运行脚本
           mkdir -p scan
           python scan/scanner.py
 
+      # 5. 检查生成的文件并提交回仓库
       - name: Commit results
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          # 如果没有生成文件，创建一个空的，防止报错
-          touch scan/results.txt
-          git add scan/results.txt
-          git commit -m "Update scan results" || exit 0
-          git push
-
-
+          
+          # 检查文件是否存在，防止 git add 报错
+          if [ -f "scan/useful_proxies.txt" ]; then
+            git add scan/useful_proxies.txt
+            # 只有在有变动时才 commit，防止 workflow 报错
+            git commit -m "自动更新：已检测到可用的落地 IP 列表" || echo "没有检测到新的变动"
+            git push
+          else
+            echo "错误：未发现结果文件 scan/useful_proxies.txt"
+            exit 1
+          fi
