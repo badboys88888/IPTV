@@ -24,9 +24,9 @@ INPUT_FILE  = "proxyip/results.csv"
 OUTPUT_FILE = "proxyip_output.txt"
 CACHE_FILE  = "ip_cache.json"
 
-TEST_HOST = "test1.trojanspace.online"
+TEST_HOST = "cloudflare.snippets1.dpdns.org"
 TEST_PATH = "/?ed=2560"
-TEST_UUID = "65ff6a03-96cf-4020-b3b5-a18491fddf3b"
+TEST_UUID = "362cbd17-f2d0-4b37-8d2c-10a2a45ddefc"
 
 MAX_AVG_LATENCY = 9000
 MAX_JITTER      = 9000
