@@ -26,7 +26,7 @@
         "target_m3u": "iptv.m3u",
         "output_m3u": "iptv.m3u",
         "require_domain": true,
-        "test_udp": "229.58.190.121:5000",
+        "test_udp": "229.58.190.30:5000",
         "prefer_region": "黑龙江"
     },
     {
