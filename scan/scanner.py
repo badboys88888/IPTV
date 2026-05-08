@@ -47,7 +47,7 @@ async def main():
 
     await asyncio.gather(*workers)
 
-    with open("results.txt", "w") as f:
+    with open("scan/results.txt", "w") as f:
         for r in results: f.write(r + "\n")
 
 if __name__ == "__main__":
