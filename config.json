@@ -168,7 +168,7 @@
         "target_m3u": "iptv.m3u",
         "output_m3u": "iptv.m3u",
         "require_domain": true,
-        "test_udp": "225.1.101.1:7523",
+        "test_udp": "225.1.101.41:7523",
         "prefer_region": "广东"
     },
 
