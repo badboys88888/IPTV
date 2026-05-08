@@ -161,6 +161,16 @@
         "test_udp": "239.10.0.45:1025",
         "prefer_region": "广东"
     },
+     {
+        "name": "珠江宽频组播",
+        "fofa_query": "server=\"udpxy\" && region=\"Guangdong\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_m3u": "iptv.m3u",
+        "output_m3u": "iptv.m3u",
+        "require_domain": true,
+        "test_udp": "225.1.101.1:7523",
+        "prefer_region": "广东"
+    },
 
     {
         "name": "广东频道[A]",
