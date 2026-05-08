@@ -4,7 +4,7 @@ import os
 import random
 
 # === 配置区 ===
-TARGET_PORTS = [443, 8443, 8080, 2053, 2083, 2096]
+TARGET_PORTS = [443, 8443, 8080, 2053, 2083, 2096, 10076, 12755]
 CONCURRENCY = 1000  # GitHub Actions 性能强，可以开到 1000
 MAX_IPS_PER_NET = 512  # 每个网段最多随机抽取的 IP 数量，防止死磕大网段
 TIMEOUT = 1.5       # 超时时间
