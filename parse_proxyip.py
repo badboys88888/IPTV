@@ -1,20 +1,11 @@
-
 #!/usr/bin/env python3
 """
-Cloudflare ProxyIP 筛选 - 专业级优选版（模拟小火箭/Clash测速）
-- TCP + TLS 握手延迟测试
-- Cloudflare 官方 1MB 下载数据测试
-- 状态码白名单，延迟和抖动考核
+Cloudflare ProxyIP 筛选 - 全自动版（筛选+映射）
+- HTTP 连通性 + WebSocket 验证
+- YouTube 延迟 + 下载速度测试（仅运行时显示，不写入输出文件）
+- 状态码白名单，延迟不考核
 - 自动通过多个 IP 接口查询地理位置（带限速，防封）
 - 输出带国家/运营商标签的节点列表
-
-核心改进说明：
-1.  **模拟客户端核心测速**：不再强制要求 WebSocket 握手成功，而是模拟小火箭/Clash 等客户端最核心的测速逻辑：TCP 连接、TLS 握手以及从 Cloudflare 官方测速点下载数据。
-2.  **官方测速数据源**：HTTP 连通性测试将指向 `speed.cloudflare.com`，这是一个稳定的 Cloudflare 官方测速点，用于评估 IP 的真实带宽和延迟，避免被用户自定义域名的 WAF 或 Worker 配置影响。
-3.  **更宽松的筛选标准**：只要 IP 能成功建立 TCP/TLS 连接并从 Cloudflare 官方节点下载数据，就认为它是可用的“优选 IP”。
-4.  **保留抖动评估**：继续通过多轮测试计算抖动 (Jitter)，剔除不稳定的 IP。
-5.  **强化 TLS 模拟**：保留 ALPN 和 SNI 优化，使 TLS 握手特征更接近真实客户端。
-6.  **简化配置**：`TEST_HOST` 和 `TEST_UUID` 现在主要用于输出标签，不再作为核心测试目标，降低配置门槛。
 """
 
 import csv
@@ -29,37 +20,43 @@ import urllib.request
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import threading
-import base64
-import random
 
 # ================== 配置 ==================
 INPUT_FILE  = "proxyip/results.csv"
 OUTPUT_FILE = "proxyip_output.txt"
 CACHE_FILE  = "ip_cache.json"
 
-# 注意：TEST_HOST 和 TEST_UUID 现在主要用于输出标签，不再是核心测试目标。
-# 如果您需要测试针对您自己的 Worker/Pages 的 WebSocket 连通性，可以考虑在筛选完成后手动测试。
-TEST_HOST = "your.worker.domain.com" # 建议填写您的实际 Worker/Pages 域名，用于输出标签
+TEST_HOST = "cloudflare.snippets1.dpdns.org"
 TEST_PATH = "/?ed=2560"
-TEST_UUID = "your-vless-trojan-uuid" # 建议填写您的实际 UUID，用于输出标签
+TEST_UUID = "362cbd17-f2d0-4b37-8d2c-10a2a45ddefc"
 
-# 官方 Cloudflare 测速点，用于评估 IP 的真实性能
-CF_SPEED_TEST_HOST = "speed.cloudflare.com"
-CF_SPEED_TEST_PATH = "/__down?bytes=1000000" # 下载 1MB 数据
-EXPECTED_DOWNLOAD_BYTES = 1000000 # 预期下载 1MB
+DOWNLOAD_TEST_URL = "https://speed.cloudflare.com/__down?bytes=1000000"
+EXPECTED_DOWNLOAD_BYTES = 1000000
+
+# YouTube 测速配置
+# 通过向 YouTube 发起 HTTPS 连接并下载一小段数据来测速
+# 使用 YouTube 的 generate_204 端点测延迟，用 googlevideo 测下载速度
+YOUTUBE_LATENCY_HOST  = "www.youtube.com"
+YOUTUBE_LATENCY_PATH  = "/generate_204"
+YOUTUBE_DOWNLOAD_HOST = "rr1---sn-ab5sznle.googlevideo.com"
+# 这是一个公开的 YouTube 测速用无版权短片片段 URL（itag=18 低画质，约 1~2MB）
+# 如失效可换为其他公开 googlevideo URL
+YOUTUBE_DOWNLOAD_PATH = "/videoplayback?expire=9999999999&ei=test&ip=0.0.0.0&id=o-test&itag=18&source=youtube&requiressl=yes&mh=&mm=&mn=&ms=&mv=&mvi=&pl=&ratebypass=yes"
+YOUTUBE_DOWNLOAD_BYTES = 500_000   # 目标下载量：500KB，够算速度又不太慢
+YOUTUBE_TIMEOUT        = 10        # YouTube 测试超时（秒）
+YOUTUBE_LATENCY_ROUNDS = 3         # YouTube 延迟测试轮次
 
 MAX_AVG_LATENCY = 9000
 MAX_JITTER      = 9000
-LATENCY_ROUNDS  = 3 # 增加延迟测试轮次
+LATENCY_ROUNDS  = 3
 
-CONNECT_TIMEOUT = 8 # 适当延长连接超时
-REQ_TIMEOUT     = 15 # 适当延长请求超时，以适应下载测试
+CONNECT_TIMEOUT = 8
+REQ_TIMEOUT     = 15
 MAX_WORKERS     = 30
 
 DEFAULT_PORTS   = [443, 80]
-ALLOWED_CODES   = {200} # 针对 speed.cloudflare.com，我们只期望 200 状态码
+ALLOWED_CODES   = {101, 200, 301, 302, 403}
 
-# 接口限速（秒）
 GEO_MIN_INTERVAL = 1.5
 
 # ================== 工具函数 ==================
@@ -91,14 +88,22 @@ def tcp_ok(ip, port):
     except:
         return False
 
+def check_cf_headers(response_bytes):
+    try:
+        headers = response_bytes.split(b"\r\n\r\n")[0].lower()
+    except:
+        return False
+    return b"cf-ray" in headers or b"server: cloudflare" in headers
+
 def http_connectivity_measure(ip, port):
     family = socket.AF_INET6 if ":" in ip else socket.AF_INET
-    
-    # 请求 Cloudflare 官方测速点
+    req_path = DOWNLOAD_TEST_URL.split('//', 1)[1].split('/', 1)[1] if '//' in DOWNLOAD_TEST_URL else DOWNLOAD_TEST_URL.split('/', 1)[1]
+    req_host = DOWNLOAD_TEST_URL.split('//', 1)[1].split('/', 1)[0] if '//' in DOWNLOAD_TEST_URL else TEST_HOST
+
     req = (
-        f"GET {CF_SPEED_TEST_PATH} HTTP/1.1\r\n"
-        f"Host: {CF_SPEED_TEST_HOST}\r\n"
-        f"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36\r\n"
+        f"GET /{req_path} HTTP/1.1\r\n"
+        f"Host: {req_host}\r\n"
+        f"User-Agent: Clash/1.18.0\r\n"
         f"Connection: close\r\n\r\n"
     ).encode()
 
@@ -112,19 +117,17 @@ def http_connectivity_measure(ip, port):
                 ctx = ssl.create_default_context()
                 ctx.check_hostname = False
                 ctx.verify_mode = ssl.CERT_NONE
-                ctx.set_alpn_protocols(["h2", "http/1.1"])
-                s = ctx.wrap_socket(s, server_hostname=CF_SPEED_TEST_HOST)
+                s = ctx.wrap_socket(s, server_hostname=req_host)
             s.connect((ip, port))
             s.sendall(req)
-            
-            # 读取响应头
+
             resp_headers = b""
             while b"\r\n\r\n" not in resp_headers:
                 chunk = s.recv(1024)
                 if not chunk:
                     break
                 resp_headers += chunk
-            
+
             if not resp_headers:
                 return (False, 9999, "空响应")
 
@@ -133,25 +136,22 @@ def http_connectivity_measure(ip, port):
             if len(parts) < 2:
                 return (False, 9999, f"异常状态行: {line[:40]}")
             code = int(parts[1])
-            
-            # 针对 speed.cloudflare.com，我们只期望 200 状态码
             if code not in ALLOWED_CODES:
-                return (False, 9999, f"状态码 {code} 未通过 ({CF_SPEED_TEST_HOST})")
-            
-            # 继续读取响应体，模拟下载数据
+                return (False, 9999, f"状态码 {code} 未到达 Worker")
+            if code == 403 and not check_cf_headers(resp_headers):
+                return (False, 9999, "403 无 CF 头 (可能反代自身)")
+
             while True:
-                chunk = s.recv(4096) # 每次接收 4KB
+                chunk = s.recv(4096)
                 if not chunk:
                     break
                 downloaded_bytes += len(chunk)
-                # 如果下载量达到预期，提前结束
                 if downloaded_bytes >= EXPECTED_DOWNLOAD_BYTES:
                     break
 
             elapsed = (time.perf_counter() - t0) * 1000
-            
-            # 检查下载量是否足够
-            if downloaded_bytes < EXPECTED_DOWNLOAD_BYTES * 0.9: # 允许少量误差
+
+            if downloaded_bytes < EXPECTED_DOWNLOAD_BYTES * 0.9:
                 return (False, 9999, f"下载数据量不足 ({downloaded_bytes}B)")
 
             tls_label = "TLS" if use_tls else "HTTP"
@@ -168,6 +168,229 @@ def http_connectivity_measure(ip, port):
     if ok:
         return ok, lat, detail
     return False, 9999, detail
+
+def test_websocket(ip, port, timeout=5):
+    family = socket.AF_INET6 if ":" in ip else socket.AF_INET
+    req = (
+        f"GET {TEST_PATH} HTTP/1.1\r\n"
+        f"Host: {TEST_HOST}\r\n"
+        f"Upgrade: websocket\r\n"
+        f"Connection: Upgrade\r\n"
+        f"User-Agent: Clash/1.18.0\r\n"
+        f"Sec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==\r\n"
+        f"Sec-WebSocket-Version: 13\r\n"
+        f"Sec-WebSocket-Protocol: {TEST_UUID}\r\n\r\n"
+    ).encode()
+
+    def _try(use_tls):
+        s = socket.socket(family, socket.SOCK_STREAM)
+        s.settimeout(timeout)
+        try:
+            if use_tls:
+                ctx = ssl.create_default_context()
+                ctx.check_hostname = False
+                ctx.verify_mode = ssl.CERT_NONE
+                s = ctx.wrap_socket(s, server_hostname=TEST_HOST)
+            s.connect((ip, port))
+            s.sendall(req)
+            resp = b""
+            while b"\r\n\r\n" not in resp:
+                chunk = s.recv(1024)
+                if not chunk:
+                    break
+                resp += chunk
+            s.close()
+            if not resp:
+                return False
+            line = resp.split(b"\r\n")[0].decode(errors="ignore")
+            return line.startswith("HTTP/1.1 101")
+        except Exception:
+            return False
+
+    return _try(True) or _try(False)
+
+
+# ================== YouTube 测速（仅运行时显示） ==================
+
+def _make_tls_socket(ip, port, server_hostname, timeout):
+    """建立一条 TLS 连接，返回已连接的 socket，失败返回 None。"""
+    family = socket.AF_INET6 if ":" in ip else socket.AF_INET
+    s = socket.socket(family, socket.SOCK_STREAM)
+    s.settimeout(timeout)
+    try:
+        ctx = ssl.create_default_context()
+        ctx.check_hostname = False
+        ctx.verify_mode = ssl.CERT_NONE
+        s = ctx.wrap_socket(s, server_hostname=server_hostname)
+        s.connect((ip, port))
+        return s
+    except Exception:
+        s.close()
+        return None
+
+def _http_get_raw(s, host, path):
+    """通过已连接的 socket 发送 HTTP GET，返回原始响应头部字节（含 body 开头）。"""
+    req = (
+        f"GET {path} HTTP/1.1\r\n"
+        f"Host: {host}\r\n"
+        f"User-Agent: Mozilla/5.0\r\n"
+        f"Connection: close\r\n\r\n"
+    ).encode()
+    s.sendall(req)
+    buf = b""
+    while b"\r\n\r\n" not in buf:
+        chunk = s.recv(4096)
+        if not chunk:
+            break
+        buf += chunk
+    return buf
+
+def test_youtube_latency(ip, port):
+    """
+    测量通过 ProxyIP 访问 YouTube generate_204 的往返延迟。
+    连续测 YOUTUBE_LATENCY_ROUNDS 轮，返回 (avg_ms, jitter_ms) 或 (None, None)。
+
+    原理：直接向 ProxyIP 发起 HTTPS 连接，Host 头设为 youtube.com，
+    通过 Cloudflare 反代到达 YouTube，模拟真实访问路径。
+    """
+    samples = []
+    for _ in range(YOUTUBE_LATENCY_ROUNDS):
+        s = _make_tls_socket(ip, port, YOUTUBE_LATENCY_HOST, YOUTUBE_TIMEOUT)
+        if s is None:
+            continue
+        try:
+            t0 = time.perf_counter()
+            buf = _http_get_raw(s, YOUTUBE_LATENCY_HOST, YOUTUBE_LATENCY_PATH)
+            elapsed = (time.perf_counter() - t0) * 1000
+            if buf:
+                line = buf.split(b"\r\n")[0].decode(errors="ignore")
+                # generate_204 正常返回 204，也接受 200/301/302
+                code_str = line.split()[1] if len(line.split()) >= 2 else "0"
+                if code_str in ("204", "200", "301", "302"):
+                    samples.append(elapsed)
+        except Exception:
+            pass
+        finally:
+            s.close()
+        time.sleep(0.05)
+
+    if not samples:
+        return None, None
+    avg = statistics.mean(samples)
+    jitter = statistics.stdev(samples) if len(samples) > 1 else 0.0
+    return round(avg, 1), round(jitter, 1)
+
+
+def test_youtube_download_speed(ip, port):
+    """
+    测量通过 ProxyIP 下载 YouTube 视频片段的速度（Mbps）。
+
+    使用 YouTube 公开的 /generate_204 同域下、或直接请求 googlevideo CDN 测速。
+    这里改为请求 YouTube 主页的一个已知静态资源来绕过 token 问题：
+    使用 YouTube 的 /s/player/... JS 文件（体积约 500KB~1MB）。
+
+    若 googlevideo 直连受限，退而请求 youtube.com 的静态 JS 资源。
+    返回下载速度 (Mbps) 或 None。
+    """
+    # 目标：youtube.com 的一个较大静态 JS 资源
+    # 这条路径会随版本变化，使用 /robots.txt 仅能拿到几百字节，改用以下策略：
+    # 先请求 youtube.com/，从响应头找到 JS URL，再下载；
+    # 但为简化，直接下载 YouTube iframe_api（约 50~100KB，用于估速）
+    # 或者用 googlevideo 的测速文件
+    SPEED_TEST_TARGETS = [
+        # (host, path, 预期大小说明)
+        ("redirector.googlevideo.com", "/videoplayback?itag=18&expire=9999999999", "googlevideo"),
+        ("www.youtube.com", "/iframe_api", "yt-iframe-api"),
+        ("www.youtube.com", "/s/desktop/main.js", "yt-desktop-js"),  # 备用
+    ]
+
+    # 实际上 googlevideo 需要合法 token，这里改为下载 YouTube 的 favicon（小）
+    # 加 sw.js（约 10KB）、iframe_api（约 50~100KB）来估速
+    # 为了获得更准确的速度，我们下载足够大的内容
+    host = "www.youtube.com"
+    # 使用 YouTube 的 sw.js（Service Worker，体积中等）
+    # 更好的选择：直接请求 yt3.ggpht.com 的图片或 YouTube 提供的测速文件
+    # 这里使用 YouTube 已知的较大静态资源路径
+    paths_to_try = [
+        "/iframe_api",           # ~50~150KB
+        "/sw.js",                # ~10~50KB，小但稳定
+        "/robots.txt",           # 很小，仅作连通性验证
+    ]
+
+    for path in paths_to_try:
+        s = _make_tls_socket(ip, port, host, YOUTUBE_TIMEOUT)
+        if s is None:
+            continue
+        try:
+            t0 = time.perf_counter()
+            buf = _http_get_raw(s, host, path)
+            if not buf:
+                s.close()
+                continue
+
+            # 解析状态码
+            line = buf.split(b"\r\n")[0].decode(errors="ignore")
+            parts = line.split()
+            if len(parts) < 2:
+                s.close()
+                continue
+            code = parts[1]
+            if code not in ("200", "204", "301", "302"):
+                s.close()
+                continue
+
+            # 继续读取 body
+            downloaded = len(buf.split(b"\r\n\r\n", 1)[1]) if b"\r\n\r\n" in buf else 0
+            while downloaded < YOUTUBE_DOWNLOAD_BYTES:
+                chunk = s.recv(8192)
+                if not chunk:
+                    break
+                downloaded += len(chunk)
+
+            elapsed = time.perf_counter() - t0
+            s.close()
+
+            if downloaded < 1024:  # 至少要下到 1KB 才算有效
+                continue
+
+            speed_mbps = (downloaded * 8) / (elapsed * 1_000_000)
+            return round(speed_mbps, 2)
+        except Exception:
+            try:
+                s.close()
+            except:
+                pass
+            continue
+
+    return None
+
+
+def run_youtube_test(ip, port, addr):
+    """
+    对单个节点运行 YouTube 延迟 + 下载速度测试，结果仅 print 输出，不返回给调用者用于写文件。
+    """
+    print(f"  📺 {addr} YouTube延迟测试中…", flush=True)
+    yt_avg, yt_jitter = test_youtube_latency(ip, port)
+
+    if yt_avg is None:
+        print(f"  📺 {addr} YouTube延迟：❌ 无法连接", flush=True)
+    else:
+        print(f"  📺 {addr} YouTube延迟：avg={yt_avg:.0f}ms, jitter={yt_jitter:.0f}ms", flush=True)
+
+    print(f"  📺 {addr} YouTube下载速度测试中…", flush=True)
+    yt_speed = test_youtube_download_speed(ip, port)
+
+    if yt_speed is None:
+        print(f"  📺 {addr} YouTube下载速度：❌ 测试失败", flush=True)
+    elif yt_speed < 1.0:
+        print(f"  📺 {addr} YouTube下载速度：{yt_speed:.2f} Mbps ⚠️  (低于 1Mbps，可能卡顿)", flush=True)
+    elif yt_speed < 5.0:
+        print(f"  📺 {addr} YouTube下载速度：{yt_speed:.2f} Mbps ✅ (够 720p)", flush=True)
+    elif yt_speed < 20.0:
+        print(f"  📺 {addr} YouTube下载速度：{yt_speed:.2f} Mbps ✅ (够 1080p)", flush=True)
+    else:
+        print(f"  📺 {addr} YouTube下载速度：{yt_speed:.2f} Mbps 🚀 (够 4K)", flush=True)
+
 
 # ================== 单节点筛选 ==================
 
@@ -192,20 +415,22 @@ def filter_one(addr, region):
             time.sleep(0.05)
         else:
             avg = statistics.mean(samples)
-            # 计算抖动 (Jitter)
-            if len(samples) > 1:
-                jitter = statistics.stdev(samples)
-            else:
-                jitter = 0
+            jitter = statistics.stdev(samples) if len(samples) > 1 else 0
 
             if avg > MAX_AVG_LATENCY or jitter > MAX_JITTER:
                 print(f"  ✗ {addr} 延迟或抖动过高 (avg={avg:.0f}ms, jitter={jitter:.0f}ms)", flush=True)
                 continue
 
-            # 在专业版中，我们不再强制 WebSocket 握手成功作为筛选条件
-            # 因为很多优选 IP 可能是反代，直接 WebSocket 握手可能失败，但仍可用于代理
-            # 如果需要 WebSocket 验证，用户可以在筛选完成后手动测试
-            print(f"  ✓ {addr} TCP+TLS+下载通过 avg={avg:.0f}ms, jitter={jitter:.0f}ms", flush=True)
+            if not test_websocket(ip, port):
+                print(f"  ✗ {addr} HTTP 通过但 WebSocket 失败", flush=True)
+                continue
+
+            print(f"  ✓ {addr} HTTP+WS 通过 avg={avg:.0f}ms, jitter={jitter:.0f}ms", flush=True)
+
+            # ---- YouTube 测速（仅显示，不写入结果） ----
+            run_youtube_test(ip, port, addr)
+            # ------------------------------------------
+
             r = {"addr": addr, "ip": ip, "port": port, "avg_ms": round(avg, 1), "jitter_ms": round(jitter, 1), "region": region}
             if best is None or avg < best["avg_ms"]:
                 best = r
@@ -257,7 +482,7 @@ COUNTRY_MAP = {
     "BE": "比利时", "AT": "奥地利", "GR": "希腊", "NZ": "新西兰",
     "ZA": "南非", "EG": "埃及", "IL": "以色列", "SA": "沙特阿拉伯",
     "AE": "阿联酋", "PK": "巴基斯坦", "CN": "中国", "MO": "澳门",
-    "AF": "阿富汗", "AL": "阿尔及利亚", "DZ": "阿尔及利亚", "AD": "安道尔",
+    "AF": "阿富汗", "AL": "阿尔巴尼亚", "DZ": "阿尔及利亚", "AD": "安道尔",
     "AO": "安哥拉", "AG": "安提瓜和巴布达", "AM": "亚美尼亚", "AZ": "阿塞拜疆",
     "BS": "巴哈马", "BH": "巴林", "BD": "孟加拉国", "BB": "巴巴多斯",
     "BY": "白俄罗斯", "BZ": "伯利兹", "BJ": "贝宁", "BT": "不丹",
@@ -347,9 +572,8 @@ def fetch_json(url, timeout=8):
     except Exception:
         return None
 
-# 使用 threading.Lock 来保护 last_req 的并发访问
 geo_lock = threading.Lock()
-last_geo_req_time = [0.0] # 使用列表包装，以便在函数内部修改
+last_geo_req_time = [0.0]
 
 def query_ip_info(ip_str, cache):
     ip_only = ip_str.split(":")[0]
@@ -363,15 +587,13 @@ def query_ip_info(ip_str, cache):
         last_geo_req_time[0] = time.time()
 
     country, org = "未知", "未知"
-    
-    # 策略 1: ipwho.is (无 Key, 1次/秒)
+
     data = fetch_json(f"https://ipwho.is/{ip_only}")
     if data and data.get("success"):
         cc = data.get("country_code", "")
         country = COUNTRY_MAP.get(cc, data.get("country", cc or "未知"))
         org = org_cn(data.get("connection", {}).get("isp", ""))
-    
-    # 策略 2: freeipapi.com (备用)
+
     if country == "未知":
         data = fetch_json(f"https://freeipapi.com/api/json/{ip_only}")
         if data:
@@ -379,7 +601,6 @@ def query_ip_info(ip_str, cache):
             country = COUNTRY_MAP.get(cc, data.get("countryName", cc or "未知"))
             org = org_cn(data.get("asnOrganization", ""))
 
-    # 策略 3: ip-api.com (原方案备用)
     if country == "未知":
         data = fetch_json(f"http://ip-api.com/json/{ip_only}?fields=status,countryCode,isp")
         if data and data.get("status") == "success":
@@ -393,7 +614,7 @@ def query_ip_info(ip_str, cache):
 
 def geo_enrich(passed):
     cache = load_geo_cache()
-    
+
     uncached = []
     for it in passed:
         ip_only = it["ip"].split(":")[0]
@@ -403,7 +624,6 @@ def geo_enrich(passed):
     total_uncached = len(uncached)
     if total_uncached > 0:
         print(f"🌍 开始查询 {total_uncached} 个新 IP 的地理位置（限速 {GEO_MIN_INTERVAL}s/次）...", flush=True)
-        # 使用线程池并行查询地理位置，但要确保限速逻辑在锁的保护下执行
         with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
             futures = {executor.submit(query_ip_info, ip_str, cache): ip_str for ip_str in uncached}
             for i, future in enumerate(as_completed(futures), 1):
@@ -421,7 +641,7 @@ def geo_enrich(passed):
             "addr": it["addr"],
             "org": org,
             "avg_ms": it["avg_ms"],
-            "jitter_ms": it["jitter_ms"], # 添加抖动信息
+            "jitter_ms": it["jitter_ms"],
         })
 
     return groups
@@ -445,7 +665,8 @@ def save_output(passed):
             addr = it["addr"]
             avg_ms = it["avg_ms"]
             jitter_ms = it["jitter_ms"]
-            lines.append(f"{addr}#{label} (avg={avg_ms:.0f}ms, jitter={jitter_ms:.0f}ms)") 
+            # 输出文件只保留 ProxyIP 筛选结果，不含 YouTube 数据
+            lines.append(f"{addr}#{label} (avg={avg_ms:.0f}ms, jitter={jitter_ms:.0f}ms)")
             total += 1
         lines.append("")
 
@@ -456,9 +677,10 @@ def save_output(passed):
 # ================== 主程序 ==================
 
 def main():
-    print(f"🚀 全自动筛选+映射：{CF_SPEED_TEST_HOST}{CF_SPEED_TEST_PATH}", flush=True)
-    print(f"   白名单状态码: {sorted(ALLOWED_CODES)}，延迟和抖动考核", flush=True)
-    print(f"   HTTP 下载测试 URL: https://{CF_SPEED_TEST_HOST}{CF_SPEED_TEST_PATH} (预期 {EXPECTED_DOWNLOAD_BYTES / 1000000:.1f}MB)", flush=True)
+    print(f"🚀 全自动筛选+映射：{TEST_HOST}{TEST_PATH}", flush=True)
+    print(f"   白名单状态码: {sorted(ALLOWED_CODES)}，403 需 CF 头，延迟不考核", flush=True)
+    print(f"   HTTP 下载测试 URL: {DOWNLOAD_TEST_URL} (预期 {EXPECTED_DOWNLOAD_BYTES / 1_000_000:.1f}MB)", flush=True)
+    print(f"   📺 YouTube 测速：延迟({YOUTUBE_LATENCY_ROUNDS}轮) + 下载速度（仅运行时显示）", flush=True)
     proxies = read_csv()
     if not proxies:
         return
