@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 """
 Cloudflare ProxyIP 筛选 - 全自动版（筛选+映射）
@@ -6,12 +5,6 @@ Cloudflare ProxyIP 筛选 - 全自动版（筛选+映射）
 - 状态码白名单，延迟不考核
 - 自动通过多个 IP 接口查询地理位置（带限速，防封）
 - 输出带国家/运营商标签的节点列表
-
-改进说明：
-1. 增加 HTTP 下载数据量测试：在 HTTP 连通性测试中，尝试下载一定量的数据，以模拟真实使用场景下的数据传输能力。
-2. 增加延迟测试轮次：将 LATENCY_ROUNDS 增加到 3，以获取更稳定的延迟平均值，并引入抖动（Jitter）评估，淘汰不稳定的 IP。
-3. 调整超时时间：适当延长 REQ_TIMEOUT 和 CONNECT_TIMEOUT，以适应更长的下载测试。
-4. 修复了 f-string 中不能包含反斜杠的语法错误。
 """
 
 import csv
@@ -25,7 +18,6 @@ import statistics
 import urllib.request
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
-import threading
 
 # ================== 配置 ==================
 INPUT_FILE  = "proxyip/results.csv"
@@ -36,16 +28,12 @@ TEST_HOST = "cloudflare.snippets1.dpdns.org"
 TEST_PATH = "/?ed=2560"
 TEST_UUID = "362cbd17-f2d0-4b37-8d2c-10a2a45ddefc"
 
-# 增加下载数据量测试的 URL 和预期大小
-DOWNLOAD_TEST_URL = "https://speed.cloudflare.com/__down?bytes=1000000" # 1MB 文件
-EXPECTED_DOWNLOAD_BYTES = 1000000 # 预期下载 1MB
-
 MAX_AVG_LATENCY = 9000
 MAX_JITTER      = 9000
-LATENCY_ROUNDS  = 3 # 增加延迟测试轮次
+LATENCY_ROUNDS  = 1
 
-CONNECT_TIMEOUT = 8 # 适当延长连接超时
-REQ_TIMEOUT     = 15 # 适当延长请求超时，以适应下载测试
+CONNECT_TIMEOUT = 5
+REQ_TIMEOUT     = 6
 MAX_WORKERS     = 30
 
 DEFAULT_PORTS   = [443, 80]
@@ -92,13 +80,9 @@ def check_cf_headers(response_bytes):
 
 def http_connectivity_measure(ip, port):
     family = socket.AF_INET6 if ":" in ip else socket.AF_INET
-    # 修改为下载测试 URL
-    req_path = DOWNLOAD_TEST_URL.split('//', 1)[1].split('/', 1)[1] if '//' in DOWNLOAD_TEST_URL else DOWNLOAD_TEST_URL.split('/', 1)[1]
-    req_host = DOWNLOAD_TEST_URL.split('//', 1)[1].split('/', 1)[0] if '//' in DOWNLOAD_TEST_URL else TEST_HOST
-
     req = (
-        f"GET /{req_path} HTTP/1.1\r\n"
-        f"Host: {req_host}\r\n"
+        f"GET {TEST_PATH} HTTP/1.1\r\n"
+        f"Host: {TEST_HOST}\r\n"
         f"User-Agent: Clash/1.18.0\r\n"
         f"Connection: close\r\n\r\n"
     ).encode()
@@ -106,56 +90,34 @@ def http_connectivity_measure(ip, port):
     def _try(use_tls):
         s = socket.socket(family, socket.SOCK_STREAM)
         t0 = time.perf_counter()
-        downloaded_bytes = 0
         try:
             s.settimeout(REQ_TIMEOUT)
             if use_tls:
                 ctx = ssl.create_default_context()
                 ctx.check_hostname = False
                 ctx.verify_mode = ssl.CERT_NONE
-                s = ctx.wrap_socket(s, server_hostname=req_host)
+                s = ctx.wrap_socket(s, server_hostname=TEST_HOST)
             s.connect((ip, port))
             s.sendall(req)
-            
-            # 读取响应头
-            resp_headers = b""
-            while b"\r\n\r\n" not in resp_headers:
+            resp = b""
+            while b"\r\n\r\n" not in resp:
                 chunk = s.recv(1024)
                 if not chunk:
                     break
-                resp_headers += chunk
-            
-            if not resp_headers:
+                resp += chunk
+            elapsed = (time.perf_counter() - t0) * 1000
+            if not resp:
                 return (False, 9999, "空响应")
-
-            line = resp_headers.split(b"\r\n")[0]
+            line = resp.split(b"\r\n")[0]
             parts = line.decode(errors="ignore").split()
             if len(parts) < 2:
                 return (False, 9999, f"异常状态行: {line[:40]}")
             code = int(parts[1])
             if code not in ALLOWED_CODES:
                 return (False, 9999, f"状态码 {code} 未到达 Worker")
-            if code == 403 and not check_cf_headers(resp_headers):
+            if code == 403 and not check_cf_headers(resp):
                 return (False, 9999, "403 无 CF 头 (可能反代自身)")
-            
-            # 继续读取响应体，模拟下载数据
-            while True:
-                chunk = s.recv(4096) # 每次接收 4KB
-                if not chunk:
-                    break
-                downloaded_bytes += len(chunk)
-                # 如果下载量达到预期，提前结束
-                if downloaded_bytes >= EXPECTED_DOWNLOAD_BYTES:
-                    break
-
-            elapsed = (time.perf_counter() - t0) * 1000
-            
-            # 检查下载量是否足够
-            if downloaded_bytes < EXPECTED_DOWNLOAD_BYTES * 0.9: # 允许少量误差
-                return (False, 9999, f"下载数据量不足 ({downloaded_bytes}B)")
-
-            tls_label = "TLS" if use_tls else "HTTP"
-            return (True, round(elapsed, 1), f"{tls_label} {code} ({downloaded_bytes}B)")
+            return (True, round(elapsed, 1), f"{'TLS' if use_tls else 'HTTP'} {code}")
         except Exception as e:
             return (False, 9999, str(e)[:50])
         finally:
@@ -232,22 +194,13 @@ def filter_one(addr, region):
             time.sleep(0.05)
         else:
             avg = statistics.mean(samples)
-            # 计算抖动 (Jitter)
-            if len(samples) > 1:
-                jitter = statistics.stdev(samples)
-            else:
-                jitter = 0
-
-            if avg > MAX_AVG_LATENCY or jitter > MAX_JITTER:
-                print(f"  ✗ {addr} 延迟或抖动过高 (avg={avg:.0f}ms, jitter={jitter:.0f}ms)", flush=True)
-                continue
 
             if not test_websocket(ip, port):
                 print(f"  ✗ {addr} HTTP 通过但 WebSocket 失败", flush=True)
                 continue
 
-            print(f"  ✓ {addr} HTTP+WS 通过 avg={avg:.0f}ms, jitter={jitter:.0f}ms", flush=True)
-            r = {"addr": addr, "ip": ip, "port": port, "avg_ms": round(avg, 1), "jitter_ms": round(jitter, 1), "region": region}
+            print(f"  ✓ {addr} HTTP+WS 通过 avg={avg:.0f}ms", flush=True)
+            r = {"addr": addr, "ip": ip, "port": port, "avg_ms": round(avg, 1), "region": region}
             if best is None or avg < best["avg_ms"]:
                 best = r
             continue
@@ -342,7 +295,8 @@ ORG_MAP = {
     "oracle": "甲骨文云", "oracle corporation": "甲骨文云",
     "amazon": "亚马逊云", "amazon.com": "亚马逊云", "aws": "亚马逊云",
     "google": "谷歌云", "microsoft": "Azure", "azure": "Azure",
-    "cloudflare": "Cloudflare", "alibaba": "阿里云",
+    "cloudflare": "Cloudflare", "alibaba": "阿里云", "tencent": "腾讯云",
+    "huawei": "华为云", "ibm": "IBM云",
     "comcast": "康卡斯特", "verizon": "威瑞森电信", "at&t": "AT&T", "spectrum": "特许通讯",
     "vodafone": "沃达丰",
     "hinet": "中华电信", "chunghwa": "中华电信", "twm": "台湾大哥大", "fareastone": "远传电信",
@@ -388,20 +342,16 @@ def fetch_json(url, timeout=8):
     except Exception:
         return None
 
-# 使用 threading.Lock 来保护 last_req 的并发访问
-geo_lock = threading.Lock()
-last_geo_req_time = [0.0] # 使用列表包装，以便在函数内部修改
-
-def query_ip_info(ip_str, cache):
+def query_ip_info(ip_str, cache, lock, last_req):
     ip_only = ip_str.split(":")[0]
-    with geo_lock:
+    with lock:
         if ip_only in cache:
             return ip_only, cache[ip_only]["country"], cache[ip_only]["org"]
         now = time.time()
-        wait = last_geo_req_time[0] + GEO_MIN_INTERVAL - now
+        wait = last_req[0] + GEO_MIN_INTERVAL - now
         if wait > 0:
             time.sleep(wait)
-        last_geo_req_time[0] = time.time()
+        last_req[0] = time.time()
 
     country, org = "未知", "未知"
     
@@ -428,13 +378,15 @@ def query_ip_info(ip_str, cache):
             country = COUNTRY_MAP.get(cc, cc or "未知")
             org = org_cn(data.get("isp", ""))
 
-    with geo_lock:
+    with lock:
         cache[ip_only] = {"country": country, "org": org}
     return ip_only, country, org
 
 def geo_enrich(passed):
     cache = load_geo_cache()
-    
+    lock = __import__('threading').Lock()
+    last_req = [0.0]
+
     uncached = []
     for it in passed:
         ip_only = it["ip"].split(":")[0]
@@ -444,12 +396,9 @@ def geo_enrich(passed):
     total_uncached = len(uncached)
     if total_uncached > 0:
         print(f"🌍 开始查询 {total_uncached} 个新 IP 的地理位置（限速 {GEO_MIN_INTERVAL}s/次）...", flush=True)
-        # 使用线程池并行查询地理位置，但要确保限速逻辑在锁的保护下执行
-        with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-            futures = {executor.submit(query_ip_info, ip_str, cache): ip_str for ip_str in uncached}
-            for i, future in enumerate(as_completed(futures), 1):
-                ip_only, country, org = future.result()
-                print(f"  🌍 [{i}/{total_uncached}] {ip_only} → {country} / {org}", flush=True)
+        for i, ip_str in enumerate(uncached, 1):
+            ip_only, country, org = query_ip_info(ip_str, cache, lock, last_req)
+            print(f"  🌍 [{i}/{total_uncached}] {ip_only} → {country} / {org}", flush=True)
         save_geo_cache(cache)
 
     groups = defaultdict(list)
@@ -462,7 +411,6 @@ def geo_enrich(passed):
             "addr": it["addr"],
             "org": org,
             "avg_ms": it["avg_ms"],
-            "jitter_ms": it["jitter_ms"], # 添加抖动信息
         })
 
     return groups
@@ -483,11 +431,7 @@ def save_output(passed):
                 label = f"{country}-{idx:03d}-{org_part}"
             else:
                 label = f"{country}-{idx:03d}"
-            # 修复 f-string 语法错误：避免在大括号内使用反斜杠
-            addr = it["addr"]
-            avg_ms = it["avg_ms"]
-            jitter_ms = it["jitter_ms"]
-            lines.append(f"{addr}#{label} (avg={avg_ms:.0f}ms, jitter={jitter_ms:.0f}ms)") 
+            lines.append(f"{it['addr']}#{label}")
             total += 1
         lines.append("")
 
@@ -500,7 +444,6 @@ def save_output(passed):
 def main():
     print(f"🚀 全自动筛选+映射：{TEST_HOST}{TEST_PATH}", flush=True)
     print(f"   白名单状态码: {sorted(ALLOWED_CODES)}，403 需 CF 头，延迟不考核", flush=True)
-    print(f"   HTTP 下载测试 URL: {DOWNLOAD_TEST_URL} (预期 {EXPECTED_DOWNLOAD_BYTES / 1000000:.1f}MB)", flush=True)
     proxies = read_csv()
     if not proxies:
         return
