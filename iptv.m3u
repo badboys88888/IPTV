@@ -35,6 +35,11 @@ https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/5sxuux529k/out/v1
 #KODIPROP:inputstream.adaptive.license_key=192b1115da041585c77200128549efa1:634e10efe4abbb14be400a3ccbac0258
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/pnu10tp36z/out/v1/912e9db56d75403b8a9ac0a719110f36/cenc.mpd
 
+#EXTINF:-1 tvg-id="NowSports4K1.hk" tvg-name="Now Sports 4K 1" tvg-logo="https://now.com" group-title="体育频道",Now Sports 4K 1
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=需要填写对应的KEY_ID:KEY
+https://pccw-live-cdn-01.akamaized.net/Content/DASH_VOS3/Live/channel(VOS_CH611)/manifest.mpd?hdntl=exp=1777801936~acl=%2f*~data=hdntl~hmac=7ea8eafd9b6c3092b82d07de8b2ad93d525edf1ef6356d7631ed77c85de06157
 
 #EXTINF:-1 group-title="珠江宽频组播",翡翠台标清拉伸
 http://192.168.1.1:4022/udp/225.1.101.41:7523
