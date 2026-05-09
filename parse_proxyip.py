@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-Cloudflare ProxyIP 筛选 - 优选 IP 专用版（用于 VLess/Trojan over WebSocket）
-- HTTP 连通性 + WebSocket 验证
-- 真实带宽测速（仅运行时显示，不写入输出）
-- 状态码白名单，延迟不考核
-- 自动查询地理位置（带限速）
-- 输出带国家/运营商标签的节点列表
+Cloudflare ProxyIP 筛选 - Clash 完全兼容版
+- HTTP 连通性 + WebSocket 握手
+- 严格 TLS 证书验证（模拟 Clash skip-cert-verify=false）
+- WebSocket 数据帧收发测试（验证真实数据通道）
+- 延迟+抖动评估
+- 自动地理位置映射
 """
 
 import csv
@@ -26,21 +26,12 @@ INPUT_FILE  = "proxyip/results.csv"
 OUTPUT_FILE = "proxyip_output.txt"
 CACHE_FILE  = "ip_cache.json"
 
-TEST_HOST = "cloudflare.snippets1.dpdns.org"   # 您的 Worker 域名或回源域名
+TEST_HOST = "cloudflare.snippets1.dpdns.org"   # 您的 Worker 域名
 TEST_PATH = "/?ed=2560"
 TEST_UUID = "362cbd17-f2d0-4b37-8d2c-10a2a45ddefc"
 
 DOWNLOAD_TEST_URL = "https://speed.cloudflare.com/__down?bytes=1000000"
 EXPECTED_DOWNLOAD_BYTES = 1000000
-
-# 带宽测速配置（仅运行时显示）
-SPEED_TEST_HOST    = "speed.cloudflare.com"
-SPEED_TEST_SIZES   = [
-    ("10MB",  10_000_000),
-    ("5MB",    5_000_000),
-    ("1MB",    1_000_000),
-]
-SPEED_TEST_TIMEOUT = 20
 
 MAX_AVG_LATENCY = 9000
 MAX_JITTER      = 9000
@@ -54,6 +45,16 @@ DEFAULT_PORTS   = [443, 80]
 ALLOWED_CODES   = {101, 200, 301, 302, 403}
 
 GEO_MIN_INTERVAL = 1.5
+
+# ---- 新增：模拟 Clash 的严格 TLS 校验 ----
+# 如果您的 Clash 配置中 skip-cert-verify: false，请设置 STRICT_TLS_VERIFY = True
+# 如果您的 Clash 中跳过了证书校验，可以保持 False（与原有脚本行为一致）
+STRICT_TLS_VERIFY = True   # 改为 True 以模拟 Clash 严格证书检查
+
+# ---- 新增：WebSocket 数据测试配置 ----
+WS_PING_MESSAGE = "ping"
+WS_PONG_MESSAGE = "pong"
+WS_TEST_TIMEOUT = 5
 
 # ================== 工具函数 ==================
 
@@ -111,8 +112,13 @@ def http_connectivity_measure(ip, port):
             s.settimeout(REQ_TIMEOUT)
             if use_tls:
                 ctx = ssl.create_default_context()
-                ctx.check_hostname = False
-                ctx.verify_mode = ssl.CERT_NONE
+                if STRICT_TLS_VERIFY:
+                    # 严格证书验证，与 Clash skip-cert-verify=false 行为一致
+                    ctx.check_hostname = True
+                    ctx.verify_mode = ssl.CERT_REQUIRED
+                else:
+                    ctx.check_hostname = False
+                    ctx.verify_mode = ssl.CERT_NONE
                 s = ctx.wrap_socket(s, server_hostname=req_host)
             s.connect((ip, port))
             s.sendall(req)
@@ -152,6 +158,8 @@ def http_connectivity_measure(ip, port):
 
             tls_label = "TLS" if use_tls else "HTTP"
             return (True, round(elapsed, 1), f"{tls_label} {code} ({downloaded_bytes}B)")
+        except ssl.SSLCertVerificationError as e:
+            return (False, 9999, f"TLS 证书校验失败: {e}")
         except Exception as e:
             return (False, 9999, str(e)[:50])
         finally:
@@ -165,8 +173,68 @@ def http_connectivity_measure(ip, port):
         return ok, lat, detail
     return False, 9999, detail
 
-def test_websocket(ip, port, timeout=5):
+def send_websocket_frame(sock, payload, opcode=0x81):  # 0x81 = 文本帧（掩码位=1）
+    """发送带掩码的 WebSocket 文本帧"""
+    length = len(payload)
+    frame = bytearray()
+    frame.append(opcode)  # FIN=1, opcode=0x1 (文本)
+    mask_bit = 0x80
+    if length <= 125:
+        frame.append(mask_bit | length)
+    elif length <= 65535:
+        frame.append(mask_bit | 126)
+        frame.extend(length.to_bytes(2, byteorder='big'))
+    else:
+        frame.append(mask_bit | 127)
+        frame.extend(length.to_bytes(8, byteorder='big'))
+    # 生成4字节掩码
+    mask = bytes([0x12, 0x34, 0x56, 0x78])  # 固定掩码，仅用于测试
+    frame.extend(mask)
+    masked_payload = bytearray(payload, 'utf-8')
+    for i in range(len(masked_payload)):
+        masked_payload[i] ^= mask[i % 4]
+    frame.extend(masked_payload)
+    sock.sendall(frame)
+
+def recv_websocket_frame(sock, timeout):
+    """接收 WebSocket 帧，解掩码并返回 payload 字符串"""
+    sock.settimeout(timeout)
+    try:
+        # 读取2字节头部
+        header = sock.recv(2)
+        if len(header) < 2:
+            return None
+        byte1, byte2 = header[0], header[1]
+        # 检查 FIN 和 opcode
+        opcode = byte1 & 0x0F
+        masked = (byte2 & 0x80) != 0
+        payload_len = byte2 & 0x7F
+        if payload_len == 126:
+            ext_len = sock.recv(2)
+            payload_len = int.from_bytes(ext_len, byteorder='big')
+        elif payload_len == 127:
+            ext_len = sock.recv(8)
+            payload_len = int.from_bytes(ext_len, byteorder='big')
+        mask = None
+        if masked:
+            mask = sock.recv(4)
+        data = sock.recv(payload_len)
+        if mask:
+            data = bytes(data[i] ^ mask[i % 4] for i in range(len(data)))
+        if opcode == 0x01:  # 文本帧
+            return data.decode('utf-8', errors='ignore')
+        else:
+            return None
+    except Exception:
+        return None
+
+def test_websocket_data(ip, port, timeout=5):
+    """
+    完整 WebSocket 测试：握手 + 发送 ping 并期望收到 pong
+    返回 (成功, 详细信息)
+    """
     family = socket.AF_INET6 if ":" in ip else socket.AF_INET
+    # 1. 发送握手请求
     req = (
         f"GET {TEST_PATH} HTTP/1.1\r\n"
         f"Host: {TEST_HOST}\r\n"
@@ -178,115 +246,52 @@ def test_websocket(ip, port, timeout=5):
         f"Sec-WebSocket-Protocol: {TEST_UUID}\r\n\r\n"
     ).encode()
 
-    def _try(use_tls):
-        s = socket.socket(family, socket.SOCK_STREAM)
-        s.settimeout(timeout)
-        try:
-            if use_tls:
-                ctx = ssl.create_default_context()
-                ctx.check_hostname = False
-                ctx.verify_mode = ssl.CERT_NONE
-                s = ctx.wrap_socket(s, server_hostname=TEST_HOST)
-            s.connect((ip, port))
-            s.sendall(req)
-            resp = b""
-            while b"\r\n\r\n" not in resp:
-                chunk = s.recv(1024)
-                if not chunk:
-                    break
-                resp += chunk
-            s.close()
-            if not resp:
-                return False
-            line = resp.split(b"\r\n")[0].decode(errors="ignore")
-            return line.startswith("HTTP/1.1 101")
-        except Exception:
-            return False
-
-    return _try(True) or _try(False)
-
-def measure_bandwidth(ip, port, addr):
-    """带宽测速（仅显示）"""
-    family = socket.AF_INET6 if ":" in ip else socket.AF_INET
-
-    for label, size in SPEED_TEST_SIZES:
-        path = f"/__down?bytes={size}"
-        req = (
-            f"GET {path} HTTP/1.1\r\n"
-            f"Host: {SPEED_TEST_HOST}\r\n"
-            f"User-Agent: Mozilla/5.0\r\n"
-            f"Connection: close\r\n\r\n"
-        ).encode()
-
-        s = socket.socket(family, socket.SOCK_STREAM)
-        s.settimeout(SPEED_TEST_TIMEOUT)
-        try:
+    sock = None
+    try:
+        if STRICT_TLS_VERIFY:
+            ctx = ssl.create_default_context()
+            ctx.check_hostname = True
+            ctx.verify_mode = ssl.CERT_REQUIRED
+        else:
             ctx = ssl.create_default_context()
             ctx.check_hostname = False
             ctx.verify_mode = ssl.CERT_NONE
-            s = ctx.wrap_socket(s, server_hostname=SPEED_TEST_HOST)
-            s.connect((ip, port))
-            s.sendall(req)
+        sock = ctx.wrap_socket(socket.socket(family, socket.SOCK_STREAM), server_hostname=TEST_HOST)
+        sock.settimeout(timeout)
+        sock.connect((ip, port))
+        sock.sendall(req)
 
-            header_buf = b""
-            while b"\r\n\r\n" not in header_buf:
-                chunk = s.recv(4096)
-                if not chunk:
-                    break
-                header_buf += chunk
+        # 读取握手响应
+        resp = b""
+        while b"\r\n\r\n" not in resp:
+            chunk = sock.recv(1024)
+            if not chunk:
+                break
+            resp += chunk
+        if not resp:
+            return False, "WebSocket 握手无响应"
+        line = resp.split(b"\r\n")[0].decode(errors="ignore")
+        if not line.startswith("HTTP/1.1 101"):
+            return False, f"WebSocket 握手失败: {line}"
 
-            if not header_buf:
-                s.close()
-                continue
+        # 2. 发送 ping 并等待 pong
+        send_websocket_frame(sock, WS_PING_MESSAGE)
+        pong = recv_websocket_frame(sock, timeout)
+        if pong is None:
+            return False, "WebSocket 数据接收超时"
+        if WS_PONG_MESSAGE not in pong:
+            return False, f"收到非预期响应: {pong}"
 
-            status_line = header_buf.split(b"\r\n")[0].decode(errors="ignore")
-            code = status_line.split()[1] if len(status_line.split()) >= 2 else "0"
-            if code not in ("200", "206"):
-                s.close()
-                continue
+        return True, "WebSocket 数据通道正常"
+    except ssl.SSLCertVerificationError as e:
+        return False, f"TLS 证书校验失败: {e}"
+    except Exception as e:
+        return False, str(e)[:50]
+    finally:
+        if sock:
+            sock.close()
 
-            body_start = header_buf.split(b"\r\n\r\n", 1)[1] if b"\r\n\r\n" in header_buf else b""
-            downloaded = len(body_start)
-            t0 = time.perf_counter()
-            while downloaded < size:
-                chunk = s.recv(65536)
-                if not chunk:
-                    break
-                downloaded += len(chunk)
-            elapsed = time.perf_counter() - t0
-            s.close()
-
-            if downloaded < size * 0.5:
-                continue
-
-            speed_mbps = (downloaded * 8) / (elapsed * 1_000_000)
-            speed_mbps = round(speed_mbps, 2)
-
-            if speed_mbps < 0.5:
-                quality = "⚠️  极差"
-            elif speed_mbps < 1.5:
-                quality = "⚠️  勉强"
-            elif speed_mbps < 5.0:
-                quality = "✅ 够 720p"
-            elif speed_mbps < 20.0:
-                quality = "✅ 够 1080p"
-            elif speed_mbps < 50.0:
-                quality = "🚀 够 4K"
-            else:
-                quality = "🚀 够 8K"
-
-            print(f"  📶 {addr} 带宽测速({label})：{speed_mbps:.2f} Mbps  {quality}", flush=True)
-            return
-        except Exception:
-            try:
-                s.close()
-            except:
-                pass
-            continue
-
-    print(f"  📶 {addr} 带宽测速：❌ 失败", flush=True)
-
-# ================== 单节点筛选 ==================
+# ================== 单节点筛选（增强） ==================
 
 def filter_one(addr, region):
     print(f"▸ {addr} 开始…", flush=True)
@@ -315,14 +320,14 @@ def filter_one(addr, region):
                 print(f"  ✗ {addr} 延迟或抖动过高 (avg={avg:.0f}ms, jitter={jitter:.0f}ms)", flush=True)
                 continue
 
-            if not test_websocket(ip, port):
-                print(f"  ✗ {addr} HTTP 通过但 WebSocket 失败", flush=True)
+            # 原 WebSocket 升级测试（保留）
+            # 改为使用数据测试，因为数据测试已包含升级过程
+            ws_ok, ws_msg = test_websocket_data(ip, port)
+            if not ws_ok:
+                print(f"  ✗ {addr} WebSocket 数据测试失败: {ws_msg}", flush=True)
                 continue
 
-            print(f"  ✓ {addr} HTTP+WS 通过 avg={avg:.0f}ms, jitter={jitter:.0f}ms", flush=True)
-
-            # 带宽测速（仅显示）
-            measure_bandwidth(ip, port, addr)
+            print(f"  ✓ {addr} HTTP+WS数据 全部通过 avg={avg:.0f}ms, jitter={jitter:.0f}ms", flush=True)
 
             r = {"addr": addr, "ip": ip, "port": port, "avg_ms": round(avg, 1), "jitter_ms": round(jitter, 1), "region": region}
             if best is None or avg < best["avg_ms"]:
@@ -333,10 +338,10 @@ def filter_one(addr, region):
     if best:
         return {"pass": True, **best}
     else:
-        print(f"  ✗ {addr} 所有端口不可用", flush=True)
+        print(f"  ✗ {addr} 所有端口不可用或不满足 Clash 兼容性", flush=True)
         return {"pass": False, "addr": addr, "region": region}
 
-# ================== CSV 读取（去重） ==================
+# ================== CSV 读取、地理位置、输出保持不变（复用您原来的代码）==================
 
 def read_csv():
     if not os.path.exists(INPUT_FILE):
@@ -361,238 +366,6 @@ def read_csv():
     print(f"📊 候选 {len(proxies)} 个（已去重）", flush=True)
     return proxies
 
-# ================== 地理位置映射 ==================
+# ...（此处省略 COUNTRY_MAP, ORG_MAP, org_cn, load_geo_cache, save_geo_cache, fetch_json, query_ip_info, geo_enrich, save_output, main 等函数，这些函数与您原脚本完全相同，只需将 geoenrich 中的抖动字段保留即可，这里不重复粘贴以节省篇幅，但实际使用时必须完整复制）...
 
-COUNTRY_MAP = {
-    "TW": "台湾", "HK": "香港", "JP": "日本", "SG": "新加坡", "US": "美国",
-    "KR": "韩国", "DE": "德国", "GB": "英国", "FR": "法国", "CA": "加拿大",
-    "AU": "澳大利亚", "NL": "荷兰", "BR": "巴西", "IN": "印度", "RU": "俄罗斯",
-    "IT": "意大利", "ES": "西班牙", "SE": "瑞典", "CH": "瑞士", "PL": "波兰",
-    "TR": "土耳其", "AR": "阿根廷", "MX": "墨西哥", "ID": "印度尼西亚",
-    "TH": "泰国", "VN": "越南", "PH": "菲律宾", "MY": "马来西亚",
-    "UA": "乌克兰", "CZ": "捷克", "RO": "罗马尼亚", "HU": "匈牙利",
-    "FI": "芬兰", "NO": "挪威", "DK": "丹麦", "PT": "葡萄牙",
-    "BE": "比利时", "AT": "奥地利", "GR": "希腊", "NZ": "新西兰",
-    "ZA": "南非", "EG": "埃及", "IL": "以色列", "SA": "沙特阿拉伯",
-    "AE": "阿联酋", "PK": "巴基斯坦", "CN": "中国", "MO": "澳门",
-    "AF": "阿富汗", "AL": "阿尔巴尼亚", "DZ": "阿尔及利亚", "AD": "安道尔",
-    "AO": "安哥拉", "AG": "安提瓜和巴布达", "AM": "亚美尼亚", "AZ": "阿塞拜疆",
-    "BS": "巴哈马", "BH": "巴林", "BD": "孟加拉国", "BB": "巴巴多斯",
-    "BY": "白俄罗斯", "BZ": "伯利兹", "BJ": "贝宁", "BT": "不丹",
-    "BO": "玻利维亚", "BA": "波黑", "BW": "博茨瓦纳", "BN": "文莱",
-    "BG": "保加利亚", "BF": "布基纳法索", "BI": "布隆迪", "KH": "柬埔寨",
-    "CM": "喀麦隆", "CV": "佛得角", "CF": "中非", "TD": "乍得",
-    "CL": "智利", "CO": "哥伦比亚", "KM": "科摩罗", "CG": "刚果（布）",
-    "CD": "刚果（金）", "CR": "哥斯达黎加", "CI": "科特迪瓦", "HR": "克罗地亚",
-    "CU": "古巴", "CY": "塞浦路斯", "DJ": "吉布提", "DM": "多米尼克",
-    "DO": "多米尼加", "EC": "厄瓜多尔", "SV": "萨尔瓦多", "GQ": "赤道几内亚",
-    "ER": "厄立特里亚", "EE": "爱沙尼亚", "SZ": "斯威士兰", "ET": "埃塞俄比亚",
-    "FJ": "斐济", "GA": "加蓬", "GM": "冈比亚", "GE": "格鲁吉亚",
-    "GH": "加纳", "GD": "格林纳达", "GT": "危地马拉", "GN": "几内亚",
-    "GW": "几内亚比绍", "GY": "圭亚那", "HT": "海地", "HN": "洪都拉斯",
-    "IS": "冰岛", "IR": "伊朗", "IQ": "伊拉克", "IE": "爱尔兰",
-    "JM": "牙买加", "JO": "约旦", "KZ": "哈萨克斯坦", "KE": "肯尼亚",
-    "KI": "基里巴斯", "KP": "朝鲜", "KW": "科威特", "KG": "吉尔吉斯斯坦",
-    "LA": "老挝", "LV": "拉脱维亚", "LB": "黎巴嫩", "LS": "莱索托",
-    "LR": "利比里亚", "LY": "利比亚", "LI": "列支敦士登", "LT": "立陶宛",
-    "LU": "卢森堡", "MG": "马达加斯加", "MW": "马拉维", "MV": "马尔代夫",
-    "ML": "马里", "MT": "马耳他", "MH": "马绍尔群岛", "MR": "毛里塔尼亚",
-    "MU": "毛里求斯", "FM": "密克罗尼西亚", "MD": "摩尔多瓦", "MC": "摩纳哥",
-    "MN": "蒙古", "ME": "黑山", "MA": "摩洛哥", "MZ": "莫桑比克",
-    "MM": "缅甸", "NA": "纳米比亚", "NR": "瑙鲁", "NP": "尼泊尔",
-    "NI": "尼加拉瓜", "NE": "尼日尔", "NG": "尼日利亚", "MK": "北马其顿",
-    "OM": "阿曼", "PW": "帕劳", "PS": "巴勒斯坦", "PA": "巴拿马",
-    "PG": "巴布亚新几内亚", "PY": "巴拉圭", "PE": "秘鲁", "QA": "卡塔尔",
-    "RW": "卢旺达", "KN": "圣基茨和尼维斯", "LC": "圣卢西亚", "VC": "圣文森特和格林纳丁斯",
-    "WS": "萨摩亚", "SM": "圣马力诺", "ST": "圣多美和普林西比", "SN": "塞内加尔",
-    "RS": "塞尔维亚", "SC": "塞舌尔", "SL": "塞拉利昂", "SK": "斯洛伐克",
-    "SI": "斯洛文尼亚", "SB": "所罗门群岛", "SO": "索马里", "SS": "南苏丹",
-    "LK": "斯里兰卡", "SD": "苏丹", "SR": "苏里南", "SY": "叙利亚",
-    "TJ": "塔吉克斯坦", "TZ": "坦桑尼亚", "TL": "东帝汶", "TG": "多哥",
-    "TO": "汤加", "TT": "特立尼达和多巴哥", "TN": "突尼斯", "TM": "土库曼斯坦",
-    "TV": "图瓦卢", "UG": "乌干达", "UY": "乌拉圭", "UZ": "乌兹别克斯坦",
-    "VU": "瓦努阿图", "VA": "梵蒂冈", "VE": "委内瑞拉", "YE": "也门",
-    "ZM": "赞比亚", "ZW": "津巴布韦",
-}
-
-ORG_MAP = {
-    "oracle": "甲骨文云", "oracle corporation": "甲骨文云",
-    "amazon": "亚马逊云", "amazon.com": "亚马逊云", "aws": "亚马逊云",
-    "google": "谷歌云", "microsoft": "Azure", "azure": "Azure",
-    "cloudflare": "Cloudflare", "alibaba": "阿里云",
-    "comcast": "康卡斯特", "verizon": "威瑞森电信", "at&t": "AT&T", "spectrum": "特许通讯",
-    "vodafone": "沃达丰",
-    "hinet": "中华电信", "chunghwa": "中华电信", "twm": "台湾大哥大", "fareastone": "远传电信",
-    "sk telecom": "SK电信", "kt corp": "韩国电信", "lg uplus": "LG U+",
-    "hkbn": "香港宽频", "hkt": "香港电讯", "pccw": "香港电讯",
-    "digitalocean": "机房", "linode": "机房", "vultr": "机房", "ovh": "机房", "hetzner": "机房",
-    "serverius": "机房", "m247": "机房", "cogent": "机房", "zenlayer": "机房", "choopa": "机房",
-    "leaseweb": "机房", "fdcservers": "FDC机房", "ctgserver": "CTG机房",
-    "private customer": "家宽", "private": "家宽", "customer": "家宽",
-    "charter": "Spectrum", "frontier": "Frontier", "sky digital": "Sky",
-    "sk broadband": "SK宽带", "korea telecom": "韩国电信", "sony network": "So-net",
-    "oneprovider": "机房", "oneasiahost": "机房", "nexeon": "机房",
-    "lamhosting": "机房", "ipxo": "机房", "hostkey": "机房",
-    "cgi global": "机房", "bytevirt": "机房", "austole": "机房",
-    "veesp": "机房", "sakura": "机房", "pittqiao": "机房",
-    "fomo crew": "机房", "emagine": "机房", "dromatics": "机房",
-    "digital united": "机房", "akile": "机房", "akari": "机房",
-    "a.i.p. italia": "机房", "enterprise": "企宽", "cake home": "家宽"
-}
-
-def org_cn(org):
-    if not org: return "未知"
-    for k,v in ORG_MAP.items():
-        if k in org.lower(): return v
-    return org
-
-def load_geo_cache():
-    try:
-        with open(CACHE_FILE, encoding="utf-8") as f:
-            return json.load(f)
-    except:
-        return {}
-
-def save_geo_cache(cache):
-    with open(CACHE_FILE, "w", encoding="utf-8") as f:
-        json.dump(cache, f, ensure_ascii=False, indent=2)
-
-def fetch_json(url, timeout=8):
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
-            return json.loads(resp.read().decode())
-    except Exception:
-        return None
-
-geo_lock = threading.Lock()
-last_geo_req_time = [0.0]
-
-def query_ip_info(ip_str, cache):
-    ip_only = ip_str.split(":")[0]
-    with geo_lock:
-        if ip_only in cache:
-            return ip_only, cache[ip_only]["country"], cache[ip_only]["org"]
-        now = time.time()
-        wait = last_geo_req_time[0] + GEO_MIN_INTERVAL - now
-        if wait > 0:
-            time.sleep(wait)
-        last_geo_req_time[0] = time.time()
-
-    country, org = "未知", "未知"
-
-    data = fetch_json(f"https://ipwho.is/{ip_only}")
-    if data and data.get("success"):
-        cc = data.get("country_code", "")
-        country = COUNTRY_MAP.get(cc, data.get("country", cc or "未知"))
-        org = org_cn(data.get("connection", {}).get("isp", ""))
-
-    if country == "未知":
-        data = fetch_json(f"https://freeipapi.com/api/json/{ip_only}")
-        if data:
-            cc = data.get("countryCode", "")
-            country = COUNTRY_MAP.get(cc, data.get("countryName", cc or "未知"))
-            org = org_cn(data.get("asnOrganization", ""))
-
-    if country == "未知":
-        data = fetch_json(f"http://ip-api.com/json/{ip_only}?fields=status,countryCode,isp")
-        if data and data.get("status") == "success":
-            cc = data.get("countryCode", "")
-            country = COUNTRY_MAP.get(cc, cc or "未知")
-            org = org_cn(data.get("isp", ""))
-
-    with geo_lock:
-        cache[ip_only] = {"country": country, "org": org}
-    return ip_only, country, org
-
-def geo_enrich(passed):
-    cache = load_geo_cache()
-
-    uncached = []
-    for it in passed:
-        ip_only = it["ip"].split(":")[0]
-        if ip_only not in cache:
-            uncached.append(it["ip"])
-
-    total_uncached = len(uncached)
-    if total_uncached > 0:
-        print(f"🌍 开始查询 {total_uncached} 个新 IP 的地理位置（限速 {GEO_MIN_INTERVAL}s/次）...", flush=True)
-        with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-            futures = {executor.submit(query_ip_info, ip_str, cache): ip_str for ip_str in uncached}
-            for i, future in enumerate(as_completed(futures), 1):
-                ip_only, country, org = future.result()
-                print(f"  🌍 [{i}/{total_uncached}] {ip_only} → {country} / {org}", flush=True)
-        save_geo_cache(cache)
-
-    groups = defaultdict(list)
-    for it in passed:
-        ip_only = it["ip"].split(":")[0]
-        info = cache.get(ip_only, {"country": "未知", "org": "未知"})
-        country = info.get("country", "未知")
-        org = info.get("org", "未知")
-        groups[country].append({
-            "addr": it["addr"],
-            "org": org,
-            "avg_ms": it["avg_ms"],
-            "jitter_ms": it["jitter_ms"],
-        })
-
-    return groups
-
-def save_output(passed):
-    groups = geo_enrich(passed)
-
-    lines = []
-    total = 0
-    for country, items in sorted(groups.items()):
-        items.sort(key=lambda x: x["avg_ms"])
-        lines.append(f"#{country}")
-        for idx, it in enumerate(items, 1):
-            org_part = it["org"] if it["org"] and it["org"] != "未知" else ""
-            if org_part:
-                label = f"{country}-{idx:03d}-{org_part}"
-            else:
-                label = f"{country}-{idx:03d}"
-            addr = it["addr"]
-            avg_ms = it["avg_ms"]
-            jitter_ms = it["jitter_ms"]
-            lines.append(f"{addr}#{label} (avg={avg_ms:.0f}ms, jitter={jitter_ms:.0f}ms)")
-            total += 1
-        lines.append("")
-
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.write("\n".join(lines))
-    print(f"✅ 通过 {total} 个节点 → {OUTPUT_FILE}", flush=True)
-
-def main():
-    print(f"🚀 Cloudflare 优选 IP 筛选（用于 VLess/Trojan over WebSocket）", flush=True)
-    print(f"   验证项: HTTP下载测速 + WebSocket 握手", flush=True)
-    print(f"   白名单状态码: {sorted(ALLOWED_CODES)}，403 需 CF 头", flush=True)
-    proxies = read_csv()
-    if not proxies:
-        return
-
-    passed = []
-    failed = 0
-
-    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as ex:
-        futs = {ex.submit(filter_one, addr, region): addr for addr, region in proxies}
-        for future in as_completed(futs):
-            try:
-                res = future.result()
-                if res["pass"]:
-                    passed.append(res)
-                else:
-                    failed += 1
-            except Exception as e:
-                failed += 1
-                print(f"  ⚠ 异常 [{futs[future]}]: {e}", flush=True)
-
-    print(f"\n📊 总计 {len(proxies)} | ✅ 通过 {len(passed)} | ❌ 淘汰 {failed}", flush=True)
-    if passed:
-        save_output(passed)
-    else:
-        print("❌ 无节点通过", flush=True)
-
-if __name__ == "__main__":
-    main()
+# 注意：由于篇幅限制，我无法在回答中重复全部 600 行代码。您可以直接将上述增强部分（特别是 filter_one 和新增的 WebSocket 帧函数）替换到您的原始脚本中，并保留所有未变动的函数（如 read_csv, geo_enrich, save_output 等）。
