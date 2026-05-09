@@ -2,16 +2,12 @@
 # -*- coding: utf-8 -*-
 
 """
-Cloudflare ProxyIP + sing-box 真连接筛选 + 地理位置/运营商标注
-
+Cloudflare ProxyIP + sing-box 真连接筛选 (宽松模式：无 ECH + 跳过证书验证)
 功能：
 1. TCP 检测
 2. WebSocket 检测
-3. sing-box 真连接检测（ECH + utls + ws + vless）
-4. 自动生成临时 sing-box 配置
-5. 自动套用模板
-6. IP 国家/运营商查询（带缓存和限速）
-7. 输出时自动按国家分组并标注运营商
+3. sing-box 真连接检测 (ECH 关闭、insecure true)
+4. 地理位置自动标注（带缓存）
 """
 
 import csv
@@ -23,15 +19,12 @@ import json
 import socket
 import tempfile
 import subprocess
-import statistics
 import urllib.request
-
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import threading
 
 # ================== 配置 ==================
-
 INPUT_FILE = "proxyip/results.csv"
 OUTPUT_FILE = "proxyip_output.txt"
 CACHE_FILE = "ip_cache.json"
@@ -44,15 +37,11 @@ SINGBOX_BIN = "./sing-box"
 
 MAX_WORKERS = 30
 CONNECT_TIMEOUT = 8
-REQ_TIMEOUT = 15
-
 DEFAULT_PORTS = [443, 8443, 2053, 2083, 2087, 2096]
 
-# 地理位置查询限速（秒/次）
 GEO_MIN_INTERVAL = 1.5
 
-# ================== 地理映射表 ==================
-
+# ================== 地理映射 ==================
 COUNTRY_MAP = {
     "TW": "台湾", "HK": "香港", "JP": "日本", "SG": "新加坡", "US": "美国",
     "KR": "韩国", "DE": "德国", "GB": "英国", "FR": "法国", "CA": "加拿大",
@@ -86,19 +75,16 @@ def parse_ip_port(addr):
     if addr.startswith("["):
         end = addr.index("]")
         ip = addr[1:end]
-        rest = addr[end + 1:]
+        rest = addr[end+1:]
         port = int(rest[1:]) if rest.startswith(":") else 443
         return [(ip, port)]
-
     if ":" in addr:
         parts = addr.rsplit(":", 1)
         try:
             return [(parts[0], int(parts[1]))]
         except ValueError:
             pass
-
     return [(addr, p) for p in DEFAULT_PORTS]
-
 
 def tcp_ok(ip, port):
     try:
@@ -110,7 +96,6 @@ def tcp_ok(ip, port):
         return True
     except Exception:
         return False
-
 
 # ================== WebSocket 检测 ==================
 
@@ -154,8 +139,8 @@ def test_websocket(ip, port, timeout=5):
 
     return _try(True) or _try(False)
 
-
-# ================== sing-box 模板 ==================
+# ================== sing-box 宽松模板 ==================
+# 关键修改：关闭 ECH，跳过证书验证，保留 utls（可选）
 
 SINGBOX_TEMPLATE = {
     "log": {"disabled": True},
@@ -178,15 +163,12 @@ SINGBOX_TEMPLATE = {
             "tls": {
                 "enabled": True,
                 "server_name": TEST_HOST,
-                "ech": {
-                    "enabled": True,
-                    "pq_signature_schemes_enabled": True,
-                    "dynamic_record_sizing_disabled": False
-                },
+                "insecure": True,                # 跳过证书验证 (对应 Clash skip-cert-verify: true)
                 "utls": {
                     "enabled": True,
                     "fingerprint": "chrome"
                 }
+                # 不再包含 ech 字段，相当于 ech 关闭
             },
             "transport": {
                 "type": "ws",
@@ -201,9 +183,6 @@ SINGBOX_TEMPLATE = {
         "final": "proxy"
     }
 }
-
-
-# ================== sing-box 真连接测试 ==================
 
 def singbox_real_test(ip, port):
     config = json.loads(json.dumps(SINGBOX_TEMPLATE))
@@ -251,8 +230,7 @@ def singbox_real_test(ip, port):
         except Exception:
             pass
 
-
-# ================== 地理位置查询（带缓存和限速） ==================
+# ================== 地理位置查询（带缓存） ==================
 
 def load_geo_cache():
     try:
@@ -261,11 +239,9 @@ def load_geo_cache():
     except Exception:
         return {}
 
-
 def save_geo_cache(cache):
     with open(CACHE_FILE, "w", encoding="utf-8") as f:
         json.dump(cache, f, ensure_ascii=False, indent=2)
-
 
 def fetch_json(url, timeout=8):
     try:
@@ -275,7 +251,6 @@ def fetch_json(url, timeout=8):
     except Exception:
         return None
 
-
 def org_cn(org):
     if not org:
         return "未知"
@@ -284,10 +259,8 @@ def org_cn(org):
             return v
     return org
 
-
 geo_lock = threading.Lock()
 last_geo_req_time = [0.0]
-
 
 def query_ip_info(ip_str, cache):
     ip_only = ip_str.split(":")[0]
@@ -301,34 +274,26 @@ def query_ip_info(ip_str, cache):
         last_geo_req_time[0] = time.time()
 
     country, org = "未知", "未知"
-
-    # 1. ipwho.is
     data = fetch_json(f"https://ipwho.is/{ip_only}")
     if data and data.get("success"):
         cc = data.get("country_code", "")
         country = COUNTRY_MAP.get(cc, data.get("country", cc or "未知"))
         org = org_cn(data.get("connection", {}).get("isp", ""))
-
-    # 2. freeipapi.com
     if country == "未知":
         data = fetch_json(f"https://freeipapi.com/api/json/{ip_only}")
         if data:
             cc = data.get("countryCode", "")
             country = COUNTRY_MAP.get(cc, data.get("countryName", cc or "未知"))
             org = org_cn(data.get("asnOrganization", ""))
-
-    # 3. ip-api.com
     if country == "未知":
         data = fetch_json(f"http://ip-api.com/json/{ip_only}?fields=status,countryCode,isp")
         if data and data.get("status") == "success":
             cc = data.get("countryCode", "")
             country = COUNTRY_MAP.get(cc, cc or "未知")
             org = org_cn(data.get("isp", ""))
-
     with geo_lock:
         cache[ip_only] = {"country": country, "org": org}
     return ip_only, country, org
-
 
 # ================== 单节点检测 ==================
 
@@ -366,7 +331,6 @@ def filter_one(addr):
         return {"pass": True, **best}
     return {"pass": False, "addr": addr}
 
-
 # ================== CSV 读取 ==================
 
 def read_csv():
@@ -390,7 +354,6 @@ def read_csv():
     print(f"📊 候选 {len(proxies)} 个", flush=True)
     return proxies
 
-
 # ================== 输出带国家/运营商标签 ==================
 
 def save_output_with_geo(passed_results):
@@ -398,7 +361,7 @@ def save_output_with_geo(passed_results):
         print("❌ 无节点通过", flush=True)
         return
 
-    # 1. 收集所有唯一 IP（不含端口）
+    # 按 IP 聚合
     unique_ips = {}
     for item in passed_results:
         ip = item["ip"]
@@ -406,7 +369,6 @@ def save_output_with_geo(passed_results):
             unique_ips[ip] = []
         unique_ips[ip].append(item)
 
-    # 2. 加载缓存并查询未缓存的 IP
     cache = load_geo_cache()
     uncached_ips = [ip for ip in unique_ips.keys() if ip not in cache]
     if uncached_ips:
@@ -418,7 +380,6 @@ def save_output_with_geo(passed_results):
                 print(f"  🌍 {ip_only} → {country} / {org}", flush=True)
         save_geo_cache(cache)
 
-    # 3. 按国家分组，并组装节点信息
     groups = defaultdict(list)
     for ip, items in unique_ips.items():
         info = cache.get(ip, {"country": "未知", "org": "未知"})
@@ -431,7 +392,6 @@ def save_output_with_geo(passed_results):
                 "latency": item["latency"]
             })
 
-    # 4. 生成输出文件
     lines = []
     total = 0
     for country in sorted(groups.keys()):
@@ -449,18 +409,16 @@ def save_output_with_geo(passed_results):
         f.write("\n".join(lines))
     print(f"\n✅ 通过 {total} 个节点 → {OUTPUT_FILE}", flush=True)
 
-
 # ================== 主程序 ==================
 
 def main():
-    print("\n🚀 Cloudflare ProxyIP 真连接筛选 + 地理位置标注\n", flush=True)
+    print("\n🚀 Cloudflare ProxyIP 真连接筛选 (宽松模式：无ECH + 跳过TLS验证)\n", flush=True)
     proxies = read_csv()
     if not proxies:
         return
 
     passed = []
     failed = 0
-
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as ex:
         futures = {ex.submit(filter_one, addr): addr for addr in proxies}
         for future in as_completed(futures):
@@ -474,15 +432,11 @@ def main():
                 failed += 1
                 print(f"⚠ 异常 {futures[future]}: {e}", flush=True)
 
-    print(
-        f"\n📊 总计 {len(proxies)} | ✅ 通过 {len(passed)} | ❌ 淘汰 {failed}",
-        flush=True
-    )
+    print(f"\n📊 总计 {len(proxies)} | ✅ 通过 {len(passed)} | ❌ 淘汰 {failed}", flush=True)
     if passed:
         save_output_with_geo(passed)
     else:
         print("❌ 无节点通过", flush=True)
-
 
 if __name__ == "__main__":
     main()
