@@ -673,6 +673,26 @@
         "require_domain": false,
         "test_udp": "239.76.253.62:9000",
         "prefer_region": "湖南"
+    },
+     {
+        "name": "海南电信[A]",
+        "fofa_query": "server=\"udpxy\" && region=\"Hainan\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_m3u": "jxiptv.m3u",
+        "output_m3u": "jxiptv.m3u",
+        "require_domain": true,
+        "test_udp": "239.253.64.120:5140",
+        "prefer_region": "海南"
+    },
+    {
+        "name": "海南电信[B]",
+        "fofa_query": "server=\"udpxy\" && region=\"Hainan\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_m3u": "jxiptv.m3u",
+        "output_m3u": "jxiptv.m3u",
+        "require_domain": false,
+        "test_udp": "239.253.64.120:5140",
+        "prefer_region": "海南"
     }
     
 ]
