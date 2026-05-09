@@ -20,18 +20,37 @@ jobs:
         with:
           python-version: '3.11'
 
+      # ---------- 新增：安装 sing-box ----------
+      - name: 安装 sing-box
+        run: |
+          # 下载最新稳定版 sing-box (Linux amd64)
+          LATEST_URL=$(curl -s https://api.github.com/repos/SagerNet/sing-box/releases/latest \
+            | grep "browser_download_url.*linux-amd64" | head -1 | cut -d '"' -f 4)
+          if [ -z "$LATEST_URL" ]; then
+            # 降级到指定版本
+            LATEST_URL="https://github.com/SagerNet/sing-box/releases/download/v1.9.4/sing-box-1.9.4-linux-amd64.tar.gz"
+          fi
+          wget -O sing-box.tar.gz "$LATEST_URL"
+          tar -xzf sing-box.tar.gz
+          # 解压后的文件夹名形如 sing-box-1.9.4-linux-amd64
+          cp sing-box-*/sing-box ./sing-box
+          chmod +x ./sing-box
+          ./sing-box version
+
       - name: 查看 proxyip 文件夹内容
         run: ls -la proxyip/
 
+      # ---------- 注意：确保 sing-box 已存在 ----------
       - name: 运行解析脚本
         env:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: python parse_proxyip.py
 
-      - name: 提交 txt 文件回仓库
+      # ---------- 新增：提交缓存文件 ip_cache.json ----------
+      - name: 提交 txt 和缓存文件回仓库
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add proxyip_output.txt
-          git diff --cached --quiet || git commit -m "chore: update proxyip_output.txt [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          git add proxyip_output.txt ip_cache.json 
+          git diff --cached --quiet || git commit -m "chore: update proxyip_output.txt and ip_cache [$(date -u '+%Y-%m-%d %H:%M UTC')]"
           git push
