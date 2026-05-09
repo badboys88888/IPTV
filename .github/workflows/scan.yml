@@ -25,9 +25,7 @@ jobs:
 
       - name: Run Scanner
         run: |
-          # 运行脚本
           python scan/scanner.py
-          # 打印 scan 文件夹内容，方便在日志里排错
           ls -lh scan/
 
       - name: Commit and Push
@@ -35,10 +33,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
-          # 确保结果文件存在，即使是空的
           touch scan/useful_proxies.txt
-          
           git add scan/useful_proxies.txt
-          # 如果文件没有变化，commit 会跳过而不会导致任务失败
           git commit -m "自动更新扫描结果 [$(date)]" || exit 0
-          git push
+          git push --force origin main   # 改为强制推送
