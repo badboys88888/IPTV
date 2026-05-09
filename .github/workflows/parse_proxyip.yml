@@ -2,8 +2,8 @@ name: Parse ProxyIP CSV
 
 on:
   schedule:
-    - cron: '0 1 * * *'      # 每天 UTC 1:00 运行
-  workflow_dispatch:          # 允许手动触发
+    - cron: '0 1 * * *'
+  workflow_dispatch:
 
 jobs:
   parse-and-commit:
@@ -20,7 +20,7 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: 查看 proxyip 文件夹内容（调试）
+      - name: 查看 proxyip 文件夹内容
         run: ls -la proxyip/
 
       - name: 运行解析脚本
@@ -28,10 +28,10 @@ jobs:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: python parse_proxyip.py
 
-      - name: 提交 txt 和缓存文件回仓库
+      - name: 提交 txt 文件回仓库
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add proxyip_output.txt ip_cache.json 2>/dev/null || true
-          git diff --cached --quiet || git commit -m "chore: update proxyip_output and ip_cache [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          git add proxyip_output.txt
+          git diff --cached --quiet || git commit -m "chore: update proxyip_output.txt [$(date -u '+%Y-%m-%d %H:%M UTC')]"
           git push
