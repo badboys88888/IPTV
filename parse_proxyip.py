@@ -12,6 +12,9 @@ Cloudflare ProxyIP 筛选 - 全自动版（筛选+映射）
 2. 增加延迟测试轮次：将 LATENCY_ROUNDS 增加到 3，以获取更稳定的延迟平均值，并引入抖动（Jitter）评估，淘汰不稳定的 IP。
 3. 调整超时时间：适当延长 REQ_TIMEOUT 和 CONNECT_TIMEOUT，以适应更长的下载测试。
 4. 修复了 f-string 中不能包含反斜杠的语法错误。
+5. **统一测试目标**：所有 HTTP 和 WebSocket 测试都将使用 `TEST_HOST`，确保 IP 对您的实际代理域名有效。
+6. **强化 TLS 模拟**：在 TLS 握手中加入 ALPN（如 `h2`, `http/1.1`），使其更接近真实客户端的指纹。
+7. **SNI 一致性检查**：明确设置 `server_hostname`，确保 SNI 正确发送。
 """
 
 import csv
@@ -32,12 +35,14 @@ INPUT_FILE  = "proxyip/results.csv"
 OUTPUT_FILE = "proxyip_output.txt"
 CACHE_FILE  = "ip_cache.json"
 
-TEST_HOST = "cloudflare.snippets1.dpdns.org"
+TEST_HOST = "cloudflare.snippets1.dpdns.org" # 请确保这是您的实际代理域名
 TEST_PATH = "/?ed=2560"
 TEST_UUID = "362cbd17-f2d0-4b37-8d2c-10a2a45ddefc"
 
 # 增加下载数据量测试的 URL 和预期大小
-DOWNLOAD_TEST_URL = "https://speed.cloudflare.com/__down?bytes=1000000" # 1MB 文件
+# 注意：这里将下载测试的 host 也统一到 TEST_HOST，path 统一到 TEST_PATH
+# 如果您希望下载测试使用不同的 URL，请修改此处。
+DOWNLOAD_TEST_PATH = TEST_PATH # 使用 TEST_PATH 作为下载测试的路径
 EXPECTED_DOWNLOAD_BYTES = 1000000 # 预期下载 1MB
 
 MAX_AVG_LATENCY = 9000
@@ -92,13 +97,11 @@ def check_cf_headers(response_bytes):
 
 def http_connectivity_measure(ip, port):
     family = socket.AF_INET6 if ":" in ip else socket.AF_INET
-    # 修改为下载测试 URL
-    req_path = DOWNLOAD_TEST_URL.split('//', 1)[1].split('/', 1)[1] if '//' in DOWNLOAD_TEST_URL else DOWNLOAD_TEST_URL.split('/', 1)[1]
-    req_host = DOWNLOAD_TEST_URL.split('//', 1)[1].split('/', 1)[0] if '//' in DOWNLOAD_TEST_URL else TEST_HOST
-
+    
+    # 统一使用 TEST_HOST 和 DOWNLOAD_TEST_PATH
     req = (
-        f"GET /{req_path} HTTP/1.1\r\n"
-        f"Host: {req_host}\r\n"
+        f"GET {DOWNLOAD_TEST_PATH} HTTP/1.1\r\n"
+        f"Host: {TEST_HOST}\r\n"
         f"User-Agent: Clash/1.18.0\r\n"
         f"Connection: close\r\n\r\n"
     ).encode()
@@ -113,7 +116,9 @@ def http_connectivity_measure(ip, port):
                 ctx = ssl.create_default_context()
                 ctx.check_hostname = False
                 ctx.verify_mode = ssl.CERT_NONE
-                s = ctx.wrap_socket(s, server_hostname=req_host)
+                # 强化 TLS 模拟：加入 ALPN，并明确设置 server_hostname
+                ctx.set_alpn_protocols(['h2', 'http/1.1'])
+                s = ctx.wrap_socket(s, server_hostname=TEST_HOST)
             s.connect((ip, port))
             s.sendall(req)
             
@@ -190,6 +195,8 @@ def test_websocket(ip, port, timeout=5):
                 ctx = ssl.create_default_context()
                 ctx.check_hostname = False
                 ctx.verify_mode = ssl.CERT_NONE
+                # 强化 TLS 模拟：加入 ALPN，并明确设置 server_hostname
+                ctx.set_alpn_protocols(['h2', 'http/1.1'])
                 s = ctx.wrap_socket(s, server_hostname=TEST_HOST)
             s.connect((ip, port))
             s.sendall(req)
@@ -500,7 +507,7 @@ def save_output(passed):
 def main():
     print(f"🚀 全自动筛选+映射：{TEST_HOST}{TEST_PATH}", flush=True)
     print(f"   白名单状态码: {sorted(ALLOWED_CODES)}，403 需 CF 头，延迟不考核", flush=True)
-    print(f"   HTTP 下载测试 URL: {DOWNLOAD_TEST_URL} (预期 {EXPECTED_DOWNLOAD_BYTES / 1000000:.1f}MB)", flush=True)
+    print(f"   HTTP 下载测试 URL: https://{TEST_HOST}{DOWNLOAD_TEST_PATH} (预期 {EXPECTED_DOWNLOAD_BYTES / 1000000:.1f}MB)", flush=True)
     proxies = read_csv()
     if not proxies:
         return
