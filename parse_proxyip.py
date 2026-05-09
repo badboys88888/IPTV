@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """
-Cloudflare ProxyIP 筛选 - 高精度版（修复误判，无测速字样）
+Cloudflare ProxyIP 筛选 - 最终稳定版
+- HTTP 连通性 + 强制 CF 头检查
+- WebSocket 握手验证（可选数据验证）
+- 不进行速度测试，避免误杀
+- 输出只包含国家/运营商标签，无任何测速文字
 """
 
 import csv
@@ -15,7 +19,6 @@ import urllib.request
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import threading
-import random
 
 # ================== 配置 ==================
 INPUT_FILE  = "proxyip/results.csv"
@@ -34,16 +37,14 @@ MAX_WORKERS     = 30
 DEFAULT_PORTS   = [443, 80]
 ALLOWED_CODES   = {101, 200, 301, 302, 403}
 
-# 严格模式：强制检查 CF 头（强烈建议开启）
+# 严格模式：强制检查 Cloudflare 头部（强烈建议开启）
 STRICT_CF_HEADER = True
 
-# WebSocket 数据验证（开启可杜绝假 WS）
-ENABLE_WS_DATA_TEST = True
+# WebSocket 数据验证（开启可杜绝假 WS，但需 Worker 支持回应）
+ENABLE_WS_DATA_TEST = False   # 设为 False 只做握手验证，避免 Worker 无响应导致失败
 
-# 速度测试（用于淘汰慢节点，输出不带速度）
-ENABLE_SPEED_TEST = True
-MIN_SPEED_KBPS = 50    # 设为0则关闭速度淘汰
-SPEED_TIMEOUT  = 10
+# 速度测试（完全关闭，避免误杀）
+ENABLE_SPEED_TEST = False
 
 GEO_MIN_INTERVAL = 1.5
 
@@ -164,7 +165,8 @@ def build_ws_frame(payload: bytes, opcode=0x81, mask=True) -> bytes:
             header.extend(length.to_bytes(8, 'big'))
         return bytes(header) + payload
 
-def test_websocket_full(ip, port, timeout=6):
+def test_websocket(ip, port, timeout=6):
+    """WebSocket 握手验证（可选数据收发）"""
     family = socket.AF_INET6 if ":" in ip else socket.AF_INET
     ws_key = "dGhlIHNhbXBsZSBub25jZQ=="
     req = (
@@ -206,7 +208,6 @@ def test_websocket_full(ip, port, timeout=6):
                     data = s.recv(1024)
                     if not data:
                         return False
-                    return True
                 except socket.timeout:
                     return False
             return True
@@ -216,86 +217,19 @@ def test_websocket_full(ip, port, timeout=6):
             s.close()
     return _attempt(True) or _attempt(False)
 
-def download_speed_test(ip, port):
-    if not ENABLE_SPEED_TEST:
-        return MIN_SPEED_KBPS + 1, 0
-    family = socket.AF_INET6 if ":" in ip else socket.AF_INET
-    inner_http = (
-        f"GET /__down?bytes=102400 HTTP/1.1\r\n"
-        f"Host: speed.cloudflare.com\r\n"
-        f"User-Agent: Clash/1.18.0\r\n"
-        f"Connection: close\r\n\r\n"
-    ).encode()
-    ws_frame = build_ws_frame(inner_http, opcode=0x81, mask=True)
-
-    def _attempt(use_tls):
-        s = socket.socket(family, socket.SOCK_STREAM)
-        s.settimeout(SPEED_TIMEOUT)
-        try:
-            if use_tls:
-                ctx = ssl.create_default_context()
-                ctx.check_hostname = False
-                ctx.verify_mode = ssl.CERT_NONE
-                s = ctx.wrap_socket(s, server_hostname=TEST_HOST)
-            s.connect((ip, port))
-            ws_key = "dGhlIHNhbXBsZSBub25jZQ=="
-            handshake = (
-                f"GET {TEST_PATH} HTTP/1.1\r\n"
-                f"Host: {TEST_HOST}\r\n"
-                f"Upgrade: websocket\r\n"
-                f"Connection: Upgrade\r\n"
-                f"Sec-WebSocket-Key: {ws_key}\r\n"
-                f"Sec-WebSocket-Version: 13\r\n"
-                f"Sec-WebSocket-Protocol: {TEST_UUID}\r\n\r\n"
-            ).encode()
-            s.sendall(handshake)
-            resp = b""
-            while b"\r\n\r\n" not in resp:
-                chunk = s.recv(1024)
-                if not chunk:
-                    return 0, 9999
-                resp += chunk
-            if b"101" not in resp.split(b"\r\n")[0]:
-                return 0, 9999
-            t0 = time.perf_counter()
-            s.sendall(ws_frame)
-            received = 0
-            first = None
-            while received < 112640:
-                try:
-                    chunk = s.recv(8192)
-                    if not chunk:
-                        break
-                    if first is None:
-                        first = time.perf_counter()
-                    received += len(chunk)
-                except socket.timeout:
-                    break
-            elapsed = time.perf_counter() - t0
-            if received < 20480 or elapsed < 0.05:
-                return 0, 9999
-            speed = (received / 1024) / elapsed
-            ttfb = (first - t0) * 1000 if first else 9999
-            return speed, ttfb
-        except Exception:
-            return 0, 9999
-        finally:
-            s.close()
-    speed, ttfb = _attempt(True)
-    if speed > 0:
-        return speed, ttfb
-    return _attempt(False)
-
-# ================== 单节点筛选 ==================
+# ================== 单节点筛选（无速度测试） ==================
 
 def filter_one(addr, region):
     print(f"▸ {addr} 开始…", flush=True)
     candidates = parse_ip_port(addr)
     best = None
+
     for ip, port in candidates:
         if not tcp_ok(ip, port):
             print(f"  ✗ {addr} TCP 不通", flush=True)
             continue
+
+        # HTTP 连通性 + CF 头检查
         samples = []
         for rnd in range(LATENCY_ROUNDS):
             ok, lat, info = http_connectivity_measure(ip, port)
@@ -307,22 +241,22 @@ def filter_one(addr, region):
             time.sleep(0.05)
         else:
             avg_lat = statistics.mean(samples)
-            if not test_websocket_full(ip, port):
-                print(f"  ✗ {addr} WebSocket 验证失败", flush=True)
+            # WebSocket 验证
+            if not test_websocket(ip, port):
+                print(f"  ✗ {addr} WebSocket 握手失败", flush=True)
                 continue
-            if ENABLE_SPEED_TEST:
-                speed_kbps, _ = download_speed_test(ip, port)
-                if speed_kbps < MIN_SPEED_KBPS:
-                    print(f"  ✗ {addr} 速度不达标 ({speed_kbps:.0f} KB/s)", flush=True)
-                    continue
-                print(f"  ✓ {addr} 通过 延迟={avg_lat:.0f}ms 速度={speed_kbps:.0f}KB/s", flush=True)
-            else:
-                print(f"  ✓ {addr} 通过 延迟={avg_lat:.0f}ms", flush=True)
-                speed_kbps = 99999
-            r = {"addr": addr, "ip": ip, "port": port, "avg_ms": round(avg_lat, 1), "speed_kbps": speed_kbps, "region": region}
-            if best is None or speed_kbps > best["speed_kbps"]:
+
+            print(f"  ✓ {addr} 验证通过 延迟={avg_lat:.0f}ms", flush=True)
+            r = {
+                "addr": addr, "ip": ip, "port": port,
+                "avg_ms": round(avg_lat, 1),
+                "region": region
+            }
+            if best is None or avg_lat < best["avg_ms"]:
                 best = r
+            # 只要有一个端口成功就停止尝试其他端口
             break
+
     if best:
         return {"pass": True, **best}
     else:
@@ -354,7 +288,7 @@ def read_csv():
     print(f"📊 候选 {len(proxies)} 个（已去重）", flush=True)
     return proxies
 
-# ================== 地理位置（保持原版功能） ==================
+# ================== 地理位置映射（保持原样，略作精简） ==================
 
 COUNTRY_MAP = {
     "TW": "台湾", "HK": "香港", "JP": "日本", "SG": "新加坡", "US": "美国",
@@ -443,7 +377,7 @@ def geo_enrich(passed):
     last_req = [0.0]
     uncached = [it["ip"].split(":")[0] for it in passed if it["ip"].split(":")[0] not in cache]
     if uncached:
-        print(f"🌍 查询 {len(uncached)} 个新 IP 地理位置...", flush=True)
+        print(f"🌍 查询 {len(uncached)} 个新 IP 地理位置（限速 {GEO_MIN_INTERVAL}s/次）...", flush=True)
         for i, ip_str in enumerate(uncached, 1):
             ip_only, country, org = query_ip_info(ip_str, cache, lock, last_req)
             print(f"  [{i}/{len(uncached)}] {ip_only} → {country} / {org}", flush=True)
@@ -479,7 +413,7 @@ def save_output(passed):
 # ================== 主程序 ==================
 
 def main():
-    print("🚀 ProxyIP 高精度筛选（修复误判，无测速字样）", flush=True)
+    print("🚀 ProxyIP 筛选（HTTP+CF头+WebSocket握手，无速度测试）", flush=True)
     proxies = read_csv()
     if not proxies:
         return
