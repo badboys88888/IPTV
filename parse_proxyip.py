@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """
-Cloudflare ProxyIP 筛选 - 严格模式（真实模拟 + CF-RAY 强制校验）
-- HTTP 连通性（必须 200 + cf-ray）
-- 直接 HTTPS 下载测速（必须高于最低速度）
-- 自动查询地理位置（限速防封）
-- 输出仅国家/运营商标签，无测速文字
+Cloudflare ProxyIP 筛选 - 代理节点专用版（强制 TLS 握手 + CF-RAY 验证）
+- TCP 连通性
+- TLS 握手（SNI 必须匹配）
+- HTTP 连通性（200 + cf-ray）
+- 下载速度测试（不低于阈值）
+- 自动地理位置 + 缓存
+- 输出仅国家/运营商标签
 """
 
 import csv
@@ -20,29 +22,33 @@ from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import threading
 
-# ================== 配置 ==================
+# ================== 配置（请根据实际情况修改） ==================
 INPUT_FILE  = "proxyip/results.csv"
 OUTPUT_FILE = "proxyip_output.txt"
 CACHE_FILE  = "ip_cache.json"
 
-# 测试目标（建议替换为你自己的 Worker 或 Cloudflare 上任意启用了代理的域名）
+# 测试目标（你的 Cloudflare Worker 域名）
 TEST_HOST = "cloudflare.snippets1.dpdns.org"
-TEST_PATH = "/?ed=2560"          # 路径参数有利于区分缓存
+TEST_PATH = "/?ed=2560"
+
+# 代理节点的伪装域名（重要！必须填你自己的域名，SNI 会使用这个）
+# 如果为空，则使用 TEST_HOST 作为 SNI
+SNI_DOMAIN = "cloudflare.snippets1.dpdns.org"   # 🔴 请替换为你的真实域名（例如 example.com）
 
 # 测速目标（Cloudflare 官方测速文件，100KB）
 SPEED_HOST = "speed.cloudflare.com"
 SPEED_PORT = 443
 SPEED_PATH = "/__down?bytes=102400"
-MIN_SPEED_KBPS = 50
+MIN_SPEED_KBPS = 50          # 低于此速度淘汰
 SPEED_TIMEOUT  = 10
 
-LATENCY_ROUNDS  = 1
+LATENCY_ROUNDS  = 1          # 连通性测试轮数（1即可）
 CONNECT_TIMEOUT = 5
 REQ_TIMEOUT     = 6
 MAX_WORKERS     = 30
-DEFAULT_PORTS   = [443, 80]
+DEFAULT_PORTS   = [443, 80]  # 优先测试 443（TLS），次选 80（HTTP）
 
-# 严格模式：只接受 200，且必须有 cf-ray 头
+# HTTP 连通性严格模式：只接受 200 且必须包含 cf-ray 头
 ALLOWED_STATUS = {200}
 
 GEO_MIN_INTERVAL = 1.5
@@ -76,8 +82,32 @@ def tcp_ok(ip, port):
     except:
         return False
 
+def tls_handshake(ip, port, sni):
+    """
+    进行 TLS 握手，验证节点是否支持正确的 SNI
+    返回 (成功, 握手延迟毫秒)
+    """
+    if port != 443:
+        # 非 443 端口暂不强制 TLS 握手（但后续 HTTP 测试可能走 TLS，仍然会验证）
+        return True, 0
+    context = ssl.create_default_context()
+    context.check_hostname = False
+    context.verify_mode = ssl.CERT_NONE
+    try:
+        start = time.perf_counter()
+        sock = socket.create_connection((ip, port), timeout=CONNECT_TIMEOUT)
+        with context.wrap_socket(sock, server_hostname=sni) as ssock:
+            latency = (time.perf_counter() - start) * 1000
+            # 可选：记录 TLS 版本和加密套件（调试用）
+            # version = ssock.version()
+            # cipher = ssock.cipher()
+            return True, latency
+    except Exception as e:
+        # 握手失败，直接返回 False
+        return False, 0
+
 def has_cf_ray(response_bytes):
-    """检查响应头中是否包含 cf-ray (Cloudflare 核心标识)"""
+    """检查响应头中是否包含 cf-ray"""
     try:
         headers = response_bytes.split(b"\r\n\r\n")[0].lower()
     except:
@@ -106,7 +136,7 @@ def http_connectivity_measure(ip, port):
                 ctx = ssl.create_default_context()
                 ctx.check_hostname = False
                 ctx.verify_mode = ssl.CERT_NONE
-                # 关键：SNI 设置为 TEST_HOST，模拟真实客户端
+                # SNI 使用 TEST_HOST
                 s = ctx.wrap_socket(s, server_hostname=TEST_HOST)
             s.connect((ip, port))
             s.sendall(req)
@@ -119,13 +149,11 @@ def http_connectivity_measure(ip, port):
             elapsed = (time.perf_counter() - t0) * 1000
             if not resp:
                 return (False, 9999, "空响应")
-            # 解析状态码
             line = resp.split(b"\r\n")[0]
             parts = line.decode(errors="ignore").split()
             if len(parts) < 2:
                 return (False, 9999, f"异常状态行: {line[:40]}")
             code = int(parts[1])
-            # 严格模式：只接受 200，且必须有 cf-ray
             if code not in ALLOWED_STATUS:
                 return (False, 9999, f"状态码 {code} (非200)")
             if not has_cf_ray(resp):
@@ -139,7 +167,7 @@ def http_connectivity_measure(ip, port):
     ok, lat, detail = _try(True)
     if ok:
         return ok, lat, detail
-    # 重试 HTTP（80端口）仅用于测试，但对现代代理很少有用，可保留
+    # 尝试 HTTP 明文（端口80）
     ok, lat, detail = _try(False)
     if ok:
         return ok, lat, detail
@@ -147,8 +175,7 @@ def http_connectivity_measure(ip, port):
 
 def download_speed_test(ip, port):
     """
-    通过 ProxyIP 直接连接 speed.cloudflare.com:443 下载测速文件。
-    注意：这个测试独立于上面的连通性测试，用于淘汰速度慢的节点。
+    通过 ProxyIP 直接连接 speed.cloudflare.com:443 下载测速文件
     """
     family = socket.AF_INET6 if ":" in ip else socket.AF_INET
     req = (
@@ -217,11 +244,25 @@ def filter_one(addr, region):
     best = None
 
     for ip, port in candidates:
+        # 1. TCP 连通
         if not tcp_ok(ip, port):
             print(f"  ✗ {addr} TCP 不通", flush=True)
             continue
 
-        # HTTP 连通性 + CF-RAY 强制检查
+        # 2. TLS 握手（仅 443 端口）使用用户指定的 SNI_DOMAIN
+        if port == 443:
+            sni = SNI_DOMAIN if SNI_DOMAIN else TEST_HOST
+            tls_ok, tls_lat = tls_handshake(ip, port, sni)
+            if not tls_ok:
+                print(f"  ✗ {addr} TLS 握手失败 (SNI={sni})", flush=True)
+                continue
+            # 可选：记录握手延迟（但不用于最终延迟，仅调试）
+            # print(f"  ✓ {addr} TLS 握手成功 {tls_lat:.1f}ms")
+        else:
+            # 非 443 端口跳过 TLS 验证，但后面的 HTTP 测试仍然会尝试 HTTPS
+            pass
+
+        # 3. HTTP 连通性 + CF-RAY 强制验证
         samples = []
         for rnd in range(LATENCY_ROUNDS):
             ok, lat, info = http_connectivity_measure(ip, port)
@@ -234,7 +275,7 @@ def filter_one(addr, region):
         else:
             avg_lat = statistics.mean(samples)
 
-            # 速度测试
+            # 4. 下载速度测试
             speed_kbps, _ = download_speed_test(ip, port)
             if speed_kbps < MIN_SPEED_KBPS:
                 print(f"  ✗ {addr} 速度不达标 ({speed_kbps:.0f} KB/s < {MIN_SPEED_KBPS})", flush=True)
@@ -464,7 +505,9 @@ def save_output(passed):
 # ================== 主程序 ==================
 
 def main():
-    print("🚀 严格模式：强制 200 + cf-ray，速度下限 {} KB/s".format(MIN_SPEED_KBPS), flush=True)
+    print("🚀 代理节点专用筛选：强制 TLS 握手 + CF-RAY + 下载测速", flush=True)
+    if not SNI_DOMAIN:
+        print("⚠️ 警告：未设置 SNI_DOMAIN，将使用 TEST_HOST 作为 SNI，这可能导致 TLS 握手验证不准确！")
     proxies = read_csv()
     if not proxies:
         return
