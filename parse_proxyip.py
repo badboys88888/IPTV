@@ -15,7 +15,12 @@ Cloudflare ProxyIP 筛选 - 全自动版（筛选+映射）
 5. 统一测试目标：所有 HTTP 和 WebSocket 测试都将使用 `TEST_HOST`，确保 IP 对您的实际代理域名有效。
 6. 强化 TLS 模拟：在 TLS 握手中加入 ALPN（如 `h2`, `http/1.1`），使其更接近真实客户端的指纹。
 7. SNI 一致性检查：明确设置 `server_hostname`，确保 SNI 正确发送。
-8. **放宽状态码限制**：将 `400` 加入允许的状态码白名单，并根据状态码智能调整下载测试逻辑，以兼容反代 IP。
+8. 放宽状态码限制：将 `400` 加入允许的状态码白名单，并根据状态码智能调整下载测试逻辑，以兼容反代 IP。
+9. **深度优化 WebSocket 握手逻辑**：
+    *   使用更通用的浏览器 `User-Agent`。
+    *   在 WebSocket 握手失败时，提供更详细的 HTTP 状态码和响应信息，以便诊断问题。
+    *   **移除 `Sec-WebSocket-Protocol` 头部中的 `TEST_UUID`**，以进行更通用的 WebSocket 握手测试，避免因特定协议要求而失败。
+    *   确保 WebSocket 测试也应用了 ALPN 和 SNI 优化。
 """
 
 import csv
@@ -41,8 +46,7 @@ TEST_PATH = "/?ed=2560"
 TEST_UUID = "362cbd17-f2d0-4b37-8d2c-10a2a45ddefc"
 
 # 增加下载数据量测试的 URL 和预期大小
-# 注意：这里将下载测试的 host 也统一到 TEST_HOST，path 统一到 TEST_PATH
-# 如果您希望下载测试使用不同的 URL，请修改此处。
+# 注意：这里将下载测试的 host 也统一到 TEST_HOST，path 也统一到 TEST_PATH
 DOWNLOAD_TEST_PATH = TEST_PATH # 使用 TEST_PATH 作为下载测试的路径
 EXPECTED_DOWNLOAD_BYTES = 1000000 # 预期下载 1MB
 
@@ -103,7 +107,7 @@ def http_connectivity_measure(ip, port):
     req = (
         f"GET {DOWNLOAD_TEST_PATH} HTTP/1.1\r\n"
         f"Host: {TEST_HOST}\r\n"
-        f"User-Agent: Clash/1.18.0\r\n"
+        f"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36\r\n"
         f"Connection: close\r\n\r\n"
     ).encode()
 
@@ -186,18 +190,34 @@ def http_connectivity_measure(ip, port):
 
 def test_websocket(ip, port, timeout=5):
     family = socket.AF_INET6 if ":" in ip else socket.AF_INET
-    req = (
+    # 使用更通用的 User-Agent
+    user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+    
+    # 第一次尝试：不带 Sec-WebSocket-Protocol 头部中的 TEST_UUID，进行更通用的握手
+    req_generic = (
         f"GET {TEST_PATH} HTTP/1.1\r\n"
         f"Host: {TEST_HOST}\r\n"
         f"Upgrade: websocket\r\n"
         f"Connection: Upgrade\r\n"
-        f"User-Agent: Clash/1.18.0\r\n"
+        f"User-Agent: {user_agent}\r\n"
+        f"Sec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==\r\n"
+        f"Sec-WebSocket-Version: 13\r\n"
+        f"\r\n"
+    ).encode()
+
+    # 第二次尝试：带 Sec-WebSocket-Protocol 头部中的 TEST_UUID
+    req_uuid = (
+        f"GET {TEST_PATH} HTTP/1.1\r\n"
+        f"Host: {TEST_HOST}\r\n"
+        f"Upgrade: websocket\r\n"
+        f"Connection: Upgrade\r\n"
+        f"User-Agent: {user_agent}\r\n"
         f"Sec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==\r\n"
         f"Sec-WebSocket-Version: 13\r\n"
         f"Sec-WebSocket-Protocol: {TEST_UUID}\r\n\r\n"
     ).encode()
 
-    def _try(use_tls):
+    def _try_ws(use_tls, request_bytes):
         s = socket.socket(family, socket.SOCK_STREAM)
         s.settimeout(timeout)
         try:
@@ -205,11 +225,10 @@ def test_websocket(ip, port, timeout=5):
                 ctx = ssl.create_default_context()
                 ctx.check_hostname = False
                 ctx.verify_mode = ssl.CERT_NONE
-                # 强化 TLS 模拟：加入 ALPN，并明确设置 server_hostname
                 ctx.set_alpn_protocols(["h2", "http/1.1"])
                 s = ctx.wrap_socket(s, server_hostname=TEST_HOST)
             s.connect((ip, port))
-            s.sendall(req)
+            s.sendall(request_bytes)
             resp = b""
             while b"\r\n\r\n" not in resp:
                 chunk = s.recv(1024)
@@ -218,13 +237,44 @@ def test_websocket(ip, port, timeout=5):
                 resp += chunk
             s.close()
             if not resp:
-                return False
+                return False, "空响应"
+            
             line = resp.split(b"\r\n")[0].decode(errors="ignore")
-            return line.startswith("HTTP/1.1 101")
-        except Exception:
-            return False
+            if line.startswith("HTTP/1.1 101"):
+                return True, "WebSocket 握手成功"
+            else:
+                parts = line.split()
+                status_code = int(parts[1]) if len(parts) > 1 else "未知"
+                return False, f"WebSocket 握手失败，状态码: {status_code} ({line[:50]})"
+        except Exception as e:
+            return False, str(e)[:50]
 
-    return _try(True) or _try(False)
+    # 尝试通用 WebSocket 握手 (TLS)
+    ok_tls_generic, detail_tls_generic = _try_ws(True, req_generic)
+    if ok_tls_generic:
+        return True
+    
+    # 尝试带 UUID 的 WebSocket 握手 (TLS)
+    ok_tls_uuid, detail_tls_uuid = _try_ws(True, req_uuid)
+    if ok_tls_uuid:
+        return True
+
+    # 尝试通用 WebSocket 握手 (HTTP)
+    ok_http_generic, detail_http_generic = _try_ws(False, req_generic)
+    if ok_http_generic:
+        return True
+
+    # 尝试带 UUID 的 WebSocket 握手 (HTTP)
+    ok_http_uuid, detail_http_uuid = _try_ws(False, req_uuid)
+    if ok_http_uuid:
+        return True
+    
+    # 如果所有尝试都失败，打印详细信息
+    print(f"    WebSocket TLS (通用) 失败: {detail_tls_generic}", flush=True)
+    print(f"    WebSocket TLS (UUID) 失败: {detail_tls_uuid}", flush=True)
+    print(f"    WebSocket HTTP (通用) 失败: {detail_http_generic}", flush=True)
+    print(f"    WebSocket HTTP (UUID) 失败: {detail_http_uuid}", flush=True)
+    return False
 
 # ================== 单节点筛选 ==================
 
