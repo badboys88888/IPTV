@@ -12,9 +12,10 @@ Cloudflare ProxyIP 筛选 - 全自动版（筛选+映射）
 2. 增加延迟测试轮次：将 LATENCY_ROUNDS 增加到 3，以获取更稳定的延迟平均值，并引入抖动（Jitter）评估，淘汰不稳定的 IP。
 3. 调整超时时间：适当延长 REQ_TIMEOUT 和 CONNECT_TIMEOUT，以适应更长的下载测试。
 4. 修复了 f-string 中不能包含反斜杠的语法错误。
-5. **统一测试目标**：所有 HTTP 和 WebSocket 测试都将使用 `TEST_HOST`，确保 IP 对您的实际代理域名有效。
-6. **强化 TLS 模拟**：在 TLS 握手中加入 ALPN（如 `h2`, `http/1.1`），使其更接近真实客户端的指纹。
-7. **SNI 一致性检查**：明确设置 `server_hostname`，确保 SNI 正确发送。
+5. 统一测试目标：所有 HTTP 和 WebSocket 测试都将使用 `TEST_HOST`，确保 IP 对您的实际代理域名有效。
+6. 强化 TLS 模拟：在 TLS 握手中加入 ALPN（如 `h2`, `http/1.1`），使其更接近真实客户端的指纹。
+7. SNI 一致性检查：明确设置 `server_hostname`，确保 SNI 正确发送。
+8. **放宽状态码限制**：将 `400` 加入允许的状态码白名单，并根据状态码智能调整下载测试逻辑，以兼容反代 IP。
 """
 
 import csv
@@ -54,7 +55,7 @@ REQ_TIMEOUT     = 15 # 适当延长请求超时，以适应下载测试
 MAX_WORKERS     = 30
 
 DEFAULT_PORTS   = [443, 80]
-ALLOWED_CODES   = {101, 200, 301, 302, 403}
+ALLOWED_CODES   = {101, 200, 301, 302, 403, 400} # 允许 400 状态码
 
 # 接口限速（秒）
 GEO_MIN_INTERVAL = 1.5
@@ -117,7 +118,7 @@ def http_connectivity_measure(ip, port):
                 ctx.check_hostname = False
                 ctx.verify_mode = ssl.CERT_NONE
                 # 强化 TLS 模拟：加入 ALPN，并明确设置 server_hostname
-                ctx.set_alpn_protocols(['h2', 'http/1.1'])
+                ctx.set_alpn_protocols(["h2", "http/1.1"])
                 s = ctx.wrap_socket(s, server_hostname=TEST_HOST)
             s.connect((ip, port))
             s.sendall(req)
@@ -138,27 +139,36 @@ def http_connectivity_measure(ip, port):
             if len(parts) < 2:
                 return (False, 9999, f"异常状态行: {line[:40]}")
             code = int(parts[1])
+            
+            # 检查状态码是否在允许范围内
             if code not in ALLOWED_CODES:
                 return (False, 9999, f"状态码 {code} 未到达 Worker")
-            if code == 403 and not check_cf_headers(resp_headers):
-                return (False, 9999, "403 无 CF 头 (可能反代自身)")
             
-            # 继续读取响应体，模拟下载数据
-            while True:
-                chunk = s.recv(4096) # 每次接收 4KB
-                if not chunk:
-                    break
-                downloaded_bytes += len(chunk)
-                # 如果下载量达到预期，提前结束
-                if downloaded_bytes >= EXPECTED_DOWNLOAD_BYTES:
-                    break
+            # 对于 403 和 400 状态码，检查是否包含 Cloudflare 特征头
+            if (code == 403 or code == 400) and not check_cf_headers(resp_headers):
+                return (False, 9999, f"{code} 无 CF 头 (可能反代自身或非 CF IP)")
+            
+            # 只有当状态码为 200 时才进行下载量校验
+            if code == 200:
+                # 继续读取响应体，模拟下载数据
+                while True:
+                    chunk = s.recv(4096) # 每次接收 4KB
+                    if not chunk:
+                        break
+                    downloaded_bytes += len(chunk)
+                    # 如果下载量达到预期，提前结束
+                    if downloaded_bytes >= EXPECTED_DOWNLOAD_BYTES:
+                        break
+
+                # 检查下载量是否足够
+                if downloaded_bytes < EXPECTED_DOWNLOAD_BYTES * 0.9: # 允许少量误差
+                    return (False, 9999, f"下载数据量不足 ({downloaded_bytes}B)")
+            else:
+                # 对于 400/403 等状态码，只要有 CF 头，就认为 HTTP 连通性通过，不强制下载量
+                pass
 
             elapsed = (time.perf_counter() - t0) * 1000
             
-            # 检查下载量是否足够
-            if downloaded_bytes < EXPECTED_DOWNLOAD_BYTES * 0.9: # 允许少量误差
-                return (False, 9999, f"下载数据量不足 ({downloaded_bytes}B)")
-
             tls_label = "TLS" if use_tls else "HTTP"
             return (True, round(elapsed, 1), f"{tls_label} {code} ({downloaded_bytes}B)")
         except Exception as e:
@@ -196,7 +206,7 @@ def test_websocket(ip, port, timeout=5):
                 ctx.check_hostname = False
                 ctx.verify_mode = ssl.CERT_NONE
                 # 强化 TLS 模拟：加入 ALPN，并明确设置 server_hostname
-                ctx.set_alpn_protocols(['h2', 'http/1.1'])
+                ctx.set_alpn_protocols(["h2", "http/1.1"])
                 s = ctx.wrap_socket(s, server_hostname=TEST_HOST)
             s.connect((ip, port))
             s.sendall(req)
@@ -305,7 +315,7 @@ COUNTRY_MAP = {
     "BE": "比利时", "AT": "奥地利", "GR": "希腊", "NZ": "新西兰",
     "ZA": "南非", "EG": "埃及", "IL": "以色列", "SA": "沙特阿拉伯",
     "AE": "阿联酋", "PK": "巴基斯坦", "CN": "中国", "MO": "澳门",
-    "AF": "阿富汗", "AL": "阿尔巴尼亚", "DZ": "阿尔及利亚", "AD": "安道尔",
+    "AF": "阿富汗", "AL": "阿尔及利亚", "DZ": "阿尔及利亚", "AD": "安道尔",
     "AO": "安哥拉", "AG": "安提瓜和巴布达", "AM": "亚美尼亚", "AZ": "阿塞拜疆",
     "BS": "巴哈马", "BH": "巴林", "BD": "孟加拉国", "BB": "巴巴多斯",
     "BY": "白俄罗斯", "BZ": "伯利兹", "BJ": "贝宁", "BT": "不丹",
@@ -506,7 +516,7 @@ def save_output(passed):
 
 def main():
     print(f"🚀 全自动筛选+映射：{TEST_HOST}{TEST_PATH}", flush=True)
-    print(f"   白名单状态码: {sorted(ALLOWED_CODES)}，403 需 CF 头，延迟不考核", flush=True)
+    print(f"   白名单状态码: {sorted(ALLOWED_CODES)}，403/400 需 CF 头，延迟不考核", flush=True)
     print(f"   HTTP 下载测试 URL: https://{TEST_HOST}{DOWNLOAD_TEST_PATH} (预期 {EXPECTED_DOWNLOAD_BYTES / 1000000:.1f}MB)", flush=True)
     proxies = read_csv()
     if not proxies:
