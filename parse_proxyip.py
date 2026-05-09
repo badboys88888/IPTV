@@ -33,7 +33,7 @@ TEST_PATH = "/?ed=2560"
 
 # 代理节点的伪装域名（重要！必须填你自己的域名，SNI 会使用这个）
 # 如果为空，则使用 TEST_HOST 作为 SNI
-SNI_DOMAIN = "your-domain.com"   # 🔴 请替换为你的真实域名（例如 example.com）
+SNI_DOMAIN = "cloudflare.snippets1.dpdns.org"   # 🔴 请替换为你的真实域名（例如 example.com）
 
 # 测速目标（Cloudflare 官方测速文件，100KB）
 SPEED_HOST = "speed.cloudflare.com"
