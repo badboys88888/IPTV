@@ -2,7 +2,7 @@
 """
 Cloudflare ProxyIP 筛选 - 全自动版（筛选+映射）
 - HTTP 连通性 + WebSocket 验证
-- YouTube 延迟 + 下载速度测试（仅运行时显示，不写入输出文件）
+- 真实带宽测速（用 speed.cloudflare.com，仅运行时显示，不写入输出文件）
 - 状态码白名单，延迟不考核
 - 自动通过多个 IP 接口查询地理位置（带限速，防封）
 - 输出带国家/运营商标签的节点列表
@@ -33,18 +33,16 @@ TEST_UUID = "362cbd17-f2d0-4b37-8d2c-10a2a45ddefc"
 DOWNLOAD_TEST_URL = "https://speed.cloudflare.com/__down?bytes=1000000"
 EXPECTED_DOWNLOAD_BYTES = 1000000
 
-# YouTube 测速配置
-# 通过向 YouTube 发起 HTTPS 连接并下载一小段数据来测速
-# 使用 YouTube 的 generate_204 端点测延迟，用 googlevideo 测下载速度
-YOUTUBE_LATENCY_HOST  = "www.youtube.com"
-YOUTUBE_LATENCY_PATH  = "/generate_204"
-YOUTUBE_DOWNLOAD_HOST = "rr1---sn-ab5sznle.googlevideo.com"
-# 这是一个公开的 YouTube 测速用无版权短片片段 URL（itag=18 低画质，约 1~2MB）
-# 如失效可换为其他公开 googlevideo URL
-YOUTUBE_DOWNLOAD_PATH = "/videoplayback?expire=9999999999&ei=test&ip=0.0.0.0&id=o-test&itag=18&source=youtube&requiressl=yes&mh=&mm=&mn=&ms=&mv=&mvi=&pl=&ratebypass=yes"
-YOUTUBE_DOWNLOAD_BYTES = 500_000   # 目标下载量：500KB，够算速度又不太慢
-YOUTUBE_TIMEOUT        = 10        # YouTube 测试超时（秒）
-YOUTUBE_LATENCY_ROUNDS = 3         # YouTube 延迟测试轮次
+# ── 带宽测速配置（speed.cloudflare.com，仅运行时显示）──
+# 直接连接到 ProxyIP，Host 头仍为 speed.cloudflare.com
+# Cloudflare 边缘会正确响应，因为 ProxyIP 本身就是 CF 节点
+SPEED_TEST_HOST    = "speed.cloudflare.com"
+SPEED_TEST_SIZES   = [                        # 依次尝试，取第一个成功的
+    ("10MB",  10_000_000),
+    ("5MB",    5_000_000),
+    ("1MB",    1_000_000),
+]
+SPEED_TEST_TIMEOUT = 20   # 秒，较大文件需要更长时间
 
 MAX_AVG_LATENCY = 9000
 MAX_JITTER      = 9000
@@ -210,186 +208,105 @@ def test_websocket(ip, port, timeout=5):
     return _try(True) or _try(False)
 
 
-# ================== YouTube 测速（仅运行时显示） ==================
+# ================== 带宽测速（仅运行时显示） ==================
 
-def _make_tls_socket(ip, port, server_hostname, timeout):
-    """建立一条 TLS 连接，返回已连接的 socket，失败返回 None。"""
+def measure_bandwidth(ip, port, addr):
+    """
+    通过 speed.cloudflare.com/__down 测量节点的真实下载带宽。
+
+    原理：ProxyIP 本身就是 Cloudflare 边缘节点，直接向它发起 HTTPS 请求，
+    Host 头设为 speed.cloudflare.com，CF 边缘会正确处理并返回测速数据。
+    这与 Cloudflare 官方测速页面的原理完全一致，结果可信。
+
+    结果仅 print 显示，不写入输出文件。
+    """
     family = socket.AF_INET6 if ":" in ip else socket.AF_INET
-    s = socket.socket(family, socket.SOCK_STREAM)
-    s.settimeout(timeout)
-    try:
-        ctx = ssl.create_default_context()
-        ctx.check_hostname = False
-        ctx.verify_mode = ssl.CERT_NONE
-        s = ctx.wrap_socket(s, server_hostname=server_hostname)
-        s.connect((ip, port))
-        return s
-    except Exception:
-        s.close()
-        return None
 
-def _http_get_raw(s, host, path):
-    """通过已连接的 socket 发送 HTTP GET，返回原始响应头部字节（含 body 开头）。"""
-    req = (
-        f"GET {path} HTTP/1.1\r\n"
-        f"Host: {host}\r\n"
-        f"User-Agent: Mozilla/5.0\r\n"
-        f"Connection: close\r\n\r\n"
-    ).encode()
-    s.sendall(req)
-    buf = b""
-    while b"\r\n\r\n" not in buf:
-        chunk = s.recv(4096)
-        if not chunk:
-            break
-        buf += chunk
-    return buf
+    for label, size in SPEED_TEST_SIZES:
+        path = f"/__down?bytes={size}"
+        req = (
+            f"GET {path} HTTP/1.1\r\n"
+            f"Host: {SPEED_TEST_HOST}\r\n"
+            f"User-Agent: Mozilla/5.0\r\n"
+            f"Connection: close\r\n\r\n"
+        ).encode()
 
-def test_youtube_latency(ip, port):
-    """
-    测量通过 ProxyIP 访问 YouTube generate_204 的往返延迟。
-    连续测 YOUTUBE_LATENCY_ROUNDS 轮，返回 (avg_ms, jitter_ms) 或 (None, None)。
-
-    原理：直接向 ProxyIP 发起 HTTPS 连接，Host 头设为 youtube.com，
-    通过 Cloudflare 反代到达 YouTube，模拟真实访问路径。
-    """
-    samples = []
-    for _ in range(YOUTUBE_LATENCY_ROUNDS):
-        s = _make_tls_socket(ip, port, YOUTUBE_LATENCY_HOST, YOUTUBE_TIMEOUT)
-        if s is None:
-            continue
+        s = socket.socket(family, socket.SOCK_STREAM)
+        s.settimeout(SPEED_TEST_TIMEOUT)
         try:
+            ctx = ssl.create_default_context()
+            ctx.check_hostname = False
+            ctx.verify_mode = ssl.CERT_NONE
+            s = ctx.wrap_socket(s, server_hostname=SPEED_TEST_HOST)
+            s.connect((ip, port))
+            s.sendall(req)
+
+            # 读响应头
+            header_buf = b""
+            while b"\r\n\r\n" not in header_buf:
+                chunk = s.recv(4096)
+                if not chunk:
+                    break
+                header_buf += chunk
+
+            if not header_buf:
+                s.close()
+                continue
+
+            status_line = header_buf.split(b"\r\n")[0].decode(errors="ignore")
+            code = status_line.split()[1] if len(status_line.split()) >= 2 else "0"
+            if code not in ("200", "206"):
+                s.close()
+                continue
+
+            # 已读到的 body 部分
+            body_start = header_buf.split(b"\r\n\r\n", 1)[1] if b"\r\n\r\n" in header_buf else b""
+            downloaded = len(body_start)
+
             t0 = time.perf_counter()
-            buf = _http_get_raw(s, YOUTUBE_LATENCY_HOST, YOUTUBE_LATENCY_PATH)
-            elapsed = (time.perf_counter() - t0) * 1000
-            if buf:
-                line = buf.split(b"\r\n")[0].decode(errors="ignore")
-                # generate_204 正常返回 204，也接受 200/301/302
-                code_str = line.split()[1] if len(line.split()) >= 2 else "0"
-                if code_str in ("204", "200", "301", "302"):
-                    samples.append(elapsed)
-        except Exception:
-            pass
-        finally:
-            s.close()
-        time.sleep(0.05)
-
-    if not samples:
-        return None, None
-    avg = statistics.mean(samples)
-    jitter = statistics.stdev(samples) if len(samples) > 1 else 0.0
-    return round(avg, 1), round(jitter, 1)
-
-
-def test_youtube_download_speed(ip, port):
-    """
-    测量通过 ProxyIP 下载 YouTube 视频片段的速度（Mbps）。
-
-    使用 YouTube 公开的 /generate_204 同域下、或直接请求 googlevideo CDN 测速。
-    这里改为请求 YouTube 主页的一个已知静态资源来绕过 token 问题：
-    使用 YouTube 的 /s/player/... JS 文件（体积约 500KB~1MB）。
-
-    若 googlevideo 直连受限，退而请求 youtube.com 的静态 JS 资源。
-    返回下载速度 (Mbps) 或 None。
-    """
-    # 目标：youtube.com 的一个较大静态 JS 资源
-    # 这条路径会随版本变化，使用 /robots.txt 仅能拿到几百字节，改用以下策略：
-    # 先请求 youtube.com/，从响应头找到 JS URL，再下载；
-    # 但为简化，直接下载 YouTube iframe_api（约 50~100KB，用于估速）
-    # 或者用 googlevideo 的测速文件
-    SPEED_TEST_TARGETS = [
-        # (host, path, 预期大小说明)
-        ("redirector.googlevideo.com", "/videoplayback?itag=18&expire=9999999999", "googlevideo"),
-        ("www.youtube.com", "/iframe_api", "yt-iframe-api"),
-        ("www.youtube.com", "/s/desktop/main.js", "yt-desktop-js"),  # 备用
-    ]
-
-    # 实际上 googlevideo 需要合法 token，这里改为下载 YouTube 的 favicon（小）
-    # 加 sw.js（约 10KB）、iframe_api（约 50~100KB）来估速
-    # 为了获得更准确的速度，我们下载足够大的内容
-    host = "www.youtube.com"
-    # 使用 YouTube 的 sw.js（Service Worker，体积中等）
-    # 更好的选择：直接请求 yt3.ggpht.com 的图片或 YouTube 提供的测速文件
-    # 这里使用 YouTube 已知的较大静态资源路径
-    paths_to_try = [
-        "/iframe_api",           # ~50~150KB
-        "/sw.js",                # ~10~50KB，小但稳定
-        "/robots.txt",           # 很小，仅作连通性验证
-    ]
-
-    for path in paths_to_try:
-        s = _make_tls_socket(ip, port, host, YOUTUBE_TIMEOUT)
-        if s is None:
-            continue
-        try:
-            t0 = time.perf_counter()
-            buf = _http_get_raw(s, host, path)
-            if not buf:
-                s.close()
-                continue
-
-            # 解析状态码
-            line = buf.split(b"\r\n")[0].decode(errors="ignore")
-            parts = line.split()
-            if len(parts) < 2:
-                s.close()
-                continue
-            code = parts[1]
-            if code not in ("200", "204", "301", "302"):
-                s.close()
-                continue
-
-            # 继续读取 body
-            downloaded = len(buf.split(b"\r\n\r\n", 1)[1]) if b"\r\n\r\n" in buf else 0
-            while downloaded < YOUTUBE_DOWNLOAD_BYTES:
-                chunk = s.recv(8192)
+            while downloaded < size:
+                chunk = s.recv(65536)
                 if not chunk:
                     break
                 downloaded += len(chunk)
-
             elapsed = time.perf_counter() - t0
             s.close()
 
-            if downloaded < 1024:  # 至少要下到 1KB 才算有效
+            if downloaded < size * 0.5:   # 下载不到一半，数据不够可靠
                 continue
 
             speed_mbps = (downloaded * 8) / (elapsed * 1_000_000)
-            return round(speed_mbps, 2)
-        except Exception:
+            speed_mbps = round(speed_mbps, 2)
+
+            # 画质参考（YouTube 各画质所需带宽）
+            if speed_mbps < 0.5:
+                quality = "⚠️  极差，连 360p 都可能卡"
+            elif speed_mbps < 1.5:
+                quality = "⚠️  勉强 480p"
+            elif speed_mbps < 5.0:
+                quality = "✅ 够 720p"
+            elif speed_mbps < 20.0:
+                quality = "✅ 够 1080p"
+            elif speed_mbps < 50.0:
+                quality = "🚀 够 4K"
+            else:
+                quality = "🚀 够 8K"
+
+            print(
+                f"  📶 {addr} 带宽测速({label})：{speed_mbps:.2f} Mbps  {quality}",
+                flush=True,
+            )
+            return  # 成功后不再尝试更大文件
+
+        except Exception as e:
             try:
                 s.close()
-            except:
+            except Exception:
                 pass
+            # 当前文件大小失败，缩小重试
             continue
 
-    return None
-
-
-def run_youtube_test(ip, port, addr):
-    """
-    对单个节点运行 YouTube 延迟 + 下载速度测试，结果仅 print 输出，不返回给调用者用于写文件。
-    """
-    print(f"  📺 {addr} YouTube延迟测试中…", flush=True)
-    yt_avg, yt_jitter = test_youtube_latency(ip, port)
-
-    if yt_avg is None:
-        print(f"  📺 {addr} YouTube延迟：❌ 无法连接", flush=True)
-    else:
-        print(f"  📺 {addr} YouTube延迟：avg={yt_avg:.0f}ms, jitter={yt_jitter:.0f}ms", flush=True)
-
-    print(f"  📺 {addr} YouTube下载速度测试中…", flush=True)
-    yt_speed = test_youtube_download_speed(ip, port)
-
-    if yt_speed is None:
-        print(f"  📺 {addr} YouTube下载速度：❌ 测试失败", flush=True)
-    elif yt_speed < 1.0:
-        print(f"  📺 {addr} YouTube下载速度：{yt_speed:.2f} Mbps ⚠️  (低于 1Mbps，可能卡顿)", flush=True)
-    elif yt_speed < 5.0:
-        print(f"  📺 {addr} YouTube下载速度：{yt_speed:.2f} Mbps ✅ (够 720p)", flush=True)
-    elif yt_speed < 20.0:
-        print(f"  📺 {addr} YouTube下载速度：{yt_speed:.2f} Mbps ✅ (够 1080p)", flush=True)
-    else:
-        print(f"  📺 {addr} YouTube下载速度：{yt_speed:.2f} Mbps 🚀 (够 4K)", flush=True)
+    print(f"  📶 {addr} 带宽测速：❌ 失败（连接超时或节点限速）", flush=True)
 
 
 # ================== 单节点筛选 ==================
