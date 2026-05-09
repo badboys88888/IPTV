@@ -12,7 +12,7 @@ OUTPUT = 'scan/useful_proxies.txt'
 SCAN_CONCURRENCY = 5000
 CHECK_CONCURRENCY = 50
 GEO_CONCURRENCY = 20
-TARGET_PORTS = [443, 8443, 2053, 2083, 2087, 2093, 2096, 8080, 30001, 30006, 10443, 50001, 20002, 12345, 8081]
+TARGET_PORTS = [443, 8443, 2053, 2083, 2087, 2093, 2096, 8080, 30001, 30006, 10443, 50001, 20002, 12345, 8081, 40000, 40001, 40002]
 MAX_IPS_PER_NET = 999999
 CHECK_URL = 'https://dawn-lab-5568.177866120.workers.dev/check?proxyip={}'
 GEO_API_URL = 'http://ip-api.com/json/{}?fields=status,country,countryCode,regionName,isp,as,query'
