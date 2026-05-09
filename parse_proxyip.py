@@ -11,6 +11,7 @@ Cloudflare ProxyIP 筛选 - 全自动版（筛选+映射）
 1. 增加 HTTP 下载数据量测试：在 HTTP 连通性测试中，尝试下载一定量的数据，以模拟真实使用场景下的数据传输能力。
 2. 增加延迟测试轮次：将 LATENCY_ROUNDS 增加到 3，以获取更稳定的延迟平均值，并引入抖动（Jitter）评估，淘汰不稳定的 IP。
 3. 调整超时时间：适当延长 REQ_TIMEOUT 和 CONNECT_TIMEOUT，以适应更长的下载测试。
+4. 修复了 f-string 中不能包含反斜杠的语法错误。
 """
 
 import csv
@@ -153,7 +154,8 @@ def http_connectivity_measure(ip, port):
             if downloaded_bytes < EXPECTED_DOWNLOAD_BYTES * 0.9: # 允许少量误差
                 return (False, 9999, f"下载数据量不足 ({downloaded_bytes}B)")
 
-            return (True, round(elapsed, 1), f"{{\'TLS\' if use_tls else \'HTTP\'}} {code} ({downloaded_bytes}B)")
+            tls_label = "TLS" if use_tls else "HTTP"
+            return (True, round(elapsed, 1), f"{tls_label} {code} ({downloaded_bytes}B)")
         except Exception as e:
             return (False, 9999, str(e)[:50])
         finally:
@@ -481,7 +483,11 @@ def save_output(passed):
                 label = f"{country}-{idx:03d}-{org_part}"
             else:
                 label = f"{country}-{idx:03d}"
-            lines.append(f"{it[\'addr\']}#{label} (avg={it[\'avg_ms\']:.0f}ms, jitter={it[\'jitter_ms\']:.0f}ms)") # 输出抖动信息
+            # 修复 f-string 语法错误：避免在大括号内使用反斜杠
+            addr = it["addr"]
+            avg_ms = it["avg_ms"]
+            jitter_ms = it["jitter_ms"]
+            lines.append(f"{addr}#{label} (avg={avg_ms:.0f}ms, jitter={jitter_ms:.0f}ms)") 
             total += 1
         lines.append("")
 
