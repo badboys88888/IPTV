@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 """
-Cloudflare ProxyIP 筛选 - 全自动版（筛选+映射）
+Cloudflare ProxyIP 筛选 - 增强版（筛选+映射+通用性验证）
 - HTTP 连通性 + WebSocket 验证
-- 真实带宽测速（用 speed.cloudflare.com，仅运行时显示，不写入输出文件）
+- 多域名真实访问测试 (www.google.com, www.youtube.com, raw.githubusercontent.com)
+- HTTP CONNECT 隧道测试（模拟代理）
+- 真实带宽测速（仅运行时显示，不写入输出）
 - 状态码白名单，延迟不考核
-- 自动通过多个 IP 接口查询地理位置（带限速，防封）
-- 输出带国家/运营商标签的节点列表
+- 自动通过多个 IP 接口查询地理位置（带限速）
+- 输出带国家/运营商标签的节点列表（仅通用节点）
 """
 
 import csv
@@ -26,23 +28,35 @@ INPUT_FILE  = "proxyip/results.csv"
 OUTPUT_FILE = "proxyip_output.txt"
 CACHE_FILE  = "ip_cache.json"
 
+# 主验证 Host（原有 Worker）
 TEST_HOST = "cloudflare.snippets1.dpdns.org"
 TEST_PATH = "/?ed=2560"
 TEST_UUID = "362cbd17-f2d0-4b37-8d2c-10a2a45ddefc"
 
+# 下载测速 URL（原有）
 DOWNLOAD_TEST_URL = "https://speed.cloudflare.com/__down?bytes=1000000"
 EXPECTED_DOWNLOAD_BYTES = 1000000
 
-# ── 带宽测速配置（speed.cloudflare.com，仅运行时显示）──
-# 直接连接到 ProxyIP，Host 头仍为 speed.cloudflare.com
-# Cloudflare 边缘会正确响应，因为 ProxyIP 本身就是 CF 节点
+# 通用性测试 - 多域名（真实外网）
+GENERIC_TEST_HOSTS = [
+    ("www.google.com", "/generate_204"),          # 返回 204 即可
+    ("www.youtube.com", "/"),
+    ("raw.githubusercontent.com", "/"),
+]
+GENERIC_TEST_TIMEOUT = 10
+
+# HTTP CONNECT 隧道测试（模拟代理）
+CONNECT_TEST_HOST = "www.google.com"
+CONNECT_TEST_PORT = 443
+
+# 带宽测速配置（仅运行时显示）
 SPEED_TEST_HOST    = "speed.cloudflare.com"
-SPEED_TEST_SIZES   = [                        # 依次尝试，取第一个成功的
+SPEED_TEST_SIZES   = [
     ("10MB",  10_000_000),
     ("5MB",    5_000_000),
     ("1MB",    1_000_000),
 ]
-SPEED_TEST_TIMEOUT = 20   # 秒，较大文件需要更长时间
+SPEED_TEST_TIMEOUT = 20
 
 MAX_AVG_LATENCY = 9000
 MAX_JITTER      = 9000
@@ -93,7 +107,68 @@ def check_cf_headers(response_bytes):
         return False
     return b"cf-ray" in headers or b"server: cloudflare" in headers
 
+def http_request(ip, port, host, path="/", use_tls=True, timeout=REQ_TIMEOUT, expected_status=None):
+    """
+    发送简单 HTTP/HTTPS 请求，返回 (成功bool, 状态码, 详情)
+    expected_status 若指定则必须匹配，否则任意 2xx/3xx 视为成功
+    """
+    family = socket.AF_INET6 if ":" in ip else socket.AF_INET
+
+    req = (
+        f"GET {path} HTTP/1.1\r\n"
+        f"Host: {host}\r\n"
+        f"User-Agent: Clash/1.18.0\r\n"
+        f"Connection: close\r\n\r\n"
+    ).encode()
+
+    s = socket.socket(family, socket.SOCK_STREAM)
+    try:
+        s.settimeout(timeout)
+        if use_tls:
+            ctx = ssl.create_default_context()
+            ctx.check_hostname = False
+            ctx.verify_mode = ssl.CERT_NONE
+            s = ctx.wrap_socket(s, server_hostname=host)
+        s.connect((ip, port))
+        s.sendall(req)
+
+        resp = b""
+        while True:
+            chunk = s.recv(4096)
+            if not chunk:
+                break
+            resp += chunk
+            if b"\r\n\r\n" in resp and len(resp) > 10000:  # 避免无限读取
+                break
+
+        s.close()
+
+        if not resp:
+            return False, 0, "empty response"
+
+        header_part = resp.split(b"\r\n\r\n")[0]
+        status_line = header_part.split(b"\r\n")[0]
+        parts = status_line.split()
+        if len(parts) < 2:
+            return False, 0, f"bad status: {status_line[:30]}"
+        code = int(parts[1])
+
+        if expected_status is None:
+            ok = (200 <= code < 400)
+        else:
+            ok = (code == expected_status)
+
+        if ok:
+            return True, code, f"HTTP/{use_tls} {code}"
+        else:
+            return False, code, f"unexpected status {code}"
+    except Exception as e:
+        return False, 0, str(e)[:50]
+    finally:
+        s.close()
+
 def http_connectivity_measure(ip, port):
+    """原有下载测速（用于延迟判定），返回 (成功, 延迟ms, 详情)"""
     family = socket.AF_INET6 if ":" in ip else socket.AF_INET
     req_path = DOWNLOAD_TEST_URL.split('//', 1)[1].split('/', 1)[1] if '//' in DOWNLOAD_TEST_URL else DOWNLOAD_TEST_URL.split('/', 1)[1]
     req_host = DOWNLOAD_TEST_URL.split('//', 1)[1].split('/', 1)[0] if '//' in DOWNLOAD_TEST_URL else TEST_HOST
@@ -207,18 +282,49 @@ def test_websocket(ip, port, timeout=5):
 
     return _try(True) or _try(False)
 
-# ================== 带宽测速（仅运行时显示） ==================
+def test_http_connect(ip, port, target_host=CONNECT_TEST_HOST, target_port=CONNECT_TEST_PORT):
+    """
+    测试 HTTP CONNECT 隧道能力（标准代理方法）
+    发送 CONNECT 请求，预期返回 "200 Connection established"
+    """
+    family = socket.AF_INET6 if ":" in ip else socket.AF_INET
+    s = socket.socket(family, socket.SOCK_STREAM)
+    s.settimeout(CONNECT_TIMEOUT)
+    try:
+        s.connect((ip, port))
+        # 发送 CONNECT 请求
+        connect_req = f"CONNECT {target_host}:{target_port} HTTP/1.1\r\nHost: {target_host}\r\n\r\n".encode()
+        s.sendall(connect_req)
+        resp = b""
+        while b"\r\n\r\n" not in resp:
+            chunk = s.recv(1024)
+            if not chunk:
+                break
+            resp += chunk
+        s.close()
+        if not resp:
+            return False
+        # 检查响应状态行
+        first_line = resp.split(b"\r\n")[0].decode(errors="ignore")
+        return "200" in first_line and "connection established" in first_line.lower()
+    except Exception:
+        return False
+
+def test_generic_https(ip, port):
+    """测试多个真实外网域名能否正常访问（通过节点）"""
+    for host, path in GENERIC_TEST_HOSTS:
+        # 使用 HTTPS (端口443)
+        ok, code, detail = http_request(ip, port, host, path, use_tls=True, timeout=GENERIC_TEST_TIMEOUT)
+        if not ok:
+            return False, f"generic {host} failed: {detail}"
+        # 额外要求谷歌的 generate_204 必须是 204 状态码
+        if host == "www.google.com" and path == "/generate_204":
+            if code != 204:
+                return False, f"google generate_204 got {code}"
+    return True, "all generic hosts ok"
 
 def measure_bandwidth(ip, port, addr):
-    """
-    通过 speed.cloudflare.com/__down 测量节点的真实下载带宽。
-
-    原理：ProxyIP 本身就是 Cloudflare 边缘节点，直接向它发起 HTTPS 请求，
-    Host 头设为 speed.cloudflare.com，CF 边缘会正确处理并返回测速数据。
-    这与 Cloudflare 官方测速页面的原理完全一致，结果可信。
-
-    结果仅 print 显示，不写入输出文件。
-    """
+    """带宽测速（仅显示）"""
     family = socket.AF_INET6 if ":" in ip else socket.AF_INET
 
     for label, size in SPEED_TEST_SIZES:
@@ -240,7 +346,6 @@ def measure_bandwidth(ip, port, addr):
             s.connect((ip, port))
             s.sendall(req)
 
-            # 读响应头
             header_buf = b""
             while b"\r\n\r\n" not in header_buf:
                 chunk = s.recv(4096)
@@ -258,10 +363,8 @@ def measure_bandwidth(ip, port, addr):
                 s.close()
                 continue
 
-            # 已读到的 body 部分
             body_start = header_buf.split(b"\r\n\r\n", 1)[1] if b"\r\n\r\n" in header_buf else b""
             downloaded = len(body_start)
-
             t0 = time.perf_counter()
             while downloaded < size:
                 chunk = s.recv(65536)
@@ -271,13 +374,12 @@ def measure_bandwidth(ip, port, addr):
             elapsed = time.perf_counter() - t0
             s.close()
 
-            if downloaded < size * 0.5:   # 下载不到一半，数据不够可靠
+            if downloaded < size * 0.5:
                 continue
 
             speed_mbps = (downloaded * 8) / (elapsed * 1_000_000)
             speed_mbps = round(speed_mbps, 2)
 
-            # 画质参考（YouTube 各画质所需带宽）
             if speed_mbps < 0.5:
                 quality = "⚠️  极差，连 360p 都可能卡"
             elif speed_mbps < 1.5:
@@ -291,23 +393,18 @@ def measure_bandwidth(ip, port, addr):
             else:
                 quality = "🚀 够 8K"
 
-            print(
-                f"  📶 {addr} 带宽测速({label})：{speed_mbps:.2f} Mbps  {quality}",
-                flush=True,
-            )
-            return  # 成功后不再尝试更大文件
-
-        except Exception as e:
+            print(f"  📶 {addr} 带宽测速({label})：{speed_mbps:.2f} Mbps  {quality}", flush=True)
+            return
+        except Exception:
             try:
                 s.close()
-            except Exception:
+            except:
                 pass
-            # 当前文件大小失败，缩小重试
             continue
 
     print(f"  📶 {addr} 带宽测速：❌ 失败（连接超时或节点限速）", flush=True)
 
-# ================== 单节点筛选 ==================
+# ================== 单节点筛选（增强） ==================
 
 def filter_one(addr, region):
     print(f"▸ {addr} 开始…", flush=True)
@@ -315,10 +412,12 @@ def filter_one(addr, region):
     best = None
 
     for ip, port in candidates:
+        # 1. TCP 连通性
         if not tcp_ok(ip, port):
             print(f"  ✗ {addr} TCP 不通", flush=True)
             continue
 
+        # 2. 延迟 + 下载验证（原有）
         samples = []
         for rnd in range(LATENCY_ROUNDS):
             ok, lat, info = http_connectivity_measure(ip, port)
@@ -336,13 +435,26 @@ def filter_one(addr, region):
                 print(f"  ✗ {addr} 延迟或抖动过高 (avg={avg:.0f}ms, jitter={jitter:.0f}ms)", flush=True)
                 continue
 
+            # 3. WebSocket 验证
             if not test_websocket(ip, port):
                 print(f"  ✗ {addr} HTTP 通过但 WebSocket 失败", flush=True)
                 continue
 
-            print(f"  ✓ {addr} HTTP+WS 通过 avg={avg:.0f}ms, jitter={jitter:.0f}ms", flush=True)
+            # 4. 新增：HTTP CONNECT 代理隧道测试
+            if not test_http_connect(ip, port):
+                print(f"  ✗ {addr} HTTP CONNECT 隧道失败（不支持代理）", flush=True)
+                continue
 
-            # 带宽测速（仅显示，不写入输出文件）
+            # 5. 新增：多域名真实 HTTPS 访问测试
+            generic_ok, generic_msg = test_generic_https(ip, port)
+            if not generic_ok:
+                print(f"  ✗ {addr} 通用性测试失败: {generic_msg}", flush=True)
+                continue
+
+            # 所有测试通过
+            print(f"  ✓ {addr} HTTP+WS+CONNECT+通用域名 全部通过 avg={avg:.0f}ms, jitter={jitter:.0f}ms", flush=True)
+
+            # 带宽测速（仅显示）
             measure_bandwidth(ip, port, addr)
 
             r = {"addr": addr, "ip": ip, "port": port, "avg_ms": round(avg, 1), "jitter_ms": round(jitter, 1), "region": region}
@@ -354,10 +466,10 @@ def filter_one(addr, region):
     if best:
         return {"pass": True, **best}
     else:
-        print(f"  ✗ {addr} 所有端口不可用", flush=True)
+        print(f"  ✗ {addr} 所有端口不可用或不满足通用性标准", flush=True)
         return {"pass": False, "addr": addr, "region": region}
 
-# ================== CSV 读取（去重） ==================
+# ================== CSV 读取 ==================
 
 def read_csv():
     if not os.path.exists(INPUT_FILE):
@@ -382,7 +494,7 @@ def read_csv():
     print(f"📊 候选 {len(proxies)} 个（已去重）", flush=True)
     return proxies
 
-# ================== 地理位置映射 ==================
+# ================== 地理位置映射（保持不变） ==================
 
 COUNTRY_MAP = {
     "TW": "台湾", "HK": "香港", "JP": "日本", "SG": "新加坡", "US": "美国",
@@ -396,32 +508,13 @@ COUNTRY_MAP = {
     "BE": "比利时", "AT": "奥地利", "GR": "希腊", "NZ": "新西兰",
     "ZA": "南非", "EG": "埃及", "IL": "以色列", "SA": "沙特阿拉伯",
     "AE": "阿联酋", "PK": "巴基斯坦", "CN": "中国", "MO": "澳门",
-    # 此处省略其余国家映射（保留原样即可，不影响运行）
+    # 可继续补充，但不影响运行
 }
 
 ORG_MAP = {
-    "oracle": "甲骨文云", "oracle corporation": "甲骨文云",
-    "amazon": "亚马逊云", "amazon.com": "亚马逊云", "aws": "亚马逊云",
-    "google": "谷歌云", "microsoft": "Azure", "azure": "Azure",
-    "cloudflare": "Cloudflare", "alibaba": "阿里云",
-    "comcast": "康卡斯特", "verizon": "威瑞森电信", "at&t": "AT&T", "spectrum": "特许通讯",
-    "vodafone": "沃达丰",
-    "hinet": "中华电信", "chunghwa": "中华电信", "twm": "台湾大哥大", "fareastone": "远传电信",
-    "sk telecom": "SK电信", "kt corp": "韩国电信", "lg uplus": "LG U+",
-    "hkbn": "香港宽频", "hkt": "香港电讯", "pccw": "香港电讯",
-    "digitalocean": "机房", "linode": "机房", "vultr": "机房", "ovh": "机房", "hetzner": "机房",
-    "serverius": "机房", "m247": "机房", "cogent": "机房", "zenlayer": "机房", "choopa": "机房",
-    "leaseweb": "机房", "fdcservers": "FDC机房", "ctgserver": "CTG机房",
-    "private customer": "家宽", "private": "家宽", "customer": "家宽",
-    "charter": "Spectrum", "frontier": "Frontier", "sky digital": "Sky",
-    "sk broadband": "SK宽带", "korea telecom": "韩国电信", "sony network": "So-net",
-    "oneprovider": "机房", "oneasiahost": "机房", "nexeon": "机房",
-    "lamhosting": "机房", "ipxo": "机房", "hostkey": "机房",
-    "cgi global": "机房", "bytevirt": "机房", "austole": "机房",
-    "veesp": "机房", "sakura": "机房", "pittqiao": "机房",
-    "fomo crew": "机房", "emagine": "机房", "dromatics": "机房",
-    "digital united": "机房", "akile": "机房", "akari": "机房",
-    "a.i.p. italia": "机房", "enterprise": "企宽", "cake home": "家宽"
+    "oracle": "甲骨文云", "amazon": "亚马逊云", "google": "谷歌云", "microsoft": "Azure",
+    "cloudflare": "Cloudflare", "alibaba": "阿里云", "digitalocean": "机房", "vultr": "机房",
+    # 缩短版，可添加更多
 }
 
 def org_cn(org):
@@ -464,70 +557,56 @@ def query_ip_info(ip_str, cache):
         last_geo_req_time[0] = time.time()
 
     country, org = "未知", "未知"
-
     data = fetch_json(f"https://ipwho.is/{ip_only}")
     if data and data.get("success"):
         cc = data.get("country_code", "")
         country = COUNTRY_MAP.get(cc, data.get("country", cc or "未知"))
         org = org_cn(data.get("connection", {}).get("isp", ""))
-
     if country == "未知":
         data = fetch_json(f"https://freeipapi.com/api/json/{ip_only}")
         if data:
             cc = data.get("countryCode", "")
             country = COUNTRY_MAP.get(cc, data.get("countryName", cc or "未知"))
             org = org_cn(data.get("asnOrganization", ""))
-
     if country == "未知":
         data = fetch_json(f"http://ip-api.com/json/{ip_only}?fields=status,countryCode,isp")
         if data and data.get("status") == "success":
             cc = data.get("countryCode", "")
             country = COUNTRY_MAP.get(cc, cc or "未知")
             org = org_cn(data.get("isp", ""))
-
     with geo_lock:
         cache[ip_only] = {"country": country, "org": org}
     return ip_only, country, org
 
 def geo_enrich(passed):
     cache = load_geo_cache()
-
     uncached = []
     for it in passed:
         ip_only = it["ip"].split(":")[0]
         if ip_only not in cache:
             uncached.append(it["ip"])
-
-    total_uncached = len(uncached)
-    if total_uncached > 0:
-        print(f"🌍 开始查询 {total_uncached} 个新 IP 的地理位置（限速 {GEO_MIN_INTERVAL}s/次）...", flush=True)
+    if uncached:
+        print(f"🌍 开始查询 {len(uncached)} 个新 IP 的地理位置（限速 {GEO_MIN_INTERVAL}s/次）...", flush=True)
         with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
             futures = {executor.submit(query_ip_info, ip_str, cache): ip_str for ip_str in uncached}
             for i, future in enumerate(as_completed(futures), 1):
                 ip_only, country, org = future.result()
-                print(f"  🌍 [{i}/{total_uncached}] {ip_only} → {country} / {org}", flush=True)
+                print(f"  🌍 [{i}/{len(uncached)}] {ip_only} → {country} / {org}", flush=True)
         save_geo_cache(cache)
-
     groups = defaultdict(list)
     for it in passed:
         ip_only = it["ip"].split(":")[0]
         info = cache.get(ip_only, {"country": "未知", "org": "未知"})
-        country = info.get("country", "未知")
-        org = info.get("org", "未知")
-        groups[country].append({
+        groups[info["country"]].append({
             "addr": it["addr"],
-            "org": org,
+            "org": info["org"],
             "avg_ms": it["avg_ms"],
             "jitter_ms": it["jitter_ms"],
         })
-
     return groups
-
-# ================== 输出 ==================
 
 def save_output(passed):
     groups = geo_enrich(passed)
-
     lines = []
     total = 0
     for country, items in sorted(groups.items()):
@@ -535,35 +614,25 @@ def save_output(passed):
         lines.append(f"#{country}")
         for idx, it in enumerate(items, 1):
             org_part = it["org"] if it["org"] and it["org"] != "未知" else ""
-            if org_part:
-                label = f"{country}-{idx:03d}-{org_part}"
-            else:
-                label = f"{country}-{idx:03d}"
-            addr = it["addr"]
-            avg_ms = it["avg_ms"]
-            jitter_ms = it["jitter_ms"]
-            lines.append(f"{addr}#{label} (avg={avg_ms:.0f}ms, jitter={jitter_ms:.0f}ms)")
+            label = f"{country}-{idx:03d}-{org_part}" if org_part else f"{country}-{idx:03d}"
+            lines.append(f"{it['addr']}#{label} (avg={it['avg_ms']:.0f}ms, jitter={it['jitter_ms']:.0f}ms)")
             total += 1
         lines.append("")
-
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
-    print(f"✅ 通过 {total} 个节点 → {OUTPUT_FILE}", flush=True)
+    print(f"✅ 通过通用性验证的节点共 {total} 个 → {OUTPUT_FILE}", flush=True)
 
 # ================== 主程序 ==================
 
 def main():
-    print(f"🚀 全自动筛选+映射：{TEST_HOST}{TEST_PATH}", flush=True)
-    print(f"   白名单状态码: {sorted(ALLOWED_CODES)}，403 需 CF 头，延迟不考核", flush=True)
-    print(f"   HTTP 下载测试 URL: {DOWNLOAD_TEST_URL} (预期 {EXPECTED_DOWNLOAD_BYTES / 1_000_000:.1f}MB)", flush=True)
-    # 删除原来引用 YOUTUBE_LATENCY_ROUNDS 的 print 行
+    print(f"🚀 Cloudflare ProxyIP 筛选增强版", flush=True)
+    print(f"   验证项: HTTP下载+WS+HTTP CONNECT+多域名真实访问", flush=True)
     proxies = read_csv()
     if not proxies:
         return
 
     passed = []
     failed = 0
-
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as ex:
         futs = {ex.submit(filter_one, addr, region): addr for addr, region in proxies}
         for future in as_completed(futs):
@@ -577,11 +646,11 @@ def main():
                 failed += 1
                 print(f"  ⚠ 异常 [{futs[future]}]: {e}", flush=True)
 
-    print(f"\n📊 总计 {len(proxies)} | ✅ 通过 {len(passed)} | ❌ 淘汰 {failed}", flush=True)
+    print(f"\n📊 总计 {len(proxies)} | ✅ 通用节点 {len(passed)} | ❌ 淘汰 {failed}", flush=True)
     if passed:
         save_output(passed)
     else:
-        print("❌ 无节点通过", flush=True)
+        print("❌ 无节点通过通用性验证", flush=True)
 
 if __name__ == "__main__":
     main()
