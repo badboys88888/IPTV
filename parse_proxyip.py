@@ -1,26 +1,20 @@
 
 #!/usr/bin/env python3
 """
-Cloudflare ProxyIP 筛选 - 全自动版（筛选+映射）
-- HTTP 连通性 + WebSocket 验证
-- 状态码白名单，延迟不考核
+Cloudflare ProxyIP 筛选 - 专业级优选版（模拟小火箭/Clash测速）
+- TCP + TLS 握手延迟测试
+- Cloudflare 官方 1MB 下载数据测试
+- 状态码白名单，延迟和抖动考核
 - 自动通过多个 IP 接口查询地理位置（带限速，防封）
 - 输出带国家/运营商标签的节点列表
 
-改进说明：
-1. 增加 HTTP 下载数据量测试：在 HTTP 连通性测试中，尝试下载一定量的数据，以模拟真实使用场景下的数据传输能力。
-2. 增加延迟测试轮次：将 LATENCY_ROUNDS 增加到 3，以获取更稳定的延迟平均值，并引入抖动（Jitter）评估，淘汰不稳定的 IP。
-3. 调整超时时间：适当延长 REQ_TIMEOUT 和 CONNECT_TIMEOUT，以适应更长的下载测试。
-4. 修复了 f-string 中不能包含反斜杠的语法错误。
-5. 统一测试目标：所有 HTTP 和 WebSocket 测试都将使用 `TEST_HOST`，确保 IP 对您的实际代理域名有效。
-6. 强化 TLS 模拟：在 TLS 握手中加入 ALPN（如 `h2`, `http/1.1`），使其更接近真实客户端的指纹。
-7. SNI 一致性检查：明确设置 `server_hostname`，确保 SNI 正确发送。
-8. 放宽状态码限制：将 `400` 加入允许的状态码白名单，并根据状态码智能调整下载测试逻辑，以兼容反代 IP。
-9. **深度优化 WebSocket 握手逻辑**：
-    *   使用更通用的浏览器 `User-Agent`。
-    *   在 WebSocket 握手失败时，提供更详细的 HTTP 状态码和响应信息，以便诊断问题。
-    *   **移除 `Sec-WebSocket-Protocol` 头部中的 `TEST_UUID`**，以进行更通用的 WebSocket 握手测试，避免因特定协议要求而失败。
-    *   确保 WebSocket 测试也应用了 ALPN 和 SNI 优化。
+核心改进说明：
+1.  **模拟客户端核心测速**：不再强制要求 WebSocket 握手成功，而是模拟小火箭/Clash 等客户端最核心的测速逻辑：TCP 连接、TLS 握手以及从 Cloudflare 官方测速点下载数据。
+2.  **官方测速数据源**：HTTP 连通性测试将指向 `speed.cloudflare.com`，这是一个稳定的 Cloudflare 官方测速点，用于评估 IP 的真实带宽和延迟，避免被用户自定义域名的 WAF 或 Worker 配置影响。
+3.  **更宽松的筛选标准**：只要 IP 能成功建立 TCP/TLS 连接并从 Cloudflare 官方节点下载数据，就认为它是可用的“优选 IP”。
+4.  **保留抖动评估**：继续通过多轮测试计算抖动 (Jitter)，剔除不稳定的 IP。
+5.  **强化 TLS 模拟**：保留 ALPN 和 SNI 优化，使 TLS 握手特征更接近真实客户端。
+6.  **简化配置**：`TEST_HOST` 和 `TEST_UUID` 现在主要用于输出标签，不再作为核心测试目标，降低配置门槛。
 """
 
 import csv
@@ -35,19 +29,23 @@ import urllib.request
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import threading
+import base64
+import random
 
 # ================== 配置 ==================
 INPUT_FILE  = "proxyip/results.csv"
 OUTPUT_FILE = "proxyip_output.txt"
 CACHE_FILE  = "ip_cache.json"
 
-TEST_HOST = "cloudflare.snippets1.dpdns.org" # 请确保这是您的实际代理域名
+# 注意：TEST_HOST 和 TEST_UUID 现在主要用于输出标签，不再是核心测试目标。
+# 如果您需要测试针对您自己的 Worker/Pages 的 WebSocket 连通性，可以考虑在筛选完成后手动测试。
+TEST_HOST = "your.worker.domain.com" # 建议填写您的实际 Worker/Pages 域名，用于输出标签
 TEST_PATH = "/?ed=2560"
-TEST_UUID = "362cbd17-f2d0-4b37-8d2c-10a2a45ddefc"
+TEST_UUID = "your-vless-trojan-uuid" # 建议填写您的实际 UUID，用于输出标签
 
-# 增加下载数据量测试的 URL 和预期大小
-# 注意：这里将下载测试的 host 也统一到 TEST_HOST，path 也统一到 TEST_PATH
-DOWNLOAD_TEST_PATH = TEST_PATH # 使用 TEST_PATH 作为下载测试的路径
+# 官方 Cloudflare 测速点，用于评估 IP 的真实性能
+CF_SPEED_TEST_HOST = "speed.cloudflare.com"
+CF_SPEED_TEST_PATH = "/__down?bytes=1000000" # 下载 1MB 数据
 EXPECTED_DOWNLOAD_BYTES = 1000000 # 预期下载 1MB
 
 MAX_AVG_LATENCY = 9000
@@ -59,7 +57,7 @@ REQ_TIMEOUT     = 15 # 适当延长请求超时，以适应下载测试
 MAX_WORKERS     = 30
 
 DEFAULT_PORTS   = [443, 80]
-ALLOWED_CODES   = {101, 200, 301, 302, 403, 400} # 允许 400 状态码
+ALLOWED_CODES   = {200} # 针对 speed.cloudflare.com，我们只期望 200 状态码
 
 # 接口限速（秒）
 GEO_MIN_INTERVAL = 1.5
@@ -93,20 +91,13 @@ def tcp_ok(ip, port):
     except:
         return False
 
-def check_cf_headers(response_bytes):
-    try:
-        headers = response_bytes.split(b"\r\n\r\n")[0].lower()
-    except:
-        return False
-    return b"cf-ray" in headers or b"server: cloudflare" in headers
-
 def http_connectivity_measure(ip, port):
     family = socket.AF_INET6 if ":" in ip else socket.AF_INET
     
-    # 统一使用 TEST_HOST 和 DOWNLOAD_TEST_PATH
+    # 请求 Cloudflare 官方测速点
     req = (
-        f"GET {DOWNLOAD_TEST_PATH} HTTP/1.1\r\n"
-        f"Host: {TEST_HOST}\r\n"
+        f"GET {CF_SPEED_TEST_PATH} HTTP/1.1\r\n"
+        f"Host: {CF_SPEED_TEST_HOST}\r\n"
         f"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36\r\n"
         f"Connection: close\r\n\r\n"
     ).encode()
@@ -121,9 +112,8 @@ def http_connectivity_measure(ip, port):
                 ctx = ssl.create_default_context()
                 ctx.check_hostname = False
                 ctx.verify_mode = ssl.CERT_NONE
-                # 强化 TLS 模拟：加入 ALPN，并明确设置 server_hostname
                 ctx.set_alpn_protocols(["h2", "http/1.1"])
-                s = ctx.wrap_socket(s, server_hostname=TEST_HOST)
+                s = ctx.wrap_socket(s, server_hostname=CF_SPEED_TEST_HOST)
             s.connect((ip, port))
             s.sendall(req)
             
@@ -144,35 +134,26 @@ def http_connectivity_measure(ip, port):
                 return (False, 9999, f"异常状态行: {line[:40]}")
             code = int(parts[1])
             
-            # 检查状态码是否在允许范围内
+            # 针对 speed.cloudflare.com，我们只期望 200 状态码
             if code not in ALLOWED_CODES:
-                return (False, 9999, f"状态码 {code} 未到达 Worker")
+                return (False, 9999, f"状态码 {code} 未通过 ({CF_SPEED_TEST_HOST})")
             
-            # 对于 403 和 400 状态码，检查是否包含 Cloudflare 特征头
-            if (code == 403 or code == 400) and not check_cf_headers(resp_headers):
-                return (False, 9999, f"{code} 无 CF 头 (可能反代自身或非 CF IP)")
-            
-            # 只有当状态码为 200 时才进行下载量校验
-            if code == 200:
-                # 继续读取响应体，模拟下载数据
-                while True:
-                    chunk = s.recv(4096) # 每次接收 4KB
-                    if not chunk:
-                        break
-                    downloaded_bytes += len(chunk)
-                    # 如果下载量达到预期，提前结束
-                    if downloaded_bytes >= EXPECTED_DOWNLOAD_BYTES:
-                        break
-
-                # 检查下载量是否足够
-                if downloaded_bytes < EXPECTED_DOWNLOAD_BYTES * 0.9: # 允许少量误差
-                    return (False, 9999, f"下载数据量不足 ({downloaded_bytes}B)")
-            else:
-                # 对于 400/403 等状态码，只要有 CF 头，就认为 HTTP 连通性通过，不强制下载量
-                pass
+            # 继续读取响应体，模拟下载数据
+            while True:
+                chunk = s.recv(4096) # 每次接收 4KB
+                if not chunk:
+                    break
+                downloaded_bytes += len(chunk)
+                # 如果下载量达到预期，提前结束
+                if downloaded_bytes >= EXPECTED_DOWNLOAD_BYTES:
+                    break
 
             elapsed = (time.perf_counter() - t0) * 1000
             
+            # 检查下载量是否足够
+            if downloaded_bytes < EXPECTED_DOWNLOAD_BYTES * 0.9: # 允许少量误差
+                return (False, 9999, f"下载数据量不足 ({downloaded_bytes}B)")
+
             tls_label = "TLS" if use_tls else "HTTP"
             return (True, round(elapsed, 1), f"{tls_label} {code} ({downloaded_bytes}B)")
         except Exception as e:
@@ -187,94 +168,6 @@ def http_connectivity_measure(ip, port):
     if ok:
         return ok, lat, detail
     return False, 9999, detail
-
-def test_websocket(ip, port, timeout=5):
-    family = socket.AF_INET6 if ":" in ip else socket.AF_INET
-    # 使用更通用的 User-Agent
-    user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
-    
-    # 第一次尝试：不带 Sec-WebSocket-Protocol 头部中的 TEST_UUID，进行更通用的握手
-    req_generic = (
-        f"GET {TEST_PATH} HTTP/1.1\r\n"
-        f"Host: {TEST_HOST}\r\n"
-        f"Upgrade: websocket\r\n"
-        f"Connection: Upgrade\r\n"
-        f"User-Agent: {user_agent}\r\n"
-        f"Sec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==\r\n"
-        f"Sec-WebSocket-Version: 13\r\n"
-        f"\r\n"
-    ).encode()
-
-    # 第二次尝试：带 Sec-WebSocket-Protocol 头部中的 TEST_UUID
-    req_uuid = (
-        f"GET {TEST_PATH} HTTP/1.1\r\n"
-        f"Host: {TEST_HOST}\r\n"
-        f"Upgrade: websocket\r\n"
-        f"Connection: Upgrade\r\n"
-        f"User-Agent: {user_agent}\r\n"
-        f"Sec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==\r\n"
-        f"Sec-WebSocket-Version: 13\r\n"
-        f"Sec-WebSocket-Protocol: {TEST_UUID}\r\n\r\n"
-    ).encode()
-
-    def _try_ws(use_tls, request_bytes):
-        s = socket.socket(family, socket.SOCK_STREAM)
-        s.settimeout(timeout)
-        try:
-            if use_tls:
-                ctx = ssl.create_default_context()
-                ctx.check_hostname = False
-                ctx.verify_mode = ssl.CERT_NONE
-                ctx.set_alpn_protocols(["h2", "http/1.1"])
-                s = ctx.wrap_socket(s, server_hostname=TEST_HOST)
-            s.connect((ip, port))
-            s.sendall(request_bytes)
-            resp = b""
-            while b"\r\n\r\n" not in resp:
-                chunk = s.recv(1024)
-                if not chunk:
-                    break
-                resp += chunk
-            s.close()
-            if not resp:
-                return False, "空响应"
-            
-            line = resp.split(b"\r\n")[0].decode(errors="ignore")
-            if line.startswith("HTTP/1.1 101"):
-                return True, "WebSocket 握手成功"
-            else:
-                parts = line.split()
-                status_code = int(parts[1]) if len(parts) > 1 else "未知"
-                return False, f"WebSocket 握手失败，状态码: {status_code} ({line[:50]})"
-        except Exception as e:
-            return False, str(e)[:50]
-
-    # 尝试通用 WebSocket 握手 (TLS)
-    ok_tls_generic, detail_tls_generic = _try_ws(True, req_generic)
-    if ok_tls_generic:
-        return True
-    
-    # 尝试带 UUID 的 WebSocket 握手 (TLS)
-    ok_tls_uuid, detail_tls_uuid = _try_ws(True, req_uuid)
-    if ok_tls_uuid:
-        return True
-
-    # 尝试通用 WebSocket 握手 (HTTP)
-    ok_http_generic, detail_http_generic = _try_ws(False, req_generic)
-    if ok_http_generic:
-        return True
-
-    # 尝试带 UUID 的 WebSocket 握手 (HTTP)
-    ok_http_uuid, detail_http_uuid = _try_ws(False, req_uuid)
-    if ok_http_uuid:
-        return True
-    
-    # 如果所有尝试都失败，打印详细信息
-    print(f"    WebSocket TLS (通用) 失败: {detail_tls_generic}", flush=True)
-    print(f"    WebSocket TLS (UUID) 失败: {detail_tls_uuid}", flush=True)
-    print(f"    WebSocket HTTP (通用) 失败: {detail_http_generic}", flush=True)
-    print(f"    WebSocket HTTP (UUID) 失败: {detail_http_uuid}", flush=True)
-    return False
 
 # ================== 单节点筛选 ==================
 
@@ -309,11 +202,10 @@ def filter_one(addr, region):
                 print(f"  ✗ {addr} 延迟或抖动过高 (avg={avg:.0f}ms, jitter={jitter:.0f}ms)", flush=True)
                 continue
 
-            if not test_websocket(ip, port):
-                print(f"  ✗ {addr} HTTP 通过但 WebSocket 失败", flush=True)
-                continue
-
-            print(f"  ✓ {addr} HTTP+WS 通过 avg={avg:.0f}ms, jitter={jitter:.0f}ms", flush=True)
+            # 在专业版中，我们不再强制 WebSocket 握手成功作为筛选条件
+            # 因为很多优选 IP 可能是反代，直接 WebSocket 握手可能失败，但仍可用于代理
+            # 如果需要 WebSocket 验证，用户可以在筛选完成后手动测试
+            print(f"  ✓ {addr} TCP+TLS+下载通过 avg={avg:.0f}ms, jitter={jitter:.0f}ms", flush=True)
             r = {"addr": addr, "ip": ip, "port": port, "avg_ms": round(avg, 1), "jitter_ms": round(jitter, 1), "region": region}
             if best is None or avg < best["avg_ms"]:
                 best = r
@@ -550,7 +442,6 @@ def save_output(passed):
                 label = f"{country}-{idx:03d}-{org_part}"
             else:
                 label = f"{country}-{idx:03d}"
-            # 修复 f-string 语法错误：避免在大括号内使用反斜杠
             addr = it["addr"]
             avg_ms = it["avg_ms"]
             jitter_ms = it["jitter_ms"]
@@ -565,9 +456,9 @@ def save_output(passed):
 # ================== 主程序 ==================
 
 def main():
-    print(f"🚀 全自动筛选+映射：{TEST_HOST}{TEST_PATH}", flush=True)
-    print(f"   白名单状态码: {sorted(ALLOWED_CODES)}，403/400 需 CF 头，延迟不考核", flush=True)
-    print(f"   HTTP 下载测试 URL: https://{TEST_HOST}{DOWNLOAD_TEST_PATH} (预期 {EXPECTED_DOWNLOAD_BYTES / 1000000:.1f}MB)", flush=True)
+    print(f"🚀 全自动筛选+映射：{CF_SPEED_TEST_HOST}{CF_SPEED_TEST_PATH}", flush=True)
+    print(f"   白名单状态码: {sorted(ALLOWED_CODES)}，延迟和抖动考核", flush=True)
+    print(f"   HTTP 下载测试 URL: https://{CF_SPEED_TEST_HOST}{CF_SPEED_TEST_PATH} (预期 {EXPECTED_DOWNLOAD_BYTES / 1000000:.1f}MB)", flush=True)
     proxies = read_csv()
     if not proxies:
         return
