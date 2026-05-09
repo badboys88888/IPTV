@@ -649,6 +649,30 @@
         "require_domain": false,
         "test_udp": "239.252.220.63:5140",
         "prefer_region": "江西"
+    },
+    {
+        "name": "湖南长沙电信[A]",
+        "fofa_query": "server=\"udpxy\" && region=\"Hunan\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "hniptv.txt",
+        "target_m3u": "hniptv.m3u",
+        "output_txt": "hniptv.txt",
+        "output_m3u": "hniptv.m3u",
+        "require_domain": true,
+        "test_udp": "239.76.253.62:9000",
+        "prefer_region": "湖南"
+    },
+    {
+        "name": "湖南长沙电信[B]",
+        "fofa_query": "server=\"udpxy\" && region=\"Hunan\"",
+        "target_repo": "badboys88888/IPTV",
+        "target_txt": "hniptv.txt",
+        "target_m3u": "hniptv.m3u",
+        "output_txt": "hniptv.txt",
+        "output_m3u": "hniptv.m3u",
+        "require_domain": false,
+        "test_udp": "239.76.253.62:9000",
+        "prefer_region": "湖南"
     }
     
 ]
