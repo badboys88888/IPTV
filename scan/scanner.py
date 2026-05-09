@@ -9,11 +9,11 @@ import os
 INPUT = 'scan/ip.txt'
 OUTPUT = 'scan/useful_proxies.txt'
 
-SCAN_CONCURRENCY = 4000   # 端口探测并发
+SCAN_CONCURRENCY = 5000   # 端口探测并发
 CHECK_CONCURRENCY = 50    # 接口精测并发
 # 常见的 Cloudflare 备用 HTTPS 端口
 TARGET_PORTS = [443, 8443, 2053, 2083, 2087, 2093, 2096, 8080, 30001, 30006, 10443, 50001, 20002, 12345, 8081]
-MAX_IPS_PER_NET = 10000    # 每个大网段随机抽取的样本数
+MAX_IPS_PER_NET = 100000    # 每个大网段随机抽取的样本数
 CHECK_URL = 'https://dawn-lab-5568.177866120.workers.dev/check?proxyip={}'
 
 async def port_scanner(ip, port):
