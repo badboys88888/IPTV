@@ -7,23 +7,20 @@ import ipaddress
 # === 核心配置 ===
 CONFIG_PATH = 'config.json'
 INPUT_IP = 'scan/udp.txt'
-SCAN_CONCURRENCY = 5000       # 降低并发提高跨国扫描稳定性
+SCAN_CONCURRENCY = 256        # 降低并发以防被 GitHub 限流或对方封锁
 IPTV_PORTS = [4000, 4022, 8000, 8080, 8888, 9000, 9999]
 
 def log(msg):
+    """确保日志在 GitHub Actions 控制台实时刷新"""
     print(msg, flush=True)
 
 async def verify_stream(session, node, test_udp):
-    """
-    极简拉流验证：只要能吐出非报错文本的数据就视为有效
-    """
+    """深度拉流验证：只要能吐出非报错文本的数据就视为有效"""
     url = f"http://{node}/udp/{test_udp}"
-    # 尝试 2 次，防止网络瞬断
-    for _ in range(2):
+    for _ in range(2): # 跨国网络给两次机会
         try:
             async with session.get(url, timeout=15) as r:
                 if r.status == 200:
-                    # 读取一小段数据块
                     chunk = await r.content.read(1024 * 64)
                     if len(chunk) > 500:
                         # 排除掉常见的报错 JSON/HTML 特征码
@@ -51,37 +48,35 @@ def save_to_repo(filename, node):
     return False
 
 async def run_scan(session, name, test_udp, prefer_region):
-    
-    # --- 强行插入单点测试，排查 GitHub IP 连通性 ---
-    test_node = "82.220.87.8:4022"
-    log(f"DEBUG: 正在尝试从 GitHub 强行连接活源 {test_node}...")
-    try:
-        async with session.get(f"http://{test_node}/status", timeout=10) as r:
-            log(f"DEBUG: 强行连接成功！状态码: {r.status}")
-    except Exception as e:
-        log(f"DEBUG: 强行连接失败。原因: {e}")
-    # ----------------------------------------------
-
-    if not os.path.exists(INPUT_IP):
-        # ... 原有代码 ...
-
     """核心扫描逻辑"""
+    
+    # --- DEBUG: 强行单点测试 GitHub 连通性 ---
+    if "瑞士" in prefer_region:
+        debug_node = "82.220.87.8:4022"
+        log(f"DEBUG: 正在强连验证活源 {debug_node}...")
+        try:
+            async with session.get(f"http://{debug_node}/status", timeout=10) as r:
+                log(f"DEBUG: 强连成功！状态码: {r.status}")
+        except Exception as e:
+            log(f"DEBUG: 强连失败！GitHub无法访问该IP。原因: {e}")
+    # ----------------------------------------
+
     if not os.path.exists(INPUT_IP):
         log(f"❌ 找不到网段文件: {INPUT_IP}")
         return
 
     all_ips = []
     is_target_region = False
-    
-    # 1. 匹配网段逻辑（支持模糊匹配，不区分大小写）
-    target_kw = (prefer_region or name).lower().strip()
+    target_kw = str(prefer_region or name).lower().strip()
+
+    # 1. 匹配网段逻辑
     with open(INPUT_IP, 'r', encoding='utf-8') as f:
         for line in f:
             clean_line = line.strip()
             if not clean_line: continue
             if clean_line.startswith('#'):
-                # 只要 # 后的文字包含关键词即开闸，如 "# 辽宁电信" 匹配 "辽宁"
-                is_target_region = target_kw in clean_line.lower()
+                # 模糊匹配：如 "# 辽宁" 匹配 "辽宁电信组播"
+                is_target_region = target_kw in clean_line.lower() or clean_line.lower().replace('#','').strip() in target_kw
                 continue
             if is_target_region:
                 try:
@@ -90,11 +85,11 @@ async def run_scan(session, name, test_udp, prefer_region):
                 except: continue
 
     if not all_ips:
-        log(f"[-] [{name}] 未在 {INPUT_IP} 中匹配到 [{target_kw}] 段，跳过")
+        log(f"[-] [{name}] 在 udp.txt 中未匹配到 [{target_kw}]，跳过")
         return
 
     total_pts = len(all_ips) * len(IPTV_PORTS)
-    log(f"[*] [{name}] 任务启动，点位: {total_pts} (关键词: {target_kw})")
+    log(f"[*] [{name}] 启动探测，点位: {total_pts} (关键词: {target_kw})")
     
     # 2. 第一阶段：快速识别 status 页面
     alive_nodes = []
@@ -106,24 +101,23 @@ async def run_scan(session, name, test_udp, prefer_region):
         async with sem:
             node = f"{ip}:{port}"
             try:
-                # 增加超时到 5s 确保海外握手成功
+                # 跨国探测，给 5s 超时
                 async with session.get(f"http://{node}/status", timeout=5.0) as r:
                     if r.status == 200:
                         text = await r.text()
-                        # 识别标准 udpxy 页面
                         if "udpxy" in text.lower() and "108545" not in text:
                             log(f"  ✨ 发现 udpxy 活口: {node}")
                             return node
             except: pass
             finally:
                 done_count += 1
-                if done_count % 1000 == 0:
-                    log(f"  > 进度: {done_count}/{total_pts}")
+                if done_count % 500 == 0:
+                    log(f"  > 扫描进度: {done_count}/{total_pts}")
             return None
 
-    # 分批执行
+    # 分批执行防内存溢出
     all_params = [(ip, p) for ip in all_ips for p in IPTV_PORTS]
-    batch_size = 2000
+    batch_size = 1000
     for i in range(0, len(all_params), batch_size):
         batch = all_params[i : i + batch_size]
         results = await asyncio.gather(*(check_node(ip, p) for ip, p in batch))
@@ -131,15 +125,13 @@ async def run_scan(session, name, test_udp, prefer_region):
 
     log(f"[*] [{name}] 第一阶段结束，潜在点位: {len(alive_nodes)}")
 
-    # 3. 第二阶段：精准拉流
+    # 3. 第二阶段：拉流验证
     count = 0
     for node in alive_nodes:
         if await verify_stream(session, node, test_udp):
             if save_to_repo(name, node):
-                log(f"  ✅ [{name}] 捕获有效源: {node}")
+                log(f"  ✅ [{name}] 成功: {node}")
                 count += 1
-            else:
-                log(f"  ➖ [{name}] 已存在: {node}")
     log(f"[*] [{name}] 扫描结束，新增: {count} 个")
 
 async def main():
@@ -152,19 +144,13 @@ async def main():
 
     tasks = config_data if isinstance(config_data, list) else [config_data]
 
-    # 模拟真实播放器头，防止被运营商或 WAF 屏蔽
-    headers = {
-        "User-Agent": "VLC/3.0.18 LibVLC/3.0.18",
-        "Accept": "*/*"
-    }
-    
+    # 设置请求头
+    headers = {"User-Agent": "VLC/3.0.18 LibVLC/3.0.18", "Accept": "*/*"}
     async with aiohttp.ClientSession(headers=headers) as session:
         for task in tasks:
             name = task.get('name')
             test_udp = task.get('test_udp')
-            # 优先用 prefer_region 匹配
             region = task.get('prefer_region') or name
-            
             if name and test_udp:
                 await run_scan(session, name, test_udp, region)
 
