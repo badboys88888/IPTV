@@ -8,7 +8,7 @@ import ipaddress
 CONFIG_PATH = 'config.json'   # JSON配置文件路径
 INPUT_IP = 'scan/ip.txt'      # 扫描号段文件
 SCAN_CONCURRENCY = 2000       # 端口探测并发
-IPTV_PORTS = [4022, 8000, 8080, 8888, 9000] # 组播常用端口
+IPTV_PORTS = [4022, 8000, 8080, 8888, 9000, 9999] # 组播常用端口
 
 async def port_scanner(ip, port):
     """第一阶段：快速探测 TCP 端口"""
