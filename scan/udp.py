@@ -3,150 +3,285 @@ import aiohttp
 import json
 import os
 import ipaddress
+import time
 
-# === 核心配置 ===
-CONFIG_PATH = 'config.json'
-INPUT_IP = 'scan/udp.txt'
-SCAN_CONCURRENCY = 2056        # 既然DEBUG通了，256-512并发是安全的
-IPTV_PORTS = [4000, 4022, 8000, 8080, 8888, 9000, 9999] 
+# =====================================================================
+#  核心配置
+# =====================================================================
+CONFIG_PATH   = 'config.json'
+INPUT_IP      = 'scan/udp.txt'
 
-def log(msg):
-    print(msg, flush=True)
+SCAN_CONCURRENCY = 512          # TCPConnector 配置后实际生效，不要超过 1024
+STREAM_VERIFY_CONCURRENCY = 64  # 拉流验证慢，并发不用高
 
-async def verify_stream(session, node, test_udp):
-    """深度拉流验证：只要能吐出非报错文本的数据就视为有效"""
-    url = f"http://{node}/udp/{test_udp}"
-    try:
-        # 给 15 秒拉流时间，跨国传输慢
-        async with session.get(url, timeout=15) as r:
-            if r.status == 200:
-                chunk = await r.content.read(1024 * 64)
-                if len(chunk) > 500:
-                    # 排除掉常见的报错 JSON/HTML 特征码
-                    if b'{"rtn":' not in chunk and b'msg' not in chunk and b'<html>' not in chunk.lower():
-                        return True
-    except:
-        pass
-    return False
+# udpxy 常见端口，越靠前命中率越高
+IPTV_PORTS = [4022, 4000, 8888, 8080, 9000, 8000, 9999, 5000, 7777]
 
-def save_to_repo(filename, node):
-    """保存并去重"""
-    target_file = f"{filename}.txt"
-    existing = set()
-    if os.path.exists(target_file):
-        with open(target_file, 'r', encoding='utf-8') as f:
-            existing = {line.strip() for line in f if line.strip() and not line.startswith('#')}
-    
-    if node not in existing:
-        with open(target_file, 'a', encoding='utf-8') as f:
-            if not existing:
-                f.write(f"# {filename}\n")
-            f.write(f"{node}\n")
-        return True
-    return False
+# 探活时尝试的路径列表（按命中率排序）
+PROBE_PATHS = ['/status', '/', '/udp/', '/rtp/']
 
-async def run_scan(session, name, test_udp, prefer_region):
-    """核心扫描逻辑"""
-    
-    # --- DEBUG 验证 ---
-    if "瑞士" in prefer_region or "Swiss" in name:
-        debug_node = "82.220.87.8:4022"
-        try:
-            async with session.get(f"http://{debug_node}/status", timeout=10) as r:
-                log(f"DEBUG: 强连 {debug_node} 成功！状态码: {r.status}")
-        except Exception as e:
-            log(f"DEBUG: 强连失败，请检查网关。原因: {e}")
+# 第一阶段探活：认定"活着"的 HTTP 状态码
+ALIVE_STATUS = {200, 301, 302, 403, 404}
 
+# 流验证：最小有效字节数（64KB）
+MIN_STREAM_BYTES = 1024 * 64
+
+# =====================================================================
+#  工具函数
+# =====================================================================
+
+def log(msg: str):
+    ts = time.strftime('%H:%M:%S')
+    print(f"[{ts}] {msg}", flush=True)
+
+
+def load_config() -> list[dict]:
+    if not os.path.exists(CONFIG_PATH):
+        raise FileNotFoundError(f"找不到配置文件: {CONFIG_PATH}")
+    with open(CONFIG_PATH, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    return data if isinstance(data, list) else [data]
+
+
+def save_node(filename: str, node: str) -> bool:
+    """去重写入，返回是否为新增"""
+    target = f"{filename}.txt"
+    existing: set[str] = set()
+    if os.path.exists(target):
+        with open(target, 'r', encoding='utf-8') as f:
+            existing = {ln.strip() for ln in f if ln.strip() and not ln.startswith('#')}
+    if node in existing:
+        return False
+    with open(target, 'a', encoding='utf-8') as f:
+        if not existing:          # 首次写入加表头
+            f.write(f"# {filename}\n")
+        f.write(f"{node}\n")
+    return True
+
+
+def load_ips_for_region(region_kw: str) -> list[str]:
+    """
+    从 INPUT_IP 文件按 # 注释行匹配区域关键词，
+    返回该区域下所有 IP 列表（展开 CIDR）。
+    """
     if not os.path.exists(INPUT_IP):
         log(f"❌ 找不到网段文件: {INPUT_IP}")
-        return
+        return []
 
-    all_ips = []
-    is_target_region = False
-    # 关键词归一化：去掉多余空格，转小写
-    target_kw = str(prefer_region or name).lower().replace("组播","").replace("电信","").replace("联通","").strip()
+    kw = region_kw.lower() \
+        .replace('组播', '').replace('电信', '') \
+        .replace('联通', '').replace('移动', '').strip()
 
-    # 1. 匹配网段逻辑
+    all_ips: list[str] = []
+    in_region = False
+
     with open(INPUT_IP, 'r', encoding='utf-8') as f:
-        for line in f:
-            clean_line = line.strip()
-            if not clean_line: continue
-            if clean_line.startswith('#'):
-                # 模糊匹配：# 辽宁 能匹配 辽宁电信组播
-                label = clean_line.lower().replace('#','').strip()
-                is_target_region = label in target_kw or target_kw in label
+        for raw in f:
+            line = raw.strip()
+            if not line:
                 continue
-            if is_target_region:
+            if line.startswith('#'):
+                label = line.lstrip('#').strip().lower()
+                in_region = (kw in label) or (label in kw)
+                continue
+            if in_region:
                 try:
-                    net = ipaddress.IPv4Network(clean_line, strict=False)
-                    all_ips.extend([str(ip) for ip in list(net)])
-                except: continue
+                    net = ipaddress.IPv4Network(line, strict=False)
+                    all_ips.extend(str(ip) for ip in net)
+                except ValueError:
+                    continue
 
-    if not all_ips:
-        log(f"[-] [{name}] 未在 {INPUT_IP} 中匹配到关键词 [{target_kw}]，跳过")
+    return all_ips
+
+# =====================================================================
+#  阶段一：快速探活
+# =====================================================================
+
+async def probe_alive(session: aiohttp.ClientSession, ip: str, port: int) -> str | None:
+    """
+    依次尝试多个路径，任意一个返回预期状态码即认为节点存活。
+    返回 "ip:port" 或 None。
+    """
+    node = f"{ip}:{port}"
+    for path in PROBE_PATHS:
+        url = f"http://{node}{path}"
+        try:
+            async with session.head(url, timeout=aiohttp.ClientTimeout(total=5)) as r:
+                if r.status in ALIVE_STATUS:
+                    return node
+        except Exception:
+            pass
+        # HEAD 不支持时降级 GET（只读头部）
+        try:
+            async with session.get(
+                url,
+                timeout=aiohttp.ClientTimeout(total=5),
+                allow_redirects=False,
+            ) as r:
+                if r.status in ALIVE_STATUS:
+                    return node
+        except Exception:
+            pass
+    return None
+
+
+async def stage1_scan(
+    session: aiohttp.ClientSession,
+    all_ips: list[str],
+    name: str,
+) -> list[str]:
+    """并发探活，返回存活节点列表"""
+    sem       = asyncio.Semaphore(SCAN_CONCURRENCY)
+    all_tasks = [(ip, p) for ip in all_ips for p in IPTV_PORTS]
+    total     = len(all_tasks)
+    done      = 0
+    alive: list[str] = []
+
+    log(f"[{name}] 阶段一：探活 {len(all_ips)} 个 IP × {len(IPTV_PORTS)} 端口 = {total} 点位")
+
+    async def _probe(ip, port):
+        nonlocal done
+        async with sem:
+            result = await probe_alive(session, ip, port)
+            done += 1
+            if done % 2000 == 0:
+                log(f"  [{name}] 进度 {done}/{total}，已发现 {len(alive)} 个活跃节点")
+            if result:
+                log(f"  [{name}] ✨ 活跃: {result}")
+            return result
+
+    batch = 3000
+    for i in range(0, total, batch):
+        chunk   = all_tasks[i : i + batch]
+        results = await asyncio.gather(*(_probe(ip, p) for ip, p in chunk))
+        alive.extend(r for r in results if r)
+
+    log(f"[{name}] 阶段一完成，活跃节点: {len(alive)}")
+    return alive
+
+# =====================================================================
+#  阶段二：精准拉流验证
+# =====================================================================
+
+# 判定为错误响应的特征字节（只检查前 256 字节，避免误杀正常 TS 流）
+ERROR_SIGNATURES = [b'{"rtn":', b'<html>', b'<HTML>', b'{"error"', b'{"code":']
+
+
+async def verify_stream(
+    session: aiohttp.ClientSession,
+    node: str,
+    test_udp: str,
+) -> bool:
+    """
+    真正拉一段流数据来确认节点有效：
+    - HTTP 200
+    - 收到 ≥ MIN_STREAM_BYTES 字节
+    - 前 256 字节不包含已知错误特征
+    """
+    url = f"http://{node}/udp/{test_udp}"
+    try:
+        async with session.get(
+            url,
+            timeout=aiohttp.ClientTimeout(total=20, connect=5),
+        ) as r:
+            if r.status != 200:
+                return False
+            # 读前 256 字节用于特征检测
+            header_chunk = await r.content.read(256)
+            header_lower = header_chunk.lower()
+            for sig in ERROR_SIGNATURES:
+                if sig in header_lower:
+                    return False
+            # 继续读够 MIN_STREAM_BYTES
+            remaining = await r.content.read(MIN_STREAM_BYTES - len(header_chunk))
+            total_read = len(header_chunk) + len(remaining)
+            return total_read >= MIN_STREAM_BYTES
+    except Exception:
+        return False
+
+
+async def stage2_verify(
+    session: aiohttp.ClientSession,
+    alive_nodes: list[str],
+    test_udp: str,
+    name: str,
+) -> int:
+    """并发验证，返回新增有效源数量"""
+    sem   = asyncio.Semaphore(STREAM_VERIFY_CONCURRENCY)
+    count = 0
+
+    log(f"[{name}] 阶段二：验证 {len(alive_nodes)} 个节点的真实流")
+
+    async def _verify(node):
+        nonlocal count
+        async with sem:
+            ok = await verify_stream(session, node, test_udp)
+            if ok:
+                if save_node(name, node):
+                    log(f"  [{name}] ✅ 有效源: {node}")
+                    count += 1
+
+    await asyncio.gather(*(_verify(n) for n in alive_nodes))
+    return count
+
+# =====================================================================
+#  主扫描流程
+# =====================================================================
+
+async def run_task(session: aiohttp.ClientSession, task: dict):
+    name       = task.get('name', '未命名')
+    test_udp   = task.get('test_udp', '')
+    region     = task.get('prefer_region') or name
+
+    if not test_udp:
+        log(f"[{name}] ⚠️  缺少 test_udp，跳过")
         return
 
-    total_pts = len(all_ips) * len(IPTV_PORTS)
-    log(f"[*] [{name}] 启动探测，总点位: {total_pts}")
-    
-    # 2. 第一阶段：快速识别 (采用 DEBUG 模式：只要 200 OK 就算)
-    alive_nodes = []
-    sem = asyncio.Semaphore(SCAN_CONCURRENCY)
-    done_count = 0
+    log(f"\n{'='*60}")
+    log(f"任务: {name}  |  区域关键词: {region}  |  测试流: {test_udp}")
+    log(f"{'='*60}")
 
-    async def check_node(ip, port):
-        nonlocal done_count
-        async with sem:
-            node = f"{ip}:{port}"
-            try:
-                # 不再读取 body 内容，只要 header 响应快
-                async with session.get(f"http://{node}/status", timeout=7.0) as r:
-                    if r.status == 200:
-                        log(f"  ✨ 发现开放源: {node}")
-                        return node
-            except: pass
-            finally:
-                done_count += 1
-                if done_count % 1000 == 0:
-                    log(f"  > 进度: {done_count}/{total_pts}")
-            return None
+    # 加载 IP 列表
+    all_ips = load_ips_for_region(region)
+    if not all_ips:
+        log(f"[{name}] ❌ 未匹配到任何 IP，请检查 {INPUT_IP} 中的注释关键词")
+        return
+    log(f"[{name}] 已加载 {len(all_ips)} 个 IP 地址")
 
-    all_params = [(ip, p) for ip in all_ips for p in IPTV_PORTS]
-    batch_size = 2000
-    for i in range(0, len(all_params), batch_size):
-        batch = all_params[i : i + batch_size]
-        results = await asyncio.gather(*(check_node(ip, p) for ip, p in batch))
-        alive_nodes.extend([r for r in results if r])
+    # 阶段一：探活
+    alive_nodes = await stage1_scan(session, all_ips, name)
+    if not alive_nodes:
+        log(f"[{name}] ⚠️  阶段一未发现任何活跃节点，任务结束")
+        return
 
-    log(f"[*] [{name}] 第一阶段结束，潜在点位: {len(alive_nodes)}")
+    # 阶段二：验证
+    new_count = await stage2_verify(session, alive_nodes, test_udp, name)
+    log(f"[{name}] 🎉 任务结束，本次新增有效源: {new_count} 个\n")
 
-    # 3. 第二阶段：精准拉流验证
-    count = 0
-    for node in alive_nodes:
-        if await verify_stream(session, node, test_udp):
-            if save_to_repo(name, node):
-                log(f"  ✅ [{name}] 捕获有效源: {node}")
-                count += 1
-    log(f"[*] [{name}] 任务结束，新增: {count} 个")
 
 async def main():
-    if not os.path.exists(CONFIG_PATH):
-        log(f"❌ 找不到 {CONFIG_PATH}")
-        return
+    tasks = load_config()
+    log(f"加载到 {len(tasks)} 个扫描任务")
 
-    with open(CONFIG_PATH, 'r', encoding='utf-8') as f:
-        config_data = json.load(f)
-
-    tasks = config_data if isinstance(config_data, list) else [config_data]
-
-    headers = {"User-Agent": "VLC/3.0.18 LibVLC/3.0.18", "Accept": "*/*"}
-    async with aiohttp.ClientSession(headers=headers) as session:
+    connector = aiohttp.TCPConnector(
+        limit           = 0,           # 不限制全局连接数（由 Semaphore 控制）
+        ttl_dns_cache   = 300,
+        enable_cleanup_closed = True,
+        force_close     = True,        # 避免连接池污染
+    )
+    headers = {
+        "User-Agent": "VLC/3.0.18 LibVLC/3.0.18",
+        "Accept":     "*/*",
+    }
+    async with aiohttp.ClientSession(
+        connector = connector,
+        headers   = headers,
+    ) as session:
         for task in tasks:
-            name = task.get('name')
-            test_udp = task.get('test_udp')
-            region = task.get('prefer_region') or name
-            if name and test_udp:
-                await run_scan(session, name, test_udp, region)
+            await run_task(session, task)
+
+    log("✅ 所有任务完成")
+
 
 if __name__ == "__main__":
     asyncio.run(main())
