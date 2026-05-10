@@ -6,7 +6,7 @@ import ipaddress
 
 # === 核心配置 ===
 CONFIG_PATH = 'config.json'   # JSON配置文件路径
-INPUT_IP = 'scan/ip.txt'      # 扫描号段文件
+INPUT_IP = 'scan/udp.txt'      # 扫描号段文件
 SCAN_CONCURRENCY = 2000       # 端口探测并发
 IPTV_PORTS = [4000, 4022, 8000, 8080, 8888, 9000, 9999] # 组播常用端口
 
