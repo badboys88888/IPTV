@@ -120,12 +120,6 @@ async def run_scan(session, name, test_udp, prefer_region):
             if res:
                 alive_nodes.append(res)
 
-    async def scan_worker(ip, port):
-        async with sem:
-            res = await port_scanner(ip, port)
-            if res:
-                alive_nodes.append(res)
-
     scan_tasks = [scan_worker(ip, p) for ip in all_ips for p in IPTV_PORTS]
     await asyncio.gather(*scan_tasks)
     print(f"[*] [{name}] 开放端口点位: {len(alive_nodes)} 个")
