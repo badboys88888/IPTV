@@ -9,7 +9,7 @@ from collections import defaultdict
 INPUT = 'scan/ip.txt'
 OUTPUT = 'scan/useful_proxies.txt'
 
-SCAN_CONCURRENCY = 500
+SCAN_CONCURRENCY = 5124
 CHECK_CONCURRENCY = 50
 GEO_CONCURRENCY = 20
 TARGET_PORTS = [443, 8443)
