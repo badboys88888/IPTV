@@ -105,24 +105,31 @@ async def run_scan(session, name, test_udp, prefer_region):
     print(f"[*] [{name}] 任务启动，探测点位: {len(all_ips) * len(IPTV_PORTS)} 个...")
     
     # 2. 端口快扫阶段
+        # 2. 端口快扫阶段（改进版：分批提交任务，保护内存）
     alive_nodes = []
     sem = asyncio.Semaphore(SCAN_CONCURRENCY)
-    processed = 0 # 计数器
-
+    
     async def scan_worker(ip, port):
-        nonlocal processed
         async with sem:
             res = await port_scanner(ip, port)
-            processed += 1
-            # 每扫 5000 个点位打印一次进度
-            if processed % 5000 == 0:
-                print(f"[*] 扫描进度: {processed} / {len(all_ips) * len(IPTV_PORTS)}")
             if res:
+                # 实时打印发现，让你看到程序没死
+                print(f"✨ 发现端口开放: {res}")
                 alive_nodes.append(res)
 
-    scan_tasks = [scan_worker(ip, p) for ip in all_ips for p in IPTV_PORTS]
-    await asyncio.gather(*scan_tasks)
-    print(f"[*] [{name}] 开放端口点位: {len(alive_nodes)} 个")
+    print(f"[*] [{name}] 正在探测，请耐心等待...")
+    
+    # 将 45万个任务分成 5000 个一组执行
+    all_tasks_params = [(ip, p) for ip in all_ips for p in IPTV_PORTS]
+    batch_size = 5000 
+    for i in range(0, len(all_tasks_params), batch_size):
+        batch = all_tasks_params[i : i + batch_size]
+        # 每一组创建一个小 gather
+        await asyncio.gather(*(scan_worker(ip, p) for ip, p in batch))
+        print(f"[*] 已完成 {i + len(batch)} / {len(all_tasks_params)} 个点位探测...")
+
+    print(f"[*] [{name}] 开放端口总数: {len(alive_nodes)} 个")
+
 
     # 3. 拉流验证阶段 (核心：利用你写的 verify_stream 过滤 JSON)
     count = 0
