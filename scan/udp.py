@@ -107,6 +107,18 @@ async def run_scan(session, name, test_udp, prefer_region):
     # 2. 端口快扫阶段
     alive_nodes = []
     sem = asyncio.Semaphore(SCAN_CONCURRENCY)
+    processed = 0 # 计数器
+
+    async def scan_worker(ip, port):
+        nonlocal processed
+        async with sem:
+            res = await port_scanner(ip, port)
+            processed += 1
+            # 每扫 5000 个点位打印一次进度
+            if processed % 5000 == 0:
+                print(f"[*] 扫描进度: {processed} / {len(all_ips) * len(IPTV_PORTS)}")
+            if res:
+                alive_nodes.append(res)
 
     async def scan_worker(ip, port):
         async with sem:
