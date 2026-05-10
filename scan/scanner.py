@@ -23,7 +23,7 @@ TARGET_PORTS = [
     *range(40000, 40100), # 4万开头
     *range(50000, 50100)  # 5万开头
 ]
-MAX_IPS_PER_NET = 500
+MAX_IPS_PER_NET = 999999
 CHECK_URL = 'https://dawn-lab-5568.177866120.workers.dev/check?proxyip={}'
 GEO_API_URL = 'http://ip-api.com/json/{}?fields=status,country,countryCode,regionName,isp,as,query'
 
