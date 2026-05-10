@@ -14,7 +14,7 @@ from typing import Dict, List, Optional, Set
 CONFIG_PATH   = 'config.json'
 INPUT_IP      = 'scan/udp.txt'
 
-SCAN_CONCURRENCY = 512          # TCPConnector 配置后实际生效，不要超过 1024
+SCAN_CONCURRENCY = 5000          # TCPConnector 配置后实际生效，不要超过 1024
 STREAM_VERIFY_CONCURRENCY = 64  # 拉流验证慢，并发不用高
 
 # udpxy 常见端口，越靠前命中率越高
