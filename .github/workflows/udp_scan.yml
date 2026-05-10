@@ -25,7 +25,7 @@ jobs:
           pip install aiohttp
 
       - name: 运行扫描脚本
-        run: python udp.py
+        run: python scan/udp.py
 
       - name: 提交并推送结果
         run: |
