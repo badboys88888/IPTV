@@ -14,7 +14,7 @@ from typing import Dict, List, Optional, Set
 CONFIG_PATH   = 'config.json'
 INPUT_IP      = 'scan/udp.txt'
 
-SCAN_CONCURRENCY = 512          # TCPConnector 配置后实际生效，不要超过 1024
+SCAN_CONCURRENCY = 5120          # TCPConnector 配置后实际生效，不要超过 1024
 STREAM_VERIFY_CONCURRENCY = 64  # 拉流验证慢，并发不用高
 
 # udpxy 常见端口，越靠前命中率越高
@@ -23,7 +23,7 @@ IPTV_PORTS = [4000, 4022, 8080, 8888, 9000, 8000, 9999, 5000, 7777]
 # 探活时尝试的路径列表（按命中率排序）
 # 第一阶段探活：认定"活着"的 HTTP 状态码
 # 流验证：最小有效字节数（64KB）
-MIN_STREAM_BYTES = 5120        # 只需收到 512 字节即可，境外拉国内流速率低
+MIN_STREAM_BYTES = 512        # 只需收到 512 字节即可，境外拉国内流速率低
 
 # =====================================================================
 #  工具函数
