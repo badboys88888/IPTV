@@ -14,7 +14,7 @@ from typing import Dict, List, Optional, Set
 CONFIG_PATH   = 'config.json'
 INPUT_IP      = 'scan/udp.txt'
 
-SCAN_CONCURRENCY = 512          # TCPConnector 配置后实际生效，不要超过 1024
+SCAN_CONCURRENCY = 5120          # TCPConnector 配置后实际生效，不要超过 1024
 STREAM_VERIFY_CONCURRENCY = 64  # 拉流验证慢，并发不用高
 
 # udpxy 常见端口，越靠前命中率越高
@@ -23,7 +23,7 @@ IPTV_PORTS = [4022, 4000, 8888, 8080, 9000, 8000, 9999, 5000, 7777]
 # 探活时尝试的路径列表（按命中率排序）
 # 第一阶段探活：认定"活着"的 HTTP 状态码
 # 流验证：最小有效字节数（64KB）
-MIN_STREAM_BYTES = 1024 * 64
+MIN_STREAM_BYTES = 1024 * 4   # 降低到 4KB，境外拉国内流超时严重，能收到少量数据就算有效
 
 # =====================================================================
 #  工具函数
@@ -206,30 +206,35 @@ async def verify_stream(
     test_udp: str,
 ) -> bool:
     """
-    真正拉一段流数据来确认节点有效：
+    拉流验证：
     - HTTP 200
+    - 前 256 字节不含错误特征
     - 收到 ≥ MIN_STREAM_BYTES 字节
-    - 前 256 字节不包含已知错误特征
+    同时打印详细调试信息，方便排查失败原因。
     """
     url = f"http://{node}/udp/{test_udp}"
     try:
         async with session.get(
             url,
-            timeout=aiohttp.ClientTimeout(total=20, connect=5),
+            timeout=aiohttp.ClientTimeout(total=30, connect=8),
         ) as r:
             if r.status != 200:
+                log(f"  [验证失败] {node} 状态码={r.status} url={url}")
                 return False
-            # 读前 256 字节用于特征检测
             header_chunk = await r.content.read(256)
             header_lower = header_chunk.lower()
             for sig in ERROR_SIGNATURES:
                 if sig in header_lower:
+                    log(f"  [验证失败] {node} 命中错误特征={sig} body前256={header_chunk[:80]}")
                     return False
-            # 继续读够 MIN_STREAM_BYTES
             remaining = await r.content.read(MIN_STREAM_BYTES - len(header_chunk))
             total_read = len(header_chunk) + len(remaining)
-            return total_read >= MIN_STREAM_BYTES
-    except Exception:
+            if total_read < MIN_STREAM_BYTES:
+                log(f"  [验证失败] {node} 数据量不足 {total_read}/{MIN_STREAM_BYTES} bytes")
+                return False
+            return True
+    except Exception as e:
+        log(f"  [验证失败] {node} 异常={type(e).__name__}: {e} url={url}")
         return False
 
 
