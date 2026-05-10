@@ -22,19 +22,26 @@ async def port_scanner(ip, port):
         return None
 
 async def verify_stream(session, node, test_udp):
-    """第二阶段：拉流深度验证（根据 JSON 里的 test_udp）"""
-    # 构造 udpxy 路径
-    url = f"http://{node}/udp/{test_udp}"
-    try:
-        async with session.get(url, timeout=5) as r:
-            if r.status == 200:
-                # 尝试读取 256KB 数据验证真实性
-                content = await r.content.read(256 * 1024)
-                if len(content) > 0:
-                    return True
-    except:
-        pass
+    # 尝试两种常见的路径格式
+    for path in ["udp", "rtp"]:
+        url = f"http://{node}/{path}/{test_udp}"
+        try:
+            async with session.get(url, timeout=5) as r:
+                # 关键：检查 Content-Type
+                # 如果返回的是 application/json，说明是报错信息，直接跳过
+                ctype = r.headers.get('Content-Type', '').lower()
+                if "json" in ctype:
+                    continue 
+                
+                if r.status == 200:
+                    # 尝试读取数据，验证是否为二进制流（视频）
+                    content = await r.content.read(1024 * 100) # 100KB
+                    if len(content) > 5000: # 确保收到了足够的数据量
+                        return True
+        except:
+            continue
     return False
+
 
 def save_to_repo(filename, node):
     """追加保存到 TXT，并自动去重"""
