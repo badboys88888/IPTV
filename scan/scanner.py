@@ -9,20 +9,13 @@ from collections import defaultdict
 INPUT = 'scan/ip.txt'
 OUTPUT = 'scan/useful_proxies.txt'
 
-SCAN_CONCURRENCY = 1500
+SCAN_CONCURRENCY = 5000
 CHECK_CONCURRENCY = 50
 GEO_CONCURRENCY = 20
-# TARGET_PORTS = [443, 8443, 2053, 2083, 2087, 2093, 2096, 8080, 30001, 30006, 10443, 50001, 20002, 12345, 8081, 40000, 40001, 40002]
+TARGET_PORTS = [443, 8443, 2053, 2083, 2087, 2093, 2096, 8080, 30001, 30006, 10443, 50001, 20002, 12345, 8081, 40000, 40001, 40002]
 # 扫描高位段常用范围
 # TARGET_PORTS = list(range(10000, 65535)) 
 # 只扫这几个最有戏的区间，加起来才 500 个端口
-TARGET_PORTS = [
-    *range(10000, 10100), # 1万开头
-    *range(20000, 20100), # 2万开头
-    *range(30000, 30100), # 3万开头
-    *range(40000, 40100), # 4万开头
-    *range(50000, 50100)  # 5万开头
-]
 MAX_IPS_PER_NET = 999999
 CHECK_URL = 'https://dawn-lab-5568.177866120.workers.dev/check?proxyip={}'
 GEO_API_URL = 'http://ip-api.com/json/{}?fields=status,country,countryCode,regionName,isp,as,query'
