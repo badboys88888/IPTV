@@ -24,7 +24,7 @@ IPTV_PORTS = [4022, 4000, 8888, 8080, 9000, 8000, 9999, 5000, 7777]
 PROBE_PATHS = ['/status', '/', '/udp/', '/rtp/']
 
 # 第一阶段探活：认定"活着"的 HTTP 状态码
-ALIVE_STATUS = {200, 301, 302, 403, 404}
+ALIVE_STATUS = {200}
 
 # 流验证：最小有效字节数（64KB）
 MIN_STREAM_BYTES = 1024 * 64
