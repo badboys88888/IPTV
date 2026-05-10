@@ -1,3 +1,4 @@
+#EXTM3U x-tvg-url="https://github.com/badboys88888/epg/raw/refs/heads/main/epg.xml.gz,https://xmltv.ch/xmltv/xmltv-complet.xml"
 #EXTINF:-1 tvg-id="399482" tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/236_144.png" group-title="体育频道",Bein Sports 1
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
@@ -5,7 +6,6 @@
 #KODIPROP:inputstream.adaptive.license_key=335DAD778109954503DCBB21DC92015F:24bfd75d436cbf73168a2a2dccd40281
 https://otte.live.fly.ww.aiv-cdn.net/syd-nitro/live/clients/dash/enc/ghwcl6hv68/out/v1/83536910d8034e9b9895a20fbe1c1687/cenc.mpd
 
-#EXTM3U x-tvg-url="https://github.com/badboys88888/epg/raw/refs/heads/main/epg.xml.gz,https://xmltv.ch/xmltv/xmltv-complet.xml"
 #EXTINF:-1 tvg-id="369601" tvg-name="beIN Sports 2" tvg-logo="https://epg.pw/media/images/epg/2024/06/10/20240610054207896619_21.png" group-title="体育频道",beIN Sports 2
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
@@ -19,13 +19,44 @@ https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/8m8cd46i1t/
 #KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
 https://linearjitp-playback.astro.com.my/dash-wv/linear/2705/default_ott.mpd
 
-#EXTINF:-1 tvg-id="beIN SPORTS 4" tvg-logo="" group-title="体育频道",beIN SPORTS 4
+#EXTINF:-1 tvg-id="beINSports" tvg-name="beIN Sports HD" group-logo="https://da.gd/ffliqlogo" tvg-logo="https://iili.io/1Nchhl.png" group-title="体育频道",beIN Sports HD CH818
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"K2z/Qvf65+i8MvPVxi3Dwg","kid":"WwpceCJkVh/5djl0c+m0VrRM3/zdMg"}],"type":"temporary"}
-#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Linux; Android 10; SM-G996U Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Mobile Safari/537.36"
-https://drums-compliant-geo-cup.trycloudflare.com/beinsports4
+#KODIPROP:inputstream.adaptive.license_key={ "keys":[ { "kty":"oct", "k":"PEUIrzSIRBB/XgJqT9axbg", "kid":"GmVRiatcSesjUwjCsannEA" } ], "type":"temporary" }
+https://linearjitp-playback.astro.com.my/dash-wv/linear/408/default_ott.mpd
+
+ 
+#EXTINF:-1 tvg-id="beINSports2" tvg-name="beIN Sports 2 HD" group-logo="https://da.gd/ffliqlogo" tvg-logo="https://iili.io/1NcMkG.png" group-title="体育频道",beIN Sport 2 CH817
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key={ "keys":[ { "kty":"oct", "k":"UQKxKqx3VsZdy0ahAdlg0w", "kid":"OcF1WB4jfv+VWWB+ubI8EA" } ], "type":"temporary" }
+https://linearjitp-playback.astro.com.my/dash-wv/linear/5066/default_ott.mpd
+
+ 
+#EXTINF:-1 tvg-id="beINSports3" tvg-name="beIN Sports 3 HD" group-logo="https://da.gd/ffliqlogo" tvg-logo="https://iili.io/1NcG7s.png" group-title="体育频道",beIN Sport 3 HD CH819
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key={ "keys":[ { "kty":"oct", "k":"BCohvyNspymx40PtbgpjNw", "kid":"IMiE747Saydi+LGnjy0ZEA" } ], "type":"temporary" }
+https://linearjitp-playback.astro.com.my/dash-wv/linear/2705/default_ott.mpd
+
+ 
+#EXTINF:-1 tvg-id="Eurosport" tvg-name="Eurosport HD" group-logo="https://da.gd/ffliqlogo" tvg-logo="https://iili.io/1Nz7Kx.png" group-title="体育频道",Eurosport HD CH820
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key={ "keys":[ { "kty":"oct", "k":"0OeU48/1ZO0scgoJjrF3xw", "kid":"TbI6Qbq/6a/CIqWMWYKDEA" } ], "type":"temporary" }
+https://linearjitp-playback.astro.com.my/dash-wv/linear/2100/default_ott.mpd
+
+ 
+#EXTINF:-1 tvg-id="WWENetwork" tvg-name="WWE Network HD" group-logo="https://da.gd/ffliqlogo" tvg-logo="https://ws.kapallayar.cc//image//Logo//SPORTS//New//S_WWE.png" group-title="体育频道",821 WWE NETWORK
+#KODIPROP:inputstreamaddon=inputstream.adï»¿aptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key={ "keys":[ { "kty":"oct", "k":"MFKMTviClU5XB80QAdZhIQ", "kid":"DLxNO0+9mvUSrLJIi7QpEA" } ], "type":"temporary" }
+https://linearjitp-playback.astro.com.my/dash-wv/linear/2603/default_ott.mpd
 
 #EXTINF:-1 tvg-id="" tvg-name="ESPN HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/ESPN.png" group-title="体育频道",ESPN HD
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
