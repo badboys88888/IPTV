@@ -1,9 +1,12 @@
+from __future__ import annotations
+
 import asyncio
 import aiohttp
 import json
 import os
 import ipaddress
 import time
+from typing import Dict, List, Optional, Set
 
 # =====================================================================
 #  核心配置
