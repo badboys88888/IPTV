@@ -7,7 +7,7 @@ import ipaddress
 # === 核心配置 ===
 CONFIG_PATH = 'config.json'
 INPUT_IP = 'scan/udp.txt'
-SCAN_CONCURRENCY = 512        # 既然DEBUG通了，256-512并发是安全的
+SCAN_CONCURRENCY = 2056        # 既然DEBUG通了，256-512并发是安全的
 IPTV_PORTS = [4000, 4022, 8000, 8080, 8888, 9000, 9999] 
 
 def log(msg):
