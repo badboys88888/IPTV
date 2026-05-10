@@ -63,69 +63,92 @@ def save_to_repo(filename, node):
         return True
     return False
 
-async def run_scan(session, name, test_udp):
-    """执行具体的扫描逻辑"""
+# 注意：函数参数增加了 prefer_region
+async def run_scan(session, name, test_udp, prefer_region):
+    """
+    通过 prefer_region 匹配 udp.txt 中的 # 标签
+    """
     if not os.path.exists(INPUT_IP):
-        print(f"❌ 找不到网段文件: {INPUT_IP}")
+        print(f"❌ 找不到文件: {INPUT_IP}")
         return
 
-    # 解析 ip.txt 中的网段
     all_ips = []
-    with open(INPUT_IP, 'r') as f:
+    is_target_region = False
+    
+    with open(INPUT_IP, 'r', encoding='utf-8') as f:
         for line in f:
             line = line.strip()
-            if not line or line.startswith('#'): continue
-            try:
-                net = ipaddress.IPv4Network(line, strict=False)
-                all_ips.extend([str(ip) for ip in list(net)])
-            except: continue
+            if not line: continue
+            
+            if line.startswith('#'):
+                # 核心改动：用 prefer_region 来匹配注释行
+                # 例如 prefer_region 是 "辽宁"，那么 # 辽宁电信 就能匹配上
+                if prefer_region and prefer_region in line:
+                    is_target_region = True
+                else:
+                    is_target_region = False
+                continue
+            
+            if is_target_region:
+                try:
+                    net = ipaddress.IPv4Network(line, strict=False)
+                    all_ips.extend([str(ip) for ip in list(net)])
+                except: continue
+
+    # ... 后续探测逻辑不变 ...
+
+
+    if not all_ips:
+        print(f"[-] [{name}] 在 {INPUT_IP} 中未发现匹配网段，跳过")
+        return
 
     print(f"[*] [{name}] 任务启动，探测点位: {len(all_ips) * len(IPTV_PORTS)} 个...")
     
-    # 1. 端口快扫
+    # 2. 端口快扫阶段
     alive_nodes = []
     sem = asyncio.Semaphore(SCAN_CONCURRENCY)
+
     async def scan_worker(ip, port):
         async with sem:
             res = await port_scanner(ip, port)
-            if res: alive_nodes.append(res)
+            if res:
+                alive_nodes.append(res)
 
     scan_tasks = [scan_worker(ip, p) for ip in all_ips for p in IPTV_PORTS]
     await asyncio.gather(*scan_tasks)
-    print(f"[*] 开放端口点位: {len(alive_nodes)} 个")
+    print(f"[*] [{name}] 开放端口点位: {len(alive_nodes)} 个")
 
-    # 2. 拉流验证并分类追加
+    # 3. 拉流验证阶段 (核心：利用你写的 verify_stream 过滤 JSON)
     count = 0
     for node in alive_nodes:
+        # 这里会调用你写的包含 Content-Type 检查的 verify_stream
         if await verify_stream(session, node, test_udp):
             if save_to_repo(name, node):
                 print(f"✅ [{name}] 新增有效源: {node}")
                 count += 1
             else:
                 print(f"➖ [{name}] 已存在: {node}")
+    
     print(f"[*] [{name}] 扫描结束，本次新增: {count} 个")
 
+    
+    # --- 后续的端口快扫和 verify_stream 逻辑保持不变 ---
+
 async def main():
-    # 1. 加载 config.json
-    if not os.path.exists(CONFIG_PATH):
-        print(f"❌ 根目录下找不到 {CONFIG_PATH}")
-        return
-
-    with open(CONFIG_PATH, 'r', encoding='utf-8') as f:
-        config_data = json.load(f)
-
-    # 兼容 JSON 是单个对象或列表的情况
-    tasks = config_data if isinstance(config_data, list) else [config_data]
+    # ... 加载 config_data 代码 ...
 
     async with aiohttp.ClientSession() as session:
         for task in tasks:
             name = task.get('name', '默认分类')
             test_udp = task.get('test_udp')
+            # 获取 prefer_region 字段
+            prefer_region = task.get('prefer_region') 
+            
             if not test_udp:
-                print(f"⚠️ 任务 [{name}] 缺少 test_udp，跳过")
                 continue
             
-            await run_scan(session, name, test_udp)
+            # 传四个参数给 run_scan
+            await run_scan(session, name, test_udp, prefer_region)
 
 if __name__ == "__main__":
     asyncio.run(main())
