@@ -14,16 +14,16 @@ from typing import Dict, List, Optional, Set
 CONFIG_PATH   = 'config.json'
 INPUT_IP      = 'scan/udp.txt'
 
-SCAN_CONCURRENCY = 5120          # TCPConnector 配置后实际生效，不要超过 1024
+SCAN_CONCURRENCY = 512          # TCPConnector 配置后实际生效，不要超过 1024
 STREAM_VERIFY_CONCURRENCY = 64  # 拉流验证慢，并发不用高
 
 # udpxy 常见端口，越靠前命中率越高
-IPTV_PORTS = [4000, 4022, 8888, 8080, 9000, 8000, 9999, 5000, 7777]
+IPTV_PORTS = [4000, 4022, 8080, 8888, 9000, 8000, 9999, 5000, 7777]
 
 # 探活时尝试的路径列表（按命中率排序）
 # 第一阶段探活：认定"活着"的 HTTP 状态码
 # 流验证：最小有效字节数（64KB）
-MIN_STREAM_BYTES = 1024 * 4   # 降低到 4KB，境外拉国内流超时严重，能收到少量数据就算有效
+MIN_STREAM_BYTES = 5120        # 只需收到 512 字节即可，境外拉国内流速率低
 
 # =====================================================================
 #  工具函数
@@ -221,16 +221,17 @@ async def verify_stream(
             if r.status != 200:
                 log(f"  [验证失败] {node} 状态码={r.status} url={url}")
                 return False
-            header_chunk = await r.content.read(256)
-            header_lower = header_chunk.lower()
+            # 读取前 512 字节做特征检测
+            chunk = await r.content.read(MIN_STREAM_BYTES)
+            chunk_lower = chunk.lower()
             for sig in ERROR_SIGNATURES:
-                if sig in header_lower:
-                    log(f"  [验证失败] {node} 命中错误特征={sig} body前256={header_chunk[:80]}")
+                if sig in chunk_lower:
+                    log(f"  [验证失败] {node} 命中错误特征={sig} body前256={chunk[:80]}")
                     return False
-            remaining = await r.content.read(MIN_STREAM_BYTES - len(header_chunk))
-            total_read = len(header_chunk) + len(remaining)
-            if total_read < MIN_STREAM_BYTES:
-                log(f"  [验证失败] {node} 数据量不足 {total_read}/{MIN_STREAM_BYTES} bytes")
+            # 只要收到任何数据且不是错误响应，就认为流有效
+            # 境外拉国内流速率低，不强制要求字节数
+            if len(chunk) == 0:
+                log(f"  [验证失败] {node} 收到空响应")
                 return False
             return True
     except Exception as e:
