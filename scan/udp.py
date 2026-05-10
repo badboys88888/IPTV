@@ -14,18 +14,14 @@ from typing import Dict, List, Optional, Set
 CONFIG_PATH   = 'config.json'
 INPUT_IP      = 'scan/udp.txt'
 
-SCAN_CONCURRENCY = 5000          # TCPConnector 配置后实际生效，不要超过 1024
+SCAN_CONCURRENCY = 50000          # TCPConnector 配置后实际生效，不要超过 1024
 STREAM_VERIFY_CONCURRENCY = 64  # 拉流验证慢，并发不用高
 
 # udpxy 常见端口，越靠前命中率越高
 IPTV_PORTS = [4022, 4000, 8888, 8080, 9000, 8000, 9999, 5000, 7777]
 
 # 探活时尝试的路径列表（按命中率排序）
-PROBE_PATHS = ['/status', '/', '/udp/', '/rtp/']
-
 # 第一阶段探活：认定"活着"的 HTTP 状态码
-ALIVE_STATUS = {200}
-
 # 流验证：最小有效字节数（64KB）
 MIN_STREAM_BYTES = 1024 * 64
 
@@ -100,31 +96,58 @@ def load_ips_for_region(region_kw: str) -> list[str]:
 #  阶段一：快速探活
 # =====================================================================
 
+# udpxy /status 页面的内容指纹（返回纯文本，包含这些关键词）
+UDPXY_FINGERPRINTS = [b"udpxy", b"active clients", b"requests", b"multicast"]
+
+# 误报服务的特征（命中任意一个直接排除）
+FALSE_POSITIVE_SIGNS = [b"synology", b"diskstation", b"<html", b"nginx", b"apache",
+                        b"IIS", b"router", b"login", b"<!DOCTYPE"]
+
+
 async def probe_alive(session: aiohttp.ClientSession, ip: str, port: int) -> str | None:
     """
-    依次尝试多个路径，任意一个返回预期状态码即认为节点存活。
+    两步判断：
+    1. 优先请求 /status，状态码 200 且内容含 udpxy 指纹 → 确认存活
+    2. /status 不通时，尝试其他路径做宽松探活（200/301/302）
+       这部分节点交给第二阶段拉流验证来最终过滤
     返回 "ip:port" 或 None。
     """
     node = f"{ip}:{port}"
-    for path in PROBE_PATHS:
-        url = f"http://{node}{path}"
-        try:
-            async with session.head(url, timeout=aiohttp.ClientTimeout(total=5)) as r:
-                if r.status in ALIVE_STATUS:
+
+    # --- 第一步：严格验证 /status 内容指纹（最可靠）---
+    try:
+        async with session.get(
+            f"http://{node}/status",
+            timeout=aiohttp.ClientTimeout(total=5),
+            allow_redirects=False,
+        ) as r:
+            if r.status == 200:
+                body = await r.content.read(512)
+                body_lower = body.lower()
+                # 命中误报特征直接排除（群晖/路由器/nginx 等）
+                if any(fp in body_lower for fp in FALSE_POSITIVE_SIGNS):
+                    return None
+                # 必须含有 udpxy 指纹才算通过
+                if any(fp in body_lower for fp in UDPXY_FINGERPRINTS):
                     return node
-        except Exception:
-            pass
-        # HEAD 不支持时降级 GET（只读头部）
+    except Exception:
+        pass
+
+    # --- 第二步：/status 不通，尝试其他路径宽松探活 ---
+    fallback_paths = ["/udp/", "/rtp/"]
+    for path in fallback_paths:
+        url = f"http://{node}{path}"
         try:
             async with session.get(
                 url,
                 timeout=aiohttp.ClientTimeout(total=5),
                 allow_redirects=False,
             ) as r:
-                if r.status in ALIVE_STATUS:
+                if r.status in {200, 301, 302}:
                     return node
         except Exception:
             pass
+
     return None
 
 
