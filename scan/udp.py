@@ -14,7 +14,7 @@ from typing import Dict, List, Optional, Set
 CONFIG_PATH   = 'config.json'
 INPUT_IP      = 'scan/udp.txt'
 
-SCAN_CONCURRENCY = 5012          # TCPConnector 配置后实际生效，不要超过 1024
+SCAN_CONCURRENCY = 512          # TCPConnector 配置后实际生效，不要超过 1024
 STREAM_VERIFY_CONCURRENCY = 64  # 拉流验证慢，并发不用高
 
 # udpxy 常见端口，越靠前命中率越高
@@ -96,20 +96,21 @@ def load_ips_for_region(region_kw: str) -> list[str]:
 #  阶段一：快速探活
 # =====================================================================
 
-# 已知误报端口黑名单（这些端口是常见非 IPTV 服务，直接跳过）
+# 已知误报端口黑名单（非 IPTV 专属端口，且 IPTV 扫描列表里没有这些端口）
 PORT_BLACKLIST = {
-    5000, 5001,   # 群晖 NAS
+    5000, 5001,   # 群晖 NAS DSM
     3000, 3001,   # Grafana / Node 开发服务
-    8443, 443,    # HTTPS 服务
+    8443, 443,    # HTTPS
     9090,         # Prometheus
-        # Jupyter（8888 也在扫描列表，权衡后保留但可按需加回黑名单）
+    # 注意：8888/8080/8000/9000/9999/4000/4022 是常见 udpxy 端口，不能加黑名单
 }
 
-# 误报 body 特征：命中即排除（不做正向指纹，避免漏掉魔改版 udpxy）
+# 误报 body 特征：命中即排除
+# 只过滤非常明确的误报，避免误杀魔改版 udpxy
 FALSE_POSITIVE_SIGNS = [
     b"synology", b"diskstation",   # 群晖
-    b"<!doctype", b"<html",        # 普通网页
-    b"unauthorized", b"forbidden", # 认证墙
+    b"<!doctype html",             # 标准 HTML 页面（注意：不能只判断 <html，udpxy 有些版本 body 含 html 字样）
+    b"unauthorized",               # 认证墙
 ]
 
 
