@@ -135,20 +135,52 @@ async def run_scan(session, name, test_udp, prefer_region):
     # --- 后续的端口快扫和 verify_stream 逻辑保持不变 ---
 
 async def main():
-    # ... 加载 config_data 代码 ...
+    # 1. 检查并加载 config.json
+    if not os.path.exists(CONFIG_PATH):
+        print(f"❌ 根目录下找不到 {CONFIG_PATH}")
+        return
+
+    try:
+        with open(CONFIG_PATH, 'r', encoding='utf-8') as f:
+            config_data = json.load(f)
+        
+        # --- 关键修复：定义 tasks ---
+        # 兼容 JSON 是单个对象 {} 或 列表 [] 的情况
+        if isinstance(config_data, list):
+            tasks = config_data
+        elif isinstance(config_data, dict):
+            # 如果是字典，且包含 'tasks' 键（某些 config 格式）
+            if 'tasks' in config_data:
+                tasks = config_data['tasks']
+            else:
+                tasks = [config_data]
+        else:
+            tasks = []
+        # --------------------------
+
+    except Exception as e:
+        print(f"❌ 读取配置文件失败: {e}")
+        return
+
+    if not tasks:
+        print("⚠️ 没有找到任何有效任务")
+        return
 
     async with aiohttp.ClientSession() as session:
         for task in tasks:
             name = task.get('name', '默认分类')
             test_udp = task.get('test_udp')
-            # 获取 prefer_region 字段
             prefer_region = task.get('prefer_region') 
             
             if not test_udp:
+                print(f"⚠️ 任务 [{name}] 缺少 test_udp，跳过")
                 continue
             
-            # 传四个参数给 run_scan
+            # 执行扫描
             await run_scan(session, name, test_udp, prefer_region)
+
+if __name__ == "__main__":
+    asyncio.run(main())
 
 if __name__ == "__main__":
     asyncio.run(main())
