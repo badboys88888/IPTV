@@ -34,14 +34,12 @@ https://linearjitp-playback.astro.com.my/dash-wv/linear/408/default_ott.mpd
 #KODIPROP:inputstream.adaptive.license_key={ "keys":[ { "kty":"oct", "k":"UQKxKqx3VsZdy0ahAdlg0w", "kid":"OcF1WB4jfv+VWWB+ubI8EA" } ], "type":"temporary" }
 https://linearjitp-playback.astro.com.my/dash-wv/linear/5066/default_ott.mpd
 
- 
 #EXTINF:-1 tvg-id="beINSports3" tvg-name="beIN Sports 3 HD" group-logo="https://da.gd/ffliqlogo" tvg-logo="https://iili.io/1NcG7s.png" group-title="体育频道",beIN Sport 3 HD CH819
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key={ "keys":[ { "kty":"oct", "k":"BCohvyNspymx40PtbgpjNw", "kid":"IMiE747Saydi+LGnjy0ZEA" } ], "type":"temporary" }
 https://linearjitp-playback.astro.com.my/dash-wv/linear/2705/default_ott.mpd
-
  
 #EXTINF:-1 tvg-id="Eurosport" tvg-name="Eurosport HD" group-logo="https://da.gd/ffliqlogo" tvg-logo="https://iili.io/1Nz7Kx.png" group-title="体育频道",Eurosport HD CH820
 #KODIPROP:inputstreamaddon=inputstream.adaptive
@@ -50,7 +48,6 @@ https://linearjitp-playback.astro.com.my/dash-wv/linear/2705/default_ott.mpd
 #KODIPROP:inputstream.adaptive.license_key={ "keys":[ { "kty":"oct", "k":"0OeU48/1ZO0scgoJjrF3xw", "kid":"TbI6Qbq/6a/CIqWMWYKDEA" } ], "type":"temporary" }
 https://linearjitp-playback.astro.com.my/dash-wv/linear/2100/default_ott.mpd
 
- 
 #EXTINF:-1 tvg-id="WWENetwork" tvg-name="WWE Network HD" group-logo="https://da.gd/ffliqlogo" tvg-logo="https://ws.kapallayar.cc//image//Logo//SPORTS//New//S_WWE.png" group-title="体育频道",821 WWE NETWORK
 #KODIPROP:inputstreamaddon=inputstream.adï»¿aptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
