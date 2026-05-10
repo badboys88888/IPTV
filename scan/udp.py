@@ -51,6 +51,20 @@ def save_to_repo(filename, node):
     return False
 
 async def run_scan(session, name, test_udp, prefer_region):
+    
+    # --- 强行插入单点测试，排查 GitHub IP 连通性 ---
+    test_node = "82.220.87.8:4022"
+    log(f"DEBUG: 正在尝试从 GitHub 强行连接活源 {test_node}...")
+    try:
+        async with session.get(f"http://{test_node}/status", timeout=10) as r:
+            log(f"DEBUG: 强行连接成功！状态码: {r.status}")
+    except Exception as e:
+        log(f"DEBUG: 强行连接失败。原因: {e}")
+    # ----------------------------------------------
+
+    if not os.path.exists(INPUT_IP):
+        # ... 原有代码 ...
+
     """核心扫描逻辑"""
     if not os.path.exists(INPUT_IP):
         log(f"❌ 找不到网段文件: {INPUT_IP}")
