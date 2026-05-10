@@ -16,7 +16,7 @@ TARGET_PORTS = [443, 8443, 2052, 2053, 2082, 2083, 2087, 2093, 2096, 8080, 8880,
 # 扫描高位段常用范围
 # TARGET_PORTS = list(range(1, 65535)) 
 # 只扫这几个最有戏的区间，加起来才 500 个端口
-MAX_IPS_PER_NET = 1
+MAX_IPS_PER_NET = 999999
 CHECK_URL = 'https://dawn-lab-5568.177866120.workers.dev/check?proxyip={}'
 GEO_API_URL = 'http://ip-api.com/json/{}?fields=status,country,countryCode,regionName,isp,as,query'
 
