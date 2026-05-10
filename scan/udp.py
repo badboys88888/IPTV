@@ -7,7 +7,7 @@ import ipaddress
 # === 核心配置 ===
 CONFIG_PATH = 'config.json'
 INPUT_IP = 'scan/udp.txt'
-SCAN_CONCURRENCY = 1024       # 降低并发提高跨国扫描稳定性
+SCAN_CONCURRENCY = 5000       # 降低并发提高跨国扫描稳定性
 IPTV_PORTS = [4000, 4022, 8000, 8080, 8888, 9000, 9999]
 
 def log(msg):
