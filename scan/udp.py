@@ -14,7 +14,7 @@ from typing import Dict, List, Optional, Set
 CONFIG_PATH   = 'config.json'
 INPUT_IP      = 'scan/udp.txt'
 
-SCAN_CONCURRENCY = 50000          # TCPConnector 配置后实际生效，不要超过 1024
+SCAN_CONCURRENCY = 512          # TCPConnector 配置后实际生效，不要超过 1024
 STREAM_VERIFY_CONCURRENCY = 64  # 拉流验证慢，并发不用高
 
 # udpxy 常见端口，越靠前命中率越高
@@ -96,25 +96,38 @@ def load_ips_for_region(region_kw: str) -> list[str]:
 #  阶段一：快速探活
 # =====================================================================
 
-# udpxy /status 页面的内容指纹（返回纯文本，包含这些关键词）
-UDPXY_FINGERPRINTS = [b"udpxy", b"active clients", b"requests", b"multicast"]
+# 已知误报端口黑名单（这些端口是常见非 IPTV 服务，直接跳过）
+PORT_BLACKLIST = {
+    5000, 5001,   # 群晖 NAS
+    3000, 3001,   # Grafana / Node 开发服务
+    8443, 443,    # HTTPS 服务
+    9090,         # Prometheus
+        # Jupyter（8888 也在扫描列表，权衡后保留但可按需加回黑名单）
+}
 
-# 误报服务的特征（命中任意一个直接排除）
-FALSE_POSITIVE_SIGNS = [b"synology", b"diskstation", b"<html", b"nginx", b"apache",
-                        b"IIS", b"router", b"login", b"<!DOCTYPE"]
+# 误报 body 特征：命中即排除（不做正向指纹，避免漏掉魔改版 udpxy）
+FALSE_POSITIVE_SIGNS = [
+    b"synology", b"diskstation",   # 群晖
+    b"<!doctype", b"<html",        # 普通网页
+    b"unauthorized", b"forbidden", # 认证墙
+]
 
 
 async def probe_alive(session: aiohttp.ClientSession, ip: str, port: int) -> str | None:
     """
-    两步判断：
-    1. 优先请求 /status，状态码 200 且内容含 udpxy 指纹 → 确认存活
-    2. /status 不通时，尝试其他路径做宽松探活（200/301/302）
-       这部分节点交给第二阶段拉流验证来最终过滤
+    探活策略（宽进严出，误报交给阶段二拉流验证过滤）：
+    1. 端口黑名单：已知非 IPTV 端口直接跳过
+    2. 请求 /status：200 且 body 不含误报特征 → 存活
+    3. /status 不通：尝试 /udp/ /rtp/ 路径，200/301/302 → 存活
     返回 "ip:port" 或 None。
     """
+    # 黑名单端口直接跳过
+    if port in PORT_BLACKLIST:
+        return None
+
     node = f"{ip}:{port}"
 
-    # --- 第一步：严格验证 /status 内容指纹（最可靠）---
+    # --- 优先：/status 200 + 排除误报 body ---
     try:
         async with session.get(
             f"http://{node}/status",
@@ -122,24 +135,17 @@ async def probe_alive(session: aiohttp.ClientSession, ip: str, port: int) -> str
             allow_redirects=False,
         ) as r:
             if r.status == 200:
-                body = await r.content.read(512)
-                body_lower = body.lower()
-                # 命中误报特征直接排除（群晖/路由器/nginx 等）
-                if any(fp in body_lower for fp in FALSE_POSITIVE_SIGNS):
-                    return None
-                # 必须含有 udpxy 指纹才算通过
-                if any(fp in body_lower for fp in UDPXY_FINGERPRINTS):
-                    return node
+                body = (await r.content.read(256)).lower()
+                if not any(fp in body for fp in FALSE_POSITIVE_SIGNS):
+                    return node   # 通过：是 IPTV 代理的概率很高
     except Exception:
         pass
 
-    # --- 第二步：/status 不通，尝试其他路径宽松探活 ---
-    fallback_paths = ["/udp/", "/rtp/"]
-    for path in fallback_paths:
-        url = f"http://{node}{path}"
+    # --- 备用：/udp/ /rtp/ 有响应即可，剩下交给拉流验证 ---
+    for path in ("/udp/", "/rtp/"):
         try:
             async with session.get(
-                url,
+                f"http://{node}{path}",
                 timeout=aiohttp.ClientTimeout(total=5),
                 allow_redirects=False,
             ) as r:
