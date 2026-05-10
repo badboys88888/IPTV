@@ -19,41 +19,17 @@ https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/8m8cd46i1t/
 #KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
 https://linearjitp-playback.astro.com.my/dash-wv/linear/2705/default_ott.mpd
 
-#EXTINF:-1 tvg-id="beINSports" tvg-name="beIN Sports HD" group-logo="https://da.gd/ffliqlogo" tvg-logo="https://iili.io/1Nchhl.png" group-title="体育频道",beIN Sports HD CH818
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={ "keys":[ { "kty":"oct", "k":"PEUIrzSIRBB/XgJqT9axbg", "kid":"GmVRiatcSesjUwjCsannEA" } ], "type":"temporary" }
-https://linearjitp-playback.astro.com.my/dash-wv/linear/408/default_ott.mpd
+#EXTINF:-1 tvg-id="AstroArena" group-logo="https://da.gd/ffliqlogo" tvg-logo="http://linear-poster.astro.com.my/prod/logo/AstroArena_2024.png" group-title="体育频道",Astro Arena
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=efda647dad723563b625be8c05ee6110:6776985938b332164b97b81fe566a34a
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+https://linearjitp-playback.astro.com.my/dash-wv/linear/2604/default.mpd
 
- 
-#EXTINF:-1 tvg-id="beINSports2" tvg-name="beIN Sports 2 HD" group-logo="https://da.gd/ffliqlogo" tvg-logo="https://iili.io/1NcMkG.png" group-title="体育频道",beIN Sport 2 CH817
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={ "keys":[ { "kty":"oct", "k":"UQKxKqx3VsZdy0ahAdlg0w", "kid":"OcF1WB4jfv+VWWB+ubI8EA" } ], "type":"temporary" }
-https://linearjitp-playback.astro.com.my/dash-wv/linear/5066/default_ott.mpd
-
-#EXTINF:-1 tvg-id="beINSports3" tvg-name="beIN Sports 3 HD" group-logo="https://da.gd/ffliqlogo" tvg-logo="https://iili.io/1NcG7s.png" group-title="体育频道",beIN Sport 3 HD CH819
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={ "keys":[ { "kty":"oct", "k":"BCohvyNspymx40PtbgpjNw", "kid":"IMiE747Saydi+LGnjy0ZEA" } ], "type":"temporary" }
-https://linearjitp-playback.astro.com.my/dash-wv/linear/2705/default_ott.mpd
- 
-#EXTINF:-1 tvg-id="Eurosport" tvg-name="Eurosport HD" group-logo="https://da.gd/ffliqlogo" tvg-logo="https://iili.io/1Nz7Kx.png" group-title="体育频道",Eurosport HD CH820
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={ "keys":[ { "kty":"oct", "k":"0OeU48/1ZO0scgoJjrF3xw", "kid":"TbI6Qbq/6a/CIqWMWYKDEA" } ], "type":"temporary" }
-https://linearjitp-playback.astro.com.my/dash-wv/linear/2100/default_ott.mpd
-
-#EXTINF:-1 tvg-id="WWENetwork" tvg-name="WWE Network HD" group-logo="https://da.gd/ffliqlogo" tvg-logo="https://ws.kapallayar.cc//image//Logo//SPORTS//New//S_WWE.png" group-title="体育频道",821 WWE NETWORK
-#KODIPROP:inputstreamaddon=inputstream.adï»¿aptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={ "keys":[ { "kty":"oct", "k":"MFKMTviClU5XB80QAdZhIQ", "kid":"DLxNO0+9mvUSrLJIi7QpEA" } ], "type":"temporary" }
-https://linearjitp-playback.astro.com.my/dash-wv/linear/2603/default_ott.mpd
+#EXTINF:-1 tvg-id="AstroArena2" group-logo="https://da.gd/ffliqlogo" tvg-logo="http://linear-poster.astro.com.my/prod/logo/AstroArena2_2024.png" group-title="体育频道",Astro Arena 2
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=ead0335d60401225727a6d531e9c2710:1ee3b252227c5c2ec9378c833d2e14ff
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+https://linearjitp-playback.astro.com.my/dash-wv/linear/5057/default.mpd
 
 #EXTINF:-1 tvg-id="" tvg-name="ESPN HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/ESPN.png" group-title="体育频道",ESPN HD
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
