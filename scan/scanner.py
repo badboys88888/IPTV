@@ -96,7 +96,7 @@ ORG_MAP = {
     "veesp": "机房", "sakura": "机房", "pittqiao": "机房",
     "fomo crew": "机房", "emagine": "机房", "dromatics": "机房",
     "digital united": "机房", "akile": "机房", "akari": "机房",
-    "a.i.p. italia": "机房", "enterprise": "企宽", "cake home": "家宽"
+    "a.i.p. italia": "机房", "enterprise": "企宽", "Hong Kong Broadband Network": "香港宽频", "cake home": "家宽"
 }
 
 # ========== 以下函数与之前基本相同 ==========
