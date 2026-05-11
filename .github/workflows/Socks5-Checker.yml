@@ -23,8 +23,9 @@ jobs:
         pip install aiohttp aiohttp_socks
 
     - name: Run Scanner
+      # 注意：working-directory 应该和 run 平级，且在 run 的上面
+      working-directory: ./scan
       run: |
-        working-directory: ./scan
         python run_check.py
 
     - name: Commit results
