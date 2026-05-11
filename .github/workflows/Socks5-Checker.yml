@@ -27,7 +27,7 @@ jobs:
       run: |
         # 即使没有 run_check.py 也要确保文件名与你仓库里的一致
         # 如果你仓库里叫 socks5-checker.py，请把下面这行改掉
-        python run_check.py
+        python socks5-checker.py
 
     - name: Commit results
       run: |
