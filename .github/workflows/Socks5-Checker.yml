@@ -24,7 +24,7 @@ jobs:
 
     - name: Run Scanner
       run: |
-        cd scan
+        working-directory: ./scan
         python run_check.py
 
     - name: Commit results
