@@ -1,0 +1,35 @@
+name: Socks5 Checker
+
+on:
+  workflow_dispatch: # 手动触发
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # 赋予提交结果的权限
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: |
+        pip install aiohttp aiohttp_socks
+
+    - name: Run Scanner
+      run: |
+        cd scan
+        python run_check.py
+
+    - name: Commit results
+      run: |
+        git config --local user.email "actions@github.com"
+        git config --local user.name "GitHub Actions"
+        git add scan/success.txt
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update success list" && git push)
