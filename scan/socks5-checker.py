@@ -4,32 +4,42 @@ import aiohttp
 import ipaddress
 from aiohttp_socks import ProxyConnector
 
-# --- 配置区域 ---
+# --- 配置 ---
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 IP_FILE = os.path.join(BASE_DIR, 'ip.txt')
 RESULT_FILE = os.path.join(BASE_DIR, 'success.txt')
 
-# 默认探测端口
-# 如果 ip.txt 没写端口，则尝试这些
-DEFAULT_PORTS = [1080, 1081, 8080, 3128, 443] 
-TIMEOUT = 5
-CONCURRENCY = 30 # 在 GitHub 上运行，并发建议保守一点
+# 默认扫描端口 (你可以继续增加)
+DEFAULT_PORTS = [80, 443, 1080, 1081, 3128, 8080, 8888, 7890]
+TIMEOUT = 10  # 增加到10秒，应对德国到GitHub的延迟
+CONCURRENCY = 50 # 并发数
 
 async def verify_proxy(ip, port):
-    """检测是否为无密码的可用 Socks5 代理"""
-    proxy_url = f'socks5://{ip}:{port}'
-    connector = ProxyConnector.from_url(proxy_url)
+    """同时检测 Socks5 和 HTTP 协议"""
+    test_url = "http://cloudflare.com"
     
+    # 1. 尝试 Socks5
     try:
+        connector = ProxyConnector.from_url(f'socks5://{ip}:{port}')
         async with aiohttp.ClientSession(connector=connector) as session:
-            # 访问 httpbin 验证真实出口 IP
-            async with session.get("http://httpbin.org", timeout=TIMEOUT) as resp:
+            async with session.get(test_url, timeout=TIMEOUT) as resp:
                 if resp.status == 200:
-                    data = await resp.json()
-                    print(f"[+] 发现节点! {ip}:{port} | 出口: {data.get('origin')}")
-                    return f"{ip}:{port}"
-    except Exception:
+                    print(f"[找到Socks5] {ip}:{port}")
+                    return f"socks5://{ip}:{port}"
+    except:
         pass
+
+    # 2. 尝试 HTTP
+    try:
+        async with aiohttp.ClientSession() as session:
+            proxy_url = f"http://{ip}:{port}"
+            async with session.get(test_url, proxy=proxy_url, timeout=TIMEOUT) as resp:
+                if resp.status == 200:
+                    print(f"[找到HTTP] {ip}:{port}")
+                    return f"http://{ip}:{port}"
+    except:
+        pass
+    
     return None
 
 async def worker(queue, results):
@@ -41,24 +51,21 @@ async def worker(queue, results):
         queue.task_done()
 
 async def main():
-    # 确保成功文件存在，防止 Git 报错
+    # 确保输出文件存在
     if not os.path.exists(RESULT_FILE):
         open(RESULT_FILE, 'a').close()
 
     if not os.path.exists(IP_FILE):
-        print(f"找不到输入文件: {IP_FILE}")
+        print(f"Error: {IP_FILE} not found")
         return
 
     tasks_list = []
-    
-    # 1. 解析 IP / 网段 / IP:端口
     with open(IP_FILE, 'r', encoding='utf-8') as f:
         for line in f:
             line = line.strip()
             if not line or line.startswith('#'): continue
-            
             try:
-                if '/' in line: # 处理 CIDR 如 218.255.83.218/28
+                if '/' in line: # 处理网段 176.9.62.93/24
                     net = ipaddress.ip_network(line, strict=False)
                     for ip in net:
                         for p in DEFAULT_PORTS:
@@ -70,32 +77,38 @@ async def main():
                     for p in DEFAULT_PORTS:
                         tasks_list.append((line, p))
             except Exception as e:
-                print(f"解析错误 [{line}]: {e}")
+                print(f"Parsing error: {line} -> {e}")
 
     if not tasks_list:
-        print("任务列表为空。")
+        print("No tasks found.")
         return
 
-    # 2. 开始异步扫描
     queue = asyncio.Queue()
     for task in tasks_list:
         await queue.put(task)
 
     results = []
-    print(f"开始检测 {len(tasks_list)} 个目标...")
+    print(f"开始检测 {len(tasks_list)} 个目标任务...")
     
     workers = [asyncio.create_task(worker(queue, results)) for _ in range(CONCURRENCY)]
     await asyncio.gather(*workers)
 
-    # 3. 保存结果
     if results:
-        unique_results = sorted(list(set(results)))
-        with open(RESULT_FILE, 'a', encoding='utf-8') as f:
-            for r in unique_results:
+        # 读取旧结果进行去重
+        old_results = set()
+        if os.path.exists(RESULT_FILE):
+            with open(RESULT_FILE, 'r') as f:
+                old_results = set(line.strip() for line in f if line.strip())
+        
+        new_results = set(results)
+        final_results = sorted(list(old_results.union(new_results)))
+
+        with open(RESULT_FILE, 'w', encoding='utf-8') as f:
+            for r in final_results:
                 f.write(r + '\n')
-        print(f"\n[!] 完成! 发现 {len(unique_results)} 个新节点。")
+        print(f"检测结束，当前共有 {len(final_results)} 个可用节点已保存。")
     else:
-        print("\n[?] 完成，本次未发现可用节点。")
+        print("检测结束，未发现可用节点。")
 
 if __name__ == "__main__":
     asyncio.run(main())
