@@ -7,7 +7,7 @@ jobs:
   scan:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # 赋予提交结果的权限
+      contents: write # 必须赋予写权限，否则无法推送结果回仓库
 
     steps:
     - name: Checkout code
@@ -23,14 +23,22 @@ jobs:
         pip install aiohttp aiohttp_socks
 
     - name: Run Scanner
-      # 注意：working-directory 应该和 run 平级，且在 run 的上面
       working-directory: ./scan
       run: |
-        python socks5-checker.py
+        # 即使没有 run_check.py 也要确保文件名与你仓库里的一致
+        # 如果你仓库里叫 socks5-checker.py，请把下面这行改掉
+        python run_check.py
 
     - name: Commit results
       run: |
         git config --local user.email "actions@github.com"
         git config --local user.name "GitHub Actions"
-        git add scan/success.txt
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Update success list" && git push)
+        
+        # 检查文件是否存在
+        if [ -f "scan/success.txt" ]; then
+          git add scan/success.txt
+          # 只有在有内容变化时才提交，避免报错
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update success list" && git push)
+        else
+          echo "没有生成 success.txt，跳过提交。"
+        fi
