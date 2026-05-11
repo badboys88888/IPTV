@@ -12,7 +12,7 @@ RESULT_FILE = os.path.join(BASE_DIR, 'success.txt')
 # 扫描参数
 DEFAULT_PORTS = [1080] 
 TIMEOUT = 5            # 探测超时（秒）
-CONCURRENCY = 1000     # 并发数（根据机器性能可调至 500-2000）
+CONCURRENCY = 5000     # 并发数（根据机器性能可调至 500-2000）
 TEST_URLS = [
     "http://cloudflare.com",
     "http://httpbin.org"
