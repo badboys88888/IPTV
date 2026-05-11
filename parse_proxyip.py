@@ -376,6 +376,7 @@ ORG_MAP = {
     "ee": "EE",
     "vodafone": "沃达丰",
     "swisscom": "瑞士电信", "swisscom schweiz ag": "瑞士电信",
+    "virgin media limited": "维珍传媒", "gtt communications inc.": "GTT 通讯",
     "deutsche telekom": "德国电信",
     "telefonica": "西班牙电信",
     "orange": "Orange",
