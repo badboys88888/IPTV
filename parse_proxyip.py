@@ -535,7 +535,8 @@ def geo_enrich(passed):
         ip_only = it["ip"].split(":")[0]
         info = cache.get(ip_only, {"country": "未知", "org": "未知"})
         country = info.get("country", "未知")
-        org = info.get("org", "未知")
+        org_raw = info.get("org", "未知")
+        org = org_cn(org_raw)   # ⬅️ 这里加上实时映射
         groups[country].append({
             "addr": it["addr"],
             "org": org,
@@ -543,7 +544,6 @@ def geo_enrich(passed):
         })
 
     return groups
-
 # ================== 输出 ==================
 
 def save_output(passed):
