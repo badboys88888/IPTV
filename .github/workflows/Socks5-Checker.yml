@@ -26,7 +26,7 @@ jobs:
       # 注意：working-directory 应该和 run 平级，且在 run 的上面
       working-directory: ./scan
       run: |
-        python run_check.py
+        python socks5-checker.py
 
     - name: Commit results
       run: |
