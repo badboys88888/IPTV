@@ -29,63 +29,88 @@ async function run() {
         } catch (e) { console.error("❌ JSON抓取失败"); }
     }
 
-    // --- 任务 2: Telegram 实时抓取 (仅增加 Logo 逻辑) ---
+   // --- 任务 2: Telegram 实时抓取（增强版）---
+let tgSuccess = false;
+const tgUrls = [
+    `https://t.me/s/${TG_CHANNEL}?before=${Date.now()}`,
+    `https://t.me/${TG_CHANNEL}?before=${Date.now()}`,
+    `https://telegram.dog/${TG_CHANNEL}?before=${Date.now()}`
+];
+
+for (const embedUrl of tgUrls) {
+    if (tgSuccess) break;
     try {
-        const embedUrl = `https://t.me/s/${TG_CHANNEL}?before=${Math.floor(Date.now()/1000)}`;
-        console.log(`📡 正在同步电报实时数据...`);
-        
+        console.log(`📡 尝试抓取: ${embedUrl}`);
         const tgRes = await fetch(embedUrl, {
             headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' }
         });
+        if (!tgRes.ok) continue;
+        
         let html = await tgRes.text();
         html = html.replace(/&amp;/g, '&');
         
+        // 检查是否被拦截
+        if (html.includes('access denied') || html.includes('cf-challenge')) {
+            console.log(`⚠️ 被拦截: ${embedUrl}`);
+            continue;
+        }
+        
         const messages = html.split('tgme_widget_message_wrap');
+        if (messages.length <= 1) {
+            console.log(`⚠️ 未找到消息容器，尝试其他URL`);
+            continue;
+        }
+        
         let tgCount = 0;
-
         for (let i = messages.length - 1; i >= 0; i--) {
             const msg = messages[i];
+            const mpdMatch = msg.match(/https?:\/\/[^"'\s<>]+\.mpd[^"'\s<>]*/i);
+            if (!mpdMatch) continue;
             
-            const mpdMatch = msg.match(/https?:\/\/[^"'\s<> ]+\.mpd[^"'\s<> ]*/i);
             const keyMatch = msg.match(/[a-f0-9]{32}:[a-f0-9]{32}/i);
             
-            if (mpdMatch && keyMatch) {
-                // --- 【新增 Logo 逻辑】 ---
-                let tgLogo = "https://fifa.com"; // 默认 FIFA 图
-                const photoMatch = msg.match(/background-image:url\(['"]?(.*?)['"]?\)/i);
-                if (photoMatch && photoMatch[1]) {
-                    tgLogo = photoMatch[1];
-                }
-                // ------------------------
-
-                const timeMatch = msg.match(/datetime="([^"]+)"/);
-                let timeTag = "[最新]";
-                if (timeMatch) {
-                    const msgTime = new Date(timeMatch[1]);
-                    const diffHours = (new Date() - msgTime) / 1000 / 60 / 60;
-                    if (diffHours > 48) continue; 
-                    if (diffHours < 1) timeTag = "[刚刚]";
-                }
-
-                let title = "FIFA+ Stream";
-                const textMatch = msg.match(/<div class="tgme_widget_message_text[^>]*>([\s\S]*?)<\/div>/i);
-                if (textMatch) {
-                    title = textMatch[1].replace(/<[^>]*>/g, '').trim().substring(0, 80);
-                }
-
-                // 在这里加入 tvg-logo
-                m3uContent += `#EXTINF:-1 tvg-logo="${tgLogo}" group-title="FIFA+直播", ${timeTag} ${title}\n`;
-                m3uContent += `#KODIPROP:inputstream.adaptive.license_type=clearkey\n`;
-                m3uContent += `#KODIPROP:inputstream.adaptive.manifest_type=mpd\n`;
-                m3uContent += `#KODIPROP:inputstream.adaptive.license_key=${keyMatch[0]}\n`;
-                m3uContent += `${mpdMatch[0]}\n\n`;
-                
-                tgCount++;
-                if (tgCount >= 20) break; 
+            // 可选：过滤过期消息
+            let timeTag = "";
+            const timeMatch = msg.match(/datetime="([^"]+)"/);
+            if (timeMatch) {
+                const msgTime = new Date(timeMatch[1]);
+                const diffHours = (new Date() - msgTime) / 36e5;
+                if (diffHours > 48) continue; // 跳过超过48小时的
+                if (diffHours < 1) timeTag = "[刚刚]";
             }
+            
+            let title = "FIFA+ Stream";
+            const textMatch = msg.match(/<div class="tgme_widget_message_text[^>]*>([\s\S]*?)<\/div>/i);
+            if (textMatch) {
+                title = textMatch[1].replace(/<[^>]*>/g, '').trim().substring(0, 80);
+            }
+            
+            m3uContent += `#EXTINF:-1 group-title="TG_Update", ${timeTag} ${title}\n`;
+            if (keyMatch) {
+                m3uContent += `#KODIPROP:inputstream.adaptive.license_type=clearkey\n`;
+                m3uContent += `#KODIPROP:inputstream.adaptive.license_key=${keyMatch[0]}\n`;
+            }
+            m3uContent += `#KODIPROP:inputstream.adaptive.manifest_type=mpd\n`;
+            m3uContent += `${mpdMatch[0]}\n\n`;
+            
+            tgCount++;
+            if (tgCount >= 20) break;
         }
-        console.log(`✅ 同步完成，共 ${tgCount} 条实时源`);
-    } catch (e) { console.error("❌ TG抓取异常:", e.message); }
+        
+        if (tgCount > 0) {
+            console.log(`✅ 从 ${embedUrl} 抓取成功，共 ${tgCount} 条`);
+            tgSuccess = true;
+        } else {
+            console.log(`⚠️ ${embedUrl} 未发现有效流，可能是消息缺少mpd或key`);
+        }
+    } catch (e) {
+        console.log(`❌ ${embedUrl} 出错: ${e.message}`);
+    }
+}
+
+if (!tgSuccess) {
+    console.log("❗所有 Telegram 源均抓取失败，请检查频道是否有效或网络环境");
+}
 
     fs.writeFileSync('live.m3u', m3uContent);
     console.log("🎉 live.m3u 已更新！");
