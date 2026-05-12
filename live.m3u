@@ -1,25 +1,17 @@
 #EXTM3U
 #EXT-X-SESSION-DATA:ID="SOURCE",VALUE="Hady_Realtime_Bot"
 
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2820/image" group-title="实时赛事", Osasuna vs Atlético Madrid (BEIN ENGLISH)
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/GPuOY34ZppMLZlI7BBdld5zCI4pU7UwGq2bYvF7v8V6LRRQRollhs_XkrIBL0fqVyHhYO7xU47bYN7t3Ppo4-h5uh9K5BAwrqMCS5KhS1LvoVS90xRbE-o75VujlIBpB6dhm7GdgYQ1EsEDSY-QlaStQI4GehXZgrb4HwvV9e7q7YIqq26hWhCzogHbWZvVob0hfcPxiwtKqmlJLYO1u4Ihvt0E1YPh1BLkb1iFXS6jKq0sVtc45rySiRCqW-NIuaT_DgEaPx7kZXJ0g4WVBIZGjCQBPkqBqivYz1guH6tPHwl1qBdMO8KQ65qnvX5vRBgqJINazu_Mt03wQf06A6g.jpg",  ▶️⚽️ Mahaut Soca Strikers FC v Middleham United FC | DFA Premier League 2026Time
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=7995c724a13748ed970840a8ab5bb9b3:67bdaf1e2175b9ff682fcdf0e2354b1e
-https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd
+#KODIPROP:inputstream.adaptive.license_key=6f91c1ac8cea3436b7078f926f5cf2f6:1f6783d90edba1cf180d7f80f5bd9379
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_09_22_34_730cb1bf-f868-47ca-9979-7e46fd3e44ea/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2820/image" group-title="实时赛事", Osasuna vs Atlético Madrid (PREMIER SPORTS)
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/keCJyplLlO1YJsvQTJ8Ez6HrpeGwv8FhDLRq4Z40TkxzhqXk3z5oPEUapMBpuA-s1_gqq1d28koWBX5GOgVR4yGhM_BpMwMJeGDWhYZ5E4QhVnReEf0hLLu45qhZ06-PJujVwq4G-59j4xfPru4xS6LXwytoYKO8UUoAdk2UIgSSHqcONoIQItVn2fcgZqfSdrjEcWk3mH9HX28nKMea59VnmWDEYHEnJMxyfiaaKE50-d3e5dkcmqcRxbk0ebxF3PSSRsbFvbK4SjZFWrvE2P1sNF2Kko66vTZuhpdEyoNLo8tb6CE1sktvtYc5Q6OgbWCdUk87Ibmn1TH-s6P9tg.jpg",  ▶️⚽️ St.Andrew Lions FC v Ellerton FC | BFA Premier League 2026Time: 05-13 07:00
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=1444f4235529f183f0a5a486befe9cdb:e5e3fec67a1bb3472a2089c8a0a2557f
-https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/m6sqanvm2m/out/v1/f6beb46c6e9a4132ad739f3ca27df6aa/cenc.mpd
-
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2820/image" group-title="实时赛事", Osasuna vs Atlético Madrid (LALIGA TV FHD)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=620e51b82596475517a27aa425c52280:2b9ba811e9c5aeafc8ae1b71cdca4d6a
-https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/k0duzgfejg/out/v1/70a50b1bda944628b8e7e66ab4069419/cenc.mpd
-
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2820/image" group-title="实时赛事", Osasuna vs Atlético Madrid (FANCODE FHD)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=065051b99bf5cf8d9a3bde5cbde6aaf9:214bd176832872339ce184338320f9a2
-https://abfjk4haaaaaaaampv6ofhkihi4r6.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash/enc/inpyms8ezu/out/v1/1084d5c9a97a4c5b9f9554c88f486646/cenc.mpd
+#KODIPROP:inputstream.adaptive.license_key=5b33ed4887c43401ad7ad8a6a979722e:f46c7d50558bb2866fee2a3ae9c72240
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_09_17_13_324dd4b5-10f1-490e-be37-aa388da294dd/PROD_CMAF_CENC/index-dash.mpd
 
 #EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/d7CHDunLDHNenYCyabwNEL69qpCFJAOYzYRaLoWu6xU9mvEHi6V3yNnjmthtunwyAMU0RzAN1qIgSvKe0pbmqY7VyAxgfahza5lzAd8d4dijZnyBr9dFIJnbnN4i1-LGdE9lXhpUi9M1o8bRYWoFwGxdWKQ1rnvyI0dqIn5dO21g1MbWzZzPb8PbI9nZJuV-2K_wcoVdSKCzUqPHcBDaWJviS0uC6lq4z1HvYI8ePwvXO8OM_QEmh4qbCA0KrP2r1NLsv0mtvgj6os6EOGWMxw8zFB2943zdv96N3SNKIKx6SeH2GXyahG04v2VJDkSY3GUcXrXIOc5vQi9vgC9qjw.jpg",  ▶️⚽️ Domagnano v Virtus | Semi-finals - Second Leg | Campionato Sammarinese 2025
 #KODIPROP:inputstream.adaptive.license_type=clearkey
@@ -80,22 +72,4 @@ https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_14_43_59_c55bc82c-0937-4ddf-b359
 #KODIPROP:inputstream.adaptive.license_key=26b3ea26ee533a53a291ba7b6787092a:8ddee54935ae4cc9b2da5a238fbfb240
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_08_59_17_417de9d9-3df9-4165-877c-33d04d6b9a80/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/BJQMFmtMKAY50_kkNSCgfusF36PQGwPuQPy6PyU3MSLIdyA0z5K-IQJenb6LJqxyHTpN4fulSegE3xHRYL-ZPoY4WsVb3YH_x2nFAxGBDK-7Ft0goURSU6Z8PyM84n6qNkf2rz8P80IywYNbP_bkI1zFtImhttjJHNls-nxkTtf-oEQYkoAkts6D_g374tEQ9vdNeYV64Xdzo0mCi3MDEaWu9440ddXwdyJCu01O1lTlyvwsxvlvobaHub6o0Rv-_PzV2R8am_yKjPIxgLcAF5uSlAFKFALlwtGJZ3YCB17Rc8wthp-On_-A6Jo-eeZOAH5ftabD0KMxqo9mpu850A.jpg",  ▶️⚽️ S.V. Victory Boys v Inter Willemstad | Curaçao Promé Divishon 2025/26Time: 
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=969ae9ff63e835b085553873b5ff421a:90ff437eb8179ffa1edb54bc0f2a7cd2
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_06_41_26_4aebb9bf-32e7-4504-8d9f-94ea35c3ce11/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/cu9KRRvAXxCZIlAKOL-PbHAvIIIJQ1JrYvaCubKsR9YcPPz37TY4FvFUxC_wVnNA-8pMvivuCaUeEl5PgOHiEwbZDhYi6NIPNwMARVJtsrpE4J8zCEe6Kj7tAcfQphzwHseuFFMJCw7OUPzsOlxsyQuq9TJIsl5UGmJwyLLI-YqVx4LBF2ZONcw9-AKo4BT5wMWc5NWupSxr6vt_43C0VvsvC5YcFoprk04eigz1W2kA68TiMZgeCmUs7w_bPgzKa3XQ5eL_8HZte6CqtJkcHEHeYk-Ddj13A3UZIz8XNPW0faSysTzqZn_V7ZO1BRe9mu2cSLInkqQGDaRQtnzcwQ.jpg",  ▶️⚽️ RKSV Scherpenheuvel v C.R.K.S.V. Jong Colombia | Curaçao Promé Divishon 202
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=90961c540819348bb4b812d5d89c04e5:462846f58e4842dba12042cbcecaf1bf
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_09_12_04_ef7db2bb-6368-4ee6-923b-6370fd5211ab/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/QVfXz-UpjNvw5L2HJLCgumqPw87qaS4_h8DgwDLBa7la5uqVzW4JBKgl30gUkopvD-NVq5COMF71H33GFrqI3qAfz0uLO6DRl4ojNtJf1i5xQJ6d4dDK3ns2paro5piHlV3CBUy3kOXb0bs2B_QwY-okNlqrEeqSNw4ECIVYr0C-eeoomyWBbN__34BQ_KZOihGGE7k5IvRrKeCzjnxy6jJiEEbE2vpPIDHUZm_vCsOhn7-RUUf7wyktZcuYiS6YsLsvqoqJMyfab6MUf0vuIGINurfYx-papZDHQBCIvZGvvXHasT-UWIqTBGBkhCrZwOE53aVHUixdD1TGSvHbDw.jpg",  ▶️⚽️ C.R.K.S.V. Jong Holland v R.K.S.V. Centro Dominguito | Curaçao Promé Divish
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=227b32dcada33342b7a14a4edb776153:714b6b259dbaf1f14c7b7845ea703b51
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_09_12_07_faf4b3ff-8dbb-4a14-8be8-0b312c264079/PROD_CMAF_CENC/index-dash.mpd
 
