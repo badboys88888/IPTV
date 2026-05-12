@@ -1,102 +1,94 @@
 const fs = require('fs');
 
-// --- 配置区 ---
 const JSON_SOURCES = [
     "https://raw.githubusercontent.com/srhady/vipsports/refs/heads/main/alpha_live.json"
 ];
 const TG_CHANNEL = "afifffff_plus";
 
 async function run() {
-    console.log("🚀 启动抓取任务...");
-    let m3uContent = "#EXTM3U\n#EXT-X-SESSION-DATA:ID=\"SOURCE\",VALUE=\"Hady_VIP\"\n\n";
+    console.log("🚀 启动实时合并抓取任务...");
+    let m3uContent = "#EXTM3U\n#EXT-X-SESSION-DATA:ID=\"SOURCE\",VALUE=\"Hady_Realtime_Bot\"\n\n";
     
-    // --- 第一部分：严格按照你的 JSON 结构抓取 ---
-    console.log("📡 正在处理 JSON 组数据...");
+    // --- 任务 1: JSON 抓取 ---
     for (const url of JSON_SOURCES) {
         try {
-            const res = await fetch(url);
+            const res = await fetch(url + "?t=" + Date.now()); 
             const data = await res.json();
-            
-            // 严格读取 live_matches
-            const matches = data.live_matches || [];
-            matches.forEach(match => {
-                // 遍历该比赛下的 streams 数组
+            (data.live_matches || []).forEach(match => {
                 (match.streams || []).forEach(stream => {
-                    const streamUrl = stream.stream_url;
-                    
-                    // 只有当链接是 http 开头且不是预告文字时才处理
-                    if (streamUrl && streamUrl.startsWith('http')) {
-                        const title = match.event_name;
-                        const category = match.category || "LIVE";
+                    if (stream.stream_url?.startsWith('http')) {
+                        // JSON 部分带上 logo
                         const logo = match.home_team_logo || "";
-                        const key = stream.manifest_keys;
-                        const source = stream.source_name || "Stream";
-
-                        m3uContent += `#EXTINF:-1 tvg-logo="${logo}" group-title="${category}", ${title} (${source})\n`;
+                        m3uContent += `#EXTINF:-1 tvg-logo="${logo}" group-title="API直播", ${match.event_name} (${stream.source_name})\n`;
                         m3uContent += `#KODIPROP:inputstream.adaptive.license_type=clearkey\n`;
-                        
-                        // 如果是 mpd 格式，增加 manifest_type 声明
-                        if (streamUrl.includes('.mpd')) {
-                            m3uContent += `#KODIPROP:inputstream.adaptive.manifest_type=mpd\n`;
-                        }
-                        
-                        // 如果有 key 则写入
-                        if (key) {
-                            m3uContent += `#KODIPROP:inputstream.adaptive.license_key=${key}\n`;
-                        }
-                        m3uContent += `${streamUrl}\n\n`;
+                        m3uContent += `#KODIPROP:inputstream.adaptive.license_key=${stream.manifest_keys}\n`;
+                        m3uContent += `${stream.stream_url}\n\n`;
                     }
                 });
             });
-            console.log("✅ JSON 数据处理完成");
-        } catch (e) { console.error(`❌ JSON 抓取失败: ${url}`); }
+        } catch (e) { console.error("❌ JSON抓取失败"); }
     }
 
-    // --- 第二部分：处理 Telegram 频道 ---
-    console.log(`📡 正在抓取电报频道: @${TG_CHANNEL}...`);
+    // --- 任务 2: Telegram 实时抓取 (仅增加 Logo 逻辑) ---
     try {
-        const tgRes = await fetch(`https://t.me{TG_CHANNEL}`, {
+        const embedUrl = `https://t.me/s/${TG_CHANNEL}?before=${Math.floor(Date.now()/1000)}`;
+        console.log(`📡 正在同步电报实时数据...`);
+        
+        const tgRes = await fetch(embedUrl, {
             headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' }
         });
         let html = await tgRes.text();
         html = html.replace(/&amp;/g, '&');
-        const messages = html.split('tgme_widget_message_wrap');
         
+        const messages = html.split('tgme_widget_message_wrap');
         let tgCount = 0;
+
         for (let i = messages.length - 1; i >= 0; i--) {
             const msg = messages[i];
+            
             const mpdMatch = msg.match(/https?:\/\/[^"'\s<> ]+\.mpd[^"'\s<> ]*/i);
             const keyMatch = msg.match(/[a-f0-9]{32}:[a-f0-9]{32}/i);
             
             if (mpdMatch && keyMatch) {
-                // 尝试抓取消息图片作为 Logo
-                let tgLogo = "https://fifa.com";
+                // --- 【新增 Logo 逻辑】 ---
+                let tgLogo = "https://fifa.com"; // 默认 FIFA 图
                 const photoMatch = msg.match(/background-image:url\(['"]?(.*?)['"]?\)/i);
-                if (photoMatch) tgLogo = photoMatch[1];
+                if (photoMatch && photoMatch[1]) {
+                    tgLogo = photoMatch[1];
+                }
+                // ------------------------
 
-                // 提取标题
-                let tgTitle = "FIFA+ Stream";
-                const textMatch = msg.match(/<div class="tgme_widget_message_text[^>]*>([\s\S]*?)<\/div>/i);
-                if (textMatch) {
-                    tgTitle = textMatch[1].replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim().substring(0, 80);
+                const timeMatch = msg.match(/datetime="([^"]+)"/);
+                let timeTag = "[最新]";
+                if (timeMatch) {
+                    const msgTime = new Date(timeMatch[1]);
+                    const diffHours = (new Date() - msgTime) / 1000 / 60 / 60;
+                    if (diffHours > 48) continue; 
+                    if (diffHours < 1) timeTag = "[刚刚]";
                 }
 
-                m3uContent += `#EXTINF:-1 tvg-logo="${tgLogo}" group-title="FIFA+_Updates", [TG] ${tgTitle}\n`;
+                let title = "FIFA+ Stream";
+                const textMatch = msg.match(/<div class="tgme_widget_message_text[^>]*>([\s\S]*?)<\/div>/i);
+                if (textMatch) {
+                    title = textMatch[1].replace(/<[^>]*>/g, '').trim().substring(0, 80);
+                }
+
+                // 在这里加入 tvg-logo
+                m3uContent += `#EXTINF:-1 tvg-logo="${tgLogo}" group-title="TG_Update", ${timeTag} ${title}\n`;
                 m3uContent += `#KODIPROP:inputstream.adaptive.license_type=clearkey\n`;
                 m3uContent += `#KODIPROP:inputstream.adaptive.manifest_type=mpd\n`;
                 m3uContent += `#KODIPROP:inputstream.adaptive.license_key=${keyMatch[0]}\n`;
                 m3uContent += `${mpdMatch[0]}\n\n`;
                 
                 tgCount++;
-                if (tgCount >= 15) break; 
+                if (tgCount >= 20) break; 
             }
         }
-        console.log(`✅ 电报抓取成功: ${tgCount} 条`);
-    } catch (e) { console.error("❌ Telegram 抓取失败:", e.message); }
+        console.log(`✅ 同步完成，共 ${tgCount} 条实时源`);
+    } catch (e) { console.error("❌ TG抓取异常:", e.message); }
 
-    // --- 保存文件 ---
     fs.writeFileSync('live.m3u', m3uContent);
-    console.log("🎉 全部数据已合并至 live.m3u");
+    console.log("🎉 live.m3u 已更新！");
 }
 
 run();
