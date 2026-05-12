@@ -38,42 +38,57 @@ async function run() {
         }
     }
 
-    // --- 任务 2: 抓取 Telegram ---
+        // --- 任务 2: 抓取 Telegram ---
     try {
         console.log(`📡 正在抓取电报频道: @${TG_CHANNEL}`);
-        const tgRes = await fetch(`https://t.me{TG_CHANNEL}`);
-        const html = await tgRes.text();
-        const messages = html.split('tgme_widget_message_wrap');
         
-        let tgCount = 0;
-        for (let i = messages.length - 1; i >= 0; i--) {
-            const msg = messages[i];
-            const mpdMatch = msg.match(/https?:\/\/[^"'\s\<\> ]+\.mpd[^"'\s\<\> ]*/i);
-            const keyMatch = msg.match(/[a-fA-F0-9]{32}\s?:\s?[a-fA-F0-9]{32}/i);
-            
-            if (mpdMatch) {
-                const finalKey = keyMatch ? keyMatch[0].replace(/\s/g, '') : null;
-                // 提取标题
-                let title = "FIFA+ Stream";
-                const bMatch = msg.match(/<b>(.*?)<\/b>/);
-                if (bMatch) title = bMatch[1].replace(/<[^>]*>/g, '').trim();
-
-                allChannels.push({
-                    title: `[TG] ${title}`,
-                    logo: "",
-                    group: "Telegram_Update",
-                    url: mpdMatch[0],
-                    key: finalKey,
-                    isFifa: true // 标记一下是 FIFA+ 源
-                });
-                tgCount++;
-                if (tgCount >= 15) break;
+        // 增加请求头，模拟真实浏览器访问，防止被 Telegram 拦截
+        const tgRes = await fetch(`https://t.me{TG_CHANNEL}`, {
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
+                'Accept-Language': 'en-US,en;q=0.9'
             }
+        });
+
+        if (!tgRes.ok) throw new Error(`Telegram 访问被拒绝: ${tgRes.status}`);
+        
+        const html = await tgRes.text();
+        
+        // 检查是否抓到了内容
+        if (html.includes('tgme_widget_message_wrap')) {
+            const messages = html.split('tgme_widget_message_wrap');
+            let tgCount = 0;
+            for (let i = messages.length - 1; i >= 0; i--) {
+                const msg = messages[i];
+                const mpdMatch = msg.match(/https?:\/\/[^"'\s\<\> ]+\.mpd[^"'\s\<\> ]*/i);
+                const keyMatch = msg.match(/[a-fA-F0-9]{32}\s?:\s?[a-fA-F0-9]{32}/i);
+                
+                if (mpdMatch) {
+                    const finalKey = keyMatch ? keyMatch[0].replace(/\s/g, '') : null;
+                    let title = "FIFA+ Stream";
+                    const bMatch = msg.match(/<b>(.*?)<\/b>/);
+                    if (bMatch) title = bMatch[1].replace(/<[^>]*>/g, '').trim();
+
+                    allChannels.push({
+                        title: `[TG] ${title}`,
+                        logo: "",
+                        group: "Telegram_Update",
+                        url: mpdMatch[0],
+                        key: finalKey,
+                        isFifa: true
+                    });
+                    tgCount++;
+                    if (tgCount >= 15) break;
+                }
+            }
+            console.log(`✅ 电报抓取成功，新增 ${tgCount} 个频道`);
+        } else {
+            console.log("⚠️ 电报页面抓取成功但未发现消息，可能被反爬虫拦截");
         }
-        console.log(`✅ 电报抓取成功，新增 ${tgCount} 个频道`);
     } catch (e) {
         console.error("❌ Telegram 抓取出错:", e.message);
     }
+
 
     // --- 任务 3: 统一生成 M3U 文件 ---
     let m3uContent = "#EXTM3U\n#EXT-X-SESSION-DATA:ID=\"SOURCE\",VALUE=\"Hady_VIP\"\n\n";
