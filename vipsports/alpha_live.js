@@ -2,7 +2,7 @@ const fs = require('fs');
 
 // --- 配置区 ---
 const JSON_SOURCES = [
-    "https://githubusercontent.com"
+    "https://raw.githubusercontent.com/srhady/vipsports/refs/heads/main/alpha_live.json"
 ];
 const TG_CHANNEL = "afifffff_plus";
 
