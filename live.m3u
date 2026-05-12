@@ -1,26 +1,6 @@
 #EXTM3U
 #EXT-X-SESSION-DATA:ID="SOURCE",VALUE="Hady_Realtime_Bot"
 
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/216006/image" group-title="实时赛事", Gujarat Titans vs Sunrisers Hyderabad (WILLOW [AD-FREE])
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=01c6a91ded406339be138e51094c6712:a5a7b8bc54ddd1632beef459c2e295d2
-https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/ixrd6ejrv9/out/v1/4604f9d16228461c9eabfeee7dbe2d8e/cenc.mpd
-
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/216006/image" group-title="实时赛事", Gujarat Titans vs Sunrisers Hyderabad (SKY SPORTS FHD)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=aefc2c8d1c8840f1b6981f856c9269ba:cf8ea114c45b4d6596b2748258ab74d6
-https://dice-live-oc.akamaized.net/hdntl=exp=1778671278~acl=%2f*~id=dcda6e4e-4c4c-4557-9085-e669adf502ef~data=hdntl,aXA9MTA4LjE4MS4wLjE3MSZleHA9MTc3ODU4NDkwOCZlaWQ9OTM5OTc3Jm9pZD0xNTQmdHlwZT1WT0QmdWlkPXhSUnFvOXxiY2FlYTdjZi1jMzM3LTQwMzktODE1OC0zYzFjZTQ5ZTcyOTMmY2lkPWRjZS5maXNmZWQmcHQ9bnVsbA~hmac=3a6092f1e73456d3c70aafaac8390cc9fec5b13d08fc808e8dc695e97adad0b0/dash/live/2093710/219026-321025/manifest-d.mpd
-
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/216006/image" group-title="实时赛事", Gujarat Titans vs Sunrisers Hyderabad (KAYO HINDI FHD)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=368d67493ff259d9823b96b89b761386:1bd0324aa4f1473fe0612cffe46b05a2
-https://dck1-ac-live.cdn.indazn.com/out/v1/814bffb9b389f652/d7c17f9575ba40798a8c63c738b150b3/index.mpd
-
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/216006/image" group-title="实时赛事", Gujarat Titans vs Sunrisers Hyderabad (SKY SPORTS 4K)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=4d346b1d1ae64d4a800409cffa14983e:208c972bd2da4359ac94e6944fe378b6
-https://dice-live-oc.akamaized.net/hdntl=exp=1778671285~acl=%2f*~id=9292cb6a-0cc1-43bc-9200-073d0468d68e~data=hdntl,aXA9MTA4LjE4MS4wLjE3MSZleHA9MTc3ODU4NDkxNSZlaWQ9OTM2NDI0Jm9pZD0xNTQmdHlwZT1WT0QmdWlkPXhSUnFvOXxiY2FlYTdjZi1jMzM3LTQwMzktODE1OC0zYzFjZTQ5ZTcyOTMmY2lkPWRjZS5maXNmZWQmcHQ9bnVsbA~hmac=9824a1d2cb79ca7425984033bbda75843948baf21c9f5553fa2a7735698300e4/dash/live/2093666/294921-318514/manifest-d.mpd
-
 #EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/269199/image" group-title="实时赛事", Al-Kholood vs Al-Okhdood (THMANYAH HD)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=
@@ -46,37 +26,123 @@ https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/k0duzgfejg/
 #KODIPROP:inputstream.adaptive.license_key=
 https://livecdn-bp-livestream.rumsport7.live/stream/27/chunks.m3u8?is_vip=false&token=4306e5316cdca8d2959fc90ef087868dd9f40498&x-sign=448b82079587b71baafef3b1db97a0de&x-time=1778605200
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/tebNE8XKqUC5s1CFfGqOR-y13kKnRkEpE36_kwTqtR5-mD8zhSS0VESX0HIiUqn9DpoEhVPK80-h4uCkWDglhifo5my4e8RQk9eSIZkN00ELp__if8hX4OJbwuvr1_8BrTW-06uBa8eJZz8bx5pglVlVPsglW1bCYgFVlKPaZZpibaViPg_9rUvBCyuWm1p7NHXUtX75bRblFuQYWv_Zw0OixrmS3agf-r3i4AkkT1urdR20GM6ITqRn8PT02QHQ3f_m3dGMDi9hn9pDNATNYBgsrUJzILTO6veJTc6BuOnN59ALIf27F9FoBhR_gS-i6JdAMB5unIGOt9vgFLJG3g.jpg", [刚刚] ▶️⚽️ Chemal FC v Nouakchott Kings | Super D-1 2025/26Time: 05-13 00:45#EXTINF:-1
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/23400/image" group-title="实时赛事", Al-Nassr vs Al-Hilal (FANCODE FHD)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=7e9239c1982d984a002df3ed049d0756:1b8a17598129a3618535c8fb05f103fe
+https://abfjk4haaaaaaaampv6ofhkihi4r6.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash/enc/fdb3pubmek/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/23400/image" group-title="实时赛事", Al-Nassr vs Al-Hilal (SPORTV BR FHD)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=4bbcff3289d457b4dd5dbdd21221de9a:c4906b9a9f8dda3c0725bddb8c497733
+https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/m7duvnk2bu/out/v1/d1ad69118b5647309b1eb7213affdb3d/cenc.mpd
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/23400/image" group-title="实时赛事", Al-Nassr vs Al-Hilal (FOX DEPORTES)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=d1a163914db8ffad2c3e94f979896a0d:9728800a3959aafdd5b0bcfbf3768811
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/vkpoljjpkj/out/v1/502bcf68b3514cd28a220e6f0a43816f/cenc.mpd
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/23400/image" group-title="实时赛事", Al-Nassr vs Al-Hilal (THMANYAH HD)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=
+https://d1yi40sjj0ca0v.cloudfront.net/TVD1403/index.mpd
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/23400/image" group-title="实时赛事", Al-Nassr vs Al-Hilal (SPORTDIGITAL FUSSBALL)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=0ad4080cdff8c60b1233b22087f0b340:285f129c5eca01dd08a5d5a14ad801c8
+https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/ssdefyhkkr/out/v1/cf01290cb7f64525bdf861580a016ca8/cenc.mpd
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/23400/image" group-title="实时赛事", Al-Nassr vs Al-Hilal (HD SERVER)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=
+https://livecdn-bp-livestream.rumsport7.live/stream/9/chunks.m3u8?is_vip=false&token=4306e5316cdca8d2959fc90ef087868dd9f40498&x-sign=0d8d354c6bab3773786320aef4fa561b&x-time=1778607960
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/23400/image" group-title="实时赛事", Al-Nassr vs Al-Hilal (LIVE)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=
+https://pul-tenm.nbs3g.com/live/sd-1-4404679.m3u8?txSecret=76c644c988d9b28d1c7072ab82878fe8&txTime=6A04BC22
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2816/image" group-title="实时赛事", Real Betis vs Elche (HD SERVER)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=
+https://livecdn-bp-livestream.rumsport7.live/stream/25/chunks.m3u8?is_vip=false&token=4306e5316cdca8d2959fc90ef087868dd9f40498&x-sign=1b5be7687dbea86ae456f79445d24b30&x-time=1778608080
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2816/image" group-title="实时赛事", Real Betis vs Elche (LIVE)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=
+https://pul-tenm.nbs3g.com/live/hd-en-1-4358304.m3u8?txSecret=a6fcbf9bb3309ab6239d8eeca6befca0&txTime=6A04AF07
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2355/image" group-title="实时赛事", Aberdeen vs St. Mirren (LIVE)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=
+https://pul-tenm.nbs3g.com/live/sd-1-4529703.m3u8?txSecret=575538d830ba26464b704d99adb429b4&txTime=6A04AF07
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/45/image" group-title="实时赛事", Southampton vs Middlesbrough (BEIN ENGLISH)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=0b42be2664d7e811d04f3e504e0924c5:ae24090123b8c72ac5404dc152847cb8
+https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/45/image" group-title="实时赛事", Southampton vs Middlesbrough (CBS SPORTS HD)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=
+https://livecdn-bp-livestream.rumsport7.live/stream/8/chunks.m3u8?is_vip=false&token=4306e5316cdca8d2959fc90ef087868dd9f40498&x-sign=c63f337f0a9242d273e17ec65a4d2890&x-time=1778614740
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2820/image" group-title="实时赛事", Osasuna vs Atlético Madrid (BEIN ENGLISH)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=7995c724a13748ed970840a8ab5bb9b3:67bdaf1e2175b9ff682fcdf0e2354b1e
+https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2820/image" group-title="实时赛事", Osasuna vs Atlético Madrid (PREMIER SPORTS)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=1444f4235529f183f0a5a486befe9cdb:e5e3fec67a1bb3472a2089c8a0a2557f
+https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/m6sqanvm2m/out/v1/f6beb46c6e9a4132ad739f3ca27df6aa/cenc.mpd
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2820/image" group-title="实时赛事", Osasuna vs Atlético Madrid (LALIGA TV FHD)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=620e51b82596475517a27aa425c52280:2b9ba811e9c5aeafc8ae1b71cdca4d6a
+https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/k0duzgfejg/out/v1/70a50b1bda944628b8e7e66ab4069419/cenc.mpd
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2820/image" group-title="实时赛事", Osasuna vs Atlético Madrid (FANCODE FHD)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=065051b99bf5cf8d9a3bde5cbde6aaf9:214bd176832872339ce184338320f9a2
+https://abfjk4haaaaaaaampv6ofhkihi4r6.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash/enc/inpyms8ezu/out/v1/1084d5c9a97a4c5b9f9554c88f486646/cenc.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/d7CHDunLDHNenYCyabwNEL69qpCFJAOYzYRaLoWu6xU9mvEHi6V3yNnjmthtunwyAMU0RzAN1qIgSvKe0pbmqY7VyAxgfahza5lzAd8d4dijZnyBr9dFIJnbnN4i1-LGdE9lXhpUi9M1o8bRYWoFwGxdWKQ1rnvyI0dqIn5dO21g1MbWzZzPb8PbI9nZJuV-2K_wcoVdSKCzUqPHcBDaWJviS0uC6lq4z1HvYI8ePwvXO8OM_QEmh4qbCA0KrP2r1NLsv0mtvgj6os6EOGWMxw8zFB2943zdv96N3SNKIKx6SeH2GXyahG04v2VJDkSY3GUcXrXIOc5vQi9vgC9qjw.jpg",  ▶️⚽️ Domagnano v Virtus | Semi-finals - Second Leg | Campionato Sammarinese 2025
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=aa02074c6a693eafb614b2cb478d10b4:7f4a4b23d4d45050428fe71366a1f427
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_07_13_06_51_982f09e1-9592-4a13-9086-ebc5dd91c53c/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/jlz_0IQqGHfOF0ZIpk3Fm61H0UB4AYEMShNn9khmXzbonv0x9NzgrTjw8vhW0xp9FnBmouDSC5aCz7j7468jecWMfuGUUd07EJE1bRSdDrpxpM98HIsXlQ3ogqVAkK547KcrX-GfWKTExciQpNwTB_Olj2EDPFdnCvOtVko2QqV0fXXmVSEpyosw2p8RKI5NBFXHnSF9oTzDotlyoIs7FVRcAO_ZeLT3MgV9LjuV2F0V3_WTvueBCVuYPAkn8q7MRxw0kJUXmbDzaymQRO4hfj6QFZjvnY0AFw7cbW3e8JXFy2VmXHm0IZEUp2CnMmDHUvXtk1rMI3o_xG96OFBqjQ.jpg",  ▶️⚽️ Chemal FC v Nouakchott Kings | Super D-1 2025/26Time: 05-13 00:45#EXTINF:-1
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=c295db6444ac3ec094a960fdcf3a6bf6:d55f645d51b0c1b9b13ee3b983fe8c35
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_08_09_53_52_111bb595-d543-4b52-be74-4b01382b3619/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/KpOzpjZlF2ZtbrMFJWfzmQ_8VXtKYdp8M22Y90ODeUNBYRyo0tkk7cZQGiiSGQ9kWA-xPuiUaH-ilWbiW-ydepkeY46IqdHrZZgSNLB3OVBUjqRZt9p6tvxBao17AdOMpZov0CzH3VhQsTuNz1kk2eEygHy_TIUJjD-qSZhNKIgCMHqCLR-7xGBRWebI0AWCF4Gtbu17nG_UqhKfZ2kbTMH6XhUxZnPzVu5puxTyjZJjn8-uOR9h32Gf7rSsKWqGMPEXJkUfZxd0VP2PpfKjakx-ZVXPgx6VpF_fAxqKmCrwk3GUYuWvxlGdgFnlmBYA7SnmONIa1AGn9VHqbus-3Q.jpg",  ▶️⚽️ Team Rhino v BST Galaxy | Gambia GFF League 25/26Time: 05-13 00:30#EXTINF:-
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/IhcgV7LO4mAfDXnD-bP_LgjY5CwPlZckPv7_bPc4KtbEcimbPg2eQrKwTPqmwse6VwPHvsrD95QYW32L7lgiBanZMMQibscsIaKOVT1jtYFi0C2M0g7YKJLxiXREZL2YILYhWn9wa7Dj-y9lvAdjoGVLDaiq7Ksyn2Vset5csxSkdTGN33uR2c8xos7ntOOVXtU7hx6RA2n6DkxoG9O_sHeAeswWoh6UKoUPq86a650X7t0nGb_4Ta1oG8HCWoaIt1sk2VsoZ6Vi2mB8qG8673GUo636te2-k4FTczWSVRQUhUeKOHx-3b4M76U02XiGj2Ia_aScJG0HQUXhRro1aQ.jpg",  ▶️⚽️ Team Rhino v BST Galaxy | Gambia GFF League 25/26Time: 05-13 00:30#EXTINF:-
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=a6d8cfdb66463c3eac5a07abb0d5416d:35abe5a5139a1626d38da81491c44ab8
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_07_20_19_bfc279f3-fa10-42ff-a116-b1e6a249a82f/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/GovFnEOmOg-BH0SQwLMAeH9FqJtY4PBV2XeHF_Fo--ZM_LjUrbUa8qgWhbaFu3pAcotEqJnj40P9s-6u_zQ_SkUUvKp7lCif1pad3jCvoy8UGcVtHHMp9p8b0ktBCNiP14di0FrjseFW4w95yIaHJ0Jp6Ib1SycLLQGo3HcNgJdw4n9EhI5oSUFh4tBUzkvL_r8WLRJ5CG3AmbJF6nDkAAaDxKmezAxcLIj6GFQE7KIlw5XajjYJ4AjBWEYEEnNpoSK4PLPnfK29S-siblt_wKugKA87IAhJ3BmRDKGrMMQFhrukRWyvlIe6tYs_PK5LzhHHeiLElnyWm1ntotmpqg.jpg",  ▶️⚽️ Samger FC v Real de Banjul | Gambia GFF League 25/26Time: 05-13 00:30#EXTIN
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/iY7cXaOIoWhMp5IfCaR1SgxZbtYk5XiujGfm3bTzwDdwQfvBDDEsI_qdFnkkXBDiaR8t1LsD4umjUYPwl8Ugqhlajq7rJbVx0ZAveBc2XD4OKp5t4NAu8lVVHr502m52vsAbydinwxUK4bW7-GjZOTbpwal3gvC8Amp5VjccAr_lHWqBeOc96p79E9jn4AOo20sdrMW6qZ_60hURsV7DDqEM2mCtL22WzZmDcXYVMoOVyLCdYcQSoT2fsVmGRm2IsfQY2wtKJJib9UKFbHzf0oqe9F-JeC1DmtH-YQys3I7RnOpv5VRtO8i2Ob-qT6l-X_Bv0LBry32UqqDK9GeJGg.jpg",  ▶️⚽️ Samger FC v Real de Banjul | Gambia GFF League 25/26Time: 05-13 00:30#EXTIN
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=5d36c0f7614637628bae999e86b60bb0:b9e1e406980de5715e1b77c42fcd3c4a
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_07_20_28_e5eca610-6856-42a4-93b0-96958f2944a8/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/bR1mG0p3vNaXaIXHzEK793mJ2TzlqmV3PTUmcN9wVnfccZBj8ZaM92APHjWL1qAd8g6mmmHz9nIQQ92nmn-b0FwW-T-8yTGixrLGFUHZSjwbtYLE2y9w92P1Zf8yMwgOQJdG15D2xtrDvkQyThrPtVCXvHCGKC3NpHLlZ1FEIXQ9Jb6SsAWmOC6FMKiQ050F9JxtHgYAgpmQbmmUjhmONJLZw_UBTlC9Pt_91H_BDKashE7d4xyXkUlkW8tTbFY2RjT0AgwYuf0nTEq9plDIUormTibSBZ4OCRat0v1E2Qnkn1SzVx5wGAxOhcb2SlW5zg0qcAY-6yNYA84PShe3Kw.jpg",  ▶️⚽️ Hart FC v Hawks | Gambia GFF League 25/26Time: 05-13 00:30#EXTINF:-1 tvg-lo
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/BvNHFfKnr1pNwdNEiwnKxOlN3cPZxBc72mw27qUdej_qCZTdsYZsbPMoa2A6e33ql_qc7ERUT1IIeWScTZpsKNaKt0b8gq-NrQCWEqcSLO6VyktUBdgR9JckDBtoZLgN0POY3kiThcZiH6OAlakvUZf-SxmqFnk2xPEHmfqJrwwjqgcUt9-XHLoOyjLoSLqAWVL6qxlmqC4xmJ0236oBE3yfec6zbLg4Cnftvt7HY8covwWYQq6EzoCQweUBzbmrPKDjFq8YzpOaKbFqwugr7yIF05vw67m-fMi3deEZe7kAO8zmpAxAs9Y9U-pPmqZZ5W66CQKL3_RnEJBsr_nBgQ.jpg",  ▶️⚽️ Hart FC v Hawks | Gambia GFF League 25/26Time: 05-13 00:30#EXTINF:-1 tvg-lo
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=93310cd9f10e3b99bb4a971ade8ed20b:58a77b59a8d2634a5f7e470d27250366
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_07_20_24_c028ae51-076b-4f9e-a77d-4c6383df313e/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/H7gg0ibXoydOHvDaQOd6yBropWQ9lKbwMKDNAbhxiZTBKhCOFXeaaKLt89WjcDXd_mqD8RQoq8qj72GcBonSuUPanSo6wZi5cHOfb6NPIAggu4SfSldWyJ0NZtkvTz_vzSl0-0irsLyWmjspMbHFi0Jsgvg8fe94m_F917wb1JBXRMkdJOtz50MKWBP5UK1xUa53kxDzX9pUxUlrgaFxWMtzM03gd1Qg9qVIcafRlSQKswcQT_HvyJQobpX89_PoRiHU7NBalSWslj9oretBL5oXr7kW3OxONsQdpYUe4PoElhpV67fuKpFeTS6Jl7Gn8b7dKhODdh66AtTdZvrI4w.jpg",  ▶️⚽️ Bombada v Gambian Dutch Lions | Gambia GFF League 25/26Time: 05-13 00:30#EX
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/VQHoyCDT5kr4oRjHYHse_tGWrAy4FxGWIRpzR9j1d-h511GKxrOly6LhPwoZ3UA17PFh-B67-zrDZWtS-BEmE_acq6Unj1UVAEikozJBiLe8bcCfPCxzmfR4yOw-KcBbHaza5R1w6RbKpPWrkwq2Yaio3-hvl4I7nGSwLdtVHcIxi9HGdQxoTyAlzJNS3KdHf_EbHhGSl-upJacq3FpMSCuUk25Ohrm4zPBLwfRUeQFOeIfb8xRkvdxI0ltWsf59szuUKHEHuAkt0z9jewXeu9e2KmeDmhmUD6W65nT2wQCGkCX1846nPctdoJEM9wBMrG5VnIKwc9q39dn0dFT9Kw.jpg",  ▶️⚽️ Bombada v Gambian Dutch Lions | Gambia GFF League 25/26Time: 05-13 00:30#EX
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=cea5bdd3cd8a3d308c42a2299cf507bc:f2ac3c40aab06b45090fcd693c4af1e1
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_07_20_15_03217fc6-7b04-47aa-8daa-992defdc9a8f/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/lSZLVlK0CzZWc5SIPrdIoNR57xAQ4hbzOpBq9a1thlwPl9sD9ENwiCj3zSvLVKEE5EhAHZJz-66jJcCkz5thkyPkJj-8G0Rk6_UG0W8VqwdbzmTzWuGIUr4DG8QiD-TV-Rz3El8FG8Z5hVby-cBZFPfFmXYpGG1ysOuqsIjbdqz3ERIucMdUK3CKkoRyIr_pGTgfqMyCFgFXPNEWS0GKOv8I98SoU8FSEl2mMUH3gM0b8X7TLCCkzMhdF1RlGdJ5DZeQYq2M3y8MY7sd8YJTEDN0OS1CQGcT5dPXX-JA7VJ2iiiw34ACgELvVGu5VR0juKViobmsX40xdvk38ROowg.jpg",  ▶️⚽️ AS Fan v Espoir FC | Super Ligue 2025/26Time: 05-12 23:45#EXTINF:-1 tvg-log
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/rSmxdIlR4GMeGCkiBhBkK7QnpfX8OoZ_iQiwfpb6WHtRV35-TfZsKSoYwkXyO-mb8obtL-_0RR4paXe7q0xW_Mk8mAmk10P3ZEoBeToWBRLnFxacf2oCmKKM6G9rsbFWdUIYT6gElEpFSOb1NF-W6ZxCWoSrJHc2xJiG_LsGh9KmHeA-loQIl70GS86bXJ4mKGr6o9Gkvx83OSJMgVQcW2AKx0W8fbfU6X_V8wIMATRfeLnnyklBXssoz_IlZANUR6XsXHgZGqPnKspQ4sKLMRU0dsH_kVW0FcB8khcaE7iufn0McP12jl417DMQYFV3ImRa7xruSdbEJfwpbnPuag.jpg",  ▶️⚽️ AS Fan v Espoir FC | Super Ligue 2025/26Time: 05-12 23:45#EXTINF:-1 tvg-log
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=e2328918c43d391e89336d80ee10b49e:805ccf3d3bb19f7c765320d850f20f50
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -88,31 +154,31 @@ https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_12_46_08_8728a5c1-b110-40ed-8c85
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_14_44_36_c6547d9a-5cef-419a-b580-e94bc0c7df79/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/LvSUfiR4n8p45AY5P2gZuYRhsQq7_8yyZgT8-OfonH0LYfJp7QknNZcGMah7fwj5o7svvzFZ8MDEaWKd_QOfwD1AMXpKRbY90M6Bcb0tc9Hj7MP-dmOiTKvAWfelz8wK1o6AZTERVU15fqe83VItWC2qHhcsT9BzU3dGKxPV7ott4sVHfHuLdQAXMYnftiISb7wGSYHiowNoftG5I4OiChyuz1UFUTizUsedzxSZMjIWuPsKS5ahTnXpHNpwy7-8WyQ8zQgZxwyjYDnsyEM4c4hGlYcqLWeuOa1cnmo3Y0jyQIO_WtOLFPbS9ZJsNYEPk0oNLF8QNxFXc5EVlHsD3Q.jpg",  ▶️⚽️ South Melbourne FC v Bula FC | OFC Professional League 2026Time: 05-12 11:0
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/EXoPjvul0R8WN0as94mFmr1JdAbQj37LUETPrw6oGWQ_LgF2f_0wR9OlaLlFbfKe_IP4pnLyAl4eUECuPK1g7oIAhCC5jfcrO7UPjX_z8A9w_ppyG6gjQG6HLqghLWrJvTyj1rnu9z8Qt-zeS5BtZCpPLhxdJiI13d3OjLomk0xiEUQD9dKmqVK3HlhcDsxvqcilFYGHUs7FznpezPPNtnKxYcteguUUyefTSfNXKWzGjU3jrZkUXWR2hlxv_fQoWyF9lXHpnrTe6aKPpFDqC7F_bAIRweLQQMbs6LEB2ViwxR6to2I1zhedvXiBgQO5dVKPuXWQiL7xM4w-4GV_7w.jpg",  ▶️⚽️ South Melbourne FC v Bula FC | OFC Professional League 2026Time: 05-12 11:0
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=3d2140a269c73534b804725c3c5cef55:4ddda489b89412ce1ea7ebb01b77ca2f
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_14_43_59_c55bc82c-0937-4ddf-b359-d7de6c11a57c/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/G5xr4FvuMaThK-cOl-NpX3Q81HSDBRMVsTav-i81KhNTYCHzrNNdY-GMWOTLug9T7LjRjrWHTDuy2nIMdY1gdLXNnHY4ftaOXt03xoo6XKfMQW21uLjfnm846yD1XxIfQt2yahHIFVRqd7DcHoVbIedmKe-RoToU-5KhsmH2KwBRZqrT-vx201aidwzs-XBvbV4URhHZ3hTj4TCFzqjuCIP3GaeugLuTqPVMU3BWt_3tPm58J0uILc0H5WCk9r0Avh2lmOZi3FgRaYx164PYR0bQUSh4s_AtR2YyaDweHWnv2CgsjquJ23puP8rWq-zjsvjeY5EbOtzyzQvGMZpiyA.jpg",  ▶️⚽️ Nacional v Estudiantes | Division Honor 2025-26Time: 05-12 08:30#EXTINF:-1 
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/treOfa1Su998NsbVg_qD995IYUDISYxbrhZFE5QQgcMYLmcAiiI8p8XnHJlS4DWdFCCz-E9lczWxz-h4Twznumwq5nCyNbk-7zFUzfEFQqnnoOUvUl15aSdPjiIBTccEMJtUXKSIIbukezBC-weBMZb2awBiITbQHFMKATi1hZ-cD2V5Jd34m7ZMK0rChbsuYeNlvKvIqcTetIxa3Blxw1svHQ-XA1dxkaSfd-fbf5FNqGaq7CdlJbEH9zz8T_yRPvcTP6MfrCxkQoNnuEFfhrKAfkzm3mQlchRWprvUfSgRwYdXxWWufD_YeYSgg3hgZryx41-HBJ1La7E6Vj1guQ.jpg",  ▶️⚽️ Nacional v Estudiantes | Division Honor 2025-26Time: 05-12 08:30#EXTINF:-1 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=26b3ea26ee533a53a291ba7b6787092a:8ddee54935ae4cc9b2da5a238fbfb240
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_08_59_17_417de9d9-3df9-4165-877c-33d04d6b9a80/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/dNr1e79AjVwZsM5TlOUpn4MmZf4pvbO5MZQ2q4f0Q3yvmaWx8YJiyDBzpPVtW_lr-ffGByb4vZhPfU12j_c2qrwF9aKOth_nRr6rJRP3yD0gzYolaHF5ZKxjWjdT_C9lVZ_UMK8CYbTpyaKJ76FBBXXB3H489XTmtrccX4UCiwDsAnW88D1YKxoguk1LYsxLpyiwg72oZMCpWCuKu5dyg66Owt84A9czmxoQbc7eP2A80dXlIeToINSzU3vWgPhLaBCBYzZHz0j7g8tW0zl7qtRJ5yenBjyFkw0KCkwBqGOoXJE-1pMkyGoU1fqhDEGKv-IAdH3kYG2K9I00bwFR2g.jpg",  ▶️⚽️ S.V. Victory Boys v Inter Willemstad | Curaçao Promé Divishon 2025/26Time: 
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/BJQMFmtMKAY50_kkNSCgfusF36PQGwPuQPy6PyU3MSLIdyA0z5K-IQJenb6LJqxyHTpN4fulSegE3xHRYL-ZPoY4WsVb3YH_x2nFAxGBDK-7Ft0goURSU6Z8PyM84n6qNkf2rz8P80IywYNbP_bkI1zFtImhttjJHNls-nxkTtf-oEQYkoAkts6D_g374tEQ9vdNeYV64Xdzo0mCi3MDEaWu9440ddXwdyJCu01O1lTlyvwsxvlvobaHub6o0Rv-_PzV2R8am_yKjPIxgLcAF5uSlAFKFALlwtGJZ3YCB17Rc8wthp-On_-A6Jo-eeZOAH5ftabD0KMxqo9mpu850A.jpg",  ▶️⚽️ S.V. Victory Boys v Inter Willemstad | Curaçao Promé Divishon 2025/26Time: 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=969ae9ff63e835b085553873b5ff421a:90ff437eb8179ffa1edb54bc0f2a7cd2
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_06_41_26_4aebb9bf-32e7-4504-8d9f-94ea35c3ce11/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/Ld7O5UH-a5_brpMkfurmuWB5xpdTLA-I4vKKkkxNfqmeY3hQprnjZWCK-QNr6LLsIzP2Yjf7LrSDFAZcHOq7UXJ8mq4f6eAl7IfRFw8pfvkI_XrlMjvf7loTczG3uQsWy6gjxzmxNzstL322ctEdTMNQPgYoGJTslFUAtUv0qWi3bz3wIwq7TyHLYXKst16Zt8Z1zk_O79AcQBkSgsY9lLdYN7qUopPZYXX_HojelM0t6Oh-LqK0W-HrsYPr07_qRbbDNb5pdsGNj5kGzMWNJVdmKeXCj2bchN5SuaOva-XO4lfM-LG3TERMoQnPDKFEzw9a27A_nYf7bY9AFmzv2A.jpg",  ▶️⚽️ RKSV Scherpenheuvel v C.R.K.S.V. Jong Colombia | Curaçao Promé Divishon 202
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/cu9KRRvAXxCZIlAKOL-PbHAvIIIJQ1JrYvaCubKsR9YcPPz37TY4FvFUxC_wVnNA-8pMvivuCaUeEl5PgOHiEwbZDhYi6NIPNwMARVJtsrpE4J8zCEe6Kj7tAcfQphzwHseuFFMJCw7OUPzsOlxsyQuq9TJIsl5UGmJwyLLI-YqVx4LBF2ZONcw9-AKo4BT5wMWc5NWupSxr6vt_43C0VvsvC5YcFoprk04eigz1W2kA68TiMZgeCmUs7w_bPgzKa3XQ5eL_8HZte6CqtJkcHEHeYk-Ddj13A3UZIz8XNPW0faSysTzqZn_V7ZO1BRe9mu2cSLInkqQGDaRQtnzcwQ.jpg",  ▶️⚽️ RKSV Scherpenheuvel v C.R.K.S.V. Jong Colombia | Curaçao Promé Divishon 202
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=90961c540819348bb4b812d5d89c04e5:462846f58e4842dba12042cbcecaf1bf
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_09_12_04_ef7db2bb-6368-4ee6-923b-6370fd5211ab/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/u1kFlpP7iS3ivYIZTZ1zuSraAk45dw4q7h7-qT7VtIQUSvp0JI4dTFkU-2_HuwoFKg1IjtxZW4pO7G-gi6He9yImdzRXeoVaa8raJhqH1jwS6eXKt36pNQA0_DHTD1sgsdewZC0oJk08Zldxa2igCxMVhCkOGUBaFRcscuTPWEasX2WtAqfGUW4TmEWA_q2XdUBs9c3eLMSzrhwKAe_-QrOJ8rfpm0TlLlShtDg7qQ2KV2DyGJrclK3beUKvAVfbkrzcXNv_pXuY3oY9i0lQFHwU3t8OpkC7D7i9NCBAT3suSoT331dIt50eJJ-t0TIkJa2kMHPXrS_TPrXuP6Y0Gg.jpg",  ▶️⚽️ C.R.K.S.V. Jong Holland v R.K.S.V. Centro Dominguito | Curaçao Promé Divish
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/QVfXz-UpjNvw5L2HJLCgumqPw87qaS4_h8DgwDLBa7la5uqVzW4JBKgl30gUkopvD-NVq5COMF71H33GFrqI3qAfz0uLO6DRl4ojNtJf1i5xQJ6d4dDK3ns2paro5piHlV3CBUy3kOXb0bs2B_QwY-okNlqrEeqSNw4ECIVYr0C-eeoomyWBbN__34BQ_KZOihGGE7k5IvRrKeCzjnxy6jJiEEbE2vpPIDHUZm_vCsOhn7-RUUf7wyktZcuYiS6YsLsvqoqJMyfab6MUf0vuIGINurfYx-papZDHQBCIvZGvvXHasT-UWIqTBGBkhCrZwOE53aVHUixdD1TGSvHbDw.jpg",  ▶️⚽️ C.R.K.S.V. Jong Holland v R.K.S.V. Centro Dominguito | Curaçao Promé Divish
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=227b32dcada33342b7a14a4edb776153:714b6b259dbaf1f14c7b7845ea703b51
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
