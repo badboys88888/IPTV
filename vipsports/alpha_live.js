@@ -2,7 +2,7 @@ const fs = require('fs');
 
 // 【重要】在这里填入你想要采集的所有 JSON 原始链接 (Raw URL)
 const JSON_SOURCES = [
-    "https://githubusercontent.com", // 示例1
+    "https://raw.githubusercontent.com/srhady/vipsports/refs/heads/main/alpha_live.json", // 示例1
     "https://githubusercontent.com" // 示例2（如有更多请继续添加）
 ];
 
