@@ -61,12 +61,6 @@ https://a166aivottlinear-a.akamaihd.net/OTTB/fra-nitro/live/dash/enc/vwq77hfgzw/
 #KODIPROP:inputstream.adaptive.license_key=1a5df53609ebc9857898c490f4724918:77f62980d582ec541280796acf8b2d19
 https://a205aivottlinear-a.akamaihd.net/IAD/lhr-nitro/live/clients/dash/enc/bcj3iscpd6/out/v1/fcd137b391214f7cb99dd4d7be90ca87/cenc.mpd
 
-#EXTINF:-1 tvg-id="TV5 HD" tvg-logo="https://vignette.wikia.nocookie.net/russel/images/f/f9/TV5_Logo_2011.png" group-title="体育频道",TV5 HD
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=2615129ef2c846a9bbd43a641c7303ef:07c7f996b1734ea288641a68e1cfdc4d
-https://ucdn.mediaquest.com.ph/bpk-tv/tv5_hd/default1/index.mpd
 
 #EXTINF:-1 tvg-id="Premier Sports HD" tvg-name="Premier Sports HD" tvg-logo="https://i.imgur.com/GTfUEnU.png" group-title="体育频道",Premier Sports HD
 #KODIPROP:inputstreamaddon=inputstream.adaptive
@@ -74,6 +68,13 @@ https://ucdn.mediaquest.com.ph/bpk-tv/tv5_hd/default1/index.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=b8b595299fdf41c1a3481fddeb0b55e4:cd2b4ad0eb286239a4a022e6ca5fd007
 https://ucdn.mediaquest.com.ph/bpk-tv/cg_ps_hd1/default/index.mpd
+
+#EXTINF:-1 tvg-id="TV5 HD" tvg-logo="https://vignette.wikia.nocookie.net/russel/images/f/f9/TV5_Logo_2011.png" group-title="体育频道",TV5 HD
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=2615129ef2c846a9bbd43a641c7303ef:07c7f996b1734ea288641a68e1cfdc4d
+https://ucdn.mediaquest.com.ph/bpk-tv/tv5_hd/default1/index.mpd
 
 #EXTINF:-1 tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/FOXSPORTS1.png" group-title="体育频道",Fox Sports 1
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
