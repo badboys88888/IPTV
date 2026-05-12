@@ -31,37 +31,43 @@ async function run() {
         } catch (e) { console.error(`❌ JSON 抓取失败: ${url}`); }
     }
 
-        // --- 任务 2: 处理 Telegram (使用官方 Embed 接口，最高成功率) ---
-    console.log(`📡 正在通过 Embed 接口抓取电报: @${TG_CHANNEL}...`);
+    // --- 任务 2: 处理 Telegram (最终增强版) ---
+    console.log(`📡 正在抓取电报频道: @${TG_CHANNEL}...`);
     try {
-        // 使用电报官方的嵌入式组件地址，这是目前最稳的抓取路径
-        const embedUrl = `https://t.me{TG_CHANNEL}?embed=1&mode=tme`;
+        const embedUrl = `https://t.me/s/${TG_CHANNEL}`;
         const tgRes = await fetch(embedUrl, {
             headers: {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64 ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
             }
         });
 
-        if (!tgRes.ok) throw new Error(`Embed 访问失败: ${tgRes.status}`);
-        const html = await tgRes.text();
+        if (!tgRes.ok) throw new Error(`访问失败: ${tgRes.status}`);
+        let html = await tgRes.text();
         
-        // 分割单条消息
-        const messages = html.split('tgme_widget_message_inline');
+        // 关键步骤：处理 HTML 转义字符，防止链接中的 & 变成 &amp; 导致播放失败
+        html = html.replace(/&amp;/g, '&');
+        
+        // 使用预览页正确的容器类名分割
+        const messages = html.split('tgme_widget_message_wrap');
         let tgCount = 0;
 
         for (let i = messages.length - 1; i >= 0; i--) {
             const msg = messages[i];
             
-            // 匹配 MPD 和 Key
-            const mpdMatch = msg.match(/https?:\/\/[^"'\s\<\> ]+\.mpd[^"'\s\<\> ]*/i);
+            // 匹配 MPD 链接
+            const mpdMatch = msg.match(/https?:\/\/[^"'\s<> ]+\.mpd[^"'\s<> ]*/i );
+            // 匹配 ClearKey (32位:32位)
             const keyMatch = msg.match(/[a-f0-9]{32}:[a-f0-9]{32}/i);
             
             if (mpdMatch && keyMatch) {
-                // 提取文字内容作为标题
                 let title = "FIFA+ Stream";
                 const textMatch = msg.match(/<div class="tgme_widget_message_text[^>]*>([\s\S]*?)<\/div>/i);
                 if (textMatch) {
-                    title = textMatch[1].replace(/<[^>]*>/g, '').trim().substring(0, 60);
+                    title = textMatch[1]
+                        .replace(/<[^>]*>/g, '') // 移除 HTML 标签
+                        .replace(/\s+/g, ' ')    // 合并空格
+                        .trim()
+                        .substring(0, 80);
                 }
 
                 m3uContent += `#EXTINF:-1 group-title="FIFA+_Updates", [TG] ${title}\n`;
@@ -71,14 +77,12 @@ async function run() {
                 m3uContent += `${mpdMatch[0]}\n\n`;
                 
                 tgCount++;
-                if (tgCount >= 15) break; 
+                if (tgCount >= 20) break; 
             }
         }
-        console.log(`✅ 电报 Embed 抓取成功，共 ${tgCount} 条`);
+        console.log(`✅ 电报抓取成功，共找到 ${tgCount} 条有效节目`);
     } catch (e) { 
-        console.error("❌ Telegram Embed 抓取失败:", e.message);
-        // 如果还不行，输出提示
-        console.log("💡 建议：GitHub 官方 IP 可能暂时无法连接 Telegram，请稍后再试或点击 Workflow 再次手动运行。");
+        console.error("❌ Telegram 抓取失败:", e.message);
     }
 
 
