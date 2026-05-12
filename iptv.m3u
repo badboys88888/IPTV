@@ -3260,3 +3260,104 @@ http://112.66.100.86:8888/udp/239.253.64.139:5140
 
 #EXTINF:-1 tvg-id="山东教育卫视" tvg-name="山东教育卫视" tvg-logo="https://upload.112114.xyz/logo/山东教育.png" group-title="海南电信[A]",山东教育
 http://112.66.100.86:8888/udp/239.253.64.241:5140
+
+#EXTINF:-1 group-title="匈牙利组播",M1 HD
+http://worker.pte.hu:4025/udp/239.1.2.96:1234
+#EXTINF:-1 group-title="匈牙利组播",M2 HD
+http://worker.pte.hu:4025/udp/239.1.2.97:1234
+#EXTINF:-1 group-title="匈牙利组播",Duna HD
+http://worker.pte.hu:4025/udp/239.1.2.98:1234
+#EXTINF:-1 group-title="匈牙利组播",Duna World
+http://worker.pte.hu:4025/udp/239.1.2.99:1234
+#EXTINF:-1 group-title="匈牙利组播",RTL Klub
+http://worker.pte.hu:4025/udp/239.1.2.100:1234
+#EXTINF:-1 group-title="匈牙利组播",TV2
+http://worker.pte.hu:4025/udp/239.1.2.101:1234
+#EXTINF:-1 group-title="匈牙利组播",Viasat 3
+http://worker.pte.hu:4025/udp/239.1.2.102:1234
+#EXTINF:-1 group-title="匈牙利组播",Viasat 6
+http://worker.pte.hu:4025/udp/239.1.2.103:1234
+#EXTINF:-1 group-title="匈牙利组播",Cool TV
+http://worker.pte.hu:4025/udp/239.1.2.104:1234
+#EXTINF:-1 group-title="匈牙利组播",Film+
+http://worker.pte.hu:4025/udp/239.1.2.105:1234
+#EXTINF:-1 group-title="匈牙利组播",RTL II
+http://worker.pte.hu:4025/udp/239.1.2.106:1234
+#EXTINF:-1 group-title="匈牙利组播",Super TV2
+http://worker.pte.hu:4025/udp/239.1.2.107:1234
+#EXTINF:-1 group-title="匈牙利组播",Mozi+
+http://worker.pte.hu:4025/udp/239.1.2.108:1234
+#EXTINF:-1 group-title="匈牙利组播",Prime
+http://worker.pte.hu:4025/udp/239.1.2.109:1234
+#EXTINF:-1 group-title="匈牙利组播",Sláger TV
+http://worker.pte.hu:4025/udp/239.1.2.110:1234
+#EXTINF:-1 group-title="匈牙利组播",Muzsika TV
+http://worker.pte.hu:4025/udp/239.1.2.111:1234
+#EXTINF:-1 group-title="匈牙利组播",Sport 1 HD
+http://worker.pte.hu:4025/udp/239.1.2.112:1234
+#EXTINF:-1 group-title="匈牙利组播",Sport 2 HD
+http://worker.pte.hu:4025/udp/239.1.2.113:1234
+#EXTINF:-1 group-title="匈牙利组播",Spíler 1 TV
+http://worker.pte.hu:4025/udp/239.1.2.114:1234
+#EXTINF:-1 group-title="匈牙利组播",Spíler 2 TV
+http://worker.pte.hu:4025/udp/239.1.2.115:1234
+#EXTINF:-1 group-title="匈牙利组播",Eurosport 1
+http://worker.pte.hu:4025/udp/239.1.2.116:1234
+#EXTINF:-1 group-title="匈牙利组播",Eurosport 2
+http://worker.pte.hu:4025/udp/239.1.2.117:1234
+#EXTINF:-1 group-title="匈牙利组播",Arena 4
+http://worker.pte.hu:4025/udp/239.1.2.118:1234
+#EXTINF:-1 group-title="匈牙利组播",Match4
+http://worker.pte.hu:4025/udp/239.1.2.119:1234
+#EXTINF:-1 group-title="匈牙利组播",Discovery Channel
+http://worker.pte.hu:4025/udp/239.1.2.120:1234
+#EXTINF:-1 group-title="匈牙利组播",National Geographic
+http://worker.pte.hu:4025/udp/239.1.2.121:1234
+#EXTINF:-1 group-title="匈牙利组播",Spektrum
+http://worker.pte.hu:4025/udp/239.1.2.122:1234
+#EXTINF:-1 group-title="匈牙利组播",Animal Planet
+http://worker.pte.hu:4025/udp/239.1.2.123:1234
+#EXTINF:-1 group-title="匈牙利组播",History Channel
+http://worker.pte.hu:4025/udp/239.1.2.124:1234
+#EXTINF:-1 group-title="匈牙利组播",Viasat History
+http://worker.pte.hu:4025/udp/239.1.2.125:1234
+#EXTINF:-1 group-title="匈牙利组播",Viasat Explore
+http://worker.pte.hu:4025/udp/239.1.2.126:1234
+#EXTINF:-1 group-title="匈牙利组播",Viasat Nature
+http://worker.pte.hu:4025/udp/239.1.2.127:1234
+#EXTINF:-1 group-title="匈牙利组播",Minimax
+http://worker.pte.hu:4025/udp/239.1.2.128:1234
+#EXTINF:-1 group-title="匈牙利组播",Nickelodeon
+http://worker.pte.hu:4025/udp/239.1.2.129:1234
+#EXTINF:-1 group-title="匈牙利组播",Cartoon Network
+http://worker.pte.hu:4025/udp/239.1.2.130:1234
+#EXTINF:-1 group-title="匈牙利组播",Disney Channel
+http://worker.pte.hu:4025/udp/239.1.2.131:1234
+#EXTINF:-1 group-title="匈牙利组播",JimJam
+http://worker.pte.hu:4025/udp/239.1.2.132:1234
+#EXTINF:-1 group-title="匈牙利组播",Comedy Central
+http://worker.pte.hu:4025/udp/239.1.2.133:1234
+#EXTINF:-1 group-title="匈牙利组播",Paramount Network
+http://worker.pte.hu:4025/udp/239.1.2.134:1234
+#EXTINF:-1 group-title="匈牙利组播",AMC
+http://worker.pte.hu:4025/udp/239.1.2.135:1234
+#EXTINF:-1 group-title="匈牙利组播",Film4
+http://worker.pte.hu:4025/udp/239.1.2.136:1234
+#EXTINF:-1 group-title="匈牙利组播",TV4
+http://worker.pte.hu:4025/udp/239.1.2.137:1234
+#EXTINF:-1 group-title="匈牙利组播",Story4
+http://worker.pte.hu:4025/udp/239.1.2.138:1234
+#EXTINF:-1 group-title="匈牙利组播",Galaxy4
+http://worker.pte.hu:4025/udp/239.1.2.139:1234
+#EXTINF:-1 group-title="匈牙利组播",Sorozat+
+http://worker.pte.hu:4025/udp/239.1.2.140:1234
+#EXTINF:-1 group-title="匈牙利组播",RTL Gold
+http://worker.pte.hu:4025/udp/239.1.2.141:1234
+#EXTINF:-1 group-title="匈牙利组播",RTL Három
+http://worker.pte.hu:4025/udp/239.1.2.142:1234
+#EXTINF:-1 group-title="匈牙利组播",TV2 Comedy
+http://worker.pte.hu:4025/udp/239.1.2.143:1234
+#EXTINF:-1 group-title="匈牙利组播",TV2 Séf
+http://worker.pte.hu:4025/udp/239.1.2.144:1234
+#EXTINF:-1 group-title="匈牙利组播",Jocky TV
+http://worker.pte.hu:4025/udp/239.1.2.145:1234
