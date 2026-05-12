@@ -29,7 +29,7 @@ async function run() {
         } catch (e) { console.error("❌ JSON抓取失败"); }
     }
 
-   // --- 任务 2: Telegram 实时抓取（增强版）---
+ // --- 任务 2: Telegram 实时抓取（增强版，带 tvg-logo 提取）---
 let tgSuccess = false;
 const tgUrls = [
     `https://t.me/s/${TG_CHANNEL}?before=${Date.now()}`,
@@ -69,6 +69,29 @@ for (const embedUrl of tgUrls) {
             
             const keyMatch = msg.match(/[a-f0-9]{32}:[a-f0-9]{32}/i);
             
+            // ----- 新增：提取 tvg-logo -----
+            let logoUrl = "";
+            // 1. 优先查找 img 标签中的 src（telegram 消息图片通常为 tgme_widget_message_photo）
+            const imgMatch = msg.match(/<img[^>]+class="[^"]*tgme_widget_message_photo[^"]*"[^>]+src="([^"]+)"/i);
+            if (imgMatch && imgMatch[1]) {
+                logoUrl = imgMatch[1];
+            }
+            // 2. 如果没有，尝试背景图片 background-image:url(...)
+            if (!logoUrl) {
+                const bgMatch = msg.match(/background-image:\s*url\(['"]?([^'"()]+)['"]?\)/i);
+                if (bgMatch && bgMatch[1]) logoUrl = bgMatch[1];
+            }
+            // 3. 再尝试任意 img 标签的 src
+            if (!logoUrl) {
+                const anyImgMatch = msg.match(/<img[^>]+src="([^"]+)"/i);
+                if (anyImgMatch && anyImgMatch[1]) logoUrl = anyImgMatch[1];
+            }
+            // 4. 若仍没有，尝试链接预览中的图片
+            if (!logoUrl) {
+                const linkImgMatch = msg.match(/<a[^>]+class="[^"]*link_preview[^"]*"[^>]*>.*?<img[^>]+src="([^"]+)"/is);
+                if (linkImgMatch && linkImgMatch[1]) logoUrl = linkImgMatch[1];
+            }
+            
             // 可选：过滤过期消息
             let timeTag = "";
             const timeMatch = msg.match(/datetime="([^"]+)"/);
@@ -85,7 +108,14 @@ for (const embedUrl of tgUrls) {
                 title = textMatch[1].replace(/<[^>]*>/g, '').trim().substring(0, 80);
             }
             
-            m3uContent += `#EXTINF:-1 group-title="TG_Update", ${timeTag} ${title}\n`;
+            // 构建 EXTINF 行，加入 tvg-logo（如果有）
+            let extinfLine = `#EXTINF:-1 group-title="TG_Update"`;
+            if (logoUrl) {
+                extinfLine += ` tvg-logo="${logoUrl}"`;
+            }
+            extinfLine += `, ${timeTag} ${title}\n`;
+            m3uContent += extinfLine;
+            
             if (keyMatch) {
                 m3uContent += `#KODIPROP:inputstream.adaptive.license_type=clearkey\n`;
                 m3uContent += `#KODIPROP:inputstream.adaptive.license_key=${keyMatch[0]}\n`;
@@ -111,7 +141,6 @@ for (const embedUrl of tgUrls) {
 if (!tgSuccess) {
     console.log("❗所有 Telegram 源均抓取失败，请检查频道是否有效或网络环境");
 }
-
     fs.writeFileSync('live.m3u', m3uContent);
     console.log("🎉 live.m3u 已更新！");
 }
