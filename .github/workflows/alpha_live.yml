@@ -1,40 +1,27 @@
-name: Alpha VIP Schedule Update
-
+name: Update VIP Playlist
 on:
-  workflow_dispatch:
   schedule:
-    - cron: '*/30 * * * *' # 每30分钟自动运行一次，保证密钥最新
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
 
 jobs:
-  update-vip-data:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Public Repository
-        uses: actions/checkout@v3
-
-      - name: Setup Node.js
+      - uses: actions/checkout@v3
+      - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: 18
-
-      - name: Run VIP Generator
+      - name: Run Script
         run: |
-          # 进入你的脚本目录
           cd vipsports/
-          
-          # 运行你创建的转换脚本
           node alpha_live.js
-          
-          # 将生成的 m3u 文件移动到根目录，方便播放器读取
-          if [ -f "live.m3u" ]; then
-            mv live.m3u ../live.m3u
-          fi
-
-      - name: Commit and Push
+          if [ -f "live.m3u" ]; then mv live.m3u ../live.m3u; fi
+      - name: Push
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "VIP Bot"
-          # 添加生成的 m3u 文件
+          git config --local user.email "bot@github.com"
+          git config --local user.name "Combined-Bot"
           git add live.m3u
-          git commit -m "Auto Update: VIP Playlist $(date)" || echo "No changes to commit"
+          git commit -m "Update Playlist $(date)" || exit 0
           git push
