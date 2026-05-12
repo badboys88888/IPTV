@@ -19,12 +19,12 @@ https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/8m8cd46i1t/
 #KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
 https://linearjitp-playback.astro.com.my/dash-wv/linear/2705/default_ott.mpd
 
-#EXTINF:-1 tvg-id="Eurosport" tvg-name="Eurosport HD" tvg-logo="https://iili.io/1Nz7Kx.png" group-title="体育频道",Eurosport HD
+#EXTINF:-1 tvg-id="815.astro" tvg-name="Astro Badminton" group-title="体育频道" tvg-logo="http://linear-poster.astro.com.my/prod/logo/AstroBadminton_2024.png" ch-number="815",815 Astro Badminton
 #KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=4db23a41ba7fe9afc222a58c59828310:d0e794e3cfd564ed2c720a098eb177c7
-#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=User-Agent: Mozilla/5.0 (Linux; Android 13; haramTV Build/2025; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
-https://linearjitp-playback.astro.com.my/dash-wv/linear/2100/default_ott.mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=6ff0e040d544ec3f02243865990f0c10:83728b47019abdb737aa36ed5f2951bd
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://astrogo.astro.com.my
+https://mt32.aa.astro.com.my/default_primary.mpd
 
 #EXTINF:-1 tvg-id="AstroArena" group-title="体育频道" tvg-logo="http://linear-poster.astro.com.my/prod/logo/AstroArena_2024.png",Astro Arena
 #KODIPROP:inputstream.adaptive.manifest_type=dash
