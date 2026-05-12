@@ -1,107 +1,59 @@
 #EXTM3U
-#EXT-X-SESSION-DATA:ID="SOURCE",VALUE="Hady_Realtime_Bot"
+#EXT-X-SESSION-DATA:ID="SOURCE",VALUE="Hady_VIP"
 
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/3427/image" group-title="API直播", Los Angeles Lakers vs Oklahoma City Thunder (TSN SPORTS FHD)
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/3427/image" group-title="NBA", Los Angeles Lakers vs Oklahoma City Thunder (TSN SPORTS FHD)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_key=e51aa21f2a0fef9aabc120dfb655b52f:a12a987fe725a40b6be95cd84b15f689
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/7janu55dwc/out/v1/69a2a7041395406b970598f61680e7cf/cenc.mpd
 
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/3427/image" group-title="API直播", Los Angeles Lakers vs Oklahoma City Thunder (TSN SPORTS HD)
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/3427/image" group-title="NBA", Los Angeles Lakers vs Oklahoma City Thunder (TSN SPORTS HD)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_key=c4088f5f265f9de50cffd80bf89308b7:2c4d2239d96d532b4ec2050653611003
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/h9urpo3cwb/out/v1/fde190f369484bc6b6117cc16cd82a9f/cenc.mpd
 
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/3427/image" group-title="API直播", Los Angeles Lakers vs Oklahoma City Thunder (NBA LIVE FHD)
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/3427/image" group-title="NBA", Los Angeles Lakers vs Oklahoma City Thunder (NBA LIVE FHD)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=
 https://nb7.bpfiles.cfd/live/lakers/stream.m3u8
 
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/187744/image" group-title="API直播", Bangladesh vs Pakistan (SKY SPORTS FHD)
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/187744/image" group-title="CRICKET", Bangladesh vs Pakistan (SKY SPORTS FHD)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_key=708a98b352bd4418a73a028edd84da8f:b1fa5c2bca4c4b57b924b748564532cb
 https://dice-live-oc.akamaized.net/hdntl=exp=1778623594~acl=%2F*~id=80e00416-d077-451a-979a-684373b1320d~data=hdntl,aXA9MTA4LjE4MS40LjY5JmV4cD0xNzc4NTM3MjI0JmVpZD05Mzk5NjMmb2lkPTE1NCZ0eXBlPVZPRCZ1aWQ9eFJScW85fGJjYWVhN2NmLWMzMzctNDAzOS04MTU4LTNjMWNlNDllNzI5MyZjaWQ9ZGNlLmZpc2ZlZCZwdD1udWxs~hmac=ad40f79be2e3554e71b2e48ac067fc40c6f9495500843971e7ea18f4d801f408/dash/live/2093715/219027-321028/manifest-d.mpd
 
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/187744/image" group-title="API直播", Bangladesh vs Pakistan (PREMIER SPORTS)
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/187744/image" group-title="CRICKET", Bangladesh vs Pakistan (PREMIER SPORTS)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_key=1444f4235529f183f0a5a486befe9cdb:e5e3fec67a1bb3472a2089c8a0a2557f
 https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/m6sqanvm2m/out/v1/f6beb46c6e9a4132ad739f3ca27df6aa/cenc.mpd
 
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/187744/image" group-title="API直播", Bangladesh vs Pakistan (FANCODE FHD)
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/187744/image" group-title="CRICKET", Bangladesh vs Pakistan (FANCODE FHD)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_key=7e9239c1982d984a002df3ed049d0756:1b8a17598129a3618535c8fb05f103fe
 https://abfjk4haaaaaaaampv6ofhkihi4r6.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash/enc/fdb3pubmek/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd
 
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/187744/image" group-title="API直播", Bangladesh vs Pakistan (PTV SPORTS)
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/187744/image" group-title="CRICKET", Bangladesh vs Pakistan (PTV SPORTS)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_key=a7712196dbee413ab510c825e5c4d3f0:1ade126fa6a9162ba34bd5de5b1427ca
 https://ottlive.dishhome.com.np/protected/jQTOzZkB0RDJ74Ryniuo/dash/manifest.mpd
 
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/187744/image" group-title="API直播", Bangladesh vs Pakistan (TAPMAD)
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/187744/image" group-title="CRICKET", Bangladesh vs Pakistan (TAPMAD)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=
 https://premierleagpl23.akamaized.net/hls/live/2107108/Tapmad-PaKvZIm/master.m3u8
 
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/187744/image" group-title="API直播", Bangladesh vs Pakistan (WILLOW HD)
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/187744/image" group-title="CRICKET", Bangladesh vs Pakistan (WILLOW HD)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_key=e2596584f1e9a631bc569c327387dc25:41393318d6c6aa9437a0376493c01394
 https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash-sd/enc/tesivhccki/out/v1/7c1fcebf61c444368853872ba4ce9e25/cenc-sd.mpd
 
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/187744/image" group-title="API直播", Bangladesh vs Pakistan (FANCODE - SD)
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/187744/image" group-title="CRICKET", Bangladesh vs Pakistan (FANCODE - SD)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_key=709c812e1b4174002605df1d17d34a4c:0bbee6c9c20a0f065bf8369d54cbf83e
 https://abfjk4haaaaaaaampv6ofhkihi4r6.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash-sd/enc/qddnwqthpp/out/v1/6c25cddab58043a6ace0ac64d97983f0/cenc-sd.mpd
-
-#EXTINF:-1 group-title="TG_Update", [最新] ▶️⚽️ South Melbourne FC v Bula FC | OFC Professional League 2026Time: 05-12 11:0
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_key=3d2140a269c73534b804725c3c5cef55:4ddda489b89412ce1ea7ebb01b77ca2f
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_14_43_59_c55bc82c-0937-4ddf-b359-d7de6c11a57c/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update", [最新] ▶️⚽️ Nacional v Estudiantes | Division Honor 2025-26Time: 05-12 08:30#EXTINF:-1 
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_key=26b3ea26ee533a53a291ba7b6787092a:8ddee54935ae4cc9b2da5a238fbfb240
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_08_59_17_417de9d9-3df9-4165-877c-33d04d6b9a80/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update", [最新] ▶️⚽️ S.V. Victory Boys v Inter Willemstad | Curaçao Promé Divishon 2025/26Time: 
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_key=969ae9ff63e835b085553873b5ff421a:90ff437eb8179ffa1edb54bc0f2a7cd2
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_06_41_26_4aebb9bf-32e7-4504-8d9f-94ea35c3ce11/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update", [最新] ▶️⚽️ RKSV Scherpenheuvel v C.R.K.S.V. Jong Colombia | Curaçao Promé Divishon 202
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_key=90961c540819348bb4b812d5d89c04e5:462846f58e4842dba12042cbcecaf1bf
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_09_12_04_ef7db2bb-6368-4ee6-923b-6370fd5211ab/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update", [最新] ▶️⚽️ C.R.K.S.V. Jong Holland v R.K.S.V. Centro Dominguito | Curaçao Promé Divish
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_key=227b32dcada33342b7a14a4edb776153:714b6b259dbaf1f14c7b7845ea703b51
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_09_12_07_faf4b3ff-8dbb-4a14-8be8-0b312c264079/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update", [最新] ▶️⚽️ Nouakchott Academy v Inter Nouakchott | Super D-1 2025/26Time: 05-12 00:45#
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_key=c4c27315d32a365a9926f2455dcc5c09:6ba89d3fad88eafc039fd98407c6ba54
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_06_16_04_59_22f230f5-71c4-44d5-9dc9-3981c96e449a/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update", [最新] ▶️⚽️ Masters FC v Mitundu Baptist | FDH Bank PremiershipTime: 05-12 00:00#EXTINF
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_key=7a282de9fb253c59ac384353615dd27b:f15cfb048b0e636732ebba7418fc6fcc
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_06_16_02_51_4ef4996e-f978-4c4a-8720-60eefb68fb06/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update", [最新] ▶️⚽️ Pogradeci v Besa | Championship Play-off – Final Phase | Kategoria e Parë 2
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_key=5893b8d992983129b37d33612a018e1c:4b5923e0e17ec8bc5f58a768ea7473b1
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_11_01_47_50f88771-d062-489c-af03-71f020ab959a/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update", [最新] ▶️⚽️ Azerbaijan v Georgia | UEFA Development Tournament Women&#39;s U-16 2026Tim
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_key=be476787e95c39ed9c9cd78831915cd5:f728f5941ebc51bf8d1d28561d3925e6
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_06_12_55_21_e6385eba-460d-4b90-b9ef-a951c0407d61/PROD_CMAF_CENC/index-dash.mpd
 
