@@ -19,11 +19,12 @@ https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/8m8cd46i1t/
 #KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
 https://linearjitp-playback.astro.com.my/dash-wv/linear/2705/default_ott.mpd
 
-#EXTINF:-1 tvg-id="Eurosport" tvg-name="Eurosport HD" group-title="Sports" group-logo="https://da.gd/ffliqlogo" tvg-logo="https://iili.io/1Nz7Kx.png",Eurosport HD CH820
+#EXTINF:-1 tvg-id="Eurosport" tvg-name="Eurosport HD" group-title="体育频道" group-logo="https://da.gd/ffliqlogo" tvg-logo="https://iili.io/1Nz7Kx.png",Eurosport HD CH820
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=4db23a41ba7fe9afc222a58c59828310:d0e794e3cfd564ed2c720a098eb177c7
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=User-Agent: Mozilla/5.0 (Linux; Android 13; haramTV Build/2025; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
 https://linearjitp-playback.astro.com.my/dash-wv/linear/2100/default_ott.mpd
 
 #EXTINF:-1 tvg-id="" tvg-name="ESPN HD" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/ESPN.png" group-title="体育频道",ESPN HD
