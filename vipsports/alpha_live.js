@@ -2,118 +2,84 @@ const fs = require('fs');
 
 // --- 配置区 ---
 const JSON_SOURCES = [
-    "https://raw.githubusercontent.com/srhady/vipsports/refs/heads/main/alpha_live.json"
+    "https://raw.githubusercontent.com/srhady/vipsports/refs/heads/main/alpha_live.json" // 请确保这里是完整的 Raw 链接
 ];
+
 const TG_CHANNEL = "afifffff_plus";
 
 async function run() {
-    console.log("🚀 开始全量抓取任务...");
-    let allChannels = []; // 用来存放所有抓到的频道对象
-
-    // --- 任务 1: 抓取 JSON 组 ---
+    console.log("🚀 启动 Combined VIP 抓取任务...");
+    let m3uContent = "#EXTM3U\n#EXT-X-SESSION-DATA:ID=\"SOURCE\",VALUE=\"FIFA_Combined_Bot\"\n\n";
+    
+    // --- 任务 1: 处理 JSON 组 ---
+    console.log("📡 正在获取 JSON 组数据...");
     for (const url of JSON_SOURCES) {
         try {
-            console.log(`📡 正在尝试抓取 JSON: ${url}`);
             const res = await fetch(url);
-            if (!res.ok) throw new Error(`HTTP状态码: ${res.status}`);
             const data = await res.json();
-            
             const matches = data.live_matches || [];
             matches.forEach(match => {
                 (match.streams || []).forEach(stream => {
                     if (stream.stream_url?.startsWith('http')) {
-                        allChannels.push({
-                            title: `${match.event_name} (${stream.source_name})`,
-                            logo: match.home_team_logo || "",
-                            group: "FIFA+",
-                            url: stream.stream_url,
-                            key: stream.manifest_keys
-                        });
+                        m3uContent += `#EXTINF:-1 tvg-logo="${match.home_team_logo}" group-title="Live_API", ${match.event_name} (${stream.source_name})\n`;
+                        m3uContent += `#KODIPROP:inputstream.adaptive.license_type=clearkey\n`;
+                        m3uContent += `#KODIPROP:inputstream.adaptive.license_key=${stream.manifest_keys}\n`;
+                        m3uContent += `${stream.stream_url}\n\n`;
                     }
                 });
             });
-            console.log(`✅ JSON 抓取成功，目前总计 ${allChannels.length} 个频道`);
-        } catch (e) {
-            console.error(`❌ JSON 抓取失败 (${url}):`, e.message);
-        }
+        } catch (e) { console.error(`❌ JSON 抓取失败: ${url}`); }
     }
 
-    // --- 任务 2: 抓取 Telegram (RSS 模式，绕过 IP 屏蔽) ---
+    // --- 任务 2: 处理 Telegram (@afifffff_plus) ---
+    console.log(`📡 正在抓取 Telegram 频道: @${TG_CHANNEL}...`);
     try {
-        console.log(`📡 正在通过 RSS 接口抓取电报频道: @${TG_CHANNEL}`);
+        // 【修正点】添加了 /s/ 预览路径和正确的变量引用 $
+        const tgRes = await fetch(`https://t.me{TG_CHANNEL}`);
+        const html = await tgRes.text();
         
-        // 使用公开的 RSS 代理获取频道内容
-        const rssUrl = `https://rsshub.app{TG_CHANNEL}`;
-        
-        const tgRes = await fetch(rssUrl, {
-            headers: {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-            }
-        });
+        // 如果 HTML 没内容，说明被屏蔽了
+        if (!html.includes('tgme_widget_message_wrap')) {
+            throw new Error("未能获取到电报消息内容，页面可能被拦截");
+        }
 
-        if (!tgRes.ok) throw new Error(`RSS 访问失败: ${tgRes.status}`);
-        
-        const xmlText = await tgRes.text();
-        
-        // 匹配 RSS 里的内容块
-        const items = xmlText.split('<item>');
+        const messages = html.split('<div class="tgme_widget_message_wrap');
         let tgCount = 0;
 
-        for (let i = 1; i < items.length; i++) {
-            const item = items[i];
+        for (let i = messages.length - 1; i >= 0; i--) {
+            const msg = messages[i];
+            const mpdMatch = msg.match(/https?:\/\/[^"'\s\<\> ]+\.mpd[^"'\s\<\> ]*/i);
+            const keyMatch = msg.match(/[a-f0-9]{32}:[a-f0-9]{32}/i);
             
-            // 在描述标签 <description> 中寻找 MPD 和 Key
-            const mpdMatch = item.match(/https?:\/\/[^"'\s\<\>\[\]]+\.mpd[^"'\s\<\>\[\]]*/i);
-            const keyMatch = item.match(/[a-fA-F0-9]{32}\s?:\s?[a-fA-F0-9]{32}/i);
-            
-            if (mpdMatch) {
-                const finalKey = keyMatch ? keyMatch.replace(/\s/g, '') : null;
-                const finalUrl = mpdMatch[0].replace(/&amp;/g, '&').replace(/<!\[CDATA\[/g, '').replace(/\]\]>/g, '');
-
-                // 提取标题
+            if (mpdMatch && keyMatch) {
+                const boldMatches = msg.match(/<b>(.*?)<\/b>/g);
                 let title = "FIFA+ Stream";
-                const titleMatch = item.match(/<title><!\[CDATA\[(.*?)\]\]><\/title>/i);
-                if (titleMatch) title = titleMatch[1].trim();
+                if (boldMatches) {
+                    title = boldMatches[boldMatches.length - 1].replace(/<[^>]*>/g, '').trim();
+                }
 
-                allChannels.push({
-                    title: `[TG] ${title}`,
-                    logo: "",
-                    group: "Telegram_Update",
-                    url: finalUrl,
-                    key: finalKey,
-                    isFifa: true
-                });
+                const timeInfo = title.match(/\d{2}-\d{2}|\d{2}:\d{2}/g);
+                const tag = timeInfo ? `[${timeInfo.join(' ')}]` : "[Live]";
+
+                m3uContent += `#EXTINF:-1 group-title="FIFA+_Updates", ${tag} ${title}\n`;
+                m3uContent += `#KODIPROP:inputstream.adaptive.license_type=clearkey\n`;
+                m3uContent += `#KODIPROP:inputstream.adaptive.manifest_type=mpd\n`;
+                // 【修正点】确保取数组的第一个匹配项 [0]
+                m3uContent += `#KODIPROP:inputstream.adaptive.license_key=${keyMatch[0]}\n`;
+                m3uContent += `${mpdMatch[0]}\n\n`;
+                
                 tgCount++;
                 if (tgCount >= 15) break;
             }
         }
-        console.log(`✅ RSS 抓取成功，新增 ${tgCount} 个频道`);
-    } catch (e) {
-        console.error("❌ Telegram RSS 抓取出错:", e.message);
-        console.log("💡 提示：如果此接口也失效，可能需要配置电报 Bot 或私有 Proxy。");
+        console.log(`✅ 已从电报提取 ${tgCount} 个 FIFA+ 源`);
+    } catch (e) { 
+        console.error("❌ Telegram 抓取失败:", e.message); 
     }
 
-
-
-
-    // --- 任务 3: 统一生成 M3U 文件 ---
-    let m3uContent = "#EXTM3U\n#EXT-X-SESSION-DATA:ID=\"SOURCE\",VALUE=\"Hady_VIP\"\n\n";
-    
-    allChannels.forEach(ch => {
-        m3uContent += `#EXTINF:-1 tvg-logo="${ch.logo}" group-title="${ch.group}", ${ch.title}\n`;
-        m3uContent += `#KODIPROP:inputstream.adaptive.license_type=clearkey\n`;
-        // 如果是 FIFA+ 或者 mpd 结尾，加上 manifest_type
-        if (ch.isFifa || ch.url.includes('.mpd')) {
-            m3uContent += `#KODIPROP:inputstream.adaptive.manifest_type=mpd\n`;
-        }
-        if (ch.key) {
-            m3uContent += `#KODIPROP:inputstream.adaptive.license_key=${ch.key}\n`;
-        }
-        m3uContent += `${ch.url}\n\n`;
-    });
-
+    // --- 保存文件 ---
     fs.writeFileSync('live.m3u', m3uContent);
-    console.log(`🎉 任务完成！共计生成 ${allChannels.length} 个频道到 live.m3u`);
+    console.log("🎉 全部数据已合并至 live.m3u");
 }
 
 run();
