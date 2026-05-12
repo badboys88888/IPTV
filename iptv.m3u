@@ -3280,103 +3280,442 @@ http://112.66.137.217:8888/udp/239.253.64.139:5140
 #EXTINF:-1 tvg-id="山东教育卫视" tvg-name="山东教育卫视" tvg-logo="https://upload.112114.xyz/logo/山东教育.png" group-title="海南电信[A]",山东教育
 http://112.66.137.217:8888/udp/239.253.64.241:5140
 
-#EXTINF:-1 group-title="匈牙利组播",M1 HD
+#EXTINF:-1 tvg-id="" tvg-name="RTL Klub" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 RTL Klub
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.2.96:1234
 http://worker.pte.hu:4025/udp/239.1.2.96:1234
-#EXTINF:-1 group-title="匈牙利组播",M2 HD
+
+#EXTINF:-1 tvg-id="" tvg-name="TV2" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 TV2
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.2.97:1234
 http://worker.pte.hu:4025/udp/239.1.2.97:1234
-#EXTINF:-1 group-title="匈牙利组播",Duna HD
+
+#EXTINF:-1 tvg-id="" tvg-name="Duna TV" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 Duna TV
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.2.98:1234
 http://worker.pte.hu:4025/udp/239.1.2.98:1234
-#EXTINF:-1 group-title="匈牙利组播",Duna World
+
+#EXTINF:-1 tvg-id="" tvg-name="M1 HD" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 M1 HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.2.99:1234
 http://worker.pte.hu:4025/udp/239.1.2.99:1234
-#EXTINF:-1 group-title="匈牙利组播",RTL Klub
+
+#EXTINF:-1 tvg-id="" tvg-name="M2 HD" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 M2 HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.2.100:1234
 http://worker.pte.hu:4025/udp/239.1.2.100:1234
-#EXTINF:-1 group-title="匈牙利组播",TV2
+
+#EXTINF:-1 tvg-id="" tvg-name="M4 Sport HD" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 M4 Sport HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.2.101:1234
 http://worker.pte.hu:4025/udp/239.1.2.101:1234
-#EXTINF:-1 group-title="匈牙利组播",Viasat 3
+
+#EXTINF:-1 tvg-id="" tvg-name="M5 HD" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 M5 HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.2.102:1234
 http://worker.pte.hu:4025/udp/239.1.2.102:1234
-#EXTINF:-1 group-title="匈牙利组播",Viasat 6
+
+#EXTINF:-1 tvg-id="" tvg-name="Duna World" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 Duna World
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.2.103:1234
 http://worker.pte.hu:4025/udp/239.1.2.103:1234
-#EXTINF:-1 group-title="匈牙利组播",Cool TV
+
+#EXTINF:-1 tvg-id="" tvg-name="RTL Gold" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 RTL Gold
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.2.104:1234
 http://worker.pte.hu:4025/udp/239.1.2.104:1234
-#EXTINF:-1 group-title="匈牙利组播",Film+
+
+#EXTINF:-1 tvg-id="" tvg-name="RTL II" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 RTL II
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.2.105:1234
 http://worker.pte.hu:4025/udp/239.1.2.105:1234
-#EXTINF:-1 group-title="匈牙利组播",RTL II
+
+#EXTINF:-1 tvg-id="" tvg-name="Film+" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 Film+
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.2.106:1234
 http://worker.pte.hu:4025/udp/239.1.2.106:1234
-#EXTINF:-1 group-title="匈牙利组播",Super TV2
+
+#EXTINF:-1 tvg-id="" tvg-name="Cool TV" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 Cool TV
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.2.107:1234
 http://worker.pte.hu:4025/udp/239.1.2.107:1234
-#EXTINF:-1 group-title="匈牙利组播",Mozi+
+
+#EXTINF:-1 tvg-id="" tvg-name="Spektrum HD" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 Spektrum HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.2.108:1234
 http://worker.pte.hu:4025/udp/239.1.2.108:1234
-#EXTINF:-1 group-title="匈牙利组播",Prime
+
+#EXTINF:-1 tvg-id="" tvg-name="Viasat3" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 Viasat3
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.2.109:1234
 http://worker.pte.hu:4025/udp/239.1.2.109:1234
-#EXTINF:-1 group-title="匈牙利组播",Sláger TV
+
+#EXTINF:-1 tvg-id="" tvg-name="Viasat6" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 Viasat6
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.2.110:1234
 http://worker.pte.hu:4025/udp/239.1.2.110:1234
-#EXTINF:-1 group-title="匈牙利组播",Muzsika TV
+
+#EXTINF:-1 tvg-id="" tvg-name="SuperTV2" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 SuperTV2
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.2.111:1234
 http://worker.pte.hu:4025/udp/239.1.2.111:1234
-#EXTINF:-1 group-title="匈牙利组播",Sport 1 HD
+
+#EXTINF:-1 tvg-id="" tvg-name="TV Paprika" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 TV Paprika
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.2.112:1234
 http://worker.pte.hu:4025/udp/239.1.2.112:1234
-#EXTINF:-1 group-title="匈牙利组播",Sport 2 HD
+
+#EXTINF:-1 tvg-id="" tvg-name="Izaura TV" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 Izaura TV
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.2.113:1234
 http://worker.pte.hu:4025/udp/239.1.2.113:1234
-#EXTINF:-1 group-title="匈牙利组播",Spíler 1 TV
+
+#EXTINF:-1 tvg-id="" tvg-name="Humor+" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 Humor+
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.2.114:1234
 http://worker.pte.hu:4025/udp/239.1.2.114:1234
-#EXTINF:-1 group-title="匈牙利组播",Spíler 2 TV
+
+#EXTINF:-1 tvg-id="" tvg-name="Prime" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 Prime
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.2.115:1234
 http://worker.pte.hu:4025/udp/239.1.2.115:1234
-#EXTINF:-1 group-title="匈牙利组播",Eurosport 1
-http://worker.pte.hu:4025/udp/239.1.2.116:1234
-#EXTINF:-1 group-title="匈牙利组播",Eurosport 2
-http://worker.pte.hu:4025/udp/239.1.2.117:1234
-#EXTINF:-1 group-title="匈牙利组播",Arena 4
-http://worker.pte.hu:4025/udp/239.1.2.118:1234
-#EXTINF:-1 group-title="匈牙利组播",Match4
-http://worker.pte.hu:4025/udp/239.1.2.119:1234
-#EXTINF:-1 group-title="匈牙利组播",Discovery Channel
-http://worker.pte.hu:4025/udp/239.1.2.120:1234
-#EXTINF:-1 group-title="匈牙利组播",National Geographic
-http://worker.pte.hu:4025/udp/239.1.2.121:1234
-#EXTINF:-1 group-title="匈牙利组播",Spektrum
-http://worker.pte.hu:4025/udp/239.1.2.122:1234
-#EXTINF:-1 group-title="匈牙利组播",Animal Planet
-http://worker.pte.hu:4025/udp/239.1.2.123:1234
-#EXTINF:-1 group-title="匈牙利组播",History Channel
-http://worker.pte.hu:4025/udp/239.1.2.124:1234
-#EXTINF:-1 group-title="匈牙利组播",Viasat History
-http://worker.pte.hu:4025/udp/239.1.2.125:1234
-#EXTINF:-1 group-title="匈牙利组播",Viasat Explore
-http://worker.pte.hu:4025/udp/239.1.2.126:1234
-#EXTINF:-1 group-title="匈牙利组播",Viasat Nature
-http://worker.pte.hu:4025/udp/239.1.2.127:1234
-#EXTINF:-1 group-title="匈牙利组播",Minimax
-http://worker.pte.hu:4025/udp/239.1.2.128:1234
-#EXTINF:-1 group-title="匈牙利组播",Nickelodeon
-http://worker.pte.hu:4025/udp/239.1.2.129:1234
-#EXTINF:-1 group-title="匈牙利组播",Cartoon Network
-http://worker.pte.hu:4025/udp/239.1.2.130:1234
-#EXTINF:-1 group-title="匈牙利组播",Disney Channel
-http://worker.pte.hu:4025/udp/239.1.2.131:1234
-#EXTINF:-1 group-title="匈牙利组播",JimJam
-http://worker.pte.hu:4025/udp/239.1.2.132:1234
-#EXTINF:-1 group-title="匈牙利组播",Comedy Central
-http://worker.pte.hu:4025/udp/239.1.2.133:1234
-#EXTINF:-1 group-title="匈牙利组播",Paramount Network
-http://worker.pte.hu:4025/udp/239.1.2.134:1234
-#EXTINF:-1 group-title="匈牙利组播",AMC
-http://worker.pte.hu:4025/udp/239.1.2.135:1234
-#EXTINF:-1 group-title="匈牙利组播",Film4
-http://worker.pte.hu:4025/udp/239.1.2.136:1234
-#EXTINF:-1 group-title="匈牙利组播",TV4
-http://worker.pte.hu:4025/udp/239.1.2.137:1234
-#EXTINF:-1 group-title="匈牙利组播",Story4
-http://worker.pte.hu:4025/udp/239.1.2.138:1234
-#EXTINF:-1 group-title="匈牙利组播",Galaxy4
-http://worker.pte.hu:4025/udp/239.1.2.139:1234
-#EXTINF:-1 group-title="匈牙利组播",Sorozat+
-http://worker.pte.hu:4025/udp/239.1.2.140:1234
-#EXTINF:-1 group-title="匈牙利组播",RTL Gold
-http://worker.pte.hu:4025/udp/239.1.2.141:1234
-#EXTINF:-1 group-title="匈牙利组播",RTL Három
-http://worker.pte.hu:4025/udp/239.1.2.142:1234
-#EXTINF:-1 group-title="匈牙利组播",TV2 Comedy
-http://worker.pte.hu:4025/udp/239.1.2.143:1234
-#EXTINF:-1 group-title="匈牙利组播",TV2 Séf
-http://worker.pte.hu:4025/udp/239.1.2.144:1234
-#EXTINF:-1 group-title="匈牙利组播",Jocky TV
-http://worker.pte.hu:4025/udp/239.1.2.145:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="LEO TV Gold HD" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 LEO TV Gold HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.1.247:1234
+http://worker.pte.hu:4025/udp/239.1.1.247:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="Magyar ATV" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 Magyar ATV
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.1.204:1234
+http://worker.pte.hu:4025/udp/239.1.1.204:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="Hir TV" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 Hir TV
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.1.205:1234
+http://worker.pte.hu:4025/udp/239.1.1.205:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="Echo TV" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 Echo TV
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.1.206:1234
+http://worker.pte.hu:4025/udp/239.1.1.206:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="Pax TV" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 Pax TV
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.1.207:1234
+http://worker.pte.hu:4025/udp/239.1.1.207:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="Eurosport 1 HD" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 Eurosport 1 HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.1.208:1234
+http://worker.pte.hu:4025/udp/239.1.1.208:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="Eurosport 2 HD" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 Eurosport 2 HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.1.209:1234
+http://worker.pte.hu:4025/udp/239.1.1.209:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="Sport1 HD" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 Sport1 HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.1.210:1234
+http://worker.pte.hu:4025/udp/239.1.1.210:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="Sport2 HD" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 Sport2 HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.1.211:1234
+http://worker.pte.hu:4025/udp/239.1.1.211:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="Arena4 HD" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 Arena4 HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.1.212:1234
+http://worker.pte.hu:4025/udp/239.1.1.212:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="Spíler1 TV HD" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 Spíler1 TV HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.1.213:1234
+http://worker.pte.hu:4025/udp/239.1.1.213:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="Spíler2 TV HD" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 Spíler2 TV HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.1.214:1234
+http://worker.pte.hu:4025/udp/239.1.1.214:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="National Geographic HD" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 National Geographic HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.1.215:1234
+http://worker.pte.hu:4025/udp/239.1.1.215:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="National Geo Wild HD" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 National Geo Wild HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.1.216:1234
+http://worker.pte.hu:4025/udp/239.1.1.216:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="Discovery Channel HD" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 Discovery Channel HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.1.217:1234
+http://worker.pte.hu:4025/udp/239.1.1.217:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="Animal Planet HD" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 Animal Planet HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.1.218:1234
+http://worker.pte.hu:4025/udp/239.1.1.218:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="History Channel HD" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 History Channel HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.1.219:1234
+http://worker.pte.hu:4025/udp/239.1.1.219:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="Cartoon Network HD" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 Cartoon Network HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.1.220:1234
+http://worker.pte.hu:4025/udp/239.1.1.220:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="Disney Channel HD" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 Disney Channel HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.1.221:1234
+http://worker.pte.hu:4025/udp/239.1.1.221:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="Nickelodeon HD" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 Nickelodeon HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.1.222:1234
+http://worker.pte.hu:4025/udp/239.1.1.222:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="Comedy Central HD" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 Comedy Central HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.1.223:1234
+http://worker.pte.hu:4025/udp/239.1.1.223:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="TV2 Cinema HD" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 TV2 Cinema HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.1.224:1234
+http://worker.pte.hu:4025/udp/239.1.1.224:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="RTL Klub HD" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 RTL Klub HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.1.225:1234
+http://worker.pte.hu:4025/udp/239.1.1.225:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="Match4 HD" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 Match4 HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.1.226:1234
+http://worker.pte.hu:4025/udp/239.1.1.226:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="AXN HD" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 AXN HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.1.227:1234
+http://worker.pte.hu:4025/udp/239.1.1.227:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="AMC HD" tvg-country="HU" group-title="Hungary 🇭🇺",🇭🇺 AMC HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.1.228:1234
+http://worker.pte.hu:4025/udp/239.1.1.228:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="ORF1 HD" tvg-country="AT" group-title="Austria 🇦🇹",🇦🇹 ORF1 HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.1:1234
+http://worker.pte.hu:4025/udp/239.1.3.1:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="ORF2 HD" tvg-country="AT" group-title="Austria 🇦🇹",🇦🇹 ORF2 HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.2:1234
+http://worker.pte.hu:4025/udp/239.1.3.2:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="ORF Sport+ HD" tvg-country="AT" group-title="Austria 🇦🇹",🇦🇹 ORF Sport+ HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.3:1234
+http://worker.pte.hu:4025/udp/239.1.3.3:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="3SAT HD" tvg-country="DE" group-title="Germany 🇩🇪",🇩🇪 3SAT HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.10:1234
+http://worker.pte.hu:4025/udp/239.1.3.10:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="ZDF HD" tvg-country="DE" group-title="Germany 🇩🇪",🇩🇪 ZDF HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.11:1234
+http://worker.pte.hu:4025/udp/239.1.3.11:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="ARD Das Erste HD" tvg-country="DE" group-title="Germany 🇩🇪",🇩🇪 ARD Das Erste HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.12:1234
+http://worker.pte.hu:4025/udp/239.1.3.12:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="ZDFneo HD" tvg-country="DE" group-title="Germany 🇩🇪",🇩🇪 ZDFneo HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.13:1234
+http://worker.pte.hu:4025/udp/239.1.3.13:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="CNN International" tvg-country="INT" group-title="International 🌍",🌍 CNN International
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.20:1234
+http://worker.pte.hu:4025/udp/239.1.3.20:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="BBC World News" tvg-country="GB" group-title="UK 🇬🇧",🇬🇧 BBC World News
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.21:1234
+http://worker.pte.hu:4025/udp/239.1.3.21:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="Euronews HD" tvg-country="INT" group-title="International 🌍",🌍 Euronews HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.22:1234
+http://worker.pte.hu:4025/udp/239.1.3.22:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="TV5Monde Europe" tvg-country="FR" group-title="France 🇫🇷",🇫🇷 TV5Monde Europe
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.23:1234
+http://worker.pte.hu:4025/udp/239.1.3.23:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="Al Jazeera English" tvg-country="INT" group-title="International 🌍",🌍 Al Jazeera English
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.24:1234
+http://worker.pte.hu:4025/udp/239.1.3.24:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="RAI 1 HD" tvg-country="IT" group-title="Italy 🇮🇹",🇮🇹 RAI 1 HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.30:1234
+http://worker.pte.hu:4025/udp/239.1.3.30:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="RAI 2 HD" tvg-country="IT" group-title="Italy 🇮🇹",🇮🇹 RAI 2 HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.31:1234
+http://worker.pte.hu:4025/udp/239.1.3.31:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="RAI 3 HD" tvg-country="IT" group-title="Italy 🇮🇹",🇮🇹 RAI 3 HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.32:1234
+http://worker.pte.hu:4025/udp/239.1.3.32:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="TVE Internacional" tvg-country="ES" group-title="Spain 🇪🇸",🇪🇸 TVE Internacional
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.40:1234
+http://worker.pte.hu:4025/udp/239.1.3.40:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="TVP1 HD" tvg-country="PL" group-title="Poland 🇵🇱",🇵🇱 TVP1 HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.50:1234
+http://worker.pte.hu:4025/udp/239.1.3.50:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="TVP2 HD" tvg-country="PL" group-title="Poland 🇵🇱",🇵🇱 TVP2 HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.51:1234
+http://worker.pte.hu:4025/udp/239.1.3.51:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="TVN HD" tvg-country="PL" group-title="Poland 🇵🇱",🇵🇱 TVN HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.52:1234
+http://worker.pte.hu:4025/udp/239.1.3.52:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="CT1 HD" tvg-country="CZ" group-title="Czech Republic 🇨🇿",🇨🇿 CT1 HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.60:1234
+http://worker.pte.hu:4025/udp/239.1.3.60:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="CT2 HD" tvg-country="CZ" group-title="Czech Republic 🇨🇿",🇨🇿 CT2 HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.61:1234
+http://worker.pte.hu:4025/udp/239.1.3.61:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="CT24 HD" tvg-country="CZ" group-title="Czech Republic 🇨🇿",🇨🇿 CT24 HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.62:1234
+http://worker.pte.hu:4025/udp/239.1.3.62:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="Nova HD" tvg-country="CZ" group-title="Czech Republic 🇨🇿",🇨🇿 Nova HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.63:1234
+http://worker.pte.hu:4025/udp/239.1.3.63:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="STV1 HD" tvg-country="SK" group-title="Slovakia 🇸🇰",🇸🇰 STV1 HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.70:1234
+http://worker.pte.hu:4025/udp/239.1.3.70:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="STV2 HD" tvg-country="SK" group-title="Slovakia 🇸🇰",🇸🇰 STV2 HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.71:1234
+http://worker.pte.hu:4025/udp/239.1.3.71:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="JOJ HD" tvg-country="SK" group-title="Slovakia 🇸🇰",🇸🇰 JOJ HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.72:1234
+http://worker.pte.hu:4025/udp/239.1.3.72:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="RTV SLO 1 HD" tvg-country="SI" group-title="Slovenia 🇸🇮",🇸🇮 RTV SLO 1 HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.80:1234
+http://worker.pte.hu:4025/udp/239.1.3.80:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="RTV SLO 2 HD" tvg-country="SI" group-title="Slovenia 🇸🇮",🇸🇮 RTV SLO 2 HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.81:1234
+http://worker.pte.hu:4025/udp/239.1.3.81:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="HRT1 HD" tvg-country="HR" group-title="Croatia 🇭🇷",🇭🇷 HRT1 HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.90:1234
+http://worker.pte.hu:4025/udp/239.1.3.90:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="HRT2 HD" tvg-country="HR" group-title="Croatia 🇭🇷",🇭🇷 HRT2 HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.91:1234
+http://worker.pte.hu:4025/udp/239.1.3.91:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="RTL Hrvatska HD" tvg-country="HR" group-title="Croatia 🇭🇷",🇭🇷 RTL Hrvatska HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.92:1234
+http://worker.pte.hu:4025/udp/239.1.3.92:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="RTS1 HD" tvg-country="RS" group-title="Serbia 🇷🇸",🇷🇸 RTS1 HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.100:1234
+http://worker.pte.hu:4025/udp/239.1.3.100:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="RTS2 HD" tvg-country="RS" group-title="Serbia 🇷🇸",🇷🇸 RTS2 HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.101:1234
+http://worker.pte.hu:4025/udp/239.1.3.101:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="Pink HD" tvg-country="RS" group-title="Serbia 🇷🇸",🇷🇸 Pink HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.102:1234
+http://worker.pte.hu:4025/udp/239.1.3.102:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="TVR1 HD" tvg-country="RO" group-title="Romania 🇷🇴",🇷🇴 TVR1 HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.110:1234
+http://worker.pte.hu:4025/udp/239.1.3.110:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="ProTV HD" tvg-country="RO" group-title="Romania 🇷🇴",🇷🇴 ProTV HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.111:1234
+http://worker.pte.hu:4025/udp/239.1.3.111:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="BNT1 HD" tvg-country="BG" group-title="Bulgaria 🇧🇬",🇧🇬 BNT1 HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.120:1234
+http://worker.pte.hu:4025/udp/239.1.3.120:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="Nova TV BG HD" tvg-country="BG" group-title="Bulgaria 🇧🇬",🇧🇬 Nova TV BG HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.121:1234
+http://worker.pte.hu:4025/udp/239.1.3.121:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="UA:Pershyi HD" tvg-country="UA" group-title="Ukraine 🇺🇦",🇺🇦 UA:Pershyi HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.130:1234
+http://worker.pte.hu:4025/udp/239.1.3.130:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="BHT1 HD" tvg-country="BA" group-title="Bosnia 🇧🇦",🇧🇦 BHT1 HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.140:1234
+http://worker.pte.hu:4025/udp/239.1.3.140:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="MTV1 MK HD" tvg-country="MK" group-title="North Macedonia 🇲🇰",🇲🇰 MTV1 MK HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.150:1234
+http://worker.pte.hu:4025/udp/239.1.3.150:1234
+
+#EXTINF:-1 tvg-id="" tvg-name="TVSH HD" tvg-country="AL" group-title="Albania 🇦🇱",🇦🇱 TVSH HD
+#EXTVLCOPT:network-caching=1000
+## multicast=rtp://239.1.3.160:1234
+http://worker.pte.hu:4025/udp/239.1.3.160:1234
