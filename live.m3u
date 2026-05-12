@@ -6,6 +6,11 @@
 #KODIPROP:inputstream.adaptive.license_key=708a98b352bd4418a73a028edd84da8f:b1fa5c2bca4c4b57b924b748564532cb
 https://dice-live-oc.akamaized.net/hdntl=exp=1778623594~acl=%2F*~id=80e00416-d077-451a-979a-684373b1320d~data=hdntl,aXA9MTA4LjE4MS40LjY5JmV4cD0xNzc4NTM3MjI0JmVpZD05Mzk5NjMmb2lkPTE1NCZ0eXBlPVZPRCZ1aWQ9eFJScW85fGJjYWVhN2NmLWMzMzctNDAzOS04MTU4LTNjMWNlNDllNzI5MyZjaWQ9ZGNlLmZpc2ZlZCZwdD1udWxs~hmac=ad40f79be2e3554e71b2e48ac067fc40c6f9495500843971e7ea18f4d801f408/dash/live/2093715/219027-321028/manifest-d.mpd
 
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/187744/image" group-title="实时赛事", Bangladesh vs Pakistan (WILLOW [AD-FREE])
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=48c1d42a53539a0a0524de896ab70ba0:abeb4b59211e4763bd117bb797b5e7ff
+https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/jxs52yebmi/out/v1/dbde95b8bdc14d4a8a5f4c242b9b8240/cenc.mpd
+
 #EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/187744/image" group-title="实时赛事", Bangladesh vs Pakistan (PREMIER SPORTS)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=1444f4235529f183f0a5a486befe9cdb:e5e3fec67a1bb3472a2089c8a0a2557f
@@ -26,73 +31,62 @@ https://ottlive.dishhome.com.np/protected/jQTOzZkB0RDJ74Ryniuo/dash/manifest.mpd
 #KODIPROP:inputstream.adaptive.license_key=
 https://premierleagpl23.akamaized.net/hls/live/2107108/Tapmad-PaKvZIm/master.m3u8
 
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/187744/image" group-title="实时赛事", Bangladesh vs Pakistan (WILLOW HD)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=e2596584f1e9a631bc569c327387dc25:41393318d6c6aa9437a0376493c01394
-https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash-sd/enc/tesivhccki/out/v1/7c1fcebf61c444368853872ba4ce9e25/cenc-sd.mpd
-
 #EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/187744/image" group-title="实时赛事", Bangladesh vs Pakistan (FANCODE - SD)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=709c812e1b4174002605df1d17d34a4c:0bbee6c9c20a0f065bf8369d54cbf83e
 https://abfjk4haaaaaaaampv6ofhkihi4r6.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash-sd/enc/qddnwqthpp/out/v1/6c25cddab58043a6ace0ac64d97983f0/cenc-sd.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/sPeKSMFoioCMe3hqO1heFJZfxiVOf9FN65UjJNNgPLfPs2EkOCWxpBn5iiDnchnqdJmLoFLFgL_2SVbvJXSdD8Ax4fwPhTHD6hFEJVvThFL3dtcogBcx0AgMNmsyfXM2vyKHZotRMiUG2_M1rvP11eF0_dCd_-5bAuQrqRz2Ak1g61G0ItC2rL2DgDejxHeuXghXWwr9ZNqNtSCXhF2iqGtqa3PaQzVXHrGG4QF6bqTGNm5XpizQvXvS6w8jQ6wyICQ_bz5Ho6sJUm1bHsvPAScfo41zjaUReVDGNDaviC4EHF7e1ldl6EwBk8BKK3sjlCMSpDgoFzs-mb8CzdceBA.jpg", [刚刚] ▶️⚽️ Auckland FC v South Island United | OFC Professional League 2026Time: 05-12
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/sPeKSMFoioCMe3hqO1heFJZfxiVOf9FN65UjJNNgPLfPs2EkOCWxpBn5iiDnchnqdJmLoFLFgL_2SVbvJXSdD8Ax4fwPhTHD6hFEJVvThFL3dtcogBcx0AgMNmsyfXM2vyKHZotRMiUG2_M1rvP11eF0_dCd_-5bAuQrqRz2Ak1g61G0ItC2rL2DgDejxHeuXghXWwr9ZNqNtSCXhF2iqGtqa3PaQzVXHrGG4QF6bqTGNm5XpizQvXvS6w8jQ6wyICQ_bz5Ho6sJUm1bHsvPAScfo41zjaUReVDGNDaviC4EHF7e1ldl6EwBk8BKK3sjlCMSpDgoFzs-mb8CzdceBA.jpg",  ▶️⚽️ Auckland FC v South Island United | OFC Professional League 2026Time: 05-12
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=e2690a53bc87300096e8e4a617488eda:f45836a412e13a96f7dea18c734c96a1
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_14_44_36_c6547d9a-5cef-419a-b580-e94bc0c7df79/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/fbtX4StDRCBhoBBNND2X9rQnaL9TdWbhVKh2oZqxfs-YCh7t8ikTl0iufrKPovIa4Fv4QjThOVFFVEENvn2TJtQ509UjsgBeZ3pfTbw702erh9SnVWu_xF7DzdiGH05MUlRgKTJ4DrZZneePF4qO-dHMsDiuoAxOpf1WuNKA9AYQTdYN30A8UcHo26KT9Oo_Xdwi8XfsEXXIwZOB_L8pxupPNYy7U5smpuxRSlyYsUBrnGJ-wzn46gVVDeM8RxbllEPCbUmBUPR4Esqg3h8_yXq2eiSHG9NVqjyoNRo-8l06kn8r5Y4hwmulzi6fUWbWZncNq_rNF4F_Jo3jAAkMag.jpg",  ▶️⚽️ South Melbourne FC v Bula FC | OFC Professional League 2026Time: 05-12 11:0
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/c5TR0xVi5ulSTbI-oLrC0JF1IfFA8OskoCl6C4kYZMQgOhskkR8JxXFPlXmdaxxXSlSpgbwsechUYZtSaGowqmQBXMIVD0WSMHgy6-qnyMnu9VfjwX8hFX3w2epaDlnyEVOMK7JOJmXqg6ATJqgt00vdeWSMkaD2DSXbDIE6k_QIBoaot9cZKLgciLrf0C_uRJrvvLXsHUFba_I5JwWQHtXA8tI1Enqr2H9tmc9-btsef5t31oye50Hs_BxKT43nts1KHyCLHXw1rLb3xRWRV_9d40cyxre_Oy8ttKDPOz_b2vw8boX94TSrMWGgpqTTdOd9s21OEUg2ZQ9KsCl2iQ.jpg",  ▶️⚽️ South Melbourne FC v Bula FC | OFC Professional League 2026Time: 05-12 11:0
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=3d2140a269c73534b804725c3c5cef55:4ddda489b89412ce1ea7ebb01b77ca2f
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_14_43_59_c55bc82c-0937-4ddf-b359-d7de6c11a57c/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/Q9Vx6gaGFoWAvTIQ6MpfBlBAo_LawgDPMHmUkNf6pTn0xarOBZ-nLdkc2G6MuGWKxjIdHtf5QjsLzbfB8AJxbHPpDydDKkAzVHac4B4AaHekS_82VkjYY48-MVIuK5YRPNMgrALJAUZOAjqTm5Dbcjnpn1bLpefezoHeYDHqUNP3jTW2qCKn1EVKx3suMcKTLYy5VovA_8TvmYmkB-ESNvPyvvdCwwd7rsIw0yEDGdEhCcHZbHY_1dqBu2pz2mHiZREcLkMvroxmkjcfvsgxBoAP3dKU1OYKgOMKe29yudj39g2769NRaHWmnKOIWWJ09p6KZn_YQELAq74DsZpN0w.jpg",  ▶️⚽️ Nacional v Estudiantes | Division Honor 2025-26Time: 05-12 08:30#EXTINF:-1 
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/XWpP-fUQ3OWAZ9xC9TLpEJ8yj-qGIad5FA8SM2IUhoJ-KGPDvzNzL22hLk3bwZCbHIgTkFhbb33fesGO4w21g0TZB6s3FNyxiklWIAtBuzI-Ur8s36SuKeuurCa2iKycPUApUN1PBQFA9UrLyFK4DeP3A5nVYnFNvQ7gP5XvyVlBUvEdwip7zDyOc3JipNlGHlEgkEWODam7sxGtEkEGm4sIgIkyCd-TfSfc9BmoXwCn-0oFQHfhL-L3natcd7gyC--IzF3p4fw50tXQ8IgTiAS_WF8zgv3MEzchQB_J8DO3bOuqlQFPJXYWfGPLvFEuAa5bLqb9YCoLeWZC-3FjwA.jpg",  ▶️⚽️ Nacional v Estudiantes | Division Honor 2025-26Time: 05-12 08:30#EXTINF:-1 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=26b3ea26ee533a53a291ba7b6787092a:8ddee54935ae4cc9b2da5a238fbfb240
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_08_59_17_417de9d9-3df9-4165-877c-33d04d6b9a80/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/CLG3cmLW4opX7ix9IJRJWbvKrLIBuMw1Gbp-7KefsyGjC7XPSo3QqncdPxhzXAJC00whH5nMJuf8rIYoxKW1-f5gEECxQf2cbSF9YXKeu3TNhq8_YFPBEve5zT90Rus_I8ZD3yVQ412D5oMDNd7DX33Q7dGFmydjG2ryJpjKuTOsypObblRlzV2Oohxh80Z0bFtWeAUaFCtL6cRwzclI4HXj-vk5Ub3lMlb-7wZK4oRYx-ien0oBW_vnsliMr4mSRVYKjeQ8V9ZE6TXMgVmHikWzdN10GABARsuCxdgtLW8VYnx5S0deqvSIghMyTigxSjcZt9FN9hYTvHOheEjfrw.jpg",  ▶️⚽️ S.V. Victory Boys v Inter Willemstad | Curaçao Promé Divishon 2025/26Time: 
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/giO2kp3NN3TRjgFAQrPFpGzX0W-ye3J38A7LZ6V2FdGwKbZ6_l0q63bVCSJqL_LnTa9Hr8vlRUtzVFSSsOvV_oudkNjLQsGEnObbMZMNK3BJWLLe0ZlY9xHrB-tnoZ5WXSAR1h2rSsu0AdhIzMRGjKUp3Uv54U-bZaw6hz4efItDtyLlvE7UvIYM63MsNxAlDEHPsORTl2XwocQoMPnjIEdHD0dAtzRJH1v906WqHlcNNq-bq3a8tz90mJa2z9_0MaW8qDwRaRWp1adPljum3ajsfIIcwArHYmxQeGsrbLR6DnLUYt3T8xeKp-M9160x2jx8MvslXpeE2NolMdxy3A.jpg",  ▶️⚽️ S.V. Victory Boys v Inter Willemstad | Curaçao Promé Divishon 2025/26Time: 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=969ae9ff63e835b085553873b5ff421a:90ff437eb8179ffa1edb54bc0f2a7cd2
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_06_41_26_4aebb9bf-32e7-4504-8d9f-94ea35c3ce11/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/QHPmI1CBhP6GTJu18_DEcfgoS6Pq1PuCB1_j3PUkdP3w_OLy2zfnzKQ2AtTxJkhu1uZwY8fzobq-UqAGzL7gpp7Z1WamgvDuGIKFsNjwbKwndLEcAgo6hJRqmcVsKe0GWbSG371MYqedqtKSNNJ5PQon9UUQiYiSWEkUVgqSl41GF5oDQDcNWZmlO_d0lKleV5oANHuxOYaXbkv7Vgftsll4yLG0X8O8tmc0dNpG0tiArGey25OqWmSAgQPdTEpx99m2MIIE_Akr4DdsXC01V-1Fgpde6_URnUjm0EQ_bCimugx91f3MKqT25l4w1EOe5owgJeIOvrVq3p0FVTwpSQ.jpg",  ▶️⚽️ RKSV Scherpenheuvel v C.R.K.S.V. Jong Colombia | Curaçao Promé Divishon 202
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/RF-jBHRWfRdS-2KCEQTrX0JFkrFUvJ24b3rluxSR6xZkR_Rr7RVGOWRutWwHV0dexhBXGNFgxTnzEjbCGlqRILVEzY1Oi9qxbpd-am1loejOsvo9_KBLqm3Oph1DcItEIvigJwQYhPAB2ZShW462ReeMWhsGShQPJRNz7dBd2_0IR4Uxzy7I0dWQq6owpzjiif1Wnard8_50t3Dzv42MZ_pomruKP6L_TZDeSCXTlT9ZPSqCOSaUzPwBQdo9AGg02AOtFK_DJxQZmujVTDKd61kf5Aay4GtYJyn8kw0bAqswp40lDH5Zbvu9NFi6nETKzSaCFX7TYHNwJSTDXR9x_Q.jpg",  ▶️⚽️ RKSV Scherpenheuvel v C.R.K.S.V. Jong Colombia | Curaçao Promé Divishon 202
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=90961c540819348bb4b812d5d89c04e5:462846f58e4842dba12042cbcecaf1bf
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_09_12_04_ef7db2bb-6368-4ee6-923b-6370fd5211ab/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/S2wqKXPhPhI0G38HQMjO3lJ2GxFStSsEKJ94Y0_SN6VJmNWc3hMzYQc3YPNixoK7tpmd7s2qdqnlUw7hr2-nflKA0NABdX8tTGe9Za8Ipjji0NHxbJ2tMlXv3Uod6a5SfKXLiAwXivvDOVGU_1wXWrApLFHCeiDvD_TE34i5MhY5wZkAOBUa6-8kiAQJXXx3pZz1fhyxWhUf7XDKk3G7-za1btfXkD0xbEh0QfojiJhcdjDdZtpydF7WwBh0rXhSDW6uU5Cs5_s4NYhiqn2Uurc5q-pcXVmQPpGPI3vvv87-FCFTm73FCjt-FlkvWyWdR9A4H8msL-uqry3Ux3o5HA.jpg",  ▶️⚽️ C.R.K.S.V. Jong Holland v R.K.S.V. Centro Dominguito | Curaçao Promé Divish
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/jXTg00M8tH96qFTf3qVb-vXdqQlCO70_aSr3VkLI8cAQRWqAmdAbFEmSW0u5DGalbSubvTgW53my3fNMDyQ2bTvNa54O6V8KWfY8mQ83cIKUwPpdb34rvlSr2BDRmXs5r1NQzqKA9VUSO7w3PX859Rsw6THYQQ2_0ksxdP1tYQaOwfs_MfhWskdM_XTUjLrAZbTVgZlxJrorZ7S9TINbAFshN-vme6mJWhr1cCao5-QnN5XGPQvFYvVhyNePeRqYrDOXlcv2LIk-Z_5ILGX9rlky-57hsDqLZBHjpPJk8iVu81fklaWSdhCEgUQ5XQJlhZcNW3efG0r6TjUFC8nMRA.jpg",  ▶️⚽️ C.R.K.S.V. Jong Holland v R.K.S.V. Centro Dominguito | Curaçao Promé Divish
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=227b32dcada33342b7a14a4edb776153:714b6b259dbaf1f14c7b7845ea703b51
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_09_12_07_faf4b3ff-8dbb-4a14-8be8-0b312c264079/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/CkZMIzM96hDo2fo7p_hgoaGGf9GO9ddYWsxAc9KLTALQeu_Al5rQbjfDOZT258jonApWjGk_blVH-JFhki2yOuamdAfgy3duk9k9p2jRV9b2PUcTTa5ahcV81Jav4C3PoFpZNyFofzUmJn-p8h_uUsj4GhQ6nC6f1a-tbhNjUgS-akVQbaa1jpxnIDHy6MfWHvLC5dKkxBPNo62bAZeW2yFjU870409_PubU7T5FBxs6Got0vflUY3xsUYFrTLsIIALlkhiZyas_j0tlXTuG-4kts-cSgxajRLxTdysy8PbzD_XQnyw2s43FrAo6LGTbsD-LbvwaaFQALsL1OjmCew.jpg",  ▶️⚽️ Nouakchott Academy v Inter Nouakchott | Super D-1 2025/26Time: 05-12 00:45#
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/ED79A5WYOI6PrPf2jZg13EeAdSp6uWOwubbwMUxQkqIZnu59iF3S8hEh91hOL2uoulrlLodbcO1bACt61J-k4ZcHNB7TyBg0rGNoGhgC1E7t20e22mYr_HZc-dFkZho0jnBkMhjnY5WRp3OT9eN0XUCmm7sCKjC0yPai7a4MvggASe_e-G5Kdku4tK909PaeFnDQwLhACDCGuGp6hhU6_viHHoel8i8gumxccc07sx5czciMMw47JKEuzmxQgAU0QXuNFkQOJSfDm2AvscT5mtIgYr_DsdOn708shK0EqSkxDwWCRqKjz2SNnc4kVrBNlfweT1lC5kgYRGYKt_l12w.jpg",  ▶️⚽️ Nouakchott Academy v Inter Nouakchott | Super D-1 2025/26Time: 05-12 00:45#
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=c4c27315d32a365a9926f2455dcc5c09:6ba89d3fad88eafc039fd98407c6ba54
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_06_16_04_59_22f230f5-71c4-44d5-9dc9-3981c96e449a/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/I8KbDgPnhBIsgDGTLkGxUygAKt7Wzh8vwXveZVF_iNsuTmjfrszWFBFxjm-tvo4JuVA2r-b_hoizwl1PY7vo3DQgaJOsQGR9DyX3l6AwsYY_dq528zvKUJ7DHg8hl3pHdu_dW7oBX3VvKGnPtBMlz-zm_sTjXIxKF03EKqKLXaSzv5hPMVlYsdWGXy9LneG-ZIPCHHYE7kTAdw_uNHq2QZL083JjwaQFF7Q2jRp4P6pe1zr0RMANDTtPUqRSx8UYTKBBiPEY91DbSvF-lOKUSKrT3Laqq5igvBRDNUQ0eHVO-HzXPJ26WqNV5qcP_W4OBR58eIv3yzGvEGyfpvfjOg.jpg",  ▶️⚽️ Masters FC v Mitundu Baptist | FDH Bank PremiershipTime: 05-12 00:00#EXTINF
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/WkyN7MaRiO2-dDpfrXORno3lfEByFum-Cq9exrfRgYYGVZ7QrcxfL1u3LMsffUtuEuiU9BUF_I8xPB15QAN73dzXlINbFnn37NFUdycUu0Mo0Dg6GxBy7zonaU0RzAe055hta_e498XCAzJcej9nLp6519c7bG99fAkxDQ-kToc-HwWWZ_lpTA7809Yc2Oq55eL5_oD4f1M9kjfVpOgSYY2m2LnleAvau8zwVInZtoY_CiKJ_15-vXWdKw-3LIh487gA-WJfDtPyimCQjHCmzIV3X_AKjSxZ3Nc-DdPUwgojhieez9zPUdG2Fn0i7sYcM8Nudb7CdsL1THv8cjOWXA.jpg",  ▶️⚽️ Masters FC v Mitundu Baptist | FDH Bank PremiershipTime: 05-12 00:00#EXTINF
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=7a282de9fb253c59ac384353615dd27b:f15cfb048b0e636732ebba7418fc6fcc
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_06_16_02_51_4ef4996e-f978-4c4a-8720-60eefb68fb06/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/tHshV57xd4CdgwKcqY0voejb2-p5oNytHcZ1P4Y9wCmjRxcxYfBs5DqhgCpRoO-c_xEnDpPC5lc-9sjKDItra7bvR8V3nJbcYqG8ZLsCPKXyNLS5Lrp9JHHJyHBW228PF2_gkCnvuBtClIL7w1Pw6T7iOHLDTxafeiIZ-Fk6DgRbm5KAGa6QduNEJXtmxz0C_mrRqfC-bDc01S1xr74gygG8peI_3mQ1FMDIFOmXeWkDm8YDGjlAKq21NbGTUAfWXTtC54sh8zAhAsO2S76FX_YzISyJUhx7imC3P6j98gGRL94yuXdT-QgUS-OMzYJV52vAFVHWuIxQ-QyRgtGqcA.jpg",  ▶️⚽️ Pogradeci v Besa | Championship Play-off – Final Phase | Kategoria e Parë 2
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/tC6d6EmQr8MB1Ak8OWxlptWneNTQDUhcOmK2vRFj84kLwutmst1OIUsxh-iDnQ4bTF-ig8ntFbkXURSAm5r7p7I22L5odhskXfEhghr4tzYlOYXGQFKIMyR1lRrC-TmoD9EeM9xRY_gbe1uivOFX5kc8oJSGhx32_9MGu-WG9Zbt2tAdG4Jegc6UQzb64jEMBuVncLOXV8VX9MZ72kAgug90qn9dZz01rOTzXDkZKN3NuAAERwbadfxVx91j7s7tQEapGAwtXa1rLdaohKnG44tiFPt89_BGpU9c8aodCrLxTjTJBIipY4-0v3nquXvSLvZgBNrSqfiZSjfNCE6sKA.jpg",  ▶️⚽️ Pogradeci v Besa | Championship Play-off – Final Phase | Kategoria e Parë 2
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=5893b8d992983129b37d33612a018e1c:4b5923e0e17ec8bc5f58a768ea7473b1
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_11_01_47_50f88771-d062-489c-af03-71f020ab959a/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/pqc1mfcj-ZxwNBKmGhEsmlH4G8zUJqKhDCsvoINRUMm7hetMIWNBn81i5Q1Nee7SHSWDVXX-AEAg4bu7T0o-G0f0xmSFIgVjlU_SRYJQ1aFm-93Ylf9rkkZByJTZ3HTrazyKrkJs1gsx_EjlKGJelYYzbv2kOQX9x8PtMcKOoCnYbbjnj9BW5ZzdXAG9iEMftUdNUDSdOJTlWIS4hs2NZQkozdz9iPgXti3JNryrODnKNkNwg7s50dHDHaJ6rF149qHkne6HI9elMU7GrG_Zgh9S0ad4tWxld4XeA3WQN3u2V4sbI56-8NxC9OquVaxom89NuVegLfQY3Kh7EZftzQ.jpg",  ▶️⚽️ Azerbaijan v Georgia | UEFA Development Tournament Women&#39;s U-16 2026Tim
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=be476787e95c39ed9c9cd78831915cd5:f728f5941ebc51bf8d1d28561d3925e6
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_06_12_55_21_e6385eba-460d-4b90-b9ef-a951c0407d61/PROD_CMAF_CENC/index-dash.mpd
 
