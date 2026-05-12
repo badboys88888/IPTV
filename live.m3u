@@ -1,21 +1,6 @@
 #EXTM3U
 #EXT-X-SESSION-DATA:ID="SOURCE",VALUE="Hady_Realtime_Bot"
 
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/3427/image" group-title="实时赛事", Los Angeles Lakers vs Oklahoma City Thunder (TSN SPORTS FHD)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=e51aa21f2a0fef9aabc120dfb655b52f:a12a987fe725a40b6be95cd84b15f689
-https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/7janu55dwc/out/v1/69a2a7041395406b970598f61680e7cf/cenc.mpd
-
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/3427/image" group-title="实时赛事", Los Angeles Lakers vs Oklahoma City Thunder (TSN SPORTS HD)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=c4088f5f265f9de50cffd80bf89308b7:2c4d2239d96d532b4ec2050653611003
-https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/h9urpo3cwb/out/v1/fde190f369484bc6b6117cc16cd82a9f/cenc.mpd
-
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/3427/image" group-title="实时赛事", Los Angeles Lakers vs Oklahoma City Thunder (NBA LIVE FHD)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=
-https://nb7.bpfiles.cfd/live/lakers/stream.m3u8
-
 #EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/187744/image" group-title="实时赛事", Bangladesh vs Pakistan (SKY SPORTS FHD)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=708a98b352bd4418a73a028edd84da8f:b1fa5c2bca4c4b57b924b748564532cb
@@ -51,6 +36,12 @@ https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash-sd/enc/tesivhccki/out
 #KODIPROP:inputstream.adaptive.license_key=709c812e1b4174002605df1d17d34a4c:0bbee6c9c20a0f065bf8369d54cbf83e
 https://abfjk4haaaaaaaampv6ofhkihi4r6.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash-sd/enc/qddnwqthpp/out/v1/6c25cddab58043a6ace0ac64d97983f0/cenc-sd.mpd
 
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/sPeKSMFoioCMe3hqO1heFJZfxiVOf9FN65UjJNNgPLfPs2EkOCWxpBn5iiDnchnqdJmLoFLFgL_2SVbvJXSdD8Ax4fwPhTHD6hFEJVvThFL3dtcogBcx0AgMNmsyfXM2vyKHZotRMiUG2_M1rvP11eF0_dCd_-5bAuQrqRz2Ak1g61G0ItC2rL2DgDejxHeuXghXWwr9ZNqNtSCXhF2iqGtqa3PaQzVXHrGG4QF6bqTGNm5XpizQvXvS6w8jQ6wyICQ_bz5Ho6sJUm1bHsvPAScfo41zjaUReVDGNDaviC4EHF7e1ldl6EwBk8BKK3sjlCMSpDgoFzs-mb8CzdceBA.jpg", [刚刚] ▶️⚽️ Auckland FC v South Island United | OFC Professional League 2026Time: 05-12
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=e2690a53bc87300096e8e4a617488eda:f45836a412e13a96f7dea18c734c96a1
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_14_44_36_c6547d9a-5cef-419a-b580-e94bc0c7df79/PROD_CMAF_CENC/index-dash.mpd
+
 #EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/fbtX4StDRCBhoBBNND2X9rQnaL9TdWbhVKh2oZqxfs-YCh7t8ikTl0iufrKPovIa4Fv4QjThOVFFVEENvn2TJtQ509UjsgBeZ3pfTbw702erh9SnVWu_xF7DzdiGH05MUlRgKTJ4DrZZneePF4qO-dHMsDiuoAxOpf1WuNKA9AYQTdYN30A8UcHo26KT9Oo_Xdwi8XfsEXXIwZOB_L8pxupPNYy7U5smpuxRSlyYsUBrnGJ-wzn46gVVDeM8RxbllEPCbUmBUPR4Esqg3h8_yXq2eiSHG9NVqjyoNRo-8l06kn8r5Y4hwmulzi6fUWbWZncNq_rNF4F_Jo3jAAkMag.jpg",  ▶️⚽️ South Melbourne FC v Bula FC | OFC Professional League 2026Time: 05-12 11:0
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=3d2140a269c73534b804725c3c5cef55:4ddda489b89412ce1ea7ebb01b77ca2f
@@ -63,7 +54,7 @@ https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_14_43_59_c55bc82c-0937-4ddf-b359
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_08_59_17_417de9d9-3df9-4165-877c-33d04d6b9a80/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/oU5_z0uHhkg_zqwYngDI0jiX2W6zzE3GglkntNK4p5bLut0GVERjlmweY2_j_-body-7lWLIcrxjnwJOeKJXmC3jJPE6fKai7dRR3ouzeUdRE9nlcOkQNE6GqW8Cpb1Ft1c-XPHzQ8wS8048IKaNhGqOUvrlWVzwgpJI-VcJLwluQeFS9hNaOfkYIaC1p11fAXVoKyU8IpUtrbxRqhwi75usL32fSeRQ5BAj2LnL8wOYc-zLTHhSNSrwsRJQuYtSSRsAOt073_ZVf2IRz0xmBotkhFCKgZATvrTDF1PvrCS3W0hsXMf5jKoTx6Q675cjSgzqgQZmCpp0U9rkAThXGw.jpg",  ▶️⚽️ S.V. Victory Boys v Inter Willemstad | Curaçao Promé Divishon 2025/26Time: 
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/CLG3cmLW4opX7ix9IJRJWbvKrLIBuMw1Gbp-7KefsyGjC7XPSo3QqncdPxhzXAJC00whH5nMJuf8rIYoxKW1-f5gEECxQf2cbSF9YXKeu3TNhq8_YFPBEve5zT90Rus_I8ZD3yVQ412D5oMDNd7DX33Q7dGFmydjG2ryJpjKuTOsypObblRlzV2Oohxh80Z0bFtWeAUaFCtL6cRwzclI4HXj-vk5Ub3lMlb-7wZK4oRYx-ien0oBW_vnsliMr4mSRVYKjeQ8V9ZE6TXMgVmHikWzdN10GABARsuCxdgtLW8VYnx5S0deqvSIghMyTigxSjcZt9FN9hYTvHOheEjfrw.jpg",  ▶️⚽️ S.V. Victory Boys v Inter Willemstad | Curaçao Promé Divishon 2025/26Time: 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=969ae9ff63e835b085553873b5ff421a:90ff437eb8179ffa1edb54bc0f2a7cd2
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -75,7 +66,7 @@ https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_06_41_26_4aebb9bf-32e7-4504-8d9f
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_09_12_04_ef7db2bb-6368-4ee6-923b-6370fd5211ab/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/m7u6vWjMqtL-3ueKlxLCCz4qllIybYRffSJoiKDF65mM_nxfKb6jLHrZ-S6mYIFarEAA2vQQM0NUySj6aq5lTVna-lKzhAQWvL2Rp-XfNDGtiuA69gVSL2Kw1klkJphLmTPrc2vAbMp2OMxCQDCXw7UQmd8ggUYo6OXYHYzzX6fFhvUCZoBJ2Zd7Q0m0aW6FsbJu7wS0hXXoT-EsIdg6ZNsJMkU7zkgKxiVWk0jlVEVObbT2xYnr2YMo2-GB66tKOOkPvpqC5d357usWYsIsN3RFsZPyz50PqDn8FOTwb7hPL71h4GrmynzgHUnsNKcGGPwzZ5vazSgkOluwTXpoVQ.jpg",  ▶️⚽️ C.R.K.S.V. Jong Holland v R.K.S.V. Centro Dominguito | Curaçao Promé Divish
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/S2wqKXPhPhI0G38HQMjO3lJ2GxFStSsEKJ94Y0_SN6VJmNWc3hMzYQc3YPNixoK7tpmd7s2qdqnlUw7hr2-nflKA0NABdX8tTGe9Za8Ipjji0NHxbJ2tMlXv3Uod6a5SfKXLiAwXivvDOVGU_1wXWrApLFHCeiDvD_TE34i5MhY5wZkAOBUa6-8kiAQJXXx3pZz1fhyxWhUf7XDKk3G7-za1btfXkD0xbEh0QfojiJhcdjDdZtpydF7WwBh0rXhSDW6uU5Cs5_s4NYhiqn2Uurc5q-pcXVmQPpGPI3vvv87-FCFTm73FCjt-FlkvWyWdR9A4H8msL-uqry3Ux3o5HA.jpg",  ▶️⚽️ C.R.K.S.V. Jong Holland v R.K.S.V. Centro Dominguito | Curaçao Promé Divish
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=227b32dcada33342b7a14a4edb776153:714b6b259dbaf1f14c7b7845ea703b51
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -87,7 +78,7 @@ https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_09_12_07_faf4b3ff-8dbb-4a14-8be8
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_06_16_04_59_22f230f5-71c4-44d5-9dc9-3981c96e449a/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/PBHeh_BCLN8A78BWlCUN_-ipf0U7KXd9NUysPqovQgk6d0JXvCaiH1Kq1ofSPezwU9P5T3CtAxPVyZnMnwMJYf4f0ZCMYwwto_nv9xbOnWhbYfq7TCorM0sTKm3_sd7hEnNMqb14E30BBR9jsxYJOa0ZBh-9LPt1UmDpAb_nAek9ZrVEUNsL6-k7Q43fU-rTw4vEPn7OhudeZY2LkSaZBaWT6I-orbXF9xgkUqDLnJEBPbebD-8DodOcJxRNMU73Tt-DDzCV8qz3YuiHKqTTo80RmwDQ8pjTp6NZKmCDkfcZxZPHD_4M9s6hsW8skrLxQPfDDFX6yTWVYVSRKiSaUA.jpg",  ▶️⚽️ Masters FC v Mitundu Baptist | FDH Bank PremiershipTime: 05-12 00:00#EXTINF
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/I8KbDgPnhBIsgDGTLkGxUygAKt7Wzh8vwXveZVF_iNsuTmjfrszWFBFxjm-tvo4JuVA2r-b_hoizwl1PY7vo3DQgaJOsQGR9DyX3l6AwsYY_dq528zvKUJ7DHg8hl3pHdu_dW7oBX3VvKGnPtBMlz-zm_sTjXIxKF03EKqKLXaSzv5hPMVlYsdWGXy9LneG-ZIPCHHYE7kTAdw_uNHq2QZL083JjwaQFF7Q2jRp4P6pe1zr0RMANDTtPUqRSx8UYTKBBiPEY91DbSvF-lOKUSKrT3Laqq5igvBRDNUQ0eHVO-HzXPJ26WqNV5qcP_W4OBR58eIv3yzGvEGyfpvfjOg.jpg",  ▶️⚽️ Masters FC v Mitundu Baptist | FDH Bank PremiershipTime: 05-12 00:00#EXTINF
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=7a282de9fb253c59ac384353615dd27b:f15cfb048b0e636732ebba7418fc6fcc
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
