@@ -19,7 +19,7 @@ async function run() {
                     if (stream.stream_url?.startsWith('http')) {
                         // JSON 部分带上 logo
                         const logo = match.home_team_logo || "";
-                        m3uContent += `#EXTINF:-1 tvg-logo="${logo}" group-title="API直播", ${match.event_name} (${stream.source_name})\n`;
+                        m3uContent += `#EXTINF:-1 tvg-logo="${logo}" group-title="实时赛事", ${match.event_name} (${stream.source_name})\n`;
                         m3uContent += `#KODIPROP:inputstream.adaptive.license_type=clearkey\n`;
                         m3uContent += `#KODIPROP:inputstream.adaptive.license_key=${stream.manifest_keys}\n`;
                         m3uContent += `${stream.stream_url}\n\n`;
@@ -74,7 +74,7 @@ async function run() {
                 }
 
                 // 在这里加入 tvg-logo
-                m3uContent += `#EXTINF:-1 tvg-logo="${tgLogo}" group-title="TG_Update", ${timeTag} ${title}\n`;
+                m3uContent += `#EXTINF:-1 tvg-logo="${tgLogo}" group-title="FIFA+直播", ${timeTag} ${title}\n`;
                 m3uContent += `#KODIPROP:inputstream.adaptive.license_type=clearkey\n`;
                 m3uContent += `#KODIPROP:inputstream.adaptive.manifest_type=mpd\n`;
                 m3uContent += `#KODIPROP:inputstream.adaptive.license_key=${keyMatch[0]}\n`;
