@@ -24,7 +24,7 @@ https://linearjitp-playback.astro.com.my/dash-wv/linear/2705/default_ott.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=6ff0e040d544ec3f02243865990f0c10:83728b47019abdb737aa36ed5f2951bd
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://astrogo.astro.com.my
-https://mt32.aa.astro.com.my/default_primary.mpd
+https://mt32.aa.astro.com.my/default_ott.mpd
 
 #EXTINF:-1 tvg-id="AstroArena" group-title="体育频道" tvg-logo="http://linear-poster.astro.com.my/prod/logo/AstroArena_2024.png",Astro Arena
 #KODIPROP:inputstream.adaptive.manifest_type=dash
