@@ -38,42 +38,51 @@ async function run() {
         }
     }
 
-        // --- 任务 2: 抓取 Telegram ---
+    // --- 任务 2: 抓取 Telegram (增强版：绕过 IP 屏蔽) ---
     try {
-        console.log(`📡 正在抓取电报频道: @${TG_CHANNEL}`);
+        console.log(`📡 正在通过代理抓取电报频道: @${TG_CHANNEL}`);
         
-        // 增加请求头，模拟真实浏览器访问，防止被 Telegram 拦截
-        const tgRes = await fetch(`https://t.me{TG_CHANNEL}`, {
+        // 使用 Google Translate 作为代理来访问 Telegram，防止 GitHub IP 被封
+        const proxyUrl = `https://google.com{TG_CHANNEL}`;
+        
+        const tgRes = await fetch(proxyUrl, {
             headers: {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
-                'Accept-Language': 'en-US,en;q=0.9'
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
             }
         });
 
-        if (!tgRes.ok) throw new Error(`Telegram 访问被拒绝: ${tgRes.status}`);
+        if (!tgRes.ok) throw new Error(`代理访问被拒绝: ${tgRes.status}`);
         
         const html = await tgRes.text();
         
-        // 检查是否抓到了内容
-        if (html.includes('tgme_widget_message_wrap')) {
-            const messages = html.split('tgme_widget_message_wrap');
+        // 在 Google 代理页面中，原始的 HTML 会被包装，我们依旧尝试查找消息块
+        if (html.includes('tgme_widget_message_wrap') || html.includes('tgme_widget_message')) {
+            // 兼容代理后的 HTML 分割
+            const messages = html.split(/tgme_widget_message_wrap|tgme_widget_message/);
             let tgCount = 0;
+            
             for (let i = messages.length - 1; i >= 0; i--) {
                 const msg = messages[i];
+                
+                // 更加宽松的 MPD 匹配 (处理可能被转义的字符)
                 const mpdMatch = msg.match(/https?:\/\/[^"'\s\<\> ]+\.mpd[^"'\s\<\> ]*/i);
+                // 更加宽松的 Key 匹配
                 const keyMatch = msg.match(/[a-fA-F0-9]{32}\s?:\s?[a-fA-F0-9]{32}/i);
                 
                 if (mpdMatch) {
                     const finalKey = keyMatch ? keyMatch[0].replace(/\s/g, '') : null;
+                    const finalUrl = mpdMatch[0].replace(/&amp;/g, '&'); // 修复转义字符
+
                     let title = "FIFA+ Stream";
-                    const bMatch = msg.match(/<b>(.*?)<\/b>/);
+                    // 尝试抓取标题
+                    const bMatch = msg.match(/<b>(.*?)<\/b>/i);
                     if (bMatch) title = bMatch[1].replace(/<[^>]*>/g, '').trim();
 
                     allChannels.push({
                         title: `[TG] ${title}`,
                         logo: "",
                         group: "Telegram_Update",
-                        url: mpdMatch[0],
+                        url: finalUrl,
                         key: finalKey,
                         isFifa: true
                     });
@@ -83,11 +92,12 @@ async function run() {
             }
             console.log(`✅ 电报抓取成功，新增 ${tgCount} 个频道`);
         } else {
-            console.log("⚠️ 电报页面抓取成功但未发现消息，可能被反爬虫拦截");
+            console.log("⚠️ 代理抓取成功但未发现消息内容，可能需要换代理。");
         }
     } catch (e) {
-        console.error("❌ Telegram 抓取出错:", e.message);
+        console.error("❌ Telegram 代理抓取出错:", e.message);
     }
+
 
 
     // --- 任务 3: 统一生成 M3U 文件 ---
