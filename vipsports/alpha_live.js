@@ -20,7 +20,7 @@ async function run() {
             matches.forEach(match => {
                 (match.streams || []).forEach(stream => {
                     if (stream.stream_url?.startsWith('http')) {
-                        m3uContent += `#EXTINF:-1 tvg-logo="${match.home_team_logo}" group-title="Live_API", ${match.event_name} (${stream.source_name})\n`;
+                        m3uContent += `#EXTINF:-1 tvg-logo="${match.home_team_logo}" group-title="体育直播", ${match.event_name} (${stream.source_name})\n`;
                         m3uContent += `#KODIPROP:inputstream.adaptive.license_type=clearkey\n`;
                         m3uContent += `#KODIPROP:inputstream.adaptive.license_key=${stream.manifest_keys}\n`;
                         m3uContent += `${stream.stream_url}\n\n`;
