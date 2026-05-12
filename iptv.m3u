@@ -19,12 +19,12 @@ https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/8m8cd46i1t/
 #KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
 https://linearjitp-playback.astro.com.my/dash-wv/linear/2705/default_ott.mpd
 
-#EXTINF:-1 tvg-id="815.astro" tvg-name="Astro Badminton" group-title="体育频道" tvg-logo="http://linear-poster.astro.com.my/prod/logo/AstroBadminton_2024.png" ch-number="815",815 Astro Badminton
+#EXTINF:-1 tvg-id="816.astro" tvg-name="Astro Badminton 2" group-title="体育频道" tvg-logo="http://linear-poster.astro.com.my/prod/logo/AstroBadminton2_2024.png" ch-number="816",816 Astro Badminton 2
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=6ff0e040d544ec3f02243865990f0c10:83728b47019abdb737aa36ed5f2951bd
+#KODIPROP:inputstream.adaptive.license_key=72ad6eaa1904540138487fffa3ad6510:17c19ad670a557e6882419d6923fad27
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://astrogo.astro.com.my
-https://mt32.aa.astro.com.my/default_ott.mpd
+https://linearjitp-playback.astro.com.my/dash-wv/linear/5172/default_primary.mpd
 
 #EXTINF:-1 tvg-id="AstroArena" group-title="体育频道" tvg-logo="http://linear-poster.astro.com.my/prod/logo/AstroArena_2024.png",Astro Arena
 #KODIPROP:inputstream.adaptive.manifest_type=dash
