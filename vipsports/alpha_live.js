@@ -38,65 +38,61 @@ async function run() {
         }
     }
 
-    // --- 任务 2: 抓取 Telegram (增强版：绕过 IP 屏蔽) ---
+    // --- 任务 2: 抓取 Telegram (RSS 模式，绕过 IP 屏蔽) ---
     try {
-        console.log(`📡 正在通过代理抓取电报频道: @${TG_CHANNEL}`);
+        console.log(`📡 正在通过 RSS 接口抓取电报频道: @${TG_CHANNEL}`);
         
-        // 使用 Google Translate 作为代理来访问 Telegram，防止 GitHub IP 被封
-        const proxyUrl = `https://google.com{TG_CHANNEL}`;
+        // 使用公开的 RSS 代理获取频道内容
+        const rssUrl = `https://rsshub.app{TG_CHANNEL}`;
         
-        const tgRes = await fetch(proxyUrl, {
+        const tgRes = await fetch(rssUrl, {
             headers: {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
             }
         });
 
-        if (!tgRes.ok) throw new Error(`代理访问被拒绝: ${tgRes.status}`);
+        if (!tgRes.ok) throw new Error(`RSS 访问失败: ${tgRes.status}`);
         
-        const html = await tgRes.text();
+        const xmlText = await tgRes.text();
         
-        // 在 Google 代理页面中，原始的 HTML 会被包装，我们依旧尝试查找消息块
-        if (html.includes('tgme_widget_message_wrap') || html.includes('tgme_widget_message')) {
-            // 兼容代理后的 HTML 分割
-            const messages = html.split(/tgme_widget_message_wrap|tgme_widget_message/);
-            let tgCount = 0;
+        // 匹配 RSS 里的内容块
+        const items = xmlText.split('<item>');
+        let tgCount = 0;
+
+        for (let i = 1; i < items.length; i++) {
+            const item = items[i];
             
-            for (let i = messages.length - 1; i >= 0; i--) {
-                const msg = messages[i];
-                
-                // 更加宽松的 MPD 匹配 (处理可能被转义的字符)
-                const mpdMatch = msg.match(/https?:\/\/[^"'\s\<\> ]+\.mpd[^"'\s\<\> ]*/i);
-                // 更加宽松的 Key 匹配
-                const keyMatch = msg.match(/[a-fA-F0-9]{32}\s?:\s?[a-fA-F0-9]{32}/i);
-                
-                if (mpdMatch) {
-                    const finalKey = keyMatch ? keyMatch[0].replace(/\s/g, '') : null;
-                    const finalUrl = mpdMatch[0].replace(/&amp;/g, '&'); // 修复转义字符
+            // 在描述标签 <description> 中寻找 MPD 和 Key
+            const mpdMatch = item.match(/https?:\/\/[^"'\s\<\>\[\]]+\.mpd[^"'\s\<\>\[\]]*/i);
+            const keyMatch = item.match(/[a-fA-F0-9]{32}\s?:\s?[a-fA-F0-9]{32}/i);
+            
+            if (mpdMatch) {
+                const finalKey = keyMatch ? keyMatch.replace(/\s/g, '') : null;
+                const finalUrl = mpdMatch[0].replace(/&amp;/g, '&').replace(/<!\[CDATA\[/g, '').replace(/\]\]>/g, '');
 
-                    let title = "FIFA+ Stream";
-                    // 尝试抓取标题
-                    const bMatch = msg.match(/<b>(.*?)<\/b>/i);
-                    if (bMatch) title = bMatch[1].replace(/<[^>]*>/g, '').trim();
+                // 提取标题
+                let title = "FIFA+ Stream";
+                const titleMatch = item.match(/<title><!\[CDATA\[(.*?)\]\]><\/title>/i);
+                if (titleMatch) title = titleMatch[1].trim();
 
-                    allChannels.push({
-                        title: `[TG] ${title}`,
-                        logo: "",
-                        group: "Telegram_Update",
-                        url: finalUrl,
-                        key: finalKey,
-                        isFifa: true
-                    });
-                    tgCount++;
-                    if (tgCount >= 15) break;
-                }
+                allChannels.push({
+                    title: `[TG] ${title}`,
+                    logo: "",
+                    group: "Telegram_Update",
+                    url: finalUrl,
+                    key: finalKey,
+                    isFifa: true
+                });
+                tgCount++;
+                if (tgCount >= 15) break;
             }
-            console.log(`✅ 电报抓取成功，新增 ${tgCount} 个频道`);
-        } else {
-            console.log("⚠️ 代理抓取成功但未发现消息内容，可能需要换代理。");
         }
+        console.log(`✅ RSS 抓取成功，新增 ${tgCount} 个频道`);
     } catch (e) {
-        console.error("❌ Telegram 代理抓取出错:", e.message);
+        console.error("❌ Telegram RSS 抓取出错:", e.message);
+        console.log("💡 提示：如果此接口也失效，可能需要配置电报 Bot 或私有 Proxy。");
     }
+
 
 
 
