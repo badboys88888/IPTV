@@ -1,5 +1,5 @@
 #EXTM3U
-# 更新时间: 2026-05-11 02:00:30
+# 更新时间: 2026-05-13 02:02:11
 
 # ── BR ──
 #EXTINF:-1 group-title="BR",xteve [191频道]
@@ -9,9 +9,9 @@ http://152.67.56.199:8082/m3u/xteve.m3u
 #EXTINF:-1 group-title="CA",xteve [194频道]
 http://144.217.68.109:8181/m3u/xteve.m3u
 #EXTINF:-1 group-title="CA",xteve [92频道]
-http://169.150.219.152:12151/m3u/xteve.m3u
-#EXTINF:-1 group-title="CA",xteve [92频道]
 http://169.150.219.151:12151/m3u/xteve.m3u
+#EXTINF:-1 group-title="CA",xteve [92频道]
+http://169.150.219.152:12151/m3u/xteve.m3u
 #EXTINF:-1 group-title="CA",xteve [10频道]
 http://xteve.tv.ncbr.wtf/m3u/xteve.m3u
 
@@ -30,11 +30,11 @@ http://nas.netwalksimon.top:34400/m3u/xteve.m3u
 http://mtt.zcbp.cn:9083/m3u/xteve.m3u
 
 # ── DE ──
-#EXTINF:-1 group-title="DE",xteve [141频道]
+#EXTINF:-1 group-title="DE",xteve [140频道]
 http://46.4.77.157:4000/m3u/xteve.m3u
-#EXTINF:-1 group-title="DE",xteve [139频道]
+#EXTINF:-1 group-title="DE",xteve [138频道]
 http://46.4.77.157:4004/m3u/xteve.m3u
-#EXTINF:-1 group-title="DE",xteve [136频道]
+#EXTINF:-1 group-title="DE",xteve [135频道]
 http://46.4.77.157:4003/m3u/xteve.m3u
 #EXTINF:-1 group-title="DE",xteve [98频道]
 http://188.245.230.44:8000/m3u/xteve.m3u
@@ -79,9 +79,9 @@ http://45.86.221.191:12134/m3u/xteve.m3u
 #EXTINF:-1 group-title="NL",xteve [365频道]
 http://46.232.211.17:12134/m3u/xteve.m3u
 #EXTINF:-1 group-title="NL",xteve [365频道]
-http://46.232.211.28:12134/m3u/xteve.m3u
-#EXTINF:-1 group-title="NL",xteve [365频道]
 http://46.232.211.18:12134/m3u/xteve.m3u
+#EXTINF:-1 group-title="NL",xteve [365频道]
+http://46.232.211.28:12134/m3u/xteve.m3u
 #EXTINF:-1 group-title="NL",xteve [24频道]
 http://46.232.210.16:18100/m3u/xteve.m3u
 #EXTINF:-1 group-title="NL",xteve [24频道]
@@ -108,8 +108,6 @@ http://iptv.pd1.pl/m3u/xteve.m3u
 http://tv.kinte.net/m3u/xteve.m3u
 #EXTINF:-1 group-title="US",xteve [160频道]
 http://67.161.193.132:32768/m3u/xteve.m3u
-#EXTINF:-1 group-title="US",xteve [102频道]
-http://xteve.top/m3u/xteve.m3u
 #EXTINF:-1 group-title="US",xteve [69频道]
 http://xteve.szepe.sk/m3u/xteve.m3u
 #EXTINF:-1 group-title="US",xteve [16频道]
