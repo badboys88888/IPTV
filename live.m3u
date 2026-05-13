@@ -1,56 +1,6 @@
 #EXTM3U
 #EXT-X-SESSION-DATA:ID="SOURCE",VALUE="Hady_Realtime_Bot"
 
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2885/image" group-title="实时赛事", Deportivo Alavés vs Barcelona (BEIN ENGLISH)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=7995c724a13748ed970840a8ab5bb9b3:67bdaf1e2175b9ff682fcdf0e2354b1e
-https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd
-
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2885/image" group-title="实时赛事", Deportivo Alavés vs Barcelona (PREMIER SPORTS)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=1a5df53609ebc9857898c490f4724918:77f62980d582ec541280796acf8b2d19
-https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/bcj3iscpd6/out/v1/fcd137b391214f7cb99dd4d7be90ca87/cenc.mpd
-
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2885/image" group-title="实时赛事", Deportivo Alavés vs Barcelona (LALIGA TV FHD)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=620e51b82596475517a27aa425c52280:2b9ba811e9c5aeafc8ae1b71cdca4d6a
-https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/k0duzgfejg/out/v1/70a50b1bda944628b8e7e66ab4069419/cenc.mpd
-
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2885/image" group-title="实时赛事", Deportivo Alavés vs Barcelona (TSN SPORTS FHD)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=f5c2b30eac11be1e8cdfc9585f5fe6af:a8198d17bf9b0da77450fbb919a38b2d
-https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/lzhmuzmjsl/out/v1/c171eeb214c749f2b351c79df317b21e/cenc.mpd
-
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2885/image" group-title="实时赛事", Deportivo Alavés vs Barcelona (FANCODE FHD)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=065051b99bf5cf8d9a3bde5cbde6aaf9:214bd176832872339ce184338320f9a2
-https://abfjk4haaaaaaaampv6ofhkihi4r6.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash/enc/inpyms8ezu/out/v1/1084d5c9a97a4c5b9f9554c88f486646/cenc.mpd
-
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2885/image" group-title="实时赛事", Deportivo Alavés vs Barcelona (FAST SERVER)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=
-https://play.ltwxsc.com/live/hd-en-6MuSsYd5pnKYRWLiNz.m3u8?txSecret=1f0e4cf8ea67bd6473d44b4765a3996e&txTime=6A04F641
-
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2859/image" group-title="实时赛事", Getafe vs Mallorca (FANCODE FHD)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=7e9239c1982d984a002df3ed049d0756:1b8a17598129a3618535c8fb05f103fe
-https://abfjk4haaaaaaaampv6ofhkihi4r6.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash/enc/fdb3pubmek/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd
-
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2859/image" group-title="实时赛事", Getafe vs Mallorca (FANCODE - SD)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=709c812e1b4174002605df1d17d34a4c:0bbee6c9c20a0f065bf8369d54cbf83e
-https://abfjk4haaaaaaaampv6ofhkihi4r6.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash-sd/enc/qddnwqthpp/out/v1/6c25cddab58043a6ace0ac64d97983f0/cenc-sd.mpd
-
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2859/image" group-title="实时赛事", Getafe vs Mallorca (LALIGA TV HD)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=
-https://livecdn-bp-livestream.rumsport7.live/stream/7/chunks.m3u8?is_vip=false&token=5c57ff950322b9958590e461a3f87acee528f057&x-sign=5063584e6ede0387e6126a2ce1640a17&x-time=1778698200
-
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2859/image" group-title="实时赛事", Getafe vs Mallorca (LIVE)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=
-https://pul-tenm.nbs3g.com/live/hd-en-1-4358312.m3u8?txSecret=c9e71ea7e1a645bb22c7252a3f8c4f90&txTime=6A061431
-
 #EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/1980/image" group-title="实时赛事", Juventude vs São Paulo (PREMIER SPORTS)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=1a5df53609ebc9857898c490f4724918:77f62980d582ec541280796acf8b2d19
@@ -90,6 +40,33 @@ https://otte.cache.aiv-cdn.net/gru-nitro/live/clients/dash/enc/rqinjldrpp/out/v1
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=
 https://image-storage-31.imgcontent.xyz/live/internacional-x-athletic/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/1166445/image" group-title="实时赛事", Toronto Tempo vs Seattle Storm (TSN SPORTS FHD)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=c4088f5f265f9de50cffd80bf89308b7:2c4d2239d96d532b4ec2050653611003
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/h9urpo3cwb/out/v1/fde190f369484bc6b6117cc16cd82a9f/cenc.mpd
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/21982/image" group-title="实时赛事", Mirassol vs RB Bragantino (PRIME VIDEO FHD)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=a7ac7bc5acb5cfcc624185a711db0522:9caf2138e40bc655c6d80f48e33a0d13
+https://otte.cache.aiv-cdn.net/gru-nitro/live/clients/dash/enc/rhslrrr7iv/out/v1/73e024d9565c4618b94e0f5731cf56be/cenc.mpd
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/21982/image" group-title="实时赛事", Mirassol vs RB Bragantino (PRIME VIDEO HD)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=
+https://image-storage-31.imgcontent.xyz/live/fluminense-x-operario-ferroviario/index.m3u8
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/lTm-lkiNV_HUTaz01KbHNQx5EQJp4LRlllrkRhjfxSUXzb_P86vxPq5cLPwlInS4gOG3Ok0T4y1JIl_d-ghnyUt0EuS9CsiL8FpmEzszkU0rOGPR4deBudsnWnfdrkpd_gXyGF4ou0gcoLbeTnHC5O3D3TjiYaBbroJFKtDS3EolyVyxRL0wV7o0eg8hh1Xsqezirv9bK9ScBf61Vz9YxXWF4IKslD2TpNfFj_NP1ktGdqoP4IHHJxjGndw6hisjQvo55bYA2QCAxG8TZN4HzGgeR4wQPn80nwwN6nMv0IHW5zHj6h0wTVEkegWUMJSxF_3U3JERJ3qM6n_xEOFVdA.jpg",  ▶️⚽️ Voorwaarts v Inter Moengo Tapoe | Suriname Major League 2025/26Time: 05-14 
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=3bdf78108b8d39e18f9c0c463e582adb:ca0995a179a4831c5f486cc5bddc2a8c
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_08_43_00_33866cf0-52e0-48f5-a00a-766d7ffd224b/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/UUtkewnp2zpR05swfJcVaCcmo0MHEtk8mxqRYJFotv9R1D3Kwcf8r_5HeepUdf4ZZ8AhLjWa_6WaX_JrCTrDxoSzdq3k5LrDE7avHi6H-nRianwFGEl-wSYoLa1wevovE0CJ2NeXjHqcuoyC3NuiksBWQY7nbK2dw1Jf-Sz7btNePrcJNFg04YGVqcRb1RGz0TXTWdF-OHPsETRVkB6eUglNK6UZJ16Pxox8XuojZxTDWxd6-Xj7YH0w5E8lO0wJEVgwL4iJ6_K8IWu6T6Hv8_FRmFcx3OF5HKCvJ2BpzQHgzGhjsDwWg9gZQwVrHwzDjfiv5bvUw3MBEub_wZQ-8Q.jpg",  ▶️⚽️ Bath Estate FC v We United FC | DFA Premier League 2026Time: 05-14 07:00#EX
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=be27f5b08f3c392d8f9e83e7e484245d:3679e5e2159b4265d695290f7a1e1359
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_09_22_38_96b563e7-e9c8-4ce8-9bdf-b295fafc4765/PROD_CMAF_CENC/index-dash.mpd
 
 #EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/JvweC_U1fBop15H-oNq-CoSTdoZf1P9T7J6QPgwSKUq1Nolgs_mt51zczjt68XtdWp5LArTz_IdlKTkg5WR0pPA7DkKbk8Oc4x9PD_T7pb9m6wswnOBCfcPCUr3vjG4WqsJqZ_mgoJtiXNil9Z8Kuh9Z_phoy6Kqix7P0bkzUPsO7rVl56FvokTS05oamancJNALMe5gFMtZEiF2r3TfMSAOoaHCWrut0Y1mxPgP7CAFRhnVJSVbgbDPPf3v_D18RHENpvBXmzkAdzcXpXcGjQ0IMLu2rzenlW5lnQlpRFTcQ_N-WsdyxvRdQsdL2AQRuLrfAoZ3GS0v4_LQOB7YYg.jpg",  ▶️⚽️ AS Bakaridjan v ASKO | Ligue 1 Pro Orange 2025/26Time: 05-14 02:30#EXTINF:-
 #KODIPROP:inputstream.adaptive.license_type=clearkey
@@ -174,16 +151,4 @@ https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_09_17_17_0758766c-3d03-41e0-837a
 #KODIPROP:inputstream.adaptive.license_key=74d404c2404833409cb92ffa9856b65c:4f0a2fc3264bacfe52535e9b5b3b4b75
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_08_59_21_872a5507-3a9c-4b9b-8468-7cdb5fdce3dc/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/bxVGJcLJgGA3i7BP-baklgXFsJcDxo0oDY92Ohe6ICCxglEY9tNSNI1hRHLCP8jKha3ACKw_NA8veNMz2JP81BJfU_N8aQAngt2vLgsUNMy9wHqWt6lPdSE_XXXQ2Gouk-ZsmD0pzrX3iTHqTVa8kvC71wXz8rfvGQ-4DnHPmwdd66ZNtn5qUflRoFu0cynZnpvMF42g54CKoPcUyKoNBFGJj3Z57tl3WVqzqBDvlfCoSPQifOzy6Eh0zdpyoxXEjmDXEkdAF6DEMymkgBDEl_VgoYjCM9J6vWHMU23r-wb_Mo4MiZZdqA9fdUQZ8IUpTupys0zAMRZm83Vap44O3g.jpg",  ▶️⚽️ Mahaut Soca Strikers FC v Middleham United FC | DFA Premier League 2026Time
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=6f91c1ac8cea3436b7078f926f5cf2f6:1f6783d90edba1cf180d7f80f5bd9379
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_09_22_34_730cb1bf-f868-47ca-9979-7e46fd3e44ea/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/CibZ6PfAtN_baK5uYLdU3PiHLGGE8hGBtWOghQfR2WFPi_-_2I0kqP2ejnpaiOhzANRyAP-o6VKo-5HYIEKvD8Dm8ZLhLbvN0HeLl2Am1ObWpNIygP1R-s7vHGMRsaLyfocKLLYRIs2XUv-TzzC4zYhiXI-H_IJY9E5vtyi-HO7ehTFXbYhROMIB5RS3akxO4o5JOUpuylMtnleIIpjKzMhmR3mWMQfjTbOJqUuy-eBWDDlrjkufLUZpzVO77uSg9gdf2wOZnIiWkC2usrRy5QQA8tM-qrx7h5zlcW302m9UfEkxmjyfRrlDnMf42rGVbvR1u2Ng5nxlWEaQ1LwX2Q.jpg",  ▶️⚽️ St.Andrew Lions FC v Ellerton FC | BFA Premier League 2026Time: 05-13 07:00
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=5b33ed4887c43401ad7ad8a6a979722e:f46c7d50558bb2866fee2a3ae9c72240
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_09_17_13_324dd4b5-10f1-490e-be37-aa388da294dd/PROD_CMAF_CENC/index-dash.mpd
 
