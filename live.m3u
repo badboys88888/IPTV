@@ -16,81 +16,148 @@ https://dice-live-oc.akamaized.net/hdntl=exp=1778758219~acl=%2f*~id=c7cd7823-86a
 #KODIPROP:inputstream.adaptive.license_key=c18e0a678b70572ca99f9efe1f297f5a:ddf3933d1fbc8c5d1f84870c3b56a22c
 https://dck1-ac-live.cdn.indazn.com/out/v1/814bffb9b389f652/0fb45955afd944b19d988688141c0da3/index.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/G4FHxXZh6nHI37jmWq0twvXNW8PsyGk8L7rFGlZN627oeblrr_ql4gwhKru_KJXGGzveLlV6nz3QtBa89v6fNOK1yIjCCHZHwDctYgB8GffHDVjQjwu0LtvomE836S5WNLvuvckRLpzURFfLGkFoniMsyzwx9dtZWnHQMTlyRxZB9vj20BVCL7JpBZBLMn5-N-kxvpZmMAjXj_WKsqBt7IVSDR7I-gVLdlS8_guMIugKd-sLiXWHFOTT1MthH2sssf-G2XWsSKOeGciozRzD2hIPMRlOWEvIwZ26nOZBWEzx9cJpULdY_xjznyUhmh5itEMz1JL_scY0nTS2iZzIhA.jpg",  ▶️⚽️ Tahiti United v Vanuatu United FC | OFC Professional League 2026Time: 05-13
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2819/image" group-title="实时赛事", Villarreal vs Sevilla (BEIN ENGLISH FHD)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=7995c724a13748ed970840a8ab5bb9b3:67bdaf1e2175b9ff682fcdf0e2354b1e
+https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2819/image" group-title="实时赛事", Villarreal vs Sevilla (PREMIER SPORTS)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=1a5df53609ebc9857898c490f4724918:77f62980d582ec541280796acf8b2d19
+https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/bcj3iscpd6/out/v1/fcd137b391214f7cb99dd4d7be90ca87/cenc.mpd
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2819/image" group-title="实时赛事", Villarreal vs Sevilla (FANCODE FHD)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=065051b99bf5cf8d9a3bde5cbde6aaf9:214bd176832872339ce184338320f9a2
+https://abfjk4haaaaaaaampv6ofhkihi4r6.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash/enc/inpyms8ezu/out/v1/1084d5c9a97a4c5b9f9554c88f486646/cenc.mpd
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2819/image" group-title="实时赛事", Villarreal vs Sevilla (SPX LIVE HD)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=
+https://livecdn-bp-iptv.rumsport7.live/live_abr/112521/chunks.m3u8?is_vip=false&token=5c57ff950322b9958590e461a3f87acee528f057&x-sign=a70083422448902de6347c0f85c83543&x-time=1778690340
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2819/image" group-title="实时赛事", Villarreal vs Sevilla (LIVE)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=
+https://pul-tenm.nbs3g.com/live/hd-en-1-4358319.m3u8?txSecret=61b46a2ad8d47ce55ae6e8aa3794a721&txTime=6A05FAE7
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2814/image" group-title="实时赛事", Espanyol vs Athletic Club (FANCODE FHD)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=7e9239c1982d984a002df3ed049d0756:1b8a17598129a3618535c8fb05f103fe
+https://abfjk4haaaaaaaampv6ofhkihi4r6.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash/enc/fdb3pubmek/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2814/image" group-title="实时赛事", Espanyol vs Athletic Club (FANCODE - SD)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=709c812e1b4174002605df1d17d34a4c:0bbee6c9c20a0f065bf8369d54cbf83e
+https://abfjk4haaaaaaaampv6ofhkihi4r6.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash-sd/enc/qddnwqthpp/out/v1/6c25cddab58043a6ace0ac64d97983f0/cenc-sd.mpd
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2814/image" group-title="实时赛事", Espanyol vs Athletic Club (SPX LIVE HD)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=
+https://livecdn-bp-iptv.rumsport7.live/live_abr/51328/chunks.m3u8?is_vip=false&token=5c57ff950322b9958590e461a3f87acee528f057&x-sign=c9db70e7c3e806d695bac676fa0c9030&x-time=1778690280
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2814/image" group-title="实时赛事", Espanyol vs Athletic Club (LIVE)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=
+https://pul-tenm.nbs3g.com/live/hd-en-1-4358311.m3u8?txSecret=9932a4f0cc643bd100da5733ebf70f35&txTime=6A05FAE7
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/1715/image" group-title="实时赛事", Stade Brestois vs Strasbourg (BEIN SPORTS ES)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=
+https://daffodil.ellitescripts.com/beines.m3u8
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/1715/image" group-title="实时赛事", Stade Brestois vs Strasbourg (LIGUE1+ HD)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=
+https://d1yi40sjj0ca0v.cloudfront.net/TVD2087/index.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/IOT2z6Go40mss8CA7jaWj-owI4JD1W5G7U6iP8eUwefT8lqmOW9PJsRcluIgShIxfkXWPZZ3N7mhIjVju_6ZmZ9lUX453U-ANQFWr6HhdAv2JTYiU9ypCVEavEOPwqH96jQs_U65QVbrT2Z00GbkkYF7wjzdzb3dVwKKs-Lq4L-xB4Rjad4Q9_f0sRifF4BPReioSxDP0A24WtE3z-KSnX2ACPfk4fy2hBoTP-4p5wYIiwhw-tA1BweAGpmifpAlGd0GWCY37YXRISLukMjvfKNc_hGO9EJzVmzJ1gtcbiy0nU6JurrMHFjlvZ0lFxE9PAolECZvBSi2jbbudw8ArQ.jpg", [刚刚] ▶️⚽️ FC Dinamo City v KF Egnatia | Kupa e Shqipërisë 2025/26Time: 05-14 01:00#EX
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=e92bced59fff3309ac2281403e9e9b80:624c786ab6057e9fe0643f55ad6834a9
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_09_15_44_b66ee9f9-09f7-4b3e-8120-827dfab3b1ee/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/YwBjjJ3SI5A70IIAKzg62qpONxT1fozVS58wD6W288lUp59ouhcy_d7D2jCejq_7f9Xs20FRWq8cemjMZKIy4mflhLbI6Iw7KQxtw0AWuAeWRER7qUQRsgLGff7PfuwHmoC1jJIH0Sm-ddXfMbyd0mGeFc6AjAHfSrkTE-QXHfzH7qCcICS_URVIcLzctZKFw5EKc9ePyA1VsVWlD1wzuuJRwRBxkCqoLQc3BCXBC2Fd1GwbhGMwcUItWdqU4UIq-RtQScKWpNHdwXirUITih1OJCDgxls0Ipy3fhOWLUczhsTyBbu6n63-LA2WgndEFDAFSz1LfPICXI7KAbIJlzg.jpg",  ▶️⚽️ FC Malicoura v Djoliba AC | Ligue 1 Pro Orange 2025/26Time: 05-14 00:30#EXT
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=3b8dc4831ade3c26a73009b9a84ec806:0ad05f83349c46f6573f583d6d66b1bb
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_08_17_45_036bad1d-ae41-4f8c-9312-6190097ae521/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/n7ZaRag5mfFHGthDoNj6u3gApSRkbv7zcQjrFyIG0enxp4kidwbd3UWvASwXEZ_weMzsNoCXAnsDqO9jh7Say3C7jZUf50z_zyERtkJSVy78RIrXdZUBAMT2wNupPxwRdZ6R5p7T5-3PwniAPC4j992OZ1v1XdzCBqVe6I0I2_8xDQ85PRisab9MDSB_AAVyslS0cYiOeHOIbQTQRXdYoUbamOmCDepcmBZWpANbwlAJPFZfiV1TNvJVkUAqlhKtRhmBPa5EJ4MqB6x0zpKkiM24HibgzDwu88yePxayeTz9_dlzrlOvT0EJdNNYHZj1LgwTuSsVaIOQ_oNlwCfIcg.jpg",  ▶️⚽️ Steve Biko v TMT FA | Gambia GFF League 25/26Time: 05-14 00:30#EXTINF:-1 tv
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=6a13c86501de309599325a408ffc4b96:14a3d0a8813eb403f9d6d9eaafdb8e2b
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_07_20_46_ab288239-c705-47b5-b98e-2d6401bcb31d/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/WS65PutfQs2c6YD4K5x8JYrF1OuR0mj_mNsl5PST2XM8iob57dMR9QjamX8PH3FbfiFeKXtu37rcA9xHzKW_6lYIYq-kt-nZuIyqkfTqKdpNALBlM94I1cRXMzE5A4qXFKpbWOSKDiCbwMl4-wGvz7wbmr4ZDyM92Iogvep_Tu01oAAr504wdtb1KETTjO13cjSCU-LScEetRJjAEb-dutihYxmqepWuVsBE23qziXGtr8j5Iu1u47FogeMbjh2JobAtm2WqAWsLbTRLAzWB9CZUDiQq7eHana0zoBm36wGi7HxNR3joxetOvgMb0tSkYDvsg517HxB0xIIh28YXvQ.jpg",  ▶️⚽️ Medina United v Fortune | Gambia GFF League 25/26Time: 05-14 00:30#EXTINF:-
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=33ac0f22df2d3a9daeccd9940cb83e8e:8c4ab0d48bc30687f1d280d97dc08d6b
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_07_20_38_2c669b35-9652-4f61-beb3-73fb33605038/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/Hc13dz2YMyVf30YBNMoQHxLZCw8uT9R7KEQkJa34p1hnyMrFkTu5ZFidOdMsFGox6nv9ZdNC8ow2XdX1mvjWKxOg1i5Sn4d60ccsA7dxEtRn7uj4wE1tHOy4KnRr8kXaZzyQewk5mKIbk2pcDtdCM4WEdwlkltkqW_e4_JtYFi5J_gYRx4JQuhUIs5ItIgpwi2NUI8y8SBzpSMr0ujO3EEZYqSAY4ZtLy-oMRo_P-bhoywCO3mHBAtyDMgXzI9u152g5Ar86_vlbUyoeP3MKaQu1gs0xoziprV-RN2RECLmQNe1fi_LlY2sF9ri4WLlKw5aouFsAhRMEq4JFd5bzrg.jpg",  ▶️⚽️ Greater Tomorrow v Gambia Ports Authority FC | Gambia GFF League 25/26Time:
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9081b361e1f53cb98a74eca0599e4a76:75d22ee824659992e5f04e1ae3146198
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_07_20_33_0d7cc8ea-0f92-4b03-a358-f5222ad99c9c/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/oiRcOJ2vjUBx-EVBKR0PbsOwMY75MX39Po8_T4xQKk834I7RRyTNMb7mDMgpU9MOK879LsF1OZ_YGZktso4iNauv2A5jdpcttxTJ3fQLtOyK-ObFC0J26Pz6JEQlu2FV6DoTWC43oMxnBabL2JRXP6LwlCBUfIRAlJMf1nUS7RB6ItMVo3R8NncwYmaFrD7Zi1Ga5Oyxflds7Vvj04ercNRZbAax0qEZioSlMciu1yOs8GDDldHzGWzM0Nrubb9Z-BZOHJvj5eL6qJJQy9Ao08vFbt1IJiusQHJamXiNFr7MPbKFeT5_CCgUjt9dEAGjmiGUW-pPh57QzzSNCfkb1g.jpg",  ▶️⚽️ Brikama United v Falcons | Gambia GFF League 25/26Time: 05-14 00:30#EXTINF:
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=32a24a4980733277b9439f8340a8a191:7ce3d8916dc598165d332c146d8e76b5
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_07_20_42_441667cc-388d-4ac4-8733-6378e0ea7884/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/qn-uROBEJSjyJs_4aQpGYKdtKaO7rl0cTlQbIn0h7v_cn1oBhbHATYGwa7UTJNelJZusti4K_G4-QyK9Jx-cIPpy7CEdfPizriEnJS5Iy9wV_1VReUi2FS-99WxL_yaf50U7rO0APRO-5RhhqlT1BWhn-Ah2rpAVI5shbgUqCJNn6-DUGaUhomexXK5cnEJePxdEGcdAfyzKS0EaZoxueutihvWJ3XFPY3tLmak2vzIDXozd4OblC7JODSHpiaD4E61CghoeMuw-UUrtj5Xbvp5OW5JWn8ALkFVjF-3mdGVyGkB6wpACWqlrasFiLlZB2oM61y6J-wh4T2mBxG04Hg.jpg",  ▶️⚽️ Paynesville FC v LPRC Oilers | LFA First Division League 2025/26Time: 05-14
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=1167a9234f2e36d980940c4bd8a852b7:81ed80a76f0748d5942bf82ebd9bbd43
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_13_29_55_966846b0-9b1a-4424-852a-c3314154724d/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/IKyK6MlW1WxsYPZ25-5C98j8w57oiIjVA0-ynjE9fZlwVr-qf6ah36urTLaOQ8pzX76Ekg35v3Oh96tmS4wYOenLfJsYMgxFhnn1Zz4PQpwiLDli4uTUDtcRZdbPQqFCMtLrXxd91YcK57HacKPO_yTz9fh5ceq4pV7VYKPalvpN2USr7G_NNEUCTMAsPqwmlELZMBuchxX59lqBEiOYVIUenrKzHryjwfew-8BxU8HPlVGtKlbnYUkvdVoGv_mKKPUTocAUFpGZE5pNCvwVPS1V8pFSYiC_Mgbr6pXM4jTJ0qzH0PET-XEzwZhKC537nmppX2E9yjHnmz8Od6Zxnw.jpg",  ▶️⚽️ FC Fassell v Watanga FC | LFA First Division League 2025/26Time: 05-14 00:0
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=4ec9e7497bf73c4f8cd7dce72dfb01be:4ba8ab7e12e84cfacff77873504dabe6
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_13_30_00_ac5d7bdd-3424-4ef9-b8ed-336e9842f144/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/N9H2oMP0UIdjuWQYDmNNO6Ap9aa6DHv481VokqvgpT-uMunLK0hqHbcnACsJUhkNOEnW7fTb4v1U5vDKcPbVItg_hcZqP2O8I_DEXGbvqs74tdum9f10eD1r0JFZ6PxjuIdLZPYjCnXBRaaC7xS_qpLwCSdeaXKYEoLDb-CS7v0_Q7Y8PHkoF3sUdupQav8XHnEtRy2tdxwl4D7-yooK96KpcZfrrTlb8SLV_sd02Ot8DNHNDXF7LLyYn_Eo0Ai_5c-yqoT7ahYRqrmO3iHjeZ3chcd-NXu8gD9aL0r5uEPoahxNz0ibMg1AC0CHnV2HJFbIM7uKQRT276Cwg1vbOA.jpg",  ▶️⚽️ Tahiti United v Vanuatu United FC | OFC Professional League 2026Time: 05-13
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=f5f7834793413b4dbae6d101e9eed7d6:58d8f1049a352f864b061873c1f2223a
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_12_07_10_15_e6fd99fd-73b1-4548-9754-0a2a66234f51/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/KgKDRT19kezXaIN9tfDzwxJ8eyRb2kSZIDOYWzmPGGyGY07MuADq3-dXyl72Knc1H3YCayKKWLwOcwbl52v1vj5kkTogl0CoYIXiSN2sNfe91Dve-5wKyJP4Ly_yRDfApsIO_tHfCLBSFXEkTWpsqz6WEOLNfjsdraxmpl4U7MQ_CpvEpHRGnngeoHNSpo0y_gpc73qIR7YAtGI3zrTq_2FmYIKCcB9bqZ2LExxTV5iyUv0QfxpDALjOrgxcBbFwu9XSjIH9H77FuoIIxl2aJTxCUnd2BmRQGxXrw-p-Pp40QIcM90AKV0ZvuG-y1m3gNVSiTv014HrHlIwnyGuooQ.jpg",  ▶️⚽️ Solomon Kings FC v PNG Hekari FC | OFC Professional League 2026Time: 05-13 
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/kcVsBf1e_BAoZNw0SR5Nk8dBETYCZUZ-b_KYM7PILNicE250dz319po-9V0uOP0PQ1rESMsy9tlBZDaAtNX1eSMvuJPKclfwizW-9DRG7SLHdsi8LpFukqGt5dosZ54_4MJXWESead4bAZFEIAoFaT-8h29i39BIELq1yvfoLzjlyGQw-Spw32S8oh85kCXhIhdhT_yrjw87lfcyuI4Q3ed0ROF5cArZ9i7e88u580KL9JUtuk84LHYpWU0-rohdghNxzDAtlgna1uofhmlypoV33AAt_tcor55_KizBOAK3MYVjVPHjrU9HoU3xP1mly3Q-08FqZkrWMCByloLpWg.jpg",  ▶️⚽️ Solomon Kings FC v PNG Hekari FC | OFC Professional League 2026Time: 05-13 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=c9ebdb035f493185a07f7780eac19b54:0fe52637973c1618bdd742739c80ee5a
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_12_07_12_48_61139c04-1e30-4305-ae4c-6a6c33bbc537/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/ZkeLHMnGjGQsFir4v-4aesFWhiI4zgqk2-O3d-4Rv4pruwyVWowMRSrzyvtBKoYiaRAsHCLdsmImwWouhnRGEw9TpFqs0_L_zeIEjagiqDQotz1iqvJfem7Uju2SSZNZ1BQf_Gedr_V2yWK3k_wKWDb2IKcxBUHhlr6Ro76FLcS7GVsObqO0SPHCvyo0xJiT6IElz2k6v7MEt88Nm7Ev3jFLXtcQOMp3zOMmRrYf9TmpEZ4oB9kORyaySqLxV-5msdOjtZAi8h-rG1IZqGPob-1Bgq3ahvc5DP6QtH_XF5mjZM0UTingY7FSQqF4E6jxMcHfc90S3_9rUMeIuofaIQ.jpg",  ▶️⚽️ Wotton FC v Gall Hill | BFA Premier League 2026Time: 05-13 09:00#EXTINF:-1 
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/fOjn7gYxSLNzuZM46r9wroIJRX3B0pwjjb34DUMvJkt7W52SjuZaZwUq8F9DvqsFdkktvVUMiWu7Ee3nGgrd-virKFsCcWtW_4JAHbg43u4OMZ-kl0_M7Q5PzFgIN5gk9PqrgBBlg9tUgs0MIJCHkoi2ipmeARlCe2zwoonx_KnKt8i7UNZ-qWQFF0gnJujbU8uMzh9B4VxSIBU7YQZzAD3_KMjS7j_9XTH7FgDdRFR0Y1LA_rG_0PNrCmWhpqNse-YkGmkqgpDGiYWld0cxyAnYcZLl7GqF3VoYKM_h5rmPnq33gVSeWzImeOKRnId9p7ITtTfzwLiJt60HXHvxUg.jpg",  ▶️⚽️ Wotton FC v Gall Hill | BFA Premier League 2026Time: 05-13 09:00#EXTINF:-1 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=ba4e94530f6b34799ffcabcf768fac3b:d84b2d799c327e4f9a2dbf8ef092e129
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_09_17_17_0758766c-3d03-41e0-837a-bd2c989a34db/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/o2sI9yODZQlJ0uKOQKfl22zlml61HvXxy1cUraZPHjeo4RVMBoBR-YeN5LqCsi4UL7Lhf_OeS120Z9ZSHoEXheYFxqe9vv50JjzbO0gy4ZlwD7I9GJ_FkChcl2-xH1qvof_bMI8SYVkcD2giFdEJrF3UIUVJPFn6NJ5Th9Z1LbQfwhi29luAYg-gUtb0B_TOHJbTsdpsHxsD4O-ALl-SkupdtSyU4jRt_AzTH3SjbsWYWazdqHvIhvoYZtDti684DGRuf973XszIw-B_xmdC8gA49SIpPkoReE-C5fJTHjr-JJxL_HeMyWqXiklmj1Qz-8ok1wcTu4EEIw3jfFX10w.jpg",  ▶️⚽️ Brazil Juniors v Estrella | Division Honor 2025-26Time: 05-13 08:30#EXTINF:
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/Mf_FVwsC9ewNuL4CWawzmzfyvdMS_8OIPtb2vYL7riC1DHL33_yajDNK7K1FejbuyJ7BIAavopu9JKZF964xEvteGkuCSAyr31dv7C_HdwHE0F9JsoyGLKsIOmAtutiwKIXZ2YBphs74ha4P6fbeSltEe26Vbe9LVZmPK6df5WjnsBvuYOQVadwY6lUxobS2t023wR4NdDO4plEZ1OCWXlbt1YmH9fhfDfQB6brU21NUx-TKuZOhXX-yPFhTBQRtwbCojjVM2E1PschgvU3bG0Z5f_GkdKnCojkwwtBoAyOdW4_bMwX4uRE0TciCpc-qyi354g9is92JeA6kql0LGA.jpg",  ▶️⚽️ Brazil Juniors v Estrella | Division Honor 2025-26Time: 05-13 08:30#EXTINF:
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=74d404c2404833409cb92ffa9856b65c:4f0a2fc3264bacfe52535e9b5b3b4b75
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_08_59_21_872a5507-3a9c-4b9b-8468-7cdb5fdce3dc/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/cFjHkhVdfflzy_SoAU8iiUXgfzq-PC7uOF7D5_bBk8gfM2RJT0mSHTFT_VpsYPhYwDGpoT2-suN4uRhfDDo7M_49_SQBKR0U9vv-PS0ydqo6Gcd_SgXZGviIv9FW-7cAJLRfYuCpmiUbAS2_TW61oG62Mc5qtMi4eH4TrRv26ewVCvztfBmGEUXhtiI2dtwAoLwYkJPDCqQ2T6CxTI2jAOm6jmDJ2EGhHoZLMuhyUHqsilsQ-jW48qB6MbVMHBc6WJCVlFCjQ9YQRFLMxkItygUND1QEuSh87XpNlKtL3A4bcLqDm6URTINErAXHucXpy5xac1T65NjLAin2xB0n2Q.jpg",  ▶️⚽️ Mahaut Soca Strikers FC v Middleham United FC | DFA Premier League 2026Time
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/m6J-dLXNBNWXPszHI2FRSlKNxXApyz8-3wclbMKv1fOU-L1nVhN3M02nHDgav3fjnvod35SMJoFWU6MBN6YDjtDiHm0BEaenEvHAFcbjTVS9Y6Nj8ZsO7h8QVRKrsknOm8cDPNI_HSZbp9iQ6SO490F_zddW3Dh6jmCwHssAruRFPw8Rhwdqc0bOHI6fPScDgEDCGfbNSRjt_cYP2QonASNxf7GujZ_dfok_czL_VkfNymQeK9VC1ck3v12cp8EBbwWyz5wvejfepVCoGc_BgpmazYKBZ9IMsLlEETFyKLBQDcKlui1AoaqsqS0Gogu3eWmjyyDtOKkvSMHTZYXyew.jpg",  ▶️⚽️ Mahaut Soca Strikers FC v Middleham United FC | DFA Premier League 2026Time
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=6f91c1ac8cea3436b7078f926f5cf2f6:1f6783d90edba1cf180d7f80f5bd9379
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_09_22_34_730cb1bf-f868-47ca-9979-7e46fd3e44ea/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/c90mBqaS8AJJzrf6Q_GuiViShIiI7zGx6WVIu5ZMZZ9xnXXnVG_1zVuXpKhVdbso_zP-tGOl-KyU5vApZD3cMtvwy4dxHaiec0gwjr4EpjL0_c3jGoaJELTU8VLcw28EFsQ4SkNh0HJRw_qugBwVy3KGoz5iBi6W0lnlVuj2rsMhOpmHQCHbkPidnbUZaVma-qDDuvF-9fEUCiNvBHqc-DV5pWe8yMG5ATEr0Qpw8o-n8SnBd-o_pG2g75R1qVJUUICcDwtG_Tmlo3I9eCvRbwTvFjTMzucXHvQ9oZZXgVex46agb3CHzabiOtQCi5VpZlPhaz8mg05Qg8WJGqogvQ.jpg",  ▶️⚽️ St.Andrew Lions FC v Ellerton FC | BFA Premier League 2026Time: 05-13 07:00
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/dd4aHrh6uIq03cLG04qT5dh41CqPnTUAQje6I_rSeidJ-4RIziW8IgNOnL5yU_J0AriI_hBFMwGnGjEGo-0wUKb66HCRaC8KggxLVSEyF8W9Ouz5khIAvqT-16UJEBhKtOHFfyiZY9VzDknpgvZhCkRoe-KqR50dd6McuZOCFxifbD4Jh2AFL9Qa6vFEO7vTRLwWT0aEMAqYnsn-EDSBL-E1aAxZMljnNSoHx-bjOV_lZ35Dby3KkTidw-JEoUAaeD21i0sOk2zyttKePVRPd1trgxnA9ryeo3rto20ysxMiK7mAtqRsTDlGyHtPFDowfUKTlTHFvOxI3Su5OcvnIw.jpg",  ▶️⚽️ St.Andrew Lions FC v Ellerton FC | BFA Premier League 2026Time: 05-13 07:00
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=5b33ed4887c43401ad7ad8a6a979722e:f46c7d50558bb2866fee2a3ae9c72240
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_09_17_13_324dd4b5-10f1-490e-be37-aa388da294dd/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/P-iiGggUpCCbkZ-87z6M580wG3WPduLTZxAEcJokzbBAqcnBgX_tUHvN-rqiXYp1_qxT7bmrxVHGZAjArSnStppwcNDa5ByNLZjhkRwv5YgDq_VhMAKFbjqL_99BoRB6SbA-pIX3eJCdmNWjlV9jHfGDpu7nFH0Fmvssq-8sHdULR3W8nyAhqoVwYHaFk1G5_eizwCkC9DSxPYYmqvIYzmagHnNUiGDwK9HZJUE4bqoJrUp_UEuFVqRXTBbB-Y_pgmJljs741QpT1jhTtXepJq94IMjVE95WMWVPOLV1M__1sb3Ey6exTMzdzEdR38Hidd6qiNbNXmiiUpf9mw0BIw.jpg",  ▶️⚽️ Domagnano v Virtus | Semi-finals - Second Leg | Campionato Sammarinese 2025
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/VIkmPol19ZpTOxc6dUj0syOWExzmTijaSQor_P7P11Dmsh0J_W3s8qqDms7tTNTYdo0pqNvzj8tJ2k_qCI6J9ojtQCvcQ0vIo4HFHzv5PgqjopdQeu3aXl8h_I4iMSRKyAohjuJBjyh7uyB1ujAKGhljA3z4L099pCfDIWGv7CLZT1QCakudyVxxahAvUijHOC818-cXw01To35kchZDmTAvy9dqx38msXqUKtXVIIvpHT2qcT50i_SWDyyLnO-zX4aRAQ0MlrBnv018xyYvbw4pQKfw4mXbmqZQLIYZGWZRmZmayLSv8WfV9Kq1h5das8b1WLocBDY3u-_nl8gA_A.jpg",  ▶️⚽️ Domagnano v Virtus | Semi-finals - Second Leg | Campionato Sammarinese 2025
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=aa02074c6a693eafb614b2cb478d10b4:7f4a4b23d4d45050428fe71366a1f427
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_07_13_06_51_982f09e1-9592-4a13-9086-ebc5dd91c53c/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/PqzjmpscOMmBmr93GpsYb3UrzNbOPgdQQnOM0ZCzB6qP3MwnxS2wtgmr4d9keY1wOqQOLG1Mu8Hb9uH-zTZ4R1g9VOUmDdUu0v4PtImXU1oVigznzFNl-Yex-HHp4382jHTXquDKAALQVZ0QnNsBFxUbeIoNDrBA2MpGeScmfhYc15fOQjk-cNu1cTGjuFnbQvAlMqey74A2u7ph3VHhQxVLszJBVvprsSZ6ZrSekVDRQX0C6-GxZTgq0Fx1uW07EDczX9kzITJPXUVVE_T02ZEeunG_Q_G2Hp0GVBAhsmRPeJ49Z-GTJ8lWrXb14rkyB8u1g-0-0jenI0ac3CP3kQ.jpg",  ▶️⚽️ Chemal FC v Nouakchott Kings | Super D-1 2025/26Time: 05-13 00:45#EXTINF:-1
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=c295db6444ac3ec094a960fdcf3a6bf6:d55f645d51b0c1b9b13ee3b983fe8c35
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_08_09_53_52_111bb595-d543-4b52-be74-4b01382b3619/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/og4rF02t8gdsiKS4PbyGiSEeAa8SEEPIDdJxDEDp1syHXC3jDgOTjWvjaxfyeWXxOXej9MljjF7KWzB1HpZSlb2EdZCMCo2Cku83ZAqHbacZnBWXHaZiwWbfwD7NgoxOS2OaOSa5vFEJLyr3I577Uvza7d_gCuCDqUX6sDkOmj9d4uL-5uSpdm-s64MnXhNOdOvdxsJfnp28koAvYc9wBrOq8J3UwdbVpaqUfR0i4369o5gIKKi1-dAPM2TkzhMNY7ya2l_H4tm2dT5zpn5G-ZQH_Bt2O9jnjTg4nXZbFnmx70bd9V8GleHOhcR2HJL8Ol1gsiPq39srpN9tOSRXGw.jpg",  ▶️⚽️ Team Rhino v BST Galaxy | Gambia GFF League 25/26Time: 05-13 00:30#EXTINF:-
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=a6d8cfdb66463c3eac5a07abb0d5416d:35abe5a5139a1626d38da81491c44ab8
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_07_20_19_bfc279f3-fa10-42ff-a116-b1e6a249a82f/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/SWwBgnnsSsDoOqGtnZ07L2rHqLDlvNRfCJQIGOgSJD_V4mjxhbCZGPN1H_kWhOjEs96-sgHl-XW3OFx_r56j3X14Wit59uH4fYuWqVt7fJS5o1dFnXoC1HvsjTOOryFJWNx9uO8yr89YLkTJ7_fZPqpYx0OQHr_EOzivJ9YVj607zyIeFgGWIYTvMXDFiD7zVL9I-qQhvLufxqtBvJcgI7Wp19SL2We1DexrbPdh6M4-XvQx-JyDxJ3RcSmESRLBmLl31Ls-gkUgi1TGd5vJ9ca_VC5tShSsy88HW_nmWOSxeMCwwx6-KZQQ1KZY0Fx4XrQ3jGu3hB4FSKkEx4OPQw.jpg",  ▶️⚽️ Samger FC v Real de Banjul | Gambia GFF League 25/26Time: 05-13 00:30#EXTIN
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=5d36c0f7614637628bae999e86b60bb0:b9e1e406980de5715e1b77c42fcd3c4a
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_07_20_28_e5eca610-6856-42a4-93b0-96958f2944a8/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/qX3JTHKhjsM62wLsD7Ak9K7DfOYd3HHIwIFzaKUA_L3lybM6gnri0llYiTDmsp3dz3YudrwUsk44dZVL-xTd4FVL7RF7fYBEs6EFWG1Zioue5eU8bfmi06KHTqdR0ziuauWAcP5DeAdBNumKl3XK0M4heDa8aZJ6GaZ7fAjySYTiCKeKK-AqFjUl4O8v5fnZ-cCjHWmhM2TckeenQf-RFZSuQLskHg8EZqBYO2eHARUIIeFqIhAK6vC9w2C5YrTR7EQFq1MBmoPg2wkgZPZU-75k3Ia5lmgM6kDsXCfertnQy6xopF00ULNN6Q6xKYccDixapnhGUWiH9uNa6BOYYQ.jpg",  ▶️⚽️ Hart FC v Hawks | Gambia GFF League 25/26Time: 05-13 00:30#EXTINF:-1 tvg-lo
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=93310cd9f10e3b99bb4a971ade8ed20b:58a77b59a8d2634a5f7e470d27250366
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_07_20_24_c028ae51-076b-4f9e-a77d-4c6383df313e/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/GUUNXVC0_2QnsKaEZS1sijS4qwT9aYF2tiZQJfiD3lyBxhWkZsTZOE70sh2X30kriQQvZ4_dz9nyu_VWT2OfRqLykb_iU-iV_MVH8s4GjGY9Im26YfjEfdEMpOg5G3uTFezL1UTklY-UPBCCDYpmGfYxGEi-kpNVqXm0u5wzbwhZVYdrsqbQhEXOcF_DNWMXxVwSIpb6HFOxU-J7FMdqSUNFhIshpc3JC2HEbTFW0PB-mscKFqSrPhNUdzBiZ7HpnaTJvZqoqf6khn1o5o2AfaUkWY8ScWLkch5rLllgE_j42KCUFwkA0XR5IZZM1axUxl2j6M2vAKPjOVaYpA6oEA.jpg",  ▶️⚽️ Bombada v Gambian Dutch Lions | Gambia GFF League 25/26Time: 05-13 00:30#EX
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=cea5bdd3cd8a3d308c42a2299cf507bc:f2ac3c40aab06b45090fcd693c4af1e1
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_07_20_15_03217fc6-7b04-47aa-8daa-992defdc9a8f/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/q32xa34rhlriNbQbzssG3iMVX7YR3Qq-fsstz49B9LILHHVvh2NBm-UTsxlNG3O6H9Qx8tWXpVZlmnE0qOvka8WNbUDQ4eG4SHrjL3XqBaNgN9td2myH52iwOLNdeGXtlWXKfuw_sOxCiRt8D93uHYxMsJ3T-MW8XGG_TtpHB0sLNBYsaBE6VIx8SXbZdr5w3otsbBoH50RWQm8IeQxOb1mDFM2TQaFpSjl6MhLcGEJmzIKj8ychDxsVsaMZWzqWv63VuaHjTLu6EKUUHDrQoNuMw0GwVyIDwmcvIHFrIyS1qnYyYPnbYWN9vKrwBiOOQTzWK8BUlsdW2ofKnML3ew.jpg",  ▶️⚽️ AS Fan v Espoir FC | Super Ligue 2025/26Time: 05-12 23:45#EXTINF:-1 tvg-log
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=e2328918c43d391e89336d80ee10b49e:805ccf3d3bb19f7c765320d850f20f50
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_12_46_08_8728a5c1-b110-40ed-8c85-784290017f57/PROD_CMAF_CENC/index-dash.mpd
 
