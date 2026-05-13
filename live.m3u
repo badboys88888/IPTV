@@ -1,6 +1,29 @@
 #EXTM3U
 #EXT-X-SESSION-DATA:ID="SOURCE",VALUE="Hady_Realtime_Bot"
 
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/257523/image" group-title="实时赛事", Vegas Golden Knights vs Anaheim Ducks (PREMIER SPORTS)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=1444f4235529f183f0a5a486befe9cdb:e5e3fec67a1bb3472a2089c8a0a2557f
+https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/m6sqanvm2m/out/v1/f6beb46c6e9a4132ad739f3ca27df6aa/cenc.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/m-i3SsmiummRkSeU3OkGHCZr227Wg32AgNrMobfjknsoNJZ07ll2ddqUzJxQo4z_NbsqkMvxM-x8-pJLZlnUfbyLthA29NzBrNRKz_W2v_Un60IDGpg9wOJxM7aBbIby4kbbPf_z0ArHno60xlKtNNBO6D9_7JQ40cFsr6xyjAjHfzQaOMkHe6ZHGXh5ra9vsA6cKBTaZ7-XUtMwDtXUHj73R1GAOiX38jUAh4XOkS4lJ4I9DDh-1_PLizkW4gM1Om3sZeeWF_wsJu2M0xEcqqdwRosW0ruKvmxZqx4uVVQt7v4ZB642y-q8Uin4HFa-1yJpg9-7U4UgVmqns0NDRA.jpg",  ▶️⚽️ Solomon Kings FC v PNG Hekari FC | OFC Professional League 2026Time: 05-13 
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=c9ebdb035f493185a07f7780eac19b54:0fe52637973c1618bdd742739c80ee5a
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_12_07_12_48_61139c04-1e30-4305-ae4c-6a6c33bbc537/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/iVTcEv7ft8xVPc-Iqv3fY9r0xSloApFQTUNTz2focvO6MIhehGxB8JOKenSP1uhxzQ5bIw_l68bqhDEBl7vbQtNZx0iXcgFopbk-QaRAbghr1w4yfZvk7f7Avgh-FrgOjH7UhqMneegCcsBiZOJwr_TiYCWsfQfa6nPvt0pUHCYbikLUKu-sUS00bmNkOBU04A5rvdI8dc9haip4RKjZae42TvENa-hcEqXzIlUCKSqO4x4tTzPpKqx3Z_sp2Qfsx6kEuBuL32So2KRo6MamFB4nrflF-wDrCR6NuI5ryuwv3M3obUoJXsM6yHNr_lGely-bh02F3dhnEiSN3KApeA.jpg",  ▶️⚽️ Wotton FC v Gall Hill | BFA Premier League 2026Time: 05-13 09:00#EXTINF:-1 
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=ba4e94530f6b34799ffcabcf768fac3b:d84b2d799c327e4f9a2dbf8ef092e129
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_09_17_17_0758766c-3d03-41e0-837a-bd2c989a34db/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/EkAtbg02KmidCC0GooWWPaBh8P_tBh5s_SmaLLkfjLBhi7rlBfXIhQa9evshQ151ii08NqFaGis4LjfMkTLGsvQN65VY24gJ8PfZwhxHGf4AgQL4g33wdIbvrQ5BFa_9gpYtiStPT4hDG7vYd4s_z8OmKx9hUA8yKLOu543lCue3FLTqyr41_td8_9gSUWqJ_Og9EPSvZjWabW7hijS6v5QywbPXzo6XH9XVYSqMUSrWuk8Qa8l0JCNhKDAO9fgm6sMf26anWI_CKPRa3qasJRlJIHyzCMfQ9HxHPxNBjBNg-Hky0mZpKAt9uYFTpz8_MPMxg-vZp9xx1Eqtjzjv3Q.jpg",  ▶️⚽️ Brazil Juniors v Estrella | Division Honor 2025-26Time: 05-13 08:30#EXTINF:
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=74d404c2404833409cb92ffa9856b65c:4f0a2fc3264bacfe52535e9b5b3b4b75
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_08_59_21_872a5507-3a9c-4b9b-8468-7cdb5fdce3dc/PROD_CMAF_CENC/index-dash.mpd
+
 #EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/GPuOY34ZppMLZlI7BBdld5zCI4pU7UwGq2bYvF7v8V6LRRQRollhs_XkrIBL0fqVyHhYO7xU47bYN7t3Ppo4-h5uh9K5BAwrqMCS5KhS1LvoVS90xRbE-o75VujlIBpB6dhm7GdgYQ1EsEDSY-QlaStQI4GehXZgrb4HwvV9e7q7YIqq26hWhCzogHbWZvVob0hfcPxiwtKqmlJLYO1u4Ihvt0E1YPh1BLkb1iFXS6jKq0sVtc45rySiRCqW-NIuaT_DgEaPx7kZXJ0g4WVBIZGjCQBPkqBqivYz1guH6tPHwl1qBdMO8KQ65qnvX5vRBgqJINazu_Mt03wQf06A6g.jpg",  ▶️⚽️ Mahaut Soca Strikers FC v Middleham United FC | DFA Premier League 2026Time
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=6f91c1ac8cea3436b7078f926f5cf2f6:1f6783d90edba1cf180d7f80f5bd9379
@@ -60,16 +83,4 @@ https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_12_46_08_8728a5c1-b110-40ed-8c85
 #KODIPROP:inputstream.adaptive.license_key=e2690a53bc87300096e8e4a617488eda:f45836a412e13a96f7dea18c734c96a1
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_14_44_36_c6547d9a-5cef-419a-b580-e94bc0c7df79/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/EXoPjvul0R8WN0as94mFmr1JdAbQj37LUETPrw6oGWQ_LgF2f_0wR9OlaLlFbfKe_IP4pnLyAl4eUECuPK1g7oIAhCC5jfcrO7UPjX_z8A9w_ppyG6gjQG6HLqghLWrJvTyj1rnu9z8Qt-zeS5BtZCpPLhxdJiI13d3OjLomk0xiEUQD9dKmqVK3HlhcDsxvqcilFYGHUs7FznpezPPNtnKxYcteguUUyefTSfNXKWzGjU3jrZkUXWR2hlxv_fQoWyF9lXHpnrTe6aKPpFDqC7F_bAIRweLQQMbs6LEB2ViwxR6to2I1zhedvXiBgQO5dVKPuXWQiL7xM4w-4GV_7w.jpg",  ▶️⚽️ South Melbourne FC v Bula FC | OFC Professional League 2026Time: 05-12 11:0
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=3d2140a269c73534b804725c3c5cef55:4ddda489b89412ce1ea7ebb01b77ca2f
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_14_43_59_c55bc82c-0937-4ddf-b359-d7de6c11a57c/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/treOfa1Su998NsbVg_qD995IYUDISYxbrhZFE5QQgcMYLmcAiiI8p8XnHJlS4DWdFCCz-E9lczWxz-h4Twznumwq5nCyNbk-7zFUzfEFQqnnoOUvUl15aSdPjiIBTccEMJtUXKSIIbukezBC-weBMZb2awBiITbQHFMKATi1hZ-cD2V5Jd34m7ZMK0rChbsuYeNlvKvIqcTetIxa3Blxw1svHQ-XA1dxkaSfd-fbf5FNqGaq7CdlJbEH9zz8T_yRPvcTP6MfrCxkQoNnuEFfhrKAfkzm3mQlchRWprvUfSgRwYdXxWWufD_YeYSgg3hgZryx41-HBJ1La7E6Vj1guQ.jpg",  ▶️⚽️ Nacional v Estudiantes | Division Honor 2025-26Time: 05-12 08:30#EXTINF:-1 
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=26b3ea26ee533a53a291ba7b6787092a:8ddee54935ae4cc9b2da5a238fbfb240
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_08_59_17_417de9d9-3df9-4165-877c-33d04d6b9a80/PROD_CMAF_CENC/index-dash.mpd
 
