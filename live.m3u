@@ -1,7 +1,13 @@
 #EXTM3U
 #EXT-X-SESSION-DATA:ID="SOURCE",VALUE="Hady_Realtime_Bot"
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/irzcf2kwaTwzsv_GmrxCCmn6s3kZ_oAytFq-i-H_Mdvd31nqsrtFDdcreWgjNRns0VvbiOWWj9OyP-uyKuRrs8NApV93pl771fkCpCkDwqGHy18R6Kw5za26RKvcUXm6YwPXRy9MXuIaioOpx3A1r0yEbh0BfOXnFDoaE6HqsSgF7gGH2jTfvXpRdEQklaARZyYyHMM-4K3UDuNr0UGddHP3o1B6o7ECrMATrE4aoU8X3To6I36auAFl7eM3cPmvslP4UpFET02n0sgmSL0RJXYMXtKtCitkzYPXox6YHUqXSDCPyAUpg9bpm8NSE2kC2_AIzTY684xSmYeu_1ARyg.jpg", [刚刚] ▶️⚽️ Broki v Flora | Suriname Major League 2025/26Time: 05-15 07:00#EXTINF:-1 tv
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/rBZl_oU_sUovBa6qseom5XrZKgdC81vRY8heYyo5dzGGHUNwsVjEYGthLQa5w4XoA525zbVkotWBifUP0pqtJDD2_5SoHaLf4TXr3Pf34vxguhHk-j6FagKBswET9-LUxN90t3WYhKIpEKPfzFJo6wQLWK4DmKcQR58fA_x4qgnzz7uPm1zuUEiKm_lPvuWYFRKGR4QmHoP2ZtLjtnzDJA-VgHHII2raskQhtH0smWJ7NZQd90DPfRUxUrWtPVqbnQRE5t5MmxljeXPRW7EKjAH5RXA9N4TBLfYBEO1WGtkQ7NFVNwo18NkR2GW7_eH92Fy9esUKPeVcjIDhvkKzeQ.jpg", [刚刚] ▶️⚽️ Old Road United Jets v St. Peters FC | SKNFA Premier League 2025/26Time: 05
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=f873fa513a6e3aa5a169128429962ec5:d71bfb9fcf77f61404b37d5fb48af546
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_13_14_28_00_c53caa41-54a8-40a0-8edc-49c587c2f92c/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/irzcf2kwaTwzsv_GmrxCCmn6s3kZ_oAytFq-i-H_Mdvd31nqsrtFDdcreWgjNRns0VvbiOWWj9OyP-uyKuRrs8NApV93pl771fkCpCkDwqGHy18R6Kw5za26RKvcUXm6YwPXRy9MXuIaioOpx3A1r0yEbh0BfOXnFDoaE6HqsSgF7gGH2jTfvXpRdEQklaARZyYyHMM-4K3UDuNr0UGddHP3o1B6o7ECrMATrE4aoU8X3To6I36auAFl7eM3cPmvslP4UpFET02n0sgmSL0RJXYMXtKtCitkzYPXox6YHUqXSDCPyAUpg9bpm8NSE2kC2_AIzTY684xSmYeu_1ARyg.jpg",  ▶️⚽️ Broki v Flora | Suriname Major League 2025/26Time: 05-15 07:00#EXTINF:-1 tv
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=5f64bddf6cb73088a14e72d3a198cf72:2493ac409f7224809f5744021f8a4756
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
