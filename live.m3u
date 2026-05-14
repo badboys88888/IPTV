@@ -1,6 +1,12 @@
 #EXTM3U
 #EXT-X-SESSION-DATA:ID="SOURCE",VALUE="Hady_Realtime_Bot"
 
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/irzcf2kwaTwzsv_GmrxCCmn6s3kZ_oAytFq-i-H_Mdvd31nqsrtFDdcreWgjNRns0VvbiOWWj9OyP-uyKuRrs8NApV93pl771fkCpCkDwqGHy18R6Kw5za26RKvcUXm6YwPXRy9MXuIaioOpx3A1r0yEbh0BfOXnFDoaE6HqsSgF7gGH2jTfvXpRdEQklaARZyYyHMM-4K3UDuNr0UGddHP3o1B6o7ECrMATrE4aoU8X3To6I36auAFl7eM3cPmvslP4UpFET02n0sgmSL0RJXYMXtKtCitkzYPXox6YHUqXSDCPyAUpg9bpm8NSE2kC2_AIzTY684xSmYeu_1ARyg.jpg", [刚刚] ▶️⚽️ Broki v Flora | Suriname Major League 2025/26Time: 05-15 07:00#EXTINF:-1 tv
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=5f64bddf6cb73088a14e72d3a198cf72:2493ac409f7224809f5744021f8a4756
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_08_43_07_de846885-7161-4391-98c1-dad9e9581d55/PROD_CMAF_CENC/index-dash.mpd
+
 #EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/M9Tq5W7PauWbUcvCmzBqtfkaH9fCJnxXAdCWcdWoywqYP_e2bkepO_Rr7FqHeurP30lVtthl5ggWg9s-8Hl4YlvgCtWdvpIWgOtSOf5K-WE18jj-6dCWqN8N9hMPYVm2orHbRhLHqXjdii2wdU-RXw3IKhQ_8L6Kxhnx_WoqPSS_d4-3-xtfj_evkTWRIijbA3nOF4oTMdzu5wUdu9zk6URCZAdZSVrBWGWmcD8Sv5QmAlyXDJkSEBM9y7W6IpzmuI50iw40fh1yfYCf60K7XYy4HszFFP3gDYzFZ6cmtV1cJergHfkTlUlX5-4rFMxTcO_f-Nn2m-igVTGH2TWJ8A.jpg",  ▶️⚽️ LISCR FC v Freeport FC | LFA First Division League 2025/26Time: 05-15 00:00
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=e1e029a51f713b6a931cc7c298a5f4d5:71cd325fd7803040a3daeec251537d39
@@ -30,16 +36,4 @@ https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_08_42_34_ad12f229-60df-4445-8cdd
 #KODIPROP:inputstream.adaptive.license_key=0460d04ef0f23db9bd4977872402cbc5:2efafc9282ff6b96a2c6cc1b11c16fc6
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_08_59_26_cb3c3db2-644d-4786-9394-10b59ea9a41a/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/dPXA2FogBEqtu7K0-4IXjELPlSTtOfxAX-_ncT6Er8xwllVqcDgLw7PRV5y36MTczkAnVGFx1JsjYcFvI4UcFmDX7TEHRrp2E-OvpOU8y1LncR-Nhmfcju8iY6K6LjAKZmTGLn_63ds8Ug0l8hjYK3R1u_Wao1AfJFqSiAMyAdhcFi5oqZV8AJU7R-j4wHV5kJqGzdmf3Upn4axQz0EFxdtBS7DXuO-0zd5mn7khPzaABmafs5YNPIyk4FiDsKm-scWRKVRl-yhTkTyT49BwHDoTV6T1Euu9LMkNrkZaEQac6ugkWTSPpsNiEnOsAJwkC1Uyz6JQu6zUbGJi0B8tFA.jpg",  ▶️⚽️ Voorwaarts v Inter Moengo Tapoe | Suriname Major League 2025/26Time: 05-14 
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=3bdf78108b8d39e18f9c0c463e582adb:ca0995a179a4831c5f486cc5bddc2a8c
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_08_43_00_33866cf0-52e0-48f5-a00a-766d7ffd224b/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/pySFFAJt8-wC0rjDGdDoNFe6D7dsAFTNJ8qEcfkHVxcMHUdM5CF87hUpUkwojLTPCMeRpDHR5LHVfCj2_Ogju8-q6l-DapIELScw27UXaDENDVQ4hpHGahK21Gd3v6cLgwRY4JhSrR33O5RyJ1Fz7Feb48BAQru3IQs88Bg9Ry7uSC8AZpdno3u1kO7K9tKcj7SU57h6EfB6Ktc2SEDZCyqrC24kRa5igmLkTZUECzKujYtdrosFXZ1AALP_L0dCKBL-rCE-wTjdoXf3mdSIz2NQu4oCiI8awisAGyAktRiedT0xKXecvXw9WXfVXJ8p2XUXhwdUuqZwXqqXGwKUYQ.jpg",  ▶️⚽️ Bath Estate FC v We United FC | DFA Premier League 2026Time: 05-14 07:00#EX
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=be27f5b08f3c392d8f9e83e7e484245d:3679e5e2159b4265d695290f7a1e1359
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_09_22_38_96b563e7-e9c8-4ce8-9bdf-b295fafc4765/PROD_CMAF_CENC/index-dash.mpd
 
