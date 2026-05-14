@@ -1,60 +1,91 @@
 #EXTM3U
 #EXT-X-SESSION-DATA:ID="SOURCE",VALUE="Hady_Realtime_Bot"
 
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/1980/image" group-title="实时赛事", Juventude vs São Paulo (PREMIER SPORTS)
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/3424/image" group-title="实时赛事", Detroit Pistons vs Cleveland Cavaliers (TSN SPORTS FHD)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=1a5df53609ebc9857898c490f4724918:77f62980d582ec541280796acf8b2d19
-https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/bcj3iscpd6/out/v1/fcd137b391214f7cb99dd4d7be90ca87/cenc.mpd
+#KODIPROP:inputstream.adaptive.license_key=e51aa21f2a0fef9aabc120dfb655b52f:a12a987fe725a40b6be95cd84b15f689
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/7janu55dwc/out/v1/69a2a7041395406b970598f61680e7cf/cenc.mpd
 
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/1980/image" group-title="实时赛事", Juventude vs São Paulo (PREMIERER BR)
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/3424/image" group-title="实时赛事", Detroit Pistons vs Cleveland Cavaliers (ESPN TV FHD)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=56b79c1782b30e6b6fc973b0e8fd4104:fa38aaa865a57eda7c77444697ba8ed3
-https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/nelfyucw9a/out/v1/6ffb2c365ad14f88b154591beb43d1f6/cenc.mpd
+#KODIPROP:inputstream.adaptive.license_key=326058ffe1cd4d3383781b36ca9145d1:99d405d46f114eff96789673e57d0121
+https://dice-live-oc.akamaized.net/hdntl=exp=1778796599~acl=%2F*~id=f9aaa618-2abc-433a-ae81-580ba52768f2~data=hdntl,aXA9MjA4Ljg3LjI0Mi4xOTkmZXhwPTE3Nzg3MTAyMjkmZWlkPTkzODU0NiZvaWQ9MTU0JnR5cGU9Vk9EJnVpZD14UlJxbzl8YmNhZWE3Y2YtYzMzNy00MDM5LTgxNTgtM2MxY2U0OWU3MjkzJmNpZD1kY2UuZmlzZmVkJnB0PW51bGw~hmac=3fbf81d800b2753d1d66b783a20c7a37a68ffd8010f23a1aaf1e1856cc1970d3/dash/live/2093723/219038-321034/manifest-d.mpd
 
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/1980/image" group-title="实时赛事", Juventude vs São Paulo (SPORTV BR)
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/35547/image" group-title="实时赛事", Connecticut Sun vs Las Vegas Aces (USA NETWORK)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=4bbcff3289d457b4dd5dbdd21221de9a:c4906b9a9f8dda3c0725bddb8c497733
-https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/m7duvnk2bu/out/v1/d1ad69118b5647309b1eb7213affdb3d/cenc.mpd
+#KODIPROP:inputstream.adaptive.license_key=
+https://xstm.250909.cc/live/SPORTSFLUX-PRD-75441-100/3015d8e2ea17/195.m3u8
 
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/1980/image" group-title="实时赛事", Juventude vs São Paulo (FOX DEPORTES)
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/3682/image" group-title="实时赛事", Colorado Avalanche vs Minnesota Wild (PREMIER SPORTS)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=d1a163914db8ffad2c3e94f979896a0d:9728800a3959aafdd5b0bcfbf3768811
-https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/vkpoljjpkj/out/v1/502bcf68b3514cd28a220e6f0a43816f/cenc.mpd
+#KODIPROP:inputstream.adaptive.license_key=1444f4235529f183f0a5a486befe9cdb:e5e3fec67a1bb3472a2089c8a0a2557f
+https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/m6sqanvm2m/out/v1/f6beb46c6e9a4132ad739f3ca27df6aa/cenc.mpd
 
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/1974/image" group-title="实时赛事", Vasco da Gama vs Paysandu (PREMIERER BR)
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/3682/image" group-title="实时赛事", Colorado Avalanche vs Minnesota Wild (ESPN TV FHD)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=a01e1e0d5fb145b8b33190588490a27a:bfd9e3b0866e49cbae1bb7f7116451c9
+https://dice-live-oc.akamaized.net/hdntl=exp=1778796598~acl=%2F*~id=8171d523-c770-4ab7-abb0-193ef3644d0b~data=hdntl,aXA9MjA4Ljg3LjI0Mi4xOTkmZXhwPTE3Nzg3MTAyMjgmZWlkPTkzNTYyNCZvaWQ9MTU0JnR5cGU9Vk9EJnVpZD14UlJxbzl8YmNhZWE3Y2YtYzMzNy00MDM5LTgxNTgtM2MxY2U0OWU3MjkzJmNpZD1kY2UuZmlzZmVkJnB0PW51bGw~hmac=af2ea76f8205dc291c82c9b80c1386c0e5746e919fcb8168c1012fbdfcfa04d6/dash/live/2093724/219039-321035/manifest-d.mpd
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2012/image" group-title="实时赛事", Remo vs Bahia (PREMIERER BR)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=9dc40460c93087aea84d6315f08ecb64:f69c8d4624fddff4ca89bd0b31bdc4a7
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/oy6rp0jwmf/out/v1/580ecf12bad24979baf8dd993dce053e/cenc.mpd
 
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/1974/image" group-title="实时赛事", Vasco da Gama vs Paysandu (SPORTV BR)
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2012/image" group-title="实时赛事", Remo vs Bahia (SPORTV BR)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=3de028eafb3b2caffec03be1c1c818b3:8fbdd8a9ae6748696bb13e547bb093fc
 https://otte.cache.aiv-cdn.net/gru-nitro/live/clients/dash/enc/dsa3hwuhd1/out/v1/631b48c8d9ea437e8309d1a4b55acef5/cenc.mpd
 
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/1982/image" group-title="实时赛事", Coritiba vs Santos (PRIME VIDEO FHD)
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2001/image" group-title="实时赛事", Ceará vs Atlético Mineiro (PREMIERER BR)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=51394da99a5b49d25f253ccc87e0e045:fba4ac0c7199ed634e69820277cb5092
-https://otte.cache.aiv-cdn.net/gru-nitro/live/clients/dash/enc/rqinjldrpp/out/v1/bf6c4f84f1fe4a1b850e19a0c9d16e8f/cenc.mpd
+#KODIPROP:inputstream.adaptive.license_key=56b79c1782b30e6b6fc973b0e8fd4104:fa38aaa865a57eda7c77444697ba8ed3
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/nelfyucw9a/out/v1/6ffb2c365ad14f88b154591beb43d1f6/cenc.mpd
 
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/1982/image" group-title="实时赛事", Coritiba vs Santos (LIVE)
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/2001/image" group-title="实时赛事", Ceará vs Atlético Mineiro (SPORTV BR)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=4bbcff3289d457b4dd5dbdd21221de9a:c4906b9a9f8dda3c0725bddb8c497733
+https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/m7duvnk2bu/out/v1/d1ad69118b5647309b1eb7213affdb3d/cenc.mpd
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/87166/image" group-title="实时赛事", Jacuipense vs Palmeiras (PRIME VIDEO FHD)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=d7acb1a27fef944a16ac5a24d1daf515:865afde5561d492bebe8074da07f74ee
+https://otte.cache.aiv-cdn.net/gru-nitro/live/clients/dash/enc/itnxm9pzh2/out/v1/fa857febc7a2488a95bdcdaa17d52955/cenc.mpd
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/1041936/image" group-title="实时赛事", Golden State vs Chicago Sky (NBA LIVE)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=
-https://image-storage-31.imgcontent.xyz/live/internacional-x-athletic/index.m3u8
+https://s3.us-east-1.amazonaws.com/emre.gundap/knicks.m3u8
 
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/1166445/image" group-title="实时赛事", Toronto Tempo vs Seattle Storm (TSN SPORTS FHD)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=c4088f5f265f9de50cffd80bf89308b7:2c4d2239d96d532b4ec2050653611003
-https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/h9urpo3cwb/out/v1/fde190f369484bc6b6117cc16cd82a9f/cenc.mpd
-
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/21982/image" group-title="实时赛事", Mirassol vs RB Bragantino (PRIME VIDEO FHD)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=a7ac7bc5acb5cfcc624185a711db0522:9caf2138e40bc655c6d80f48e33a0d13
-https://otte.cache.aiv-cdn.net/gru-nitro/live/clients/dash/enc/rhslrrr7iv/out/v1/73e024d9565c4618b94e0f5731cf56be/cenc.mpd
-
-#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/21982/image" group-title="实时赛事", Mirassol vs RB Bragantino (PRIME VIDEO HD)
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/1041936/image" group-title="实时赛事", Golden State vs Chicago Sky (HOME CAM.)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=
-https://image-storage-31.imgcontent.xyz/live/fluminense-x-operario-ferroviario/index.m3u8
+https://pro.packcast.top/newz/5xyJcnUCNM3JjTT2/162.m3u8
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/1041936/image" group-title="实时赛事", Golden State vs Chicago Sky (AWAY CAM.)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=
+https://pro.packcast.top/newz/5xyJcnUCNM3JjTT2/153.m3u8
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/1947/image" group-title="实时赛事", Cruz Azul vs CD Guadalajara (LIVE)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=
+https://play.ltwxsc.com/live/sd-6Mwe5HYjCpdpRkw31Y.m3u8?txSecret=46216054bdfa6d76a7ad6ccb8ed3a4b0&txTime=6A05592A
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/3447/image" group-title="实时赛事", Sparks vs Indiana Fever (SKY MAIN EVENT)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=
+https://iptv.852851.xyz/ch/8e7f4d61756a334943773b8e3c7b1e48/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://serveproxy.com/?url=https://img.sofascore.com/api/v1/team/3447/image" group-title="实时赛事", Sparks vs Indiana Fever (USA NETWORK)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=
+https://xstm.250909.cc/live/SPORTSFLUX-PRD-75441-100/3015d8e2ea17/195.m3u8
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/r8R4TcyuiBv_XGUfOpBqySHj2oqnfqOTQWgkX9y6aGhEeoN0x8uKhS_jnPA4R-7ASiqsy9XvDgCaFPxvyEm9g-kwva7_k46ZPpk72FYYCPtaaC6SpnXXsxD7AXDN-3x136v5tBxJOG5aufyvUc_sgZ7h1zgkPjEfEXXH9damILTrjoEf26CiQzTtUCmkbny2czlx6vqPJ53ulbpCMmXD0i8-GyFiQLU7j__ZtZ2YHoUo_I472L3vmlymklBiapoYlGfiQA5VqkYvTq5wQ_BmJxonk-H1ef8RMSTyVAymGVjWLewRHPKngGdjoY6cVAsbOX1LQh3xn6a_KhAMnfalWw.jpg",  ▶️⚽️ Real Koyari v Caravel | Division Honor 2025-26Time: 05-14 08:30#EXTINF:-1 t
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=0460d04ef0f23db9bd4977872402cbc5:2efafc9282ff6b96a2c6cc1b11c16fc6
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_08_59_26_cb3c3db2-644d-4786-9394-10b59ea9a41a/PROD_CMAF_CENC/index-dash.mpd
 
 #EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/lTm-lkiNV_HUTaz01KbHNQx5EQJp4LRlllrkRhjfxSUXzb_P86vxPq5cLPwlInS4gOG3Ok0T4y1JIl_d-ghnyUt0EuS9CsiL8FpmEzszkU0rOGPR4deBudsnWnfdrkpd_gXyGF4ou0gcoLbeTnHC5O3D3TjiYaBbroJFKtDS3EolyVyxRL0wV7o0eg8hh1Xsqezirv9bK9ScBf61Vz9YxXWF4IKslD2TpNfFj_NP1ktGdqoP4IHHJxjGndw6hisjQvo55bYA2QCAxG8TZN4HzGgeR4wQPn80nwwN6nMv0IHW5zHj6h0wTVEkegWUMJSxF_3U3JERJ3qM6n_xEOFVdA.jpg",  ▶️⚽️ Voorwaarts v Inter Moengo Tapoe | Suriname Major League 2025/26Time: 05-14 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
@@ -133,22 +164,4 @@ https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_13_30_00_ac5d7bdd-3424-4ef9-b8ed
 #KODIPROP:inputstream.adaptive.license_key=f5f7834793413b4dbae6d101e9eed7d6:58d8f1049a352f864b061873c1f2223a
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_12_07_10_15_e6fd99fd-73b1-4548-9754-0a2a66234f51/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/hq_aYWBjkG3TILW47no7v_Nwb0cbm20hWAP5XWMk2Uv36d4NoQaPF2yc7no4RLXc-jEziZeFrpliTBaKogdFs72t9tcBnGy0UOu9ziljNRioMsDwx6ph0Ro9Ev2OON9GpTRiQKExqpcjOALZtlOJj_P98bCSjTpxok52IXSKI-Aif5J2Q-A5dYrGlHKWuDDzANylMW_abIbYPRuP---IpRzjGSO8768QgmmuubbnuyuWB9wOS_pXz5J2ZtRst1LnaOXAMdBAzlX_mmD1q5LowCeXvPYskOOODLYDqgbyIPdzpK8fqRWTf_1l9Dy6iSAHXUIA3cmy3t8R4vVRNv1VEw.jpg",  ▶️⚽️ Solomon Kings FC v PNG Hekari FC | OFC Professional League 2026Time: 05-13 
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=c9ebdb035f493185a07f7780eac19b54:0fe52637973c1618bdd742739c80ee5a
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_12_07_12_48_61139c04-1e30-4305-ae4c-6a6c33bbc537/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/h5wurHI08MKc70cHsHIGFnmFA87QjdPWk5qQt8APmmhEY38VntRXH0t8Q-ZUZhJxlXx7NLfEMVURt9SsybJdxtUtztiMz6uhghF62ETX8qYseBhzn9HQrgBlskxjx7Uce4IdJQLEtbTsMJ-8YrZRrBwvNhirB5i4nY2ow66yXQuy0l_9INgE9v-hN0irttkrfR8hxx4RIF3VHPvfn_tWS1ttCBgswVlogdDEJzNTJul3NYLUkTDtWMW9Zz16JS-qM_k9IagWAtnd4fZWm3UrKxsQUE3rml4Pci8eGj2SFVHZFBTUD8ZOgp3_bO4qUE4nJ2OkHibfYB8tF2UD89eqaw.jpg",  ▶️⚽️ Wotton FC v Gall Hill | BFA Premier League 2026Time: 05-13 09:00#EXTINF:-1 
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=ba4e94530f6b34799ffcabcf768fac3b:d84b2d799c327e4f9a2dbf8ef092e129
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_09_17_17_0758766c-3d03-41e0-837a-bd2c989a34db/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/aXLsPiN0j3jN5u3bHbk0h13oUEQVn8HiXqn-UWYKOMtwC7muoubPv2ZdZqPTlFapJwQwlClMdQDh042LSTo_C7eZSj3sV4QjpCYunZgfZ7QAURFgZYEnqcxo2-2iAdEFoTuyFP0LO6DIFLKIVBq3TC_kOgkTXJkfAlgHZgre6p11elITRAbw8L_bx1EvTS9LiMEaa06SHrpoTqDrK3FQzySRgvAcDp52USNIoodTvyRSRXRv7CrKLRjS_uAGnblAYCcq-rMOnrWFH7erVd3bWQdINvr7T_eY2t1lg7SlKlan4I03GiL4vRFyHz8-tANaW9HPAPa30zPfk3wTZSSlbw.jpg",  ▶️⚽️ Brazil Juniors v Estrella | Division Honor 2025-26Time: 05-13 08:30#EXTINF:
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=74d404c2404833409cb92ffa9856b65c:4f0a2fc3264bacfe52535e9b5b3b4b75
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_11_08_59_21_872a5507-3a9c-4b9b-8468-7cdb5fdce3dc/PROD_CMAF_CENC/index-dash.mpd
 
