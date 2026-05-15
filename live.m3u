@@ -1,6 +1,12 @@
 #EXTM3U
 #EXT-X-SESSION-DATA:ID="SOURCE",VALUE="Hady_Realtime_Bot"
 
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/FoQRevN7hDpiZV9EA7LOp8mElVEXadhwZyXIsjdtvHhIzCoRp38v1il8wk0WVmzPn2Jy4PMjzshJKWFUuxBGxpzr2ifjiivhxZ0QyVspxecOkCAhciAO7vCI0W1BG604Gsv_T1NWfe6fbHjNK8om5hP3cmHTORRNn1lmr-lq785mTIsig09FzHR5BZuNXRXaznnFwBWbX-VqgmQRIegSDzL53V9S7qVKLC2JP7YtXjC8-F_iJHeyZURSsj3wdPvvyULW7PocXqd6GYEcE1f3twjOwZoTLAG2bqAEUhvZt2aGT2fOJhnMiNOD4JDCNKwp3Ja_8QX_eTUBr9S8bB4c3A.jpg", [刚刚] ▶️⚽️ Mahaut Soca Strikers FC v South East FC | DFA Premier League 2026Time: 05-1
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=75fb7ee3290c38be94f8407e5c3e3398:489eecf7c592eb52076430a6f23e21fa
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_13_10_16_08_e6c53767-b427-4847-926b-893c70a8170b/PROD_CMAF_CENC/index-dash.mpd
+
 #EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/VJVewauf00pP8f4mj-OHWqPZQWQLZvacf4iQxycm8sDaq7bNHKqLHFaMVhfTe8fFnpX2lormyukcFMibULgAdjSKnhEsJ3-NCKouAwpM05qZ2M71lz-SWh--U-Tvhx8MvKBIw1U0TTUyMz8uYdmuNSwpPhDq4soDPVUkriPeh1Bxa8EEkx4Zou9YyxTqvBsGH4etv0c9_vHaLyMx8n0p-qa5OjHLTPtEqmLI0iwA1ARm126cLj0N2C0GWUAUogJ2ZajWlA2VAcrfcZmBtW5WOCnJ0FvMNzRq7Mxy_vJfMJoGwQl0lkVSWX1BH-WsKySgRZwQEQLZWuWtu5nnj0pGPQ.jpg",  ▶️⚽️ Versailles v Stade Briochin | Championnat National 2025/2026Time: 05-16 01:
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=3df86022f0bb3d34aa092e22a8726c4f:7d0dac445c620998d49574a9ae74cb28
@@ -108,10 +114,4 @@ https://d7pd9oqdl4d44.cloudfront.net/2026_05_13_12_29_32_ae52fda1-3468-4912-852c
 #KODIPROP:inputstream.adaptive.license_key=3810b86a19b33472b360a2b8c49db90e:e1821c2a3545090c5d294c4f3e6a24fb
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_13_12_29_41_c9c3b4a1-094c-4552-aa92-dc0ba67ae0b6/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/RqJvLSwU4clPbMMv0sBwHIBZGBu9nI2jmXFY3B_OddNIYO1C9xBC6U5_-Zh2fYDv1seF6_arOCGLyOZML4-TcEtRm4ufNagm26Ra0YkGlXuHHwRel402I_MfvTpYkS1CI71q0Nq-8q1RVnnQNsywIMAlQ31bWrsARsOrKZKLFosf33D1z02Ky23cFJBjRsgdT7FHVA1hhn4LJ89vQdyeN_jC5NwyoN2T-q8TUeBHt8aOOl_U4HZ1sw2dGhr1ZbptGM2AKafGc9VRejppOursfICrWaN5XDwe73wc9rsCWiS5LMQRcOoXhq1dy83QlsSXENw4WBxt5LgyD9PgVf1lag.jpg",  ▶️⚽️ Al Dhaid Club v Hatta Club | Round 28 | First Division League 2025/26Time: 
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=76bd199d447132269d16f9a93b5ff445:814e2f6aebda5bbc3dafb477ac146397
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_13_12_29_18_2e0c6c18-d7f8-44da-96ae-c7ec07d3203d/PROD_CMAF_CENC/index-dash.mpd
 
