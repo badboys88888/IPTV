@@ -1,31 +1,43 @@
 #EXTM3U
 #EXT-X-SESSION-DATA:ID="SOURCE",VALUE="Hady_Realtime_Bot"
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/bKZuIYvpWLTc_ATjyDnhynspkf5lnoTUHdQCG5yJFFjWxmOK_Yrpbcp245l6QoZQU1qb6OeXi6-Yax990bkhphDt2uUfsO8qURFQZyuzmSqWRzaRoI5FKiGE-CbVnH0uNRYIczWrDoN2LtrXAwsCO5HH5odN-hMjTM-T_bpxIk1jyehVw9XKDlaEUSk4X987c_cWBnIJ9UEUnJ_IoG9vPZ6gDxw7_Gx-GYLdebIjm-Fju_vQw4xA0KLN90pYAOmayUl4jsHNPzD0pVSoEdFdel11ZBWrnCszJWQQK4hrcGIODMv2Q11PW8uD3JPeSDEzyJ9kmV5h8QRv-I4aF3ea0Q.jpg", [刚刚] ▶️⚽️ Bath Estate FC v Harlem United SC | DFA Premier League 2026Time: 05-17 04:0
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/UWTvGxP9Itdw0pa8C-npwoXVCL45Jtw5AAFRafqCc-tZ51SBBqqrf6aXlcZkrCMqwU_RHxPAPHquINT9y57J_eJ4ZoEJxT3wmW4U084xfjK9zojqR_GOBAG0JB7Bbno2WtqEF_GHFGICxcAfUiZz50esO0PEPkP8axXk2Sumg-cb2hWppmJGtpSfITQkWyKSBdPkWYRDtk4GVAopECjavvN_iv-95TMZ4dWHPJGxC3QjaBDKBUFeF7d4uKwMImejIIeAGEXmpguuuvS0JbpEHGiJoJEHWAEPl8e3moNLQBeRCBpsgdGBPDPavaB_63Zb3EZ_j0UXRy9XDIDokvS-ug.jpg", [刚刚] ▶️⚽️ Marítimo La Guaira v Aragua FC | Liga FUTVE 2 2026Time: 05-17 05:00#EXTINF:
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=172b0c18bddd37edad98b1a2e3ffa211:003ddd3e8234db8bd6c9828c6f9e16ff
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_14_09_04_33_17802ef4-8a28-4738-b890-a9cfc0a539c5/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/jMFxfeq6-GMkRX75oULwC02-EpWkOYIp2RFfq9-xTRMgljDwx771ZBc8Hr1VJEzs1x5JSiUcqL8z1fRrKEwsjqef8I_bRXORuSIKXswuAZ0UdUeQgQHOCur9_95yKPP2uXvnY3BvozUMEvm5yfq5AMggWAjE-iNCx4mInYNaBhxKpsWCWSOdrFJhLuPxwetzp5_-nQE33zSmMBi04PytBI-QXB9tXb9CMbIborJYtQygpI8od7EJq-fYzjhu1-B0GHtfPAgNEP7a_T4s_ljVTUhgbj0y371xR-yqNW7cWLVy8av7HcYl4BCPZItm2RTdRXOF1I6rrIXjQnwJrNTPig.jpg", [刚刚] ▶️⚽️ Deportivo Lara v Real Frontera | Liga FUTVE 2 2026Time: 05-17 05:00#EXTINF:
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=cc20c1600efd3c02a8170ec174d7be7c:15f3382fb460257d720f53e5785d6976
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_14_09_04_39_572c581f-cedd-4dcb-b898-48367a116419/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/bKZuIYvpWLTc_ATjyDnhynspkf5lnoTUHdQCG5yJFFjWxmOK_Yrpbcp245l6QoZQU1qb6OeXi6-Yax990bkhphDt2uUfsO8qURFQZyuzmSqWRzaRoI5FKiGE-CbVnH0uNRYIczWrDoN2LtrXAwsCO5HH5odN-hMjTM-T_bpxIk1jyehVw9XKDlaEUSk4X987c_cWBnIJ9UEUnJ_IoG9vPZ6gDxw7_Gx-GYLdebIjm-Fju_vQw4xA0KLN90pYAOmayUl4jsHNPzD0pVSoEdFdel11ZBWrnCszJWQQK4hrcGIODMv2Q11PW8uD3JPeSDEzyJ9kmV5h8QRv-I4aF3ea0Q.jpg",  ▶️⚽️ Bath Estate FC v Harlem United SC | DFA Premier League 2026Time: 05-17 04:0
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=c50f2bf5f9703aeb8817fc4e5a8b0ed0:b0759613b82c614f4ef67758a2f0edd7
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_13_10_16_12_622d8616-2c60-4f1c-aa2d-79f6c654868f/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/F2mC-NhmGRs6fKneoqsVs-xSnphZhV5SiADyuQkNxHUCYwMpFTSlQBhlR5vpYQODBGL5glE1dhZpZeOwBdnq-wZekC-i2zj5oMoDNa22QpNa2NPVrPK8ymL6NB7wVqc4Ct64JqQ9kDIDkb0pgWNNQUS0YAlejlLmLalU0Uf9iWTUe4zWDaz_IhN3M9tesrRTsMJbDWNsfkKt1GKugA2uw7vYiSuBBaG84cwdPyZlzCcLvSkij42KFheFLvzlTU5cNK37l0s6eCJacGjZuEe1YZxOnmDVBti9fbbPKDZJDRYpatbFHOhyVkjZEH6EpwhyE_jqfK4-IFXFJjunri8rDg.jpg", [刚刚] ▶️⚽️ Yaracuyanos F.C. v Puerto Cabello B | Liga FUTVE 2 2026Time: 05-17 03:30#EX
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/F2mC-NhmGRs6fKneoqsVs-xSnphZhV5SiADyuQkNxHUCYwMpFTSlQBhlR5vpYQODBGL5glE1dhZpZeOwBdnq-wZekC-i2zj5oMoDNa22QpNa2NPVrPK8ymL6NB7wVqc4Ct64JqQ9kDIDkb0pgWNNQUS0YAlejlLmLalU0Uf9iWTUe4zWDaz_IhN3M9tesrRTsMJbDWNsfkKt1GKugA2uw7vYiSuBBaG84cwdPyZlzCcLvSkij42KFheFLvzlTU5cNK37l0s6eCJacGjZuEe1YZxOnmDVBti9fbbPKDZJDRYpatbFHOhyVkjZEH6EpwhyE_jqfK4-IFXFJjunri8rDg.jpg",  ▶️⚽️ Yaracuyanos F.C. v Puerto Cabello B | Liga FUTVE 2 2026Time: 05-17 03:30#EX
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=5fd58c898ff931189f317e1e6f45ae02:edff3ac7ea96b340a3757ced82f1436c
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_14_09_04_29_b1f6087f-9a80-493a-8373-db55b7d64749/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/RfAS8Q7gE2AmLnt_Y2XiV5bvsAJYD-S5gSbfUkK6J1ZZGh_AAcTd33LC8pc9ZEu8lhvfEIHvM2mH5OV61zkGrx_AKTN7ty8F4ReI_O94a4CXFAtC34N3YjcgbL5szW4y9evbXx3cbmprGCtmIy9yxdYd_mP4aJnDqlaEIl6JUkx8WmhLGcSVn2Sf3ys4GwGkLiRqWeHhPBtFf6E850pTBvAs6GADyLOJzkXFPKP9WIwfcndiQ1Aw-uxrW8QPPfbAESmzv6FT3fnILvjZkd3XEyAvgwFkJrO_sojuvW_jkLyKqFN7jIdeRbsgVVzVE2CCUvcrmUTAwxXbAZZ1JYQg4w.jpg", [刚刚] ▶️⚽️ Mineros de Guayana v Miranda | Liga FUTVE 2 2026Time: 05-17 03:30#EXTINF:-1
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/RfAS8Q7gE2AmLnt_Y2XiV5bvsAJYD-S5gSbfUkK6J1ZZGh_AAcTd33LC8pc9ZEu8lhvfEIHvM2mH5OV61zkGrx_AKTN7ty8F4ReI_O94a4CXFAtC34N3YjcgbL5szW4y9evbXx3cbmprGCtmIy9yxdYd_mP4aJnDqlaEIl6JUkx8WmhLGcSVn2Sf3ys4GwGkLiRqWeHhPBtFf6E850pTBvAs6GADyLOJzkXFPKP9WIwfcndiQ1Aw-uxrW8QPPfbAESmzv6FT3fnILvjZkd3XEyAvgwFkJrO_sojuvW_jkLyKqFN7jIdeRbsgVVzVE2CCUvcrmUTAwxXbAZZ1JYQg4w.jpg",  ▶️⚽️ Mineros de Guayana v Miranda | Liga FUTVE 2 2026Time: 05-17 03:30#EXTINF:-1
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=f3148af6fad6386791af2b57997c40f2:01876c236fec3755de13d9e876685777
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_14_09_04_23_a9592b11-c6db-426d-9096-ad174bf48019/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/g1qfDtgu36sWOvsKnz7CN1dE6qtT_oSoNpq61LSH53sw6YIatpi5q7Iamy9eud1meBOslnle4z4swK1PM4samudWwxByY86vzhFiySb_Pg5GiYmHbbHSmIoiJ9RaST3jJykY2cjucNu-v-FTyALuXv7M9M0P8gE6wydaTL6htaXDuhtV60O1fId-yOvecxQo_PFuK1UlM_wMvtY6Mf5feYdnh1hO6nfcolyXrNY3DkBeVyk8NkjOqwqLqsVfXD8dVvVv2IctSh-pC9mjqod1JXbhtBJNupT2AxTj0tVHpqU-Y3f9X_YbWZ8qzORsG0AlgPrOu-JmPXVfw-SwTdX1-A.jpg", [刚刚] ▶️⚽️ El Vigía FC v Zamora FC (B) | Liga FUTVE 2 2026Time: 05-17 03:30#EXTINF:-1 
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/g1qfDtgu36sWOvsKnz7CN1dE6qtT_oSoNpq61LSH53sw6YIatpi5q7Iamy9eud1meBOslnle4z4swK1PM4samudWwxByY86vzhFiySb_Pg5GiYmHbbHSmIoiJ9RaST3jJykY2cjucNu-v-FTyALuXv7M9M0P8gE6wydaTL6htaXDuhtV60O1fId-yOvecxQo_PFuK1UlM_wMvtY6Mf5feYdnh1hO6nfcolyXrNY3DkBeVyk8NkjOqwqLqsVfXD8dVvVv2IctSh-pC9mjqod1JXbhtBJNupT2AxTj0tVHpqU-Y3f9X_YbWZ8qzORsG0AlgPrOu-JmPXVfw-SwTdX1-A.jpg",  ▶️⚽️ El Vigía FC v Zamora FC (B) | Liga FUTVE 2 2026Time: 05-17 03:30#EXTINF:-1 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=30499d5a0ec133e19b365e6454b1de8b:702ee69cfa952ae61648c0f5eb4b9861
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_14_09_04_18_3bae39e7-0106-4ab2-839d-41142fc30664/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/urV0BVbHeih3HtOyEf5xOLe1slLSGZqpZP2w8eMCPbgnsF9dAaBZ31SJTybGLEReIHgR7LzZquAP-SwHegd2gSoN4kU3PvLDUuxrHVVLvIJealnMeqYLWZ88tUFEvMGhkkFxRQfWCJ4CBaO-l2znkFqDDX_WdkJoC_y0deyh6fN68oZL4fV9ikM9e7nT6NCyv3Ty_1D3MgHHaz905whlPvPQXriZYVLl1vpOTdvl3vn12L64in8S93Gjwnimks8BXN5vF_G9Xhagynm3hrJVFCHCX8mgFCTpZNdY41a1YXMQjJm_GZS0Q3Ha01Q7Jd2tdBkXpWkUNB2MBEFAbg1JzA.jpg", [刚刚] ▶️⚽️ Atlético Barinas v Barquisimeto SC | Liga FUTVE 2 2026Time: 05-17 03:30#EXT
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/urV0BVbHeih3HtOyEf5xOLe1slLSGZqpZP2w8eMCPbgnsF9dAaBZ31SJTybGLEReIHgR7LzZquAP-SwHegd2gSoN4kU3PvLDUuxrHVVLvIJealnMeqYLWZ88tUFEvMGhkkFxRQfWCJ4CBaO-l2znkFqDDX_WdkJoC_y0deyh6fN68oZL4fV9ikM9e7nT6NCyv3Ty_1D3MgHHaz905whlPvPQXriZYVLl1vpOTdvl3vn12L64in8S93Gjwnimks8BXN5vF_G9Xhagynm3hrJVFCHCX8mgFCTpZNdY41a1YXMQjJm_GZS0Q3Ha01Q7Jd2tdBkXpWkUNB2MBEFAbg1JzA.jpg",  ▶️⚽️ Atlético Barinas v Barquisimeto SC | Liga FUTVE 2 2026Time: 05-17 03:30#EXT
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=c58496cdf7543ce6b39fb2368d1e6291:e418bc92fcbae7f74702b761dec451eb
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -102,16 +114,4 @@ https://d7pd9oqdl4d44.cloudfront.net/2026_05_13_14_24_35_42b5525b-fad5-4135-8921
 #KODIPROP:inputstream.adaptive.license_key=ca3743001e853198ae205d63603177ca:5b8e2b06297c61143bf1be1a644adf12
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_14_11_07_57_70f0e5cd-ded0-465b-8c3f-2c77b284550c/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/PWYfV5dRv5f2x08Z3cGOnpW55hff_ZOnV7v_b1xbXYKpFkju_xTw7bBSIzA3meBGvU18_Ofl4271IBLCEycD8y-8mHL5nCNGk-0I8RT1XkuAL86FFybcF26bPi4sgbk4msh7vQw7mnGN7spsnOE_CMf0ij6EnvYs4ydNGJCgUmpa-T4GyJXmFhZycRyTNUzoKoKkJa46EQLiIpLKheQGdpBXIXBVQRv_JofXb3t3m83QjgrwLGe26uISKjgXCyAjPCFofPe7nl9htVgMvc4QaVFAKy5p54zj7TDMNaisT8iSr_tK1tT4sMMVUkS4fTZXcD10AhwRteWoNM0TH6aY4w.jpg",  ▶️⚽️ Loto Popo FC v AS Cotonou FC | Ligue 1 2025Time: 05-16 23:00#EXTINF:-1 tvg-
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=0eef7be88fda3acaaff4a694785d762a:81e8c7b81bf99998f7b7fdfc06a717a7
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_12_10_28_26_371a2942-dd0d-411d-b380-a73b65ddf183/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/CnTZXzFliwOAVkJbSO7vjGL9ajVRYebdVq-Pu74a06Jyh_oz2hqUa2_tPwtgvmPxayhFD9PXukYExitnDSQ2Zi41NppwIU406QYcUZiotAfCebzM9YoeDCoqGCUDsfWn5J3R0xkCDIxAkVYxfHz5FdZP94ZqZr5-pU-MdvKCK9D4KHj7zoLrKlA4GHEcsjnfqssVvrVyOZTh4EXas4VjUVYUo0iPqnGzaeN12HGI9693jhAUvifSkLBl76W9SYt9XXXsqVo6F4mHFwJGLrdKbeLMiu0V2LfNj6f1IaEMPowrKPGW3kcRYWtd_dbpajKjG_USXv4jy9mXcfW7o422_w.jpg",  ▶️⚽️ Hodio FC v ASPAC FC | Ligue 1 2025Time: 05-16 23:00#EXTINF:-1 tvg-logo=&quo
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=28b882d6186e3de188ac33cd7db4890a:b6d786f30208cf335dc64ef309246ee3
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_12_10_28_30_5c19364e-1b2e-4f4a-bb2e-dbb02a645cb5/PROD_CMAF_CENC/index-dash.mpd
 
