@@ -1,19 +1,31 @@
 #EXTM3U
 #EXT-X-SESSION-DATA:ID="SOURCE",VALUE="Hady_Realtime_Bot"
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/p0u0i0XtRN5Vc75eUJzcBx5TLnS-Ge-GtEBEh8DxMn6wKs_zKkkilRkp7nxQDXxIywPy4bJrsUzmaW-lqBhGpCRaGp7AL9Sv8FGFH62fkVHKkhmwR_lvfTG7CHgKHATc1ykrfOLzhoKdE_e0UMwBveSrNA-SHruWw38SyANHFWbonhPfrRDJ-qhKPWLnxU1pVNqaD8I_5xC3JdC0FkMaq2__xo-yDTGmL5-rDiZOCrpO6l5ofDyRrYjxW6L4JsjrRyLphwtS_7peyqz_lYIuoa7J47VQIqcxbUvCGaecshezMZbiImJk6CJFOKS9hjS3llL17JL5BYnFUGnLODoKfA.jpg", [刚刚] ▶️⚽️ FK Banga v FK Žalgiris | Moterų A lyga 2026Time: 05-16 18:00#EXTINF:-1 tvg-
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/uUCmN8ZD07p5zQ96dV9YCk7kwCbe3ilQuEKFQyxDdASlvNJbTx4Q2M2maQym-71-XX8vTys-2WRn4ihG9QJoAEYHbtRbETP6oL9ffXwpfjXEC4egFfdPZ_wsLrw4m0ROE8A1RBKuoJ8uupuJ1RTokdJNONw1SAi02ADX0abOy6AHKTT8ZNXFbi_J_6d5aP0l_E8wLRLEok97ejggJmxHN_oi5Vobnw7wapoR1x8JUMH_3NH9NzfyT78oKln9i45PKd55eLkztbT54mUKQwBfv4rNgVKxlykp-7hTLrccySp6BFCr4ASx3I2h3wxxxKMD078-cMWiA1O0q1Tr2lp6-A.jpg", [刚刚] ▶️⚽️ Neptūnas v Minija | Pirma Lyga 2026Time: 05-16 19:00#EXTINF:-1 tvg-logo=&qu
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=33a5eb2dd62332129c05f39da6b8007d:6458fd24dca48c5d6382b9c9b1cfc026
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_14_08_38_07_c4e61e5a-275d-472d-9470-d77a880a9439/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/ebis6acufFZnDUhqNxJbh8GFvYcr2ZymUO2o_YKL3BnVjdggpZtUaVo0ednE6jAR71oEHVCCgfm2W6XX2p3aepbtd0aQQJ8AgO0T92DW8P08mrBLRP5bEYnXHcEBaZLN34uxfrt3Hj9p4Q8kvGkLfAnmTLp0eQMgzfTaXD6XAGxdUegTpeaNOWt_NipWX1sC9pxBNVUTjLHA52B5oFD-RXv9CzIhr6rcJAYOFCrpvcWOEPvhehF9LbUcUV-X87aLH0GwC0vcKO-mYMxqBg-XvkyN4tBzwLO8MFBdVOyQ0jbHAKyhqkhT1xEbmDcw0dGlDDftmAl0_e_7P-YxhUJrZg.jpg", [刚刚] ▶️⚽️ Manzini Wanderers FC v Royal Leopards FC | MTN Premier League 2025/26Time: 
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=65afb07e3adf34af8bb172580fb69e13:565a669ed453c8a27bb38c15aa15cdd9
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_14_09_12_54_c60a47bd-8d3c-40c3-9fc1-b46de29a3003/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/p0u0i0XtRN5Vc75eUJzcBx5TLnS-Ge-GtEBEh8DxMn6wKs_zKkkilRkp7nxQDXxIywPy4bJrsUzmaW-lqBhGpCRaGp7AL9Sv8FGFH62fkVHKkhmwR_lvfTG7CHgKHATc1ykrfOLzhoKdE_e0UMwBveSrNA-SHruWw38SyANHFWbonhPfrRDJ-qhKPWLnxU1pVNqaD8I_5xC3JdC0FkMaq2__xo-yDTGmL5-rDiZOCrpO6l5ofDyRrYjxW6L4JsjrRyLphwtS_7peyqz_lYIuoa7J47VQIqcxbUvCGaecshezMZbiImJk6CJFOKS9hjS3llL17JL5BYnFUGnLODoKfA.jpg",  ▶️⚽️ FK Banga v FK Žalgiris | Moterų A lyga 2026Time: 05-16 18:00#EXTINF:-1 tvg-
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=34987205f810330c9d866a0185a097a7:ad9452e1106eecc1892992d9da3c1911
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_14_12_29_52_8130f13f-219e-474d-9fde-b78259b14938/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/AULH1BuEjQB-rihjeC-UcE9fZcnnbyW6XdjrUyky734SNwNgXBUyfKBvNi9xcxuaSp9DBiU-2r2Zp002wm7_AD1u5Rk6-7-BQMcHkefWgokSDbrzQxUWA1zYKf1EkwgCNMNyl-_8qopoeU5dN9SsKQbCGxI_Q9F_O8o2BPZx9-0u6zmADFNFml4OGE_ivaDLNF0hYm1N1GBUVobxiRNeEJTXGsyrSgJYVMOSqMisvc-cn5GkMmIagaNG4G3SvH7o6vsSjAK0OlmbtjT26QEAssuesJZP9z7HmAYVEzDmc3Ba7H8D2jsiwLBAvXUdiu_W0VZnjBl9ckckp0eXmUeadA.jpg", [刚刚] ▶️⚽️ Lesotho Defence Force FC v Maroala FC | Vodacom Premier League 2025/26Time:
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/AULH1BuEjQB-rihjeC-UcE9fZcnnbyW6XdjrUyky734SNwNgXBUyfKBvNi9xcxuaSp9DBiU-2r2Zp002wm7_AD1u5Rk6-7-BQMcHkefWgokSDbrzQxUWA1zYKf1EkwgCNMNyl-_8qopoeU5dN9SsKQbCGxI_Q9F_O8o2BPZx9-0u6zmADFNFml4OGE_ivaDLNF0hYm1N1GBUVobxiRNeEJTXGsyrSgJYVMOSqMisvc-cn5GkMmIagaNG4G3SvH7o6vsSjAK0OlmbtjT26QEAssuesJZP9z7HmAYVEzDmc3Ba7H8D2jsiwLBAvXUdiu_W0VZnjBl9ckckp0eXmUeadA.jpg",  ▶️⚽️ Lesotho Defence Force FC v Maroala FC | Vodacom Premier League 2025/26Time:
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=8475285f496c30f2bb51f037a80772fd:b16b3746f0277350854a79911345bb93
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_13_07_41_58_7fa48bee-153a-4952-b97a-ad0cc2f50519/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/lc12RAC68x0RjCLxD0MoSxx4PV787W2Co19ZL_5EWQ6sCkc5_MQAhRV9PXuQLrEUOhqcvQ5R_FafSSiPClJ0PU_WGeQPZA2swQtmkfUiCREZVaTiiSwZSm62K209gY8k2msKu9G6RGGFEuZcTiJxT4dRMS00hJwepYdvlc8EmCw-kDD_3kRVxxEUaQ91lr7t1CfiDsz0wqwjC4Fu9wJs4_jgHl5HDSn_y1MWJ7CWd4nv5p8EvtThE2XvQKoqLxmHth-Zn6x4qZYz4Pr-vclYh8YwFKU-b0P9b70IauUVYJEksw5JpAlWulnjTWACMpAiV8v4hITpPP3LK_8xyE1g7Q.jpg", [刚刚] ▶️⚽️ MFA Žalgiris–MRU v Kauno rajono&nbsp;FA | Moterų A lyga 2026Time: 05-16 17:
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/lc12RAC68x0RjCLxD0MoSxx4PV787W2Co19ZL_5EWQ6sCkc5_MQAhRV9PXuQLrEUOhqcvQ5R_FafSSiPClJ0PU_WGeQPZA2swQtmkfUiCREZVaTiiSwZSm62K209gY8k2msKu9G6RGGFEuZcTiJxT4dRMS00hJwepYdvlc8EmCw-kDD_3kRVxxEUaQ91lr7t1CfiDsz0wqwjC4Fu9wJs4_jgHl5HDSn_y1MWJ7CWd4nv5p8EvtThE2XvQKoqLxmHth-Zn6x4qZYz4Pr-vclYh8YwFKU-b0P9b70IauUVYJEksw5JpAlWulnjTWACMpAiV8v4hITpPP3LK_8xyE1g7Q.jpg",  ▶️⚽️ MFA Žalgiris–MRU v Kauno rajono&nbsp;FA | Moterų A lyga 2026Time: 05-16 17:
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=b0d193f6087c37c0b031190686307046:c1444481e1cd6a9171f233a7ca6998a3
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -108,16 +120,4 @@ https://d7pd9oqdl4d44.cloudfront.net/2026_05_12_08_01_58_a58e0247-09c8-4d03-bf5d
 #KODIPROP:inputstream.adaptive.license_key=d660d9661fc831a38e6f7fd2daaccf56:6116d8349c48a51d2be8acc852b5b1aa
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_14_13_10_44_76f369a3-1a58-4b0c-bc41-cb43b1c53e6e/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/g_X2ujKFoqDq1Ltv-QznCV9Wn8DXjYeUI9UlhpTYYg5QTXLYvQNb4YCmUCFg9BfHainiOe-32m6U-YmGd7bPTaGB0i2MWj3-9bKM0MOpu9qmL9b9cBHjWiOr2CLSZDEqh4I7ULGxwUzvLmSbrvSZsS1nIJqSHpA4j_n_0YTxsw95nIuBbDlwlx52bxFFlGJRWxa-YLwE0BEivqxJuf1Lp3Z9hSgsR0YkwytgdgJFA3rsayDGsV-Af41kMX45vj8y-Vh1MWqgjgnWT_6bqHzU10CjlyWPA7jnKIy9y1hCeambTFKs6AtPL1o1RuLcJHFmfdZv394Y7XrtQzCc7tDzjA.jpg",  ▶️⚽️ Attackers FC v Diamond FC | Anguilla Senior Men&#39;s League 2026Time: 05-1
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=1a10d8596f043a6199f01582457e78b4:a3ec4c1e345d3e820bd30c04aa3b8326
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_12_08_41_20_62e1221d-38cc-47be-a80e-29cdb19ece6c/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/f34S_7MDDfMUDOAhnCGk2SAx9cj9r4_fwwb-lGCCiM1rJEaTtya7rIo1_VPyg4WxwM3MPkdx1lpWPR00X11eAUVJHlF3IJxZOQEoNLpyOxrofIcUuBzLlxlSFGZRpjJdv3uXpwZry_lk2IQurJ_4pCr9PLptqUOl0bEV16UVmU-Ib-Lmprd99Y2EfmX1TuPtrh-txyskesChpWLUmR-P-3hyXKDtLYKP30pCtCjjQOyxBCGhbrTFliu9Nag6MSBFmEHkilqp1CN2e5HTbOB6W0q2TgPk_5LqoZ0K2Wf4qWx1USzRP3JBqwM1zIfjNrNJV5K8eabx9VgrTbQwsNaGNg.jpg",  ▶️⚽️ Mahaut Soca Strikers FC v South East FC | DFA Premier League 2026Time: 05-1
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=75fb7ee3290c38be94f8407e5c3e3398:489eecf7c592eb52076430a6f23e21fa
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_13_10_16_08_e6c53767-b427-4847-926b-893c70a8170b/PROD_CMAF_CENC/index-dash.mpd
 
