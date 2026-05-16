@@ -1,6 +1,18 @@
 #EXTM3U
 #EXT-X-SESSION-DATA:ID="SOURCE",VALUE="Hady_Realtime_Bot"
 
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/M2sjLIB39XzBF6fdoBCpPnybVvV9yvje3cXa0HTBYKFWksLuDF9rrpfOpkPCK6ycXicKnUNU-RUlKt7tfwkh8SjFHpt2ACkVnn4yi6y1wPw4rrrbiVetI88nfT9teXDCRgC_zsscEXgoCbdHlC8TX5W4A8dMjd_ulKQjuL4f3AU8Td1XIF7SuAJj786CqvBzJA71D8VmGffq99f7zkPFF8FYraB3J4Xyni-bSO6VmGt80xp6GlEr-6eijPkWbSvy80D_wiYqA0fPrPXsplajaO73sdl6wXJU-vzAoZk3Y1hyHr9r88vR7cCco6u56DkbHWnif2zXwjf8gEyn2pO_XQ.jpg", [刚刚] ▶️⚽️ Araz-Nakhchivan PFC v Tahsil RIM | Azerbaijan Women&#39;s League 2025/26Tim
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=693a2b75f8d335c695f0791af2070dd1:69c61423098eda7b5978db0fd384162a
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_14_08_12_08_7fe20f21-b876-47ac-a031-4bd5811305d7/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/Bovlhx7DkBJrts8xgjug1-jogcLFdbSwuCz9fDYMZMh72B5_h1HDVgh0zKrkhofbtjT0ht-cVME3SkfMUoSdLXnzPg1x1HYKpripStJP0RKjepXPFr0us-zRX_CBgMXgnYVIgDMSH7ivW2iB6blMoqCr7nYQUkB4qi-t8CfL9_MwTPPu2bzxpN5JxbuVmZ1VJ0c3l29icqv0-uB3hLLULrxif_1o-eX-20sRDiE7qKWao0rY3EQs5KpKArdwlrG1v74a2HF8rRHMFC7FeYI0ncPnQETGf_konHswHgYhCOZbr1vmh4n4EqmOznX4x1BTcaYgJVYOrRjYUq0e729aog.jpg",  ▶️⚽️ Fencibles United v Birkenhead United | New Zealand Men&#39;s National Leagu
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=950085f794a839908f8b549065aa6c6f:253b878d7d77634dc7a729ec7380fc5b
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_15_07_26_24_12524924-2120-47e9-b452-c0e4aa3e9128/PROD_CMAF_CENC/index-dash.mpd
+
 #EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/IVBXeQgTHp17T6PYtp6o-AgcWegRo_M7ZgYyLsKOfY-RcD0VGxg_MxAykjLYBkrC98z0mUldJ_I5F2mcgaDyWWR0CR_v5Pa8hn7o0DSCAWmGzWadEQTxab1_8xt0QZ9oUTTDr5UJURs1o1X8TwLOnKHHWSFYPjSbsVhMP9vvL-881dsqrg8ZFAlX3FwOThzpBHc1fBYJBZwRmFc7mS2JPWV2PhrVZRIYc8HZXC2mpMo8m9yfmHanReraSw4VPDFRnXEDW8EUpikJFzllhUAL88Yhk7sFbFH8eL_0tLxsh01OWuUUl46Jl5f_h8dp6Pbu0xL1NXa_j1qeytouCVXGaw.jpg",  ▶️⚽️ Pocheon Citizen v Changwon FC | K3 League 2026Time: 05-16 13:00#EXTINF:-1 t
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=faf7061019e93bceb9337e1efaa099e1:38f0c461cb62be7090fdfca5066986da
@@ -102,16 +114,4 @@ https://d7pd9oqdl4d44.cloudfront.net/2026_05_13_15_21_36_72e0b2ec-9359-428d-858e
 #KODIPROP:inputstream.adaptive.license_key=a2d737e742bb3d7bbcf133622bbc0b81:4674f131a87a260a93e74bc2cd9e4237
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_13_15_21_01_16ecfd72-837e-47b9-90ef-857f535e3034/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/sK-QWLeYrzU7byf11FhUfO565w5sUJEIgeuvFoPOpl__J8CEwC3ZsCH5MQ59_ROCYeTnG456wR_YkbQT0xm8wq5SrZBs6lwCGpjn5iqxw8W6VDUfc_moCgMu68x5tmjgPceOBk7ls5_TTfeyIPTVpsfkndIWU9n7wEvGSBNH5QSrmmB4xOj4-M-6If1bQhPly7yYI7RIENRhUqlwKu4vSBnSn4JV6DE3okNfYoWzfqoyLi7haHV3PhERneoDGHTlccNRGQcNUjjw_NuXPL3BgpJpJGmMdjoBmAtIZAuL2KoeTR1TwDB72bDGJWMd6G_R0MY6EamRt4J-Fa8mo-qFFg.jpg",  ▶️⚽️ Sochaux v Le Puy Foot | Championnat National 2025/2026Time: 05-16 01:30#EXT
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=c92602da790a3204bd8a58dc2b9800ce:ce8855e2f45a9da58bbc9ea256a4b347
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_13_15_21_10_3fadb751-b925-4e68-a687-1dbfd95961fb/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/ZEWnEU4WK4jZyN4jLv9e5C3gxsIO7BxRrMSGxJFiqj2zxf4cLQ3Szjvy8K7CRxwbIC8b3OTgY-DfEaeolZZh5-ZZi0L2sXn8QOyKPIbq1LgXVCclYGTfMcLeL05Ja07oqdq2MrzoVb-8uyTacIwPvrGcQHk9ub7zmtcyDZNIRS2CV7qgz5WkWfXRAcb55s0cj5c6_DYAGsxLxvPxem9wjAXjeaNpJPOZTARCjUrt1yCTSVKP92rw4AKTL6OQtYNK0N2U5IAienKZG9hIW5QBMLeDYXJxL6s9lwU7WJoiDqaYlrZwuvXL995P-U5VZ2tYkHgJ3oW2BXoCu40uxPwOVA.jpg",  ▶️⚽️ SC Aubagne Air Bel v SM Caen | Championnat National 2025/2026Time: 05-16 01
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=975c9efb9bd333b28ec47ad147f7d8b2:b23adf0905afdbc05a6b2875438871cb
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_13_15_21_04_25346e57-d048-4baa-a996-337b0bae53cb/PROD_CMAF_CENC/index-dash.mpd
 
