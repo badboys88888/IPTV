@@ -1,6 +1,12 @@
 #EXTM3U
 #EXT-X-SESSION-DATA:ID="SOURCE",VALUE="Hady_Realtime_Bot"
 
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/B5WveH14SZT676s8080Ux7K44LhYojib_HDoCXrhsFfRY825LTbKHE22WAmLc-brdYHQhGs0D3GqpOl4-yYx5urciA2daGa-m-K-JT8eEUdkYor5VnsHaAaSnBJYOsNyZszHWVhbgOEtj9cXqi3Kmm7bdmifzUhezVbosxSSIJ3EX4ZXoPkUC1Z5S-NPgjToXUT5Fe6tGH68lNO_usAj7aEjaw2scVRENyOKSssfc-d_lHQJk7V7HJTJUvHLVbqGMU9M9jiDrwCc1FnXIYqLyp-SCYELm-cBdLEIi_6o31skXwI6vLM5smT2a5mZ1tzlUng_R6TOi85E4EAXcLrUSw.jpg",  ▶️⚽️ Brazil Juniors v Unistars | Division Honor 2025-26Time: 05-19 08:30#EXTINF:
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=416c4189f757334a8c1846177eccec79:f612615d688bfeed20b0107e23e7e2eb
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_12_09_18_20_f6bc002e-f75b-424e-b750-5a3034621e20/PROD_CMAF_CENC/index-dash.mpd
+
 #EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/B0gZqiqgpPYf6fi4lZC5StZ3odqDbttqQmcpYkx-NxblXQGmS4Eseuv3ug6KtCiweXr5QO2ZBZP-PBFb1qU7yjHhQ9nzSIBzTzvd6YZozhO1uhArjh_SSpRbpnZ1l0epZnOT0VD1heP7qOpy_KeKRXBxosGrvU-evRzUpDQuMwtxAWh8Cdo8tyqYDhgNVfrKJ7f3XcI1LQm1889pPPkTTooP-478U-SsSSXNELY0CgPMTZ8x-dbE-WDdb_gRXIC1PodJfccwPEGN23hsbGMramhKXU7OSa33AOtQgJMHwpTeBom-l9BiFLEA3LfKVHf8zwEIYW_OziHLxI3h1eSoTA.jpg",  ▶️⚽️ UDIB v Cupelum FC | Campeonato Nacional de Futebol da 1a Divisão 2025/26Tim
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=c4570dd75f42382f8472c6e3d3583c21:e53c7e879f368594840f51dfc4e1046e
@@ -48,16 +54,4 @@ https://d7pd9oqdl4d44.cloudfront.net/2026_05_14_13_31_12_a621b9cb-dd67-4468-b94c
 #KODIPROP:inputstream.adaptive.license_key=b43053eeb98239979bf6eb6481cc0d8c:014d0038f8d6c38735a32f88a420b178
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_13_07_52_40_79830182-e090-461e-b683-e3c25a4467ca/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/v1H01-CGot0ZSB2VgjnLW0w0H7jo8uamljgPMiPCiNOHOut5OgUyDuy04C_ecoHKVdipZRF-n08drwxsXBzh5fdDuLrEfRQp1gPZcAZF3k-hjFFiY2mYc2NXIy989VlKAW0uHaEkEVGCBmOh_2DtLicxO0R-DkCMcjmMhtzIfuOBSgJWNW7RnXuZ5fPwmpJpA-eIPbZOhqjwPxIJC2OxOpIDFgcaLoWR72CHdvgzW-L02yprRhJdz50vvrkcfw5Zlqr35LNp28FIbTZqE-YSgBLrugkX7WbEGs2Yt3wFDPsjCRxx__M7lTleK42EuHV7mhbAjULpRQgquZvnvAXeKg.jpg",  ▶️⚽️ Real Koyari v SV Atlantico Deportivo | Division Honor 2025-26Time: 05-18 08
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=306e49fa795636778cbd72b8c7bb992a:a7c7888555bffe1eef9c70d943ad2e9a
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_12_09_18_17_1612ee68-c71c-453d-8fdf-f635ce3a66e9/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/IVm9YyPakdZ6qRSwyIuYk-BX4ZAsQVqXzie-krOaxHVthv20pUyOkTqr3NBvbe9XBDFcguAnYIECJIwd0VjlkY9X6-LY2Zx2oJwINJZccJDf1d064NejIJy-sUbojy7CpvG26TT7qLUxNauBV5VzT2cwu4pm7WZi0bqwXgQRlhVinZqYYizXsU1_jbkqcf61fIsbhQVv6aGbbnldLqt6ne0cxX-4wWGE4Efzf7OqEMHKwN9ZHK-Hy11jiTkT0T2ThovIid3qPfnse8h1WMwNTX85IMavQSjNhUs8pvRk0SuPbCqhSk9m65iIAxOeLP0kh2NBISFqxm5b1wNNEPKzsQ.jpg",  ▶️⚽️ Weymouth Wales v UWI Blackbirds | BFA Premier League 2026Time: 05-18 08:00#
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=490b289dc37e369d9f6cef231e0ca7df:b64e3c762c516389574680119c33f844
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_12_10_43_57_21250fbc-48ee-4f01-8bf5-20afd24e2991/PROD_CMAF_CENC/index-dash.mpd
 
