@@ -1,6 +1,12 @@
 #EXTM3U
 #EXT-X-SESSION-DATA:ID="SOURCE",VALUE="Hady_Realtime_Bot"
 
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/ppF2iDGhLY0WrNkD2mLjdUI8z9iPtb3KvjfdJHKNS_Fkt25Oxp_-VeroStxpvutLGlhUARXt-SRZKfMb70Ao1xfi8zSNcRF5-RcYJspm2igt3phBYJoVLk_Z3hYHE0iBfU-_eI8sbY7a8aES7zeueCtcN0Ti4ibENUTAO4cruORleEVfOMZkIT4C1EBGgUYsgQ-mzy5fl_-GBuOhxTcFm9lL6TVvEeDV47Qa1iT2jwybNQDUAB4pkT4yxrLYlovLWDeU7iVqp6CYjCqzdxfQAD6uZ9v-OR9xoA52CNyPZiETxqKxs40B4E54s5WbGtNC9k87mdFY72U-46p4BfrOVQ.jpg", [刚刚] ▶️⚽️ Bagatelle FC v Gall Hill | BFA Premier League 2026Time: 05-20 07:00#EXTINF:
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=72fb72575f34322ba019e344d1b6c185:19332fa1564988219e6410bb20be5d18
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_12_10_44_00_6c1778eb-2ab9-4f2b-88a8-92c043a7dbea/PROD_CMAF_CENC/index-dash.mpd
+
 #EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/YZa9kfoYNET8vGSp7Efm5_ALxlDxpPMF3oSCKojua7vC7jKMfSN-3LrY8W7aZ5ookFgV_YQlsAo2itGfoAQlCFvq1lyD9w9qSBR_YQIxuH4AECxAy8G8Fk-MabWThT2-X6r1PH2JxTjwBjsz0SxnrmZmxWx-NKz258c3gTfLNgTHIgNNNSEKeEiFUwmlPxMB5CvZ6fq_LHM4kgMNZx1iUdZbYeJ0LTNgwMKPB27xy3QgJoRquRfnQ67hK_LozYslKNyv1WaALXA6FJKUjQG54HYPdIGa6Y2r-jQ3ni59SORwmB9UupHDKNhhAg09wvT7Sb5i7iIFEh-ZZemSeO8g9g.jpg",  ▶️⚽️ US Bougouba v FC Malicoura | Ligue 1 Pro Orange 2025/26Time: 05-20 02:30#EX
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=9994d16757f93077a9d4d24b7f8aa471:2216c8a1a5ee791f05fb6b7ac28d75a1
