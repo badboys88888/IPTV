@@ -1,6 +1,18 @@
 #EXTM3U
 #EXT-X-SESSION-DATA:ID="SOURCE",VALUE="Hady_Realtime_Bot"
 
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/VISbBsQS1_vHpJXjk9_Pc8FchZheZ4ON0gi4v8D7e3f5Jt6wta4H-Wfevf4xg6ztePtgATRPABSfFzInVgGJmo4ozbotMei_WvQ7JrabLeVj9pJ_XsjGVkOKAX2cmBCa8yfP2fbFflQh_kBG2FUlRZ8wYSslovR7DgjgLPrlVzJEi3fi9FOZqoxsQ1AEClKvpvfb-hon_gN0l3hCYrMd5eg73rZoeD39HcBztfLa3ZOrs22S1FbCO04Vd59rjK6NyBYRg-OT1UABbL9gij68HNIXLgjgTdET3o2YzFHcPtTUTTgCgSmY0HFeTy_m3IIrTTlqVOERdFNH6WSbnSttcg.jpg", [刚刚] ▶️⚽️ R.K.S.V. Centro Dominguito v RKSV Scherpenheuvel | Curaçao Promé Divishon 2
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=a6ba257e9bd1311eb120979ae0984e90:dc3371c2e0b644743935c5b64f0ad917
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_19_14_12_05_051b6297-b3d9-463f-ae5b-04d7c0d74bbf/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/RBvg1BeeJClZSC37MVf4IA6IsCr_1ZVtKGfsmk9AyGONePiL5HJRoSt5jo4qzCE0l-1-C_kQqQ4zNjtAGBURIQHMshseAGRCqS0VfDsRacmJpteJwuTgM4ZwSINIzEpvk0-o8IRHSJL3KFphsl9-zpzX_CJMDMtbhOmXbG7mb4cGMEcsPf82xZHMiMRp0Paug_geD5IDALY_BfchvQaJaAjEQ0OJzXZv2R7svAu4YJ_YCE1ZOpuYDynycvFW5p6000nDfHssaTQOL5TwimDCD1aLTR0zK0gzuXD1SIJ4KuPOiR7pLahgGDyeBmHKa3vzfNppZfKW7RTNmsi6uLgGvw.jpg",  ▶️⚽️ Inter Moengo Tapoe v Robinhood | Suriname Major League 2025/26Time: 05-21 0
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9fd01837bb613f0a93d0a145d8719ec6:be7f53cb20c94b1bb69d67f2d85cd649
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_17_15_54_56_143a4abc-b9df-4814-bbc8-6a5c5788cd90/PROD_CMAF_CENC/index-dash.mpd
+
 #EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/XeuwkqvF_BTa4Cg-8IhljsRN5ZM-M3wVneJYJdpIUq11n42KEhyrFx592JQYOydKc-wmvCx3KDuyG7UNIZgbVq1InAJqyO_Vwfk6CVrmgge8wJs9jOrjkAiZDtvq-hKz7Ycfg9EtGIlhczbFhQWO32nQasjmLMpJoLGqmHHL-w3Vd6ONsiEJz8QaTDOArAWyl54Tw_m69zI2nBSwZTQulm5vGFtAZ7z6uvBH-PsdgNpxMx7SbBb50paACV93P5YVBU7nzm7PZ64OFL3vuWuURhlgTTNXjfmka8wEQ8GXeJ_ga6-Ns6WVLY9HWZImDYtc6jZ8JaNXIJV1Y0QC9k76dw.jpg",  ▶️⚽️ Barquisimeto SC v El Vigía FC | Liga FUTVE 2 2026Time: 05-21 05:30#EXTINF:-
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=60e2115649743fefa39089ce5c45c4ce:39391c9f3694dbeaa1de8e10b7da664a
@@ -102,16 +114,4 @@ https://d7pd9oqdl4d44.cloudfront.net/2026_05_18_09_13_11_3a637ee8-6a7e-40de-b5e9
 #KODIPROP:inputstream.adaptive.license_key=a70093f71afc3aa98158b6525799fdd5:7cb2b07c47b9f09426f4c23c83324361
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_12_10_44_03_b3a4ae1e-f09e-4c07-b853-fa7243f8fc54/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/prsyGbAd8ueb2tMoikAPM4uLwqHutQJeDeWojB6FRTuuCOr3jAK6meeCyf4c2BpDuGnmcn7e4C_9QCoLywtTPXhdz0614wnlFfXFxr_YmjhgG72rjkSWJmT3ohNwPOsDlYNl1HelCCjHo2YDpefKvCdsVTzZZeRVGckmV4wxe6NAj31I6an1MsA5CoyhRaBLAi3sXg-L2PPk5DDnCSTe4Iv7Z7TFDuSmnNnuigpgum02O4-P0zr2OdVh394jD3Hj2sFgWz6dh_VgwUIRNGlTtxQPaBHwDQZkbNtCki5WJD7TkumwqyLn3AXml4HMl0bw_TkbzdHwTM714PLY9CdYRw.jpg",  ▶️⚽️ Caravel v Estudiantes | Division Honor 2025-26Time: 05-20 08:30#EXTINF:-1 t
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=9fceffda27e03931bfccc6efc1601d7d:01f3412526e163df9b803b251bbb3e1f
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_12_09_18_23_bb229d71-0116-474d-8267-c12c7441f66c/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/bwleeO7MbyCFNVzQLl0EYQ-QFdPEo3YnYIVW-PTCjnCArWs7apuKPduvsXJRNMJoXXJRpGqSFBHukWGfLBhTEfRPBLtSAwHWxN8RMJyo-uYK_sD07FXHvrtBObXYV9rBe479S4nAPzAfSGnU7yqQK9kRI-qRHAqUjoX4grBUft_JNmD-zmwmDaMargi590pZgHqYf-ZQP1RkCbCNrOkoHCjBsGDzXZMGJp2F7VqvbfMpDs0f07TB57kgpueT1keIl8wtETbGbB7n6FsNurqZTJSVtM3wCv3xZlL3Eful5p9IWg4PC87ZMhdI9T9PFa4UZM-Tp6wlWz_23n_QAqm5aQ.jpg",  ▶️⚽️ Bagatelle FC v Gall Hill | BFA Premier League 2026Time: 05-20 07:00#EXTINF:
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=72fb72575f34322ba019e344d1b6c185:19332fa1564988219e6410bb20be5d18
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_12_10_44_00_6c1778eb-2ab9-4f2b-88a8-92c043a7dbea/PROD_CMAF_CENC/index-dash.mpd
 
