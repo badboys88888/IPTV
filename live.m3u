@@ -1,6 +1,12 @@
 #EXTM3U
 #EXT-X-SESSION-DATA:ID="SOURCE",VALUE="Hady_Realtime_Bot"
 
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/Rqrto9tx85AZ27cYzQYX7kvDSDCVfqYlshoxpVTaOY0be8X6tdmCH63fiMTl94Cm8nFhz7K7bx7TrGeR2yssa443fMtia1ZhSKF3zt-YkP7ft_MSU8-NpCSLEjE8ZOcu16H8N_BwwnEg4HxH7WPsdg97Qje8BrAJTPeviBMd9gwQw0D6psnR2MKysv_9ObcrBi03KMjVZPRvXPxNjcajQmnrlW1p1jNbFgmJDGyZn3M6LVAg7ao2hbRSaPwWoR5SjwlzXQ6fDAC4fTMe8VOlj4Ggce40WjZ4MQnzep926UWsn3Y6IIiRGq-PzqPbS6Z8il7uwabizbB84uS7UR3mKg.jpg", [刚刚] ▶️⚽️ Broki v Leo Victor | Suriname Major League 2025/26Time: 05-22 07:00#EXTINF:
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=e82de04675443a01b8b78ac3f099a00a:2607cb2a84eb4afe9abd6ad85ac4c960
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_17_15_54_59_4343f7fd-af8b-48cb-8da1-bdc2dfa8c407/PROD_CMAF_CENC/index-dash.mpd
+
 #EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/FljzqbxayaXe0wg8I_6xpHClnfquNkA0Mrl8fJauaXVu9DQKPKalnex14nZeqtGNM1-1lmgDBd4dFzyZ0ZwncjjRZLF9fz9nrXKdP8-G2CpiS2R9sCID7Z5OQ82nW5WXnREF6wLWL2duQPziHUwvK3-x9DuzcUiQDdQeoJP5HBC36mHWZFBU5V6A0i8ojAkIEWBtDYY4yTyRtKxI-OS1_TYxAGwagiYF86JnmvVr1YqsILow3FLsngfXlfogzxFxb4mD607Jl6ieTWvmMVrrpjfnXzi5HNmdukO6uYmisEXsDeCR_MyVV2fSq9BlsvpGAeDzXWQO-mKKostK_W7wyw.jpg",  ▶️⚽️ Stade Malien v US Bougouni | Ligue 1 Pro Orange 2025/26Time: 05-22 00:30#EX
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=74802f8c16da370bacd2b8481ec33f8b:350faebe60fdc5ef74a0795451bb2338
@@ -60,10 +66,4 @@ https://d7pd9oqdl4d44.cloudfront.net/2026_05_12_09_18_26_6eaa3ee8-477e-4c72-a687
 #KODIPROP:inputstream.adaptive.license_key=a6ba257e9bd1311eb120979ae0984e90:dc3371c2e0b644743935c5b64f0ad917
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_19_14_12_05_051b6297-b3d9-463f-ae5b-04d7c0d74bbf/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/BF1D3yHpQ5PsXlaV_u5eYjK_NwWBAuYVx9NOKlfAliUC33l8S-QaenKrzrlLKHy1EBvjtmcYY7deBWg3JjhYSqEunB0nPHmHD4_UmByl06kiOgHztXBw_O19YQTK1kLKjrY4aOfphTGNP1F7Y-4l-YlnSbZjJxfrlGLNX0mhCjBP-dT0YYtgiP6DF1RF07ySOrRa-VCYDGz9s5GznLaQVRMEXMXoKRx-wazvhKHp4-VAlJdEVlnlF5vF68NEd5rroizsHv3T0oNCl100fkdjFimhXtwylN-4bchYAXOs4fsIA77j2wLSyyv_91rkH9SkXoH7dydb9N8-NBS6t70S4g.jpg",  ▶️⚽️ Inter Moengo Tapoe v Robinhood | Suriname Major League 2025/26Time: 05-21 0
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=9fd01837bb613f0a93d0a145d8719ec6:be7f53cb20c94b1bb69d67f2d85cd649
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_17_15_54_56_143a4abc-b9df-4814-bbc8-6a5c5788cd90/PROD_CMAF_CENC/index-dash.mpd
 
