@@ -1,6 +1,12 @@
 #EXTM3U
 #EXT-X-SESSION-DATA:ID="SOURCE",VALUE="Hady_Realtime_Bot"
 
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/Ack3Q1AndocgiOwHpeSKtuCPO6C_I-DIxdxYRfRENPnbRxOYOgXCdfL45WAkLEbmKhkT6q7fevS7ZnEVuO0vl9Q7cVzQyaTTuOXi2F_xW1ddXrQgkbUtyp3jMx4inGMuBPTlWMKJ5ceyeum-tR1IZFeU3LSfxSEmWvN7HU-KlM7mhPWaC7BEFpvhhXDdMTHgnWza5qgWDofRhB87d3TboPhtrgldBpjNr22VFMN62D8SvN7yZpInTWm1LOmGLp55K4TFqg0bnZ01UDuoPgQam_SMONg6ZkR1kwbHhPncDTFvKVNEL7CBrNE8k2gZ_GrQdMa_tNZlW3mKBHlZUMQUbA.jpg", [刚刚] ▶️⚽️ Aragua FC v Mineros de Guayana | Liga FUTVE 2 2026Time: 05-24 04:00#EXTINF:
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=67e3b171ad853c63bf739726ebd854b9:65b23b5471d8412bf0066b428059c741
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_18_14_20_08_9d3b2587-9737-4b8b-907c-39006533ce31/PROD_CMAF_CENC/index-dash.mpd
+
 #EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/ssoX_me53zLh2VujWS5APMd1JUQeWR-XX4lMHZtjs0HAJfD-j-6pgxysuz40fLklIy_nYuMIm6onjT3ZL9mvarBnDFqlbFMsAe2bkMFs4ZxJQcyhcJJhZj1ThMwsvwmqSPHfK_QHpaoi5Fm96m2zjNUnArralgclzYiRVAma202EIpmA4hiuxpp1G2XEKf6R8a8KaZI7qaYKj2gD-CWkP-zegVjlsd0wVa6iQLpDdZ3tdvKF9dmK7AwL8pGT0LLPYXf6z09UKzUi2yzaFusmUsl6-uaO5kaioeJic7rglyr_bxd8kjhfoa55_TMDwP-i3VxkcRNQ6Hs832v1SxC4HQ.jpg",  ▶️⚽️ Tre Fiori v La Fiorita | Coppa Titano 2025/26Time: 05-24 02:00#EXTINF:-1 tv
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=bb320c20b2d5395ba0d9bccfb67f8981:34f43365f7c13e24c3bb611c3c3b3f85
@@ -108,10 +114,4 @@ https://d7pd9oqdl4d44.cloudfront.net/2026_05_18_13_47_02_940b680d-a22f-43d3-a4a4
 #KODIPROP:inputstream.adaptive.license_key=ba7a67a3739f357e8f2f3c0e8addfe6d:a455786bb555f01919a0b97f5c1877c4
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_18_13_46_59_0cae8f6c-8122-41a4-8112-8703380ef43d/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/XQnolZDVxgfvT6-rCRCtF0Tse1Pg03rUmV1FW3xPww4SNybUbVACLN5KUYirqChAwA3Ie9HiIUVQuPMPe60AnxViTebrwjO3L4AoKbT_0uYjC58cZXbxfefQj_iFO2Pq8f_u3XRYcMuJCaT4Yiz5IarbGmxN-gUvGAQ16oNhVxBoFJhqebuKEKZyvXZ3cXe-Im_grCZ2EOJz3fo3hUEvtuoBcAccK3ehRQDJy4guXUme58tZCMxgAkPOZiDkmNtdV3j5NBSqaRROq7Usjm_pGpOnxcgWOKV4SUmf0um_GvBUgK8Z6qV3oXGISCTycOein1qdvZxjasHy1TXxGEUHQQ.jpg",  ▶️⚽️ Deportivo Ebenezer v A.D.A.M.M. | Equatorial Guinea Football League 2025-26
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=73d6f1ec1ab63df09da7c5e752a1a198:1d39822b5c7e72535087edda67e3c19e
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_21_07_13_13_f97b00f3-bec3-41a2-a31e-e3059bffed2f/PROD_CMAF_CENC/index-dash.mpd
 
