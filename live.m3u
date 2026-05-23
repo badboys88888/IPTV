@@ -1,37 +1,91 @@
 #EXTM3U
 #EXT-X-SESSION-DATA:ID="SOURCE",VALUE="Hady_Realtime_Bot"
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/ZNJP-lW1XNOgsgMdAUl_GqLd0wHVulcIwdqL1JitB4VjfifI2uhyWBlVR9CecKnsE_wJsX21Gf_oyNeNGSmIjaJghSNNomoM4DWzq2hb46vbmadqIvms7S-Bfqa86DJsiiJqE-orkOJwITjuLBrJNrMoh6Lzax2fgoQoSE3UAB1l-4QHy63XTjYPlqf6lcGkBu7fZhmrFCk5LoXfUkGfvFqPQw6heVOGkNh2Pod5pq9lALyHBoqrb61WTdoBKoFAVvnO7P67ud2LEOiTmlmBNL70ekT93_Tfza4rBuKnhe8aiTJI9y5ZrR49QnBl8hyGmhcUBaY5s1Df5jy60qazbA.jpg", [刚刚] ▶️⚽️ Sekzia Ness Ziona v Maccabi Yafo Kabilyo | Liga Noar Leumit U19 2025/26Time
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/ssoX_me53zLh2VujWS5APMd1JUQeWR-XX4lMHZtjs0HAJfD-j-6pgxysuz40fLklIy_nYuMIm6onjT3ZL9mvarBnDFqlbFMsAe2bkMFs4ZxJQcyhcJJhZj1ThMwsvwmqSPHfK_QHpaoi5Fm96m2zjNUnArralgclzYiRVAma202EIpmA4hiuxpp1G2XEKf6R8a8KaZI7qaYKj2gD-CWkP-zegVjlsd0wVa6iQLpDdZ3tdvKF9dmK7AwL8pGT0LLPYXf6z09UKzUi2yzaFusmUsl6-uaO5kaioeJic7rglyr_bxd8kjhfoa55_TMDwP-i3VxkcRNQ6Hs832v1SxC4HQ.jpg", [刚刚] ▶️⚽️ Tre Fiori v La Fiorita | Coppa Titano 2025/26Time: 05-24 02:00#EXTINF:-1 tv
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=bb320c20b2d5395ba0d9bccfb67f8981:34f43365f7c13e24c3bb611c3c3b3f85
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_19_08_53_13_45cc9b22-2178-409d-9194-087c10901be0/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/MvWm7LOcSUtpF4NprbjTd3Mq6O5ycFC51nn3FntMxrN8QWVDM3q58rU2NTzzKKsVQH7zjWTbghYdeIYnqhHVA9rFL3n9JLMFzU0imcBUo7l9EC35RXoa5fJ1M0po0Dc5Mn2HFRHN6DktAapqqjhhS-Sqhm0qQ9gLheXKE_MMNmahdn9pZzGOElmq7H2n504Wwfxoppqa9G7sSF3apF82htgKJnn4mPnfJUX39dbuA47swBHcVHbimL1QcLl3mhhrB5FX6p2CwtK_N1u2crPuKRz3j0-LEnUpm4pDICSkYbwUc5njIg2G9m4kLJUBiq5uIm72tmhr5Z9s3MYx6SbB6Q.jpg",  ▶️⚽️ KF Vllaznia v KF Egnatia | Championship Playoff | Kategoria Superiore 2025/
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=8dd940518b39338d93f6111872892fdc:d3eb3557ea5a44e630c6e94e67effe13
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_19_13_59_33_d38810d1-b663-4b1a-be10-97ef1c4ce661/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/O5kbwGqhP-UunWgwkxj_43PFBX5y-GJkylzxhyxG9dtNtI0m95ZMzOHI3ybWcpJlmhKVX_nUTDE0DlwnLUBMfA1x-gLtv1CSO1gAGkdHz9LT3sUMs3XwvDXDbEwMoa-w9PnfZ0iQ2qKD1qAMkV4gznmKjb3R9ioRdykKsssz3SafQXwTqUr8EQsWaKz1X0kU3yTCvUvW-VfpQOPIRawJvyCkp30ferbhwRp6k6r_o1b6Th9Sq1cen7-bTOu-Tj797_mRVZJs0lZ-sVGu35swlzoan3l7pKGI5QsokEBgjXclwqfHGgc9no9TZ_-lovdAwfSH2nRG-3XQmscY28axqQ.jpg",  ▶️⚽️ África Show v Palmeira | Cape Verdean Football Championship 2026Time: 05-24
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=615f5329deeb367ebf94e9a93b3be51e:7fbf7384ef3d79dedfd2c4b9da3fd060
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_21_08_54_57_baf761e6-cfe2-4ca3-adf1-a62e17ff328f/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/rIO-SxRrqZbvuNpaFxIziGxP6ZTQ8J-bQl3X47Y3mN_L5Wx8oplg7flwGwZHlsYeapPBb-moDupTTzIwq65gQrx_NRgZJJskUzZTyTfJTqtmiDq9r4s9XQxBjP3cVI4_XgX6aJVb0cMxzi1YdUkpzqOW3Lv0szWeD320wgHd272sf8CNL_x-y99IbjoycUhrechJw_kBFicaVGkBuUdixh02uH9GJhYqPpda_Pg_S7r3VJieze1e4wrgnGcQOpHbUCFy_eheF7niFET121A9pdJzogttXbGFls-T1nxWR9jnBSkK9AqOwKPB5RTLlWf7kspgCsWgpaTQlsc9VFVtsw.jpg",  ▶️⚽️ Onze Unidos v Atlético São Nicolau | Cape Verdean Football Championship 202
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=6ee6643abc8136e1a01b29a7ee04cc15:99de74f4d48071ff4c39a261fb89926b
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_21_08_55_01_e8a66624-783b-4127-a9f9-57854227eeee/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/cBG7WvqQVSUFvCkpiMX0yP_4_aRZ4ooY05n8VXZbat453Wth1NGSTEwAEHIMMNOELWihP32X_53Vo3ClmzDEcvwUuO291iO4yl4cTHb53Qj0uDvtFtyM7SkFvLmpIOeS_yeS8_d0ZPRgdVNFzGzg7U9mmL3fa_lgVrZusl3MC71prz5D0wFXJ7txnvj_HHR4V221nXEiAeVx8vRidne5kTmv99E12YkcbBccOauL9sqF-U_CUOe7tD2K1qCXzi6bortrThJm2Cy1sfVynCj4wRiiH-sYpwxF4mE3E5EpNToMocdQPYYXxk_BFmKFcH9u3JtbkNGYM-GqbCtlNc40TQ.jpg",  ▶️⚽️ Boavista da Praia v Mindelense | Cape Verdean Football Championship 2026Tim
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=d4256079cef234578c4868fdbebe4d09:c79bc314e967adda8c6a8531d939d84d
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_21_08_54_27_385bfc4f-4950-4768-95c0-f87783af4df7/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/pDDmdClFxz77y1Pm7wSs1xBQC9wm2dFJe8MmLzEjQLM5TkbF0w6X73NYIcWnNBIgZXcvSheADI29EoAQbmwnUBIYm8uKKR0unOSxTIT0Mjfc6f4RUtlYPP87KR_sXMTSA6nZQ-iKo-DC7h2wt0ME7_S4TwRq-IsWh2FFKrx-YBcjr5kmTSopaXlLjFGQUaSCokRdUfW9s9fIpkY2MIYf__gUFuv5XcDXXmSbYqA-vTYkFIEcJoN4bgOFSGWlTfutSaBYzCd3X_O0xoTQFVdZl3kk9p0tbgrO9pDXV8utv3ClaiBNbtgsHNMzEToIaZLAcBjoflFfF5ObNR4dm6VYcA.jpg",  ▶️⚽️ Académico do Sal v Scorpion Vermelho | Cape Verdean Football Championship 2
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=bb1715bb9f713335bff0b27e6a911528:2c9f4ac934e7673a7bc929264a0b14c9
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_21_08_54_30_58b39804-e0a6-4fb8-9ee1-2374b225247b/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/mq0AVz_ZIiCIfx9w-pCwRGLQPvW--zw9W3p2Xb6FGMooTRnuLBwDNORX1OmnOFjMivbAq_nk-jjWJJkvdiek87bD_2QRQhgGNwGz8KtGgSzEqAY3XIgFKiWmT0uNra9RhaGzmDAqc04LFSrVYONw8kJn_i1sto_mDkms-dQZ8PVuNsBtELjP7x3Kcn31UR5DNgJbrmQyd-g76KNyhDY7HOZyyHH6GsFUOlVZF6DGXHU0Tivxt8B8DVmlg75pOQ2cUo18ePTMz7Luhf2O85XYXLkrR94mWic6nQx7NnkYySUxTGvn8rot80i48YUswZQ4PadlsZf0j6vwn-iTPaeHjg.jpg",  ▶️⚽️ Académica do Porto Novo v Benfica da Brava | Cape Verdean Football Champion
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=50095e761ab33cad8a5d40f07d60d553:77f3f23ad01be4de2a6610de622a1119
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_21_08_54_34_632a0e3b-09b0-4364-8d21-5cf8c02aef2c/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/BQPdth5J3zZbe9LEZzioy2FOCOpTNYU6W37-ygK673B64Bj9vmHMH72IIflxSA_Xe9vrBPBlZSGJaWa3gIHCYaq6wl5-xZLY5OGsD5ZAIHionaW16JRfnYykyN6orslhtZ07GuC3t7FklixsvAku8Qybq6jN_LiNcdiiZcRkexJ8JJwPPg533-uh-IYk_0SEtD8XhFAf8Ehvjmf-0KOlqNeNdHov2VXqDf4mAyiV8mxWLwlyXqlmB31epvBlOa9ybsky4esnJh97M5PsWWJH5UaNhx2uiWqJJAsbYe2YtXhJakRkpKMPsHDIuDqpyQ_iLvCL0Rcn5Rgo6C8lPTOK5w.jpg",  ▶️⚽️ FC Nouadhibou v Inter Nouakchott | Super D-1 2025/26Time: 05-24 00:45#EXTIN
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=0c768881df6733f9b5c1f9cb39e5187d:24655dee68c1fe8b2e91506a06e0bfc9
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_18_13_24_34_06b0e80e-c085-4128-b8f8-502caeafcae2/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/pJpiWUbzXs4zN0T74BCcPum9q7mCxPljg3t1b7tAaZQK-UcHyXD0lYpMPeRZWty-IyfGQYCLx182dC4zi0Y6BKD6g-d8SzNHIhu0ghUjUqGaZzfMonjE90v06xPi0DPTUntv0_SvPrvrpR-iCsTmMey_86fVC5oydmbIoWPXgeAnLk2hTps2Y40T5BKjYdDPQ6TahPg5ZMuEdCXHYTVOB6pmHZUlJmvDDQbf2d4HsyQJqLK7gWvFck3ZDqAxdHQ4ciyHcFK37gRPnGjth8HLVvimLVkHlUaUNzZuj0KXFnH4OHi0isSPIGkO47ii41qRGa-t9kwH7e3XpCIB9BHLww.jpg",  ▶️⚽️ Cupelum FC v Sporting Clube GB | Campeonato Nacional de Futebol da 1a Divis
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=412c51dc57b03ef08451a9f1e9445535:ed0b73fc865a8f27c2d9e8e3c1929a7d
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_20_13_51_25_9596522f-93c1-4045-a229-10655cbec851/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/ZNJP-lW1XNOgsgMdAUl_GqLd0wHVulcIwdqL1JitB4VjfifI2uhyWBlVR9CecKnsE_wJsX21Gf_oyNeNGSmIjaJghSNNomoM4DWzq2hb46vbmadqIvms7S-Bfqa86DJsiiJqE-orkOJwITjuLBrJNrMoh6Lzax2fgoQoSE3UAB1l-4QHy63XTjYPlqf6lcGkBu7fZhmrFCk5LoXfUkGfvFqPQw6heVOGkNh2Pod5pq9lALyHBoqrb61WTdoBKoFAVvnO7P67ud2LEOiTmlmBNL70ekT93_Tfza4rBuKnhe8aiTJI9y5ZrR49QnBl8hyGmhcUBaY5s1Df5jy60qazbA.jpg",  ▶️⚽️ Sekzia Ness Ziona v Maccabi Yafo Kabilyo | Liga Noar Leumit U19 2025/26Time
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=d907a9dcf18c3cba98cc435bd4997594:d477af5c6a8feec956f55c97436a933e
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_21_12_24_52_83273bf2-5dff-4afa-a618-7cb640fd6f40/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/fz4MJNgPojoVAUVMtMwA4-mpi4EHUMINlsUuKdkirtrIx9F1-LDkzVB-Kli_PIrB5ZVI75Oj3zuhuz9syTX8HopP2WLlf1couAwKSre127ODT_xSG668CddP_-kGvmQngF7kB4xJmJFRZ_Jp0vHwJ9fxDOn5ZNVjsuOmg3oBDor8ocHwcA8axVd-WbKVAaPPPoHyz5b3444bW_JH2XK5mnp6RJEyy0lTZ0n89yJ2R2by2qaf_utQEG6bsFYholKOy7Xk_BVeciPYkUF4MZ7RYztK1ZjMtF8Of88DhxiRdp0uCv5fvt7IYMSNNVZl-k5xPN9kO9EfhMqstvP4CuHv-g.jpg", [刚刚] ▶️⚽️ Freetown City FC v Old Edwardians FC | Leone Rock Premier League 2025-26Tim
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/fz4MJNgPojoVAUVMtMwA4-mpi4EHUMINlsUuKdkirtrIx9F1-LDkzVB-Kli_PIrB5ZVI75Oj3zuhuz9syTX8HopP2WLlf1couAwKSre127ODT_xSG668CddP_-kGvmQngF7kB4xJmJFRZ_Jp0vHwJ9fxDOn5ZNVjsuOmg3oBDor8ocHwcA8axVd-WbKVAaPPPoHyz5b3444bW_JH2XK5mnp6RJEyy0lTZ0n89yJ2R2by2qaf_utQEG6bsFYholKOy7Xk_BVeciPYkUF4MZ7RYztK1ZjMtF8Of88DhxiRdp0uCv5fvt7IYMSNNVZl-k5xPN9kO9EfhMqstvP4CuHv-g.jpg",  ▶️⚽️ Freetown City FC v Old Edwardians FC | Leone Rock Premier League 2025-26Tim
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=c3fd9eef0edc3909a90d723eb4311483:0b6bbc2ab97f89d0bba342fe3f9c5f0a
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_20_08_48_01_7debf637-ccad-4711-8eee-298ece0ffbb0/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/KoLvz2NKEydTbPTC7IntBOrxiGWDaJ4t0TNX5IkJspn5994l0HzhmA2RiK6y4l1rAr7E-bsC8MxVDZYIokLQhWnKwyD40V4D85N6H7zA4KTs1Mle-I2wKM0sIJv5HHn7LhY0-7-VUgWSK-G6ELpeQhG-GVqdwmojnPs_9i9l_CWAAb7F_5ncHnsKbEtbJQiL3m8uwP3e4EK-2PH8vIsVEa6HqbCmH5x2PpRgygeVkPuCLdLwBbXPa9s0v_cK4TgotyxNRYJZ0EyYnbR0lQSV5wo1OvA2CYUJzwJ7ibc7rbN1H5BoHvCqaX66_ZHlH0-Zn1qyhMGI16L2xpKYswDs3g.jpg", [刚刚] ▶️⚽️ Gardnersville FC v Downtown FC | LFA First Division League 2025/26Time: 05-
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/KoLvz2NKEydTbPTC7IntBOrxiGWDaJ4t0TNX5IkJspn5994l0HzhmA2RiK6y4l1rAr7E-bsC8MxVDZYIokLQhWnKwyD40V4D85N6H7zA4KTs1Mle-I2wKM0sIJv5HHn7LhY0-7-VUgWSK-G6ELpeQhG-GVqdwmojnPs_9i9l_CWAAb7F_5ncHnsKbEtbJQiL3m8uwP3e4EK-2PH8vIsVEa6HqbCmH5x2PpRgygeVkPuCLdLwBbXPa9s0v_cK4TgotyxNRYJZ0EyYnbR0lQSV5wo1OvA2CYUJzwJ7ibc7rbN1H5BoHvCqaX66_ZHlH0-Zn1qyhMGI16L2xpKYswDs3g.jpg",  ▶️⚽️ Gardnersville FC v Downtown FC | LFA First Division League 2025/26Time: 05-
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=096a8dce847937be92c982283fd5bcbd:8292f7a5220b77d9b1f6187175307e77
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_19_14_51_36_b8ca02c6-0c9f-4aea-bf47-8fe96f185292/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/Cv-5ZXLJoYaTuAE9ajIzddcOxE5HBXOSrB_yz6oEoNOT3xmmwrLA_wsJ6UWSm902kkjfC-sXQd6qdHtrFOt3TEEpLlUHEzEIFBD-P3O6FfrCO8GwYc3NQXuxeHgIP21ztDL2SSRGk2dwGrcHNIrDyxuBlCYIDvhMZgT_ceBEzJicQIxRYGh6zN3NVMqnxKvBRfMixx1BKMnxoH1b37Fh7s7zLJNvBtQHr424pExmnnZMxetlJmsKbz4yGYuarsSMuJTndv-pPjzeE9FCyUmtqD7QRqtN8vr3E5DuZ3Ooz28VPi50DfhGmjzmWLLma6XYJ7Hv_G-NNQmgPQBk-LT-zg.jpg", [刚刚] ▶️⚽️ Freeport FC v Paynesville FC | LFA First Division League 2025/26Time: 05-24
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/Cv-5ZXLJoYaTuAE9ajIzddcOxE5HBXOSrB_yz6oEoNOT3xmmwrLA_wsJ6UWSm902kkjfC-sXQd6qdHtrFOt3TEEpLlUHEzEIFBD-P3O6FfrCO8GwYc3NQXuxeHgIP21ztDL2SSRGk2dwGrcHNIrDyxuBlCYIDvhMZgT_ceBEzJicQIxRYGh6zN3NVMqnxKvBRfMixx1BKMnxoH1b37Fh7s7zLJNvBtQHr424pExmnnZMxetlJmsKbz4yGYuarsSMuJTndv-pPjzeE9FCyUmtqD7QRqtN8vr3E5DuZ3Ooz28VPi50DfhGmjzmWLLma6XYJ7Hv_G-NNQmgPQBk-LT-zg.jpg",  ▶️⚽️ Freeport FC v Paynesville FC | LFA First Division League 2025/26Time: 05-24
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=2e339caa94883918912030e1cdea0ce7:d07a4b98511d48b731b658fb60ca1b84
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_19_14_51_32_3fb71b98-76a3-4e30-8b32-31472cee5582/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/QV_e7nhXJoJZupfAEFbS2Dbq5y8Hz-Zu35XG8rdh3sB2A_nhJ9Qspx-2iylkb4qhOB1DjdE3H5_1NV3CylltnY76n2oH2fHDeuy6FFb2CLoIkwbHXKyRoZsXA-AZnP1szPSeLfoRbdwc0bh5c_GRENRKZuXovZmf5LLtc4bMCUxLEdVml5TOtu2vc2WAFcwrpchDhBm879yTij6Ld8QmktcKGjQ_oyjaUVtBnUZzAtteIVVl8god9AosyBikjaHeie8wxziu3gaHUDIYqKkotxnc3rzXvt2S9ubjV_j8MDCjHN5JyQQmUSesIOgbpSYQ6EwalJprApExso37Kv4nuw.jpg", [刚刚] ▶️⚽️ EFO v USCO | Burkina Faso Ligue 1 2025-26Time: 05-24 00:00#EXTINF:-1 tvg-lo
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/QV_e7nhXJoJZupfAEFbS2Dbq5y8Hz-Zu35XG8rdh3sB2A_nhJ9Qspx-2iylkb4qhOB1DjdE3H5_1NV3CylltnY76n2oH2fHDeuy6FFb2CLoIkwbHXKyRoZsXA-AZnP1szPSeLfoRbdwc0bh5c_GRENRKZuXovZmf5LLtc4bMCUxLEdVml5TOtu2vc2WAFcwrpchDhBm879yTij6Ld8QmktcKGjQ_oyjaUVtBnUZzAtteIVVl8god9AosyBikjaHeie8wxziu3gaHUDIYqKkotxnc3rzXvt2S9ubjV_j8MDCjHN5JyQQmUSesIOgbpSYQ6EwalJprApExso37Kv4nuw.jpg",  ▶️⚽️ EFO v USCO | Burkina Faso Ligue 1 2025-26Time: 05-24 00:00#EXTINF:-1 tvg-lo
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=66b897bb759938b18df83e08e3823106:a0df89d8316f14a11afbcdaabc0eff19
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_18_14_02_19_5bab4678-ad5f-4b49-93a9-ebbb9f1badea/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/qzXqP04rZubrK-fIaPR5j5P0pkDhdl2eW1y6DTuCHn96QveFg2cno2K_5TN5Jltrhwqq8EFwdsVMqx3rdtgitcJqk0Y3jeAXRenGlp24D_gdqTy9MS3oOcRdjb05UTFXlyLbuy4wU8g97l2l_CGHNpH9ZTb4su_FfXnXUm751rAwRfBBcab7KlMe7ief78-avjECRcQHNBIHru0wC_4xOh0R6zp9z0lLu_IjJNfx-QmChAn11Wic-PfDhivJ8yezO670qUV7F2_XGdEBrIwNyrsN1IAMpQwVf9ofBwNtA91pAEB0G1FkqjSDsFwhBGWiOetSXb5R9lYl2vhrvVw_kQ.jpg", [刚刚] ▶️⚽️ AS GNN v AS ZAM | Coupe Nationale 2025/26Time: 05-23 23:45#EXTINF:-1 tvg-lo
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/qzXqP04rZubrK-fIaPR5j5P0pkDhdl2eW1y6DTuCHn96QveFg2cno2K_5TN5Jltrhwqq8EFwdsVMqx3rdtgitcJqk0Y3jeAXRenGlp24D_gdqTy9MS3oOcRdjb05UTFXlyLbuy4wU8g97l2l_CGHNpH9ZTb4su_FfXnXUm751rAwRfBBcab7KlMe7ief78-avjECRcQHNBIHru0wC_4xOh0R6zp9z0lLu_IjJNfx-QmChAn11Wic-PfDhivJ8yezO670qUV7F2_XGdEBrIwNyrsN1IAMpQwVf9ofBwNtA91pAEB0G1FkqjSDsFwhBGWiOetSXb5R9lYl2vhrvVw_kQ.jpg",  ▶️⚽️ AS GNN v AS ZAM | Coupe Nationale 2025/26Time: 05-23 23:45#EXTINF:-1 tvg-lo
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=7d7754970b793d4bac8a000b5339758f:dee1dbe755d332b4ca801abb59be0c1a
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -66,58 +120,4 @@ https://d7pd9oqdl4d44.cloudfront.net/2026_05_21_07_13_13_f97b00f3-bec3-41a2-a31e
 #KODIPROP:inputstream.adaptive.license_key=f444eb9aea2e381995ccb2daedfc84e0:a4a584ea8628a0aa9b9496014a451ed4
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_20_10_12_04_b8796328-a834-4aad-a9e8-d0bfd4ba0d16/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/f_eOSh6ABFKCsbJkQjPJe2apRooF-DbIgTGz-XpsoXx6jSDS-gLfnpg60geC5OvENCP9OjpO7TinHNsj2JW36ou4Z1A8zcCJ5VN7iOVfeqRjQKXH3pQr_-uO-JmWsL788ltoTycGaLiC-oop8-N5Sbs2s5prOOgDlDEhbEcqYCsgdAsi_ewXJNVVvI6O7a4jdh2mJC7ky4lI4L0Y5rCHZcklCpDF0_ECAkkEpyr1XHFqDpdPsyJM7lCfs4WyYjjOpkobqOcV1V8_0Fzxe2eNu4giimzAnxD24A5aE_F33OJo1Y7NAK-VlvSiMSG-Zh1dJ72esfr7cADs4HVgBTrYMA.jpg",  ▶️⚽️ Masfout Club v Al Arabi | Round 29 | First Division League 2025/26Time: 05-
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=93352febd1cb32fbbf8d6f8c4d75e296:bac8e693cfd10fff8a4391b372733f57
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_20_10_10_01_00434f39-80b5-4075-a93f-2942914887cf/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/U1FCMCW5h9y4ktRzNHFLPLeuBDP_rHsjNM8DYUQpWctlR-HJs2XyHcy7KhQq1cArkrZdA03P6Huog0B15WnjUHEaVNbGZpBZ9n8AZ5sDs-QjFG3NVoo0JNsknCgOnnIWpsOP-GTHuIbceHS6YDKaQnISTwZMzW-GgaKC54T9PO8Cyq45D_BNufAsCdd_p72lV-CqdSXANmW_tA0DlXNRrvZZaE2jeiqNpQjkcU7FFlPQw5qjvUX9IIktaF6Y3e2TcQltEymJTdnNxj86TbULg-gWLz35dnEgk8VAQiTC1QeguJrfH7neGMQO0A9oqF5vvBOL53JEYD9YAQoc1BDuHw.jpg",  ▶️⚽️ Hatta Club v Dubai City F.C. | Round 29 | First Division League 2025/26Time
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=005ce1aab12e3007933021489e264826:de4cb2804f45c9a82b51bc7d7d16e1d4
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_20_10_11_59_ac9bd646-82de-486c-b091-5bc3338b646e/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/LWfIbxk1Lp8F0iqU8TPBAjxSGh1mAgq3QS52VeZgcXc2LnHdsAw1oQ2dVPEKC4xfWsUAdqEAotipoHRwbjJ1GrMBIpGgKBj5w0SS4bGG5dXW5yToVwHIZg1hk2UbKlbwUEu0lCIuFN2MT8smyJTc-17Qkt8vYnZfmjn6LdiFGubnxLvxtuGQ9X6JFRMvNi75EzGUnM5x4CaMSkU5Qn--A0HmqGYZC4x-SV_hAm6UOJB7YORyJ699zsrbwTP5ZXu52MURMxgkg6H4DLFSeZBEa6xVs63CjgIkjkYhU8hmhyB0jqUmbkOkfneG-tvlu32CwkBsXjwOX59AtgJPopV0JQ.jpg",  ▶️⚽️ Gulf United v Al Orooba | Round 29 | First Division League 2025/26Time: 05-
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=14bca493aa423b438aff9473105458c7:f1959d0fd6c0641b5dc6fbdef716eafd
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_20_10_10_42_316e5021-9572-40f9-b9b1-3f6295670b01/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/KShOVVS-pHWG1R7BDWfL3fD18ZrZbqdhTqjT8hrSCyBZqcPGzGrnQBvKBKQER_0SdjbysH4w9xikIT-KzMZMZGfNTniqD-3YITvrf5IsVbYOmo5tl_kqtMeOCZWpj-QH9UoPY2k2hi_Ec7Y3wtaffC4J9FRd-4tMYeZdjZICfOFmPg6EJjY8Z3MGXIojmNVcUDj-mLi7N6VJPWcNjsbtJAPCTeG2QqQdR6q1heX50rTwFI2HHA_CB2KSVLOxy2CdS_ZPZgFbzwfafVQvnvxkfQI5IefmG6YXNkHDpepswdONYbrY0F4cfdPqEgJof5Q5dWii5Q-HC42rwTxrgklpgw.jpg",  ▶️⚽️ Fujairah Club v Majd FC | Round 29 | First Division League 2025/26Time: 05-
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=986762a02b2439a6b8cfddc771b2de8f:d4131a68f4737a1590d2518d231ddb10
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_20_10_11_43_65a07eff-1854-4045-a812-ae02f914cfb2/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/uO_pf_OgSmC0EC8a1Q4MTeI4rDs98Vo45f2u7VJ8DpZSZguaUfi7wAcC4LDiGodZ4sGkXo9UG3LG7Ja6L4BUSiZxfKrmKpJwlDWzmpe36ixQl6dqJcG0oDkpVRqMUUO5P8Jt0pJMwbLiZjkdw8raa26aSZU7qx55U9Li2JquYGfAGFRCXQ-kFupIX0OUzmlfgc_1_sL7xmfmYP2E2y9-IG2hl2tz_m16T2ic1B-Vw7mhrhLSdxrTLdb6SNi0N1_-ezx2pTKVe5KTWxiSf7pOEwXb7HkncBRhS-YzlXeR0ZApGfydOqVQVnbtlNNQk75CU68K62hTwj1lyUzjF_ZpQw.jpg",  ▶️⚽️ Emirates Club v Al Hamriyah | Round 29 | First Division League 2025/26Time:
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=98725e7372d83ab49d97b203975769d2:68e8c85a3b08493b297c082cac915636
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_20_10_12_08_c329e329-e831-40a8-9482-d79ee5042b04/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/CHODvoO-_XFTbEHl1BAa5mTrLcYQXliGSk3_lWNEx3pF3rI2x-pvXvCCNnf1HL31TjzL_3m_GvpNotkcGasKYwkIzAi5IMClka1Y5w0nn85sPrvZHKWlJQqiY8VRECyzL7S7TNBM_lmQpU4_pEAgvHJ1ZxV592-AdF6pH9DRb6gjplfy1NCbqAjmoWqO9WS3nmyC-1ZFmBVandFF1sdaO_kRZ0kBaGyuesX2gsE57Qcbv3n7GIYsRO8pSatfzKIkhjapAyH0NzwPoTr54jBSjOcuLrBUdtYtfovVdV90_EE3i3uwRa-iVFL3ONt8rqoErMfjvUTXg7nprh1Sx7xVIg.jpg",  ▶️⚽️ Dibba Al-Hisn v Al Dhaid Club | Round 29 | First Division League 2025/26Tim
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=c3fdf202b7673032826ffefd75e0a91a:2a2ed6a26345c8f9bc461f3d67c6fb8b
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_20_10_10_47_3fe2581d-26a1-43a5-a12b-d7b779179f3e/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/jrx2JfBiWL8WNpVUYbGQH9xmlAUJMzz8f3PbW8nsFlI4o8UtNg3XvQpEpdT_9tf6-lWVUy-Do9WsqKO2kacBkJcZaJDfy_clfbFaPw9gEsVG9dB76rQ0MFqewNc9lE9EeiFO4tZZvdhv_V804aZGTjxdKV4NA00jjBV6okwFyuGSd4wgCZlE2CczuVLVRDXQsYypRLU1t2bv-xg_gvWU00kJg1ll7mcrxPOaKtnboLZQvBuCOchqQjEzkvEQ4Agunm8-xC_REB2mEyxgLymj-VxgVhY3PLuDANpNYYbMrw_6OBuUjk6x4iq-AjWY__smdA3a1G4WHIlePDFESC39pw.jpg",  ▶️⚽️ FK Žalgiris v Kauno rajono&nbsp;FA | Moterų A lyga 2026Time: 05-23 22:00#EX
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=66c38ea34d5838408b25c1b00b474a31:4b4a462cf62cb3335b17215ba6696808
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_18_15_02_59_b1727250-cdde-4202-ac37-14a49cfe365f/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/HYh2pegwJ-7FPunka8ycO-7-W9I8Slj8uG2GJ-VT1baTY4yMCmGx6XP6gSTzDmvJJdU0PMN7qKc9a2I4pgDmWeNHDbSsFkCMaUh06e5ElRc9f37ik5KuPOcmzN7zB3_wwg46bYeuwtMV3HaMf6gVP7Q1SL-qSBODfMBTiFgutcrWzLM177QdZn3_Tc3HifvasTBbvI8qpFriUQ5Z7DuYsUpjlxspiWwUa7_CKwoITULJPkLBq1VTee2YeigYbYrRwfEoXpJkoYSFcnyZoQxKlKIb0JXRiPQsH-KXlZ0XXLuH2kOUCrTwq7QDTDpMcY5VrXNPMNJyV55_4p8DxuNRQw.jpg",  ▶️⚽️ FK Banga v FA Šiauliai | Moterų A lyga 2026Time: 05-23 22:00#EXTINF:-1 tvg-
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=7c071eb648413cc9ace1a42aeb9b4ff3:054f0324daf691829f41a86666f28f82
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_18_15_03_13_eaf44c63-85e7-4e4b-88ef-46d943e619c4/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/oI76YvbJVLlMlmDeDsoarcd6GlOG318j5cnpeIRTL3cPHCI_J4oSo7j47eTnrIDOvZDNuvBZ8DW22jDHZuAIyENX9QFjA5df7QY_IQOCeDRDYEjjGeghaV3WpL7dhc1h9AqQmU_24J6oPYABjGQMya5PYoYD0CCzrfyaLcd2wobI-nSgirpPBHypWzRqYEyMN9xZOeIR20IHyBVn6VU1LeP_pGm2utTltfNimUivKpak_3VsJUIH5JgTtxXfrlFFBRk6LWHuS3K1Uvd30Knm0plWX3U1k62nsvsv0FLkH4OXQvBh2TZx-tq2H6xlwCHQ5XSx6EVowvPiokn1eaXmiw.jpg",  ▶️⚽️ FC Pirin v FC Puldin | Women&#39;s National Championship 2025/26Time: 05-23
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=046e0d890ed9332da5ede9356a2370ab:56a1c0da68d4b330d3f316890cbb507c
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_20_12_31_04_88a50ead-143a-4cc5-a10e-c7bd81bdd394/PROD_CMAF_CENC/index-dash.mpd
 
