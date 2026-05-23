@@ -1,6 +1,18 @@
 #EXTM3U
 #EXT-X-SESSION-DATA:ID="SOURCE",VALUE="Hady_Realtime_Bot"
 
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/PqUXCuHx0ryEy4N6DpOuSc2LunUccc8MDlRO_kbA9_XG-TtJ-mlvVaKZPybOMzZ_mys3bV9L1K1oPEWfh_qLIN3Pt1SNuJ-X2LMbgwbScaUWwEMpeyliA5WWh59gRHaIjjKJihiLGkovZsvMkyTHukGvRvS2f9eOQWYMXD6-vMBmsykUMUpdj3C1d4WUwouW74VvxtcpO7argz04qUougpHGkrGoWBM4Le3Y6yuTjj0tVu4_sHRQSsJhfdYbZWvlBCa82WIrbJYQpOpugMr8LG62aU06eoMsSMiUl_4UjTawRUYwfC4S2e-BfCtpavlwLdNh8YONwQ6aiKf43gFwBg.jpg", [刚刚] ▶️⚽️ Attackers FC v Roaring Lions FC | Anguilla Senior Men&#39;s League 2026Time
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=bd85c47878bf3e68b5624cd636348564:ffbdb3e9292e7aab914ec2fa737402ad
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_20_10_28_46_6b1ee31e-2c1c-4526-9234-5e8f9ca6b3d2/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/NqauAcYxUAIwaeFfiLWfQB2GXsTD_Mw6RIeZlCPh9PbobZoB9JvnCjNrYfG9Y7vCTu_cW5DN_v2bV_SQHfLQ1j19hD7TVvCy-TG9o94HmDuvrevxo8vFZGLC_TB9tZMdW4R9ar1fzsePWlxEJmyGKL_2y-CMFV7vzZ9rV6Vx-PrpC0qBtfr590tJ3bXdOaC6O4UrBYtG_YYL9cIQI1V2i6i_03dlUZ6Qq3SzI70rD6ZJhsfnHM63xk-EcAH6anLjqXuFzwblSfbYlO9rbJiPBC7Ttg1KYX11PMlkyIr6Pe1QXY_Y715HIMJFxg6IKarIHRv1MF3GjV3hebto79gGBQ.jpg",  ▶️⚽️ We United FC v Bombers FC | DFA Premier League 2026Time: 05-23 07:00#EXTINF
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=85055195c1fd30c7a289b276cdd1951c:142120cd822f3ed193b7bdeb295a0b24
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_20_13_07_28_acf7fe7e-5644-4f6d-b13d-65378654a308/PROD_CMAF_CENC/index-dash.mpd
+
 #EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/D6oUpP79rEoVNp_6jMs-13s-TV9vvKGpZ-cdEbbZreHRZ3u1XJBihMl20RE0DUcuaO_TBnWjXb_U_QNB-sUM3QxKem7WrUTZzoif1m3smAU4tZ3F_02byX4KqLb4fayvHmw_e3PIBCafkLrNCZeTG_O_LXeN89sa9qGL_974pbsqPEFSjyihlxjT7jEXLETd8ByPt6_3K72InlSDRLXWwdt9IcPSE9zrM0_Uy0Ty7BAPY_0ZiDCpKllJJDvaBlyIIg1SMFhCLj4XU20lTNYXV5g_pInJv1s0G1Yvghr8Kb92IywJqOk4qfm0u_UpZu0w4hmD8-cHsDtO0b4-BVyVpQ.jpg",  ▶️⚽️ Monagas B v Ávila FC | Liga FUTVE 2 2026Time: 05-23 03:30#EXTINF:-1 tvg-log
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=a31072adc3723f13aa6a6ce567dc8c06:8edeb2f56d25f83cbdd87a6868689268
@@ -78,16 +90,4 @@ https://d7pd9oqdl4d44.cloudfront.net/2026_05_19_07_47_46_b8f2da23-43a7-45ca-bfce
 #KODIPROP:inputstream.adaptive.license_key=3cbbd609d43b3820b29c6ca6fbea3731:aa01472afc3f834b0d951632b5b5d574
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_19_07_51_47_a2b94af0-be14-4264-842a-98e7b9e69689/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/HUQHXJeJSG04lADcdCAON54OV9w06Q3LSery5QvI-JSVa6JdtmsCtzz5_A8FPzBsLa8ZH7RcpSZxjii7YuWh6rexfol8dCluwgvi6l5SYmxjn5OwuvaSut1IO5WV5wLExIodZUs8QdMRHkExZNCpWFzLmnnV00xdXJVUo_ykhxOjFE9YyjJa0pB4jahnTa8fLs2iGPYqKwCiiZzqD6fepQQEcM_zvTrWmziVvMkKteOpE48z4EiUnHI502lo99ykscJ72CozrN3ahqXg5JzzqfZ9WVG_AqkM0gdzq0QoffUdodqeaQShTbdT2wHIFYGlxYQEXSE7vxjQAIPL_Yyn9w.jpg",  ▶️⚽️ Inter Willemstad v C.R.K.S.V. Jong Holland | Curaçao Promé Divishon 2025/26
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=fda47fc3e4293fee997406795cbaaf7a:7efeecfb01394ad02792ea38e372af9a
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_19_14_12_08_85454b3f-9e72-438e-8de4-f0db5839a044/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/KnPfZuM8cEa-bXWLCW_1zl5ikqZK0731WnEiRMEPmMgRU5ojiHY-6WyUfAlEPnvrweFCPYd9xaOSfnYRfUZ13ovgrVskiU5ToqLTJdWtlsFlq-HSul6Q6aImcVR7a3RQvtBQYTxDJ1qaoFVXxT7iChk3GPIrDNf_mOWNbjwA9KQce2UDaAjT-K7XTZNkmnQJv_zCWpDWQEWHvRGLofgtyP1YLVftXBSnDv-f5MnEamkdCSzOKmsL0aRkB506eHVdJFObwUVW_6Dkfhnv5BEaZjhjVPWGF47NqVwWqUJmaAe6So1jSqqKRW5m3HCjHLzCKy3kFrsEydxIBvk6u4x0UA.jpg",  ▶️⚽️ Broki v Leo Victor | Suriname Major League 2025/26Time: 05-22 07:00#EXTINF:
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=e82de04675443a01b8b78ac3f099a00a:2607cb2a84eb4afe9abd6ad85ac4c960
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_17_15_54_59_4343f7fd-af8b-48cb-8da1-bdc2dfa8c407/PROD_CMAF_CENC/index-dash.mpd
 
