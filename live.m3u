@@ -1,19 +1,31 @@
 #EXTM3U
 #EXT-X-SESSION-DATA:ID="SOURCE",VALUE="Hady_Realtime_Bot"
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/vZ8ZtDHprC-4b2-4SZXRcVcJiBUPiP0aYC-ogeROgu_b3qhc18V3LwQxLonbCAZC3gErxX7J-e1-ZhHuwtEH2rKyrxIFKyW-eSVcgOF2RuF8iKwBNe4To0Bt0H1cRhqoZ_kC1G9pqTidWGZW2Kt_7XJXiZqyJMni_4kFlZc5tkA0jJbQtUhZgNyeJzwe1JsfNS-DsXTg3JtmOZx-vjQWp__JQbsywUxVgxddSeYjfbOglWDFyd9AXUJstjmaKGEEsH4DptQct7h5W8mENtjbZYJBHWNWMjxCFejpr1y_WHBlF7Fuixf7uvWyNxyleBMKp9andXAxv4RRaqiXdgHtpw.jpg", [刚刚] ▶️⚽️ Estrella v River Plate Aruba | Division Honor 2025-26Time: 05-25 06:00#EXTI
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/vhQCzqpE9o5pRkL8GZ-DhKuggfDpqmCdCgkRS95sX22rHmqV-QNy21nzviscITaFrIQ1tttI58dI5GzBXg9RJuLJdFeKzgfWRhWkrUuuY3TIx7fR43EJbSVCQK-5gsnvihJAXgm3ybj4_og0UEMSnN8F02N1iSsOo8wzrJU4sZjCT4KM_AZhSHc_QLrBtGToMI3XDHd3jwv1po6FMY4wuqJlOjeb4Y1VQK9EZy_luSB8A19KcwA9giM7x1M51jknlWy1qu7Yt-CeiWa8FJW1yDM1ha6VRyhrZDxBdaOCmlc-Blat7J374QrBp0JL4SG47YgvCUk4sTdyVw0Nr4rjgg.jpg", [刚刚] ▶️⚽️ Robinhood v Broki | Suriname Major League 2025/26Time: 05-25 07:00#EXTINF:-
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=303bdb5ea4493263925ca891c0b034ed:c0c4d2ae5d223ff5fbfeb1f6cb74e4ef
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_22_12_54_39_f68d0d8a-daf6-4784-ada1-4e7d6a11d4b6/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/CKewjPK0v3-lOwlXjHhBORd0Yq_DP7Ti0F0qyYmXi5u_eiBNvFw_YO9aYh0JvTdyvDO_d4Gp0S6iX0Z7e1suFycvOiSGRORJ1ba-m17F1ASXZIDUx-Qbefo5osc0BbWPThBVLbgWWVcnbJXys3UixbKEpdQRA3fVIGCSPMGxC78sjyV5FA-4hapT-vHiWNiLNbMXS5lbGpcS7m3TjDeIM8GyXD-fgBDx03gtJF5qQOd9sGcBfTevO7Qm3A8fPi-Z93UfIpDbJW12rDq-st1bvfKG3oo-pBT50Xi0bD45z16jxYCNdHRfFTGTPYmh42sgtG_FJZybDdDFeVWf2QsHWg.jpg", [刚刚] ▶️⚽️ Pointe Michel FC v Mahaut Soca Strikers FC | DFA Premier League 2026Time: 0
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=7ce90304157e38afb292cd8739dfaf94:9dd2e3d77dd705a991a75a6a12dae01d
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_20_13_07_41_1a9c6df6-ad9e-4579-806e-66612fe7edfe/PROD_CMAF_CENC/index-dash.mpd
+
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/vZ8ZtDHprC-4b2-4SZXRcVcJiBUPiP0aYC-ogeROgu_b3qhc18V3LwQxLonbCAZC3gErxX7J-e1-ZhHuwtEH2rKyrxIFKyW-eSVcgOF2RuF8iKwBNe4To0Bt0H1cRhqoZ_kC1G9pqTidWGZW2Kt_7XJXiZqyJMni_4kFlZc5tkA0jJbQtUhZgNyeJzwe1JsfNS-DsXTg3JtmOZx-vjQWp__JQbsywUxVgxddSeYjfbOglWDFyd9AXUJstjmaKGEEsH4DptQct7h5W8mENtjbZYJBHWNWMjxCFejpr1y_WHBlF7Fuixf7uvWyNxyleBMKp9andXAxv4RRaqiXdgHtpw.jpg",  ▶️⚽️ Estrella v River Plate Aruba | Division Honor 2025-26Time: 05-25 06:00#EXTI
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=d677577e91dc349baf7245a184b5d930:34141d734ad6b0748742818f0a237869
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_20_12_59_20_d981024d-cdbc-4758-8f54-12c389a678cf/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/BJNFAOs80ScglBsMv0y_GQvWwcGLk4AEhfXk5r6NVk4m1-ZxoASUHn-lN_47DX9shrlDGsI_VeUvjD4ijFQGw9zkMbf0-CEYVSqbbiRpOeIYGBiCuSxRaLIqc4RmGqrlCaCcExT51WnDA4TuVMSTzSs-G0odBSn7g-xamDW50gbN9dwThLVJs11egkMA294K5jV572mBAAFM9ONW0rE1jbEgfKtkbRdrte7r8FUiYeMwjeBeyDAiRocPIsLOErRD1nO1tzBZlzb_cIIzz2jhm6sypCPE-sxyXOiUNnHZOwbbLiHfDZMLpBfBocyWImVDnKMvzh0SRqqUtlATCQfziA.jpg", [刚刚] ▶️⚽️ Paradise FC v Brittons Hill FC | BFA Premier League 2026Time: 05-25 06:00#E
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/BJNFAOs80ScglBsMv0y_GQvWwcGLk4AEhfXk5r6NVk4m1-ZxoASUHn-lN_47DX9shrlDGsI_VeUvjD4ijFQGw9zkMbf0-CEYVSqbbiRpOeIYGBiCuSxRaLIqc4RmGqrlCaCcExT51WnDA4TuVMSTzSs-G0odBSn7g-xamDW50gbN9dwThLVJs11egkMA294K5jV572mBAAFM9ONW0rE1jbEgfKtkbRdrte7r8FUiYeMwjeBeyDAiRocPIsLOErRD1nO1tzBZlzb_cIIzz2jhm6sypCPE-sxyXOiUNnHZOwbbLiHfDZMLpBfBocyWImVDnKMvzh0SRqqUtlATCQfziA.jpg",  ▶️⚽️ Paradise FC v Brittons Hill FC | BFA Premier League 2026Time: 05-25 06:00#E
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=8e8fbdcb232635278756cb86e1ac9c90:a48984c81a1f2ad20504145355ca0174
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_20_10_06_02_04f8f61a-43a8-4972-b9d2-b3218084a4fa/PROD_CMAF_CENC/index-dash.mpd
 
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/qJcdXDvY6Qbtu6bMLZU8uI8ONyUlZb4tvOfYSrYvNGOBubYHzOfb6sZn1Kupiz20w1LcFYFVljHfqxO-KfUQ1gWjvGe_TB-3fObOMrnYi3l4vNwcAQ3EFuaYRwDExrtahUYQjfwanO7EdFV0nwZYxEBvgbH4c6kusmBzMVm7ftGJSBgjHx45dQl4EhUkfC8bYdrGXNPBBqYkMaUKSIJydC6U3PUxMzdU_f_4rJ6cIxzT2S8G4_nrZKeqOSjGW6T6zc0xuCteVUjJSVP204dGDxeWN6Q2DYkUGPeryb6ozdH00LF7QCy-3IfFZR6XDFbxjhUnzjlT6svfzt9nObQmRg.jpg", [刚刚] ▶️⚽️ Lymers FC v West End Predators  | Anguilla Senior Men&#39;s League 2026Time
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/qJcdXDvY6Qbtu6bMLZU8uI8ONyUlZb4tvOfYSrYvNGOBubYHzOfb6sZn1Kupiz20w1LcFYFVljHfqxO-KfUQ1gWjvGe_TB-3fObOMrnYi3l4vNwcAQ3EFuaYRwDExrtahUYQjfwanO7EdFV0nwZYxEBvgbH4c6kusmBzMVm7ftGJSBgjHx45dQl4EhUkfC8bYdrGXNPBBqYkMaUKSIJydC6U3PUxMzdU_f_4rJ6cIxzT2S8G4_nrZKeqOSjGW6T6zc0xuCteVUjJSVP204dGDxeWN6Q2DYkUGPeryb6ozdH00LF7QCy-3IfFZR6XDFbxjhUnzjlT6svfzt9nObQmRg.jpg",  ▶️⚽️ Lymers FC v West End Predators  | Anguilla Senior Men&#39;s League 2026Time
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=34cb873b63e833a5a2be7e9af85e5c7d:d10370b0df3dc6a480c97c7801f1bcf8
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -102,16 +114,4 @@ https://d7pd9oqdl4d44.cloudfront.net/2026_05_20_13_51_28_48ff9446-76b0-4fc7-82b6
 #KODIPROP:inputstream.adaptive.license_key=8036481714c83a33b34278f529d343af:cda243c28c779ba158e370caf06a36e4
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_21_07_57_49_3e44c9a4-78ec-4102-800b-2ab5f8ef8297/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/EE8bbHVk1SjF8IB6FaxLjY23ojta-WS_faMgSpSGCTFUpxCOfGRGDx6kKRJUSrDacoAM5SX7WJ-YxexQuDDMIWHYd5HPwPt9ZKHd0cz8JP0I13JbTG0FlL0TTMhIGWb_XeL8S1CwORiPYo_t_gdfJ-BhL8vsHxyQqtfAeBt9vi1hTMmBY2RwSJbf4WbRf39keQCZDUlmNUh_a91BOcWUiGpC6EVJxmvf0cJUcFFSxV6mledKkatcF2W3Vnvjn8ElNyn4k0fFGh1t5m90wIeQm3iHQJUkvBjVnIp4j16ErFovW-r5kswGgxlN4BmzQSQd4atw0--hFHrf5mkGy9VrnQ.jpg",  ▶️⚽️ FC Malicoura v Stade Malien | Ligue 1 Pro Orange 2025/26Time: 05-25 00:30#E
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=f0429af15ac234538294891e6adcc857:204de86509c70258fd3ecfa962518d60
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_21_07_57_54_acf829f0-3fcb-4fa1-b0cd-259538b37ebc/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/OfR536V5nGjvHUYPLshErAH1XQtuXil-xvIigzmPK6S0t5gvQjx-B97t2Z5dIj3t61ERWzAWCsiuJ5u7oukyOpLbvKT0mZgbJ4QBcdvsHQuQrwiu0XUnqRjSXrAboAA2uayn2oBq73RWFxDnn2okWVUKOFzWT9hgAte852nHjvGwBNxTrUzRILhwGZ9KXX5TxROk8Qe-rgR-gJuX9a0iBQMxkX2_Q0D22NzuFvK-3-OvQbBSUdDep8VrElekm-MFvpeDiHaq-CRWNu3yHvbqK2DqZWZoqdNjWfy7BHe4PH4mufnSTPLDmjdoZUQ8mV90V-QNHYdvWSKnF6mHYnAC0Q.jpg",  ▶️⚽️ Hapoel Hadera v Hapoel Nof HaGalil F.C. | Liga Noar Leumit U19 2025/26Time:
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=6089868e18af35cca8ddc2dacb4e4c63:cdfec299901551239b04427b0ee198b0
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_21_12_29_25_05ee03f1-3dc2-4eed-8d4c-9bc1a9ccaa72/PROD_CMAF_CENC/index-dash.mpd
 
