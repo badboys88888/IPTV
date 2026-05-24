@@ -1,6 +1,12 @@
 #EXTM3U
 #EXT-X-SESSION-DATA:ID="SOURCE",VALUE="Hady_Realtime_Bot"
 
+#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/EqDJ4sxiJ1xA-71OLBXxvpCA54BzwD6iivYOTSsn9QiBBhn2pnM32wbqnCxBxpi7ZNStqxV9P85Yt2KgMfjJgjBpDZxyvptXwN_hF6NWaJM7D9O1sGwcLkMCCa9SZB0YmMJGYWafFh0iVHiEdcZZtSwGhbpWUpTtScYCS0QX3psYkQjPuZ4e-idX58LNaaH9JDAT_tMDBEpqeMoX2fsic_0FpKUeo2kbndmHViXTlk0yeSKnRaLP8OOcerXoSvyAFzcHqr38gLqQU29tWU70ic1F2mRp7HkQwP1WlN6LvQb84c5XQIGLZmhCFbdzqd6Z3Y9JDxoKZsJi4HVauPg75w.jpg", [刚刚] ▶️⚽️ Cano Sport Academy v Deportivo Unidad | Equatorial Guinea Football League 2
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=026a9f36d34b3d089ca31cc2c134b59b:36c14a7a93fc1b9143874fa299a87864
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+https://d7pd9oqdl4d44.cloudfront.net/2026_05_21_07_13_17_9902b83b-b71b-48b4-85ac-33ab9dbf7fbf/PROD_CMAF_CENC/index-dash.mpd
+
 #EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/pKyv9xVwjkNvyDrhuJxfr7ymBVETI0R6IvygRqDyvMGYhfeRxtLHCkrUuxqB6XfUZQigeYAgISnoJ9pwJEVPRpSP_iHlFK1g7ClsCF2DCj0yprFkryfwOs_e655y1LPcIqzXVKFrTVK-5okthsiqPDISmKblo95zRAVzc81kNh-wsF1rt3qhA8CGT-I5rxBwn8rNq3InvGjmoE67XrQRpfXfRXgS-maZqXRTMatBqCV1urffPg9nTebImJJkY-DjRJ0fspReabQteiRP21ojDXBE-a7Uv7GHveoNCYezMS7JGJU2ZGUU0ssQCivGSJKjPfsRqPweU3LskZhX6DXPlw.jpg",  ▶️⚽️ Manzini Sea Birds FC v Nsingizini Hotspurs FC | MTN Premier League 2025/26T
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=6740c37535ef39b2a16a55f90217b276:2450000c58f17117d2afef7873c631ab
@@ -114,10 +120,4 @@ https://d7pd9oqdl4d44.cloudfront.net/2026_05_20_15_04_12_b76d5433-d3bc-467f-8e0e
 #KODIPROP:inputstream.adaptive.license_key=6c786d3a2b2035168f6128cd1b6e272f:8109b1d81ac41600057aea3a2899f75a
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://d7pd9oqdl4d44.cloudfront.net/2026_05_18_14_20_11_f0b2da67-38de-4d55-995c-f8e4675461a0/PROD_CMAF_CENC/index-dash.mpd
-
-#EXTINF:-1 group-title="TG_Update" tvg-logo="https://cdn4.telesco.pe/file/htHWPkyVAcjd27UwE3kUXvO8Fpsn2Ar5Q7ze_9doLZ02rQXvr7kyCP1WZ0D1fwjvefq1gTj_M2POoF-FBeEqx3Ku6q9O79fXu-rT8p5D24tv4gU3e5yJBVQBqoHGUU-URKwDeuIrgf3ugy0OBOQwIDjtFc4l2VGqZeaYJ2KyMW3EjUU8FZv_cPCfb2Gfc5qo4erqDQ9r_Utn1z55SMhWnGa6HJOnNGnO3WSvRlD-Te4bwy8ec4MDGGznZOZWrtfIPVxDf4tvjuStPrcKxFGCo-VeuBB8Ms4dfCXCu-qmyJaPl5aAcdGcWbK8f8OSLSGHKIxdJ7wOzBgH95UdV8OSpA.jpg",  ▶️⚽️ Aragua FC v Mineros de Guayana | Liga FUTVE 2 2026Time: 05-24 04:00#EXTINF:
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=67e3b171ad853c63bf739726ebd854b9:65b23b5471d8412bf0066b428059c741
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://d7pd9oqdl4d44.cloudfront.net/2026_05_18_14_20_08_9d3b2587-9737-4b8b-907c-39006533ce31/PROD_CMAF_CENC/index-dash.mpd
 
