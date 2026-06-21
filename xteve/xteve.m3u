@@ -1,17 +1,17 @@
 #EXTM3U
-# 更新时间: 2026-06-19 02:51:46
+# 更新时间: 2026-06-21 02:37:03
 
 # ── BR ──
-#EXTINF:-1 group-title="BR",xteve [194频道]
+#EXTINF:-1 group-title="BR",xteve [191频道]
 http://152.67.56.199:8082/m3u/xteve.m3u
 
 # ── CA ──
 #EXTINF:-1 group-title="CA",xteve [194频道]
 http://144.217.68.109:8181/m3u/xteve.m3u
 #EXTINF:-1 group-title="CA",xteve [92频道]
-http://169.150.219.151:12151/m3u/xteve.m3u
-#EXTINF:-1 group-title="CA",xteve [92频道]
 http://169.150.219.152:12151/m3u/xteve.m3u
+#EXTINF:-1 group-title="CA",xteve [92频道]
+http://169.150.219.151:12151/m3u/xteve.m3u
 #EXTINF:-1 group-title="CA",xteve [10频道]
 http://xteve.tv.ncbr.wtf/m3u/xteve.m3u
 
@@ -22,7 +22,7 @@ http://178.195.11.131:7778/m3u/xteve.m3u
 # ── CN ──
 #EXTINF:-1 group-title="CN",xteve [349频道]
 http://47.93.47.174:443/m3u/xteve.m3u
-#EXTINF:-1 group-title="CN",xteve [237频道]
+#EXTINF:-1 group-title="CN",xteve [238频道]
 http://us.199301.xyz:34400/m3u/xteve.m3u
 #EXTINF:-1 group-title="CN",xteve [117频道]
 http://kylesing.synology.me:5820/m3u/xteve.m3u
@@ -67,10 +67,6 @@ http://144.24.131.5/m3u/xteve.m3u
 #EXTINF:-1 group-title="JP",xteve [349频道]
 http://141.147.174.228:4433/m3u/xteve.m3u
 
-# ── KR ──
-#EXTINF:-1 group-title="KR",xteve [15频道]
-http://211.225.62.76:5678/m3u/xteve.m3u
-
 # ── NL ──
 #EXTINF:-1 group-title="NL",xteve [365频道]
 http://46.232.211.27:12134/m3u/xteve.m3u
@@ -85,10 +81,6 @@ http://46.232.211.28:12134/m3u/xteve.m3u
 #EXTINF:-1 group-title="NL",xteve [365频道]
 http://46.232.211.18:12134/m3u/xteve.m3u
 
-# ── PK ──
-#EXTINF:-1 group-title="PK",xteve [59频道]
-http://202.165.235.59:8099/m3u/xteve.m3u
-
 # ── PL ──
 #EXTINF:-1 group-title="PL",xteve [210频道]
 http://iptv.pd1.pl/m3u/xteve.m3u
@@ -98,7 +90,7 @@ http://iptv.pd1.pl/m3u/xteve.m3u
 http://xteve.snahp.top/m3u/xteve.m3u
 #EXTINF:-1 group-title="US",xteve [319频道]
 http://tv.kinte.net/m3u/xteve.m3u
-#EXTINF:-1 group-title="US",xteve [180频道]
+#EXTINF:-1 group-title="US",xteve [186频道]
 http://67.161.193.132:32768/m3u/xteve.m3u
 #EXTINF:-1 group-title="US",xteve [101频道]
 http://xteve.top/m3u/xteve.m3u
