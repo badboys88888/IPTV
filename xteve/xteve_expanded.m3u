@@ -1,5 +1,5 @@
 #EXTM3U
-# 展开版，更新时间: 2026-06-21 02:37:03
+# 展开版，更新时间: 2026-06-25 02:09:03
 
 #EXTINF:0 channelID="x-ID.0" tvg-chno="1000" tvg-name="TC ACTION HD" tvg-id="1000" tvg-logo="https://blogger.googleusercontent.com/img/a/AVvXsEh8OUCXN57F96Aat7pbL1NLj8pRzZMmclTNcr7mNLehsrP-l9tLTOW3zFc4nxY02RJ196-5WP9stUWyJttGZ-ub-LdLpTq1qXoGYfr5B4BZTC1bQ3jjyko3floRVDAKpEixJxS3ghnxPWIrk_lYXAvxRxkkzdsVwFO1FwwwKEldCOs0hM5NrfZQmQ3p" group-title="BR",TC ACTION HD
 http://152.67.56.199:8082/stream/9700a8f6d0bff5f3f9a552ad9dc5264a
@@ -4047,16 +4047,22 @@ http://us.199301.xyz:34400/stream/3e55e1449cecf7dda78df33947963dc6
 http://us.199301.xyz:34400/stream/6b5e6475c99b4f42f7f9986aed59441b
 #EXTINF:0 channelID="x-ID.9" tvg-chno="608" tvg-name="Sky-Sports-F1-4K" tvg-id="608" tvg-logo="https://epg.199301.dpdns.org/logo/Sky-Sports-F1-4K.png" group-title="CN",Sky-Sports-F1-4K
 http://us.199301.xyz:34400/stream/5854a3f813d6e4acf2de508b32648756
-#EXTINF:0 channelID="x-ID.73" tvg-chno="1063" tvg-name="TSN-4K" tvg-id="1063" tvg-logo="https://gcore.jsdelivr.net/gh/luoluowoaini/smt-logo@main/TSN 4K CA.png" group-title="CN",TSN-4K
-http://us.199301.xyz:34400/stream/6db589eb73775dbf6cd0686999627c3e
 #EXTINF:0 channelID="x-ID.74" tvg-chno="1064" tvg-name="BBC-ONE-4K" tvg-id="1064" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-kingdom/bbc-one-uk.png?raw=true" group-title="CN",BBC-ONE-4K
 http://us.199301.xyz:34400/stream/eaa425dea3679748476c65fedebfc67b
-#EXTINF:0 channelID="x-ID.84" tvg-chno="1065" tvg-name="Fussball-TV1-4K-DE" tvg-id="1065" tvg-logo="https://epg.199301.dpdns.org/logo/Fussball-TV-1-4K-DE.png" group-title="CN",Fussball-TV1-4K-DE
-http://us.199301.xyz:34400/stream/6a55d5a6d40175a6e59af0d1cc46c7f1
+#EXTINF:0 channelID="x-ID.84" tvg-chno="1065" tvg-name="Fussball.TV1" tvg-id="1065" tvg-logo="https://epg.199301.dpdns.org/logo/Fussball-TV-1-4K-DE.png" group-title="CN",Fussball.TV1
+http://us.199301.xyz:34400/stream/6009212ad8bfaa6d2afd09139275bcf7
 #EXTINF:0 channelID="x-ID.86" tvg-chno="1067" tvg-name="CCTV5融合" tvg-id="1067" tvg-logo="https://epg.199301.dpdns.org/logo/CCTV5.png" group-title="CN",CCTV5融合
 http://us.199301.xyz:34400/stream/8c398c845b29363ab2f11dd43c3e381e
 #EXTINF:0 channelID="x-ID.87" tvg-chno="1068" tvg-name="FOX-ONE-4K" tvg-id="1068" tvg-logo="https://epg.199301.dpdns.org/logo/FOX.png" group-title="CN",FOX-ONE-4K
 http://us.199301.xyz:34400/stream/0780c9de0862b79bba167932d01b48a3
+#EXTINF:0 channelID="x-ID.88" tvg-chno="1069" tvg-name="Fussball.TV1-2" tvg-id="1069" tvg-logo="https://epg.199301.dpdns.org/logo/Fussball-TV-1-4K-DE.png" group-title="CN",Fussball.TV1-2
+http://us.199301.xyz:34400/stream/d6a0c4f20b39be5df50ba517cdf3b7e9
+#EXTINF:0 channelID="x-ID.89" tvg-chno="1070" tvg-name="Fussball.TV1-3" tvg-id="1070" tvg-logo="https://epg.199301.dpdns.org/logo/Fussball-TV-1-4K-DE.png" group-title="CN",Fussball.TV1-3
+http://us.199301.xyz:34400/stream/36a18c6644666b68b0e1d08ba8ce4e83
+#EXTINF:0 channelID="x-ID.90" tvg-chno="1071" tvg-name="Fussball.TV1-4" tvg-id="1071" tvg-logo="https://epg.199301.dpdns.org/logo/Fussball-TV-1-4K-DE.png" group-title="CN",Fussball.TV1-4
+http://us.199301.xyz:34400/stream/86b81f42e09ebf0fe653a88ea74ee9e9
+#EXTINF:0 channelID="x-ID.91" tvg-chno="1072" tvg-name="Fussball.TV1-5" tvg-id="1072" tvg-logo="https://epg.199301.dpdns.org/logo/Fussball-TV-1-4K-DE.png" group-title="CN",Fussball.TV1-5
+http://us.199301.xyz:34400/stream/4fb0f9c4d76abce421e2db4679fdf804
 #EXTINF:0 channelID="x-ID.607" tvg-chno="1601" tvg-name="Now新聞台" tvg-id="1601" tvg-logo="https://epg.199301.dpdns.org/logo/Now新聞台.png" group-title="CN",Now新聞台
 http://us.199301.xyz:34400/stream/e07fd8e06c0ab316a9eab8b1d040cd5d
 #EXTINF:0 channelID="x-ID.608" tvg-chno="1602" tvg-name="HOY-TV" tvg-id="1602" tvg-logo="https://epg.199301.dpdns.org/logo/HOY-TV.png" group-title="CN",HOY-TV
@@ -4709,7 +4715,7 @@ http://46.4.77.157:4000/stream/d89bd803f7c3155463d1581a062a1896
 http://46.4.77.157:4000/stream/4e67eee9b6fff788f6928d50b737cb2a
 #EXTINF:0 channelID="x-ID.106" tvg-chno="260" tvg-name="260: Sportsman Channel" tvg-id="260" tvg-logo="https://static.epg.best/allsports/SportsmanChannel.us.png" group-title="DE",260: Sportsman Channel
 http://46.4.77.157:4000/stream/ba97586949ae57cb07719dc55d586729
-#EXTINF:0 channelID="x-ID.89" tvg-chno="261" tvg-name="261: Outdoor Channel" tvg-id="261" tvg-logo="https://static.epg.best/allsports/OutdoorChannel.us.png" group-title="DE",261: Outdoor Channel
+#EXTINF:0 channelID="x-ID.89" tvg-chno="261" tvg-name="261: Outdoor Channel" tvg-id="261" tvg-logo="https://static.epg.best/us/OutdoorChannel.us.png" group-title="DE",261: Outdoor Channel
 http://46.4.77.157:4000/stream/a76eb52a4dc611a2189a6981a72acbc5
 #EXTINF:0 channelID="x-ID.107" tvg-chno="262" tvg-name="262: World Fishing Network" tvg-id="262" tvg-logo="https://static.epg.best/us/WorldFishingNetwork.us.png" group-title="DE",262: World Fishing Network
 http://46.4.77.157:4000/stream/c2f06765f640f1c256a2e8d110a743ed
@@ -4989,7 +4995,7 @@ http://46.4.77.157:4004/stream/7db2e2b2e681fac3dac031662604e3fd
 http://46.4.77.157:4004/stream/75c287af89c463e307a065ebfd6217a5
 #EXTINF:0 channelID="x-ID.106" tvg-chno="260" tvg-name="260: Sportsman Channel" tvg-id="260" tvg-logo="https://static.epg.best/allsports/SportsmanChannel.us.png" group-title="DE",260: Sportsman Channel
 http://46.4.77.157:4004/stream/f359d198503dd8ffac38aac5f0cf6b20
-#EXTINF:0 channelID="x-ID.89" tvg-chno="261" tvg-name="261: Outdoor Channel" tvg-id="261" tvg-logo="https://static.epg.best/allsports/OutdoorChannel.us.png" group-title="DE",261: Outdoor Channel
+#EXTINF:0 channelID="x-ID.89" tvg-chno="261" tvg-name="261: Outdoor Channel" tvg-id="261" tvg-logo="https://static.epg.best/us/OutdoorChannel.us.png" group-title="DE",261: Outdoor Channel
 http://46.4.77.157:4004/stream/8e0e40b0a2ad48d8442818e17345f25e
 #EXTINF:0 channelID="x-ID.107" tvg-chno="262" tvg-name="262: World Fishing Network" tvg-id="262" tvg-logo="https://static.epg.best/us/WorldFishingNetwork.us.png" group-title="DE",262: World Fishing Network
 http://46.4.77.157:4004/stream/660e994f07fd644797934aef0b2ce43e
@@ -5259,7 +5265,7 @@ http://46.4.77.157:4003/stream/bbd09be6f5e5be4ac53c31a3301648a0
 http://46.4.77.157:4003/stream/8637d4a6cf26455e74c50275140f3b5e
 #EXTINF:0 channelID="x-ID.97" tvg-chno="260" tvg-name="260: Sportsman Channel" tvg-id="260" tvg-logo="https://static.epg.best/allsports/SportsmanChannel.us.png" group-title="DE",260: Sportsman Channel
 http://46.4.77.157:4003/stream/cb62d5d97bf2d8f17cda900d5483bb39
-#EXTINF:0 channelID="x-ID.82" tvg-chno="261" tvg-name="261: Outdoor Channel" tvg-id="261" tvg-logo="https://static.epg.best/allsports/OutdoorChannel.us.png" group-title="DE",261: Outdoor Channel
+#EXTINF:0 channelID="x-ID.82" tvg-chno="261" tvg-name="261: Outdoor Channel" tvg-id="261" tvg-logo="https://static.epg.best/us/OutdoorChannel.us.png" group-title="DE",261: Outdoor Channel
 http://46.4.77.157:4003/stream/ded71c10080c8c0eaf1d104a0a51dda2
 #EXTINF:0 channelID="x-ID.98" tvg-chno="262" tvg-name="262: World Fishing Network" tvg-id="262" tvg-logo="https://static.epg.best/us/WorldFishingNetwork.us.png" group-title="DE",262: World Fishing Network
 http://46.4.77.157:4003/stream/37df695b15e0102685674a8e29987a76
@@ -5420,7 +5426,7 @@ http://xteve/stream/06c617d5e7046bc0d427487378155ba3
 #EXTINF:0 channelID="x-ID.45" tvg-chno="71" tvg-name="DAZN 2" tvg-id="71" tvg-logo="https://www.movistarplus.es/recorte/m-NEO/ficha_m/M2SD.png" group-title="ES",DAZN 2
 http://xteve/stream/449b2d27e861eeadada2075d4eaaa87d
 #EXTINF:0 channelID="x-ID.105" tvg-chno="72" tvg-name="Eurosport 1" tvg-id="72" tvg-logo="https://www.movistarplus.es/recorte/m-NEO/ficha_m/ESP.png" group-title="ES",Eurosport 1
-http://xteve/stream/02b59ef82f5784ec8848d77db5117a85
+http://xteve/stream/9557d93d9b7fb85b34ecd2874fee84db
 #EXTINF:0 channelID="x-ID.107" tvg-chno="73" tvg-name="Eurosport 2" tvg-id="73" tvg-logo="https://www.movistarplus.es/recorte/m-NEO/ficha_m/ESP2.png" group-title="ES",Eurosport 2
 http://xteve/stream/9ddcd989cc987c7f9e430351e4180a2b
 #EXTINF:0 channelID="x-ID.337" tvg-chno="74" tvg-name="GOL PLAY" tvg-id="74" tvg-logo="https://www.movistarplus.es/recorte/m-NEO/ficha_m/GOL.png" group-title="ES",GOL PLAY
@@ -5513,136 +5519,6 @@ http://xteve/stream/82a1c7a872b145dcc973f00e19559fe5
 http://xteve/stream/279f5f13a20d52b1f64826dafa4b9eb6
 #EXTINF:0 channelID="x-ID.516" tvg-chno="1451" tvg-name="ES: BBC LIFESTYLE HD" tvg-id="1451" tvg-logo="https://www.movistarplus.es/recorte/m-DPBLAN/guiamovil/BBCLIF.png" group-title="ES",ES: BBC LIFESTYLE HD
 http://xteve/stream/26f81868b69afa345cb9fb53c7a0ba3a
-#EXTINF:0 channelID="x-ID.9" tvg-chno="1" tvg-name="RTP 1" tvg-id="1" tvg-logo="http://10.66.66.1:2323/countries/portugal/rtp-1-pt.png" group-title="FR",RTP 1
-http://51.75.249.246:3333/stream/638a7b40ded20b710779a610979aa5d1
-#EXTINF:0 channelID="x-ID.10" tvg-chno="2" tvg-name="RTP 2" tvg-id="2" tvg-logo="http://10.66.66.1:2323/countries/portugal/rtp-2-pt.png" group-title="FR",RTP 2
-http://51.75.249.246:3333/stream/262aaa8fecda29eb9dd5f4ed18634b92
-#EXTINF:0 channelID="x-ID.12" tvg-chno="4" tvg-name="SIC" tvg-id="4" tvg-logo="http://10.66.66.1:2323/countries/portugal/sic-pt.png" group-title="FR",SIC
-http://51.75.249.246:3333/stream/b032cb1a480dcddec3c206381b71457e
-#EXTINF:0 channelID="x-ID.13" tvg-chno="5" tvg-name="TVI" tvg-id="5" tvg-logo="http://10.66.66.1:2323/countries/portugal/tvi-pt.png" group-title="FR",TVI
-http://51.75.249.246:3333/stream/69fcb9517033e18abae508dd3ceaf1d4
-#EXTINF:0 channelID="x-ID.15" tvg-chno="6" tvg-name="SIC Notícias" tvg-id="6" tvg-logo="http://10.66.66.1:2323/countries/portugal/sic-noticias-pt.png" group-title="FR",SIC Notícias
-http://51.75.249.246:3333/stream/369b5d657c60f30414e6c5cf505dc988
-#EXTINF:0 channelID="x-ID.16" tvg-chno="7" tvg-name="CNN Portugal" tvg-id="7" tvg-logo="http://10.66.66.1:2323/countries/portugal/cnn-portugal-pt.png" group-title="FR",CNN Portugal
-http://51.75.249.246:3333/stream/1c357b7745ed84c6d5f237ab1370314d
-#EXTINF:0 channelID="x-ID.17" tvg-chno="9" tvg-name="Euronews PT" tvg-id="9" tvg-logo="https://static.wikia.nocookie.net/logo-chaines/images/9/96/Euronews_%282008%29.svg.png/revision/latest?cb=20190722173431&path-prefix=fr" group-title="FR",Euronews PT
-http://51.75.249.246:3333/stream/07b059132147b86e8a38a89ed9e69ecd
-#EXTINF:0 channelID="x-ID.23" tvg-chno="10" tvg-name="RTP Internacional" tvg-id="10" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP-Internacional.png" group-title="FR",RTP Internacional
-http://51.75.249.246:3333/stream/93b7d0338d9030d18dbc3a02fcaeae9f
-#EXTINF:0 channelID="x-ID.28" tvg-chno="11" tvg-name="TVI Reality" tvg-id="11" tvg-logo="https://mage.stream.nos.pt/mage/v1/Images?sourceUri=http%3A%2F%2Fvip.repositories.local.internal%2FRepositories.EPG%2FOttChannelIcons%2FTVIREALHD.png&profile=ott_16_220x64&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI&format=image/png.pt" group-title="FR",TVI Reality
-http://51.75.249.246:3333/stream/ca806e33f24ffc1d5dbe3c29027ff3e8
-#EXTINF:0 channelID="x-ID.24" tvg-chno="15" tvg-name="TVI Ficção" tvg-id="15" tvg-logo="https://cdn.iol.pt/img/logostvi/preto/tvificcao.png" group-title="FR",TVI Ficção
-http://51.75.249.246:3333/stream/00e7064cd3fcb55252dda20f742b6fd1
-#EXTINF:0 channelID="x-ID.25" tvg-chno="16" tvg-name="TVI Internacional" tvg-id="16" tvg-logo="https://tvmetafiles.alteox.lu/file/tvmeta/uploads/logo-channel-2d700b20-8099-11e9-b5ca-f345a2ed0fbe.svg" group-title="FR",TVI Internacional
-http://51.75.249.246:3333/stream/4fb386bb45c2828ef265de2830c655fb
-#EXTINF:0 channelID="x-ID.26" tvg-chno="17" tvg-name="TVI África" tvg-id="17" tvg-logo="https://cdn.iol.pt/img/logostvi/preto/tviafrica.png" group-title="FR",TVI África
-http://51.75.249.246:3333/stream/9c1c50da7c4322dc65f97970150ca798
-#EXTINF:0 channelID="x-ID.27" tvg-chno="18" tvg-name="V+ TVI" tvg-id="18" tvg-logo="https://i.postimg.cc/26BYBXCS/tviv.png" group-title="FR",V+ TVI
-http://51.75.249.246:3333/stream/e803a1d3162d97ae59349a6277e4a08b
-#EXTINF:0 channelID="x-ID.29" tvg-chno="19" tvg-name="SIC Replay" tvg-id="19" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SIC-Replay.png" group-title="FR",SIC Replay
-http://51.75.249.246:3333/stream/f7aa0d87b2d9e2ac7936d0aae4340751
-#EXTINF:0 channelID="x-ID.30" tvg-chno="20" tvg-name="SIC Alta Definição" tvg-id="20" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SIC-Alta-Definição.png" group-title="FR",SIC Alta Definição
-http://51.75.249.246:3333/stream/1ecf280006596e9cd684122927125090
-#EXTINF:0 channelID="x-ID.31" tvg-chno="21" tvg-name="Porto Canal" tvg-id="21" tvg-logo="https://i.postimg.cc/bNnPv53C/porto.jpg" group-title="FR",Porto Canal
-http://51.75.249.246:3333/stream/76d76945ab987489aa88007781e8981f
-#EXTINF:0 channelID="x-ID.18" tvg-chno="22" tvg-name="ARTV" tvg-id="22" tvg-logo="https://i0.wp.com/directostv.teleame.com/wp-content/uploads/2016/04/ARTV-Canal-Parlamento.png?fit=400%2C260&ssl=1" group-title="FR",ARTV
-http://51.75.249.246:3333/stream/0f63cb366599728a50119f5f1ac3bd8a
-#EXTINF:0 channelID="x-ID.321" tvg-chno="23" tvg-name="Love Nature TV" tvg-id="23" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Love-Nature-TV.png" group-title="FR",Love Nature TV
-http://51.75.249.246:3333/stream/4d9faae5809c8c8ec500044c9bfba3f5
-#EXTINF:0 channelID="x-ID.322" tvg-chno="24" tvg-name="BraziTV" tvg-id="24" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/BraziTV.png" group-title="FR",BraziTV
-http://51.75.249.246:3333/stream/2d432891d950ccc6371d60bb483d89a8
-#EXTINF:0 channelID="x-ID.320" tvg-chno="26" tvg-name="Kuriakos Cine" tvg-id="26" tvg-logo="https://kuriakos-cine.com/wp-content/uploads/2022/11/Logo_cine.png" group-title="FR",Kuriakos Cine
-http://51.75.249.246:3333/stream/40508c814d6a641d26b7d7c032557773
-#EXTINF:0 channelID="x-ID.324" tvg-chno="27" tvg-name="Kuriakos Kids" tvg-id="27" tvg-logo="https://kuriakos-kids.com/wp-content/uploads/2023/06/KuriakosKids_curvas.jpg" group-title="FR",Kuriakos Kids
-http://51.75.249.246:3333/stream/03021d92b4d54c67a25c04283e8df565
-#EXTINF:0 channelID="x-ID.325" tvg-chno="28" tvg-name="Kuriakos Music" tvg-id="28" tvg-logo="https://kuriakosmusic.com/wp-content/uploads/2022/11/263x196_v1.png" group-title="FR",Kuriakos Music
-http://51.75.249.246:3333/stream/1835aa5fd01867f39960943efcc69362
-#EXTINF:0 channelID="x-ID.19" tvg-chno="110" tvg-name="RTP Memória" tvg-id="110" tvg-logo="http://10.66.66.1:2323/countries/portugal/rtp-memoria-pt.png" group-title="FR",RTP Memória
-http://51.75.249.246:3333/stream/f7eb24148a3739e97c0f20254634bc18
-#EXTINF:0 channelID="x-ID.20" tvg-chno="111" tvg-name="RTP Açores" tvg-id="111" tvg-logo="https://media.rtp.pt/extra/wp-content/uploads/sites/22/2015/05/RTPA%C3%A7ores.jpg" group-title="FR",RTP Açores
-http://51.75.249.246:3333/stream/c491813181365e630cbfbac038f3ef8d
-#EXTINF:0 channelID="x-ID.21" tvg-chno="112" tvg-name="RTP Madeira" tvg-id="112" tvg-logo="http://10.66.66.1:2323/countries/portugal/rtp-madeira-pt.png" group-title="FR",RTP Madeira
-http://51.75.249.246:3333/stream/dc432854a9c68e06ae66ce5727442da8
-#EXTINF:0 channelID="x-ID.22" tvg-chno="113" tvg-name="RTP África" tvg-id="113" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/4/4b/RTP_%C3%81frica_logo_2012.png" group-title="FR",RTP África
-http://51.75.249.246:3333/stream/3824d0aa374d65138fdc62f144f5a3b2
-#EXTINF:0 channelID="x-ID.81" tvg-chno="149" tvg-name="ON FM" tvg-id="149" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRsIPps2Qq3FcCdPHwsrHWd6E2Dq-st26HTzgq1MaivWiTjeLpHaCCjtB5rgOJgvBPHNY&usqp=CAU" group-title="FR",ON FM
-http://51.75.249.246:3333/stream/e2c5cb3ad6583a764bbcf1e9c124af4a
-#EXTINF:0 channelID="x-ID.39" tvg-chno="150" tvg-name="Trace Urban" tvg-id="150" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TRACE-Urban.png" group-title="FR",Trace Urban
-http://51.75.249.246:3333/stream/111f936e628caa01ebcbb46a824d35b5
-#EXTINF:0 channelID="x-ID.313" tvg-chno="151" tvg-name="Trace Latina" tvg-id="151" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TRACE-Latina.png" group-title="FR",Trace Latina
-http://51.75.249.246:3333/stream/52cd46f3b568b7cfeae3f6da5f33f260
-#EXTINF:0 channelID="x-ID.36" tvg-chno="152" tvg-name="Trace Brasil" tvg-id="152" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TRACE-Urban.png" group-title="FR",Trace Brasil
-http://51.75.249.246:3333/stream/0932f2695558f877abe6018749f72e9e
-#EXTINF:0 channelID="x-ID.315" tvg-chno="154" tvg-name="NRG 91 TV" tvg-id="154" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/NRG-91-TV.png" group-title="FR",NRG 91 TV
-http://51.75.249.246:3333/stream/4c0879b02fb5a0fb852724a262f9a2cb
-#EXTINF:0 channelID="x-ID.316" tvg-chno="155" tvg-name="DeeJay TV" tvg-id="155" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/DeeJay-TV.png" group-title="FR",DeeJay TV
-http://51.75.249.246:3333/stream/9e8652c5ef05b2b643640681ac1d28c6
-#EXTINF:0 channelID="x-ID.32" tvg-chno="233" tvg-name="Fama TV" tvg-id="233" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Fama-TV.jpg" group-title="FR",Fama TV
-http://51.75.249.246:3333/stream/fbdd3cbffeb39ee2d0c2de077ff93395
-#EXTINF:0 channelID="x-ID.83" tvg-chno="243" tvg-name="Combate Global" tvg-id="243" tvg-logo="https://m.media-amazon.com/images/M/MV5BMjhmYWQwY2UtY2QwOS00NDc1LWJiNTAtMzI4YWVlNzhhMTg0XkEyXkFqcGdeQXVyMDgwNzU0MQ@@._V1_FMjpg_UX1000_.jpg" group-title="FR",Combate Global
-http://51.75.249.246:3333/stream/ef8ed1bdbc4343ced618baf7d2ed89d3
-#EXTINF:0 channelID="x-ID.79" tvg-chno="244" tvg-name="Eurosport 1" tvg-id="244" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgwqxWmAa0bhuP8bhAUeTBxKsHeHhf86qVKg&s" group-title="FR",Eurosport 1
-http://51.75.249.246:3333/stream/f161bb2fa071e90f40b0f97430079458
-#EXTINF:0 channelID="x-ID.80" tvg-chno="245" tvg-name="Eurosport 2" tvg-id="245" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv_24zW4laDpd3EzXVcH6nRvd1Dei266Bogg&s" group-title="FR",Eurosport 2
-http://51.75.249.246:3333/stream/b970ef5279f6a2e52830b2808b59e98a
-#EXTINF:0 channelID="x-ID.82" tvg-chno="246" tvg-name="Manchester United Tv" tvg-id="246" tvg-logo="https://mutv.manutd.com/assets/images/fav_icon.png" group-title="FR",Manchester United Tv
-http://51.75.249.246:3333/stream/f18df55c23c75f32a0b06f71a0e33b5d
-#EXTINF:0 channelID="x-ID.87" tvg-chno="296" tvg-name="Sport TV 1 BR" tvg-id="296" tvg-logo="http://10.66.66.1:2323/countries/brazil/sportv-br.png" group-title="FR",Sport TV 1 BR
-http://51.75.249.246:3333/stream/6e11da55ee0a16bacb7696c2cb8cde71
-#EXTINF:0 channelID="x-ID.89" tvg-chno="297" tvg-name="Sport TV 2 BR" tvg-id="297" tvg-logo="http://10.66.66.1:2323/countries/brazil/sportv2-br.png" group-title="FR",Sport TV 2 BR
-http://51.75.249.246:3333/stream/8c8973f0df1e13815cecd9acfb8bbbd8
-#EXTINF:0 channelID="x-ID.90" tvg-chno="298" tvg-name="Sport TV 3 BR" tvg-id="298" tvg-logo="http://10.66.66.1:2323/countries/brazil/sportv3-br.png" group-title="FR",Sport TV 3 BR
-http://51.75.249.246:3333/stream/bf398f88088c356255e1938b2534126d
-#EXTINF:0 channelID="x-ID.86" tvg-chno="299" tvg-name="Band Sport" tvg-id="299" tvg-logo="http://10.66.66.1:2323/countries/brazil/band-sports-br.png" group-title="FR",Band Sport
-http://51.75.249.246:3333/stream/bb0f93ad40268e705ca496dd657b9deb
-#EXTINF:0 channelID="x-ID.0" tvg-chno="300" tvg-name="Real Madrid Tv" tvg-id="300" tvg-logo="http://10.66.66.1:2323/countries/spain/real-madrid-tv-es.png" group-title="FR",Real Madrid Tv
-http://51.75.249.246:3333/stream/f855b0ec28433a17da3f0ec7d7355a2a
-#EXTINF:0 channelID="x-ID.1" tvg-chno="301" tvg-name="L'ÉQUIPE LIVE 1" tvg-id="301" tvg-logo="https://www.planetecsat.com/wp-content/uploads/2023/04/bande-LEquipeLive1.png" group-title="FR",L'ÉQUIPE LIVE 1
-http://51.75.249.246:3333/stream/46dd77742f3a56a510beb25b10dcad40
-#EXTINF:0 channelID="x-ID.2" tvg-chno="302" tvg-name="L'ÉQUIPE LIVE 2" tvg-id="302" tvg-logo="https://www.planetecsat.com/wp-content/uploads/2023/04/bande-LequipeLive2.png" group-title="FR",L'ÉQUIPE LIVE 2
-http://51.75.249.246:3333/stream/15e975278dad4894752203f727a05540
-#EXTINF:0 channelID="x-ID.3" tvg-chno="303" tvg-name="L'ÉQUIPE TV" tvg-id="303" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/La_cha%C3%AEne_l%27Equipe_-_logo_2016.png/1200px-La_cha%C3%AEne_l%27Equipe_-_logo_2016.png" group-title="FR",L'ÉQUIPE TV
-http://51.75.249.246:3333/stream/e0a5e80c1dcd91407fffbc6dcb2bc5d0
-#EXTINF:0 channelID="x-ID.4" tvg-chno="304" tvg-name="Red Bull TV" tvg-id="304" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Red-Bull-TV.png" group-title="FR",Red Bull TV
-http://51.75.249.246:3333/stream/9eabac4b03b9034977937b7de0be4e96
-#EXTINF:0 channelID="x-ID.323" tvg-chno="305" tvg-name="Motorvision" tvg-id="305" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Motorvision-TV.png" group-title="FR",Motorvision
-http://51.75.249.246:3333/stream/c25887d6776ef515fca83c29e09ac0fa
-#EXTINF:0 channelID="x-ID.317" tvg-chno="400" tvg-name="Darkflix" tvg-id="400" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Darkflix.png" group-title="FR",Darkflix
-http://51.75.249.246:3333/stream/5ceffd40731610e89d713240341cfd22
-#EXTINF:0 channelID="x-ID.318" tvg-chno="401" tvg-name="MyTime Movie Network (BR)" tvg-id="401" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/My-Time-Movie-Network.png" group-title="FR",MyTime Movie Network (BR)
-http://51.75.249.246:3333/stream/66a6c6a7d4efb5e871f189b15cff4415
-#EXTINF:0 channelID="x-ID.84" tvg-chno="994" tvg-name="Globo News" tvg-id="994" tvg-logo="http://10.66.66.1:2323/countries/brazil/globo-news-br.png" group-title="FR",Globo News
-http://51.75.249.246:3333/stream/57b9dd72102d202a0fde95228ac13034
-#EXTINF:0 channelID="x-ID.85" tvg-chno="995" tvg-name="Band News" tvg-id="995" tvg-logo="http://10.66.66.1:2323/countries/brazil/band-news-br.png" group-title="FR",Band News
-http://51.75.249.246:3333/stream/e073ec5332f5ac89eb4629204a6b4655
-#EXTINF:0 channelID="x-ID.309" tvg-chno="996" tvg-name="BBC News" tvg-id="996" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/BBC-World-News.png" group-title="FR",BBC News
-http://51.75.249.246:3333/stream/a09263b1ef86aff4ae68b12adc369303
-#EXTINF:0 channelID="x-ID.312" tvg-chno="997" tvg-name="Sky News" tvg-id="997" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Sky-News.png" group-title="FR",Sky News
-http://51.75.249.246:3333/stream/a54b5fd47e3c9f4a027d7703dcdc2403
-#EXTINF:0 channelID="x-ID.311" tvg-chno="998" tvg-name="TVE 24h" tvg-id="998" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TVE-24h.png" group-title="FR",TVE 24h
-http://51.75.249.246:3333/stream/e5cf5a0d6e33b1984c01dfbc249501c5
-#EXTINF:0 channelID="x-ID.310" tvg-chno="999" tvg-name="TV5 Monde Info" tvg-id="999" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TV5-Monde-Info.png" group-title="FR",TV5 Monde Info
-http://51.75.249.246:3333/stream/552f85c5fc96397a79a9d580a0e23ff1
-#EXTINF:0 channelID="x-ID.34" tvg-chno="1000" tvg-name="ABC News" tvg-id="1000" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/ABC-News.png" group-title="FR",ABC News
-http://51.75.249.246:3333/stream/5d3f3c8b781f8050eee6884424f66d80
-#EXTINF:0 channelID="x-ID.306" tvg-chno="1001" tvg-name="Press TV" tvg-id="1001" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Press-TV.png" group-title="FR",Press TV
-http://51.75.249.246:3333/stream/255ec0ae9eb915f941b8f401f546b161
-#EXTINF:0 channelID="x-ID.307" tvg-chno="1002" tvg-name="CBS News" tvg-id="1002" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CBSN.png" group-title="FR",CBS News
-http://51.75.249.246:3333/stream/03a28cbdbe50395de30438ccbe1296ef
-#EXTINF:0 channelID="x-ID.88" tvg-chno="1004" tvg-name="CNN Brasil" tvg-id="1004" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/My-Time-Movie-Network.png" group-title="FR",CNN Brasil
-http://51.75.249.246:3333/stream/4703e5bbadeeedca1abbc45949167ad0
-#EXTINF:0 channelID="x-ID.5" tvg-chno="1005" tvg-name="RT News" tvg-id="1005" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RT-News.png" group-title="FR",RT News
-http://51.75.249.246:3333/stream/f9631ee3c43578c2d2221957d96bc0dc
-#EXTINF:0 channelID="x-ID.6" tvg-chno="1006" tvg-name="Al Jazeera English" tvg-id="1006" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Al-Jazeera.png" group-title="FR",Al Jazeera English
-http://51.75.249.246:3333/stream/dfb61a81fef076921a801624a18458b9
-#EXTINF:0 channelID="x-ID.7" tvg-chno="1007" tvg-name="France 24 English" tvg-id="1007" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/France-24.png" group-title="FR",France 24 English
-http://51.75.249.246:3333/stream/13b7c0a6a267805f3d015666b34c6213
-#EXTINF:0 channelID="x-ID.8" tvg-chno="1008" tvg-name="CNN" tvg-id="1008" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CNN.png" group-title="FR",CNN
-http://51.75.249.246:3333/stream/52dc47f62f49936279860ffc333b0084
-#EXTINF:0 channelID="x-ID.33" tvg-chno="1009" tvg-name="Fox Now" tvg-id="1009" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/LiveNOW_from_Fox.webp" group-title="FR",Fox Now
-http://51.75.249.246:3333/stream/281473baccbf75b91f14bc5db96b72d3
-#EXTINF:0 channelID="x-ID.35" tvg-chno="1010" tvg-name="Rádio  Antena 1" tvg-id="1010" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/antena1.png" group-title="FR",Rádio  Antena 1
-http://51.75.249.246:3333/stream/7336953264acbfef21c55be51852b65b
 #EXTINF:0 channelID="x-ID.4" tvg-chno="1004" tvg-name="GR: ERT 2 HD" tvg-id="1004" tvg-logo="https://i.imgur.com/nMHKG3A.png" group-title="GR",GR: ERT 2 HD
 http://94.131.135.165:32768/stream/51b8930f8208026f51f7df17da7d8a8d
 #EXTINF:0 channelID="x-ID.6" tvg-chno="1006" tvg-name="GR: ERT 3 HD" tvg-id="1006" tvg-logo="https://i.imgur.com/f2l9bDR.png" group-title="GR",GR: ERT 3 HD
@@ -5658,85 +5534,85 @@ http://94.131.135.165:32768/stream/a611fe25ea89642718de21614e582fa3
 #EXTINF:0 channelID="x-ID.108" tvg-chno="1108" tvg-name="GR: MAD" tvg-id="1108" tvg-logo="https://i.imgur.com/W3sGgWd.png" group-title="GR",GR: MAD
 http://94.131.135.165:32768/stream/8833a9b31a83d229cd2e8c3de34c706e
 #EXTINF:0 channelID="x-ID.0" tvg-chno="1000" tvg-name="CBNC INDONESIA HD" tvg-id="1000" tvg-logo="http://192.168.99.40:9981/imagecache/109" group-title="ID",CBNC INDONESIA HD
-http://103.198.93.155:8887/stream/ef4234c3ad2190168db861d6bb42d963
+http://103.198.93.155:8887/stream/79fd3179339c4e506df798216d784904
 #EXTINF:0 channelID="x-ID.1" tvg-chno="1001" tvg-name="CNN INDONESIA HD" tvg-id="1001" tvg-logo="http://192.168.99.40:9981/imagecache/108" group-title="ID",CNN INDONESIA HD
-http://103.198.93.155:8887/stream/57afb7ede9db2599c8dd844570725bfe
+http://103.198.93.155:8887/stream/4b62829397ca85c189a92ff55c62cefb
 #EXTINF:0 channelID="x-ID.2" tvg-chno="1002" tvg-name="GTV HD" tvg-id="1002" tvg-logo="http://192.168.99.40:9981/imagecache/53" group-title="ID",GTV HD
-http://103.198.93.155:8887/stream/3f1b36d9a7729b8be7438ef1acf830b8
+http://103.198.93.155:8887/stream/87acb623cd1de4a181f0c8df9ee06ffe
 #EXTINF:0 channelID="x-ID.3" tvg-chno="1003" tvg-name="INDOSIAR HD" tvg-id="1003" tvg-logo="http://192.168.99.40:9981/imagecache/105" group-title="ID",INDOSIAR HD
-http://103.198.93.155:8887/stream/6c41e08daeb1ccf555ba8413a449155f
+http://103.198.93.155:8887/stream/9f5b8ccf55a6d82cdcdb5bceb14c9a4f
 #EXTINF:0 channelID="x-ID.4" tvg-chno="1004" tvg-name="iNews HD" tvg-id="1004" tvg-logo="http://192.168.99.40:9981/imagecache/54" group-title="ID",iNews HD
-http://103.198.93.155:8887/stream/11cd020a667c7348916f108f486b90a7
+http://103.198.93.155:8887/stream/0c023f53d107fc5f48243e53a7ab3d36
 #EXTINF:0 channelID="x-ID.5" tvg-chno="1005" tvg-name="KOMPASTV HD" tvg-id="1005" tvg-logo="http://192.168.99.40:9981/imagecache/50" group-title="ID",KOMPASTV HD
-http://103.198.93.155:8887/stream/ba7953601c60e369df19ebf02b59dbde
+http://103.198.93.155:8887/stream/c43febdb9a1f47288a8593cec7709581
 #EXTINF:0 channelID="x-ID.6" tvg-chno="1006" tvg-name="MENTARI HD" tvg-id="1006" tvg-logo="http://192.168.99.40:9981/imagecache/47" group-title="ID",MENTARI HD
-http://103.198.93.155:8887/stream/a5700f622b80dcad196a7cd6afc7d6c0
+http://103.198.93.155:8887/stream/5f73aee1a4067d3500b3e24a3c2dca01
 #EXTINF:0 channelID="x-ID.7" tvg-chno="1007" tvg-name="MNCTV HD" tvg-id="1007" tvg-logo="http://192.168.99.40:9981/imagecache/52" group-title="ID",MNCTV HD
-http://103.198.93.155:8887/stream/2476d3f752038dcd2b5a0e1e5b987219
+http://103.198.93.155:8887/stream/d88c45285d99eb9f5ec1ebdd1afc18ac
 #EXTINF:0 channelID="x-ID.8" tvg-chno="1008" tvg-name="MOJI HD" tvg-id="1008" tvg-logo="http://192.168.99.40:9981/imagecache/46" group-title="ID",MOJI HD
-http://103.198.93.155:8887/stream/e422cd343291a3496f587fe5d59c9c81
+http://103.198.93.155:8887/stream/1c50e42be0aba7d79945e1efd9b52b4b
 #EXTINF:0 channelID="x-ID.9" tvg-chno="1009" tvg-name="Nusantara TV" tvg-id="1009" tvg-logo="http://192.168.99.40:9981/imagecache/76" group-title="ID",Nusantara TV
-http://103.198.93.155:8887/stream/39158326aa9dd19c9f95ea98fc48c94c
+http://103.198.93.155:8887/stream/fa6ece0a52b73f5eb9ab476b0057f17f
 #EXTINF:0 channelID="x-ID.10" tvg-chno="1010" tvg-name="RCTI HD" tvg-id="1010" tvg-logo="http://192.168.99.40:9981/imagecache/51" group-title="ID",RCTI HD
-http://103.198.93.155:8887/stream/0137f669378825ec02df71e2875740b4
+http://103.198.93.155:8887/stream/9c7620ac73ea2ce418e21107811a14f2
 #EXTINF:0 channelID="x-ID.11" tvg-chno="1011" tvg-name="REPUBLIKA TV" tvg-id="1011" tvg-logo="http://192.168.99.40:9981/imagecache/72" group-title="ID",REPUBLIKA TV
-http://103.198.93.155:8887/stream/462f3836c9b726e6d7b496dec4f5ff5b
+http://103.198.93.155:8887/stream/6a2556ab5927a8e973a11f7e43c92797
 #EXTINF:0 channelID="x-ID.12" tvg-chno="1012" tvg-name="SCTV HD" tvg-id="1012" tvg-logo="http://192.168.99.40:9981/imagecache/44" group-title="ID",SCTV HD
-http://103.198.93.155:8887/stream/3a17a0da721ed6e773924793b8214bd7
+http://103.198.93.155:8887/stream/99ddc93219c74231c2e3709ae452470b
 #EXTINF:0 channelID="x-ID.13" tvg-chno="1013" tvg-name="SINPO TV HD" tvg-id="1013" tvg-logo="http://192.168.99.40:9981/imagecache/114" group-title="ID",SINPO TV HD
-http://103.198.93.155:8887/stream/bda560b4747eec0e3bbcc709d1dfa7b0
+http://103.198.93.155:8887/stream/dc367f3ac09ad4ba28bacec321ce1742
 #EXTINF:0 channelID="x-ID.14" tvg-chno="1014" tvg-name="TRANS7 HD" tvg-id="1014" tvg-logo="http://192.168.99.40:9981/imagecache/107" group-title="ID",TRANS7 HD
-http://103.198.93.155:8887/stream/4fccc96fe0b74a88ba915e13fc0932da
+http://103.198.93.155:8887/stream/eef21841da61fd7c4d31151bca2f41be
 #EXTINF:0 channelID="x-ID.15" tvg-chno="1015" tvg-name="TRANSTV HD" tvg-id="1015" tvg-logo="http://192.168.99.40:9981/imagecache/106" group-title="ID",TRANSTV HD
-http://103.198.93.155:8887/stream/28b39dfe55e11eb4157966dbb5249620
+http://103.198.93.155:8887/stream/d4877f589ab3d7b4df3951dd9a601e9f
 #EXTINF:0 channelID="x-ID.16" tvg-chno="1016" tvg-name="TVRI DKI HD" tvg-id="1016" tvg-logo="http://192.168.99.40:9981/imagecache/113" group-title="ID",TVRI DKI HD
-http://103.198.93.155:8887/stream/94963790d9b8164ca3022a2b1fadf480
+http://103.198.93.155:8887/stream/cb55035dad7c35aaf216352c94dbb04b
 #EXTINF:0 channelID="x-ID.17" tvg-chno="1017" tvg-name="TVRI Nasional" tvg-id="1017" tvg-logo="http://192.168.99.40:9981/imagecache/110" group-title="ID",TVRI Nasional
-http://103.198.93.155:8887/stream/d6b934ee149b9f171c11a5edfd1b04d0
+http://103.198.93.155:8887/stream/a3b7ce63405c97f8df363c90a5edc02b
 #EXTINF:0 channelID="x-ID.18" tvg-chno="1018" tvg-name="TVRI Sport HD" tvg-id="1018" tvg-logo="http://192.168.99.40:9981/imagecache/111" group-title="ID",TVRI Sport HD
-http://103.198.93.155:8887/stream/7c088124c40ccbd068d9fae0d2f05a3b
+http://103.198.93.155:8887/stream/31ff3ce449147d48a7aea4016629636f
 #EXTINF:0 channelID="x-ID.19" tvg-chno="1019" tvg-name="TVRI WORLD" tvg-id="1019" tvg-logo="http://192.168.99.40:9981/imagecache/112" group-title="ID",TVRI WORLD
-http://103.198.93.155:8887/stream/338e493705a153f56725cb74034bf34b
+http://103.198.93.155:8887/stream/5a87b6931748b56297070c28e5d42cf3
 #EXTINF:0 channelID="x-ID.0" tvg-chno="1000" tvg-name="CBNC INDONESIA HD" tvg-id="1000" tvg-logo="http://192.168.99.40:9981/imagecache/109" group-title="ID",CBNC INDONESIA HD
-http://158.140.175.101:8887/stream/ef4234c3ad2190168db861d6bb42d963
+http://158.140.175.101:8887/stream/79fd3179339c4e506df798216d784904
 #EXTINF:0 channelID="x-ID.1" tvg-chno="1001" tvg-name="CNN INDONESIA HD" tvg-id="1001" tvg-logo="http://192.168.99.40:9981/imagecache/108" group-title="ID",CNN INDONESIA HD
-http://158.140.175.101:8887/stream/57afb7ede9db2599c8dd844570725bfe
+http://158.140.175.101:8887/stream/4b62829397ca85c189a92ff55c62cefb
 #EXTINF:0 channelID="x-ID.2" tvg-chno="1002" tvg-name="GTV HD" tvg-id="1002" tvg-logo="http://192.168.99.40:9981/imagecache/53" group-title="ID",GTV HD
-http://158.140.175.101:8887/stream/3f1b36d9a7729b8be7438ef1acf830b8
+http://158.140.175.101:8887/stream/87acb623cd1de4a181f0c8df9ee06ffe
 #EXTINF:0 channelID="x-ID.3" tvg-chno="1003" tvg-name="INDOSIAR HD" tvg-id="1003" tvg-logo="http://192.168.99.40:9981/imagecache/105" group-title="ID",INDOSIAR HD
-http://158.140.175.101:8887/stream/6c41e08daeb1ccf555ba8413a449155f
+http://158.140.175.101:8887/stream/9f5b8ccf55a6d82cdcdb5bceb14c9a4f
 #EXTINF:0 channelID="x-ID.4" tvg-chno="1004" tvg-name="iNews HD" tvg-id="1004" tvg-logo="http://192.168.99.40:9981/imagecache/54" group-title="ID",iNews HD
-http://158.140.175.101:8887/stream/11cd020a667c7348916f108f486b90a7
+http://158.140.175.101:8887/stream/0c023f53d107fc5f48243e53a7ab3d36
 #EXTINF:0 channelID="x-ID.5" tvg-chno="1005" tvg-name="KOMPASTV HD" tvg-id="1005" tvg-logo="http://192.168.99.40:9981/imagecache/50" group-title="ID",KOMPASTV HD
-http://158.140.175.101:8887/stream/ba7953601c60e369df19ebf02b59dbde
+http://158.140.175.101:8887/stream/c43febdb9a1f47288a8593cec7709581
 #EXTINF:0 channelID="x-ID.6" tvg-chno="1006" tvg-name="MENTARI HD" tvg-id="1006" tvg-logo="http://192.168.99.40:9981/imagecache/47" group-title="ID",MENTARI HD
-http://158.140.175.101:8887/stream/a5700f622b80dcad196a7cd6afc7d6c0
+http://158.140.175.101:8887/stream/5f73aee1a4067d3500b3e24a3c2dca01
 #EXTINF:0 channelID="x-ID.7" tvg-chno="1007" tvg-name="MNCTV HD" tvg-id="1007" tvg-logo="http://192.168.99.40:9981/imagecache/52" group-title="ID",MNCTV HD
-http://158.140.175.101:8887/stream/2476d3f752038dcd2b5a0e1e5b987219
+http://158.140.175.101:8887/stream/d88c45285d99eb9f5ec1ebdd1afc18ac
 #EXTINF:0 channelID="x-ID.8" tvg-chno="1008" tvg-name="MOJI HD" tvg-id="1008" tvg-logo="http://192.168.99.40:9981/imagecache/46" group-title="ID",MOJI HD
-http://158.140.175.101:8887/stream/e422cd343291a3496f587fe5d59c9c81
+http://158.140.175.101:8887/stream/1c50e42be0aba7d79945e1efd9b52b4b
 #EXTINF:0 channelID="x-ID.9" tvg-chno="1009" tvg-name="Nusantara TV" tvg-id="1009" tvg-logo="http://192.168.99.40:9981/imagecache/76" group-title="ID",Nusantara TV
-http://158.140.175.101:8887/stream/39158326aa9dd19c9f95ea98fc48c94c
+http://158.140.175.101:8887/stream/fa6ece0a52b73f5eb9ab476b0057f17f
 #EXTINF:0 channelID="x-ID.10" tvg-chno="1010" tvg-name="RCTI HD" tvg-id="1010" tvg-logo="http://192.168.99.40:9981/imagecache/51" group-title="ID",RCTI HD
-http://158.140.175.101:8887/stream/0137f669378825ec02df71e2875740b4
+http://158.140.175.101:8887/stream/9c7620ac73ea2ce418e21107811a14f2
 #EXTINF:0 channelID="x-ID.11" tvg-chno="1011" tvg-name="REPUBLIKA TV" tvg-id="1011" tvg-logo="http://192.168.99.40:9981/imagecache/72" group-title="ID",REPUBLIKA TV
-http://158.140.175.101:8887/stream/462f3836c9b726e6d7b496dec4f5ff5b
+http://158.140.175.101:8887/stream/6a2556ab5927a8e973a11f7e43c92797
 #EXTINF:0 channelID="x-ID.12" tvg-chno="1012" tvg-name="SCTV HD" tvg-id="1012" tvg-logo="http://192.168.99.40:9981/imagecache/44" group-title="ID",SCTV HD
-http://158.140.175.101:8887/stream/3a17a0da721ed6e773924793b8214bd7
+http://158.140.175.101:8887/stream/99ddc93219c74231c2e3709ae452470b
 #EXTINF:0 channelID="x-ID.13" tvg-chno="1013" tvg-name="SINPO TV HD" tvg-id="1013" tvg-logo="http://192.168.99.40:9981/imagecache/114" group-title="ID",SINPO TV HD
-http://158.140.175.101:8887/stream/bda560b4747eec0e3bbcc709d1dfa7b0
+http://158.140.175.101:8887/stream/dc367f3ac09ad4ba28bacec321ce1742
 #EXTINF:0 channelID="x-ID.14" tvg-chno="1014" tvg-name="TRANS7 HD" tvg-id="1014" tvg-logo="http://192.168.99.40:9981/imagecache/107" group-title="ID",TRANS7 HD
-http://158.140.175.101:8887/stream/4fccc96fe0b74a88ba915e13fc0932da
+http://158.140.175.101:8887/stream/eef21841da61fd7c4d31151bca2f41be
 #EXTINF:0 channelID="x-ID.15" tvg-chno="1015" tvg-name="TRANSTV HD" tvg-id="1015" tvg-logo="http://192.168.99.40:9981/imagecache/106" group-title="ID",TRANSTV HD
-http://158.140.175.101:8887/stream/28b39dfe55e11eb4157966dbb5249620
+http://158.140.175.101:8887/stream/d4877f589ab3d7b4df3951dd9a601e9f
 #EXTINF:0 channelID="x-ID.16" tvg-chno="1016" tvg-name="TVRI DKI HD" tvg-id="1016" tvg-logo="http://192.168.99.40:9981/imagecache/113" group-title="ID",TVRI DKI HD
-http://158.140.175.101:8887/stream/94963790d9b8164ca3022a2b1fadf480
+http://158.140.175.101:8887/stream/cb55035dad7c35aaf216352c94dbb04b
 #EXTINF:0 channelID="x-ID.17" tvg-chno="1017" tvg-name="TVRI Nasional" tvg-id="1017" tvg-logo="http://192.168.99.40:9981/imagecache/110" group-title="ID",TVRI Nasional
-http://158.140.175.101:8887/stream/d6b934ee149b9f171c11a5edfd1b04d0
+http://158.140.175.101:8887/stream/a3b7ce63405c97f8df363c90a5edc02b
 #EXTINF:0 channelID="x-ID.18" tvg-chno="1018" tvg-name="TVRI Sport HD" tvg-id="1018" tvg-logo="http://192.168.99.40:9981/imagecache/111" group-title="ID",TVRI Sport HD
-http://158.140.175.101:8887/stream/7c088124c40ccbd068d9fae0d2f05a3b
+http://158.140.175.101:8887/stream/31ff3ce449147d48a7aea4016629636f
 #EXTINF:0 channelID="x-ID.19" tvg-chno="1019" tvg-name="TVRI WORLD" tvg-id="1019" tvg-logo="http://192.168.99.40:9981/imagecache/112" group-title="ID",TVRI WORLD
-http://158.140.175.101:8887/stream/338e493705a153f56725cb74034bf34b
+http://158.140.175.101:8887/stream/5a87b6931748b56297070c28e5d42cf3
 #EXTINF:0 channelID="x-ID.0" tvg-chno="1000" tvg-name="UK-4K: TNT SPORTS ESPN" tvg-id="1000" tvg-logo="http://vodkom.com:25461/Logo/UK/LOGO/BT_SportESPN.png" group-title="IN",UK-4K: TNT SPORTS ESPN
 http://144.24.131.5/stream/c3d78395b718433600407d067f162532
 #EXTINF:0 channelID="x-ID.1" tvg-chno="1001" tvg-name="UK-4K: TNT SPORTS 1" tvg-id="1001" tvg-logo="http://vodkom.com:25461/Logo/UK/LOGO/BT_Sport_1.png" group-title="IN",UK-4K: TNT SPORTS 1
@@ -11529,6 +11405,14 @@ http://xteve.snahp.top/stream/737cac753996e2e8258f2f5f9ddea886
 http://xteve.snahp.top/stream/b00ca02e01220d447a9aa859d3921368
 #EXTINF:0 channelID="x-ID.100" tvg-chno="1100" tvg-name="PPV 01 | WWE RAW SMACKDOWN AND PPV" tvg-id="1100" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",PPV 01 | WWE RAW SMACKDOWN AND PPV
 http://xteve.snahp.top/stream/899b96fadce1ef3f6795928175670521
+#EXTINF:0 channelID="x-ID.101" tvg-chno="1101" tvg-name="EVENT 03: CANCELLED Quincy Raceways (6.24 7:15 PM ET)" tvg-id="1101" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 03: CANCELLED Quincy Raceways (6.24 7:15 PM ET)
+http://xteve.snahp.top/stream/645f3b5510922be4d161e235f6ae43b7
+#EXTINF:0 channelID="x-ID.107" tvg-chno="1107" tvg-name="PPV 02 |" tvg-id="1107" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",PPV 02 |
+http://xteve.snahp.top/stream/3d635e0e35c217690938f3fcbdf831f9
+#EXTINF:0 channelID="x-ID.108" tvg-chno="1108" tvg-name="PPV 03 |" tvg-id="1108" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",PPV 03 |
+http://xteve.snahp.top/stream/fdda245042db0d78afd513ca0de6d47e
+#EXTINF:0 channelID="x-ID.109" tvg-chno="1109" tvg-name="PPV 04 |" tvg-id="1109" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",PPV 04 |
+http://xteve.snahp.top/stream/2244738c508d8a6907ddef486c8a5d02
 #EXTINF:0 channelID="x-ID.110" tvg-chno="1110" tvg-name="PPV 11 |" tvg-id="1110" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",PPV 11 |
 http://xteve.snahp.top/stream/e1079b586dca8f0418c66620cb797a46
 #EXTINF:0 channelID="x-ID.111" tvg-chno="1111" tvg-name="PPV 12 |" tvg-id="1111" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",PPV 12 |
@@ -11555,52 +11439,56 @@ http://xteve.snahp.top/stream/bb0f39ad1cbf8dfbf3dec6bf7fc60f5b
 http://xteve.snahp.top/stream/842393aa8382051a738938b18034df2b
 #EXTINF:0 channelID="x-ID.122" tvg-chno="1122" tvg-name="PPV 23 |" tvg-id="1122" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",PPV 23 |
 http://xteve.snahp.top/stream/2842c5e34ca3ce1dfbc0070186ce2311
-#EXTINF:0 channelID="x-ID.125" tvg-chno="1125" tvg-name="PPV 02 | RWS: Jaroensook vs. Pangtor 13:10" tvg-id="1125" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",PPV 02 | RWS: Jaroensook vs. Pangtor 13:10
-http://xteve.snahp.top/stream/3d635e0e35c217690938f3fcbdf831f9
-#EXTINF:0 channelID="x-ID.126" tvg-chno="1126" tvg-name="PPV 03 | OKTAGON 90: FLEURY VS. ARAS 17:00" tvg-id="1126" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",PPV 03 | OKTAGON 90: FLEURY VS. ARAS 17:00
-http://xteve.snahp.top/stream/fdda245042db0d78afd513ca0de6d47e
-#EXTINF:0 channelID="x-ID.127" tvg-chno="1127" tvg-name="PPV 04 | Garner vs. Magnesi: Prelims 15:45" tvg-id="1127" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",PPV 04 | Garner vs. Magnesi: Prelims 15:45
-http://xteve.snahp.top/stream/2244738c508d8a6907ddef486c8a5d02
-#EXTINF:0 channelID="x-ID.128" tvg-chno="1128" tvg-name="PPV 05 | KOK Fight Night: Gezius vs. Tryfonos 18:00" tvg-id="1128" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",PPV 05 | KOK Fight Night: Gezius vs. Tryfonos 18:00
-http://xteve.snahp.top/stream/1feac7c483296449f3365f8b0f70687e
-#EXTINF:0 channelID="x-ID.129" tvg-chno="1129" tvg-name="PPV 06 | Garner vs. Magnesi 19:00" tvg-id="1129" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",PPV 06 | Garner vs. Magnesi 19:00
-http://xteve.snahp.top/stream/15bd09d038c696efd1dc5981484e8232
-#EXTINF:0 channelID="x-ID.130" tvg-chno="1130" tvg-name="PPV 07 | Take That Circus Live homecoming show 20:30" tvg-id="1130" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",PPV 07 | Take That Circus Live homecoming show 20:30
-http://xteve.snahp.top/stream/c2f3deb8d661c4f5bbc0dedd0e7a7397
-#EXTINF:0 channelID="x-ID.131" tvg-chno="1131" tvg-name="PPV 08 | Collazo vs. Canoy 01:00" tvg-id="1131" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",PPV 08 | Collazo vs. Canoy 01:00
-http://xteve.snahp.top/stream/3da2c16c66870eb34b8f9b997e024642
-#EXTINF:0 channelID="x-ID.132" tvg-chno="1132" tvg-name="EVENT 01: PRELIMS UFC FN (6.20 5:00 PM ET)" tvg-id="1132" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 01: PRELIMS UFC FN (6.20 5:00 PM ET)
+#EXTINF:0 channelID="x-ID.125" tvg-chno="1125" tvg-name="EVENT 01: Monster Energy Mammoth Motocross (6.24 11:30 AM ET)" tvg-id="1125" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 01: Monster Energy Mammoth Motocross (6.24 11:30 AM ET)
 http://xteve.snahp.top/stream/3b81bb43914f71b6695615b4d5ae83c8
-#EXTINF:0 channelID="x-ID.133" tvg-chno="1133" tvg-name="EVENT 02: PRELIMS UFC FN (6.20 5:00 PM ET)" tvg-id="1133" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 02: PRELIMS UFC FN (6.20 5:00 PM ET)
+#EXTINF:0 channelID="x-ID.126" tvg-chno="1126" tvg-name="EVENT 02: Millbridge Speedway (6.24 6:15 PM ET)" tvg-id="1126" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 02: Millbridge Speedway (6.24 6:15 PM ET)
 http://xteve.snahp.top/stream/faffde85ee74d3896b37695b8ff6b819
-#EXTINF:0 channelID="x-ID.134" tvg-chno="1134" tvg-name="EVENT 03: UFC FN Kape vs. Horiguchi (6.20 8:00 PM ET)" tvg-id="1134" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 03: UFC FN Kape vs. Horiguchi (6.20 8:00 PM ET)
-http://xteve.snahp.top/stream/645f3b5510922be4d161e235f6ae43b7
-#EXTINF:0 channelID="x-ID.135" tvg-chno="1135" tvg-name="EVENT 04: UFC FN Kape vs. Horiguchi (6.20 8:00 PM ET)" tvg-id="1135" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 04: UFC FN Kape vs. Horiguchi (6.20 8:00 PM ET)
+#EXTINF:0 channelID="x-ID.128" tvg-chno="1128" tvg-name="EVENT 04: I94 EMR Speedway (6.24 7:15 PM ET)" tvg-id="1128" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 04: I94 EMR Speedway (6.24 7:15 PM ET)
 http://xteve.snahp.top/stream/103532ddb2317e04887e137626c79152
-#EXTINF:0 channelID="x-ID.136" tvg-chno="1136" tvg-name="EVENT 05: Top Level Pro 23 Spring Games (6.20 5:00 PM ET)" tvg-id="1136" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 05: Top Level Pro 23 Spring Games (6.20 5:00 PM ET)
+#EXTINF:0 channelID="x-ID.129" tvg-chno="1129" tvg-name="EVENT 05: Knockout Queen Red Carpet Open (6.24 3:00 PM ET)" tvg-id="1129" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 05: Knockout Queen Red Carpet Open (6.24 3:00 PM ET)
 http://xteve.snahp.top/stream/a8e567c33414b5e14f6af6bb5c9330fc
-#EXTINF:0 channelID="x-ID.137" tvg-chno="1137" tvg-name="EVENT 06: GCW The Last Ones Left (6.20 8:00 PM ET)" tvg-id="1137" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 06: GCW The Last Ones Left (6.20 8:00 PM ET)
+#EXTINF:0 channelID="x-ID.130" tvg-chno="1130" tvg-name="EVENT 06: Knockout Queens Fight Night (6.24 8:00 PM ET)" tvg-id="1130" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 06: Knockout Queens Fight Night (6.24 8:00 PM ET)
 http://xteve.snahp.top/stream/5add4244d31bc777f03ef84fc1af57a5
-#EXTINF:0 channelID="x-ID.138" tvg-chno="1138" tvg-name="EVENT 07: Shamrock FC 376 (6.20 8:30 PM ET)" tvg-id="1138" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 07: Shamrock FC 376 (6.20 8:30 PM ET)
+#EXTINF:0 channelID="x-ID.131" tvg-chno="1131" tvg-name="EVENT 07: Inka MMA 58 (6.24 11:00 PM ET)" tvg-id="1131" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 07: Inka MMA 58 (6.24 11:00 PM ET)
 http://xteve.snahp.top/stream/6b2770142ecfb9973d8cdb230d6659aa
-#EXTINF:0 channelID="x-ID.139" tvg-chno="1139" tvg-name="EVENT 08: APFC IFL 2 (6.20 11:30 AM ET)" tvg-id="1139" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 08: APFC IFL 2 (6.20 11:30 AM ET)
-http://xteve.snahp.top/stream/0908125c695ec53def8c363d9543937a
-#EXTINF:0 channelID="x-ID.140" tvg-chno="1140" tvg-name="EVENT 09: PRELIMS Cage Warriors 207 (6.20 1:30 PM ET)" tvg-id="1140" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 09: PRELIMS Cage Warriors 207 (6.20 1:30 PM ET)
-http://xteve.snahp.top/stream/785dd30b3b0624499fe9bf24ea29c9d8
-#EXTINF:0 channelID="x-ID.141" tvg-chno="1141" tvg-name="EVENT 10: Cage Warriors 207 (6.20 3:30 PM ET)" tvg-id="1141" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 10: Cage Warriors 207 (6.20 3:30 PM ET)
-http://xteve.snahp.top/stream/952661a50ea21535cf5b83872f322052
-#EXTINF:0 channelID="x-ID.142" tvg-chno="1142" tvg-name="EVENT 11: PRELIMS Garner vs. Magnesi (6.20 10:45 AM ET)" tvg-id="1142" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 11: PRELIMS Garner vs. Magnesi (6.20 10:45 AM ET)
-http://xteve.snahp.top/stream/00d7d9786a86699580fb0077762f1613
-#EXTINF:0 channelID="x-ID.143" tvg-chno="1143" tvg-name="EVENT 12: Garner vs. Magnesi (6.20 2:00 PM ET)" tvg-id="1143" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 12: Garner vs. Magnesi (6.20 2:00 PM ET)
-http://xteve.snahp.top/stream/4c518800369b66f9152c3ecda6c1535b
-#EXTINF:0 channelID="x-ID.144" tvg-chno="1144" tvg-name="EVENT 13: Collazo vs. Valdez (6.20 8:00 PM ET)" tvg-id="1144" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 13: Collazo vs. Valdez (6.20 8:00 PM ET)
-http://xteve.snahp.top/stream/f947e5b1be98ce6e4b65b66a7462d5a2
-#EXTINF:0 channelID="x-ID.145" tvg-chno="1145" tvg-name="EVENT 14: KOK FN Gezius vs. Tryfonos (6.20 1:00 PM ET)" tvg-id="1145" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 14: KOK FN Gezius vs. Tryfonos (6.20 1:00 PM ET)
-http://xteve.snahp.top/stream/96a8499c0b9d50eeb810a2ce0f95204b
-#EXTINF:0 channelID="x-ID.146" tvg-chno="1146" tvg-name="PPV 09 | UFC Fight Night: Kape vs. Horiguchi 23:00" tvg-id="1146" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",PPV 09 | UFC Fight Night: Kape vs. Horiguchi 23:00
+#EXTINF:0 channelID="x-ID.132" tvg-chno="1132" tvg-name="PPV 05 |" tvg-id="1132" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",PPV 05 |
+http://xteve.snahp.top/stream/1feac7c483296449f3365f8b0f70687e
+#EXTINF:0 channelID="x-ID.133" tvg-chno="1133" tvg-name="PPV 06 |" tvg-id="1133" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",PPV 06 |
+http://xteve.snahp.top/stream/15bd09d038c696efd1dc5981484e8232
+#EXTINF:0 channelID="x-ID.134" tvg-chno="1134" tvg-name="PPV 07 |" tvg-id="1134" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",PPV 07 |
+http://xteve.snahp.top/stream/c2f3deb8d661c4f5bbc0dedd0e7a7397
+#EXTINF:0 channelID="x-ID.135" tvg-chno="1135" tvg-name="PPV 08 |" tvg-id="1135" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",PPV 08 |
+http://xteve.snahp.top/stream/3da2c16c66870eb34b8f9b997e024642
+#EXTINF:0 channelID="x-ID.136" tvg-chno="1136" tvg-name="PPV 09 |" tvg-id="1136" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",PPV 09 |
 http://xteve.snahp.top/stream/45edadce0c8df1ebccbda1d5480746f5
-#EXTINF:0 channelID="x-ID.147" tvg-chno="1147" tvg-name="PPV 10 | UFC Fight Night: Kape vs. Horiguchi 23:00" tvg-id="1147" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",PPV 10 | UFC Fight Night: Kape vs. Horiguchi 23:00
+#EXTINF:0 channelID="x-ID.137" tvg-chno="1137" tvg-name="PPV 10 |" tvg-id="1137" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",PPV 10 |
 http://xteve.snahp.top/stream/15622b0512a069d5890a5a1518f44ef9
+#EXTINF:0 channelID="x-ID.139" tvg-chno="1139" tvg-name="EVENT 08" tvg-id="1139" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 08
+http://xteve.snahp.top/stream/0908125c695ec53def8c363d9543937a
+#EXTINF:0 channelID="x-ID.140" tvg-chno="1140" tvg-name="EVENT 09" tvg-id="1140" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 09
+http://xteve.snahp.top/stream/785dd30b3b0624499fe9bf24ea29c9d8
+#EXTINF:0 channelID="x-ID.148" tvg-chno="1148" tvg-name="EVENT 10" tvg-id="1148" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 10
+http://xteve.snahp.top/stream/952661a50ea21535cf5b83872f322052
+#EXTINF:0 channelID="x-ID.149" tvg-chno="1149" tvg-name="EVENT 11" tvg-id="1149" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 11
+http://xteve.snahp.top/stream/00d7d9786a86699580fb0077762f1613
+#EXTINF:0 channelID="x-ID.150" tvg-chno="1150" tvg-name="EVENT 12" tvg-id="1150" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 12
+http://xteve.snahp.top/stream/4c518800369b66f9152c3ecda6c1535b
+#EXTINF:0 channelID="x-ID.151" tvg-chno="1151" tvg-name="EVENT 13" tvg-id="1151" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 13
+http://xteve.snahp.top/stream/f947e5b1be98ce6e4b65b66a7462d5a2
+#EXTINF:0 channelID="x-ID.152" tvg-chno="1152" tvg-name="EVENT 14" tvg-id="1152" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 14
+http://xteve.snahp.top/stream/96a8499c0b9d50eeb810a2ce0f95204b
+#EXTINF:0 channelID="x-ID.153" tvg-chno="1153" tvg-name="EVENT 15" tvg-id="1153" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 15
+http://xteve.snahp.top/stream/c52751be3a0b938c761d04aac575e6d1
+#EXTINF:0 channelID="x-ID.154" tvg-chno="1154" tvg-name="EVENT 16" tvg-id="1154" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 16
+http://xteve.snahp.top/stream/c07a3bccb17f93e43f32cfe916f14f0f
+#EXTINF:0 channelID="x-ID.155" tvg-chno="1155" tvg-name="EVENT 17" tvg-id="1155" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 17
+http://xteve.snahp.top/stream/edce2c025e892853c238f7d86597043c
+#EXTINF:0 channelID="x-ID.156" tvg-chno="1156" tvg-name="EVENT 18" tvg-id="1156" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 18
+http://xteve.snahp.top/stream/3e0b69230571bf96b6db2c26d29f6f32
+#EXTINF:0 channelID="x-ID.157" tvg-chno="1157" tvg-name="EVENT 19" tvg-id="1157" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 19
+http://xteve.snahp.top/stream/3881f9ad45d101e16fe635ec86aa3325
+#EXTINF:0 channelID="x-ID.158" tvg-chno="1158" tvg-name="EVENT 20" tvg-id="1158" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 20
+http://xteve.snahp.top/stream/27cd6b66a216c0fb6afde866ffc0f839
 #EXTINF:0 channelID="x-ID.159" tvg-chno="1159" tvg-name="EVENT 35" tvg-id="1159" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 35
 http://xteve.snahp.top/stream/b4c5777a1e28330d2f7262bb7191cb69
 #EXTINF:0 channelID="x-ID.160" tvg-chno="1160" tvg-name="EVENT 36" tvg-id="1160" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 36
@@ -16189,6 +16077,8 @@ http://xteve.snahp.top/stream/183cbfad4d0c3db0baf40ea8bcc7265f
 http://xteve.snahp.top/stream/e381a02abbb3ce2d683d0643c0835493
 #EXTINF:0 channelID="x-ID.2661" tvg-chno="3661" tvg-name="CHL TV 20" tvg-id="3661" tvg-logo="https://images.channel5.eu/uO9NC4b5HzlRujAnoUeGVefwSKlLYBuw6FOEXbF5U19v0fT3pDU2tpyJ8uHcTAZm.png" group-title="US",CHL TV 20
 http://xteve.snahp.top/stream/0120fdbb532a77ef6d22bb884bf694b3
+#EXTINF:0 channelID="x-ID.2662" tvg-chno="3662" tvg-name="EVENT 21" tvg-id="3662" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 21
+http://xteve.snahp.top/stream/74dc96b980a2a925082bec56b9d9ded9
 #EXTINF:0 channelID="x-ID.2663" tvg-chno="3663" tvg-name="CHL 02:" tvg-id="3663" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",CHL 02:
 http://xteve.snahp.top/stream/1301d2f92ebcccea207db22e221c2f9d
 #EXTINF:0 channelID="x-ID.2664" tvg-chno="3664" tvg-name="CHL 03:" tvg-id="3664" tvg-logo="https://images.channel5.eu/uO9NC4b5HzlRujAnoUeGVQONglOjF2yD3onYCvpIX5JsdERWbiwmWYTl4-WhttYliWk5rWAuMF8sV94mWutSCg.png" group-title="US",CHL 03:
@@ -18204,7 +18094,7 @@ http://xteve.snahp.top/stream/42449778c0b3473045f6bb3f31c8de95
 #EXTINF:0 channelID="x-ID.3669" tvg-chno="4669" tvg-name="Matchroom 01" tvg-id="4669" tvg-logo="https://images.channel5.eu/LjMxooJdLoUjs_tBLxgrV_arAklfqKGW7C7jf2JCB2Yttxe_Lu9Zm8XRLfXHpWO3.png" group-title="US",Matchroom 01
 http://xteve.snahp.top/stream/d32fd8b328250a5ca90a35d0fe44669a
 #EXTINF:0 channelID="x-ID.3670" tvg-chno="4670" tvg-name="Matchroom 02" tvg-id="4670" tvg-logo="https://images.channel5.eu/LjMxooJdLoUjs_tBLxgrV_arAklfqKGW7C7jf2JCB2Yttxe_Lu9Zm8XRLfXHpWO3.png" group-title="US",Matchroom 02
-http://xteve.snahp.top/stream/3b8a17eebf081d8730be596099ab8d53
+http://xteve.snahp.top/stream/242e9d0395dc2fd83a62874ea51b4006
 #EXTINF:0 channelID="x-ID.3671" tvg-chno="4671" tvg-name="Matchroom 03" tvg-id="4671" tvg-logo="https://images.channel5.eu/LjMxooJdLoUjs_tBLxgrV_arAklfqKGW7C7jf2JCB2Yttxe_Lu9Zm8XRLfXHpWO3.png" group-title="US",Matchroom 03
 http://xteve.snahp.top/stream/0fcc6881156a564aef992cd82fec87ac
 #EXTINF:0 channelID="x-ID.3672" tvg-chno="4672" tvg-name="Matchroom 04" tvg-id="4672" tvg-logo="https://images.channel5.eu/LjMxooJdLoUjs_tBLxgrV_arAklfqKGW7C7jf2JCB2Yttxe_Lu9Zm8XRLfXHpWO3.png" group-title="US",Matchroom 04
@@ -22263,47 +22153,33 @@ http://xteve.snahp.top/stream/780e64b9f1a608b9a745fb41e4ccc23e
 http://xteve.snahp.top/stream/a083c6ff1e5f390f79d987924f3762ac
 #EXTINF:0 channelID="x-ID.11212" tvg-chno="12212" tvg-name="XXX | XY Plusⓧ" tvg-id="12212" tvg-logo="https://iptvboss.xyz/logos/Latvia/TVExtra.lv.png" group-title="US",XXX | XY Plusⓧ
 http://xteve.snahp.top/stream/82a2d6b959829164e2ed00e790f27147
-#EXTINF:0 channelID="x-ID.11213" tvg-chno="12213" tvg-name="EVENT 15: NARC Super Dirt Cup at Skagit (6.20 8:00 PM ET)" tvg-id="12213" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 15: NARC Super Dirt Cup at Skagit (6.20 8:00 PM ET)
-http://xteve.snahp.top/stream/c52751be3a0b938c761d04aac575e6d1
-#EXTINF:0 channelID="x-ID.11214" tvg-chno="12214" tvg-name="EVENT 16: Lucas Oil Late Model Dirt Series at Smoky Mountain (6.20 6:45 PM ET)" tvg-id="12214" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 16: Lucas Oil Late Model Dirt Series at Smoky Mountain (6.20 6:45 PM ET)
-http://xteve.snahp.top/stream/c07a3bccb17f93e43f32cfe916f14f0f
-#EXTINF:0 channelID="x-ID.11215" tvg-chno="12215" tvg-name="EVENT 17: USAC Road Racing at VIR (6.20 9:00 AM ET)" tvg-id="12215" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 17: USAC Road Racing at VIR (6.20 9:00 AM ET)
-http://xteve.snahp.top/stream/edce2c025e892853c238f7d86597043c
-#EXTINF:0 channelID="x-ID.11216" tvg-chno="12216" tvg-name="EVENT 18: AMSOIL Championship Off Road In Crandon (6.20 9:30 AM ET)" tvg-id="12216" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 18: AMSOIL Championship Off Road In Crandon (6.20 9:30 AM ET)
-http://xteve.snahp.top/stream/3e0b69230571bf96b6db2c26d29f6f32
-#EXTINF:0 channelID="x-ID.11217" tvg-chno="12217" tvg-name="EVENT 19: NAPA ASCoC Ohio Sprint Speedweek at Wayne County (6.20 4:30 PM ET)" tvg-id="12217" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 19: NAPA ASCoC Ohio Sprint Speedweek at Wayne County (6.20 4:30 PM ET)
-http://xteve.snahp.top/stream/3881f9ad45d101e16fe635ec86aa3325
-#EXTINF:0 channelID="x-ID.11218" tvg-chno="12218" tvg-name="EVENT 20: Supermodifieds at Oswego (6.20 5:00 PM ET)" tvg-id="12218" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 20: Supermodifieds at Oswego (6.20 5:00 PM ET)
-http://xteve.snahp.top/stream/27cd6b66a216c0fb6afde866ffc0f839
-#EXTINF:0 channelID="x-ID.11219" tvg-chno="12219" tvg-name="EVENT 21: NASCAR Weekly Racing at Riverhead (6.20 5:30 PM ET)" tvg-id="12219" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 21: NASCAR Weekly Racing at Riverhead (6.20 5:30 PM ET)
-http://xteve.snahp.top/stream/74dc96b980a2a925082bec56b9d9ded9
 #EXTINF:0 channelID="x-ID.11220" tvg-chno="12220" tvg-name="CHL 01: Chicago Wolves vs Toronto Marlies (6.18 7:00 PM ET)" tvg-id="12220" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",CHL 01: Chicago Wolves vs Toronto Marlies (6.18 7:00 PM ET)
 http://xteve.snahp.top/stream/ea35b762962792ac9490a9aa85786d32
-#EXTINF:0 channelID="x-ID.11234" tvg-chno="12234" tvg-name="EVENT 22: IRA Sprints at Butler Motor (6.20 5:30 PM ET)" tvg-id="12234" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 22: IRA Sprints at Butler Motor (6.20 5:30 PM ET)
+#EXTINF:0 channelID="x-ID.11221" tvg-chno="12221" tvg-name="EVENT 22" tvg-id="12221" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 22
 http://xteve.snahp.top/stream/967de4d3a55879222101f08bd9a833ee
-#EXTINF:0 channelID="x-ID.11235" tvg-chno="12235" tvg-name="EVENT 23: NASCAR Weekly Racing at Jennerstown (6.20 5:45 PM ET)" tvg-id="12235" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 23: NASCAR Weekly Racing at Jennerstown (6.20 5:45 PM ET)
+#EXTINF:0 channelID="x-ID.11222" tvg-chno="12222" tvg-name="EVENT 23" tvg-id="12222" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 23
 http://xteve.snahp.top/stream/86986884e195fa425bb8b48c12d652ac
-#EXTINF:0 channelID="x-ID.11236" tvg-chno="12236" tvg-name="EVENT 24: USAC Eastern Storm at Port Royal (6.20 5:45 PM ET)" tvg-id="12236" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 24: USAC Eastern Storm at Port Royal (6.20 5:45 PM ET)
+#EXTINF:0 channelID="x-ID.11223" tvg-chno="12223" tvg-name="EVENT 24" tvg-id="12223" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 24
 http://xteve.snahp.top/stream/38b7b9b6aa5a76f960b60bdbb370975b
-#EXTINF:0 channelID="x-ID.11237" tvg-chno="12237" tvg-name="EVENT 25: Weekly Racing at Fonda (6.20 6:00 PM ET)" tvg-id="12237" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 25: Weekly Racing at Fonda (6.20 6:00 PM ET)
+#EXTINF:0 channelID="x-ID.11224" tvg-chno="12224" tvg-name="EVENT 25" tvg-id="12224" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 25
 http://xteve.snahp.top/stream/7efdbc6966d23b0d98ab4e52b95319af
-#EXTINF:0 channelID="x-ID.11238" tvg-chno="12238" tvg-name="EVENT 26: USAC MRA Sprints at Valley (6.20 6:15 PM ET)" tvg-id="12238" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 26: USAC MRA Sprints at Valley (6.20 6:15 PM ET)
+#EXTINF:0 channelID="x-ID.11225" tvg-chno="12225" tvg-name="EVENT 26" tvg-id="12225" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 26
 http://xteve.snahp.top/stream/c113d81b6c484659fe29eaee008ef410
-#EXTINF:0 channelID="x-ID.11239" tvg-chno="12239" tvg-name="EVENT 27: NASCAR Weekly Racing at Langley (6.20 7:00 PM ET)" tvg-id="12239" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 27: NASCAR Weekly Racing at Langley (6.20 7:00 PM ET)
+#EXTINF:0 channelID="x-ID.11226" tvg-chno="12226" tvg-name="EVENT 27" tvg-id="12226" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 27
 http://xteve.snahp.top/stream/63213cc471989054a98c472880429c68
-#EXTINF:0 channelID="x-ID.11240" tvg-chno="12240" tvg-name="EVENT 28: NASCAR Modified 100 at Bowman Gray (6.20 7:45 PM ET)" tvg-id="12240" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 28: NASCAR Modified 100 at Bowman Gray (6.20 7:45 PM ET)
+#EXTINF:0 channelID="x-ID.11227" tvg-chno="12227" tvg-name="EVENT 28" tvg-id="12227" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 28
 http://xteve.snahp.top/stream/2c72239f2beeddd1b608132be62a439d
-#EXTINF:0 channelID="x-ID.11241" tvg-chno="12241" tvg-name="EVENT 29: Sharon Speedway (6.20 6:30 PM ET)" tvg-id="12241" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 29: Sharon Speedway (6.20 6:30 PM ET)
+#EXTINF:0 channelID="x-ID.11228" tvg-chno="12228" tvg-name="EVENT 29" tvg-id="12228" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 29
 http://xteve.snahp.top/stream/2fec7396aa4709af5ba54b96dcc30678
-#EXTINF:0 channelID="x-ID.11242" tvg-chno="12242" tvg-name="EVENT 30: Husets Speedway (6.20 6:45 PM ET)" tvg-id="12242" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 30: Husets Speedway (6.20 6:45 PM ET)
+#EXTINF:0 channelID="x-ID.11229" tvg-chno="12229" tvg-name="EVENT 30" tvg-id="12229" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 30
 http://xteve.snahp.top/stream/2611984db220ec027f52c6b54469dccf
-#EXTINF:0 channelID="x-ID.11243" tvg-chno="12243" tvg-name="EVENT 31: 141 Speedway (6.20 6:45 PM ET)" tvg-id="12243" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 31: 141 Speedway (6.20 6:45 PM ET)
+#EXTINF:0 channelID="x-ID.11230" tvg-chno="12230" tvg-name="EVENT 31" tvg-id="12230" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 31
 http://xteve.snahp.top/stream/c2f68b9f484173061e7ac2a618067a9b
-#EXTINF:0 channelID="x-ID.11244" tvg-chno="12244" tvg-name="EVENT 32: I55 Federated Auto Parts Raceway Park (6.20 7:15 PM ET)" tvg-id="12244" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 32: I55 Federated Auto Parts Raceway Park (6.20 7:15 PM ET)
+#EXTINF:0 channelID="x-ID.11231" tvg-chno="12231" tvg-name="EVENT 32" tvg-id="12231" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 32
 http://xteve.snahp.top/stream/a7fbd4c55af92c992eb6096c117697b6
-#EXTINF:0 channelID="x-ID.11245" tvg-chno="12245" tvg-name="EVENT 33: Cedar Lake Speedway (6.20 7:15 PM ET)" tvg-id="12245" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 33: Cedar Lake Speedway (6.20 7:15 PM ET)
+#EXTINF:0 channelID="x-ID.11232" tvg-chno="12232" tvg-name="EVENT 33" tvg-id="12232" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 33
 http://xteve.snahp.top/stream/4dfe4f60dfb81731b9a745cfa3e0cab4
-#EXTINF:0 channelID="x-ID.11246" tvg-chno="12246" tvg-name="EVENT 34: Dirt Zone (6.20 7:30 PM ET)" tvg-id="12246" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 34: Dirt Zone (6.20 7:30 PM ET)
+#EXTINF:0 channelID="x-ID.11233" tvg-chno="12233" tvg-name="EVENT 34" tvg-id="12233" tvg-logo="http://xplatinmedia.com:8080/images/b4a468c52bec91dcdeb4f4f19ad09d5b.png" group-title="US",EVENT 34
 http://xteve.snahp.top/stream/c76cda817d2d6d7477057ad7e90a9089
 #EXTINF:0 channelID="x-ID.1" tvg-chno="9001" tvg-name="Space City Home Network" tvg-id="9001" tvg-logo="https://media.starlite.best/att.sportsnet.southwest.houston.us.png" group-title="US",Space City Home Network
 http://tv.kinte.net/stream/ccb2328e0b3606ce0cbc668b76a28105
@@ -22944,377 +22820,365 @@ http://tv.kinte.net/stream/2bab75c1fc12e4becb299ebfa74a769c
 #EXTINF:0 channelID="x-ID.891" tvg-chno="9885" tvg-name="YES Network US" tvg-id="9885" tvg-logo="https://media.starlite.best/yes.network.us.png" group-title="US",YES Network US
 http://tv.kinte.net/stream/5daecd343bf3cddf58ee48a87ba33447
 #EXTINF:0 channelID="x-ID.0" tvg-chno="1000" tvg-name=" ESPN" tvg-id="1000" tvg-logo="http://192.168.1.84:32768/images/64a5a5bf3a01b9dc3576c377571ad3e0.png" group-title="US", ESPN
-http://67.161.193.132:32768/stream/4490dd6783ccb81a1d5875bf924d95a9
+http://67.161.193.132:32768/stream/3302dd1c319520e9f8b66e9d2196855c
 #EXTINF:0 channelID="x-ID.1" tvg-chno="1001" tvg-name=" ESPN 2" tvg-id="1001" tvg-logo="http://192.168.1.84:32768/images/e3d43444cc05c2424b3557768550944e.png" group-title="US", ESPN 2
-http://67.161.193.132:32768/stream/79cee0b981d7ef162f39ec3d251b546d
+http://67.161.193.132:32768/stream/c5c47b9a6f9ee8126c2e4c86ca14634b
 #EXTINF:0 channelID="x-ID.2" tvg-chno="1002" tvg-name=" ESPNews" tvg-id="1002" tvg-logo="http://192.168.1.84:32768/images/0529279582b55e27d6761f52c416817a.png" group-title="US", ESPNews
-http://67.161.193.132:32768/stream/c61c1d9a9fdb802a6202c3aab5df2554
+http://67.161.193.132:32768/stream/294ad9601c41888361dbe039c33c4854
 #EXTINF:0 channelID="x-ID.3" tvg-chno="1003" tvg-name=" ESPNU" tvg-id="1003" tvg-logo="http://192.168.1.84:32768/images/180421cbe7b81b0eb976b41d7e3ddf82.png" group-title="US", ESPNU
-http://67.161.193.132:32768/stream/b62989df22d664782572bd92007f4570
+http://67.161.193.132:32768/stream/ffb4e8873e74613f6813cb26afefd051
 #EXTINF:0 channelID="x-ID.4" tvg-chno="1004" tvg-name=" Fox Sports 1" tvg-id="1004" tvg-logo="http://192.168.1.84:32768/images/09b2bf3d1ad3301a8c7b4e99f9665079.png" group-title="US", Fox Sports 1
-http://67.161.193.132:32768/stream/b91372b24defbca1920bc62a72eafb08
+http://67.161.193.132:32768/stream/779d68a1894b6b483f6343686493b2d5
 #EXTINF:0 channelID="x-ID.5" tvg-chno="1005" tvg-name=" Fox Sports 2" tvg-id="1005" tvg-logo="http://192.168.1.84:32768/images/f75068bf1083aad6d1beeb45675f9e46.png" group-title="US", Fox Sports 2
-http://67.161.193.132:32768/stream/f93addcc3035ca6c6e1be3a00b6eed8f
+http://67.161.193.132:32768/stream/205a69f29b605c9f3f05aab41f4bd5a1
 #EXTINF:0 channelID="x-ID.6" tvg-chno="1006" tvg-name=" NBA TV" tvg-id="1006" tvg-logo="http://192.168.1.84:32768/images/4623bcfe8edd3efd63440023b3e79f55.png" group-title="US", NBA TV
-http://67.161.193.132:32768/stream/c046a8c73164b98680db8470fe6774bc
+http://67.161.193.132:32768/stream/d3f62b0144b87e9446e0f32a483700db
 #EXTINF:0 channelID="x-ID.7" tvg-chno="1007" tvg-name=" NFL Network" tvg-id="1007" tvg-logo="http://192.168.1.84:32768/images/3502ed00dc2a830f61c4ff2f8c3d27e6.png" group-title="US", NFL Network
-http://67.161.193.132:32768/stream/0ed82dafe6a42f896b8ba081d7c0f335
+http://67.161.193.132:32768/stream/68d5ef231c2329b4982ae45193bfcfc1
 #EXTINF:0 channelID="x-ID.8" tvg-chno="1008" tvg-name=" NHL Network" tvg-id="1008" tvg-logo="http://192.168.1.84:32768/images/3b2043641fdadaac3cb9d4c1c9e08ac8.png" group-title="US", NHL Network
-http://67.161.193.132:32768/stream/9888d255edcc5c9ba9dfaa45e0a1b5a3
+http://67.161.193.132:32768/stream/84fbe2e4e06e73803f52f37205a198b1
 #EXTINF:0 channelID="x-ID.9" tvg-chno="1009" tvg-name=" MLB Network" tvg-id="1009" tvg-logo="http://192.168.1.84:32768/images/b297f8beaee4b7199fa648f101a58a19.png" group-title="US", MLB Network
-http://67.161.193.132:32768/stream/ddbdb2742ad4fae2b833a51af87dc57a
+http://67.161.193.132:32768/stream/7d3c160c8387d368d5f6a696e299cb89
 #EXTINF:0 channelID="x-ID.10" tvg-chno="1010" tvg-name=" USA Network" tvg-id="1010" tvg-logo="http://192.168.1.84:32768/images/ebf22eb925371432a2128db2a0e7a21d.png" group-title="US", USA Network
-http://67.161.193.132:32768/stream/fbc8639a45b722771b56668000a714b3
+http://67.161.193.132:32768/stream/fe0d9696386f9179251dc3a9a9997c05
 #EXTINF:0 channelID="x-ID.11" tvg-chno="1011" tvg-name=" BeIN Sports" tvg-id="1011" tvg-logo="http://192.168.1.84:32768/images/20fd3552a5599f73b9bc871ac73e2309.png" group-title="US", BeIN Sports
-http://67.161.193.132:32768/stream/545a8cf9f5106c157e1031a76133ecf6
+http://67.161.193.132:32768/stream/47c8a3071f9a3c93400c26c039749877
 #EXTINF:0 channelID="x-ID.12" tvg-chno="1012" tvg-name=" CBS Sports" tvg-id="1012" tvg-logo="http://192.168.1.84:32768/images/1f586d0168e925c33f7f188d3d014264.png" group-title="US", CBS Sports
-http://67.161.193.132:32768/stream/53e27a10a47703a7239ae1c3111640f3
+http://67.161.193.132:32768/stream/22431cd8c1ed36d0dd814b7d50c5338a
 #EXTINF:0 channelID="x-ID.13" tvg-chno="1013" tvg-name=" TSN 1" tvg-id="1013" tvg-logo="http://192.168.1.84:32768/images/5fbad0e63d68e593e406703d117f4059.png" group-title="US", TSN 1
-http://67.161.193.132:32768/stream/a835afa8b1afe3be017fa78f274c419d
+http://67.161.193.132:32768/stream/3ff7d1b5df4d538664fb7a0dba6aa2da
 #EXTINF:0 channelID="x-ID.14" tvg-chno="1014" tvg-name=" TSN 2" tvg-id="1014" tvg-logo="http://192.168.1.84:32768/images/d9cca2361de4298feffaf5336b7c436c.png" group-title="US", TSN 2
-http://67.161.193.132:32768/stream/d61dfe0ed9d7a252b4a21d67b9d77e17
+http://67.161.193.132:32768/stream/1650a6f5520fff6f9cca87bc4b95e81d
 #EXTINF:0 channelID="x-ID.15" tvg-chno="1015" tvg-name=" TSN 3" tvg-id="1015" tvg-logo="http://192.168.1.84:32768/images/f57b2dc1a2bf01d94125d861478744a8.png" group-title="US", TSN 3
-http://67.161.193.132:32768/stream/9ffe5af24b5e6328280a146a1ea980c8
+http://67.161.193.132:32768/stream/200925f06bfc4dee2911b6eb9d03acd0
 #EXTINF:0 channelID="x-ID.16" tvg-chno="1016" tvg-name=" TSN 4" tvg-id="1016" tvg-logo="http://192.168.1.84:32768/images/1084e8eec77c1faeea3c1062b603ecf0.png" group-title="US", TSN 4
-http://67.161.193.132:32768/stream/6d92fe6143e54b20c42a2f4bc73cbb37
+http://67.161.193.132:32768/stream/315a0271fb2fb8176930985bff2d0250
 #EXTINF:0 channelID="x-ID.17" tvg-chno="1017" tvg-name=" TSN 5" tvg-id="1017" tvg-logo="http://192.168.1.84:32768/images/50bc087a68105d4bcc921f72b81d7e47.png" group-title="US", TSN 5
-http://67.161.193.132:32768/stream/71d7652e49df3802f6a90ad16b14bd77
+http://67.161.193.132:32768/stream/ce25e8f4de38ae7eec5a89807072a111
 #EXTINF:0 channelID="x-ID.18" tvg-chno="1018" tvg-name=" Sportsnet East" tvg-id="1018" tvg-logo="http://192.168.1.84:32768/images/68020b3e43035c2402a0e90e7bca3436.png" group-title="US", Sportsnet East
-http://67.161.193.132:32768/stream/05635c617eccc79138b57968d38e64f4
+http://67.161.193.132:32768/stream/9c6d9066f09f1a14a6d12dc70dda3aac
 #EXTINF:0 channelID="x-ID.19" tvg-chno="1019" tvg-name=" Sportsnet One" tvg-id="1019" tvg-logo="http://192.168.1.84:32768/images/9b3d92f2e1761286d2ab58ed370db2e5.png" group-title="US", Sportsnet One
-http://67.161.193.132:32768/stream/3e14bc8133805dc2caa3b4de7326cf82
+http://67.161.193.132:32768/stream/7f70aa398a978d092018a31eba0f1a75
 #EXTINF:0 channelID="x-ID.20" tvg-chno="1020" tvg-name=" Sportsnet World" tvg-id="1020" tvg-logo="http://192.168.1.84:32768/images/be90cc68b6421207a221637228384e54.png" group-title="US", Sportsnet World
-http://67.161.193.132:32768/stream/28039033d6a38e3faa1c3189e0b61a7a
+http://67.161.193.132:32768/stream/56af8f33f06b023a780b1feedcbfedce
 #EXTINF:0 channelID="x-ID.21" tvg-chno="1021" tvg-name=" Sportsnet 360" tvg-id="1021" tvg-logo="http://192.168.1.84:32768/images/bc0f9b3656e827383418b1708dbd125c.png" group-title="US", Sportsnet 360
-http://67.161.193.132:32768/stream/c7d9fad82eb7828a893bf929aa93a1ca
+http://67.161.193.132:32768/stream/d1c805a50121065a167121d094bd6081
 #EXTINF:0 channelID="x-ID.22" tvg-chno="1022" tvg-name=" Sportsnet Ontario" tvg-id="1022" tvg-logo="http://192.168.1.84:32768/images/ec34dd23dfb5f4292a83a10a3ed7f5f5.png" group-title="US", Sportsnet Ontario
-http://67.161.193.132:32768/stream/0c2f03a81f61d28b40ae5aeb2b349908
+http://67.161.193.132:32768/stream/1c3d8de4ec57c3ed3054d749d026df99
 #EXTINF:0 channelID="x-ID.23" tvg-chno="1023" tvg-name=" Sportsnet West" tvg-id="1023" tvg-logo="http://192.168.1.84:32768/images/e1c88e3056281ed6b6f0c0e41163df0d.png" group-title="US", Sportsnet West
-http://67.161.193.132:32768/stream/a3aec71aa7c99ec9baf070212df7e6f0
+http://67.161.193.132:32768/stream/9e5d43ad792ac1e9e2737fa6fba4372c
 #EXTINF:0 channelID="x-ID.24" tvg-chno="1024" tvg-name=" Sportsnet Pacific" tvg-id="1024" tvg-logo="http://192.168.1.84:32768/images/3d739a56e617383cb1acef12ea990549.png" group-title="US", Sportsnet Pacific
-http://67.161.193.132:32768/stream/16cb408b4c7fc04254a91a754a06cfe3
+http://67.161.193.132:32768/stream/9b8aa8125bbb8f2abb2a98389e4ba5e9
 #EXTINF:0 channelID="x-ID.25" tvg-chno="1025" tvg-name=" CBC" tvg-id="1025" tvg-logo="http://192.168.1.84:32768/images/9d76eba5d851e46a0b6b9ecd7b3f9d3d.png" group-title="US", CBC
-http://67.161.193.132:32768/stream/f680f80d889748f3f69728cf6f674b2e
+http://67.161.193.132:32768/stream/1851a3d395f096be4b2e30a621fe5569
 #EXTINF:0 channelID="x-ID.26" tvg-chno="1026" tvg-name=" RDS" tvg-id="1026" tvg-logo="http://192.168.1.84:32768/images/5b2dae6690ba9842ead90ecf78559f29.png" group-title="US", RDS
-http://67.161.193.132:32768/stream/20810eedfd6fb4a699c08ec74a8a229a
+http://67.161.193.132:32768/stream/6cdf2ebef4a3a0900ea0384902f3ff79
 #EXTINF:0 channelID="x-ID.27" tvg-chno="1027" tvg-name=" TVA Sports" tvg-id="1027" tvg-logo="http://192.168.1.84:32768/images/c5c035bc2484a6959527f5442b7e3b1f.png" group-title="US", TVA Sports
-http://67.161.193.132:32768/stream/1bc238ac77be0a415a495e2fe9e6b2a2
+http://67.161.193.132:32768/stream/156bfc7651ffa4f62fa52b7beec07e3f
 #EXTINF:0 channelID="x-ID.28" tvg-chno="1028" tvg-name=" ACC Network" tvg-id="1028" tvg-logo="http://192.168.1.84:32768/images/a0fc2d287ac4538e781cb0b1953f6ac5.png" group-title="US", ACC Network
-http://67.161.193.132:32768/stream/62f32ba0472744a39c51672912354069
+http://67.161.193.132:32768/stream/cbd2994a0d8a7a01164340a9450fd4e1
 #EXTINF:0 channelID="x-ID.29" tvg-chno="1029" tvg-name=" SEC Network" tvg-id="1029" tvg-logo="http://192.168.1.84:32768/images/868ca093dd09d0b08a12759f872b8fbd.png" group-title="US", SEC Network
-http://67.161.193.132:32768/stream/2405020de5a5ac57e0864914db449675
+http://67.161.193.132:32768/stream/6c2178024d0d31e6a687c188c8a817dd
 #EXTINF:0 channelID="x-ID.30" tvg-chno="1030" tvg-name=" Big Ten Network" tvg-id="1030" tvg-logo="http://192.168.1.84:32768/images/b2e86b6b6f822fb079f285268d84c398.png" group-title="US", Big Ten Network
-http://67.161.193.132:32768/stream/eb841a8370b3a16a89f29d2cc483de5d
+http://67.161.193.132:32768/stream/bb62cbcf9556a0d1556a179a334154d8
 #EXTINF:0 channelID="x-ID.31" tvg-chno="1031" tvg-name=" TNT Sports 1" tvg-id="1031" tvg-logo="http://192.168.1.84:32768/images/2a96ac6bc0d34b17fa88ea1423499933.png" group-title="US", TNT Sports 1
-http://67.161.193.132:32768/stream/e395773cfba4f82b28a91744b507fa62
+http://67.161.193.132:32768/stream/7d836adddef73cb76b935fa584405f91
 #EXTINF:0 channelID="x-ID.32" tvg-chno="1032" tvg-name=" TNT Sports 2" tvg-id="1032" tvg-logo="http://192.168.1.84:32768/images/8de9ff543d5f38e1e91b606149de7b27.png" group-title="US", TNT Sports 2
-http://67.161.193.132:32768/stream/eb9b54f2027ba1ed1245252ebdea178c
+http://67.161.193.132:32768/stream/0880c717a6ec6dc06df6dfa01d077dbc
 #EXTINF:0 channelID="x-ID.33" tvg-chno="1033" tvg-name=" TNT Sports 3" tvg-id="1033" tvg-logo="http://192.168.1.84:32768/images/d9c5857d3c18e25f3c7973653c773e04.png" group-title="US", TNT Sports 3
-http://67.161.193.132:32768/stream/93f728ebebc9e3cea872b0e0288b42c7
+http://67.161.193.132:32768/stream/b14cf3078f41e7af2488a117d05f9339
 #EXTINF:0 channelID="x-ID.34" tvg-chno="1034" tvg-name=" TNT Sports 4" tvg-id="1034" tvg-logo="http://192.168.1.84:32768/images/5f60f0da8dde04d0f287feece88e31d9.png" group-title="US", TNT Sports 4
-http://67.161.193.132:32768/stream/e7b482e7191f4f3237f712d154ec85c0
+http://67.161.193.132:32768/stream/bcd14596ac83387c52f08cd8aca17e49
 #EXTINF:0 channelID="x-ID.35" tvg-chno="1035" tvg-name=" Sky Sports Main Event" tvg-id="1035" tvg-logo="http://192.168.1.84:32768/images/c79d941c00b52f344a48795cd9a16a1b.png" group-title="US", Sky Sports Main Event
-http://67.161.193.132:32768/stream/29049d075d237807b8c781049b728b9f
+http://67.161.193.132:32768/stream/3eaa8373a75c972d5cdb86f887e0b2c0
 #EXTINF:0 channelID="x-ID.36" tvg-chno="1036" tvg-name=" Sky Sports Football" tvg-id="1036" tvg-logo="http://192.168.1.84:32768/images/259d697fcca3ae94b398465482f0b3ee.png" group-title="US", Sky Sports Football
-http://67.161.193.132:32768/stream/f7c31599daae1569c97f5c7205ba47ce
+http://67.161.193.132:32768/stream/7f820e958326ec2d046e959e688080f4
 #EXTINF:0 channelID="x-ID.37" tvg-chno="1037" tvg-name=" Sky Sports Premier League" tvg-id="1037" tvg-logo="http://192.168.1.84:32768/images/813e83fac7ed81fa514e82fc1d0a702b.png" group-title="US", Sky Sports Premier League
-http://67.161.193.132:32768/stream/50620e4ff396dab3725076f001fe65b5
+http://67.161.193.132:32768/stream/842bb2ead40bc04612630e05b6ea2812
 #EXTINF:0 channelID="x-ID.38" tvg-chno="1038" tvg-name=" Sky Sports+" tvg-id="1038" tvg-logo="http://192.168.1.84:32768/images/7d219f06e8586e55af0cac395e40b5d4.png" group-title="US", Sky Sports+
-http://67.161.193.132:32768/stream/7ff3c2f1876a5f1930520c157e81775b
+http://67.161.193.132:32768/stream/d424fcb4573644c7dbe40c6a77dc4c42
 #EXTINF:0 channelID="x-ID.39" tvg-chno="1039" tvg-name=" Sky Sports F1" tvg-id="1039" tvg-logo="http://192.168.1.84:32768/images/b58432b1b283e8d8b3ca57f165396514.png" group-title="US", Sky Sports F1
-http://67.161.193.132:32768/stream/028d46316eacb206cbd7ba76adc7d504
+http://67.161.193.132:32768/stream/838539bf98ee923755051f4a532e58dc
 #EXTINF:0 channelID="x-ID.40" tvg-chno="1040" tvg-name=" Sky Sports Cricket" tvg-id="1040" tvg-logo="http://192.168.1.84:32768/images/73f7fefcf46504589fb06f1571f14751.png" group-title="US", Sky Sports Cricket
-http://67.161.193.132:32768/stream/c4cc2ab5650964c8d12fbf8e2f7fcfc0
+http://67.161.193.132:32768/stream/6a53fcdb1953ffc5f19179b4ac5e271f
 #EXTINF:0 channelID="x-ID.41" tvg-chno="1041" tvg-name=" Sky Sports Action" tvg-id="1041" tvg-logo="http://192.168.1.84:32768/images/7b1b23a81e01ba3453c011a426ac1a02.png" group-title="US", Sky Sports Action
-http://67.161.193.132:32768/stream/200871ce2692a15b8a263791060394d9
+http://67.161.193.132:32768/stream/2d4f7dfa4083dbf02324a91f6b6c78e1
 #EXTINF:0 channelID="x-ID.42" tvg-chno="1042" tvg-name=" Sky Sports Golf" tvg-id="1042" tvg-logo="http://192.168.1.84:32768/images/94e78abfaab732a1b69551b7f3c0d289.png" group-title="US", Sky Sports Golf
-http://67.161.193.132:32768/stream/50a46b6f05f0be91b5f9750c400dd446
+http://67.161.193.132:32768/stream/74b639c199d9b7cdcd1627a8316d5ffa
 #EXTINF:0 channelID="x-ID.43" tvg-chno="1043" tvg-name=" Sky Sports News" tvg-id="1043" tvg-logo="http://192.168.1.84:32768/images/a5400c002b18b1f9e34f835e8b3bf48a.png" group-title="US", Sky Sports News
-http://67.161.193.132:32768/stream/0168147185db15abc4b980596393594c
+http://67.161.193.132:32768/stream/7483251de4f7ec77978052b1d05ac350
 #EXTINF:0 channelID="x-ID.44" tvg-chno="1044" tvg-name=" Sky Sports Mix" tvg-id="1044" tvg-logo="http://192.168.1.84:32768/images/c5408a25a5f3c0eb6fabdabcc22269f9.png" group-title="US", Sky Sports Mix
-http://67.161.193.132:32768/stream/631e65cd95534018c1fa362711099d12
+http://67.161.193.132:32768/stream/d1983eeb537872808ac0f67591ca4949
 #EXTINF:0 channelID="x-ID.45" tvg-chno="1045" tvg-name=" Sky Sports Racing" tvg-id="1045" tvg-logo="http://192.168.1.84:32768/images/59b9642d92af3527704768cc534af8ef.png" group-title="US", Sky Sports Racing
-http://67.161.193.132:32768/stream/bf30027bc50f6aad68b284486d72b96a
+http://67.161.193.132:32768/stream/71a6a94358c81113abc468bf44968a86
 #EXTINF:0 channelID="x-ID.46" tvg-chno="1046" tvg-name=" Sky Sports Tennis" tvg-id="1046" tvg-logo="http://192.168.1.84:32768/images/c7566b3625b05f81e7879d48cf070e77.png" group-title="US", Sky Sports Tennis
-http://67.161.193.132:32768/stream/62ce58dd5d9e9ba06158f06636992534
+http://67.161.193.132:32768/stream/ff8c5754ade38f813be9a4b774c24b86
 #EXTINF:0 channelID="x-ID.48" tvg-chno="1048" tvg-name=" Angels - MLB" tvg-id="1048" tvg-logo="http://192.168.1.84:32768/images/a1c104b52682d6829fe3ff97744bfb0f.png" group-title="US", Angels - MLB
-http://67.161.193.132:32768/stream/4fd46d552d7bf618d1ce1a3b821b7f8f
+http://67.161.193.132:32768/stream/78b3b940df90fe28d9ab2a2dd97115de
 #EXTINF:0 channelID="x-ID.49" tvg-chno="1049" tvg-name=" Sky Witness" tvg-id="1049" tvg-logo="http://192.168.1.84:32768/images/ba77677387ca2da81681dabdc4c68327.png" group-title="US", Sky Witness
-http://67.161.193.132:32768/stream/a64c6f55dc25369d880b8cdd66fc248e
+http://67.161.193.132:32768/stream/624e2c94f1764275c5033dbbac6e277c
 #EXTINF:0 channelID="x-ID.50" tvg-chno="1050" tvg-name=" Sky Cinema Premiere" tvg-id="1050" tvg-logo="http://192.168.1.84:32768/images/cee34b01efe922c9fc0e78ed91aaa24d.png" group-title="US", Sky Cinema Premiere
-http://67.161.193.132:32768/stream/67696c07d5fbf6ba540d98f8ce3c0e41
+http://67.161.193.132:32768/stream/bffa8793a58f57d01954ed2b397de0d3
 #EXTINF:0 channelID="x-ID.51" tvg-chno="1051" tvg-name=" Astros - MLB" tvg-id="1051" tvg-logo="http://192.168.1.84:32768/images/227f3f01c018e9b28f7fd502864cf73a.png" group-title="US", Astros - MLB
-http://67.161.193.132:32768/stream/0c4502f668f4aea0c87bae87fffd8b57
+http://67.161.193.132:32768/stream/0878b5d4ee0496113de76de6ff38ed6e
 #EXTINF:0 channelID="x-ID.54" tvg-chno="1054" tvg-name=" Athletics - MLB" tvg-id="1054" tvg-logo="http://192.168.1.84:32768/images/f8dedb0bd125ceaae04b2fd0138fb893.png" group-title="US", Athletics - MLB
-http://67.161.193.132:32768/stream/44e0b1b0d9507d960f531d7df9a08ba6
+http://67.161.193.132:32768/stream/dcab2d19ba7b75dc3adb3787542c842e
 #EXTINF:0 channelID="x-ID.55" tvg-chno="1055" tvg-name=" Blue Jays - MLB" tvg-id="1055" tvg-logo="http://192.168.1.84:32768/images/c928db61cec86022183e04ec54719592.png" group-title="US", Blue Jays - MLB
-http://67.161.193.132:32768/stream/0d33da02f9b89f634ae94f6093dacdfb
+http://67.161.193.132:32768/stream/b6786ebd1643ceb282f254e0b47d511f
 #EXTINF:0 channelID="x-ID.56" tvg-chno="1056" tvg-name=" Braves - MLB" tvg-id="1056" tvg-logo="http://192.168.1.84:32768/images/922b5ab43780e50ce8f9e13b85dcd21e.png" group-title="US", Braves - MLB
-http://67.161.193.132:32768/stream/f63a143497959dd63b3963d69ffffb0e
+http://67.161.193.132:32768/stream/b0b6a87c8896da7f9114274ea29b7374
 #EXTINF:0 channelID="x-ID.57" tvg-chno="1057" tvg-name=" Brewers - MLB" tvg-id="1057" tvg-logo="http://192.168.1.84:32768/images/b199e1bfe302061f29c491699c89e9ed.png" group-title="US", Brewers - MLB
-http://67.161.193.132:32768/stream/47dc75325e0259163e96c0fdd01183de
+http://67.161.193.132:32768/stream/17da8e6f2a4d6b289e1bad1e234be6d8
 #EXTINF:0 channelID="x-ID.58" tvg-chno="1058" tvg-name=" Cardinals - MLB" tvg-id="1058" tvg-logo="http://192.168.1.84:32768/images/2621252df7df611dce500ef32d1a3322.png" group-title="US", Cardinals - MLB
-http://67.161.193.132:32768/stream/2607c5557a16fe8ab25bc2807e9b485b
+http://67.161.193.132:32768/stream/4e29d4ce0100eeac22a0394c0b33e9f6
 #EXTINF:0 channelID="x-ID.59" tvg-chno="1059" tvg-name=" Channel 5" tvg-id="1059" tvg-logo="http://192.168.1.84:32768/images/e8ee04deb61c7b9527251a42321dcdf0.png" group-title="US", Channel 5
-http://67.161.193.132:32768/stream/936e73e339d2751f5bf50ea2e049347d
+http://67.161.193.132:32768/stream/593c97048738fbbd6e8b31d3f0cd76d3
 #EXTINF:0 channelID="x-ID.60" tvg-chno="1060" tvg-name=" BBC One" tvg-id="1060" tvg-logo="http://192.168.1.84:32768/images/de5082279493b9444fd664da25ced3a8.png" group-title="US", BBC One
-http://67.161.193.132:32768/stream/4aa78b61fdcb90b823e82114e27250ba
+http://67.161.193.132:32768/stream/5439774ba9bfeb6e95fcb3a5438a7737
 #EXTINF:0 channelID="x-ID.61" tvg-chno="1061" tvg-name=" ITV1" tvg-id="1061" tvg-logo="http://192.168.1.84:32768/images/940e2765ce003b212cccce1fd01ce234.png" group-title="US", ITV1
-http://67.161.193.132:32768/stream/098822508ce943b15ac6977b49a0ea12
+http://67.161.193.132:32768/stream/fa135cde50f24b427aaccd669eb81a24
 #EXTINF:0 channelID="x-ID.62" tvg-chno="1062" tvg-name=" UFC Fight Pass" tvg-id="1062" tvg-logo="http://192.168.1.84:32768/images/21e3e9376ea4de681f85e7eea1bf4f65.png" group-title="US", UFC Fight Pass
-http://67.161.193.132:32768/stream/ca148da1ca3eaf30a33c9743b00c71ce
+http://67.161.193.132:32768/stream/c3b706374dbacfa91f533dc07566099b
 #EXTINF:0 channelID="x-ID.66" tvg-chno="1066" tvg-name=" Fubo Sports" tvg-id="1066" tvg-logo="http://192.168.1.84:32768/images/a5136a9df5ed3d4a0f733016e9fe1df7.png" group-title="US", Fubo Sports
-http://67.161.193.132:32768/stream/6bf0ea2bd08adc88530f64bef9d33eb6
+http://67.161.193.132:32768/stream/74e23aaef887f49a1533303633c4ae42
 #EXTINF:0 channelID="x-ID.67" tvg-chno="1067" tvg-name=" Tennis Channel" tvg-id="1067" tvg-logo="http://192.168.1.84:32768/images/f87778c7495d46b734141e9624491a4d.png" group-title="US", Tennis Channel
-http://67.161.193.132:32768/stream/510dbe27c1aeb5c47b9c9d865d9a3100
+http://67.161.193.132:32768/stream/e318d0a7eb811814bbbdf02c8855702a
 #EXTINF:0 channelID="x-ID.68" tvg-chno="1068" tvg-name=" Golf Channel" tvg-id="1068" tvg-logo="http://192.168.1.84:32768/images/8795bbfb9850357a048b0c2b2ad1f1ea.png" group-title="US", Golf Channel
-http://67.161.193.132:32768/stream/dc496396fba76cc44e60da8a7a488cb8
+http://67.161.193.132:32768/stream/b3dfa0c1c8359300a6055b0b96f67af8
 #EXTINF:0 channelID="x-ID.69" tvg-chno="1069" tvg-name=" Cubs - MLB" tvg-id="1069" tvg-logo="http://192.168.1.84:32768/images/6625466894ce9fa7f74efc931774a4b3.png" group-title="US", Cubs - MLB
-http://67.161.193.132:32768/stream/d1329c0eac7116ab6540b50d1d2d4b72
+http://67.161.193.132:32768/stream/e93bf6193cf57329a271b71b52da7f6e
 #EXTINF:0 channelID="x-ID.70" tvg-chno="1070" tvg-name=" FanDuel TV" tvg-id="1070" tvg-logo="http://192.168.1.84:32768/images/4b5b7b59bca3c62d0ac3838c04e7b702.png" group-title="US", FanDuel TV
-http://67.161.193.132:32768/stream/5eb07e6f78974ce76a204c91877554bb
+http://67.161.193.132:32768/stream/7bb183f9c7063caba6d2d19d08bfe236
 #EXTINF:0 channelID="x-ID.71" tvg-chno="1071" tvg-name=" PokerGO" tvg-id="1071" tvg-logo="http://192.168.1.84:32768/images/2089df09fac4f9bb07b15ba1ea75af68.png" group-title="US", PokerGO
-http://67.161.193.132:32768/stream/6bc5952a2da7a7f33072814566e75259
+http://67.161.193.132:32768/stream/4bb35978d19eee717b08eb760954b8dd
 #EXTINF:0 channelID="x-ID.72" tvg-chno="1072" tvg-name=" NZ Sky Sport 1" tvg-id="1072" tvg-logo="http://192.168.1.84:32768/images/d7c222c22e76fba4567af4cfbaaa9b47.png" group-title="US", NZ Sky Sport 1
-http://67.161.193.132:32768/stream/77052048332f3d11d4ab5007de26b6bf
+http://67.161.193.132:32768/stream/bd9350e5f4c0d5c256dedadd77f2623b
 #EXTINF:0 channelID="x-ID.73" tvg-chno="1073" tvg-name=" NZ Sky Sport 2" tvg-id="1073" tvg-logo="http://192.168.1.84:32768/images/49c1243b9f4f01e939570cc1be0968f2.png" group-title="US", NZ Sky Sport 2
-http://67.161.193.132:32768/stream/b51ec8344c10c96a4dce6b455271782f
+http://67.161.193.132:32768/stream/16bb56863621394d73882fd62e7b21f9
 #EXTINF:0 channelID="x-ID.74" tvg-chno="1074" tvg-name=" NZ Sky Sport 3" tvg-id="1074" tvg-logo="http://192.168.1.84:32768/images/f0d77689171cd6047ecad21b266de544.png" group-title="US", NZ Sky Sport 3
-http://67.161.193.132:32768/stream/5a7c665f5051e4324a6456f991aebd14
+http://67.161.193.132:32768/stream/e27687b03d3da09ec5e0b799ac8ffa6e
 #EXTINF:0 channelID="x-ID.75" tvg-chno="1075" tvg-name=" NZ Sky Sport 4" tvg-id="1075" tvg-logo="http://192.168.1.84:32768/images/dc4d14c37bfe8f6ec596e8803adc7258.png" group-title="US", NZ Sky Sport 4
-http://67.161.193.132:32768/stream/d39ea246686862793e2ff911377a7922
+http://67.161.193.132:32768/stream/37d35ff6946f03567e3c14942c2c9495
 #EXTINF:0 channelID="x-ID.76" tvg-chno="1076" tvg-name=" NZ Sky Sport 5" tvg-id="1076" tvg-logo="http://192.168.1.84:32768/images/cc65a4f23c5b1453d0070f244551bc08.png" group-title="US", NZ Sky Sport 5
-http://67.161.193.132:32768/stream/358bfc03a542d342680e35be522c419e
+http://67.161.193.132:32768/stream/1eaa10cac2b47f14662bd5ad504869b4
 #EXTINF:0 channelID="x-ID.77" tvg-chno="1077" tvg-name=" NZ Sky Sport 6" tvg-id="1077" tvg-logo="http://192.168.1.84:32768/images/faaa50e2d8c860458b78096bf560fe7d.png" group-title="US", NZ Sky Sport 6
-http://67.161.193.132:32768/stream/01171b5df322b79931108c52d95ac847
+http://67.161.193.132:32768/stream/4454af8226610332f418f7c6bcd50edd
 #EXTINF:0 channelID="x-ID.78" tvg-chno="1078" tvg-name=" NZ Sky Sport 7" tvg-id="1078" tvg-logo="http://192.168.1.84:32768/images/1b6ef908410a3b41f1cc1266ef05497a.png" group-title="US", NZ Sky Sport 7
-http://67.161.193.132:32768/stream/f07f4c589e9a82192515a05327bdc933
+http://67.161.193.132:32768/stream/8cdb0da80b7dec8d2729d62b5b3abbe5
 #EXTINF:0 channelID="x-ID.79" tvg-chno="1079" tvg-name=" NZ Sky Sport Premier League" tvg-id="1079" tvg-logo="http://192.168.1.84:32768/images/816564bc50d49b7efd1c30cd6e40970d.png" group-title="US", NZ Sky Sport Premier League
-http://67.161.193.132:32768/stream/05f898a2dccd7dd490412650eb660320
+http://67.161.193.132:32768/stream/8b5546039207b555d19c0cca2b2d8fa9
 #EXTINF:0 channelID="x-ID.80" tvg-chno="1080" tvg-name=" NZ Sky Sport 9" tvg-id="1080" tvg-logo="http://192.168.1.84:32768/images/dcf6c547fca55203a90961a00e32bcff.png" group-title="US", NZ Sky Sport 9
-http://67.161.193.132:32768/stream/85a1e7eddba503f8cbbe056d785bfc0a
+http://67.161.193.132:32768/stream/e4178ea5abcc32a1bcf1711a967634c7
 #EXTINF:0 channelID="x-ID.81" tvg-chno="1081" tvg-name=" TNT" tvg-id="1081" tvg-logo="http://192.168.1.84:32768/images/6dc4ecd4c22aea52bb78e0b0e069a6ba.png" group-title="US", TNT
-http://67.161.193.132:32768/stream/3b77482eed466f41b5b1d64934d72107
+http://67.161.193.132:32768/stream/264e75096c19fbd697ee31c2147480eb
 #EXTINF:0 channelID="x-ID.82" tvg-chno="1082" tvg-name=" FOX" tvg-id="1082" tvg-logo="http://192.168.1.84:32768/images/713bd08033c15444751019b72538739d.png" group-title="US", FOX
-http://67.161.193.132:32768/stream/a21ed1d82af7f93dcb174234d82eb578
+http://67.161.193.132:32768/stream/8fea65b162ce2ef3cfcfce8b9f0577cd
 #EXTINF:0 channelID="x-ID.83" tvg-chno="1083" tvg-name=" CBS" tvg-id="1083" tvg-logo="http://192.168.1.84:32768/images/850ace83744c65fff243dd92eb147af4.png" group-title="US", CBS
-http://67.161.193.132:32768/stream/003fb875a7b715e2032bb2249e3dc4cc
+http://67.161.193.132:32768/stream/f4c756a77e10135c3685cde74a9324e0
 #EXTINF:0 channelID="x-ID.84" tvg-chno="1084" tvg-name=" NBC" tvg-id="1084" tvg-logo="http://192.168.1.84:32768/images/24cb729cc97a367bcef865efb981c883.png" group-title="US", NBC
-http://67.161.193.132:32768/stream/d4c3cc025a23ccc0278d7cebea75f6d2
+http://67.161.193.132:32768/stream/78114977bfe0792e17b1e1b3e1674f3f
 #EXTINF:0 channelID="x-ID.85" tvg-chno="1085" tvg-name=" CNBC" tvg-id="1085" tvg-logo="http://192.168.1.84:32768/images/cf92939e0e95ce88a6da4f4b15d9004e.png" group-title="US", CNBC
-http://67.161.193.132:32768/stream/5592bd3fd94bcb4c47e420517b343b74
+http://67.161.193.132:32768/stream/45cbd8bf602723244c529e4d9ea55ce2
 #EXTINF:0 channelID="x-ID.86" tvg-chno="1086" tvg-name=" Showtime" tvg-id="1086" tvg-logo="http://192.168.1.84:32768/images/791be27292800fe9377be3af70175a97.png" group-title="US", Showtime
-http://67.161.193.132:32768/stream/637f570d02928f4333c7722d878f147a
+http://67.161.193.132:32768/stream/5ed03caecb1b36a98482a1cafa1b7153
 #EXTINF:0 channelID="x-ID.87" tvg-chno="1087" tvg-name=" ABC" tvg-id="1087" tvg-logo="http://192.168.1.84:32768/images/aa6c426657362964c6759a7189099132.png" group-title="US", ABC
-http://67.161.193.132:32768/stream/5d05909b7e18d6b259a998decf8ea0e9
+http://67.161.193.132:32768/stream/d162e53124c376b4c5949d444aea8689
 #EXTINF:0 channelID="x-ID.88" tvg-chno="1088" tvg-name=" Fox News" tvg-id="1088" tvg-logo="http://192.168.1.84:32768/images/afd6a76f9e73ff2b5e9599d6b9cd16ea.png" group-title="US", Fox News
-http://67.161.193.132:32768/stream/9aa402e5e06b341c9273fab76dd55c0d
+http://67.161.193.132:32768/stream/d2936f5af0544233498de8793045c056
 #EXTINF:0 channelID="x-ID.89" tvg-chno="1089" tvg-name=" Fox Business" tvg-id="1089" tvg-logo="http://192.168.1.84:32768/images/73f9b2a5981d88cbe1226abe0f014113.png" group-title="US", Fox Business
-http://67.161.193.132:32768/stream/c097985bfda0cb156c7ab06ae905a0fb
+http://67.161.193.132:32768/stream/48d2ec6dd19ee17198ac5ed8420e57a9
 #EXTINF:0 channelID="x-ID.90" tvg-chno="1090" tvg-name=" MSNBC" tvg-id="1090" tvg-logo="http://192.168.1.84:32768/images/3ee82d5e82363945a6d3fe4e5311cdc4.png" group-title="US", MSNBC
-http://67.161.193.132:32768/stream/8988ff5603a430f1b069e1c7b6339ecb
+http://67.161.193.132:32768/stream/97a3687165fcdd5992bf7df73b31b61c
 #EXTINF:0 channelID="x-ID.91" tvg-chno="1091" tvg-name=" CNN" tvg-id="1091" tvg-logo="http://192.168.1.84:32768/images/cb2f17d8cdad6a4908f6467393e44044.png" group-title="US", CNN
-http://67.161.193.132:32768/stream/e284fae5cc0ca7602855e73dab0bbabd
+http://67.161.193.132:32768/stream/8c54a4f4a3a538da60085aeba9914834
 #EXTINF:0 channelID="x-ID.92" tvg-chno="1092" tvg-name=" The Weather Channel" tvg-id="1092" tvg-logo="http://192.168.1.84:32768/images/8168c954e80f48e1b0387b5c77d2c1e7.png" group-title="US", The Weather Channel
-http://67.161.193.132:32768/stream/ec629b0f1cd2af59b13b1acf10aecb02
+http://67.161.193.132:32768/stream/b4dbd63744041bd4cebe933476c80f6c
 #EXTINF:0 channelID="x-ID.93" tvg-chno="1093" tvg-name=" Paramount Network" tvg-id="1093" tvg-logo="http://192.168.1.84:32768/images/7ee196188d70b66a801963895126f8b7.png" group-title="US", Paramount Network
-http://67.161.193.132:32768/stream/592674b996cb9f91e897c5bc2be866f6
+http://67.161.193.132:32768/stream/afbe86df4fdacd7464fa22bbe63ebf4e
 #EXTINF:0 channelID="x-ID.94" tvg-chno="1094" tvg-name=" A&E" tvg-id="1094" tvg-logo="http://192.168.1.84:32768/images/b23ca4ec66f64e4b0fcc03de23d6c7a5.png" group-title="US", A&E
-http://67.161.193.132:32768/stream/538961c533d735f348dcbef0aa841c4d
+http://67.161.193.132:32768/stream/7746f860f1877b608225b7d6ba997fec
 #EXTINF:0 channelID="x-ID.95" tvg-chno="1095" tvg-name=" History Channel" tvg-id="1095" tvg-logo="http://192.168.1.84:32768/images/12c5a8015b4b0d9b1b6fff640651fa8c.png" group-title="US", History Channel
-http://67.161.193.132:32768/stream/b911ea1a7834997c43e89ec68c9a874c
+http://67.161.193.132:32768/stream/a66c2dc5d1d84d7d91bb4bde53ae75fb
 #EXTINF:0 channelID="x-ID.96" tvg-chno="1096" tvg-name=" Discovery" tvg-id="1096" tvg-logo="http://192.168.1.84:32768/images/2f04882ca56cb418a9c2dbf4c63c06dc.png" group-title="US", Discovery
-http://67.161.193.132:32768/stream/fed62b7b53e59aefd969d8b3445eeb4e
+http://67.161.193.132:32768/stream/9ed49abd868a72e4e29ea72b650b40a0
 #EXTINF:0 channelID="x-ID.97" tvg-chno="1097" tvg-name=" Investigation Discovery" tvg-id="1097" tvg-logo="http://192.168.1.84:32768/images/12e56d64078ad8f05f111472a3bb4198.png" group-title="US", Investigation Discovery
-http://67.161.193.132:32768/stream/b26647bf4df749378d0bf8e8fa547dce
+http://67.161.193.132:32768/stream/2fb6cbeaf3c9aa5fef0dfd6e1485e088
 #EXTINF:0 channelID="x-ID.98" tvg-chno="1098" tvg-name=" National Geographic" tvg-id="1098" tvg-logo="http://192.168.1.84:32768/images/f63133f8715ab5020cf42cce84d72f42.png" group-title="US", National Geographic
-http://67.161.193.132:32768/stream/07b39098a3cec97a98947e12b2f1c6f3
+http://67.161.193.132:32768/stream/eaf503a9dd22c511e9db8e82133f9f68
 #EXTINF:0 channelID="x-ID.99" tvg-chno="1099" tvg-name=" Nat Geo Wild" tvg-id="1099" tvg-logo="http://192.168.1.84:32768/images/b57e5e66042d9af0a2f7873e0bc614e4.png" group-title="US", Nat Geo Wild
-http://67.161.193.132:32768/stream/a671d53165881070b350e769565e20af
+http://67.161.193.132:32768/stream/4845ab1d87868879976fe34c0839d9cc
 #EXTINF:0 channelID="x-ID.100" tvg-chno="1100" tvg-name=" Animal Planet" tvg-id="1100" tvg-logo="http://192.168.1.84:32768/images/13a7990ae157ba739e255d15b0f9b441.png" group-title="US", Animal Planet
-http://67.161.193.132:32768/stream/74be3c286b3c9b19ea0628104cf0088e
+http://67.161.193.132:32768/stream/e88aa551b096b6f98def5a5dd64fe9ad
 #EXTINF:0 channelID="x-ID.101" tvg-chno="1101" tvg-name=" SyFy" tvg-id="1101" tvg-logo="http://192.168.1.84:32768/images/0373922dab0b62bf7b0109d5c9ebc57e.png" group-title="US", SyFy
-http://67.161.193.132:32768/stream/e3970d7ce86e7a27c6b0e40b0a81e175
+http://67.161.193.132:32768/stream/9a7cd4c61e2a776f53efdd4ce9fd494e
 #EXTINF:0 channelID="x-ID.102" tvg-chno="1102" tvg-name=" HBO" tvg-id="1102" tvg-logo="http://192.168.1.84:32768/images/accd1792885e1e06301f2c7e5ff5bb6f.png" group-title="US", HBO
-http://67.161.193.132:32768/stream/c103e4813bb95d4da8f6ed4e6fc283df
+http://67.161.193.132:32768/stream/7235d3679cf3df1db905eec35c0504bb
 #EXTINF:0 channelID="x-ID.103" tvg-chno="1103" tvg-name=" AMC" tvg-id="1103" tvg-logo="http://192.168.1.84:32768/images/310912c581eaa2750b96136c5aab4d31.png" group-title="US", AMC
-http://67.161.193.132:32768/stream/d0f5a413b4b74a0422ca8097419c51f6
+http://67.161.193.132:32768/stream/cdfddbdcb63eee70e19b90dd7da21695
 #EXTINF:0 channelID="x-ID.104" tvg-chno="1104" tvg-name=" FX" tvg-id="1104" tvg-logo="http://192.168.1.84:32768/images/5affa3fcc6c2ee0e00fbae2f203dfab6.png" group-title="US", FX
-http://67.161.193.132:32768/stream/6665e558720cf0a9828e49799ac05b2b
+http://67.161.193.132:32768/stream/58fd26efddc5be16f1fcffa4495f74eb
 #EXTINF:0 channelID="x-ID.105" tvg-chno="1105" tvg-name=" FXX" tvg-id="1105" tvg-logo="http://192.168.1.84:32768/images/183276edf6b3bd568831de316a86c566.png" group-title="US", FXX
-http://67.161.193.132:32768/stream/1f9e6edd0a80235095c436de6faa89fc
+http://67.161.193.132:32768/stream/5c03e2e43b5c4b81c06989e73e8dcf9d
 #EXTINF:0 channelID="x-ID.106" tvg-chno="1106" tvg-name=" FXM" tvg-id="1106" tvg-logo="http://192.168.1.84:32768/images/7d103c7c4a92e582ef5e23f1c47ae7e9.png" group-title="US", FXM
-http://67.161.193.132:32768/stream/44af0c8cb5279716af4ce86a6f49d74b
+http://67.161.193.132:32768/stream/c2f435bc62e7b2bd52b4ec78c67f0ef4
 #EXTINF:0 channelID="x-ID.107" tvg-chno="1107" tvg-name=" Vice TV" tvg-id="1107" tvg-logo="http://192.168.1.84:32768/images/d1fe09833240b67df12f386550a749dd.png" group-title="US", Vice TV
-http://67.161.193.132:32768/stream/811f4675811dc3103be01c1e4d2e3823
+http://67.161.193.132:32768/stream/4a07709398e71ae86d0ad0d13a94e077
 #EXTINF:0 channelID="x-ID.108" tvg-chno="1108" tvg-name=" CW" tvg-id="1108" tvg-logo="http://192.168.1.84:32768/images/9259115e63233218d80ca321ed461398.png" group-title="US", CW
-http://67.161.193.132:32768/stream/70c0d19af61fd7b584e2715e4546c088
+http://67.161.193.132:32768/stream/c01596274d7d6af6c36ddb000d18993a
 #EXTINF:0 channelID="x-ID.109" tvg-chno="1109" tvg-name=" TBS" tvg-id="1109" tvg-logo="http://192.168.1.84:32768/images/b93b21cc0d4d980fa8947778b09bda9b.png" group-title="US", TBS
-http://67.161.193.132:32768/stream/01eaf5bdf8553e30c7271861d9eaaf14
+http://67.161.193.132:32768/stream/43ae1a94fc0055de0ee10520dacbbd37
 #EXTINF:0 channelID="x-ID.110" tvg-chno="1110" tvg-name=" truTV" tvg-id="1110" tvg-logo="http://192.168.1.84:32768/images/b191e13bb45b60ce2f2e98c2c17e0eb8.png" group-title="US", truTV
-http://67.161.193.132:32768/stream/ad636ec9561cfc895e9cc7f1a664e61c
+http://67.161.193.132:32768/stream/f5f45c891eb8c393a1f980a6239d2aae
 #EXTINF:0 channelID="x-ID.111" tvg-chno="1111" tvg-name=" Motor Trend" tvg-id="1111" tvg-logo="http://192.168.1.84:32768/images/5c14622761df97c4178c79653b5023ef.png" group-title="US", Motor Trend
-http://67.161.193.132:32768/stream/2e68c636cdc2fa40e6dce92a1d302c24
+http://67.161.193.132:32768/stream/6966821021d8a429398fc2ab9e01ad25
 #EXTINF:0 channelID="x-ID.112" tvg-chno="1112" tvg-name=" Fuse" tvg-id="1112" tvg-logo="http://192.168.1.84:32768/images/64f5e8087d0187e0a645a6775aeea778.png" group-title="US", Fuse
-http://67.161.193.132:32768/stream/aeca148bb4be656d4af2f25ad3c094b1
+http://67.161.193.132:32768/stream/6cae5cff42a1c0875d028db3b095bad0
 #EXTINF:0 channelID="x-ID.113" tvg-chno="1113" tvg-name=" HGTV" tvg-id="1113" tvg-logo="http://192.168.1.84:32768/images/727769cf41957c5d64d40e37879956f4.png" group-title="US", HGTV
-http://67.161.193.132:32768/stream/33ff1aca6bcd41ee40ce7921064c1fd5
+http://67.161.193.132:32768/stream/cdfe01044a9d1595133123152250c6bf
 #EXTINF:0 channelID="x-ID.114" tvg-chno="1114" tvg-name=" Magnolia Network" tvg-id="1114" tvg-logo="http://192.168.1.84:32768/images/9417731f171e399c03fd10eeaaf70627.png" group-title="US", Magnolia Network
-http://67.161.193.132:32768/stream/4d896a5d88784c8827f4ba64f748d0bf
+http://67.161.193.132:32768/stream/2732e70b6d41e22567e7bcad52983e2b
 #EXTINF:0 channelID="x-ID.115" tvg-chno="1115" tvg-name=" Bravo" tvg-id="1115" tvg-logo="http://192.168.1.84:32768/images/de60ee42cedd69b8e660a8968563aec3.png" group-title="US", Bravo
-http://67.161.193.132:32768/stream/f20d33d4d699626f841fb8a1d8968075
+http://67.161.193.132:32768/stream/a2f3aeca846e13894c2584131e56f4fb
 #EXTINF:0 channelID="x-ID.116" tvg-chno="1116" tvg-name=" TLC" tvg-id="1116" tvg-logo="http://192.168.1.84:32768/images/83f6474db20278450683907b0a01c594.png" group-title="US", TLC
-http://67.161.193.132:32768/stream/4e14a929d04a3fd705c95f02024b0b91
+http://67.161.193.132:32768/stream/2d5ac5c7c794acf5a99ff8385e70209c
 #EXTINF:0 channelID="x-ID.117" tvg-chno="1117" tvg-name=" Food Network" tvg-id="1117" tvg-logo="http://192.168.1.84:32768/images/363df8b91813aeab4723cd926aa95a1d.png" group-title="US", Food Network
-http://67.161.193.132:32768/stream/3ac562922adcfac708b100709a8bd8a8
+http://67.161.193.132:32768/stream/5d1a7998192105d814d10a42b6cae8f0
 #EXTINF:0 channelID="x-ID.118" tvg-chno="1118" tvg-name=" MTV" tvg-id="1118" tvg-logo="http://192.168.1.84:32768/images/9e3675e4f71b92874678cfa882b083ee.png" group-title="US", MTV
-http://67.161.193.132:32768/stream/f7386bb1fc83a5537e9eef18c3d9a52f
+http://67.161.193.132:32768/stream/2cd84a392ab0a830cea625f713df16bf
 #EXTINF:0 channelID="x-ID.119" tvg-chno="1119" tvg-name=" Cartoon Network" tvg-id="1119" tvg-logo="http://192.168.1.84:32768/images/485ea168f7110a532ab82811fc85a097.png" group-title="US", Cartoon Network
-http://67.161.193.132:32768/stream/9cd26d3f5f8df23a1a85b351f5d48301
+http://67.161.193.132:32768/stream/9bfda8b48e7e420269e91aa0bbf8e6b9
 #EXTINF:0 channelID="x-ID.120" tvg-chno="1120" tvg-name=" Boomerang" tvg-id="1120" tvg-logo="http://192.168.1.84:32768/images/b1060ef22a71d8a52fd50398661938ea.png" group-title="US", Boomerang
-http://67.161.193.132:32768/stream/43c038927247acafa9b6f754a5206111
+http://67.161.193.132:32768/stream/7316f58386e3e92287ae7ff04cabf555
 #EXTINF:0 channelID="x-ID.121" tvg-chno="1121" tvg-name=" Disney Channel" tvg-id="1121" tvg-logo="http://192.168.1.84:32768/images/0a41860428d5c0b791af594b1cefa4a1.png" group-title="US", Disney Channel
-http://67.161.193.132:32768/stream/1bdcd89b3944d7afdd3b9802a0030ae3
+http://67.161.193.132:32768/stream/8ab8c25eaca0e528895a4b52d81f332f
 #EXTINF:0 channelID="x-ID.122" tvg-chno="1122" tvg-name=" Nickelodeon" tvg-id="1122" tvg-logo="http://192.168.1.84:32768/images/7b0c6cb4cbf9b7ee1b9dcc234f12c8f8.png" group-title="US", Nickelodeon
-http://67.161.193.132:32768/stream/434c8289a3e4f24689cd9fd658b9bd3a
+http://67.161.193.132:32768/stream/e4d523f12102de8b072b618622e444be
 #EXTINF:0 channelID="x-ID.123" tvg-chno="1123" tvg-name=" Adult Swim" tvg-id="1123" tvg-logo="http://192.168.1.84:32768/images/c193bf3456b9928343fcb5622d07614f.png" group-title="US", Adult Swim
-http://67.161.193.132:32768/stream/eef71e593d2ac132a3619baf72e308d4
+http://67.161.193.132:32768/stream/77a1af1cc1e083d67e05514471823577
 #EXTINF:0 channelID="x-ID.124" tvg-chno="1124" tvg-name=" Comedy Central" tvg-id="1124" tvg-logo="http://192.168.1.84:32768/images/ce097bdccb9c4f8c8261541cea7513a4.png" group-title="US", Comedy Central
-http://67.161.193.132:32768/stream/0a0878199af355929400fe2bac8b2408
+http://67.161.193.132:32768/stream/ca7f2a2bd2ee72127da8fafd84af798f
 #EXTINF:0 channelID="x-ID.125" tvg-chno="1125" tvg-name=" Fox Deportes" tvg-id="1125" tvg-logo="http://192.168.1.84:32768/images/c6408837bd6d32695a3d7f55a6080493.png" group-title="US", Fox Deportes
-http://67.161.193.132:32768/stream/b2c6941862488d57bcf9aeda6489674d
+http://67.161.193.132:32768/stream/b7b81d3e4ee162c3b02a192a2702ca7e
 #EXTINF:0 channelID="x-ID.126" tvg-chno="1126" tvg-name=" ESPN Deportes" tvg-id="1126" tvg-logo="http://192.168.1.84:32768/images/8019088f2070dfb7d59fae609fa36593.png" group-title="US", ESPN Deportes
-http://67.161.193.132:32768/stream/f3503fa29e53a4add545b13a9287a03d
+http://67.161.193.132:32768/stream/9715632638cdda739b00b398718ef5f6
 #EXTINF:0 channelID="x-ID.127" tvg-chno="1127" tvg-name=" Univision" tvg-id="1127" tvg-logo="http://192.168.1.84:32768/images/79a056f9c7bebce7e9441cc9079d941c.png" group-title="US", Univision
-http://67.161.193.132:32768/stream/fc38c09fb8fc28def5b8292ae69d1920
+http://67.161.193.132:32768/stream/65d13ebc8e248eb72d163a1a68ce6f9c
 #EXTINF:0 channelID="x-ID.128" tvg-chno="1128" tvg-name=" TUDN" tvg-id="1128" tvg-logo="http://192.168.1.84:32768/images/087c90fdbeb3bb766180e97c6fa43ba5.png" group-title="US", TUDN
-http://67.161.193.132:32768/stream/d38cb47a13ef2899b5c618193ce8a339
+http://67.161.193.132:32768/stream/971975a64dd7a40eaa062de24727ad12
 #EXTINF:0 channelID="x-ID.129" tvg-chno="1129" tvg-name=" Telemundo" tvg-id="1129" tvg-logo="http://192.168.1.84:32768/images/60b61362ed49ae86532a6acafc6c6d69.png" group-title="US", Telemundo
-http://67.161.193.132:32768/stream/3d61d87ba0ee9a250db84a3fcd4d26d2
+http://67.161.193.132:32768/stream/8a8bbcd4343ef423c23a302108254136
 #EXTINF:0 channelID="x-ID.130" tvg-chno="1130" tvg-name=" Universo" tvg-id="1130" tvg-logo="http://192.168.1.84:32768/images/fa92c7527e36c5bb8b4c7f8d893e5c0a.png" group-title="US", Universo
-http://67.161.193.132:32768/stream/23a0acc8daa814f0a7fd6d1ca548ddcd
+http://67.161.193.132:32768/stream/49b4cd337f045a5f1eeb1ad067fed02d
 #EXTINF:0 channelID="x-ID.132" tvg-chno="1132" tvg-name=" STARZ" tvg-id="1132" tvg-logo="http://192.168.1.84:32768/images/2e0c1963617a8dbea4f1df9237ca7a6f.png" group-title="US", STARZ
-http://67.161.193.132:32768/stream/cb012eb2c0495b55622189f4a61bc861
+http://67.161.193.132:32768/stream/a91f63b0d336fcc926c57f522a656bc8
 #EXTINF:0 channelID="x-ID.133" tvg-chno="1133" tvg-name=" STARZ Encore" tvg-id="1133" tvg-logo="http://192.168.1.84:32768/images/2e0c1963617a8dbea4f1df9237ca7a6f.png" group-title="US", STARZ Encore
-http://67.161.193.132:32768/stream/7bc46fcd3d8547a499cad973cbf5def9
+http://67.161.193.132:32768/stream/82c2e46c52906bf33844ba15f9f9f9ba
 #EXTINF:0 channelID="x-ID.134" tvg-chno="1134" tvg-name=" Cinemax" tvg-id="1134" tvg-logo="http://192.168.1.84:32768/images/844eb5cd8a840c72c15823d2644af31b.png" group-title="US", Cinemax
-http://67.161.193.132:32768/stream/f0ca070d3d1d5420882da5d41f3474f0
+http://67.161.193.132:32768/stream/147bcd6a5cfce582f7dc6a3db6bd9f4b
 #EXTINF:0 channelID="x-ID.135" tvg-chno="1135" tvg-name=" Cinemax ActionMax" tvg-id="1135" tvg-logo="http://192.168.1.84:32768/images/844eb5cd8a840c72c15823d2644af31b.png" group-title="US", Cinemax ActionMax
-http://67.161.193.132:32768/stream/59c9a0317d329646ac47222d2ec86253
+http://67.161.193.132:32768/stream/3ec82c0bd891c5199b2f3c2e8347bab6
 #EXTINF:0 channelID="x-ID.136" tvg-chno="1136" tvg-name=" NZ Sky Sport Select" tvg-id="1136" tvg-logo="http://192.168.1.84:32768/images/509bb9686b54e619aea948b20192601f.png" group-title="US", NZ Sky Sport Select
-http://67.161.193.132:32768/stream/23f4f57e930fbbcb0e811e4a79899ac2
+http://67.161.193.132:32768/stream/0fbdd58b57644fddcfbcf24e3e189ee4
 #EXTINF:0 channelID="x-ID.137" tvg-chno="1137" tvg-name=" Atlanta Dream - WNBA" tvg-id="1137" tvg-logo="http://192.168.1.84:32768/images/18e890636de11dbec2ed9479732fb3ca.png" group-title="US", Atlanta Dream - WNBA
-http://67.161.193.132:32768/stream/cc9cddd67421d0f923156a1d9ffab95a
+http://67.161.193.132:32768/stream/7647b02f676dd53e800035c708c9ab89
 #EXTINF:0 channelID="x-ID.138" tvg-chno="1138" tvg-name=" Chicago Sky - WNBA" tvg-id="1138" tvg-logo="http://192.168.1.84:32768/images/3403d4714127c4273e9e5b4dbcd91c80.png" group-title="US", Chicago Sky - WNBA
-http://67.161.193.132:32768/stream/15b60fed8fb9b6a24bc67dc160e91c36
+http://67.161.193.132:32768/stream/5a7e11d1f6ceb3704744acaef1f30f98
 #EXTINF:0 channelID="x-ID.139" tvg-chno="1139" tvg-name=" Connecticut Sun - WNBA" tvg-id="1139" tvg-logo="http://192.168.1.84:32768/images/63571c4cb9e0b6af178621890d6c23e9.png" group-title="US", Connecticut Sun - WNBA
-http://67.161.193.132:32768/stream/9a72b4a6d3f0b554813e34d285b0f25b
+http://67.161.193.132:32768/stream/8b306c76d4233b6a1854ed1276f4e453
 #EXTINF:0 channelID="x-ID.140" tvg-chno="1140" tvg-name=" Dallas Wings - WNBA" tvg-id="1140" tvg-logo="http://192.168.1.84:32768/images/8a7ed46b3339ce28e85d4145a18ebf0d.png" group-title="US", Dallas Wings - WNBA
-http://67.161.193.132:32768/stream/4cd3086a949fe53ee1c6e111396d013c
+http://67.161.193.132:32768/stream/773c7b1181e1baca67d2a95e769da844
 #EXTINF:0 channelID="x-ID.141" tvg-chno="1141" tvg-name=" Fox Sports 501" tvg-id="1141" tvg-logo="http://192.168.1.84:32768/images/3c94d6a88cb1dada45c52dffe6205f18.png" group-title="US", Fox Sports 501
-http://67.161.193.132:32768/stream/0b810f99a9e0b9054381753909726be1
+http://67.161.193.132:32768/stream/338d6886ee16f3bb789c3b5c404719d2
 #EXTINF:0 channelID="x-ID.142" tvg-chno="1142" tvg-name=" Fox Sports 502" tvg-id="1142" tvg-logo="http://192.168.1.84:32768/images/d7c2f375f7c5b87c4894f75ddc123947.png" group-title="US", Fox Sports 502
-http://67.161.193.132:32768/stream/bc16e16d20e20fa33897821ae9b10163
+http://67.161.193.132:32768/stream/e62c4f22d1e8a96d1859f664a2364157
 #EXTINF:0 channelID="x-ID.143" tvg-chno="1143" tvg-name=" Fox Sports 503" tvg-id="1143" tvg-logo="http://192.168.1.84:32768/images/046feba704810fe7b6b2f0588ff1b079.png" group-title="US", Fox Sports 503
-http://67.161.193.132:32768/stream/07f98b6101a7ce6e5939e9d1dc92c983
+http://67.161.193.132:32768/stream/ef1bb783ee14acfc3ee77222db4e9560
 #EXTINF:0 channelID="x-ID.144" tvg-chno="1144" tvg-name=" Fox Sports 504" tvg-id="1144" tvg-logo="http://192.168.1.84:32768/images/b4a73d583677767d2aa282616ba85b70.png" group-title="US", Fox Sports 504
-http://67.161.193.132:32768/stream/794f623b3a6aa55435b13aa43bb6c7a6
+http://67.161.193.132:32768/stream/33e580e6d947d42e974ea4e00761266c
 #EXTINF:0 channelID="x-ID.145" tvg-chno="1145" tvg-name=" Fox Sports 505" tvg-id="1145" tvg-logo="http://192.168.1.84:32768/images/6166390042f47e77a16c0e5dd064b2ba.png" group-title="US", Fox Sports 505
-http://67.161.193.132:32768/stream/07d9770f98a560b6188148d9b42ad90d
+http://67.161.193.132:32768/stream/fc38a5d57f6d616861d50651d463a349
 #EXTINF:0 channelID="x-ID.146" tvg-chno="1146" tvg-name=" Fox Sports 506" tvg-id="1146" tvg-logo="http://192.168.1.84:32768/images/7322f7d642c009ccbff756556f32e888.png" group-title="US", Fox Sports 506
-http://67.161.193.132:32768/stream/c15fc0cd85e82969e87333d4a661b16c
-#EXTINF:0 channelID="x-ID.147" tvg-chno="1147" tvg-name=" UFC Fight Night: Kape vs Horiguchi - Full Card" tvg-id="1147" tvg-logo="http://192.168.1.84:32768/images/8f714208eacb1ed147e9d9cb4e512057.png" group-title="US", UFC Fight Night: Kape vs Horiguchi - Full Card
-http://67.161.193.132:32768/stream/c248ec3a00c9ba32b116fe18ecbcea74
+http://67.161.193.132:32768/stream/7120948ee135493671d9d96ed1dff35b
+#EXTINF:0 channelID="x-ID.147" tvg-chno="1147" tvg-name=" Inka MMA 58 - MMA" tvg-id="1147" tvg-logo="http://192.168.1.84:32768/images/3397b7c7720293d8e048019355893b71.png" group-title="US", Inka MMA 58 - MMA
+http://67.161.193.132:32768/stream/6e1e9c81d06c2ea04070ffde406917c6
 #EXTINF:0 channelID="x-ID.148" tvg-chno="1148" tvg-name=" Fox Sports 507" tvg-id="1148" tvg-logo="http://192.168.1.84:32768/images/d458f191fb595a68a7fee044b805a8d5.png" group-title="US", Fox Sports 507
-http://67.161.193.132:32768/stream/d5f2eff2d285cd034e98528f72693b0e
+http://67.161.193.132:32768/stream/f0dc9d41f5a591bd173e905a98573eec
 #EXTINF:0 channelID="x-ID.149" tvg-chno="1149" tvg-name=" Golden State Valkyries - WNBA" tvg-id="1149" tvg-logo="http://192.168.1.84:32768/images/9df6a08e3911b3b35f28ce159e9ae3e4.png" group-title="US", Golden State Valkyries - WNBA
-http://67.161.193.132:32768/stream/784097a6074e7dec49cbd70b4d0f081c
+http://67.161.193.132:32768/stream/1ce5a44136058e669a0fd22ac79caf9c
 #EXTINF:0 channelID="x-ID.150" tvg-chno="1150" tvg-name=" Indiana Fever - WNBA" tvg-id="1150" tvg-logo="http://192.168.1.84:32768/images/59ee7ab4ad0b3b0eb6b5fd331a1858d5.png" group-title="US", Indiana Fever - WNBA
-http://67.161.193.132:32768/stream/78952e61999dd9dc1de987c771c148d6
+http://67.161.193.132:32768/stream/fccbe7aecec55b24fc007471bec52e45
 #EXTINF:0 channelID="x-ID.151" tvg-chno="1151" tvg-name=" Las Vegas Aces - WNBA" tvg-id="1151" tvg-logo="http://192.168.1.84:32768/images/be2110eb32b0dbd0a6297c1da874c045.png" group-title="US", Las Vegas Aces - WNBA
-http://67.161.193.132:32768/stream/94a27d9957b9c44c6e4a705dce6f2ade
+http://67.161.193.132:32768/stream/4925f4d69eb654ca27acd066b8a67c30
 #EXTINF:0 channelID="x-ID.152" tvg-chno="1152" tvg-name=" Los Angeles Sparks - WNBA" tvg-id="1152" tvg-logo="http://192.168.1.84:32768/images/ea56de4a7b0398f229314aaa2d57708f.png" group-title="US", Los Angeles Sparks - WNBA
-http://67.161.193.132:32768/stream/7cf02ae17b8294035298f012d205c02a
+http://67.161.193.132:32768/stream/8b6a19071fcfb9e867e401a5d3850804
 #EXTINF:0 channelID="x-ID.153" tvg-chno="1153" tvg-name=" Minnesota Lynx - WNBA" tvg-id="1153" tvg-logo="http://192.168.1.84:32768/images/7e15b349f7d6ea24800fb0132ad15e36.png" group-title="US", Minnesota Lynx - WNBA
-http://67.161.193.132:32768/stream/0bbf40da3e2640a34807dec5e9608cbe
+http://67.161.193.132:32768/stream/4b0d6131e432416569270fba13382ba6
 #EXTINF:0 channelID="x-ID.154" tvg-chno="1154" tvg-name=" New York Liberty - WNBA" tvg-id="1154" tvg-logo="http://192.168.1.84:32768/images/c781882bf43cf7bb5f506fc91e48b338.png" group-title="US", New York Liberty - WNBA
-http://67.161.193.132:32768/stream/6f9428a826df5e5788dc05eb6dff161d
+http://67.161.193.132:32768/stream/262c15c37f3e53948328769073989dc2
 #EXTINF:0 channelID="x-ID.155" tvg-chno="1155" tvg-name=" Phoenix Mercury - WNBA" tvg-id="1155" tvg-logo="http://192.168.1.84:32768/images/17c10e31324fc403ad89cb4ae89e522a.png" group-title="US", Phoenix Mercury - WNBA
-http://67.161.193.132:32768/stream/a35c1d1babcc96a20a6341195b742fec
+http://67.161.193.132:32768/stream/b00eaecd0a1b22d8e96f6cb489d0a54a
 #EXTINF:0 channelID="x-ID.156" tvg-chno="1156" tvg-name=" Portland Fire - WNBA" tvg-id="1156" tvg-logo="http://192.168.1.84:32768/images/e913bf38e971ea6bc79f90d94b3d0845.png" group-title="US", Portland Fire - WNBA
-http://67.161.193.132:32768/stream/7c2af0802987605320e11ca8641c00e8
+http://67.161.193.132:32768/stream/edceae30308f10871bd913853b02e408
 #EXTINF:0 channelID="x-ID.157" tvg-chno="1157" tvg-name=" Seattle Storm - WNBA" tvg-id="1157" tvg-logo="http://192.168.1.84:32768/images/95b1d002c2d285eb9bd3525c0d334b65.png" group-title="US", Seattle Storm - WNBA
-http://67.161.193.132:32768/stream/dbac62687f25f7c26e276470a6078849
+http://67.161.193.132:32768/stream/29473ea470274090e627215269b81888
 #EXTINF:0 channelID="x-ID.158" tvg-chno="1158" tvg-name=" Toronto Tempo - WNBA" tvg-id="1158" tvg-logo="http://192.168.1.84:32768/images/4a275bea3be52f5864e8d673c0fd6704.png" group-title="US", Toronto Tempo - WNBA
-http://67.161.193.132:32768/stream/19b24c27a10c74c19fc426a7a08b2a4a
+http://67.161.193.132:32768/stream/136eabc481a39a33b630fe8474deb8ee
 #EXTINF:0 channelID="x-ID.159" tvg-chno="1159" tvg-name=" Washington Mystics - WNBA" tvg-id="1159" tvg-logo="http://192.168.1.84:32768/images/896677cffb1f6efafae757efd58dfe80.png" group-title="US", Washington Mystics - WNBA
-http://67.161.193.132:32768/stream/b8c0b8daa4a20eabb889816f93965c10
+http://67.161.193.132:32768/stream/7d292c28238f2c74e991c068c05a67f5
 #EXTINF:0 channelID="x-ID.161" tvg-chno="1161" tvg-name=" Sky Cinema Action" tvg-id="1161" tvg-logo="http://192.168.1.84:32768/images/8f70af91a230a6bc2428c53d79e67cdf.png" group-title="US", Sky Cinema Action
-http://67.161.193.132:32768/stream/47a8dbc8765503328a521834e615b6d9
+http://67.161.193.132:32768/stream/85d23cf56b1a2a560b35b01c5aa454cc
 #EXTINF:0 channelID="x-ID.162" tvg-chno="1162" tvg-name=" Sky Documentaries" tvg-id="1162" tvg-logo="http://192.168.1.84:32768/images/45ef919cf2fe66cd517e3b2d3abb0ce1.png" group-title="US", Sky Documentaries
-http://67.161.193.132:32768/stream/5a6b49c10064b1e247dcb6fd986ab97d
+http://67.161.193.132:32768/stream/17f5a7147d89194fd814a66ff7a73e11
 #EXTINF:0 channelID="x-ID.163" tvg-chno="1163" tvg-name=" Sky Nature" tvg-id="1163" tvg-logo="http://192.168.1.84:32768/images/dfb1ba68c5ddda5814231d234b7c306a.png" group-title="US", Sky Nature
-http://67.161.193.132:32768/stream/9316d01eab129b995cc5c1f5ea180f6e
+http://67.161.193.132:32768/stream/be6391ce8b9da61fe5e846be91a18d1a
 #EXTINF:0 channelID="x-ID.164" tvg-chno="1164" tvg-name=" Sky Crime" tvg-id="1164" tvg-logo="http://192.168.1.84:32768/images/645d00e33c3bc59444e9e888a65fa531.png" group-title="US", Sky Crime
-http://67.161.193.132:32768/stream/895ce670f4d97f9f01b6e6af89d29e93
+http://67.161.193.132:32768/stream/733c68405f1dcbbd70081cba6209bf70
 #EXTINF:0 channelID="x-ID.166" tvg-chno="1166" tvg-name=" D'Backs - MLB" tvg-id="1166" tvg-logo="http://192.168.1.84:32768/images/d0ba2537f71f5a09a6c9bac5686fec95.png" group-title="US", D'Backs - MLB
-http://67.161.193.132:32768/stream/b1776520ec6d2bcf479fccb8e6701e43
+http://67.161.193.132:32768/stream/79a6b5f4e702370e523e40ff30d8fb52
 #EXTINF:0 channelID="x-ID.167" tvg-chno="1167" tvg-name=" Dodgers - MLB" tvg-id="1167" tvg-logo="http://192.168.1.84:32768/images/2efa6a6fd31cc2796c447f454c0447ea.png" group-title="US", Dodgers - MLB
-http://67.161.193.132:32768/stream/51bc1b43a69ef205b1ed7da35251d867
+http://67.161.193.132:32768/stream/000c69184914d11a7ff3098581009815
 #EXTINF:0 channelID="x-ID.168" tvg-chno="1168" tvg-name=" Giants - MLB" tvg-id="1168" tvg-logo="http://192.168.1.84:32768/images/48c41adbf5fe066c4e10048cdd867ee3.png" group-title="US", Giants - MLB
-http://67.161.193.132:32768/stream/41946e03f69655588f3d94157af04a82
+http://67.161.193.132:32768/stream/bd4cf8b887518b83f0fd4c9de75ae3d1
 #EXTINF:0 channelID="x-ID.169" tvg-chno="1169" tvg-name=" Guardians - MLB" tvg-id="1169" tvg-logo="http://192.168.1.84:32768/images/6e367b0cb54aebb50915d48ebca24b54.png" group-title="US", Guardians - MLB
-http://67.161.193.132:32768/stream/62f8d81d12987e58408d301752d74371
+http://67.161.193.132:32768/stream/2e70cbdcbdd1f343346fff7bb6cc1ef5
 #EXTINF:0 channelID="x-ID.170" tvg-chno="1170" tvg-name=" Mariners - MLB" tvg-id="1170" tvg-logo="http://192.168.1.84:32768/images/44be4a436fbd700d5089638540400244.png" group-title="US", Mariners - MLB
-http://67.161.193.132:32768/stream/61f65e14241e596414dba26831470e2e
+http://67.161.193.132:32768/stream/1005a9cd7b3216bf87acbca76636a20f
 #EXTINF:0 channelID="x-ID.171" tvg-chno="1171" tvg-name=" Marlins - MLB" tvg-id="1171" tvg-logo="http://192.168.1.84:32768/images/a37e440bea0fcc01653cab341144f989.png" group-title="US", Marlins - MLB
-http://67.161.193.132:32768/stream/a5bff4a724f77b761d4df95d832ec0b1
+http://67.161.193.132:32768/stream/1b12e3378130d20b7ddda21275629369
 #EXTINF:0 channelID="x-ID.172" tvg-chno="1172" tvg-name=" Mets - MLB" tvg-id="1172" tvg-logo="http://192.168.1.84:32768/images/739c58aac405fcc0bd295e1e9e687bd6.png" group-title="US", Mets - MLB
-http://67.161.193.132:32768/stream/a92c0bf839fa287d2fce3eca344d1eab
+http://67.161.193.132:32768/stream/e494cfe6d38c3a03434c45262d003ce5
 #EXTINF:0 channelID="x-ID.173" tvg-chno="1173" tvg-name=" Nationals - MLB" tvg-id="1173" tvg-logo="http://192.168.1.84:32768/images/0456e1352bdd9458dc80caea85c505b0.png" group-title="US", Nationals - MLB
-http://67.161.193.132:32768/stream/7bb99f6f1707a54bddd4e334396f3946
+http://67.161.193.132:32768/stream/110b0b5d846b6c322457777acf918922
 #EXTINF:0 channelID="x-ID.174" tvg-chno="1174" tvg-name=" Orioles - MLB" tvg-id="1174" tvg-logo="http://192.168.1.84:32768/images/cb866a65f97af390a9e8e74a7079ae50.png" group-title="US", Orioles - MLB
-http://67.161.193.132:32768/stream/f1dda8b58b521af4d29bc8346e692324
-#EXTINF:0 channelID="x-ID.175" tvg-chno="1175" tvg-name=" UFC Fight Night: Kape vs Horiguchi - Full Card" tvg-id="1175" tvg-logo="http://192.168.1.84:32768/images/8f714208eacb1ed147e9d9cb4e512057.png" group-title="US", UFC Fight Night: Kape vs Horiguchi - Full Card
-http://67.161.193.132:32768/stream/3999fc3ba576e93d3420df1433844ef8
+http://67.161.193.132:32768/stream/5d3959698bc81264540ed7177e3ec789
 #EXTINF:0 channelID="x-ID.178" tvg-chno="1178" tvg-name=" Padres - MLB" tvg-id="1178" tvg-logo="http://192.168.1.84:32768/images/fd465cb3d5834535077a133b9b3adbbf.png" group-title="US", Padres - MLB
-http://67.161.193.132:32768/stream/9e9e1bdb2b769edd8541e821fb946935
+http://67.161.193.132:32768/stream/fe51c3f0d728b63ce65851dd37bcb1f7
 #EXTINF:0 channelID="x-ID.179" tvg-chno="1179" tvg-name=" Phillies - MLB" tvg-id="1179" tvg-logo="http://192.168.1.84:32768/images/dfdad5e10c99e45409d48b8a9813863e.png" group-title="US", Phillies - MLB
-http://67.161.193.132:32768/stream/c61e23ed9a657379b3e5887901c96e59
+http://67.161.193.132:32768/stream/96c1d41e96714322d50dfed51bb4207f
 #EXTINF:0 channelID="x-ID.180" tvg-chno="1180" tvg-name=" Pirates - MLB" tvg-id="1180" tvg-logo="http://192.168.1.84:32768/images/4053d43427d63749072b8d8122378ef3.png" group-title="US", Pirates - MLB
-http://67.161.193.132:32768/stream/ac4aafab0771f3115936b6acc7449c79
+http://67.161.193.132:32768/stream/04f6083e0a5885b4e33652e3e7e8d8f6
 #EXTINF:0 channelID="x-ID.181" tvg-chno="1181" tvg-name=" Rangers - MLB" tvg-id="1181" tvg-logo="http://192.168.1.84:32768/images/60cc980cc737055d9247f3c5831ea9f5.png" group-title="US", Rangers - MLB
-http://67.161.193.132:32768/stream/fca694a47c702c56f9af73257ac52a9e
+http://67.161.193.132:32768/stream/8338226e34ed04946f60899f974b6000
 #EXTINF:0 channelID="x-ID.182" tvg-chno="1182" tvg-name=" Rays - MLB" tvg-id="1182" tvg-logo="http://192.168.1.84:32768/images/94cbb6b44497668b93f9d41426a0da3d.png" group-title="US", Rays - MLB
-http://67.161.193.132:32768/stream/937ed44a2336439fe9b0e9160ba833b4
+http://67.161.193.132:32768/stream/9887b3db7f376902356f69461b06055e
 #EXTINF:0 channelID="x-ID.183" tvg-chno="1183" tvg-name=" Red Sox - MLB" tvg-id="1183" tvg-logo="http://192.168.1.84:32768/images/c9d0f2dd5569a1838a81b5a2f043b863.png" group-title="US", Red Sox - MLB
-http://67.161.193.132:32768/stream/61dfd5aa2f3b85b420b1af88111d4847
+http://67.161.193.132:32768/stream/bfd24c23131b32e5e51ea96becafa8f0
 #EXTINF:0 channelID="x-ID.184" tvg-chno="1184" tvg-name=" Reds - MLB" tvg-id="1184" tvg-logo="http://192.168.1.84:32768/images/77bec0196f73a5dc184d6291f6e81b0c.png" group-title="US", Reds - MLB
-http://67.161.193.132:32768/stream/3de2616b06a43cf2e5d83a78eb35d111
+http://67.161.193.132:32768/stream/f2cb52ed562b511d6a537909ad715485
 #EXTINF:0 channelID="x-ID.185" tvg-chno="1185" tvg-name=" Rockies - MLB" tvg-id="1185" tvg-logo="http://192.168.1.84:32768/images/07356eed227b2f6a0714dfa7d8f15368.png" group-title="US", Rockies - MLB
-http://67.161.193.132:32768/stream/5cfa73a578ddef01d8d5aa24ca987bc4
+http://67.161.193.132:32768/stream/44341f47eae75ae4b85f2e4b7b9c049c
 #EXTINF:0 channelID="x-ID.186" tvg-chno="1186" tvg-name=" Royals - MLB" tvg-id="1186" tvg-logo="http://192.168.1.84:32768/images/bc3eab74c0d21249135cc538b1b70401.png" group-title="US", Royals - MLB
-http://67.161.193.132:32768/stream/d23e39d5c4fc8a5db7177009ccc1c39a
+http://67.161.193.132:32768/stream/6e7bd7fe25feddd2756c628553a71c31
 #EXTINF:0 channelID="x-ID.187" tvg-chno="1187" tvg-name=" Tigers - MLB" tvg-id="1187" tvg-logo="http://192.168.1.84:32768/images/e1fa284d7554453165151de60f5a26a5.png" group-title="US", Tigers - MLB
-http://67.161.193.132:32768/stream/75eee0d5c85c9740605fbdd877063882
+http://67.161.193.132:32768/stream/4db8f2a9d81e1da52e38b2011285878e
 #EXTINF:0 channelID="x-ID.188" tvg-chno="1188" tvg-name=" Twins - MLB" tvg-id="1188" tvg-logo="http://192.168.1.84:32768/images/eaa2c24fa26b6bf2cfb349ab866599ca.png" group-title="US", Twins - MLB
-http://67.161.193.132:32768/stream/c5cd8a1ecec023f576c667cc4d82518c
+http://67.161.193.132:32768/stream/56ba0c7e702cb64fd9610caf3123855f
 #EXTINF:0 channelID="x-ID.189" tvg-chno="1189" tvg-name=" White Sox - MLB" tvg-id="1189" tvg-logo="http://192.168.1.84:32768/images/d5634f5fd5967d35786d8b0fbbd1830d.png" group-title="US", White Sox - MLB
-http://67.161.193.132:32768/stream/577edf180440a86b6d920d1ec8c496df
+http://67.161.193.132:32768/stream/8a913735a49156dd87639c61b76f3685
 #EXTINF:0 channelID="x-ID.190" tvg-chno="1190" tvg-name=" Yankees - MLB" tvg-id="1190" tvg-logo="http://192.168.1.84:32768/images/889bf102189b4accaf484a6c32ee4644.png" group-title="US", Yankees - MLB
-http://67.161.193.132:32768/stream/2e998fd4666b5c0ade3290242cfc8a82
+http://67.161.193.132:32768/stream/2b41b2484e3dd6f2483ba6a05bbe8f34
 #EXTINF:0 channelID="x-ID.193" tvg-chno="1193" tvg-name=" SuperSport Premier League [TEST]" tvg-id="1193" tvg-logo="http://192.168.1.84:32768/images/37bb0006334cd0da4e1c4ff593a12fb9.png" group-title="US", SuperSport Premier League [TEST]
-http://67.161.193.132:32768/stream/e31030e473320fb380b755e0f79e3948
-#EXTINF:0 channelID="x-ID.200" tvg-chno="1200" tvg-name=" Top Level Pro 23: Spring Games - Grappling" tvg-id="1200" tvg-logo="http://192.168.1.84:32768/images/ac917b47ff7acb4e49396f072f2a0ef9.png" group-title="US", Top Level Pro 23: Spring Games - Grappling
-http://67.161.193.132:32768/stream/fd4eae92a0ccc220be43f4ad5f27eb00
-#EXTINF:0 channelID="x-ID.201" tvg-chno="1201" tvg-name=" Collazo vs Valdez - Boxing" tvg-id="1201" tvg-logo="http://192.168.1.84:32768/images/0d5ec54d337572b02464b0ce47947a9f.png" group-title="US", Collazo vs Valdez - Boxing
-http://67.161.193.132:32768/stream/1b87a747cd1ffb56f58e24866028d284
-#EXTINF:0 channelID="x-ID.202" tvg-chno="1202" tvg-name=" Shamrock FC 376 - MMA" tvg-id="1202" tvg-logo="http://192.168.1.84:32768/images/3397b7c7720293d8e048019355893b71.png" group-title="US", Shamrock FC 376 - MMA
-http://67.161.193.132:32768/stream/e1eb6088952898921347b18275d9d146
-#EXTINF:0 channelID="x-ID.203" tvg-chno="1203" tvg-name=" Guardians at Astros - MLB" tvg-id="1203" tvg-logo="http://192.168.1.84:32768/images/06290f18911327379cde55aa2e682287.png" group-title="US", Guardians at Astros - MLB
-http://67.161.193.132:32768/stream/157d24a74b56c98f27c068012931838f
-#EXTINF:0 channelID="x-ID.204" tvg-chno="1204" tvg-name=" Mets at Phillies - MLB" tvg-id="1204" tvg-logo="http://192.168.1.84:32768/images/06290f18911327379cde55aa2e682287.png" group-title="US", Mets at Phillies - MLB
-http://67.161.193.132:32768/stream/25e28f0169a81aaba3ff727438fd75d1
+http://67.161.193.132:32768/stream/b5734195f2a8b4baa3f5f4e580930d5a
 #EXTINF:0 channelID="x-ID.0" tvg-chno="1000" tvg-name="TVP HD" tvg-id="1000" tvg-logo="http://xteve.top/images/3522365805fc06fa022f9b9f829ef742.png" group-title="US",TVP HD
 http://xteve.top/stream/81ae0dabe9cab791f36f54f4fe3a229d
 #EXTINF:0 channelID="x-ID.1" tvg-chno="1001" tvg-name="TVP 1" tvg-id="1001" tvg-logo="http://xteve.top/images/d7502fe4704170082b20471d13c11ec9.png" group-title="US",TVP 1
@@ -23537,6 +23401,70 @@ http://xteve.szepe.sk/stream/77146fc8828e31ddb6e7d6621c08fccc
 http://xteve.szepe.sk/stream/823ac78b5037057b1271aa08e61e6238
 #EXTINF:0 channelID="x-ID.53" tvg-chno="1053" tvg-name="France 24 (French)" tvg-id="1053" tvg-logo="http://imageserver.srv.czcloud.i.mtvreg.com/png?image=http%3A%2F%2Ffilecdn.srv.czcloud.i.mtvreg.com%2Fcache%2Flogos512%2Ffrance24_fr.png&width=96&height=96" group-title="US",France 24 (French)
 http://xteve.szepe.sk/stream/f7a3d7c9482f8bc2e883d6d27c233882
+#EXTINF:0 channelID="x-ID.546" tvg-chno="57" tvg-name="CW (WPSG) Philadelphia PA" tvg-id="57" tvg-logo="https://media.starlite.best/cw.wpsg.philadelphia.pa.us.png" group-title="US",CW (WPSG) Philadelphia PA
+http://xteve.donleynexus.com/stream/ca868e2701212a96877b7d8f2ee222f5
+#EXTINF:0 channelID="x-ID.30" tvg-chno="82" tvg-name="Bounce Network" tvg-id="82" tvg-logo="https://media.starlite.best/bounce.network.us.png" group-title="US",Bounce Network
+http://xteve.donleynexus.com/stream/9257e4b0c5d6c51e2dc548907e11c32a
+#EXTINF:0 channelID="x-ID.93" tvg-chno="83" tvg-name="GetTV" tvg-id="83" tvg-logo="https://media.starlite.best/gettv.us.png" group-title="US",GetTV
+http://xteve.donleynexus.com/stream/82548a8747c2721c34aa707bf2cef3c2
+#EXTINF:0 channelID="x-ID.202" tvg-chno="84" tvg-name="Start TV" tvg-id="84" tvg-logo="https://media.starlite.best/start.tv.us.png" group-title="US",Start TV
+http://xteve.donleynexus.com/stream/e11ec50cca0b1528527cfff155561e33
+#EXTINF:0 channelID="x-ID.895" tvg-chno="202" tvg-name="CNN US" tvg-id="202" tvg-logo="https://media.starlite.best/cnn.us.png" group-title="US",CNN US
+http://xteve.donleynexus.com/stream/83a64b1b78b1c10fb60f7154ff8e996d
+#EXTINF:0 channelID="x-ID.115" tvg-chno="204" tvg-name="HLN" tvg-id="204" tvg-logo="https://media.starlite.best/hln.us.png" group-title="US",HLN
+http://xteve.donleynexus.com/stream/6dd243d4d06c1e9c55be28c95f8b5b80
+#EXTINF:0 channelID="x-ID.950" tvg-chno="206" tvg-name="ESPN US" tvg-id="206" tvg-logo="https://media.starlite.best/espn.us.png" group-title="US",ESPN US
+http://xteve.donleynexus.com/stream/5ce34a7a5aa9ced5898394b3ecb210c3
+#EXTINF:0 channelID="x-ID.949" tvg-chno="207" tvg-name="ESPN News US" tvg-id="207" tvg-logo="https://media.starlite.best/espn.news.us.png" group-title="US",ESPN News US
+http://xteve.donleynexus.com/stream/73a6864a1807443ac98e35a1271a54a9
+#EXTINF:0 channelID="x-ID.948" tvg-chno="209" tvg-name="ESPN 2 US" tvg-id="209" tvg-logo="https://media.starlite.best/espn2.us.png" group-title="US",ESPN 2 US
+http://xteve.donleynexus.com/stream/5d7ddccfd77f2cc51b8ab75ef99a4db4
+#EXTINF:0 channelID="x-ID.994" tvg-chno="212" tvg-name="NFL Network US" tvg-id="212" tvg-logo="https://media.starlite.best/nfl.network.us.png" group-title="US",NFL Network US
+http://xteve.donleynexus.com/stream/8e2ba336de6093037f070beeb366df56
+#EXTINF:0 channelID="x-ID.974" tvg-chno="213" tvg-name="MLB Network US" tvg-id="213" tvg-logo="https://media.starlite.best/mlb.network.us.png" group-title="US",MLB Network US
+http://xteve.donleynexus.com/stream/4522480ce30db657ea865e3d00bdab1b
+#EXTINF:0 channelID="x-ID.960" tvg-chno="219" tvg-name="Fox Sports 1" tvg-id="219" tvg-logo="https://media.starlite.best/fox.sports.1.us.png" group-title="US",Fox Sports 1
+http://xteve.donleynexus.com/stream/be1fe466d6956202b63e67552d787197
+#EXTINF:0 channelID="x-ID.945" tvg-chno="221" tvg-name="CBS Sports Network USA" tvg-id="221" tvg-logo="https://media.starlite.best/cbs.sports.network.usa.us.png" group-title="US",CBS Sports Network USA
+http://xteve.donleynexus.com/stream/a742ceffa379f1006497b86d095b6b0c
+#EXTINF:0 channelID="x-ID.676" tvg-chno="228" tvg-name="GEM Shopping Network" tvg-id="228" tvg-logo="https://media.starlite.best/gem.shopping.network.us.png" group-title="US",GEM Shopping Network
+http://xteve.donleynexus.com/stream/06039aae21dd43348b56c5314a01b319
+#EXTINF:0 channelID="x-ID.1681" tvg-chno="229" tvg-name="HGTV (East) US" tvg-id="229" tvg-logo="https://media.starlite.best/hgtv.usa.eastern.us.png" group-title="US",HGTV (East) US
+http://xteve.donleynexus.com/stream/b5a6f2bd59d9fa23826004642a5ee374
+#EXTINF:0 channelID="x-ID.92" tvg-chno="233" tvg-name="Game Show Network (East)" tvg-id="233" tvg-logo="https://media.starlite.best/game.show.network.east.us.png" group-title="US",Game Show Network (East)
+http://xteve.donleynexus.com/stream/e4f3cf280a892949e2f6534d915d8865
+#EXTINF:0 channelID="x-ID.1660" tvg-chno="236" tvg-name="E! Entertainment (Eest)" tvg-id="236" tvg-logo="https://media.starlite.best/e.entertainment.usa.eastern.us.png" group-title="US",E! Entertainment (Eest)
+http://xteve.donleynexus.com/stream/db3d08b77a85a5a91808b4ae120b68d0
+#EXTINF:0 channelID="x-ID.1653" tvg-chno="237" tvg-name="Bravo (East)" tvg-id="237" tvg-logo="https://media.starlite.best/bravo.usa.eastern.us.png" group-title="US",Bravo (East)
+http://xteve.donleynexus.com/stream/c4d3eba698ec04728e0d05198e0045ba
+#EXTINF:0 channelID="x-ID.174" tvg-chno="238" tvg-name="ReelzChannel" tvg-id="238" tvg-logo="https://media.starlite.best/reelzchannel.us.png" group-title="US",ReelzChannel
+http://xteve.donleynexus.com/stream/ee18e08daf95a945df072bc115e677c5
+#EXTINF:0 channelID="x-ID.229" tvg-chno="239" tvg-name="SundanceTV (East) US" tvg-id="239" tvg-logo="https://media.starlite.best/sundancetv.usa.east.us.png" group-title="US",SundanceTV (East) US
+http://xteve.donleynexus.com/stream/17ca373d0f0def4d8fd8c3faceecb8cb
+#EXTINF:0 channelID="x-ID.259" tvg-chno="242" tvg-name="USA Network (East)" tvg-id="242" tvg-logo="https://media.starlite.best/usa.network.east.us.png" group-title="US",USA Network (East)
+http://xteve.donleynexus.com/stream/8b9f4177cc3675ab0b540c126ee37dcd
+#EXTINF:0 channelID="x-ID.1742" tvg-chno="244" tvg-name="Syfy (East) US" tvg-id="244" tvg-logo="https://media.starlite.best/syfy.eastern.us.png" group-title="US",Syfy (East) US
+http://xteve.donleynexus.com/stream/bfc22f93f58cbd3709e250179135da50
+#EXTINF:0 channelID="x-ID.248" tvg-chno="245" tvg-name="TNT (East) US" tvg-id="245" tvg-logo="https://media.starlite.best/tnt.east.us.png" group-title="US",TNT (East) US
+http://xteve.donleynexus.com/stream/f05611fc9f2ea729ef12d10c9a0c3d94
+#EXTINF:0 channelID="x-ID.16" tvg-chno="264" tvg-name="BBC America" tvg-id="264" tvg-logo="https://media.starlite.best/bbc.america.east.us.png" group-title="US",BBC America
+http://xteve.donleynexus.com/stream/43568c8f22cf5fff26c3d11221ca9cc9
+#EXTINF:0 channelID="x-ID.155" tvg-chno="307" tvg-name="NewsNation (East)" tvg-id="307" tvg-logo="https://media.starlite.best/newsnation.eastern.us.png" group-title="US",NewsNation (East)
+http://xteve.donleynexus.com/stream/e9043f7eb421e98c6c93bc8c2f8649e0
+#EXTINF:0 channelID="x-ID.890" tvg-chno="355" tvg-name="CNBC US" tvg-id="355" tvg-logo="https://media.starlite.best/cnbc.usa.us.png" group-title="US",CNBC US
+http://xteve.donleynexus.com/stream/0100cb75b81365b6507e3e3f440368bf
+#EXTINF:0 channelID="x-ID.891" tvg-chno="357" tvg-name="CNBC World US" tvg-id="357" tvg-logo="https://media.starlite.best/cnbc.world.us.png" group-title="US",CNBC World US
+http://xteve.donleynexus.com/stream/c12b8e6b1ad6b123811cea20046e6fe0
+#EXTINF:0 channelID="x-ID.82" tvg-chno="359" tvg-name="FOX Business Network" tvg-id="359" tvg-logo="https://media.starlite.best/fox.business.us.png" group-title="US",FOX Business Network
+http://xteve.donleynexus.com/stream/ce23d5c15d17fc739a234a6c73eef019
+#EXTINF:0 channelID="x-ID.898" tvg-chno="360" tvg-name="FOX News US" tvg-id="360" tvg-logo="https://media.starlite.best/fox.news.us.png" group-title="US",FOX News US
+http://xteve.donleynexus.com/stream/24e6ba3c150f9669dbc04f0b092fa650
+#EXTINF:0 channelID="x-ID.943" tvg-chno="610" tvg-name="Big Ten Network US" tvg-id="610" tvg-logo="https://media.starlite.best/big.ten.network.us.png" group-title="US",Big Ten Network US
+http://xteve.donleynexus.com/stream/f74407db45e3ab74d3c8048842ac4710
+#EXTINF:0 channelID="x-ID.961" tvg-chno="618" tvg-name="Fox Sports 2" tvg-id="618" tvg-logo="https://media.starlite.best/fox.sports.2.us.png" group-title="US",Fox Sports 2
+http://xteve.donleynexus.com/stream/a3dad90ff36f9b3c003a0cc97b8acf4e
+#EXTINF:0 channelID="x-ID.990" tvg-chno="642" tvg-name="Monumental Sports Network" tvg-id="642" tvg-logo="https://media.starlite.best/nbc.sports.washington.us.png" group-title="US",Monumental Sports Network
+http://xteve.donleynexus.com/stream/f77e97135702fb479b1d97118c9b2ef5
 #EXTINF:0 channelID="x-ID.0" tvg-chno="1000" tvg-name="TF1" tvg-id="1000" tvg-logo="" group-title="US",TF1
 http://xteve.cineworld.ovh/stream/ebf352e91b938382e82938d7074953ef
 #EXTINF:0 channelID="x-ID.1" tvg-chno="1001" tvg-name="FRANCE 2" tvg-id="1001" tvg-logo="" group-title="US",FRANCE 2
