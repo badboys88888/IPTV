@@ -1,261 +1,261 @@
 input,proxyIP,portRemote,success,colo,responseTime,message,timestamp,error,raw,colo_value,location
-103.63.30.230:443,103.63.30.230,443,True,ORD,313,第1次验证有效ProxyIP,2026-06-28T05:56:28.805Z,,,ORD,Switzerland (CH)
-103.63.30.73:443,103.63.30.73,443,True,ORD,304,第1次验证有效ProxyIP,2026-06-28T05:56:27.837Z,,,ORD,Switzerland (CH)
-107.189.30.77:443,107.189.30.77,443,True,ORD,230,第1次验证有效ProxyIP,2026-06-28T05:56:28.210Z,,,ORD,Luxembourg (LU)
-107.189.7.124:2053,107.189.7.124,2053,True,ORD,236,第1次验证有效ProxyIP,2026-06-28T05:56:28.309Z,,,ORD,Luxembourg (LU)
-132.243.161.155:2053,132.243.161.155,2053,True,ORD,236,第1次验证有效ProxyIP,2026-06-28T05:56:28.376Z,,,ORD,Switzerland (CH)
-132.243.162.182:8443,132.243.162.182,8443,False,ORD,-1,无法通过ProxyIP访问Cloudflare,2026-06-28T05:56:28.120Z,,,ORD,Switzerland (CH)
-140.238.209.8:443,140.238.209.8,443,True,ORD,227,第1次验证有效ProxyIP,2026-06-28T05:56:28.190Z,,,ORD,Switzerland (CH)
-141.227.139.175:443,141.227.139.175,443,True,ORD,228,第1次验证有效ProxyIP,2026-06-28T05:56:28.145Z,,,ORD,Switzerland (CH)
-141.227.139.82:443,-1,-1,False,ORD,-1,Stream was cancelled.,2026-06-28T05:56:27.353Z,,,ORD,N/A
-146.70.233.25:443,146.70.233.25,443,False,ORD,-1,无法通过ProxyIP访问Cloudflare,2026-06-28T05:56:27.645Z,,,ORD,Switzerland (CH)
-146.70.71.157:443,146.70.71.157,443,True,ORD,236,第1次验证有效ProxyIP,2026-06-28T05:56:28.258Z,,,ORD,Switzerland (CH)
-149.33.15.96:2053,149.33.15.96,2053,True,ORD,250,第1次验证有效ProxyIP,2026-06-28T05:56:27.710Z,,,ORD,Switzerland (CH)
-151.158.1.228:443,151.158.1.228,443,True,ORD,227,第1次验证有效ProxyIP,2026-06-28T05:56:28.525Z,,,ORD,Switzerland (CH)
-152.67.64.55:443,152.67.64.55,443,True,ORD,231,第1次验证有效ProxyIP,2026-06-28T05:56:28.577Z,,,ORD,Switzerland (CH)
-152.67.68.62:8443,152.67.68.62,8443,True,ORD,216,第1次验证有效ProxyIP,2026-06-28T05:56:28.569Z,,,ORD,Switzerland (CH)
-152.67.84.47:443,-1,-1,False,ORD,-1,Stream was cancelled.,2026-06-28T05:56:28.298Z,,,ORD,N/A
-152.67.85.239:443,152.67.85.239,443,True,ORD,221,第1次验证有效ProxyIP,2026-06-28T05:56:28.519Z,,,ORD,Switzerland (CH)
-167.17.181.190:443,167.17.181.190,443,False,ORD,-1,无法通过ProxyIP访问Cloudflare,2026-06-28T05:56:27.102Z,,,ORD,Switzerland (CH)
-167.17.181.45:443,167.17.181.45,443,True,ORD,218,第1次验证有效ProxyIP,2026-06-28T05:56:28.480Z,,,ORD,Switzerland (CH)
-167.17.181.72:443,167.17.181.72,443,True,ORD,257,第1次验证有效ProxyIP,2026-06-28T05:56:27.806Z,,,ORD,Switzerland (CH)
-167.17.183.183:2083,167.17.183.183,2083,True,ORD,222,第1次验证有效ProxyIP,2026-06-28T05:56:28.564Z,,,ORD,Germany (DE)
-167.17.183.184:443,167.17.183.184,443,True,ORD,231,第1次验证有效ProxyIP,2026-06-28T05:56:28.652Z,,,ORD,Germany (DE)
-171.22.16.231:443,171.22.16.231,443,True,ORD,224,第1次验证有效ProxyIP,2026-06-28T05:56:30.028Z,,,ORD,Switzerland (CH)
-171.22.16.237:443,171.22.16.237,443,True,ORD,223,第1次验证有效ProxyIP,2026-06-28T05:56:29.972Z,,,ORD,Switzerland (CH)
-171.22.16.238:443,171.22.16.238,443,True,ORD,228,第1次验证有效ProxyIP,2026-06-28T05:56:29.281Z,,,ORD,Switzerland (CH)
-185.191.239.218:443,185.191.239.218,443,True,ORD,229,第1次验证有效ProxyIP,2026-06-28T05:56:29.006Z,,,ORD,Switzerland (CH)
-185.191.239.21:443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:34.986Z,,,ORD,N/A
-185.195.69.119:2053,185.195.69.119,2053,True,ORD,313,第1次验证有效ProxyIP,2026-06-28T05:56:29.650Z,,,ORD,Switzerland (CH)
-185.195.69.119:8443,185.195.69.119,8443,True,ORD,295,第1次验证有效ProxyIP,2026-06-28T05:56:29.570Z,,,ORD,Switzerland (CH)
-185.195.69.158:443,185.195.69.158,443,True,ORD,290,第1次验证有效ProxyIP,2026-06-28T05:56:30.227Z,,,ORD,Switzerland (CH)
-185.195.69.200:8443,185.195.69.200,8443,True,ORD,314,第1次验证有效ProxyIP,2026-06-28T05:56:29.930Z,,,ORD,Switzerland (CH)
-185.195.69.209:2053,185.195.69.209,2053,True,ORD,293,第1次验证有效ProxyIP,2026-06-28T05:56:30.213Z,,,ORD,Switzerland (CH)
-185.195.69.64:443,185.195.69.64,443,True,ORD,279,第1次验证有效ProxyIP,2026-06-28T05:56:30.616Z,,,ORD,Switzerland (CH)
-185.195.69.72:443,185.195.69.72,443,True,ORD,297,第1次验证有效ProxyIP,2026-06-28T05:56:29.855Z,,,ORD,Switzerland (CH)
-185.237.225.47:443,185.237.225.47,443,True,ORD,221,第1次验证有效ProxyIP,2026-06-28T05:56:29.912Z,,,ORD,Switzerland (CH)
-186.190.215.78:443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:34.259Z,,,ORD,N/A
-193.108.54.86:443,193.108.54.86,443,True,ORD,247,第1次验证有效ProxyIP,2026-06-28T05:56:29.815Z,,,ORD,Switzerland (CH)
-194.156.102.142:443,194.156.102.142,443,True,ORD,227,第1次验证有效ProxyIP,2026-06-28T05:56:29.897Z,,,ORD,Switzerland (CH)
-194.246.118.199:443,194.246.118.199,443,True,ORD,216,第1次验证有效ProxyIP,2026-06-28T05:56:30.831Z,,,ORD,Switzerland (CH)
-194.87.178.222:443,-1,-1,False,ORD,-1,Stream was cancelled.,2026-06-28T05:56:29.362Z,,,ORD,N/A
-194.87.18.208:443,-1,-1,False,ORD,-1,Stream was cancelled.,2026-06-28T05:56:30.397Z,,,ORD,N/A
-194.87.18.92:443,-1,-1,False,ORD,-1,Stream was cancelled.,2026-06-28T05:56:30.624Z,,,ORD,N/A
-199.68.196.119:443,199.68.196.119,443,True,ORD,228,第1次验证有效ProxyIP,2026-06-28T05:56:31.424Z,,,ORD,Switzerland (CH)
-199.68.196.180:443,199.68.196.180,443,True,ORD,231,第1次验证有效ProxyIP,2026-06-28T05:56:30.777Z,,,ORD,Switzerland (CH)
-199.68.196.28:443,199.68.196.28,443,True,ORD,226,第1次验证有效ProxyIP,2026-06-28T05:56:30.441Z,,,ORD,Switzerland (CH)
-213.176.18.108:443,213.176.18.108,443,True,ORD,224,第1次验证有效ProxyIP,2026-06-28T05:56:31.973Z,,,ORD,Switzerland (CH)
-213.176.18.42:443,213.176.18.42,443,True,ORD,216,第1次验证有效ProxyIP,2026-06-28T05:56:31.009Z,,,ORD,Switzerland (CH)
-38.180.84.40:443,38.180.84.40,443,True,ORD,252,第1次验证有效ProxyIP,2026-06-28T05:56:31.315Z,,,ORD,Switzerland (CH)
-38.180.84.86:443,-1,-1,False,ORD,-1,Stream was cancelled.,2026-06-28T05:56:31.556Z,,,ORD,N/A
-38.180.85.203:443,38.180.85.203,443,True,ORD,234,第1次验证有效ProxyIP,2026-06-28T05:56:31.979Z,,,ORD,Switzerland (CH)
-38.244.145.50:443,38.244.145.50,443,False,ORD,-1,无法通过ProxyIP访问Cloudflare,2026-06-28T05:56:32.140Z,,,ORD,Switzerland (CH)
-45.128.52.237:443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:35.654Z,,,ORD,N/A
-45.143.200.135:443,45.143.200.135,443,True,ORD,227,第1次验证有效ProxyIP,2026-06-28T05:56:32.082Z,,,ORD,Switzerland (CH)
-45.143.200.141:443,45.143.200.141,443,True,ORD,219,第1次验证有效ProxyIP,2026-06-28T05:56:31.372Z,,,ORD,Switzerland (CH)
-45.143.200.211:443,45.143.200.211,443,True,ORD,232,第1次验证有效ProxyIP,2026-06-28T05:56:31.436Z,,,ORD,Switzerland (CH)
-45.143.200.245:443,45.143.200.245,443,True,ORD,216,第1次验证有效ProxyIP,2026-06-28T05:56:32.341Z,,,ORD,Switzerland (CH)
-45.143.200.68:8443,45.143.200.68,8443,False,ORD,-1,无法通过ProxyIP访问Cloudflare,2026-06-28T05:56:32.111Z,,,ORD,Switzerland (CH)
-45.143.200.82:443,45.143.200.82,443,True,ORD,220,第1次验证有效ProxyIP,2026-06-28T05:56:32.699Z,,,ORD,Switzerland (CH)
-45.148.102.20:443,-1,-1,False,ORD,-1,Stream was cancelled.,2026-06-28T05:56:32.335Z,,,ORD,N/A
-45.148.102.244:443,45.148.102.244,443,True,ORD,223,第1次验证有效ProxyIP,2026-06-28T05:56:32.933Z,,,ORD,Seychelles (SC)
-45.148.102.70:443,45.148.102.70,443,False,ORD,-1,无法通过ProxyIP访问Cloudflare,2026-06-28T05:56:32.596Z,,,ORD,Seychelles (SC)
-45.148.118.116:443,45.148.118.116,443,False,ORD,-1,无法通过ProxyIP访问Cloudflare,2026-06-28T05:56:33.011Z,,,ORD,Switzerland (CH)
-45.59.113.66:8443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:36.661Z,,,ORD,N/A
-45.59.114.151:443,45.59.114.151,443,False,ORD,-1,无法通过ProxyIP访问Cloudflare,2026-06-28T05:56:32.819Z,,,ORD,Switzerland (CH)
-45.59.114.66:443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:37.375Z,,,ORD,N/A
-45.59.114.66:8443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:38.428Z,,,ORD,N/A
-45.59.117.151:443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:38.149Z,,,ORD,N/A
-45.59.117.171:443,45.59.117.171,443,True,ORD,229,第1次验证有效ProxyIP,2026-06-28T05:56:33.470Z,,,ORD,Switzerland (CH)
-45.59.122.134:8443,-1,-1,False,ORD,-1,Stream was cancelled.,2026-06-28T05:56:33.512Z,,,ORD,N/A
-45.59.122.195:443,45.59.122.195,443,False,ORD,-1,无法通过ProxyIP访问Cloudflare,2026-06-28T05:56:33.680Z,,,ORD,Switzerland (CH)
-45.59.122.215:443,45.59.122.215,443,True,ORD,231,第1次验证有效ProxyIP,2026-06-28T05:56:33.761Z,,,ORD,Switzerland (CH)
-45.59.122.224:443,45.59.122.224,443,False,ORD,-1,无法通过ProxyIP访问Cloudflare,2026-06-28T05:56:33.268Z,,,ORD,Switzerland (CH)
-45.59.123.139:443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:39.085Z,,,ORD,N/A
-45.59.123.147:443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:38.677Z,,,ORD,N/A
-45.59.124.133:443,-1,-1,False,ORD,-1,Stream was cancelled.,2026-06-28T05:56:32.966Z,,,ORD,N/A
-45.59.124.177:443,45.59.124.177,443,False,ORD,-1,无法通过ProxyIP访问Cloudflare,2026-06-28T05:56:34.508Z,,,ORD,Switzerland (CH)
-45.59.124.39:443,45.59.124.39,443,True,ORD,226,第1次验证有效ProxyIP,2026-06-28T05:56:34.748Z,,,ORD,Switzerland (CH)
-45.59.124.93:443,45.59.124.93,443,True,ORD,233,第1次验证有效ProxyIP,2026-06-28T05:56:33.976Z,,,ORD,Switzerland (CH)
-45.59.125.125:8443,45.59.125.125,8443,True,ORD,241,第1次验证有效ProxyIP,2026-06-28T05:56:35.043Z,,,ORD,Switzerland (CH)
-45.59.125.228:443,45.59.125.228,443,False,ORD,-1,无法通过ProxyIP访问Cloudflare,2026-06-28T05:56:34.983Z,,,ORD,Switzerland (CH)
-45.59.125.242:443,45.59.125.242,443,True,ORD,224,第1次验证有效ProxyIP,2026-06-28T05:56:34.900Z,,,ORD,Switzerland (CH)
-45.90.57.139:8443,45.90.57.139,8443,True,ORD,233,第1次验证有效ProxyIP,2026-06-28T05:56:35.305Z,,,ORD,Switzerland (CH)
-45.90.59.186:443,45.90.59.186,443,True,ORD,220,第1次验证有效ProxyIP,2026-06-28T05:56:35.716Z,,,ORD,Switzerland (CH)
-45.90.59.18:443,45.90.59.18,443,True,ORD,213,第1次验证有效ProxyIP,2026-06-28T05:56:35.273Z,,,ORD,Switzerland (CH)
-45.95.232.18:2053,45.95.232.18,2053,True,ORD,280,第1次验证有效ProxyIP,2026-06-28T05:56:35.350Z,,,ORD,Switzerland (CH)
-45.95.232.18:8443,45.95.232.18,8443,True,ORD,215,第1次验证有效ProxyIP,2026-06-28T05:56:36.292Z,,,ORD,Switzerland (CH)
-5.182.36.39:443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:40.225Z,,,ORD,N/A
-62.113.106.85:8443,62.113.106.85,8443,True,ORD,417,第1次验证有效ProxyIP,2026-06-28T05:56:36.500Z,,,ORD,Russia (RU)
-79.132.141.152:443,79.132.141.152,443,True,ORD,222,第1次验证有效ProxyIP,2026-06-28T05:56:36.473Z,,,ORD,Switzerland (CH)
-79.132.141.165:8443,79.132.141.165,8443,True,ORD,221,第1次验证有效ProxyIP,2026-06-28T05:56:36.878Z,,,ORD,Switzerland (CH)
-79.132.141.205:8443,79.132.141.205,8443,True,ORD,218,第1次验证有效ProxyIP,2026-06-28T05:56:36.376Z,,,ORD,Switzerland (CH)
-79.132.141.96:443,79.132.141.96,443,True,ORD,219,第1次验证有效ProxyIP,2026-06-28T05:56:37.509Z,,,ORD,Switzerland (CH)
-80.68.159.75:443,80.68.159.75,443,False,ORD,-1,无法通过ProxyIP访问Cloudflare,2026-06-28T05:56:36.707Z,,,ORD,Switzerland (CH)
-82.38.139.218:8443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:41.653Z,,,ORD,N/A
-82.38.139.231:443,82.38.139.231,443,True,ORD,242,第1次验证有效ProxyIP,2026-06-28T05:56:37.058Z,,,ORD,Switzerland (CH)
-82.38.64.162:443,82.38.64.162,443,True,ORD,240,第1次验证有效ProxyIP,2026-06-28T05:56:36.886Z,,,ORD,Switzerland (CH)
-82.38.64.166:443,82.38.64.166,443,True,ORD,236,第1次验证有效ProxyIP,2026-06-28T05:56:36.866Z,,,ORD,Switzerland (CH)
-83.228.193.108:443,83.228.193.108,443,True,ORD,249,第1次验证有效ProxyIP,2026-06-28T05:56:37.869Z,,,ORD,Switzerland (CH)
-83.228.193.177:443,83.228.193.177,443,True,ORD,217,第1次验证有效ProxyIP,2026-06-28T05:56:37.283Z,,,ORD,Switzerland (CH)
-83.228.193.177:8443,83.228.193.177,8443,True,ORD,218,第1次验证有效ProxyIP,2026-06-28T05:56:38.132Z,,,ORD,Switzerland (CH)
-83.228.193.188:443,83.228.193.188,443,True,ORD,228,第1次验证有效ProxyIP,2026-06-28T05:56:38.454Z,,,ORD,Switzerland (CH)
-83.228.193.188:8443,83.228.193.188,8443,True,ORD,224,第1次验证有效ProxyIP,2026-06-28T05:56:38.129Z,,,ORD,Switzerland (CH)
-83.228.193.229:443,83.228.193.229,443,True,ORD,216,第1次验证有效ProxyIP,2026-06-28T05:56:38.878Z,,,ORD,Switzerland (CH)
-83.228.193.229:8443,83.228.193.229,8443,True,ORD,229,第1次验证有效ProxyIP,2026-06-28T05:56:38.120Z,,,ORD,Switzerland (CH)
-83.228.198.53:443,83.228.198.53,443,True,ORD,216,第1次验证有效ProxyIP,2026-06-28T05:56:37.894Z,,,ORD,Switzerland (CH)
-83.228.207.179:443,83.228.207.179,443,True,ORD,241,第1次验证有效ProxyIP,2026-06-28T05:56:39.061Z,,,ORD,Switzerland (CH)
-83.228.217.38:8443,83.228.217.38,8443,True,ORD,225,第1次验证有效ProxyIP,2026-06-28T05:56:38.011Z,,,ORD,Switzerland (CH)
-83.228.222.61:443,83.228.222.61,443,True,ORD,247,第1次验证有效ProxyIP,2026-06-28T05:56:38.734Z,,,ORD,Switzerland (CH)
-83.228.242.220:443,83.228.242.220,443,True,ORD,237,第1次验证有效ProxyIP,2026-06-28T05:56:38.259Z,,,ORD,Switzerland (CH)
-84.234.16.169:443,84.234.16.169,443,True,ORD,232,第1次验证有效ProxyIP,2026-06-28T05:56:38.687Z,,,ORD,Switzerland (CH)
-84.234.16.169:8443,84.234.16.169,8443,True,ORD,221,第1次验证有效ProxyIP,2026-06-28T05:56:38.659Z,,,ORD,Switzerland (CH)
-84.234.16.226:8443,-1,-1,False,ORD,-1,Stream was cancelled.,2026-06-28T05:56:39.188Z,,,ORD,N/A
-84.234.17.132:443,84.234.17.132,443,True,ORD,214,第1次验证有效ProxyIP,2026-06-28T05:56:39.806Z,,,ORD,Switzerland (CH)
-84.234.17.132:8443,84.234.17.132,8443,True,ORD,218,第1次验证有效ProxyIP,2026-06-28T05:56:39.872Z,,,ORD,Switzerland (CH)
-84.234.17.85:443,84.234.17.85,443,True,ORD,236,第1次验证有效ProxyIP,2026-06-28T05:56:40.058Z,,,ORD,Switzerland (CH)
-85.4.221.234:443,85.4.221.234,443,True,ORD,234,第1次验证有效ProxyIP,2026-06-28T05:56:40.185Z,,,ORD,Switzerland (CH)
-86.106.84.24:2083,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:44.179Z,,,ORD,N/A
-87.120.222.168:443,87.120.222.168,443,True,ORD,220,第1次验证有效ProxyIP,2026-06-28T05:56:40.121Z,,,ORD,Switzerland (CH)
-87.120.222.188:443,87.120.222.188,443,True,ORD,218,第1次验证有效ProxyIP,2026-06-28T05:56:40.069Z,,,ORD,Switzerland (CH)
-87.120.222.207:443,87.120.222.207,443,True,ORD,213,第1次验证有效ProxyIP,2026-06-28T05:56:40.664Z,,,ORD,Switzerland (CH)
-87.120.222.63:443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:44.896Z,,,ORD,N/A
-91.192.102.155:8443,91.192.102.155,8443,True,ORD,313,第1次验证有效ProxyIP,2026-06-28T05:56:40.167Z,,,ORD,Switzerland (CH)
-91.192.102.170:2053,91.192.102.170,2053,True,ORD,292,第1次验证有效ProxyIP,2026-06-28T05:56:40.999Z,,,ORD,Switzerland (CH)
-91.192.102.170:8443,91.192.102.170,8443,True,ORD,300,第1次验证有效ProxyIP,2026-06-28T05:56:40.107Z,,,ORD,Switzerland (CH)
-91.192.102.55:443,91.192.102.55,443,True,ORD,299,第1次验证有效ProxyIP,2026-06-28T05:56:40.183Z,,,ORD,Switzerland (CH)
-91.245.225.17:443,91.245.225.17,443,True,ORD,224,第1次验证有效ProxyIP,2026-06-28T05:56:40.528Z,,,ORD,Switzerland (CH)
-91.245.225.69:443,91.245.225.69,443,True,ORD,294,第1次验证有效ProxyIP,2026-06-28T05:56:40.227Z,,,ORD,Switzerland (CH)
-91.245.225.79:2053,91.245.225.79,2053,True,ORD,221,第1次验证有效ProxyIP,2026-06-28T05:56:41.252Z,,,ORD,Switzerland (CH)
-91.245.225.79:8443,91.245.225.79,8443,True,ORD,226,第1次验证有效ProxyIP,2026-06-28T05:56:40.178Z,,,ORD,Switzerland (CH)
-91.90.193.138:443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:45.412Z,,,ORD,N/A
-91.90.193.19:443,91.90.193.19,443,False,ORD,-1,无法通过ProxyIP访问Cloudflare,2026-06-28T05:56:41.721Z,,,ORD,Switzerland (CH)
-91.90.193.24:443,91.90.193.24,443,True,ORD,216,第1次验证有效ProxyIP,2026-06-28T05:56:42.126Z,,,ORD,Switzerland (CH)
-91.90.193.54:443,91.90.193.54,443,True,ORD,218,第1次验证有效ProxyIP,2026-06-28T05:56:42.282Z,,,ORD,Switzerland (CH)
-91.90.193.54:8443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:46.665Z,,,ORD,N/A
-94.131.12.15:443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:46.815Z,,,ORD,N/A
-94.131.3.151:443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:46.835Z,,,ORD,N/A
-94.131.3.152:443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:45.812Z,,,ORD,N/A
-94.131.3.156:443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:46.744Z,,,ORD,N/A
-94.131.3.4:443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:47.096Z,,,ORD,N/A
-103.137.63.227:8443,103.137.63.227,8443,True,ORD,400,第1次验证有效ProxyIP,2026-06-28T05:56:41.767Z,,,ORD,Taiwan (TW)
-114.33.57.170:443,-1,-1,False,ORD,-1,Stream was cancelled.,2026-06-28T05:56:44.160Z,,,ORD,N/A
-125.228.236.138:443,125.228.236.138,443,True,ORD,443,第1次验证有效ProxyIP,2026-06-28T05:56:42.581Z,,,ORD,Taiwan (TW)
-185.248.184.201:2053,185.248.184.201,2053,False,ORD,-1,无法通过ProxyIP访问Cloudflare,2026-06-28T05:56:41.505Z,,,ORD,Taiwan (TW)
-220.135.92.105:2087,220.135.92.105,2087,False,ORD,-1,无法通过ProxyIP访问Cloudflare,2026-06-28T05:56:42.191Z,,,ORD,Taiwan (TW)
-223.165.4.124:2053,-1,-1,False,ORD,-1,Stream was cancelled.,2026-06-28T05:56:43.709Z,,,ORD,N/A
-223.165.4.124:8443,-1,-1,False,ORD,-1,Stream was cancelled.,2026-06-28T05:56:43.715Z,,,ORD,N/A
-223.165.4.57:443,-1,-1,False,ORD,-1,Stream was cancelled.,2026-06-28T05:56:43.999Z,,,ORD,N/A
-114.204.41.241:30003,114.204.41.241,30003,True,ORD,435,第1次验证有效ProxyIP,2026-06-28T05:56:43.274Z,,,ORD,South Korea (KR)
-114.33.57.170:443,-1,-1,False,ORD,-1,Stream was cancelled.,2026-06-28T05:56:44.154Z,,,ORD,N/A
-118.217.122.70:37215,118.217.122.70,37215,True,ORD,369,第1次验证有效ProxyIP,2026-06-28T05:56:44.142Z,,,ORD,South Korea (KR)
-119.195.168.105:13666,119.195.168.105,13666,True,ORD,331,第1次验证有效ProxyIP,2026-06-28T05:56:44.857Z,,,ORD,South Korea (KR)
-119.197.75.101:37777,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:47.901Z,,,ORD,N/A
-119.205.235.58:443,119.205.235.58,443,True,ORD,1272,第1次验证有效ProxyIP,2026-06-28T05:56:45.706Z,,,ORD,South Korea (KR)
-119.237.21.220:12345,119.237.21.220,12345,True,ORD,1959,第2次验证有效ProxyIP,2026-06-28T05:56:46.137Z,,,ORD,Hong Kong (HK)
-121.144.80.128:10291,121.144.80.128,10291,True,ORD,379,第1次验证有效ProxyIP,2026-06-28T05:56:45.183Z,,,ORD,South Korea (KR)
-121.151.76.196:11965,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:50.104Z,,,ORD,N/A
-121.176.214.32:15001,-1,-1,False,ORD,-1,Stream was cancelled.,2026-06-28T05:56:45.694Z,,,ORD,N/A
-121.178.83.161:32409,121.178.83.161,32409,True,ORD,352,第1次验证有效ProxyIP,2026-06-28T05:56:45.860Z,,,ORD,South Korea (KR)
-121.180.172.11:11002,121.180.172.11,11002,True,ORD,390,第1次验证有效ProxyIP,2026-06-28T05:56:46.713Z,,,ORD,South Korea (KR)
-122.116.216.90:995,122.116.216.90,995,True,ORD,448,第1次验证有效ProxyIP,2026-06-28T05:56:46.296Z,,,ORD,Taiwan (TW)
-124.13.145.248:10443,-1,-1,False,ORD,-1,Stream was cancelled.,2026-06-28T05:56:46.093Z,,,ORD,N/A
-125.138.18.69:17249,125.138.18.69,17249,True,ORD,384,第1次验证有效ProxyIP,2026-06-28T05:56:46.914Z,,,ORD,South Korea (KR)
-126.220.82.161:443,126.220.82.161,443,True,ORD,611,第1次验证有效ProxyIP,2026-06-28T05:56:47.676Z,,,ORD,Japan (JP)
-129.146.137.214:443,129.146.137.214,443,True,ORD,151,第1次验证有效ProxyIP,2026-06-28T05:56:46.891Z,,,ORD,United States (US)
-129.146.196.8:443,129.146.196.8,443,True,ORD,138,第1次验证有效ProxyIP,2026-06-28T05:56:47.140Z,,,ORD,United States (US)
-129.146.242.248:443,129.146.242.248,443,True,ORD,144,第1次验证有效ProxyIP,2026-06-28T05:56:47.346Z,,,ORD,United States (US)
-129.150.46.253:443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:52.321Z,,,ORD,N/A
-129.150.48.17:443,129.150.48.17,443,True,ORD,414,第1次验证有效ProxyIP,2026-06-28T05:56:48.236Z,,,ORD,Singapore (SG)
-129.153.203.157:20000,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:51.985Z,,,ORD,N/A
-129.80.111.1:8443,129.80.111.1,8443,True,ORD,49,第1次验证有效ProxyIP,2026-06-28T05:56:46.777Z,,,ORD,United States (US)
-13.229.181.115:18246,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:52.564Z,,,ORD,N/A
-130.162.130.105:443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:53.130Z,,,ORD,N/A
-130.162.131.60:9,130.162.131.60,9,True,ORD,337,第1次验证有效ProxyIP,2026-06-28T05:56:47.791Z,,,ORD,South Korea (KR)
-130.61.12.163:443,130.61.12.163,443,True,ORD,210,第1次验证有效ProxyIP,2026-06-28T05:56:48.124Z,,,ORD,Germany (DE)
-130.61.48.18:443,130.61.48.18,443,True,ORD,208,第1次验证有效ProxyIP,2026-06-28T05:56:49.032Z,,,ORD,Germany (DE)
-132.145.77.22:8000,132.145.77.22,8000,True,ORD,194,第1次验证有效ProxyIP,2026-06-28T05:56:48.964Z,,,ORD,United Kingdom (GB)
-136.117.27.103:443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:53.685Z,,,ORD,N/A
-137.131.4.105:443,137.131.4.105,443,True,ORD,145,第1次验证有效ProxyIP,2026-06-28T05:56:48.605Z,,,ORD,United States (US)
-138.2.88.192:8443,-1,-1,False,ORD,-1,Stream was cancelled.,2026-06-28T05:56:47.755Z,,,ORD,N/A
-140.245.101.81:443,140.245.101.81,443,True,ORD,449,第1次验证有效ProxyIP,2026-06-28T05:56:51.081Z,,,ORD,Singapore (SG)
-140.245.86.172:443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:53.477Z,,,ORD,N/A
-141.144.233.231:993,141.144.233.231,993,True,ORD,214,第1次验证有效ProxyIP,2026-06-28T05:56:48.294Z,,,ORD,Germany (DE)
-141.147.85.167:8443,141.147.85.167,8443,True,ORD,197,第1次验证有效ProxyIP,2026-06-28T05:56:49.437Z,,,ORD,United Kingdom (GB)
-141.148.155.60:443,141.148.155.60,443,True,ORD,160,第1次验证有效ProxyIP,2026-06-28T05:56:48.636Z,,,ORD,United States (US)
-143.47.237.199:8443,143.47.237.199,8443,True,ORD,184,第1次验证有效ProxyIP,2026-06-28T05:56:50.073Z,,,ORD,United Kingdom (GB)
-144.24.155.126:4443,144.24.155.126,4443,True,ORD,589,第1次验证有效ProxyIP,2026-06-28T05:56:50.483Z,,,ORD,India (IN)
-146.235.16.191:443,146.235.16.191,443,True,ORD,461,第1次验证有效ProxyIP,2026-06-28T05:56:50.126Z,,,ORD,Singapore (SG)
-146.235.208.188:443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:54.579Z,,,ORD,N/A
-146.235.59.153:8443,146.235.59.153,8443,True,ORD,267,第1次验证有效ProxyIP,2026-06-28T05:56:50.670Z,,,ORD,Brazil (BR)
-146.56.138.33:10443,-1,-1,False,ORD,-1,Stream was cancelled.,2026-06-28T05:56:49.137Z,,,ORD,N/A
-147.224.58.153:443,-1,-1,False,ORD,-1,Stream was cancelled.,2026-06-28T05:56:50.011Z,,,ORD,N/A
-150.230.41.59:443,150.230.41.59,443,True,ORD,99,第1次验证有效ProxyIP,2026-06-28T05:56:50.722Z,,,ORD,United States (US)
-152.67.125.174:443,152.67.125.174,443,True,ORD,387,第1次验证有效ProxyIP,2026-06-28T05:56:51.377Z,,,ORD,Australia (AU)
-152.67.68.62:8443,152.67.68.62,8443,True,ORD,221,第1次验证有效ProxyIP,2026-06-28T05:56:50.754Z,,,ORD,Switzerland (CH)
-158.101.139.31:7000,158.101.139.31,7000,True,ORD,372,第1次验证有效ProxyIP,2026-06-28T05:56:51.165Z,,,ORD,Japan (JP)
-158.101.190.78:443,158.101.190.78,443,True,ORD,226,第1次验证有效ProxyIP,2026-06-28T05:56:50.832Z,,,ORD,Germany (DE)
-158.101.7.107:443,158.101.7.107,443,True,ORD,142,第1次验证有效ProxyIP,2026-06-28T05:56:51.303Z,,,ORD,United States (US)
-161.153.21.107:443,161.153.21.107,443,True,ORD,149,第1次验证有效ProxyIP,2026-06-28T05:56:52.023Z,,,ORD,United States (US)
-161.33.197.118:443,161.33.197.118,443,True,ORD,277,第1次验证有效ProxyIP,2026-06-28T05:56:51.340Z,,,ORD,Japan (JP)
-161.33.3.222:443,161.33.3.222,443,True,ORD,326,第1次验证有效ProxyIP,2026-06-28T05:56:51.521Z,,,ORD,Japan (JP)
-162.230.251.4:443,162.230.251.4,443,True,ORD,56,第1次验证有效ProxyIP,2026-06-28T05:56:52.094Z,,,ORD,United States (US)
-165.1.66.231:443,-1,-1,False,ORD,-1,Stream was cancelled.,2026-06-28T05:56:51.226Z,,,ORD,N/A
-170.9.21.102:40000,170.9.21.102,40000,True,ORD,98,第1次验证有效ProxyIP,2026-06-28T05:56:52.251Z,,,ORD,United States (US)
-173.70.8.178:8443,173.70.8.178,8443,True,ORD,62,第1次验证有效ProxyIP,2026-06-28T05:56:51.735Z,,,ORD,United States (US)
-175.208.111.195:50001,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:56.771Z,,,ORD,N/A
-178.198.243.225:40000,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:57.113Z,,,ORD,N/A
-178.198.243.225:40001,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:56.629Z,,,ORD,N/A
-178.198.243.225:40089,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:57.173Z,,,ORD,N/A
-178.198.243.225:40091,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:58.033Z,,,ORD,N/A
-183.104.5.134:26214,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:58.309Z,,,ORD,N/A
-192.18.136.255:443,192.18.136.255,443,True,ORD,101,第1次验证有效ProxyIP,2026-06-28T05:56:52.544Z,,,ORD,United States (US)
-192.9.159.222:443,-1,-1,False,ORD,-1,Stream was cancelled.,2026-06-28T05:56:52.876Z,,,ORD,N/A
-193.122.108.223:443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:58.487Z,,,ORD,N/A
-193.122.154.82:443,193.122.154.82,443,True,ORD,49,第1次验证有效ProxyIP,2026-06-28T05:56:53.892Z,,,ORD,United States (US)
-202.184.108.239:8443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:58.453Z,,,ORD,N/A
-207.211.157.214:443,207.211.157.214,443,True,ORD,410,第1次验证有效ProxyIP,2026-06-28T05:56:54.783Z,,,ORD,Australia (AU)
-210.61.201.195:10076,-1,-1,False,ORD,-1,Stream was cancelled.,2026-06-28T05:56:53.546Z,,,ORD,N/A
-210.61.201.196:10076,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:57.845Z,,,ORD,N/A
-211.104.99.209:32828,211.104.99.209,32828,True,ORD,646,第1次验证有效ProxyIP,2026-06-28T05:56:54.900Z,,,ORD,South Korea (KR)
-211.184.99.67:10389,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:58.070Z,,,ORD,N/A
-216.36.127.148:52772,216.36.127.148,52772,True,ORD,110,第1次验证有效ProxyIP,2026-06-28T05:56:54.490Z,,,ORD,United States (US)
-218.208.125.60:443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:59.194Z,,,ORD,N/A
-218.255.90.74:8081,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:56:59.247Z,,,ORD,N/A
-218.55.175.15:10250,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:57:00.454Z,,,ORD,N/A
-219.77.26.53:20002,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:57:00.398Z,,,ORD,N/A
-220.118.83.101:60004,220.118.83.101,60004,True,ORD,363,第1次验证有效ProxyIP,2026-06-28T05:56:55.976Z,,,ORD,South Korea (KR)
-221.147.196.150:18810,-1,-1,False,ORD,-1,Stream was cancelled.,2026-06-28T05:56:55.204Z,,,ORD,N/A
-221.151.204.241:38520,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:57:00.712Z,,,ORD,N/A
-221.152.242.211:24937,221.152.242.211,24937,True,ORD,607,第1次验证有效ProxyIP,2026-06-28T05:56:57.542Z,,,ORD,South Korea (KR)
-221.157.12.225:10003,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:57:01.435Z,,,ORD,N/A
-222.110.16.126:32768,222.110.16.126,32768,True,ORD,669,第1次验证有效ProxyIP,2026-06-28T05:56:57.238Z,,,ORD,South Korea (KR)
-222.117.231.32:38241,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:57:01.220Z,,,ORD,N/A
-222.96.225.202:20201,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:57:02.602Z,,,ORD,N/A
-34.15.140.53:80,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:57:03.226Z,,,ORD,N/A
-34.159.197.21:443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:57:03.520Z,,,ORD,N/A
-34.159.197.21:8443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:57:02.648Z,,,ORD,N/A
-35.194.248.70:443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:57:03.299Z,,,ORD,N/A
-35.197.23.75:443,35.197.23.75,443,True,ORD,111,第1次验证有效ProxyIP,2026-06-28T05:56:59.029Z,,,ORD, (GOOGLE)
-35.230.79.26:443,35.230.79.26,443,True,ORD,112,第1次验证有效ProxyIP,2026-06-28T05:56:59.817Z,,,ORD, (GOOGLE)
-36.232.84.91:8443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:57:03.356Z,,,ORD,N/A
-40.233.68.138:443,40.233.68.138,443,True,ORD,32,第1次验证有效ProxyIP,2026-06-28T05:56:58.869Z,,,ORD,Canada (CA)
-47.178.17.219:443,-1,-1,False,ORD,-1,Stream was cancelled.,2026-06-28T05:56:59.529Z,,,ORD,N/A
-58.230.174.87:12000,58.230.174.87,12000,False,ORD,-1,无法通过ProxyIP访问Cloudflare,2026-06-28T05:56:59.963Z,,,ORD,South Korea (KR)
-59.0.58.42:12238,59.0.58.42,12238,True,ORD,413,第1次验证有效ProxyIP,2026-06-28T05:57:00.383Z,,,ORD,South Korea (KR)
-59.10.176.213:10243,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:57:04.747Z,,,ORD,N/A
-60.248.139.106:11017,-1,-1,False,ORD,-1,Stream was cancelled.,2026-06-28T05:57:00.714Z,,,ORD,N/A
-64.110.81.226:443,64.110.81.226,443,False,ORD,-1,无法通过ProxyIP访问Cloudflare,2026-06-28T05:57:00.857Z,,,ORD,South Korea (KR)
-64.110.86.221:443,64.110.86.221,443,False,ORD,-1,无法通过ProxyIP访问Cloudflare,2026-06-28T05:57:00.858Z,,,ORD,South Korea (KR)
-66.253.7.79:443,66.253.7.79,443,True,ORD,102,第1次验证有效ProxyIP,2026-06-28T05:57:01.084Z,,,ORD,United States (US)
-67.150.153.55:443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:57:05.530Z,,,ORD,N/A
-67.160.245.225:443,67.160.245.225,443,True,ORD,154,第1次验证有效ProxyIP,2026-06-28T05:57:01.957Z,,,ORD,United States (US)
-69.143.174.201:8443,69.143.174.201,8443,True,ORD,131,第1次验证有效ProxyIP,2026-06-28T05:57:01.410Z,,,ORD,United States (US)
-70.39.194.17:52069,-1,-1,False,ORD,-1,Stream was cancelled.,2026-06-28T05:57:01.948Z,,,ORD,N/A
-73.60.177.89:443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:57:06.201Z,,,ORD,N/A
-81.102.249.85:8443,81.102.249.85,8443,True,ORD,295,第1次验证有效ProxyIP,2026-06-28T05:57:02.380Z,,,ORD,United Kingdom (GB)
-81.102.249.85:8444,81.102.249.85,8444,True,ORD,242,第1次验证有效ProxyIP,2026-06-28T05:57:02.722Z,,,ORD,United Kingdom (GB)
-84.235.160.223:443,84.235.160.223,443,True,ORD,222,第1次验证有效ProxyIP,2026-06-28T05:57:02.472Z,,,ORD,Netherlands (NL)
-85.4.221.234:443,85.4.221.234,443,True,ORD,230,第1次验证有效ProxyIP,2026-06-28T05:57:03.065Z,,,ORD,Switzerland (CH)
-86.53.181.13:443,-1,-1,False,ORD,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-28T05:57:07.562Z,,,ORD,N/A
-89.168.110.240:443,89.168.110.240,443,True,ORD,215,第1次验证有效ProxyIP,2026-06-28T05:57:03.378Z,,,ORD,Germany (DE)
+103.63.30.230:443,103.63.30.230,443,True,LAX,405,第1次验证有效ProxyIP,2026-06-29T06:18:41.037Z,,,LAX,Switzerland (CH)
+103.63.30.73:443,103.63.30.73,443,True,LAX,406,第1次验证有效ProxyIP,2026-06-29T06:18:40.602Z,,,LAX,Switzerland (CH)
+107.189.30.77:443,107.189.30.77,443,True,LAX,327,第1次验证有效ProxyIP,2026-06-29T06:18:40.819Z,,,LAX,Luxembourg (LU)
+107.189.7.124:2053,107.189.7.124,2053,True,LAX,315,第1次验证有效ProxyIP,2026-06-29T06:18:41.134Z,,,LAX,Luxembourg (LU)
+132.243.161.155:2053,132.243.161.155,2053,True,LAX,327,第1次验证有效ProxyIP,2026-06-29T06:18:40.089Z,,,LAX,Switzerland (CH)
+132.243.162.182:8443,132.243.162.182,8443,False,LAX,-1,无法通过ProxyIP访问Cloudflare,2026-06-29T06:18:40.413Z,,,LAX,Switzerland (CH)
+140.238.209.8:443,140.238.209.8,443,True,LAX,317,第1次验证有效ProxyIP,2026-06-29T06:18:40.555Z,,,LAX,Switzerland (CH)
+141.227.139.175:443,141.227.139.175,443,True,LAX,318,第1次验证有效ProxyIP,2026-06-29T06:18:40.460Z,,,LAX,Switzerland (CH)
+141.227.139.82:443,-1,-1,False,LAX,-1,Stream was cancelled.,2026-06-29T06:18:39.753Z,,,LAX,N/A
+146.70.233.25:443,146.70.233.25,443,False,LAX,-1,无法通过ProxyIP访问Cloudflare,2026-06-29T06:18:40.378Z,,,LAX,Switzerland (CH)
+146.70.71.157:443,146.70.71.157,443,True,LAX,343,第1次验证有效ProxyIP,2026-06-29T06:18:41.159Z,,,LAX,Switzerland (CH)
+149.33.15.96:2053,149.33.15.96,2053,True,LAX,348,第1次验证有效ProxyIP,2026-06-29T06:18:41.048Z,,,LAX,Switzerland (CH)
+151.158.1.228:443,151.158.1.228,443,True,LAX,337,第1次验证有效ProxyIP,2026-06-29T06:18:40.931Z,,,LAX,Switzerland (CH)
+152.67.64.55:443,152.67.64.55,443,True,LAX,342,第1次验证有效ProxyIP,2026-06-29T06:18:40.861Z,,,LAX,Switzerland (CH)
+152.67.68.62:8443,152.67.68.62,8443,True,LAX,316,第1次验证有效ProxyIP,2026-06-29T06:18:41.237Z,,,LAX,Switzerland (CH)
+152.67.84.47:443,-1,-1,False,LAX,-1,Stream was cancelled.,2026-06-29T06:18:40.613Z,,,LAX,N/A
+152.67.85.239:443,152.67.85.239,443,True,LAX,330,第1次验证有效ProxyIP,2026-06-29T06:18:40.334Z,,,LAX,Switzerland (CH)
+167.17.181.190:443,167.17.181.190,443,False,LAX,-1,无法通过ProxyIP访问Cloudflare,2026-06-29T06:18:40.133Z,,,LAX,Switzerland (CH)
+167.17.181.45:443,167.17.181.45,443,True,LAX,354,第1次验证有效ProxyIP,2026-06-29T06:18:40.252Z,,,LAX,Switzerland (CH)
+167.17.181.72:443,167.17.181.72,443,True,LAX,364,第1次验证有效ProxyIP,2026-06-29T06:18:40.433Z,,,LAX,Switzerland (CH)
+167.17.183.183:2083,167.17.183.183,2083,True,LAX,334,第1次验证有效ProxyIP,2026-06-29T06:18:41.376Z,,,LAX,Germany (DE)
+167.17.183.184:443,167.17.183.184,443,True,LAX,335,第1次验证有效ProxyIP,2026-06-29T06:18:42.812Z,,,LAX,Germany (DE)
+171.22.16.231:443,171.22.16.231,443,True,LAX,348,第1次验证有效ProxyIP,2026-06-29T06:18:41.614Z,,,LAX,Switzerland (CH)
+171.22.16.237:443,171.22.16.237,443,True,LAX,326,第1次验证有效ProxyIP,2026-06-29T06:18:42.806Z,,,LAX,Switzerland (CH)
+171.22.16.238:443,171.22.16.238,443,True,LAX,316,第1次验证有效ProxyIP,2026-06-29T06:18:42.686Z,,,LAX,Switzerland (CH)
+185.191.239.218:443,185.191.239.218,443,True,LAX,323,第1次验证有效ProxyIP,2026-06-29T06:18:41.901Z,,,LAX,Switzerland (CH)
+185.191.239.21:443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:18:47.227Z,,,LAX,N/A
+185.195.69.119:2053,185.195.69.119,2053,True,LAX,311,第1次验证有效ProxyIP,2026-06-29T06:18:42.080Z,,,LAX,Switzerland (CH)
+185.195.69.119:8443,185.195.69.119,8443,True,LAX,311,第1次验证有效ProxyIP,2026-06-29T06:18:42.592Z,,,LAX,Switzerland (CH)
+185.195.69.158:443,185.195.69.158,443,True,LAX,312,第1次验证有效ProxyIP,2026-06-29T06:18:42.695Z,,,LAX,Switzerland (CH)
+185.195.69.200:8443,185.195.69.200,8443,True,LAX,314,第1次验证有效ProxyIP,2026-06-29T06:18:42.401Z,,,LAX,Switzerland (CH)
+185.195.69.209:2053,185.195.69.209,2053,True,LAX,315,第1次验证有效ProxyIP,2026-06-29T06:18:42.825Z,,,LAX,Switzerland (CH)
+185.195.69.64:443,185.195.69.64,443,True,LAX,310,第1次验证有效ProxyIP,2026-06-29T06:18:43.451Z,,,LAX,Switzerland (CH)
+185.195.69.72:443,185.195.69.72,443,True,LAX,322,第1次验证有效ProxyIP,2026-06-29T06:18:42.703Z,,,LAX,Switzerland (CH)
+185.237.225.47:443,185.237.225.47,443,True,LAX,319,第1次验证有效ProxyIP,2026-06-29T06:18:43.601Z,,,LAX,Switzerland (CH)
+186.190.215.78:443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:18:47.512Z,,,LAX,N/A
+193.108.54.86:443,193.108.54.86,443,True,LAX,334,第1次验证有效ProxyIP,2026-06-29T06:18:42.599Z,,,LAX,Switzerland (CH)
+194.156.102.142:443,194.156.102.142,443,True,LAX,1777,第2次验证有效ProxyIP,2026-06-29T06:18:44.672Z,,,LAX,Switzerland (CH)
+194.246.118.199:443,194.246.118.199,443,True,LAX,317,第1次验证有效ProxyIP,2026-06-29T06:18:43.733Z,,,LAX,Switzerland (CH)
+194.87.178.222:443,-1,-1,False,LAX,-1,Stream was cancelled.,2026-06-29T06:18:42.078Z,,,LAX,N/A
+194.87.18.208:443,-1,-1,False,LAX,-1,Stream was cancelled.,2026-06-29T06:18:42.518Z,,,LAX,N/A
+194.87.18.92:443,-1,-1,False,LAX,-1,Stream was cancelled.,2026-06-29T06:18:43.708Z,,,LAX,N/A
+199.68.196.119:443,199.68.196.119,443,True,LAX,331,第1次验证有效ProxyIP,2026-06-29T06:18:44.642Z,,,LAX,Switzerland (CH)
+199.68.196.180:443,199.68.196.180,443,True,LAX,311,第1次验证有效ProxyIP,2026-06-29T06:18:43.912Z,,,LAX,Switzerland (CH)
+199.68.196.28:443,199.68.196.28,443,True,LAX,321,第1次验证有效ProxyIP,2026-06-29T06:18:44.441Z,,,LAX,Switzerland (CH)
+213.176.18.108:443,213.176.18.108,443,True,LAX,325,第1次验证有效ProxyIP,2026-06-29T06:18:44.574Z,,,LAX,Switzerland (CH)
+213.176.18.42:443,213.176.18.42,443,True,LAX,326,第1次验证有效ProxyIP,2026-06-29T06:18:45.082Z,,,LAX,Switzerland (CH)
+38.180.84.40:443,38.180.84.40,443,True,LAX,352,第1次验证有效ProxyIP,2026-06-29T06:18:45.410Z,,,LAX,Switzerland (CH)
+38.180.84.86:443,-1,-1,False,LAX,-1,Stream was cancelled.,2026-06-29T06:18:43.851Z,,,LAX,N/A
+38.180.85.203:443,38.180.85.203,443,True,LAX,350,第1次验证有效ProxyIP,2026-06-29T06:18:45.004Z,,,LAX,Switzerland (CH)
+38.244.145.50:443,38.244.145.50,443,False,LAX,-1,无法通过ProxyIP访问Cloudflare,2026-06-29T06:18:44.906Z,,,LAX,Switzerland (CH)
+45.128.52.237:443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:18:49.023Z,,,LAX,N/A
+45.143.200.135:443,45.143.200.135,443,True,LAX,322,第1次验证有效ProxyIP,2026-06-29T06:18:45.150Z,,,LAX,Switzerland (CH)
+45.143.200.141:443,45.143.200.141,443,True,LAX,5323,第3次验证有效ProxyIP,2026-06-29T06:18:49.425Z,,,LAX,Switzerland (CH)
+45.143.200.211:443,45.143.200.211,443,True,LAX,337,第1次验证有效ProxyIP,2026-06-29T06:18:44.140Z,,,LAX,Switzerland (CH)
+45.143.200.245:443,45.143.200.245,443,True,LAX,305,第1次验证有效ProxyIP,2026-06-29T06:18:46.041Z,,,LAX,Switzerland (CH)
+45.143.200.68:8443,45.143.200.68,8443,False,LAX,-1,无法通过ProxyIP访问Cloudflare,2026-06-29T06:18:45.008Z,,,LAX,Switzerland (CH)
+45.143.200.82:443,45.143.200.82,443,True,LAX,315,第1次验证有效ProxyIP,2026-06-29T06:18:45.330Z,,,LAX,Switzerland (CH)
+45.148.102.20:443,-1,-1,False,LAX,-1,Stream was cancelled.,2026-06-29T06:18:45.529Z,,,LAX,N/A
+45.148.102.244:443,45.148.102.244,443,True,LAX,315,第1次验证有效ProxyIP,2026-06-29T06:18:46.526Z,,,LAX,Seychelles (SC)
+45.148.102.70:443,45.148.102.70,443,False,LAX,-1,无法通过ProxyIP访问Cloudflare,2026-06-29T06:18:45.993Z,,,LAX,Seychelles (SC)
+45.148.118.116:443,45.148.118.116,443,False,LAX,-1,无法通过ProxyIP访问Cloudflare,2026-06-29T06:18:45.746Z,,,LAX,Switzerland (CH)
+45.59.113.66:8443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:18:50.816Z,,,LAX,N/A
+45.59.114.151:443,45.59.114.151,443,False,LAX,-1,无法通过ProxyIP访问Cloudflare,2026-06-29T06:18:45.830Z,,,LAX,Switzerland (CH)
+45.59.114.66:443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:18:50.853Z,,,LAX,N/A
+45.59.114.66:8443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:18:50.789Z,,,LAX,N/A
+45.59.117.151:443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:18:51.656Z,,,LAX,N/A
+45.59.117.171:443,45.59.117.171,443,True,LAX,315,第1次验证有效ProxyIP,2026-06-29T06:18:47.637Z,,,LAX,Switzerland (CH)
+45.59.122.134:8443,-1,-1,False,LAX,-1,Stream was cancelled.,2026-06-29T06:18:47.254Z,,,LAX,N/A
+45.59.122.195:443,45.59.122.195,443,False,LAX,-1,无法通过ProxyIP访问Cloudflare,2026-06-29T06:18:46.397Z,,,LAX,Switzerland (CH)
+45.59.122.215:443,45.59.122.215,443,True,LAX,329,第1次验证有效ProxyIP,2026-06-29T06:18:46.598Z,,,LAX,Switzerland (CH)
+45.59.122.224:443,45.59.122.224,443,False,LAX,-1,无法通过ProxyIP访问Cloudflare,2026-06-29T06:18:46.580Z,,,LAX,Switzerland (CH)
+45.59.123.139:443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:18:52.188Z,,,LAX,N/A
+45.59.123.147:443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:18:51.991Z,,,LAX,N/A
+45.59.124.133:443,-1,-1,False,LAX,-1,Stream was cancelled.,2026-06-29T06:18:47.353Z,,,LAX,N/A
+45.59.124.177:443,45.59.124.177,443,False,LAX,-1,无法通过ProxyIP访问Cloudflare,2026-06-29T06:18:47.792Z,,,LAX,Switzerland (CH)
+45.59.124.39:443,45.59.124.39,443,True,LAX,317,第1次验证有效ProxyIP,2026-06-29T06:18:48.731Z,,,LAX,Switzerland (CH)
+45.59.124.93:443,45.59.124.93,443,True,LAX,310,第1次验证有效ProxyIP,2026-06-29T06:18:48.320Z,,,LAX,Switzerland (CH)
+45.59.125.125:8443,45.59.125.125,8443,True,LAX,317,第1次验证有效ProxyIP,2026-06-29T06:18:48.264Z,,,LAX,Switzerland (CH)
+45.59.125.228:443,45.59.125.228,443,False,LAX,-1,无法通过ProxyIP访问Cloudflare,2026-06-29T06:18:48.699Z,,,LAX,Switzerland (CH)
+45.59.125.242:443,45.59.125.242,443,True,LAX,317,第1次验证有效ProxyIP,2026-06-29T06:18:48.393Z,,,LAX,Switzerland (CH)
+45.90.57.139:8443,45.90.57.139,8443,True,LAX,329,第1次验证有效ProxyIP,2026-06-29T06:18:48.218Z,,,LAX,Switzerland (CH)
+45.90.59.186:443,45.90.59.186,443,True,LAX,317,第1次验证有效ProxyIP,2026-06-29T06:18:49.744Z,,,LAX,Switzerland (CH)
+45.90.59.18:443,45.90.59.18,443,True,LAX,319,第1次验证有效ProxyIP,2026-06-29T06:18:48.718Z,,,LAX,Switzerland (CH)
+45.95.232.18:2053,45.95.232.18,2053,True,LAX,318,第1次验证有效ProxyIP,2026-06-29T06:18:49.977Z,,,LAX,Switzerland (CH)
+45.95.232.18:8443,45.95.232.18,8443,True,LAX,315,第1次验证有效ProxyIP,2026-06-29T06:18:49.493Z,,,LAX,Switzerland (CH)
+5.182.36.39:443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:18:53.629Z,,,LAX,N/A
+62.113.106.85:8443,62.113.106.85,8443,True,LAX,552,第1次验证有效ProxyIP,2026-06-29T06:18:50.249Z,,,LAX,Russia (RU)
+79.132.141.152:443,79.132.141.152,443,True,LAX,335,第1次验证有效ProxyIP,2026-06-29T06:18:50.207Z,,,LAX,Switzerland (CH)
+79.132.141.165:8443,79.132.141.165,8443,True,LAX,315,第1次验证有效ProxyIP,2026-06-29T06:18:49.939Z,,,LAX,Switzerland (CH)
+79.132.141.205:8443,79.132.141.205,8443,True,LAX,332,第1次验证有效ProxyIP,2026-06-29T06:18:50.827Z,,,LAX,Switzerland (CH)
+79.132.141.96:443,79.132.141.96,443,True,LAX,314,第1次验证有效ProxyIP,2026-06-29T06:18:50.812Z,,,LAX,Switzerland (CH)
+80.68.159.75:443,80.68.159.75,443,False,LAX,-1,无法通过ProxyIP访问Cloudflare,2026-06-29T06:18:50.769Z,,,LAX,Switzerland (CH)
+82.38.139.218:8443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:18:55.209Z,,,LAX,N/A
+82.38.139.231:443,82.38.139.231,443,True,LAX,342,第1次验证有效ProxyIP,2026-06-29T06:18:50.907Z,,,LAX,Switzerland (CH)
+82.38.64.162:443,82.38.64.162,443,True,LAX,337,第1次验证有效ProxyIP,2026-06-29T06:18:51.426Z,,,LAX,Switzerland (CH)
+82.38.64.166:443,82.38.64.166,443,True,LAX,353,第1次验证有效ProxyIP,2026-06-29T06:18:51.042Z,,,LAX,Switzerland (CH)
+83.228.193.108:443,83.228.193.108,443,True,LAX,340,第1次验证有效ProxyIP,2026-06-29T06:18:51.952Z,,,LAX,Switzerland (CH)
+83.228.193.177:443,83.228.193.177,443,True,LAX,311,第1次验证有效ProxyIP,2026-06-29T06:18:52.119Z,,,LAX,Switzerland (CH)
+83.228.193.177:8443,83.228.193.177,8443,True,LAX,317,第1次验证有效ProxyIP,2026-06-29T06:18:52.374Z,,,LAX,Switzerland (CH)
+83.228.193.188:443,83.228.193.188,443,True,LAX,357,第1次验证有效ProxyIP,2026-06-29T06:18:51.962Z,,,LAX,Switzerland (CH)
+83.228.193.188:8443,83.228.193.188,8443,True,LAX,309,第1次验证有效ProxyIP,2026-06-29T06:18:52.693Z,,,LAX,Switzerland (CH)
+83.228.193.229:443,83.228.193.229,443,True,LAX,327,第1次验证有效ProxyIP,2026-06-29T06:18:52.502Z,,,LAX,Switzerland (CH)
+83.228.193.229:8443,83.228.193.229,8443,True,LAX,313,第1次验证有效ProxyIP,2026-06-29T06:18:53.428Z,,,LAX,Switzerland (CH)
+83.228.198.53:443,83.228.198.53,443,True,LAX,311,第1次验证有效ProxyIP,2026-06-29T06:18:52.708Z,,,LAX,Switzerland (CH)
+83.228.207.179:443,83.228.207.179,443,True,LAX,334,第1次验证有效ProxyIP,2026-06-29T06:18:53.370Z,,,LAX,Switzerland (CH)
+83.228.217.38:8443,83.228.217.38,8443,True,LAX,327,第1次验证有效ProxyIP,2026-06-29T06:18:53.163Z,,,LAX,Switzerland (CH)
+83.228.222.61:443,83.228.222.61,443,True,LAX,333,第1次验证有效ProxyIP,2026-06-29T06:18:53.025Z,,,LAX,Switzerland (CH)
+83.228.242.220:443,83.228.242.220,443,True,LAX,348,第1次验证有效ProxyIP,2026-06-29T06:18:52.912Z,,,LAX,Switzerland (CH)
+84.234.16.169:443,84.234.16.169,443,True,LAX,333,第1次验证有效ProxyIP,2026-06-29T06:18:53.617Z,,,LAX,Switzerland (CH)
+84.234.16.169:8443,84.234.16.169,8443,True,LAX,332,第1次验证有效ProxyIP,2026-06-29T06:18:53.600Z,,,LAX,Switzerland (CH)
+84.234.16.226:8443,-1,-1,False,LAX,-1,Stream was cancelled.,2026-06-29T06:18:53.042Z,,,LAX,N/A
+84.234.17.132:443,84.234.17.132,443,True,LAX,337,第1次验证有效ProxyIP,2026-06-29T06:18:53.210Z,,,LAX,Switzerland (CH)
+84.234.17.132:8443,84.234.17.132,8443,True,LAX,323,第1次验证有效ProxyIP,2026-06-29T06:18:53.829Z,,,LAX,Switzerland (CH)
+84.234.17.85:443,84.234.17.85,443,True,LAX,349,第1次验证有效ProxyIP,2026-06-29T06:18:54.038Z,,,LAX,Switzerland (CH)
+85.4.221.234:443,85.4.221.234,443,True,LAX,346,第1次验证有效ProxyIP,2026-06-29T06:18:53.880Z,,,LAX,Switzerland (CH)
+86.106.84.24:2083,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:18:58.728Z,,,LAX,N/A
+87.120.222.168:443,87.120.222.168,443,True,LAX,420,第1次验证有效ProxyIP,2026-06-29T06:18:54.801Z,,,LAX,Switzerland (CH)
+87.120.222.188:443,87.120.222.188,443,True,LAX,442,第1次验证有效ProxyIP,2026-06-29T06:18:54.970Z,,,LAX,Switzerland (CH)
+87.120.222.207:443,87.120.222.207,443,True,LAX,335,第1次验证有效ProxyIP,2026-06-29T06:18:54.235Z,,,LAX,Switzerland (CH)
+87.120.222.63:443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:18:59.139Z,,,LAX,N/A
+91.192.102.155:8443,91.192.102.155,8443,True,LAX,335,第1次验证有效ProxyIP,2026-06-29T06:18:54.076Z,,,LAX,Switzerland (CH)
+91.192.102.170:2053,91.192.102.170,2053,True,LAX,310,第1次验证有效ProxyIP,2026-06-29T06:18:55.007Z,,,LAX,Switzerland (CH)
+91.192.102.170:8443,91.192.102.170,8443,True,LAX,309,第1次验证有效ProxyIP,2026-06-29T06:18:54.565Z,,,LAX,Switzerland (CH)
+91.192.102.55:443,91.192.102.55,443,True,LAX,316,第1次验证有效ProxyIP,2026-06-29T06:18:54.955Z,,,LAX,Switzerland (CH)
+91.245.225.17:443,91.245.225.17,443,True,LAX,327,第1次验证有效ProxyIP,2026-06-29T06:18:54.870Z,,,LAX,Switzerland (CH)
+91.245.225.69:443,91.245.225.69,443,True,LAX,525,第1次验证有效ProxyIP,2026-06-29T06:18:55.565Z,,,LAX,Switzerland (CH)
+91.245.225.79:2053,91.245.225.79,2053,True,LAX,343,第1次验证有效ProxyIP,2026-06-29T06:18:54.885Z,,,LAX,Switzerland (CH)
+91.245.225.79:8443,91.245.225.79,8443,True,LAX,334,第1次验证有效ProxyIP,2026-06-29T06:18:55.945Z,,,LAX,Switzerland (CH)
+91.90.193.138:443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:00.502Z,,,LAX,N/A
+91.90.193.19:443,91.90.193.19,443,False,LAX,-1,无法通过ProxyIP访问Cloudflare,2026-06-29T06:18:54.947Z,,,LAX,Switzerland (CH)
+91.90.193.24:443,91.90.193.24,443,True,LAX,340,第1次验证有效ProxyIP,2026-06-29T06:18:56.074Z,,,LAX,Switzerland (CH)
+91.90.193.54:443,91.90.193.54,443,True,LAX,324,第1次验证有效ProxyIP,2026-06-29T06:18:56.458Z,,,LAX,Switzerland (CH)
+91.90.193.54:8443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:00.145Z,,,LAX,N/A
+94.131.12.15:443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:18:59.825Z,,,LAX,N/A
+94.131.3.151:443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:00.069Z,,,LAX,N/A
+94.131.3.152:443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:18:59.789Z,,,LAX,N/A
+94.131.3.156:443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:01.223Z,,,LAX,N/A
+94.131.3.4:443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:00.431Z,,,LAX,N/A
+103.137.63.227:8443,103.137.63.227,8443,True,LAX,329,第1次验证有效ProxyIP,2026-06-29T06:18:56.543Z,,,LAX,Taiwan (TW)
+114.33.57.170:443,-1,-1,False,LAX,-1,Stream was cancelled.,2026-06-29T06:18:56.839Z,,,LAX,N/A
+125.228.236.138:443,125.228.236.138,443,True,LAX,348,第1次验证有效ProxyIP,2026-06-29T06:18:57.054Z,,,LAX,Taiwan (TW)
+185.248.184.201:2053,185.248.184.201,2053,False,LAX,-1,无法通过ProxyIP访问Cloudflare,2026-06-29T06:18:56.429Z,,,LAX,Taiwan (TW)
+220.135.92.105:2087,220.135.92.105,2087,True,LAX,325,第1次验证有效ProxyIP,2026-06-29T06:18:56.515Z,,,LAX,Taiwan (TW)
+223.165.4.124:2053,-1,-1,False,LAX,-1,Stream was cancelled.,2026-06-29T06:18:58.562Z,,,LAX,N/A
+223.165.4.124:8443,223.165.4.124,8443,False,LAX,-1,无法通过ProxyIP访问Cloudflare,2026-06-29T06:18:58.562Z,,,LAX,Taiwan (TW)
+223.165.4.57:443,-1,-1,False,LAX,-1,Stream was cancelled.,2026-06-29T06:18:58.511Z,,,LAX,N/A
+114.204.41.241:30003,114.204.41.241,30003,True,LAX,389,第1次验证有效ProxyIP,2026-06-29T06:18:58.063Z,,,LAX,South Korea (KR)
+114.33.57.170:443,-1,-1,False,LAX,-1,Stream was cancelled.,2026-06-29T06:18:59.918Z,,,LAX,N/A
+118.217.122.70:37215,118.217.122.70,37215,True,LAX,315,第1次验证有效ProxyIP,2026-06-29T06:18:58.082Z,,,LAX,South Korea (KR)
+119.195.168.105:13666,119.195.168.105,13666,True,LAX,373,第1次验证有效ProxyIP,2026-06-29T06:18:57.830Z,,,LAX,South Korea (KR)
+119.197.75.101:37777,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:02.453Z,,,LAX,N/A
+119.205.235.58:443,119.205.235.58,443,True,LAX,576,第1次验证有效ProxyIP,2026-06-29T06:18:59.950Z,,,LAX,South Korea (KR)
+119.237.21.220:12345,119.237.21.220,12345,True,LAX,312,第1次验证有效ProxyIP,2026-06-29T06:18:58.276Z,,,LAX,Hong Kong (HK)
+121.144.80.128:10291,121.144.80.128,10291,True,LAX,333,第1次验证有效ProxyIP,2026-06-29T06:18:59.042Z,,,LAX,South Korea (KR)
+121.151.76.196:11965,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:04.567Z,,,LAX,N/A
+121.176.214.32:15001,-1,-1,False,LAX,-1,Stream was cancelled.,2026-06-29T06:18:59.760Z,,,LAX,N/A
+121.178.83.161:32409,121.178.83.161,32409,True,LAX,335,第1次验证有效ProxyIP,2026-06-29T06:18:59.664Z,,,LAX,South Korea (KR)
+121.180.172.11:11002,121.180.172.11,11002,True,LAX,343,第1次验证有效ProxyIP,2026-06-29T06:18:59.823Z,,,LAX,South Korea (KR)
+122.116.216.90:995,122.116.216.90,995,True,LAX,362,第1次验证有效ProxyIP,2026-06-29T06:19:01.080Z,,,LAX,Taiwan (TW)
+124.13.145.248:10443,-1,-1,False,LAX,-1,Stream was cancelled.,2026-06-29T06:18:59.699Z,,,LAX,N/A
+125.138.18.69:17249,125.138.18.69,17249,True,LAX,333,第1次验证有效ProxyIP,2026-06-29T06:19:01.282Z,,,LAX,South Korea (KR)
+126.220.82.161:443,126.220.82.161,443,True,LAX,500,第1次验证有效ProxyIP,2026-06-29T06:19:01.132Z,,,LAX,Japan (JP)
+129.146.137.214:443,129.146.137.214,443,True,LAX,49,第1次验证有效ProxyIP,2026-06-29T06:18:59.882Z,,,LAX,United States (US)
+129.146.196.8:443,129.146.196.8,443,True,LAX,42,第1次验证有效ProxyIP,2026-06-29T06:19:01.284Z,,,LAX,United States (US)
+129.146.242.248:443,129.146.242.248,443,True,LAX,53,第1次验证有效ProxyIP,2026-06-29T06:19:00.518Z,,,LAX,United States (US)
+129.150.46.253:443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:05.647Z,,,LAX,N/A
+129.150.48.17:443,129.150.48.17,443,True,LAX,422,第1次验证有效ProxyIP,2026-06-29T06:19:01.380Z,,,LAX,Singapore (SG)
+129.153.203.157:20000,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:06.255Z,,,LAX,N/A
+129.80.111.1:8443,129.80.111.1,8443,True,LAX,128,第1次验证有效ProxyIP,2026-06-29T06:19:01.644Z,,,LAX,United States (US)
+13.229.181.115:18246,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:05.889Z,,,LAX,N/A
+130.162.130.105:443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:05.545Z,,,LAX,N/A
+130.162.131.60:9,130.162.131.60,9,True,LAX,331,第1次验证有效ProxyIP,2026-06-29T06:19:02.024Z,,,LAX,South Korea (KR)
+130.61.12.163:443,130.61.12.163,443,True,LAX,312,第1次验证有效ProxyIP,2026-06-29T06:19:02.382Z,,,LAX,Germany (DE)
+130.61.48.18:443,130.61.48.18,443,True,LAX,314,第1次验证有效ProxyIP,2026-06-29T06:19:01.972Z,,,LAX,Germany (DE)
+132.145.77.22:8000,132.145.77.22,8000,True,LAX,301,第1次验证有效ProxyIP,2026-06-29T06:19:01.893Z,,,LAX,United Kingdom (GB)
+136.117.27.103:443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:07.345Z,,,LAX,N/A
+137.131.4.105:443,137.131.4.105,443,True,LAX,48,第1次验证有效ProxyIP,2026-06-29T06:19:01.300Z,,,LAX,United States (US)
+138.2.88.192:8443,-1,-1,False,LAX,-1,Stream was cancelled.,2026-06-29T06:19:01.973Z,,,LAX,N/A
+140.245.101.81:443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:07.934Z,,,LAX,N/A
+140.245.86.172:443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:06.666Z,,,LAX,N/A
+141.144.233.231:993,141.144.233.231,993,True,LAX,315,第1次验证有效ProxyIP,2026-06-29T06:19:03.923Z,,,LAX,Germany (DE)
+141.147.85.167:8443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:07.658Z,,,LAX,N/A
+141.148.155.60:443,141.148.155.60,443,True,LAX,48,第1次验证有效ProxyIP,2026-06-29T06:19:02.635Z,,,LAX,United States (US)
+143.47.237.199:8443,143.47.237.199,8443,True,LAX,302,第1次验证有效ProxyIP,2026-06-29T06:19:03.334Z,,,LAX,United Kingdom (GB)
+144.24.155.126:4443,144.24.155.126,4443,True,LAX,489,第1次验证有效ProxyIP,2026-06-29T06:19:03.623Z,,,LAX,India (IN)
+146.235.16.191:443,146.235.16.191,443,True,LAX,361,第1次验证有效ProxyIP,2026-06-29T06:19:04.202Z,,,LAX,Singapore (SG)
+146.235.208.188:443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:08.331Z,,,LAX,N/A
+146.235.59.153:8443,146.235.59.153,8443,True,LAX,404,第1次验证有效ProxyIP,2026-06-29T06:19:03.726Z,,,LAX,Brazil (BR)
+146.56.138.33:10443,-1,-1,False,LAX,-1,Stream was cancelled.,2026-06-29T06:19:03.872Z,,,LAX,N/A
+147.224.58.153:443,-1,-1,False,LAX,-1,Stream was cancelled.,2026-06-29T06:19:03.463Z,,,LAX,N/A
+150.230.41.59:443,150.230.41.59,443,True,LAX,25,第1次验证有效ProxyIP,2026-06-29T06:19:04.147Z,,,LAX,United States (US)
+152.67.125.174:443,152.67.125.174,443,True,LAX,289,第1次验证有效ProxyIP,2026-06-29T06:19:05.132Z,,,LAX,Australia (AU)
+152.67.68.62:8443,152.67.68.62,8443,True,LAX,318,第1次验证有效ProxyIP,2026-06-29T06:19:04.936Z,,,LAX,Switzerland (CH)
+158.101.139.31:7000,158.101.139.31,7000,True,LAX,237,第1次验证有效ProxyIP,2026-06-29T06:19:04.989Z,,,LAX,Japan (JP)
+158.101.190.78:443,158.101.190.78,443,True,LAX,334,第1次验证有效ProxyIP,2026-06-29T06:19:05.451Z,,,LAX,Germany (DE)
+158.101.7.107:443,158.101.7.107,443,True,LAX,51,第1次验证有效ProxyIP,2026-06-29T06:19:05.615Z,,,LAX,United States (US)
+161.153.21.107:443,161.153.21.107,443,True,LAX,52,第1次验证有效ProxyIP,2026-06-29T06:19:05.414Z,,,LAX,United States (US)
+161.33.197.118:443,161.33.197.118,443,True,LAX,222,第1次验证有效ProxyIP,2026-06-29T06:19:05.234Z,,,LAX,Japan (JP)
+161.33.3.222:443,161.33.3.222,443,True,LAX,230,第1次验证有效ProxyIP,2026-06-29T06:19:06.031Z,,,LAX,Japan (JP)
+162.230.251.4:443,162.230.251.4,443,True,LAX,148,第1次验证有效ProxyIP,2026-06-29T06:19:06.345Z,,,LAX,United States (US)
+165.1.66.231:443,-1,-1,False,LAX,-1,Stream was cancelled.,2026-06-29T06:19:05.599Z,,,LAX,N/A
+170.9.21.102:40000,170.9.21.102,40000,True,LAX,35,第1次验证有效ProxyIP,2026-06-29T06:19:05.985Z,,,LAX,United States (US)
+173.70.8.178:8443,173.70.8.178,8443,True,LAX,152,第1次验证有效ProxyIP,2026-06-29T06:19:06.330Z,,,LAX,United States (US)
+175.208.111.195:50001,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:11.702Z,,,LAX,N/A
+178.198.243.225:40000,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:11.678Z,,,LAX,N/A
+178.198.243.225:40001,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:11.857Z,,,LAX,N/A
+178.198.243.225:40089,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:11.564Z,,,LAX,N/A
+178.198.243.225:40091,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:12.409Z,,,LAX,N/A
+183.104.5.134:26214,-1,-1,False,LAX,-1,Stream was cancelled.,2026-06-29T06:19:06.499Z,,,LAX,N/A
+192.18.136.255:443,192.18.136.255,443,True,LAX,25,第1次验证有效ProxyIP,2026-06-29T06:19:07.368Z,,,LAX,United States (US)
+192.9.159.222:443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:12.320Z,,,LAX,N/A
+193.122.108.223:443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:12.314Z,,,LAX,N/A
+193.122.154.82:443,193.122.154.82,443,True,LAX,129,第1次验证有效ProxyIP,2026-06-29T06:19:07.747Z,,,LAX,United States (US)
+202.184.108.239:8443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:12.440Z,,,LAX,N/A
+207.211.157.214:443,207.211.157.214,443,True,LAX,315,第1次验证有效ProxyIP,2026-06-29T06:19:07.588Z,,,LAX,Australia (AU)
+210.61.201.195:10076,-1,-1,False,LAX,-1,Stream was cancelled.,2026-06-29T06:19:07.517Z,,,LAX,N/A
+210.61.201.196:10076,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:12.485Z,,,LAX,N/A
+211.104.99.209:32828,211.104.99.209,32828,True,LAX,572,第1次验证有效ProxyIP,2026-06-29T06:19:08.753Z,,,LAX,South Korea (KR)
+211.184.99.67:10389,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:13.262Z,,,LAX,N/A
+216.36.127.148:52772,216.36.127.148,52772,True,LAX,22,第1次验证有效ProxyIP,2026-06-29T06:19:07.730Z,,,LAX,United States (US)
+218.208.125.60:443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:13.801Z,,,LAX,N/A
+218.255.90.74:8081,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:13.908Z,,,LAX,N/A
+218.55.175.15:10250,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:13.692Z,,,LAX,N/A
+219.77.26.53:20002,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:14.561Z,,,LAX,N/A
+220.118.83.101:60004,220.118.83.101,60004,True,LAX,318,第1次验证有效ProxyIP,2026-06-29T06:19:09.410Z,,,LAX,South Korea (KR)
+221.147.196.150:18810,-1,-1,False,LAX,-1,Stream was cancelled.,2026-06-29T06:19:09.421Z,,,LAX,N/A
+221.151.204.241:38520,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:14.358Z,,,LAX,N/A
+221.152.242.211:24937,221.152.242.211,24937,True,LAX,778,第1次验证有效ProxyIP,2026-06-29T06:19:10.396Z,,,LAX,South Korea (KR)
+221.157.12.225:10003,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:14.316Z,,,LAX,N/A
+222.110.16.126:32768,222.110.16.126,32768,True,LAX,581,第1次验证有效ProxyIP,2026-06-29T06:19:11.219Z,,,LAX,South Korea (KR)
+222.117.231.32:38241,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:15.274Z,,,LAX,N/A
+222.96.225.202:20201,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:15.454Z,,,LAX,N/A
+34.15.140.53:80,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:16.948Z,,,LAX,N/A
+34.159.197.21:443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:17.665Z,,,LAX,N/A
+34.159.197.21:8443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:18.357Z,,,LAX,N/A
+35.194.248.70:443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:18.267Z,,,LAX,N/A
+35.197.23.75:443,35.197.23.75,443,True,LAX,83,第1次验证有效ProxyIP,2026-06-29T06:19:13.070Z,,,LAX, (GOOGLE)
+35.230.79.26:443,35.230.79.26,443,True,LAX,83,第1次验证有效ProxyIP,2026-06-29T06:19:13.945Z,,,LAX, (GOOGLE)
+36.232.84.91:8443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:18.627Z,,,LAX,N/A
+40.233.68.138:443,40.233.68.138,443,True,LAX,132,第1次验证有效ProxyIP,2026-06-29T06:19:13.273Z,,,LAX,Canada (CA)
+47.178.17.219:443,-1,-1,False,LAX,-1,Stream was cancelled.,2026-06-29T06:19:13.276Z,,,LAX,N/A
+58.230.174.87:12000,58.230.174.87,12000,False,LAX,-1,无法通过ProxyIP访问Cloudflare,2026-06-29T06:19:13.964Z,,,LAX,South Korea (KR)
+59.0.58.42:12238,59.0.58.42,12238,True,LAX,354,第1次验证有效ProxyIP,2026-06-29T06:19:14.915Z,,,LAX,South Korea (KR)
+59.10.176.213:10243,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:19.204Z,,,LAX,N/A
+60.248.139.106:11017,-1,-1,False,LAX,-1,Stream was cancelled.,2026-06-29T06:19:14.999Z,,,LAX,N/A
+64.110.81.226:443,64.110.81.226,443,False,LAX,-1,无法通过ProxyIP访问Cloudflare,2026-06-29T06:19:15.341Z,,,LAX,South Korea (KR)
+64.110.86.221:443,64.110.86.221,443,False,LAX,-1,无法通过ProxyIP访问Cloudflare,2026-06-29T06:19:14.177Z,,,LAX,South Korea (KR)
+66.253.7.79:443,66.253.7.79,443,True,LAX,9,第1次验证有效ProxyIP,2026-06-29T06:19:15.719Z,,,LAX,United States (US)
+67.150.153.55:443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:20.608Z,,,LAX,N/A
+67.160.245.225:443,67.160.245.225,443,True,LAX,84,第1次验证有效ProxyIP,2026-06-29T06:19:16.114Z,,,LAX,United States (US)
+69.143.174.201:8443,69.143.174.201,8443,True,LAX,268,第1次验证有效ProxyIP,2026-06-29T06:19:16.109Z,,,LAX,United States (US)
+70.39.194.17:52069,-1,-1,False,LAX,-1,Stream was cancelled.,2026-06-29T06:19:15.318Z,,,LAX,N/A
+73.60.177.89:443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:20.763Z,,,LAX,N/A
+81.102.249.85:8443,81.102.249.85,8443,True,LAX,380,第1次验证有效ProxyIP,2026-06-29T06:19:16.245Z,,,LAX,United Kingdom (GB)
+81.102.249.85:8444,81.102.249.85,8444,True,LAX,367,第1次验证有效ProxyIP,2026-06-29T06:19:16.785Z,,,LAX,United Kingdom (GB)
+84.235.160.223:443,84.235.160.223,443,True,LAX,304,第1次验证有效ProxyIP,2026-06-29T06:19:16.059Z,,,LAX,Netherlands (NL)
+85.4.221.234:443,85.4.221.234,443,True,LAX,349,第1次验证有效ProxyIP,2026-06-29T06:19:17.479Z,,,LAX,Switzerland (CH)
+86.53.181.13:443,-1,-1,False,LAX,-1,Cannot call releaseLock() on a reader with outstanding read promises.,2026-06-29T06:19:20.953Z,,,LAX,N/A
+89.168.110.240:443,89.168.110.240,443,True,LAX,317,第1次验证有效ProxyIP,2026-06-29T06:19:17.488Z,,,LAX,Germany (DE)
