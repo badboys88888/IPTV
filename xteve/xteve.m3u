@@ -1,17 +1,17 @@
 #EXTM3U
-# 更新时间: 2026-06-29 02:15:59
+# 更新时间: 2026-07-01 02:15:51
 
 # ── BR ──
-#EXTINF:-1 group-title="BR",xteve [191频道]
+#EXTINF:-1 group-title="BR",xteve [194频道]
 http://152.67.56.199:8082/m3u/xteve.m3u
 
 # ── CA ──
 #EXTINF:-1 group-title="CA",xteve [194频道]
 http://144.217.68.109:8181/m3u/xteve.m3u
 #EXTINF:-1 group-title="CA",xteve [92频道]
-http://169.150.219.152:12151/m3u/xteve.m3u
-#EXTINF:-1 group-title="CA",xteve [92频道]
 http://169.150.219.151:12151/m3u/xteve.m3u
+#EXTINF:-1 group-title="CA",xteve [92频道]
+http://169.150.219.152:12151/m3u/xteve.m3u
 #EXTINF:-1 group-title="CA",xteve [10频道]
 http://xteve.tv.ncbr.wtf/m3u/xteve.m3u
 
@@ -20,8 +20,6 @@ http://xteve.tv.ncbr.wtf/m3u/xteve.m3u
 http://178.195.11.131:7778/m3u/xteve.m3u
 
 # ── CN ──
-#EXTINF:-1 group-title="CN",xteve [349频道]
-http://47.93.47.174:443/m3u/xteve.m3u
 #EXTINF:-1 group-title="CN",xteve [241频道]
 http://us.199301.xyz:34400/m3u/xteve.m3u
 #EXTINF:-1 group-title="CN",xteve [117频道]
@@ -59,10 +57,6 @@ http://158.140.175.101:8887/m3u/xteve.m3u
 #EXTINF:-1 group-title="IN",xteve [83频道]
 http://144.24.131.5/m3u/xteve.m3u
 
-# ── JP ──
-#EXTINF:-1 group-title="JP",xteve [349频道]
-http://141.147.174.228:4433/m3u/xteve.m3u
-
 # ── KR ──
 #EXTINF:-1 group-title="KR",xteve [64频道]
 http://211.225.62.76:5678/m3u/xteve.m3u
@@ -90,13 +84,13 @@ http://iptv.pd1.pl/m3u/xteve.m3u
 http://xteve.snahp.top/m3u/xteve.m3u
 #EXTINF:-1 group-title="US",xteve [319频道]
 http://tv.kinte.net/m3u/xteve.m3u
-#EXTINF:-1 group-title="US",xteve [183频道]
+#EXTINF:-1 group-title="US",xteve [179频道]
 http://67.161.193.132:32768/m3u/xteve.m3u
 #EXTINF:-1 group-title="US",xteve [101频道]
 http://xteve.top/m3u/xteve.m3u
 #EXTINF:-1 group-title="US",xteve [66频道]
 http://xteve.szepe.sk/m3u/xteve.m3u
-#EXTINF:-1 group-title="US",xteve [29频道]
+#EXTINF:-1 group-title="US",xteve [25频道]
 http://xteve.donleynexus.com/m3u/xteve.m3u
 #EXTINF:-1 group-title="US",xteve [16频道]
 http://xteve.cineworld.ovh/m3u/xteve.m3u
