@@ -1,8 +1,8 @@
 #EXTM3U
-# 更新时间: 2026-07-03 01:52:04
+# 更新时间: 2026-07-05 01:57:33
 
 # ── BR ──
-#EXTINF:-1 group-title="BR",xteve [194频道]
+#EXTINF:-1 group-title="BR",xteve [191频道]
 http://152.67.56.199:8082/m3u/xteve.m3u
 
 # ── CA ──
@@ -12,6 +12,8 @@ http://144.217.68.109:8181/m3u/xteve.m3u
 http://169.150.219.151:12151/m3u/xteve.m3u
 #EXTINF:-1 group-title="CA",xteve [92频道]
 http://169.150.219.152:12151/m3u/xteve.m3u
+#EXTINF:-1 group-title="CA",xteve [10频道]
+http://xteve.tv.ncbr.wtf/m3u/xteve.m3u
 
 # ── CH ──
 #EXTINF:-1 group-title="CH",xteve [1046频道]
@@ -20,12 +22,10 @@ http://178.195.11.131:7778/m3u/xteve.m3u
 # ── CN ──
 #EXTINF:-1 group-title="CN",xteve [349频道]
 http://47.93.47.174:443/m3u/xteve.m3u
-#EXTINF:-1 group-title="CN",xteve [240频道]
+#EXTINF:-1 group-title="CN",xteve [215频道]
 http://us.199301.xyz:34400/m3u/xteve.m3u
 #EXTINF:-1 group-title="CN",xteve [117频道]
 http://kylesing.synology.me:5820/m3u/xteve.m3u
-#EXTINF:-1 group-title="CN",xteve [56频道]
-http://nas.netwalksimon.top:34400/m3u/xteve.m3u
 
 # ── DE ──
 #EXTINF:-1 group-title="DE",xteve [140频道]
@@ -39,18 +39,14 @@ http://46.4.77.157:4003/m3u/xteve.m3u
 #EXTINF:-1 group-title="EE",xteve [9频道]
 http://kava.uf0.space/m3u/xteve.m3u
 
-# ── ES ──
-#EXTINF:-1 group-title="ES",xteve [82频道]
-http://xteve.dsgmobile.com/m3u/xteve.m3u
-
 # ── GR ──
 #EXTINF:-1 group-title="GR",xteve [7频道]
 http://94.131.135.165:32768/m3u/xteve.m3u
 
 # ── ID ──
-#EXTINF:-1 group-title="ID",xteve [22频道]
+#EXTINF:-1 group-title="ID",xteve [20频道]
 http://103.198.93.155:8887/m3u/xteve.m3u
-#EXTINF:-1 group-title="ID",xteve [22频道]
+#EXTINF:-1 group-title="ID",xteve [20频道]
 http://158.140.175.101:8887/m3u/xteve.m3u
 
 # ── IN ──
@@ -88,14 +84,12 @@ http://iptv.pd1.pl/m3u/xteve.m3u
 http://xteve.snahp.top/m3u/xteve.m3u
 #EXTINF:-1 group-title="US",xteve [317频道]
 http://tv.kinte.net/m3u/xteve.m3u
-#EXTINF:-1 group-title="US",xteve [180频道]
+#EXTINF:-1 group-title="US",xteve [183频道]
 http://67.161.193.132:32768/m3u/xteve.m3u
 #EXTINF:-1 group-title="US",xteve [101频道]
 http://xteve.top/m3u/xteve.m3u
 #EXTINF:-1 group-title="US",xteve [66频道]
 http://xteve.szepe.sk/m3u/xteve.m3u
-#EXTINF:-1 group-title="US",xteve [17频道]
-http://xteve.donleynexus.com/m3u/xteve.m3u
 #EXTINF:-1 group-title="US",xteve [16频道]
 http://xteve.cineworld.ovh/m3u/xteve.m3u
 
