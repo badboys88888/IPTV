@@ -1,190 +1,6 @@
 #EXTM3U
-# 展开版，更新时间: 2026-09-17 02:14:49
+# 展开版，更新时间: 2026-09-19 02:06:01
 
-#EXTINF:0 channelID="x-ID.0" tvg-chno="1000" tvg-name="US: TNT" tvg-id="1000" tvg-logo="https://logo.m3uassets.com/tnt.png" group-title="CA",US: TNT
-http://169.150.219.151:12151/stream/20f98d85bf094be9cf633637e0536758
-#EXTINF:0 channelID="x-ID.1" tvg-chno="1001" tvg-name="US: HGTV" tvg-id="1001" tvg-logo="https://logo.m3uassets.com/hgtv.png" group-title="CA",US: HGTV
-http://169.150.219.151:12151/stream/6992c69675256f13f8c23d378cb9e60b
-#EXTINF:0 channelID="x-ID.3" tvg-chno="1003" tvg-name="US: TBS" tvg-id="1003" tvg-logo="https://logo.m3uassets.com/tbs.png" group-title="CA",US: TBS
-http://169.150.219.151:12151/stream/ce2ab11068efdcaa495a2e552d73d843
-#EXTINF:0 channelID="x-ID.5" tvg-chno="1005" tvg-name="US: Comedy Central" tvg-id="1005" tvg-logo="https://logo.m3uassets.com/comedycentral.png" group-title="CA",US: Comedy Central
-http://169.150.219.151:12151/stream/4690402a75f724b0e52395c8ca945a5c
-#EXTINF:0 channelID="x-ID.7" tvg-chno="1007" tvg-name="US: History Channel" tvg-id="1007" tvg-logo="https://logo.iptveditor.com/historychannel.png" group-title="CA",US: History Channel
-http://169.150.219.151:12151/stream/4ca262bdd4a8881010c77b5e224fa51f
-#EXTINF:0 channelID="x-ID.10" tvg-chno="1010" tvg-name="US: Food Network" tvg-id="1010" tvg-logo="https://logo.m3uassets.com/foodnetwork.png" group-title="CA",US: Food Network
-http://169.150.219.151:12151/stream/574915302262508dd1f41c0b22d8022c
-#EXTINF:0 channelID="x-ID.11" tvg-chno="1011" tvg-name="CA: CP24 HD" tvg-id="1011" tvg-logo="https://logo.m3uassets.com/cp24.png" group-title="CA",CA: CP24 HD
-http://169.150.219.151:12151/stream/e3016b6ef0bb0afb9f7aabe2e50fc5e6
-#EXTINF:0 channelID="x-ID.12" tvg-chno="1012" tvg-name="US: TLC" tvg-id="1012" tvg-logo="https://logo.m3uassets.com/tlc.png" group-title="CA",US: TLC
-http://169.150.219.151:12151/stream/b3157e57264d4741853217a4e299483b
-#EXTINF:0 channelID="x-ID.13" tvg-chno="1013" tvg-name="US: Game Show Network" tvg-id="1013" tvg-logo="https://logo.m3uassets.com/gameshownetwork.png" group-title="CA",US: Game Show Network
-http://169.150.219.151:12151/stream/50bfe2337c03cfe1e81d3b4e021af067
-#EXTINF:0 channelID="x-ID.14" tvg-chno="1014" tvg-name="US: Hallmark Channel" tvg-id="1014" tvg-logo="https://logo.m3uassets.com/hallmark.png" group-title="CA",US: Hallmark Channel
-http://169.150.219.151:12151/stream/bfd59ca55c1ab7fae7896146c255293b
-#EXTINF:0 channelID="x-ID.15" tvg-chno="1015" tvg-name="US: Lifetime Network" tvg-id="1015" tvg-logo="https://logo.m3uassets.com/lifetimenetwork.png" group-title="CA",US: Lifetime Network
-http://169.150.219.151:12151/stream/794640cc971a2990b512cca8eda295ce
-#EXTINF:0 channelID="x-ID.16" tvg-chno="1016" tvg-name="US: Discovery ID" tvg-id="1016" tvg-logo="https://logo.iptveditor.com/investigationdiscovery.png" group-title="CA",US: Discovery ID
-http://169.150.219.151:12151/stream/7c3bf0fe0852ccfe92ecdfa977487b8a
-#EXTINF:0 channelID="x-ID.17" tvg-chno="1017" tvg-name="US: FX" tvg-id="1017" tvg-logo="https://logo.m3uassets.com/fx.png" group-title="CA",US: FX
-http://169.150.219.151:12151/stream/607c9752a9ef8b73009ff4df7d28b29d
-#EXTINF:0 channelID="x-ID.18" tvg-chno="1018" tvg-name="US: REELZ" tvg-id="1018" tvg-logo="https://logo.m3uassets.com/reelzchannel.png" group-title="CA",US: REELZ
-http://169.150.219.151:12151/stream/8acdb1ed6125794f0f1cfca1bfd04a7e
-#EXTINF:0 channelID="x-ID.20" tvg-chno="1020" tvg-name="US: Discovery" tvg-id="1020" tvg-logo="https://logo.m3uassets.com/discoverychannel.png" group-title="CA",US: Discovery
-http://169.150.219.151:12151/stream/2c4f22c120ce7adf24fd5be1568dacb2
-#EXTINF:0 channelID="x-ID.21" tvg-chno="1021" tvg-name="US: AMC" tvg-id="1021" tvg-logo="https://logo.m3uassets.com/amc.png" group-title="CA",US: AMC
-http://169.150.219.151:12151/stream/b9d97241345bb7bc55400839be28dfee
-#EXTINF:0 channelID="x-ID.22" tvg-chno="1022" tvg-name="US: FXX" tvg-id="1022" tvg-logo="https://logo.m3uassets.com/fxx.png" group-title="CA",US: FXX
-http://169.150.219.151:12151/stream/f6eff7a048fdaa5564e157c8b0c97374
-#EXTINF:0 channelID="x-ID.23" tvg-chno="1023" tvg-name="US: Paramount Network" tvg-id="1023" tvg-logo="https://logo.m3uassets.com/paramountnetwork.png" group-title="CA",US: Paramount Network
-http://169.150.219.151:12151/stream/acf973b2d66f09fa111a19b89a4c57b7
-#EXTINF:0 channelID="x-ID.25" tvg-chno="1025" tvg-name="US: BET" tvg-id="1025" tvg-logo="https://logo.m3uassets.com/bet.png" group-title="CA",US: BET
-http://169.150.219.151:12151/stream/b93e5404f65a7e662f3c80996c90b0dc
-#EXTINF:0 channelID="x-ID.26" tvg-chno="1026" tvg-name="US: Bravo" tvg-id="1026" tvg-logo="https://logo.m3uassets.com/bravo.png" group-title="CA",US: Bravo
-http://169.150.219.151:12151/stream/1cbf60b0a6b5219e20baa454ad12efa5
-#EXTINF:0 channelID="x-ID.28" tvg-chno="1028" tvg-name="US: MTV" tvg-id="1028" tvg-logo="https://logo.m3uassets.com/mtv.png" group-title="CA",US: MTV
-http://169.150.219.151:12151/stream/001464e550e5eb57398eca06efaa1445
-#EXTINF:0 channelID="x-ID.29" tvg-chno="1029" tvg-name="US: iON TV" tvg-id="1029" tvg-logo="https://logo.m3uassets.com/ion.png" group-title="CA",US: iON TV
-http://169.150.219.151:12151/stream/5e7a6a04905a27c1a9b4341e774a6bb7
-#EXTINF:0 channelID="x-ID.30" tvg-chno="1030" tvg-name="US: Bounce TV" tvg-id="1030" tvg-logo="https://logo.m3uassets.com/bouncetv.png" group-title="CA",US: Bounce TV
-http://169.150.219.151:12151/stream/fc6dd4ffd03b6b754b508d41e1d9eb5f
-#EXTINF:0 channelID="x-ID.32" tvg-chno="1032" tvg-name="US: Cartoon Network" tvg-id="1032" tvg-logo="https://logo.m3uassets.com/cartoonnetwork.png" group-title="CA",US: Cartoon Network
-http://169.150.219.151:12151/stream/e06867c689d6844cca7ca249ebaf8fda
-#EXTINF:0 channelID="x-ID.34" tvg-chno="1034" tvg-name="CA: CBC News" tvg-id="1034" tvg-logo="https://logo.m3uassets.com/bbcnews.png" group-title="CA",CA: CBC News
-http://169.150.219.151:12151/stream/b320531f844deb519952196dfa669c43
-#EXTINF:0 channelID="x-ID.36" tvg-chno="1036" tvg-name="US: Freeform" tvg-id="1036" tvg-logo="https://logo.m3uassets.com/freeform.png" group-title="CA",US: Freeform
-http://169.150.219.151:12151/stream/3dbdb4dfccbda76c218bd87360ecd304
-#EXTINF:0 channelID="x-ID.37" tvg-chno="1037" tvg-name="US: TV ONE" tvg-id="1037" tvg-logo="https://logo.m3uassets.com/tvone.png" group-title="CA",US: TV ONE
-http://169.150.219.151:12151/stream/92be679659b65893fd739a622421304d
-#EXTINF:0 channelID="x-ID.38" tvg-chno="1038" tvg-name="US: GRIT" tvg-id="1038" tvg-logo="https://logo.m3uassets.com/grit.png" group-title="CA",US: GRIT
-http://169.150.219.151:12151/stream/83dd81f12da339770324dae69c5b53f8
-#EXTINF:0 channelID="x-ID.40" tvg-chno="1040" tvg-name="US: INSP TV" tvg-id="1040" tvg-logo="https://logo.m3uassets.com/insp.png" group-title="CA",US: INSP TV
-http://169.150.219.151:12151/stream/8e8c6e5a74c273cde8747da9a582e773
-#EXTINF:0 channelID="x-ID.41" tvg-chno="1041" tvg-name="US: BET Her" tvg-id="1041" tvg-logo="https://logo.m3uassets.com/bether.png" group-title="CA",US: BET Her
-http://169.150.219.151:12151/stream/93d08b90e4892fa31f0e88d10823bf28
-#EXTINF:0 channelID="x-ID.42" tvg-chno="1042" tvg-name="US: SYFY" tvg-id="1042" tvg-logo="https://logo.iptveditor.com/syfy.png" group-title="CA",US: SYFY
-http://169.150.219.151:12151/stream/2fca5e6106b143278de4c399ce13cf4c
-#EXTINF:0 channelID="x-ID.43" tvg-chno="1043" tvg-name="US: Magnolia Network" tvg-id="1043" tvg-logo="https://logo.m3uassets.com/magnolianetwork.png" group-title="CA",US: Magnolia Network
-http://169.150.219.151:12151/stream/dfa24942460908005e63f54e21ac52ea
-#EXTINF:0 channelID="x-ID.44" tvg-chno="1044" tvg-name="US: ME TV" tvg-id="1044" tvg-logo="https://logo.m3uassets.com/metv.png" group-title="CA",US: ME TV
-http://169.150.219.151:12151/stream/a438285ad453a303792021d396ec3549
-#EXTINF:0 channelID="x-ID.45" tvg-chno="1045" tvg-name="US: Cooking Channel" tvg-id="1045" tvg-logo="https://logo.iptveditor.com/cookingchannel.png" group-title="CA",US: Cooking Channel
-http://169.150.219.151:12151/stream/7d4abc01d17aeead411e573e9a99984b
-#EXTINF:0 channelID="x-ID.46" tvg-chno="1046" tvg-name="US: Disney Junior" tvg-id="1046" tvg-logo="https://logo.iptveditor.com/disneyjunior.png" group-title="CA",US: Disney Junior
-http://169.150.219.151:12151/stream/aa977197692a5e76793b10189336fa69
-#EXTINF:0 channelID="x-ID.47" tvg-chno="1047" tvg-name="US: VH1" tvg-id="1047" tvg-logo="https://logo.m3uassets.com/vh1.png" group-title="CA",US: VH1
-http://169.150.219.151:12151/stream/10846bbd2447535bd30673ab382bb665
-#EXTINF:0 channelID="x-ID.48" tvg-chno="1048" tvg-name="US: Nicktoons" tvg-id="1048" tvg-logo="https://logo.m3uassets.com/nicktoons.png" group-title="CA",US: Nicktoons
-http://169.150.219.151:12151/stream/1faff1a1306aaee490d44e145e1c3a9a
-#EXTINF:0 channelID="x-ID.50" tvg-chno="1050" tvg-name="US: TruTV" tvg-id="1050" tvg-logo="https://logo.m3uassets.com/trutv.png" group-title="CA",US: TruTV
-http://169.150.219.151:12151/stream/040bc2e9cedd2e287b4041796e5faf57
-#EXTINF:0 channelID="x-ID.51" tvg-chno="1051" tvg-name="US: Nickelodeon" tvg-id="1051" tvg-logo="https://logo.m3uassets.com/nickelodeon.png" group-title="CA",US: Nickelodeon
-http://169.150.219.151:12151/stream/1e0dba26e1289d9e349e4a1fa14a6675
-#EXTINF:0 channelID="x-ID.52" tvg-chno="1052" tvg-name="US: Discovery Science" tvg-id="1052" tvg-logo="https://logo.m3uassets.com/discoveryscience.png" group-title="CA",US: Discovery Science
-http://169.150.219.151:12151/stream/75203fd739d1ec361593194b54a47db3
-#EXTINF:0 channelID="x-ID.53" tvg-chno="1053" tvg-name="US: Travel Channel" tvg-id="1053" tvg-logo="https://logo.m3uassets.com/bbctravel.png" group-title="CA",US: Travel Channel
-http://169.150.219.151:12151/stream/19580360f62bb94340dc66f8555c0bc9
-#EXTINF:0 channelID="x-ID.54" tvg-chno="1054" tvg-name="US: Animal Planet" tvg-id="1054" tvg-logo="https://logo.m3uassets.com/animalplanet.png" group-title="CA",US: Animal Planet
-http://169.150.219.151:12151/stream/03da261853ed1a45d1e5040fd265003f
-#EXTINF:0 channelID="x-ID.55" tvg-chno="1055" tvg-name="CA: CTV News" tvg-id="1055" tvg-logo="https://logo.iptveditor.com/ctvnews.png" group-title="CA",CA: CTV News
-http://169.150.219.151:12151/stream/66501493d0b25664168801af54592d80
-#EXTINF:0 channelID="x-ID.56" tvg-chno="1056" tvg-name="US: OWN" tvg-id="1056" tvg-logo="https://logo.m3uassets.com/oprahwinfreynetwork.png" group-title="CA",US: OWN
-http://169.150.219.151:12151/stream/cfb6fd8eca42582ee9d4ea21a02b0182
-#EXTINF:0 channelID="x-ID.58" tvg-chno="1058" tvg-name="US: Adult Swim" tvg-id="1058" tvg-logo="https://logo.m3uassets.com/adultswim.png" group-title="CA",US: Adult Swim
-http://169.150.219.151:12151/stream/96441ff43ba822b05fbf15577c153f01
-#EXTINF:0 channelID="x-ID.59" tvg-chno="1059" tvg-name="US: Destination America" tvg-id="1059" tvg-logo="https://logo.m3uassets.com/destinationamerica.png" group-title="CA",US: Destination America
-http://169.150.219.151:12151/stream/f71f0bb4272cff4454c000960fc6bb35
-#EXTINF:0 channelID="x-ID.60" tvg-chno="1060" tvg-name="US: Nick Jr" tvg-id="1060" tvg-logo="https://logo.m3uassets.com/nickjr.png" group-title="CA",US: Nick Jr
-http://169.150.219.151:12151/stream/10487fe823e5c780b617fa5501f0aeba
-#EXTINF:0 channelID="x-ID.61" tvg-chno="1061" tvg-name="US: Smithsonian Channel" tvg-id="1061" tvg-logo="https://logo.m3uassets.com/smithsonianchannel.png" group-title="CA",US: Smithsonian Channel
-http://169.150.219.151:12151/stream/0b27c035243744a4a242cd268e75debd
-#EXTINF:0 channelID="x-ID.62" tvg-chno="1062" tvg-name="US: CMT" tvg-id="1062" tvg-logo="https://logo.m3uassets.com/cmt.png" group-title="CA",US: CMT
-http://169.150.219.151:12151/stream/e3ca455b770a011d8fb62aae5f987b03
-#EXTINF:0 channelID="x-ID.63" tvg-chno="1063" tvg-name="US: Boomerang" tvg-id="1063" tvg-logo="https://logo.m3uassets.com/boomerang.png" group-title="CA",US: Boomerang
-http://169.150.219.151:12151/stream/b21b9192c44904c4c289b8ea46ad7de2
-#EXTINF:0 channelID="x-ID.64" tvg-chno="1064" tvg-name="US: WE TV" tvg-id="1064" tvg-logo="https://logo.m3uassets.com/wetv.png" group-title="CA",US: WE TV
-http://169.150.219.151:12151/stream/0cdf75b047a8b7d09714f3ab6fac8084
-#EXTINF:0 channelID="x-ID.65" tvg-chno="1065" tvg-name="US: E! Entertainment" tvg-id="1065" tvg-logo="https://logo.m3uassets.com/eentertainment.png" group-title="CA",US: E! Entertainment
-http://169.150.219.151:12151/stream/e8cf39aa31acc8efba04abde95880c3e
-#EXTINF:0 channelID="x-ID.66" tvg-chno="1066" tvg-name="US: Hallmark Family" tvg-id="1066" tvg-logo="https://logo.m3uassets.com/hallmarkfamily.png" group-title="CA",US: Hallmark Family
-http://169.150.219.151:12151/stream/c026d3c8ee44180e7a2a4925d5e28eff
-#EXTINF:0 channelID="x-ID.67" tvg-chno="1067" tvg-name="US: AHC" tvg-id="1067" tvg-logo="https://logo.m3uassets.com/americanheroeschannel.png" group-title="CA",US: AHC
-http://169.150.219.151:12151/stream/1860a7d43a93d5ea6c48bf667c836627
-#EXTINF:0 channelID="x-ID.69" tvg-chno="1069" tvg-name="US: National Geographic Wild" tvg-id="1069" tvg-logo="https://logo.m3uassets.com/natgeowild.png" group-title="CA",US: National Geographic Wild
-http://169.150.219.151:12151/stream/c65076a198f4ebb9318d91deccf72b30
-#EXTINF:0 channelID="x-ID.70" tvg-chno="1070" tvg-name="US: FYI Network" tvg-id="1070" tvg-logo="https://logo.iptveditor.com/fyi.png" group-title="CA",US: FYI Network
-http://169.150.219.151:12151/stream/0557c1774250c3b999677c9738cf1e90
-#EXTINF:0 channelID="x-ID.71" tvg-chno="1071" tvg-name="US: BBC America" tvg-id="1071" tvg-logo="https://logo.m3uassets.com/bbcamerica.png" group-title="CA",US: BBC America
-http://169.150.219.151:12151/stream/9557ed80348dc6ecf0e1c31674da2f78
-#EXTINF:0 channelID="x-ID.73" tvg-chno="1073" tvg-name="US: Discovery Life" tvg-id="1073" tvg-logo="https://logo.m3uassets.com/discovery.png" group-title="CA",US: Discovery Life
-http://169.150.219.151:12151/stream/fba87f8d3661b8406198405b5588c0dc
-#EXTINF:0 channelID="x-ID.74" tvg-chno="1074" tvg-name="US: BUZZR" tvg-id="1074" tvg-logo="https://logo.m3uassets.com/buzzer.png" group-title="CA",US: BUZZR
-http://169.150.219.151:12151/stream/1dfd28b29aa9a0797d932d054c28621b
-#EXTINF:0 channelID="x-ID.75" tvg-chno="1075" tvg-name="US: COMET" tvg-id="1075" tvg-logo="https://logo.m3uassets.com/comet.png" group-title="CA",US: COMET
-http://169.150.219.151:12151/stream/d56337acb0be5c8241e164e7bbd563ed
-#EXTINF:0 channelID="x-ID.76" tvg-chno="1076" tvg-name="US: COZI" tvg-id="1076" tvg-logo="https://logo.m3uassets.com/cozitv.png" group-title="CA",US: COZI
-http://169.150.219.151:12151/stream/fb12029eb0d8354d955a0d1101c79630
-#EXTINF:0 channelID="x-ID.77" tvg-chno="1077" tvg-name="US: Disney XD" tvg-id="1077" tvg-logo="https://logo.iptveditor.com/disneyxd.png" group-title="CA",US: Disney XD
-http://169.150.219.151:12151/stream/e8047e4d8849cf9e7ca09224dda8540d
-#EXTINF:0 channelID="x-ID.78" tvg-chno="1078" tvg-name="US: Viceland" tvg-id="1078" tvg-logo="https://logo.m3uassets.com/vice.png" group-title="CA",US: Viceland
-http://169.150.219.151:12151/stream/c36582f8ebd2305eddca72a45c2f260c
-#EXTINF:0 channelID="x-ID.79" tvg-chno="1079" tvg-name="US: Cleo TV" tvg-id="1079" tvg-logo="https://logo.m3uassets.com/leo.png" group-title="CA",US: Cleo TV
-http://169.150.219.151:12151/stream/243bfdeaf18434edb32f9f916ca1e36c
-#EXTINF:0 channelID="x-ID.80" tvg-chno="1080" tvg-name="US: Disney Channel" tvg-id="1080" tvg-logo="https://logo.m3uassets.com/disneychannel.png" group-title="CA",US: Disney Channel
-http://169.150.219.151:12151/stream/52ceffd0f7fc18382e591e2d4b40f400
-#EXTINF:0 channelID="x-ID.82" tvg-chno="1082" tvg-name="US: TV Land (West)" tvg-id="1082" tvg-logo="https://logo.m3uassets.com/tvlandwest.png" group-title="CA",US: TV Land (West)
-http://169.150.219.151:12151/stream/a5735d90e128d8465b6e96b810975f71
-#EXTINF:0 channelID="x-ID.83" tvg-chno="1083" tvg-name="US: LAFF TV" tvg-id="1083" tvg-logo="https://logo.m3uassets.com/lafftv.png" group-title="CA",US: LAFF TV
-http://169.150.219.151:12151/stream/c98ed56a474c181544af8550b1bc5e76
-#EXTINF:0 channelID="x-ID.84" tvg-chno="1084" tvg-name="US: AXS TV" tvg-id="1084" tvg-logo="https://logo.m3uassets.com/axstv.png" group-title="CA",US: AXS TV
-http://169.150.219.151:12151/stream/a651e9676c0de2e24c0502c02029b667
-#EXTINF:0 channelID="x-ID.85" tvg-chno="1085" tvg-name="US: REVOLT" tvg-id="1085" tvg-logo="https://logo.m3uassets.com/revolt.png" group-title="CA",US: REVOLT
-http://169.150.219.151:12151/stream/9d9d59914ff18c9e0d3741f2351dcbb4
-#EXTINF:0 channelID="x-ID.87" tvg-chno="1087" tvg-name="US: Logo" tvg-id="1087" tvg-logo="https://logo.m3uassets.com/logo.png" group-title="CA",US: Logo
-http://169.150.219.151:12151/stream/fea4e75c3450e542e9c192d0d3322671
-#EXTINF:0 channelID="x-ID.88" tvg-chno="1088" tvg-name="US: Cowboy Channel" tvg-id="1088" tvg-logo="https://logo.m3uassets.com/thecowboychannel.png" group-title="CA",US: Cowboy Channel
-http://169.150.219.151:12151/stream/a1f3a3f0bc7a6f16a1d0af0a2789e406
-#EXTINF:0 channelID="x-ID.89" tvg-chno="1089" tvg-name="US: MTV Classic" tvg-id="1089" tvg-logo="https://logo.m3uassets.com/tvclassics.png" group-title="CA",US: MTV Classic
-http://169.150.219.151:12151/stream/97a66fdceb0eb0f61db5bd4cf086f03c
-#EXTINF:0 channelID="x-ID.92" tvg-chno="1092" tvg-name="US: Discovery Family" tvg-id="1092" tvg-logo="https://logo.iptveditor.com/discoveryfamily.png" group-title="CA",US: Discovery Family
-http://169.150.219.151:12151/stream/197bdaa134736be808885541dfc6280a
-#EXTINF:0 channelID="x-ID.93" tvg-chno="1093" tvg-name="US: AWE" tvg-id="1093" tvg-logo="https://logo.m3uassets.com/awe.png" group-title="CA",US: AWE
-http://169.150.219.151:12151/stream/6028578452f7876f309c1e6399b553f4
-#EXTINF:0 channelID="x-ID.95" tvg-chno="1095" tvg-name="US: Outdoor TV" tvg-id="1095" tvg-logo="https://logo.m3uassets.com/outdoorchannel.png" group-title="CA",US: Outdoor TV
-http://169.150.219.151:12151/stream/9b44139f0f984d2de99e845879af77a7
-#EXTINF:0 channelID="x-ID.96" tvg-chno="1096" tvg-name="US: Teen Nick" tvg-id="1096" tvg-logo="https://logo.m3uassets.com/teennick.png" group-title="CA",US: Teen Nick
-http://169.150.219.151:12151/stream/63e1966662f1a0959a9910ff90bde718
-#EXTINF:0 channelID="x-ID.97" tvg-chno="1097" tvg-name="US: Dog TV" tvg-id="1097" tvg-logo="https://logo.m3uassets.com/dogtv.png" group-title="CA",US: Dog TV
-http://169.150.219.151:12151/stream/b18a9e8ae9ca27b8cb850d50f8b5d9ff
-#EXTINF:0 channelID="x-ID.98" tvg-chno="1098" tvg-name="US: QVC" tvg-id="1098" tvg-logo="https://logo.iptveditor.com/qvc.png" group-title="CA",US: QVC
-http://169.150.219.151:12151/stream/81fd192fe1da624537c213ecf7908aec
-#EXTINF:0 channelID="x-ID.99" tvg-chno="1099" tvg-name="US: VH1 (West)" tvg-id="1099" tvg-logo="https://logo.m3uassets.com/vh1west.png" group-title="CA",US: VH1 (West)
-http://169.150.219.151:12151/stream/fb516f8f4f3a7781a4971c9ae58ebfa1
-#EXTINF:0 channelID="x-ID.100" tvg-chno="1100" tvg-name="US: Baby First" tvg-id="1100" tvg-logo="https://logo.m3uassets.com/babyfirst.png" group-title="CA",US: Baby First
-http://169.150.219.151:12151/stream/725107c5a1f1b3c2b8fa48600ad05281
-#EXTINF:0 channelID="x-ID.102" tvg-chno="1102" tvg-name="US: PBS Kids" tvg-id="1102" tvg-logo="https://logo.m3uassets.com/pbskids.png" group-title="CA",US: PBS Kids
-http://169.150.219.151:12151/stream/fedb410f7011944a647cfebcc04e6e08
-#EXTINF:0 channelID="x-ID.103" tvg-chno="1103" tvg-name="US: OVATION" tvg-id="1103" tvg-logo="https://logo.m3uassets.com/ovation.png" group-title="CA",US: OVATION
-http://169.150.219.151:12151/stream/3fcaf86733044eec2f3a271ac69b6653
-#EXTINF:0 channelID="x-ID.106" tvg-chno="1106" tvg-name="US: BET Jams" tvg-id="1106" tvg-logo="https://logo.m3uassets.com/betjams.png" group-title="CA",US: BET Jams
-http://169.150.219.151:12151/stream/a6548616d3d3169348e807c5825cd20b
-#EXTINF:0 channelID="x-ID.108" tvg-chno="1108" tvg-name="US: Baby TV" tvg-id="1108" tvg-logo="https://logo.m3uassets.com/babytv.png" group-title="CA",US: Baby TV
-http://169.150.219.151:12151/stream/800585ed0642d750ba43a5651546cb60
-#EXTINF:0 channelID="x-ID.110" tvg-chno="1110" tvg-name="US: Outside" tvg-id="1110" tvg-logo="https://logo.m3uassets.com/outsidetv.png" group-title="CA",US: Outside
-http://169.150.219.151:12151/stream/8af94e4026dbc106f4e497e6a84e7b53
-#EXTINF:0 channelID="x-ID.113" tvg-chno="1113" tvg-name="US: Aspire" tvg-id="1113" tvg-logo="https://logo.m3uassets.com/aspiretv.png" group-title="CA",US: Aspire
-http://169.150.219.151:12151/stream/7f3fbafc11809a06ed0f031a40b6c508
-#EXTINF:0 channelID="x-ID.125" tvg-chno="1125" tvg-name="US: MTV2" tvg-id="1125" tvg-logo="https://logo.m3uassets.com/mtv2.png" group-title="CA",US: MTV2
-http://169.150.219.151:12151/stream/a99a2057ac99eea6114347f2cfff4170
-#EXTINF:0 channelID="x-ID.127" tvg-chno="1127" tvg-name="US: Charge" tvg-id="1127" tvg-logo="https://logo.m3uassets.com/charge.png" group-title="CA",US: Charge
-http://169.150.219.151:12151/stream/100e5f22b370cfcd3ed27e22243ebb27
-#EXTINF:0 channelID="x-ID.128" tvg-chno="1128" tvg-name="US: Great American Country" tvg-id="1128" tvg-logo="https://logo.m3uassets.com/gacfamily.png" group-title="CA",US: Great American Country
-http://169.150.219.151:12151/stream/a7a91f765603428addef33563c710aa8
-#EXTINF:0 channelID="x-ID.129" tvg-chno="1129" tvg-name="US: FETV (Family Entertainment)" tvg-id="1129" tvg-logo="https://logo.m3uassets.com/fetv.png" group-title="CA",US: FETV (Family Entertainment)
-http://169.150.219.151:12151/stream/bb7005680b7c7eb4207794ac488633ae
-#EXTINF:0 channelID="x-ID.130" tvg-chno="1130" tvg-name="US: UP TV" tvg-id="1130" tvg-logo="https://logo.m3uassets.com/uptv.png" group-title="CA",US: UP TV
-http://169.150.219.151:12151/stream/238032b963f7273f9c13d0376b743078
-#EXTINF:0 channelID="x-ID.132" tvg-chno="1132" tvg-name="US: BET Soul" tvg-id="1132" tvg-logo="https://logo.m3uassets.com/betsoul.png" group-title="CA",US: BET Soul
-http://169.150.219.151:12151/stream/0e26f6fb953736c971d97f1c587476d9
 #EXTINF:0 channelID="x-ID.0" tvg-chno="1000" tvg-name="US: TNT" tvg-id="1000" tvg-logo="https://logo.m3uassets.com/tnt.png" group-title="CA",US: TNT
 http://169.150.219.152:12151/stream/20f98d85bf094be9cf633637e0536758
 #EXTINF:0 channelID="x-ID.1" tvg-chno="1001" tvg-name="US: HGTV" tvg-id="1001" tvg-logo="https://logo.m3uassets.com/hgtv.png" group-title="CA",US: HGTV
@@ -369,6 +185,190 @@ http://169.150.219.152:12151/stream/bb7005680b7c7eb4207794ac488633ae
 http://169.150.219.152:12151/stream/238032b963f7273f9c13d0376b743078
 #EXTINF:0 channelID="x-ID.132" tvg-chno="1132" tvg-name="US: BET Soul" tvg-id="1132" tvg-logo="https://logo.m3uassets.com/betsoul.png" group-title="CA",US: BET Soul
 http://169.150.219.152:12151/stream/0e26f6fb953736c971d97f1c587476d9
+#EXTINF:0 channelID="x-ID.0" tvg-chno="1000" tvg-name="US: TNT" tvg-id="1000" tvg-logo="https://logo.m3uassets.com/tnt.png" group-title="CA",US: TNT
+http://169.150.219.151:12151/stream/20f98d85bf094be9cf633637e0536758
+#EXTINF:0 channelID="x-ID.1" tvg-chno="1001" tvg-name="US: HGTV" tvg-id="1001" tvg-logo="https://logo.m3uassets.com/hgtv.png" group-title="CA",US: HGTV
+http://169.150.219.151:12151/stream/6992c69675256f13f8c23d378cb9e60b
+#EXTINF:0 channelID="x-ID.3" tvg-chno="1003" tvg-name="US: TBS" tvg-id="1003" tvg-logo="https://logo.m3uassets.com/tbs.png" group-title="CA",US: TBS
+http://169.150.219.151:12151/stream/ce2ab11068efdcaa495a2e552d73d843
+#EXTINF:0 channelID="x-ID.5" tvg-chno="1005" tvg-name="US: Comedy Central" tvg-id="1005" tvg-logo="https://logo.m3uassets.com/comedycentral.png" group-title="CA",US: Comedy Central
+http://169.150.219.151:12151/stream/4690402a75f724b0e52395c8ca945a5c
+#EXTINF:0 channelID="x-ID.7" tvg-chno="1007" tvg-name="US: History Channel" tvg-id="1007" tvg-logo="https://logo.iptveditor.com/historychannel.png" group-title="CA",US: History Channel
+http://169.150.219.151:12151/stream/4ca262bdd4a8881010c77b5e224fa51f
+#EXTINF:0 channelID="x-ID.10" tvg-chno="1010" tvg-name="US: Food Network" tvg-id="1010" tvg-logo="https://logo.m3uassets.com/foodnetwork.png" group-title="CA",US: Food Network
+http://169.150.219.151:12151/stream/574915302262508dd1f41c0b22d8022c
+#EXTINF:0 channelID="x-ID.11" tvg-chno="1011" tvg-name="CA: CP24 HD" tvg-id="1011" tvg-logo="https://logo.m3uassets.com/cp24.png" group-title="CA",CA: CP24 HD
+http://169.150.219.151:12151/stream/e3016b6ef0bb0afb9f7aabe2e50fc5e6
+#EXTINF:0 channelID="x-ID.12" tvg-chno="1012" tvg-name="US: TLC" tvg-id="1012" tvg-logo="https://logo.m3uassets.com/tlc.png" group-title="CA",US: TLC
+http://169.150.219.151:12151/stream/b3157e57264d4741853217a4e299483b
+#EXTINF:0 channelID="x-ID.13" tvg-chno="1013" tvg-name="US: Game Show Network" tvg-id="1013" tvg-logo="https://logo.m3uassets.com/gameshownetwork.png" group-title="CA",US: Game Show Network
+http://169.150.219.151:12151/stream/50bfe2337c03cfe1e81d3b4e021af067
+#EXTINF:0 channelID="x-ID.14" tvg-chno="1014" tvg-name="US: Hallmark Channel" tvg-id="1014" tvg-logo="https://logo.m3uassets.com/hallmark.png" group-title="CA",US: Hallmark Channel
+http://169.150.219.151:12151/stream/bfd59ca55c1ab7fae7896146c255293b
+#EXTINF:0 channelID="x-ID.15" tvg-chno="1015" tvg-name="US: Lifetime Network" tvg-id="1015" tvg-logo="https://logo.m3uassets.com/lifetimenetwork.png" group-title="CA",US: Lifetime Network
+http://169.150.219.151:12151/stream/794640cc971a2990b512cca8eda295ce
+#EXTINF:0 channelID="x-ID.16" tvg-chno="1016" tvg-name="US: Discovery ID" tvg-id="1016" tvg-logo="https://logo.iptveditor.com/investigationdiscovery.png" group-title="CA",US: Discovery ID
+http://169.150.219.151:12151/stream/7c3bf0fe0852ccfe92ecdfa977487b8a
+#EXTINF:0 channelID="x-ID.17" tvg-chno="1017" tvg-name="US: FX" tvg-id="1017" tvg-logo="https://logo.m3uassets.com/fx.png" group-title="CA",US: FX
+http://169.150.219.151:12151/stream/607c9752a9ef8b73009ff4df7d28b29d
+#EXTINF:0 channelID="x-ID.18" tvg-chno="1018" tvg-name="US: REELZ" tvg-id="1018" tvg-logo="https://logo.m3uassets.com/reelzchannel.png" group-title="CA",US: REELZ
+http://169.150.219.151:12151/stream/8acdb1ed6125794f0f1cfca1bfd04a7e
+#EXTINF:0 channelID="x-ID.20" tvg-chno="1020" tvg-name="US: Discovery" tvg-id="1020" tvg-logo="https://logo.m3uassets.com/discoverychannel.png" group-title="CA",US: Discovery
+http://169.150.219.151:12151/stream/2c4f22c120ce7adf24fd5be1568dacb2
+#EXTINF:0 channelID="x-ID.21" tvg-chno="1021" tvg-name="US: AMC" tvg-id="1021" tvg-logo="https://logo.m3uassets.com/amc.png" group-title="CA",US: AMC
+http://169.150.219.151:12151/stream/b9d97241345bb7bc55400839be28dfee
+#EXTINF:0 channelID="x-ID.22" tvg-chno="1022" tvg-name="US: FXX" tvg-id="1022" tvg-logo="https://logo.m3uassets.com/fxx.png" group-title="CA",US: FXX
+http://169.150.219.151:12151/stream/f6eff7a048fdaa5564e157c8b0c97374
+#EXTINF:0 channelID="x-ID.23" tvg-chno="1023" tvg-name="US: Paramount Network" tvg-id="1023" tvg-logo="https://logo.m3uassets.com/paramountnetwork.png" group-title="CA",US: Paramount Network
+http://169.150.219.151:12151/stream/acf973b2d66f09fa111a19b89a4c57b7
+#EXTINF:0 channelID="x-ID.25" tvg-chno="1025" tvg-name="US: BET" tvg-id="1025" tvg-logo="https://logo.m3uassets.com/bet.png" group-title="CA",US: BET
+http://169.150.219.151:12151/stream/b93e5404f65a7e662f3c80996c90b0dc
+#EXTINF:0 channelID="x-ID.26" tvg-chno="1026" tvg-name="US: Bravo" tvg-id="1026" tvg-logo="https://logo.m3uassets.com/bravo.png" group-title="CA",US: Bravo
+http://169.150.219.151:12151/stream/1cbf60b0a6b5219e20baa454ad12efa5
+#EXTINF:0 channelID="x-ID.28" tvg-chno="1028" tvg-name="US: MTV" tvg-id="1028" tvg-logo="https://logo.m3uassets.com/mtv.png" group-title="CA",US: MTV
+http://169.150.219.151:12151/stream/001464e550e5eb57398eca06efaa1445
+#EXTINF:0 channelID="x-ID.29" tvg-chno="1029" tvg-name="US: iON TV" tvg-id="1029" tvg-logo="https://logo.m3uassets.com/ion.png" group-title="CA",US: iON TV
+http://169.150.219.151:12151/stream/5e7a6a04905a27c1a9b4341e774a6bb7
+#EXTINF:0 channelID="x-ID.30" tvg-chno="1030" tvg-name="US: Bounce TV" tvg-id="1030" tvg-logo="https://logo.m3uassets.com/bouncetv.png" group-title="CA",US: Bounce TV
+http://169.150.219.151:12151/stream/fc6dd4ffd03b6b754b508d41e1d9eb5f
+#EXTINF:0 channelID="x-ID.32" tvg-chno="1032" tvg-name="US: Cartoon Network" tvg-id="1032" tvg-logo="https://logo.m3uassets.com/cartoonnetwork.png" group-title="CA",US: Cartoon Network
+http://169.150.219.151:12151/stream/e06867c689d6844cca7ca249ebaf8fda
+#EXTINF:0 channelID="x-ID.34" tvg-chno="1034" tvg-name="CA: CBC News" tvg-id="1034" tvg-logo="https://logo.m3uassets.com/bbcnews.png" group-title="CA",CA: CBC News
+http://169.150.219.151:12151/stream/b320531f844deb519952196dfa669c43
+#EXTINF:0 channelID="x-ID.36" tvg-chno="1036" tvg-name="US: Freeform" tvg-id="1036" tvg-logo="https://logo.m3uassets.com/freeform.png" group-title="CA",US: Freeform
+http://169.150.219.151:12151/stream/3dbdb4dfccbda76c218bd87360ecd304
+#EXTINF:0 channelID="x-ID.37" tvg-chno="1037" tvg-name="US: TV ONE" tvg-id="1037" tvg-logo="https://logo.m3uassets.com/tvone.png" group-title="CA",US: TV ONE
+http://169.150.219.151:12151/stream/92be679659b65893fd739a622421304d
+#EXTINF:0 channelID="x-ID.38" tvg-chno="1038" tvg-name="US: GRIT" tvg-id="1038" tvg-logo="https://logo.m3uassets.com/grit.png" group-title="CA",US: GRIT
+http://169.150.219.151:12151/stream/83dd81f12da339770324dae69c5b53f8
+#EXTINF:0 channelID="x-ID.40" tvg-chno="1040" tvg-name="US: INSP TV" tvg-id="1040" tvg-logo="https://logo.m3uassets.com/insp.png" group-title="CA",US: INSP TV
+http://169.150.219.151:12151/stream/8e8c6e5a74c273cde8747da9a582e773
+#EXTINF:0 channelID="x-ID.41" tvg-chno="1041" tvg-name="US: BET Her" tvg-id="1041" tvg-logo="https://logo.m3uassets.com/bether.png" group-title="CA",US: BET Her
+http://169.150.219.151:12151/stream/93d08b90e4892fa31f0e88d10823bf28
+#EXTINF:0 channelID="x-ID.42" tvg-chno="1042" tvg-name="US: SYFY" tvg-id="1042" tvg-logo="https://logo.iptveditor.com/syfy.png" group-title="CA",US: SYFY
+http://169.150.219.151:12151/stream/2fca5e6106b143278de4c399ce13cf4c
+#EXTINF:0 channelID="x-ID.43" tvg-chno="1043" tvg-name="US: Magnolia Network" tvg-id="1043" tvg-logo="https://logo.m3uassets.com/magnolianetwork.png" group-title="CA",US: Magnolia Network
+http://169.150.219.151:12151/stream/dfa24942460908005e63f54e21ac52ea
+#EXTINF:0 channelID="x-ID.44" tvg-chno="1044" tvg-name="US: ME TV" tvg-id="1044" tvg-logo="https://logo.m3uassets.com/metv.png" group-title="CA",US: ME TV
+http://169.150.219.151:12151/stream/a438285ad453a303792021d396ec3549
+#EXTINF:0 channelID="x-ID.45" tvg-chno="1045" tvg-name="US: Cooking Channel" tvg-id="1045" tvg-logo="https://logo.iptveditor.com/cookingchannel.png" group-title="CA",US: Cooking Channel
+http://169.150.219.151:12151/stream/7d4abc01d17aeead411e573e9a99984b
+#EXTINF:0 channelID="x-ID.46" tvg-chno="1046" tvg-name="US: Disney Junior" tvg-id="1046" tvg-logo="https://logo.iptveditor.com/disneyjunior.png" group-title="CA",US: Disney Junior
+http://169.150.219.151:12151/stream/aa977197692a5e76793b10189336fa69
+#EXTINF:0 channelID="x-ID.47" tvg-chno="1047" tvg-name="US: VH1" tvg-id="1047" tvg-logo="https://logo.m3uassets.com/vh1.png" group-title="CA",US: VH1
+http://169.150.219.151:12151/stream/10846bbd2447535bd30673ab382bb665
+#EXTINF:0 channelID="x-ID.48" tvg-chno="1048" tvg-name="US: Nicktoons" tvg-id="1048" tvg-logo="https://logo.m3uassets.com/nicktoons.png" group-title="CA",US: Nicktoons
+http://169.150.219.151:12151/stream/1faff1a1306aaee490d44e145e1c3a9a
+#EXTINF:0 channelID="x-ID.50" tvg-chno="1050" tvg-name="US: TruTV" tvg-id="1050" tvg-logo="https://logo.m3uassets.com/trutv.png" group-title="CA",US: TruTV
+http://169.150.219.151:12151/stream/040bc2e9cedd2e287b4041796e5faf57
+#EXTINF:0 channelID="x-ID.51" tvg-chno="1051" tvg-name="US: Nickelodeon" tvg-id="1051" tvg-logo="https://logo.m3uassets.com/nickelodeon.png" group-title="CA",US: Nickelodeon
+http://169.150.219.151:12151/stream/1e0dba26e1289d9e349e4a1fa14a6675
+#EXTINF:0 channelID="x-ID.52" tvg-chno="1052" tvg-name="US: Discovery Science" tvg-id="1052" tvg-logo="https://logo.m3uassets.com/discoveryscience.png" group-title="CA",US: Discovery Science
+http://169.150.219.151:12151/stream/75203fd739d1ec361593194b54a47db3
+#EXTINF:0 channelID="x-ID.53" tvg-chno="1053" tvg-name="US: Travel Channel" tvg-id="1053" tvg-logo="https://logo.m3uassets.com/bbctravel.png" group-title="CA",US: Travel Channel
+http://169.150.219.151:12151/stream/19580360f62bb94340dc66f8555c0bc9
+#EXTINF:0 channelID="x-ID.54" tvg-chno="1054" tvg-name="US: Animal Planet" tvg-id="1054" tvg-logo="https://logo.m3uassets.com/animalplanet.png" group-title="CA",US: Animal Planet
+http://169.150.219.151:12151/stream/03da261853ed1a45d1e5040fd265003f
+#EXTINF:0 channelID="x-ID.55" tvg-chno="1055" tvg-name="CA: CTV News" tvg-id="1055" tvg-logo="https://logo.iptveditor.com/ctvnews.png" group-title="CA",CA: CTV News
+http://169.150.219.151:12151/stream/66501493d0b25664168801af54592d80
+#EXTINF:0 channelID="x-ID.56" tvg-chno="1056" tvg-name="US: OWN" tvg-id="1056" tvg-logo="https://logo.m3uassets.com/oprahwinfreynetwork.png" group-title="CA",US: OWN
+http://169.150.219.151:12151/stream/cfb6fd8eca42582ee9d4ea21a02b0182
+#EXTINF:0 channelID="x-ID.58" tvg-chno="1058" tvg-name="US: Adult Swim" tvg-id="1058" tvg-logo="https://logo.m3uassets.com/adultswim.png" group-title="CA",US: Adult Swim
+http://169.150.219.151:12151/stream/96441ff43ba822b05fbf15577c153f01
+#EXTINF:0 channelID="x-ID.59" tvg-chno="1059" tvg-name="US: Destination America" tvg-id="1059" tvg-logo="https://logo.m3uassets.com/destinationamerica.png" group-title="CA",US: Destination America
+http://169.150.219.151:12151/stream/f71f0bb4272cff4454c000960fc6bb35
+#EXTINF:0 channelID="x-ID.60" tvg-chno="1060" tvg-name="US: Nick Jr" tvg-id="1060" tvg-logo="https://logo.m3uassets.com/nickjr.png" group-title="CA",US: Nick Jr
+http://169.150.219.151:12151/stream/10487fe823e5c780b617fa5501f0aeba
+#EXTINF:0 channelID="x-ID.61" tvg-chno="1061" tvg-name="US: Smithsonian Channel" tvg-id="1061" tvg-logo="https://logo.m3uassets.com/smithsonianchannel.png" group-title="CA",US: Smithsonian Channel
+http://169.150.219.151:12151/stream/0b27c035243744a4a242cd268e75debd
+#EXTINF:0 channelID="x-ID.62" tvg-chno="1062" tvg-name="US: CMT" tvg-id="1062" tvg-logo="https://logo.m3uassets.com/cmt.png" group-title="CA",US: CMT
+http://169.150.219.151:12151/stream/e3ca455b770a011d8fb62aae5f987b03
+#EXTINF:0 channelID="x-ID.63" tvg-chno="1063" tvg-name="US: Boomerang" tvg-id="1063" tvg-logo="https://logo.m3uassets.com/boomerang.png" group-title="CA",US: Boomerang
+http://169.150.219.151:12151/stream/b21b9192c44904c4c289b8ea46ad7de2
+#EXTINF:0 channelID="x-ID.64" tvg-chno="1064" tvg-name="US: WE TV" tvg-id="1064" tvg-logo="https://logo.m3uassets.com/wetv.png" group-title="CA",US: WE TV
+http://169.150.219.151:12151/stream/0cdf75b047a8b7d09714f3ab6fac8084
+#EXTINF:0 channelID="x-ID.65" tvg-chno="1065" tvg-name="US: E! Entertainment" tvg-id="1065" tvg-logo="https://logo.m3uassets.com/eentertainment.png" group-title="CA",US: E! Entertainment
+http://169.150.219.151:12151/stream/e8cf39aa31acc8efba04abde95880c3e
+#EXTINF:0 channelID="x-ID.66" tvg-chno="1066" tvg-name="US: Hallmark Family" tvg-id="1066" tvg-logo="https://logo.m3uassets.com/hallmarkfamily.png" group-title="CA",US: Hallmark Family
+http://169.150.219.151:12151/stream/c026d3c8ee44180e7a2a4925d5e28eff
+#EXTINF:0 channelID="x-ID.67" tvg-chno="1067" tvg-name="US: AHC" tvg-id="1067" tvg-logo="https://logo.m3uassets.com/americanheroeschannel.png" group-title="CA",US: AHC
+http://169.150.219.151:12151/stream/1860a7d43a93d5ea6c48bf667c836627
+#EXTINF:0 channelID="x-ID.69" tvg-chno="1069" tvg-name="US: National Geographic Wild" tvg-id="1069" tvg-logo="https://logo.m3uassets.com/natgeowild.png" group-title="CA",US: National Geographic Wild
+http://169.150.219.151:12151/stream/c65076a198f4ebb9318d91deccf72b30
+#EXTINF:0 channelID="x-ID.70" tvg-chno="1070" tvg-name="US: FYI Network" tvg-id="1070" tvg-logo="https://logo.iptveditor.com/fyi.png" group-title="CA",US: FYI Network
+http://169.150.219.151:12151/stream/0557c1774250c3b999677c9738cf1e90
+#EXTINF:0 channelID="x-ID.71" tvg-chno="1071" tvg-name="US: BBC America" tvg-id="1071" tvg-logo="https://logo.m3uassets.com/bbcamerica.png" group-title="CA",US: BBC America
+http://169.150.219.151:12151/stream/9557ed80348dc6ecf0e1c31674da2f78
+#EXTINF:0 channelID="x-ID.73" tvg-chno="1073" tvg-name="US: Discovery Life" tvg-id="1073" tvg-logo="https://logo.m3uassets.com/discovery.png" group-title="CA",US: Discovery Life
+http://169.150.219.151:12151/stream/fba87f8d3661b8406198405b5588c0dc
+#EXTINF:0 channelID="x-ID.74" tvg-chno="1074" tvg-name="US: BUZZR" tvg-id="1074" tvg-logo="https://logo.m3uassets.com/buzzer.png" group-title="CA",US: BUZZR
+http://169.150.219.151:12151/stream/1dfd28b29aa9a0797d932d054c28621b
+#EXTINF:0 channelID="x-ID.75" tvg-chno="1075" tvg-name="US: COMET" tvg-id="1075" tvg-logo="https://logo.m3uassets.com/comet.png" group-title="CA",US: COMET
+http://169.150.219.151:12151/stream/d56337acb0be5c8241e164e7bbd563ed
+#EXTINF:0 channelID="x-ID.76" tvg-chno="1076" tvg-name="US: COZI" tvg-id="1076" tvg-logo="https://logo.m3uassets.com/cozitv.png" group-title="CA",US: COZI
+http://169.150.219.151:12151/stream/fb12029eb0d8354d955a0d1101c79630
+#EXTINF:0 channelID="x-ID.77" tvg-chno="1077" tvg-name="US: Disney XD" tvg-id="1077" tvg-logo="https://logo.iptveditor.com/disneyxd.png" group-title="CA",US: Disney XD
+http://169.150.219.151:12151/stream/e8047e4d8849cf9e7ca09224dda8540d
+#EXTINF:0 channelID="x-ID.78" tvg-chno="1078" tvg-name="US: Viceland" tvg-id="1078" tvg-logo="https://logo.m3uassets.com/vice.png" group-title="CA",US: Viceland
+http://169.150.219.151:12151/stream/c36582f8ebd2305eddca72a45c2f260c
+#EXTINF:0 channelID="x-ID.79" tvg-chno="1079" tvg-name="US: Cleo TV" tvg-id="1079" tvg-logo="https://logo.m3uassets.com/leo.png" group-title="CA",US: Cleo TV
+http://169.150.219.151:12151/stream/243bfdeaf18434edb32f9f916ca1e36c
+#EXTINF:0 channelID="x-ID.80" tvg-chno="1080" tvg-name="US: Disney Channel" tvg-id="1080" tvg-logo="https://logo.m3uassets.com/disneychannel.png" group-title="CA",US: Disney Channel
+http://169.150.219.151:12151/stream/52ceffd0f7fc18382e591e2d4b40f400
+#EXTINF:0 channelID="x-ID.82" tvg-chno="1082" tvg-name="US: TV Land (West)" tvg-id="1082" tvg-logo="https://logo.m3uassets.com/tvlandwest.png" group-title="CA",US: TV Land (West)
+http://169.150.219.151:12151/stream/a5735d90e128d8465b6e96b810975f71
+#EXTINF:0 channelID="x-ID.83" tvg-chno="1083" tvg-name="US: LAFF TV" tvg-id="1083" tvg-logo="https://logo.m3uassets.com/lafftv.png" group-title="CA",US: LAFF TV
+http://169.150.219.151:12151/stream/c98ed56a474c181544af8550b1bc5e76
+#EXTINF:0 channelID="x-ID.84" tvg-chno="1084" tvg-name="US: AXS TV" tvg-id="1084" tvg-logo="https://logo.m3uassets.com/axstv.png" group-title="CA",US: AXS TV
+http://169.150.219.151:12151/stream/a651e9676c0de2e24c0502c02029b667
+#EXTINF:0 channelID="x-ID.85" tvg-chno="1085" tvg-name="US: REVOLT" tvg-id="1085" tvg-logo="https://logo.m3uassets.com/revolt.png" group-title="CA",US: REVOLT
+http://169.150.219.151:12151/stream/9d9d59914ff18c9e0d3741f2351dcbb4
+#EXTINF:0 channelID="x-ID.87" tvg-chno="1087" tvg-name="US: Logo" tvg-id="1087" tvg-logo="https://logo.m3uassets.com/logo.png" group-title="CA",US: Logo
+http://169.150.219.151:12151/stream/fea4e75c3450e542e9c192d0d3322671
+#EXTINF:0 channelID="x-ID.88" tvg-chno="1088" tvg-name="US: Cowboy Channel" tvg-id="1088" tvg-logo="https://logo.m3uassets.com/thecowboychannel.png" group-title="CA",US: Cowboy Channel
+http://169.150.219.151:12151/stream/a1f3a3f0bc7a6f16a1d0af0a2789e406
+#EXTINF:0 channelID="x-ID.89" tvg-chno="1089" tvg-name="US: MTV Classic" tvg-id="1089" tvg-logo="https://logo.m3uassets.com/tvclassics.png" group-title="CA",US: MTV Classic
+http://169.150.219.151:12151/stream/97a66fdceb0eb0f61db5bd4cf086f03c
+#EXTINF:0 channelID="x-ID.92" tvg-chno="1092" tvg-name="US: Discovery Family" tvg-id="1092" tvg-logo="https://logo.iptveditor.com/discoveryfamily.png" group-title="CA",US: Discovery Family
+http://169.150.219.151:12151/stream/197bdaa134736be808885541dfc6280a
+#EXTINF:0 channelID="x-ID.93" tvg-chno="1093" tvg-name="US: AWE" tvg-id="1093" tvg-logo="https://logo.m3uassets.com/awe.png" group-title="CA",US: AWE
+http://169.150.219.151:12151/stream/6028578452f7876f309c1e6399b553f4
+#EXTINF:0 channelID="x-ID.95" tvg-chno="1095" tvg-name="US: Outdoor TV" tvg-id="1095" tvg-logo="https://logo.m3uassets.com/outdoorchannel.png" group-title="CA",US: Outdoor TV
+http://169.150.219.151:12151/stream/9b44139f0f984d2de99e845879af77a7
+#EXTINF:0 channelID="x-ID.96" tvg-chno="1096" tvg-name="US: Teen Nick" tvg-id="1096" tvg-logo="https://logo.m3uassets.com/teennick.png" group-title="CA",US: Teen Nick
+http://169.150.219.151:12151/stream/63e1966662f1a0959a9910ff90bde718
+#EXTINF:0 channelID="x-ID.97" tvg-chno="1097" tvg-name="US: Dog TV" tvg-id="1097" tvg-logo="https://logo.m3uassets.com/dogtv.png" group-title="CA",US: Dog TV
+http://169.150.219.151:12151/stream/b18a9e8ae9ca27b8cb850d50f8b5d9ff
+#EXTINF:0 channelID="x-ID.98" tvg-chno="1098" tvg-name="US: QVC" tvg-id="1098" tvg-logo="https://logo.iptveditor.com/qvc.png" group-title="CA",US: QVC
+http://169.150.219.151:12151/stream/81fd192fe1da624537c213ecf7908aec
+#EXTINF:0 channelID="x-ID.99" tvg-chno="1099" tvg-name="US: VH1 (West)" tvg-id="1099" tvg-logo="https://logo.m3uassets.com/vh1west.png" group-title="CA",US: VH1 (West)
+http://169.150.219.151:12151/stream/fb516f8f4f3a7781a4971c9ae58ebfa1
+#EXTINF:0 channelID="x-ID.100" tvg-chno="1100" tvg-name="US: Baby First" tvg-id="1100" tvg-logo="https://logo.m3uassets.com/babyfirst.png" group-title="CA",US: Baby First
+http://169.150.219.151:12151/stream/725107c5a1f1b3c2b8fa48600ad05281
+#EXTINF:0 channelID="x-ID.102" tvg-chno="1102" tvg-name="US: PBS Kids" tvg-id="1102" tvg-logo="https://logo.m3uassets.com/pbskids.png" group-title="CA",US: PBS Kids
+http://169.150.219.151:12151/stream/fedb410f7011944a647cfebcc04e6e08
+#EXTINF:0 channelID="x-ID.103" tvg-chno="1103" tvg-name="US: OVATION" tvg-id="1103" tvg-logo="https://logo.m3uassets.com/ovation.png" group-title="CA",US: OVATION
+http://169.150.219.151:12151/stream/3fcaf86733044eec2f3a271ac69b6653
+#EXTINF:0 channelID="x-ID.106" tvg-chno="1106" tvg-name="US: BET Jams" tvg-id="1106" tvg-logo="https://logo.m3uassets.com/betjams.png" group-title="CA",US: BET Jams
+http://169.150.219.151:12151/stream/a6548616d3d3169348e807c5825cd20b
+#EXTINF:0 channelID="x-ID.108" tvg-chno="1108" tvg-name="US: Baby TV" tvg-id="1108" tvg-logo="https://logo.m3uassets.com/babytv.png" group-title="CA",US: Baby TV
+http://169.150.219.151:12151/stream/800585ed0642d750ba43a5651546cb60
+#EXTINF:0 channelID="x-ID.110" tvg-chno="1110" tvg-name="US: Outside" tvg-id="1110" tvg-logo="https://logo.m3uassets.com/outsidetv.png" group-title="CA",US: Outside
+http://169.150.219.151:12151/stream/8af94e4026dbc106f4e497e6a84e7b53
+#EXTINF:0 channelID="x-ID.113" tvg-chno="1113" tvg-name="US: Aspire" tvg-id="1113" tvg-logo="https://logo.m3uassets.com/aspiretv.png" group-title="CA",US: Aspire
+http://169.150.219.151:12151/stream/7f3fbafc11809a06ed0f031a40b6c508
+#EXTINF:0 channelID="x-ID.125" tvg-chno="1125" tvg-name="US: MTV2" tvg-id="1125" tvg-logo="https://logo.m3uassets.com/mtv2.png" group-title="CA",US: MTV2
+http://169.150.219.151:12151/stream/a99a2057ac99eea6114347f2cfff4170
+#EXTINF:0 channelID="x-ID.127" tvg-chno="1127" tvg-name="US: Charge" tvg-id="1127" tvg-logo="https://logo.m3uassets.com/charge.png" group-title="CA",US: Charge
+http://169.150.219.151:12151/stream/100e5f22b370cfcd3ed27e22243ebb27
+#EXTINF:0 channelID="x-ID.128" tvg-chno="1128" tvg-name="US: Great American Country" tvg-id="1128" tvg-logo="https://logo.m3uassets.com/gacfamily.png" group-title="CA",US: Great American Country
+http://169.150.219.151:12151/stream/a7a91f765603428addef33563c710aa8
+#EXTINF:0 channelID="x-ID.129" tvg-chno="1129" tvg-name="US: FETV (Family Entertainment)" tvg-id="1129" tvg-logo="https://logo.m3uassets.com/fetv.png" group-title="CA",US: FETV (Family Entertainment)
+http://169.150.219.151:12151/stream/bb7005680b7c7eb4207794ac488633ae
+#EXTINF:0 channelID="x-ID.130" tvg-chno="1130" tvg-name="US: UP TV" tvg-id="1130" tvg-logo="https://logo.m3uassets.com/uptv.png" group-title="CA",US: UP TV
+http://169.150.219.151:12151/stream/238032b963f7273f9c13d0376b743078
+#EXTINF:0 channelID="x-ID.132" tvg-chno="1132" tvg-name="US: BET Soul" tvg-id="1132" tvg-logo="https://logo.m3uassets.com/betsoul.png" group-title="CA",US: BET Soul
+http://169.150.219.151:12151/stream/0e26f6fb953736c971d97f1c587476d9
 #EXTINF:0 channelID="x-ID.0" tvg-chno="1000" tvg-name="A&E (ESP)" tvg-id="1000" tvg-logo="http://moretv.info/c/4ad6cefbd8cf5b84fc77ec63d6995eb0.jpg" group-title="CA",A&E (ESP)
 http://144.217.68.109:8181/stream/3f6300828a75b26ea1359b74ea2f6ebc
 #EXTINF:0 channelID="x-ID.2" tvg-chno="1002" tvg-name="MX | DISTRITO COMEDIA" tvg-id="1002" tvg-logo="http://static.my.epgtv.net/icons/distritocomedia.mx.png" group-title="CA",MX | DISTRITO COMEDIA
@@ -2946,47 +2946,53 @@ http://47.93.47.174:443/stream/81128468d925b8c43ea1c708323e7c18
 #EXTINF:0 channelID="x-ID.215" tvg-chno="1215" tvg-name="哈哈炫动" tvg-id="1215" tvg-logo="https://epg.v1.mk/logo/哈哈炫动.png" group-title="CN",哈哈炫动
 http://47.93.47.174:443/stream/3ff91a07c91553971879799c982b03eb
 #EXTINF:0 channelID="x-ID.216" tvg-chno="1216" tvg-name="周星驰" tvg-id="1216" tvg-logo="" group-title="CN",周星驰
-http://47.93.47.174:443/stream/40033d5431f2b917ada93265f8e570f8
+http://47.93.47.174:443/stream/6e9ae90de962cfb74870b45a5f5a5745
 #EXTINF:0 channelID="x-ID.217" tvg-chno="1217" tvg-name="林正英" tvg-id="1217" tvg-logo="" group-title="CN",林正英
-http://47.93.47.174:443/stream/86256b021de3278d30ef9c54cf4c8cc0
+http://47.93.47.174:443/stream/76eda593d022fb7d2bf91932d5145650
 #EXTINF:0 channelID="x-ID.218" tvg-chno="1218" tvg-name="成龙" tvg-id="1218" tvg-logo="" group-title="CN",成龙
-http://47.93.47.174:443/stream/dd490291d3bc8e4231259f82f1442fcb
+http://47.93.47.174:443/stream/acde88fd00b430da85e4b95d31fc19e3
 #EXTINF:0 channelID="x-ID.219" tvg-chno="1219" tvg-name="沈腾" tvg-id="1219" tvg-logo="" group-title="CN",沈腾
-http://47.93.47.174:443/stream/ae2ba0952f1aae3f611746962fc45c61
+http://47.93.47.174:443/stream/84796bcd6e2fe2b326ddf1712947d207
 #EXTINF:0 channelID="x-ID.220" tvg-chno="1220" tvg-name="刘德华" tvg-id="1220" tvg-logo="" group-title="CN",刘德华
-http://47.93.47.174:443/stream/91704a3e198d563542099e97ae4a039b
+http://47.93.47.174:443/stream/33b842498cee7158cedee3aed546710d
 #EXTINF:0 channelID="x-ID.221" tvg-chno="1221" tvg-name="甄子丹" tvg-id="1221" tvg-logo="" group-title="CN",甄子丹
-http://47.93.47.174:443/stream/19ced91e071663c3daefe1a021e2f5c5
+http://47.93.47.174:443/stream/7661bc833c78db6fef01f34878367d34
 #EXTINF:0 channelID="x-ID.222" tvg-chno="1222" tvg-name="李连杰" tvg-id="1222" tvg-logo="" group-title="CN",李连杰
-http://47.93.47.174:443/stream/8cebd1318b6960312c6850fef32081fd
+http://47.93.47.174:443/stream/f81f20d1abb2aae1158eb69f8dbb04a9
 #EXTINF:0 channelID="x-ID.223" tvg-chno="1223" tvg-name="周润发" tvg-id="1223" tvg-logo="" group-title="CN",周润发
-http://47.93.47.174:443/stream/7dd78dce4fe7854fd1ff47d7c7be6290
+http://47.93.47.174:443/stream/5b40c32a0c6a4a1618b5115aa5d328ad
 #EXTINF:0 channelID="x-ID.224" tvg-chno="1224" tvg-name="洪金宝" tvg-id="1224" tvg-logo="" group-title="CN",洪金宝
-http://47.93.47.174:443/stream/54c2e3d70fde6a1ed74bec7749beeb2e
+http://47.93.47.174:443/stream/653504d8c834be3a0fe6a3973865fbde
 #EXTINF:0 channelID="x-ID.225" tvg-chno="1225" tvg-name="许氏三杰" tvg-id="1225" tvg-logo="" group-title="CN",许氏三杰
-http://47.93.47.174:443/stream/19488a763fcc2497769131b775db5641
+http://47.93.47.174:443/stream/7279b70613caf28ff725d44f48a9de5a
 #EXTINF:0 channelID="x-ID.226" tvg-chno="1226" tvg-name="五福星" tvg-id="1226" tvg-logo="" group-title="CN",五福星
-http://47.93.47.174:443/stream/3157cdebcc52ceda860c5bb4b61934e7
+http://47.93.47.174:443/stream/9198a13e651e3f6224646812c9ae8db1
 #EXTINF:0 channelID="x-ID.227" tvg-chno="1227" tvg-name="香港贺岁片" tvg-id="1227" tvg-logo="" group-title="CN",香港贺岁片
-http://47.93.47.174:443/stream/401295846a44116ebad1c8efe39fe4d0
+http://47.93.47.174:443/stream/26f554a7460117e71a12602e3abcdb84
 #EXTINF:0 channelID="x-ID.228" tvg-chno="1228" tvg-name="王晶导演" tvg-id="1228" tvg-logo="" group-title="CN",王晶导演
-http://47.93.47.174:443/stream/8c540515e1fddbc0e51c50878100e1e1
+http://47.93.47.174:443/stream/dc880cc588698d491f22c02a8afbe8d3
 #EXTINF:0 channelID="x-ID.229" tvg-chno="1229" tvg-name="校园热血电影" tvg-id="1229" tvg-logo="" group-title="CN",校园热血电影
-http://47.93.47.174:443/stream/5edc1294d8d61b9fe16869606b0feff9
+http://47.93.47.174:443/stream/7848931c720475f2551a35558f23ea98
+#EXTINF:0 channelID="x-ID.230" tvg-chno="1230" tvg-name="贺岁大片" tvg-id="1230" tvg-logo="" group-title="CN",贺岁大片
+http://47.93.47.174:443/stream/0d1f5115abb04f401e67533a78801556
 #EXTINF:0 channelID="x-ID.231" tvg-chno="1231" tvg-name="历年贺岁档" tvg-id="1231" tvg-logo="" group-title="CN",历年贺岁档
-http://47.93.47.174:443/stream/72f68be64ea465355434f3eeddcd8b8e
+http://47.93.47.174:443/stream/d7fa377cb0ac8c3b61d0677c699da973
 #EXTINF:0 channelID="x-ID.232" tvg-chno="1232" tvg-name="情人节：港片教你追女仔" tvg-id="1232" tvg-logo="" group-title="CN",情人节：港片教你追女仔
-http://47.93.47.174:443/stream/1c13176e4597ac2a3ac213e1550bc970
+http://47.93.47.174:443/stream/f8726eb13a03381254f5990f973e95a5
 #EXTINF:0 channelID="x-ID.233" tvg-chno="1233" tvg-name="DC宇宙来" tvg-id="1233" tvg-logo="" group-title="CN",DC宇宙来
-http://47.93.47.174:443/stream/4298ed8851ca6b921e7746de487e2fd1
+http://47.93.47.174:443/stream/8eea8188843acecf3f4db1acc8501133
 #EXTINF:0 channelID="x-ID.234" tvg-chno="1234" tvg-name="金庸的武侠世界" tvg-id="1234" tvg-logo="" group-title="CN",金庸的武侠世界
-http://47.93.47.174:443/stream/6e66029512d6050fab46bb8cd2f84da9
+http://47.93.47.174:443/stream/253b0f7f770c12725d4d60b1796ba9cf
+#EXTINF:0 channelID="x-ID.235" tvg-chno="1235" tvg-name="女神系列" tvg-id="1235" tvg-logo="" group-title="CN",女神系列
+http://47.93.47.174:443/stream/62d4dffb7e23220f5a3bf95dd59f8a05
 #EXTINF:0 channelID="x-ID.236" tvg-chno="1236" tvg-name="永远的经典女神" tvg-id="1236" tvg-logo="" group-title="CN",永远的经典女神
-http://47.93.47.174:443/stream/f5b7127639cacd470c6359f104fb8ebe
+http://47.93.47.174:443/stream/e31c927d23fcffe7abd2f777d3141a60
 #EXTINF:0 channelID="x-ID.237" tvg-chno="1237" tvg-name="红楼梦1987经典版" tvg-id="1237" tvg-logo="" group-title="CN",红楼梦1987经典版
-http://47.93.47.174:443/stream/d88a4906a55ed81386ec36443028e325
+http://47.93.47.174:443/stream/85a836b058ed33ebcd7613822f4427a8
 #EXTINF:0 channelID="x-ID.238" tvg-chno="1238" tvg-name="灌篮高手" tvg-id="1238" tvg-logo="" group-title="CN",灌篮高手
-http://47.93.47.174:443/stream/e884bcc6531590493e5792973b79b5a6
+http://47.93.47.174:443/stream/369dc163337cd34ada7c4e431fea8c66
+#EXTINF:0 channelID="x-ID.239" tvg-chno="1239" tvg-name="火影忍者" tvg-id="1239" tvg-logo="" group-title="CN",火影忍者
+http://47.93.47.174:443/stream/dde5cc4f8b41b320716e8649f4e19a68
 #EXTINF:0 channelID="x-ID.240" tvg-chno="1240" tvg-name="小片片说大片" tvg-id="1240" tvg-logo="https://apic.douyucdn.cn/upload/avanew/face/201802/03/18/7040873fd91e01c09fa1706d39f314b4_big.jpg" group-title="CN",小片片说大片
 http://47.93.47.174:443/stream/701974cb58639d2c2c6feea0815014c6
 #EXTINF:0 channelID="x-ID.241" tvg-chno="1241" tvg-name="星际老男孩" tvg-id="1241" tvg-logo="https://apic.douyucdn.cn/upload/avatar_v3/202110/0a7a8221602b4285a0c16e06a8acf8fc_big.jpg" group-title="CN",星际老男孩
@@ -3009,8 +3015,6 @@ http://47.93.47.174:443/stream/2ebdbbc02c8b63b7acad1e0b952ce95c
 http://47.93.47.174:443/stream/45534c0165367f23b443a0ec76cf6223
 #EXTINF:0 channelID="x-ID.290" tvg-chno="1290" tvg-name="广东珠江" tvg-id="1290" tvg-logo="" group-title="CN",广东珠江
 http://47.93.47.174:443/stream/35bf9295a15025ed1ed92e5d475d89e6
-#EXTINF:0 channelID="x-ID.294" tvg-chno="1294" tvg-name="广州电视台综合频道" tvg-id="1294" tvg-logo="" group-title="CN",广州电视台综合频道
-http://47.93.47.174:443/stream/23fc87c1cdc71676c8fa3856eb07787d
 #EXTINF:0 channelID="x-ID.295" tvg-chno="1295" tvg-name="广州电视台影视频道" tvg-id="1295" tvg-logo="" group-title="CN",广州电视台影视频道
 http://47.93.47.174:443/stream/1ff6495c0445bb439d8a8e439386a804
 #EXTINF:0 channelID="x-ID.297" tvg-chno="1297" tvg-name="广州电视台新闻频道" tvg-id="1297" tvg-logo="" group-title="CN",广州电视台新闻频道
@@ -3019,8 +3023,6 @@ http://47.93.47.174:443/stream/61d1bce5ae5ad1d728ab44ea68f0cd1b
 http://47.93.47.174:443/stream/ed720efc8c0e70ff2f2db72d69ea51fb
 #EXTINF:0 channelID="x-ID.299" tvg-chno="1299" tvg-name="广州竞赛频道" tvg-id="1299" tvg-logo="" group-title="CN",广州竞赛频道
 http://47.93.47.174:443/stream/c830ce3fe67b527a381c3c2564983ffa
-#EXTINF:0 channelID="x-ID.300" tvg-chno="1300" tvg-name="广州电视台法治频道" tvg-id="1300" tvg-logo="" group-title="CN",广州电视台法治频道
-http://47.93.47.174:443/stream/ea518f1ab46cafc42147fa39067b071d
 #EXTINF:0 channelID="x-ID.304" tvg-chno="1304" tvg-name="三沙卫视" tvg-id="1304" tvg-logo="" group-title="CN",三沙卫视
 http://47.93.47.174:443/stream/f76856f88c559764e2f76f09909ba424
 #EXTINF:0 channelID="x-ID.305" tvg-chno="1305" tvg-name="CCTV-电视指南" tvg-id="1305" tvg-logo="" group-title="CN",CCTV-电视指南
@@ -3140,47 +3142,47 @@ http://us.199301.xyz:34400/stream/6907e11bfe19782e50febed420d51cd6
 #EXTINF:0 channelID="x-ID.517" tvg-chno="134" tvg-name=" 国学频道" tvg-id="134" tvg-logo="https://epg.199301.dpdns.org/logo/国学频道.png" group-title="CN", 国学频道
 http://us.199301.xyz:34400/stream/79231543bf3b358ed7235f5b71e952df
 #EXTINF:0 channelID="x-ID.433" tvg-chno="151" tvg-name=" 东方卫视" tvg-id="151" tvg-logo="https://epg.199301.dpdns.org/logo/东方卫视.png" group-title="CN", 东方卫视
-http://us.199301.xyz:34400/stream/83e631c6c7a061ae27d04341740f0081
+http://us.199301.xyz:34400/stream/4e9806d09f948391c470fbf4ab0227e6
 #EXTINF:0 channelID="x-ID.434" tvg-chno="152" tvg-name=" 江苏卫视" tvg-id="152" tvg-logo="https://epg.199301.dpdns.org/logo/江苏卫视.png" group-title="CN", 江苏卫视
-http://us.199301.xyz:34400/stream/52f287eb45208e25b69a06193a3f3b62
+http://us.199301.xyz:34400/stream/fa5fd1ec4eb97588a40c6f0cb54eb07f
 #EXTINF:0 channelID="x-ID.435" tvg-chno="153" tvg-name=" 广东卫视" tvg-id="153" tvg-logo="https://epg.199301.dpdns.org/logo/广东卫视.png" group-title="CN", 广东卫视
-http://us.199301.xyz:34400/stream/70cae089239e720f499c077eb5327afe
+http://us.199301.xyz:34400/stream/adb16abd3c3cc22a7a75b172b35d6167
 #EXTINF:0 channelID="x-ID.436" tvg-chno="154" tvg-name=" 北京卫视" tvg-id="154" tvg-logo="https://epg.199301.dpdns.org/logo/北京卫视.png" group-title="CN", 北京卫视
-http://us.199301.xyz:34400/stream/b6e00d7eaf4b0716321ae611524b9a31
+http://us.199301.xyz:34400/stream/bfcf74cf0f9e90fc3ecf70fc44811329
 #EXTINF:0 channelID="x-ID.437" tvg-chno="155" tvg-name=" 辽宁卫视" tvg-id="155" tvg-logo="https://epg.199301.dpdns.org/logo/辽宁卫视.png" group-title="CN", 辽宁卫视
-http://us.199301.xyz:34400/stream/af554149a05651e71785745ae21f6948
+http://us.199301.xyz:34400/stream/b7c154ef1035fd03076c3eaa7e116af5
 #EXTINF:0 channelID="x-ID.438" tvg-chno="156" tvg-name=" 河北卫视" tvg-id="156" tvg-logo="https://epg.199301.dpdns.org/logo/河北卫视.png" group-title="CN", 河北卫视
-http://us.199301.xyz:34400/stream/a5be47017ae1b03acf0fcd1743e281b2
+http://us.199301.xyz:34400/stream/3b25d5fc897dd048990cdcbff158f6fa
 #EXTINF:0 channelID="x-ID.439" tvg-chno="157" tvg-name=" 江西卫视" tvg-id="157" tvg-logo="https://epg.199301.dpdns.org/logo/江西卫视.png" group-title="CN", 江西卫视
-http://us.199301.xyz:34400/stream/f59364a368249f9ef8bc501a9123edb3
+http://us.199301.xyz:34400/stream/32c4012222ecfc5b64b0766c3e7413c9
 #EXTINF:0 channelID="x-ID.440" tvg-chno="158" tvg-name=" 河南卫视" tvg-id="158" tvg-logo="https://epg.199301.dpdns.org/logo/河南卫视.png" group-title="CN", 河南卫视
-http://us.199301.xyz:34400/stream/cd6b944951ad6a1b572d61423b742b69
+http://us.199301.xyz:34400/stream/0dde9052f163ad30e82bc88405a3c95d
 #EXTINF:0 channelID="x-ID.441" tvg-chno="159" tvg-name=" 陕西卫视" tvg-id="159" tvg-logo="https://epg.199301.dpdns.org/logo/陕西卫视.png" group-title="CN", 陕西卫视
-http://us.199301.xyz:34400/stream/564c98e215873ee8a7110d7b2a5148c7
+http://us.199301.xyz:34400/stream/0841a3af4c69459fac5453cbdedfeb2b
 #EXTINF:0 channelID="x-ID.442" tvg-chno="160" tvg-name=" 大湾区卫视" tvg-id="160" tvg-logo="https://epg.199301.dpdns.org/logo/大湾区卫视.png" group-title="CN", 大湾区卫视
-http://us.199301.xyz:34400/stream/b9f54b1e0b4505fcbaabd0f899f9088a
+http://us.199301.xyz:34400/stream/7cdf5e3c4e9318ebc83011b610eaa26a
 #EXTINF:0 channelID="x-ID.443" tvg-chno="161" tvg-name=" 湖北卫视" tvg-id="161" tvg-logo="https://epg.199301.dpdns.org/logo/湖北卫视.png" group-title="CN", 湖北卫视
-http://us.199301.xyz:34400/stream/883edb382576b6b9a366e2836ff9ffc3
+http://us.199301.xyz:34400/stream/7b18a0b5f842c8fbcb6d4d11f8f17d25
 #EXTINF:0 channelID="x-ID.444" tvg-chno="162" tvg-name=" 吉林卫视" tvg-id="162" tvg-logo="https://epg.199301.dpdns.org/logo/吉林卫视.png" group-title="CN", 吉林卫视
-http://us.199301.xyz:34400/stream/21e107572d5e02526a2005669e57f1ef
+http://us.199301.xyz:34400/stream/54e1ea3a0b067fd6b401df8d7a1b8b00
 #EXTINF:0 channelID="x-ID.445" tvg-chno="163" tvg-name=" 青海卫视" tvg-id="163" tvg-logo="https://epg.199301.dpdns.org/logo/青海卫视.png" group-title="CN", 青海卫视
-http://us.199301.xyz:34400/stream/ea93206d1b93cba8ad49f71c8a6db02e
+http://us.199301.xyz:34400/stream/42ef65b5a3542ff5cae9b38ccef193c8
 #EXTINF:0 channelID="x-ID.446" tvg-chno="164" tvg-name=" 东南卫视" tvg-id="164" tvg-logo="https://epg.199301.dpdns.org/logo/东南卫视.png" group-title="CN", 东南卫视
-http://us.199301.xyz:34400/stream/a3165934ac12cbe705433f65f4fa5f3b
+http://us.199301.xyz:34400/stream/86b5bc4a1e906f6b56684cfb99a4b5e3
 #EXTINF:0 channelID="x-ID.447" tvg-chno="165" tvg-name=" 海南卫视" tvg-id="165" tvg-logo="https://epg.199301.dpdns.org/logo/海南卫视.png" group-title="CN", 海南卫视
-http://us.199301.xyz:34400/stream/b36b74a17ad42d4b7d85f3f52fdb8517
+http://us.199301.xyz:34400/stream/538d98cad638eab7480b9a134094cc4c
 #EXTINF:0 channelID="x-ID.448" tvg-chno="166" tvg-name=" 海峡卫视" tvg-id="166" tvg-logo="https://epg.199301.dpdns.org/logo/海峡卫视.png" group-title="CN", 海峡卫视
-http://us.199301.xyz:34400/stream/2a7ceb2640d4ba91b6f6637e1ab0cc5b
+http://us.199301.xyz:34400/stream/e8d2e2fac97443e5ba4602438151e358
 #EXTINF:0 channelID="x-ID.449" tvg-chno="167" tvg-name=" 农林卫视" tvg-id="167" tvg-logo="https://epg.199301.dpdns.org/logo/农林卫视.png" group-title="CN", 农林卫视
-http://us.199301.xyz:34400/stream/0f8c7a5d65723d4295af312a6dac99f7
+http://us.199301.xyz:34400/stream/5342d1015d1f67c942a5495b5ce3ce4e
 #EXTINF:0 channelID="x-ID.450" tvg-chno="168" tvg-name=" 兵团卫视" tvg-id="168" tvg-logo="https://epg.199301.dpdns.org/logo/兵团卫视.png" group-title="CN", 兵团卫视
-http://us.199301.xyz:34400/stream/ae211c7f4f1c7bf6a74d9d160e03e324
+http://us.199301.xyz:34400/stream/3c6f943cbd84271ff2e88b3078e0e71f
 #EXTINF:0 channelID="x-ID.451" tvg-chno="169" tvg-name=" 宁夏卫视" tvg-id="169" tvg-logo="https://epg.199301.dpdns.org/logo/宁夏卫视.png" group-title="CN", 宁夏卫视
-http://us.199301.xyz:34400/stream/6f1cc31b43742741021cb6dced182575
+http://us.199301.xyz:34400/stream/19dd7bf3453a26169a379f6e815b4eac
 #EXTINF:0 channelID="x-ID.452" tvg-chno="170" tvg-name=" 重庆卫视" tvg-id="170" tvg-logo="https://epg.199301.dpdns.org/logo/重庆卫视.png" group-title="CN", 重庆卫视
-http://us.199301.xyz:34400/stream/8a8ae801bbbe9667b9703e2d66ce737d
+http://us.199301.xyz:34400/stream/e28e387e9e94ade4d5dae0887049d4de
 #EXTINF:0 channelID="x-ID.453" tvg-chno="171" tvg-name=" 三沙卫视" tvg-id="171" tvg-logo="https://epg.199301.dpdns.org/logo/三沙卫视.png" group-title="CN", 三沙卫视
-http://us.199301.xyz:34400/stream/e5a74999922ad29f7909e10b02643d62
+http://us.199301.xyz:34400/stream/205884aa2174cc6037f9e926eb3e87f4
 #EXTINF:0 channelID="x-ID.518" tvg-chno="201" tvg-name=" CCTV1" tvg-id="201" tvg-logo="https://epg.199301.dpdns.org/logo/CCTV1.png" group-title="CN", CCTV1
 http://us.199301.xyz:34400/stream/cfe81f8b6e828659e15c53b9866b4c49
 #EXTINF:0 channelID="x-ID.519" tvg-chno="202" tvg-name=" CCTV2" tvg-id="202" tvg-logo="https://epg.199301.dpdns.org/logo/CCTV2.png" group-title="CN", CCTV2
@@ -3240,61 +3242,61 @@ http://us.199301.xyz:34400/stream/80bf97350913cb6bf09295b152ba133f
 #EXTINF:0 channelID="x-ID.546" tvg-chno="229" tvg-name=" CGTN西班牙语" tvg-id="229" tvg-logo="https://epg.199301.dpdns.org/logo/CGTN西班牙语.png" group-title="CN", CGTN西班牙语
 http://us.199301.xyz:34400/stream/dcaa3f4a1545e720ed2e551cae6bb80f
 #EXTINF:0 channelID="x-ID.454" tvg-chno="251" tvg-name=" CCTV1" tvg-id="251" tvg-logo="https://epg.199301.dpdns.org/logo/CCTV1.png" group-title="CN", CCTV1
-http://us.199301.xyz:34400/stream/b3404a0e57574d5bcf002c5776a5d632
+http://us.199301.xyz:34400/stream/2b833133f8a851ac81923953b1f8ad3d
 #EXTINF:0 channelID="x-ID.455" tvg-chno="252" tvg-name=" CCTV2" tvg-id="252" tvg-logo="https://epg.199301.dpdns.org/logo/CCTV2.png" group-title="CN", CCTV2
-http://us.199301.xyz:34400/stream/fcf39ac31655db0683d9f8dbf4bb5a7b
+http://us.199301.xyz:34400/stream/a66987a7709c61fe9f77cf757a4262a0
 #EXTINF:0 channelID="x-ID.456" tvg-chno="253" tvg-name=" CCTV3" tvg-id="253" tvg-logo="https://epg.199301.dpdns.org/logo/CCTV3.png" group-title="CN", CCTV3
-http://us.199301.xyz:34400/stream/6f2a08cc1025b6101bf39dee7a471ba6
+http://us.199301.xyz:34400/stream/1d99548cada5e0228fa37fde757c72ff
 #EXTINF:0 channelID="x-ID.457" tvg-chno="254" tvg-name=" CCTV4" tvg-id="254" tvg-logo="https://epg.199301.dpdns.org/logo/CCTV4.png" group-title="CN", CCTV4
-http://us.199301.xyz:34400/stream/2b797fe8a07b5f73cd47d9434b57518c
+http://us.199301.xyz:34400/stream/3a85a30971f81865c7c87cd720fa2c17
 #EXTINF:0 channelID="x-ID.458" tvg-chno="255" tvg-name=" CCTV5" tvg-id="255" tvg-logo="https://epg.199301.dpdns.org/logo/CCTV5.png" group-title="CN", CCTV5
-http://us.199301.xyz:34400/stream/2a6af453e2a3877d8edaa38e22617514
+http://us.199301.xyz:34400/stream/740a398d05081009baa3c5c0ee197f99
 #EXTINF:0 channelID="x-ID.459" tvg-chno="256" tvg-name=" CCTV5+" tvg-id="256" tvg-logo="https://epg.199301.dpdns.org/logo/CCTV5+.png" group-title="CN", CCTV5+
-http://us.199301.xyz:34400/stream/b74bd176b7d1b0fc9e947f7cca65fa21
+http://us.199301.xyz:34400/stream/b85997987c8dfc049ca1cdd042b523d7
 #EXTINF:0 channelID="x-ID.460" tvg-chno="257" tvg-name=" CCTV6" tvg-id="257" tvg-logo="https://epg.199301.dpdns.org/logo/CCTV6.png" group-title="CN", CCTV6
-http://us.199301.xyz:34400/stream/9d9ab2995738928871a86cd6b8e87824
+http://us.199301.xyz:34400/stream/0195d7fb4313f74529ead5992e3678ce
 #EXTINF:0 channelID="x-ID.461" tvg-chno="258" tvg-name=" CCTV7" tvg-id="258" tvg-logo="https://epg.199301.dpdns.org/logo/CCTV7.png" group-title="CN", CCTV7
-http://us.199301.xyz:34400/stream/2771767889922a15ecf2f6de69d1fad8
+http://us.199301.xyz:34400/stream/72f0cdb677b35b2bc7f886a33d57bfe5
 #EXTINF:0 channelID="x-ID.462" tvg-chno="259" tvg-name=" CCTV8" tvg-id="259" tvg-logo="https://epg.199301.dpdns.org/logo/CCTV8.png" group-title="CN", CCTV8
-http://us.199301.xyz:34400/stream/cb749ceceb427fbf8ad16201ee7ef1ea
+http://us.199301.xyz:34400/stream/9c683006679f1bef123264df4e4c8410
 #EXTINF:0 channelID="x-ID.463" tvg-chno="260" tvg-name=" CCTV9" tvg-id="260" tvg-logo="https://epg.199301.dpdns.org/logo/CCTV9.png" group-title="CN", CCTV9
-http://us.199301.xyz:34400/stream/391ae82de90a8906f11fe114e8c48c34
+http://us.199301.xyz:34400/stream/a5b979c8d6c15df0e1c7a5c5c932d52a
 #EXTINF:0 channelID="x-ID.464" tvg-chno="261" tvg-name=" CCTV10" tvg-id="261" tvg-logo="https://epg.199301.dpdns.org/logo/CCTV10.png" group-title="CN", CCTV10
-http://us.199301.xyz:34400/stream/0e7e9aa5bc01ac520565efc4adef5fd2
+http://us.199301.xyz:34400/stream/75b62a035a04adffaaeea6143f493c6d
 #EXTINF:0 channelID="x-ID.465" tvg-chno="262" tvg-name=" CCTV11" tvg-id="262" tvg-logo="https://epg.199301.dpdns.org/logo/CCTV11.png" group-title="CN", CCTV11
-http://us.199301.xyz:34400/stream/a1bb725bb62d81646f442e69612a4457
+http://us.199301.xyz:34400/stream/2a5da4c55a1756c106e4e26f66927080
 #EXTINF:0 channelID="x-ID.466" tvg-chno="263" tvg-name=" CCTV12" tvg-id="263" tvg-logo="https://epg.199301.dpdns.org/logo/CCTV12.png" group-title="CN", CCTV12
-http://us.199301.xyz:34400/stream/ea1cc0c15622ecf328388d7b7bdd1f18
+http://us.199301.xyz:34400/stream/d25c398f3ae1121e461ed29ff3f853f7
 #EXTINF:0 channelID="x-ID.467" tvg-chno="264" tvg-name=" CCTV13" tvg-id="264" tvg-logo="https://epg.199301.dpdns.org/logo/CCTV13.png" group-title="CN", CCTV13
-http://us.199301.xyz:34400/stream/950fbf81696a0581968842da11235b55
+http://us.199301.xyz:34400/stream/37f0f7e2fbd902de3805444c4a047cb3
 #EXTINF:0 channelID="x-ID.468" tvg-chno="265" tvg-name=" CCTV14" tvg-id="265" tvg-logo="https://epg.199301.dpdns.org/logo/CCTV14.png" group-title="CN", CCTV14
-http://us.199301.xyz:34400/stream/04daeb5249d387c586ca9a8bacc6456e
+http://us.199301.xyz:34400/stream/46d9489be8a800e09a160c3c07a8296b
 #EXTINF:0 channelID="x-ID.469" tvg-chno="266" tvg-name=" CCTV15" tvg-id="266" tvg-logo="https://epg.199301.dpdns.org/logo/CCTV15.png" group-title="CN", CCTV15
-http://us.199301.xyz:34400/stream/3f0ba9d7101992fa93529e75158afecd
+http://us.199301.xyz:34400/stream/686afbffa021d03b66cf6e642a2f4417
 #EXTINF:0 channelID="x-ID.470" tvg-chno="267" tvg-name=" CCTV17" tvg-id="267" tvg-logo="https://epg.199301.dpdns.org/logo/CCTV17.png" group-title="CN", CCTV17
-http://us.199301.xyz:34400/stream/f0ec7dfb48998d95adf141427aa4eea3
+http://us.199301.xyz:34400/stream/6bdd83544341eb04af7c97ac8432c69d
 #EXTINF:0 channelID="x-ID.471" tvg-chno="268" tvg-name=" CCTV4欧洲" tvg-id="268" tvg-logo="https://epg.199301.dpdns.org/logo/CCTV4欧洲.png" group-title="CN", CCTV4欧洲
-http://us.199301.xyz:34400/stream/dc8ed07e00c5d0aec927920c943d169b
+http://us.199301.xyz:34400/stream/d61cd28241292c447cfd1bc87753cf2a
 #EXTINF:0 channelID="x-ID.472" tvg-chno="269" tvg-name=" CCTV4美洲" tvg-id="269" tvg-logo="https://epg.199301.dpdns.org/logo/CCTV4美洲.png" group-title="CN", CCTV4美洲
-http://us.199301.xyz:34400/stream/7dadb8ed3be4f4332eef0d5ad2acd6e5
+http://us.199301.xyz:34400/stream/663e10c3c1ac3d0112e2baf07a03677e
 #EXTINF:0 channelID="x-ID.473" tvg-chno="270" tvg-name=" CGTN纪录" tvg-id="270" tvg-logo="https://epg.199301.dpdns.org/logo/CGTN纪录.png" group-title="CN", CGTN纪录
-http://us.199301.xyz:34400/stream/f2f5a92d22ec9218699a1a3148d0fac7
+http://us.199301.xyz:34400/stream/35c3ed7d7470ebd4f95a569abb105e1e
 #EXTINF:0 channelID="x-ID.474" tvg-chno="271" tvg-name=" CGTN阿拉伯语" tvg-id="271" tvg-logo="https://epg.199301.dpdns.org/logo/CGTN阿拉伯语.png" group-title="CN", CGTN阿拉伯语
-http://us.199301.xyz:34400/stream/0cbfa3e6a7d3dba596c97246eb368653
+http://us.199301.xyz:34400/stream/86a3fc0d1ea262ebfdcca351f27a19d5
 #EXTINF:0 channelID="x-ID.475" tvg-chno="272" tvg-name=" CGTN西班牙语" tvg-id="272" tvg-logo="https://epg.199301.dpdns.org/logo/CGTN西班牙语.png" group-title="CN", CGTN西班牙语
-http://us.199301.xyz:34400/stream/d400da8d0158725dd83f866efb06c875
+http://us.199301.xyz:34400/stream/916fffb306c4ff068af24967cf791bd7
 #EXTINF:0 channelID="x-ID.476" tvg-chno="273" tvg-name=" CGTN法语" tvg-id="273" tvg-logo="https://epg.199301.dpdns.org/logo/CGTN法语.png" group-title="CN", CGTN法语
-http://us.199301.xyz:34400/stream/67dc46e44aca74f97549b5a36e68699f
+http://us.199301.xyz:34400/stream/c5d8e01ab8c5679f011148da977e251e
 #EXTINF:0 channelID="x-ID.477" tvg-chno="274" tvg-name=" CGTN俄语" tvg-id="274" tvg-logo="https://epg.199301.dpdns.org/logo/CGTN俄语.png" group-title="CN", CGTN俄语
-http://us.199301.xyz:34400/stream/0997f2fda679adb485ab6b092a21c975
+http://us.199301.xyz:34400/stream/97758e0104b9fe664c1f508861d16582
 #EXTINF:0 channelID="x-ID.478" tvg-chno="275" tvg-name=" CCTV老故事" tvg-id="275" tvg-logo="https://epg.199301.dpdns.org/logo/CCTV老故事.png" group-title="CN", CCTV老故事
-http://us.199301.xyz:34400/stream/411d20394557c01f1dadfca4e7a150ca
+http://us.199301.xyz:34400/stream/f86a4d975edf1cce055896c8aebd41d7
 #EXTINF:0 channelID="x-ID.479" tvg-chno="276" tvg-name=" CCTV发现之旅" tvg-id="276" tvg-logo="https://epg.199301.dpdns.org/logo/CCTV发现之旅.png" group-title="CN", CCTV发现之旅
-http://us.199301.xyz:34400/stream/59006a3afb6233d86a4f45c932e7e4e8
+http://us.199301.xyz:34400/stream/1f2e1bfdfb37802ad23875ccc3fc36ab
 #EXTINF:0 channelID="x-ID.480" tvg-chno="277" tvg-name=" CCTV中学生" tvg-id="277" tvg-logo="https://epg.199301.dpdns.org/logo/CCTV中学生.png" group-title="CN", CCTV中学生
-http://us.199301.xyz:34400/stream/81b8bf5e665085378f8914738cc4f2d3
+http://us.199301.xyz:34400/stream/4dfe439b519627c411d68f1031454dec
 #EXTINF:0 channelID="x-ID.481" tvg-chno="278" tvg-name=" CGTN" tvg-id="278" tvg-logo="https://epg.199301.dpdns.org/logo/CGTN.png" group-title="CN", CGTN
-http://us.199301.xyz:34400/stream/c0f6f545f0dfe79ff2434ad49eb7c85d
+http://us.199301.xyz:34400/stream/fd2fae8200614a8353bdb057cb96209f
 #EXTINF:0 channelID="x-ID.482" tvg-chno="501" tvg-name="北京卫视" tvg-id="501" tvg-logo="https://epg.199301.dpdns.org/logo/北京卫视.png" group-title="CN",北京卫视
 http://us.199301.xyz:34400/stream/8a1bcb872a248c4c2415900dc5903370
 #EXTINF:0 channelID="x-ID.483" tvg-chno="502" tvg-name="东方卫视" tvg-id="502" tvg-logo="https://epg.199301.dpdns.org/logo/东方卫视.png" group-title="CN",东方卫视
@@ -3833,6 +3835,14 @@ http://nas.netwalksimon.top:34400/stream/eb1eac9493618daf4c3578e6303d3d27
 http://nas.netwalksimon.top:34400/stream/c5d8547b76269d178c6af0aa75c1a876
 #EXTINF:0 channelID="x-ID.55" tvg-chno="1055" tvg-name="延边卫视" tvg-id="1055" tvg-logo="https://gcore.jsdelivr.net/gh/fanmingming/live/tv/延边卫视.png" group-title="CN",延边卫视
 http://nas.netwalksimon.top:34400/stream/017a6a94c33eb4cf4efd64a2ec6f675d
+#EXTINF:0 channelID="x-ID.14" tvg-chno="1014" tvg-name="凤凰资讯" tvg-id="1014" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/凤凰资讯.png" group-title="CN",凤凰资讯
+http://canicula718.synology.me:34400/stream/401a17eec14f5f2c47ba005fbcb024e6
+#EXTINF:0 channelID="x-ID.53" tvg-chno="1053" tvg-name="CCTV-5" tvg-id="1053" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/CCTV5.png" group-title="CN",CCTV-5
+http://canicula718.synology.me:34400/stream/cd4d3a937043330bdc39a0050d1463af
+#EXTINF:0 channelID="x-ID.63" tvg-chno="1063" tvg-name="CCTV-5+" tvg-id="1063" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/CCTV5+.png" group-title="CN",CCTV-5+
+http://canicula718.synology.me:34400/stream/bda1a324300ea2ac211df8097f8eeb82
+#EXTINF:0 channelID="x-ID.84" tvg-chno="1084" tvg-name="睛彩篮球" tvg-id="1084" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/睛彩篮球.png" group-title="CN",睛彩篮球
+http://canicula718.synology.me:34400/stream/83be7f74b67ce86522ea6c68ca35a678
 #EXTINF:0 channelID="x-ID.0" tvg-chno="2" tvg-name="002: MO | St Louis | FOX KTVI" tvg-id="2" tvg-logo="https://logos.trezix.tv/united-states/us-local/fox-2-ktvi-us.png" group-title="DE",002: MO | St Louis | FOX KTVI
 http://46.4.77.157:4000/stream/1688a2f4220c0ec03b1e52f417ae4164
 #EXTINF:0 channelID="x-ID.2" tvg-chno="3" tvg-name="003: IL | Champaign | CBS WCIA" tvg-id="3" tvg-logo="http://fanc.tmsimg.com/assets/s10098_h3_aa.png" group-title="DE",003: IL | Champaign | CBS WCIA
@@ -3909,31 +3919,31 @@ http://46.4.77.157:4000/stream/2acec5dec7d7f96ad60b3fbc20137258
 http://46.4.77.157:4000/stream/573cd1aaca0eb62a8020c9cf0898a459
 #EXTINF:0 channelID="x-ID.37" tvg-chno="139" tvg-name="139: TBS (East)" tvg-id="139" tvg-logo="https://static.epg.best/us/TBS.us.png" group-title="DE",139: TBS (East)
 http://46.4.77.157:4000/stream/132071177b136ba5d3a9c0fc07bd3310
-#EXTINF:0 channelID="x-ID.95" tvg-chno="141" tvg-name="141: ESPN" tvg-id="141" tvg-logo="https://static.epg.best/allsports/ESPN.us.png" group-title="DE",141: ESPN
+#EXTINF:0 channelID="x-ID.95" tvg-chno="141" tvg-name="141: ESPN" tvg-id="141" tvg-logo="https://static.epg.best/us/ESPN.us.png" group-title="DE",141: ESPN
 http://46.4.77.157:4000/stream/96ffa6ed0025fb768ecc274e16806eba
-#EXTINF:0 channelID="x-ID.96" tvg-chno="143" tvg-name="143: ESPN2" tvg-id="143" tvg-logo="https://static.epg.best/allsports/ESPN2.us.png" group-title="DE",143: ESPN2
+#EXTINF:0 channelID="x-ID.96" tvg-chno="143" tvg-name="143: ESPN2" tvg-id="143" tvg-logo="https://static.epg.best/us/ESPN2.us.png" group-title="DE",143: ESPN2
 http://46.4.77.157:4000/stream/e59be231199458a1ddabaebdb09358d2
-#EXTINF:0 channelID="x-ID.97" tvg-chno="144" tvg-name="144: ESPNU" tvg-id="144" tvg-logo="https://static.epg.best/allsports/ESPNU.us.png" group-title="DE",144: ESPNU
+#EXTINF:0 channelID="x-ID.97" tvg-chno="144" tvg-name="144: ESPNU" tvg-id="144" tvg-logo="https://static.epg.best/us/ESPNU.us.png" group-title="DE",144: ESPNU
 http://46.4.77.157:4000/stream/3c8043dfe21468a8400549d6349e69e5
-#EXTINF:0 channelID="x-ID.98" tvg-chno="149" tvg-name="149: FOX Sports 2" tvg-id="149" tvg-logo="https://static.epg.best/allsports/FoxSports2.us.png" group-title="DE",149: FOX Sports 2
+#EXTINF:0 channelID="x-ID.98" tvg-chno="149" tvg-name="149: FOX Sports 2" tvg-id="149" tvg-logo="https://static.epg.best/us/FoxSports2.us.png" group-title="DE",149: FOX Sports 2
 http://46.4.77.157:4000/stream/9ed34f8474db797f1f1d3b5adb98f898
-#EXTINF:0 channelID="x-ID.99" tvg-chno="150" tvg-name="150: FOX Sports 1" tvg-id="150" tvg-logo="https://static.epg.best/allsports/FoxSports1.us.png" group-title="DE",150: FOX Sports 1
+#EXTINF:0 channelID="x-ID.99" tvg-chno="150" tvg-name="150: FOX Sports 1" tvg-id="150" tvg-logo="https://static.epg.best/us/FoxSports1.us.png" group-title="DE",150: FOX Sports 1
 http://46.4.77.157:4000/stream/6088acd52c3b7b806f8f4af314a0a342
 #EXTINF:0 channelID="x-ID.160" tvg-chno="151" tvg-name="151: MLB Stikezone" tvg-id="151" tvg-logo="http://fanc.tmsimg.com/assets/s75219_ll_h3_aa.png" group-title="DE",151: MLB Stikezone
 http://46.4.77.157:4000/stream/924f914d99600b53b270894361edcad5
-#EXTINF:0 channelID="x-ID.161" tvg-chno="152" tvg-name="152: MLB Network" tvg-id="152" tvg-logo="https://static.epg.best/allsports/MLBNetwork.us.png" group-title="DE",152: MLB Network
+#EXTINF:0 channelID="x-ID.161" tvg-chno="152" tvg-name="152: MLB Network" tvg-id="152" tvg-logo="https://static.epg.best/us/MLBNetwork.us.png" group-title="DE",152: MLB Network
 http://46.4.77.157:4000/stream/d3965340bc37f9f8879980d001ac0b0a
-#EXTINF:0 channelID="x-ID.100" tvg-chno="153" tvg-name="153: The Golf Channel" tvg-id="153" tvg-logo="https://static.epg.best/allsports/GolfChannel.us.png" group-title="DE",153: The Golf Channel
+#EXTINF:0 channelID="x-ID.100" tvg-chno="153" tvg-name="153: The Golf Channel" tvg-id="153" tvg-logo="https://static.epg.best/us/GolfChannel.us.png" group-title="DE",153: The Golf Channel
 http://46.4.77.157:4000/stream/4b7d69ef23c937c046d59fdf004cf22d
-#EXTINF:0 channelID="x-ID.101" tvg-chno="154" tvg-name="154: Tennis Channel" tvg-id="154" tvg-logo="https://static.epg.best/allsports/TennisChannel.us.png" group-title="DE",154: Tennis Channel
+#EXTINF:0 channelID="x-ID.101" tvg-chno="154" tvg-name="154: Tennis Channel" tvg-id="154" tvg-logo="https://static.epg.best/us/TennisChannel.us.png" group-title="DE",154: Tennis Channel
 http://46.4.77.157:4000/stream/1dc62afe5bedf726dbf1c264097a0d5c
-#EXTINF:0 channelID="x-ID.163" tvg-chno="155" tvg-name="155: NFL Redzone" tvg-id="155" tvg-logo="https://static.epg.best/allsports/NFLRedZone.us.png" group-title="DE",155: NFL Redzone
+#EXTINF:0 channelID="x-ID.163" tvg-chno="155" tvg-name="155: NFL Redzone" tvg-id="155" tvg-logo="https://static.epg.best/us/NFLRedZone.us.png" group-title="DE",155: NFL Redzone
 http://46.4.77.157:4000/stream/a68f0f2fd1c711f67e06c889b7a6b6db
-#EXTINF:0 channelID="x-ID.164" tvg-chno="156" tvg-name="156: NFL Network" tvg-id="156" tvg-logo="https://static.epg.best/allsports/NFLNetwork.us.png" group-title="DE",156: NFL Network
+#EXTINF:0 channelID="x-ID.164" tvg-chno="156" tvg-name="156: NFL Network" tvg-id="156" tvg-logo="https://static.epg.best/us/NFLNetwork.us.png" group-title="DE",156: NFL Network
 http://46.4.77.157:4000/stream/90c5b03be82be97d1f3c95f5781f8d38
-#EXTINF:0 channelID="x-ID.162" tvg-chno="157" tvg-name="157: NHL Network" tvg-id="157" tvg-logo="https://static.epg.best/allsports/NHLNetwork.us.png" group-title="DE",157: NHL Network
+#EXTINF:0 channelID="x-ID.162" tvg-chno="157" tvg-name="157: NHL Network" tvg-id="157" tvg-logo="https://static.epg.best/us/NHLNetwork.us.png" group-title="DE",157: NHL Network
 http://46.4.77.157:4000/stream/779e8ab8a7ea798bd960f48b6a3a1211
-#EXTINF:0 channelID="x-ID.102" tvg-chno="158" tvg-name="158: CBSSN" tvg-id="158" tvg-logo="https://static.epg.best/allsports/CBSSportsNetwork.us.png" group-title="DE",158: CBSSN
+#EXTINF:0 channelID="x-ID.102" tvg-chno="158" tvg-name="158: CBSSN" tvg-id="158" tvg-logo="https://static.epg.best/us/CBSSportsNetwork.us.png" group-title="DE",158: CBSSN
 http://46.4.77.157:4000/stream/b076614ddcbacde3b2c7af808ea3641e
 #EXTINF:0 channelID="x-ID.38" tvg-chno="160" tvg-name="160: MTV" tvg-id="160" tvg-logo="https://static.epg.best/us/MTV.us.png" group-title="DE",160: MTV
 http://46.4.77.157:4000/stream/58e2de5039eeb65404ec45812fc930de
@@ -4025,7 +4035,7 @@ http://46.4.77.157:4000/stream/c0c400c974ca2dc7ef751c7a35a56e27
 http://46.4.77.157:4000/stream/4ebfb0f704590dacf6d579eaa36c403e
 #EXTINF:0 channelID="x-ID.83" tvg-chno="243" tvg-name="243: Law & Crime" tvg-id="243" tvg-logo="https://static.epg.best/us/LawAndCrime.us.png" group-title="DE",243: Law & Crime
 http://46.4.77.157:4000/stream/e08ab453a1e829cf01a44f1422b1f472
-#EXTINF:0 channelID="x-ID.85" tvg-chno="246" tvg-name="246: MotorTrend" tvg-id="246" tvg-logo="https://static.epg.best/allsports/MotorTrend.us.png" group-title="DE",246: MotorTrend
+#EXTINF:0 channelID="x-ID.85" tvg-chno="246" tvg-name="246: MotorTrend" tvg-id="246" tvg-logo="https://static.epg.best/us/MotorTrend.us.png" group-title="DE",246: MotorTrend
 http://46.4.77.157:4000/stream/7deff9c5489a17db0154b007b701cf8a
 #EXTINF:0 channelID="x-ID.105" tvg-chno="248" tvg-name="248: MAV TV" tvg-id="248" tvg-logo="https://static.epg.best/us/MAVTV.us.png" group-title="DE",248: MAV TV
 http://46.4.77.157:4000/stream/bb394551152f0384fd58d1a585f7592a
@@ -4035,9 +4045,9 @@ http://46.4.77.157:4000/stream/be862fedbf034039f68d9470128a4368
 http://46.4.77.157:4000/stream/d89bd803f7c3155463d1581a062a1896
 #EXTINF:0 channelID="x-ID.88" tvg-chno="259" tvg-name="259: INSP" tvg-id="259" tvg-logo="https://static.epg.best/us/INSP.us.png" group-title="DE",259: INSP
 http://46.4.77.157:4000/stream/4e67eee9b6fff788f6928d50b737cb2a
-#EXTINF:0 channelID="x-ID.106" tvg-chno="260" tvg-name="260: Sportsman Channel" tvg-id="260" tvg-logo="https://static.epg.best/allsports/SportsmanChannel.us.png" group-title="DE",260: Sportsman Channel
+#EXTINF:0 channelID="x-ID.106" tvg-chno="260" tvg-name="260: Sportsman Channel" tvg-id="260" tvg-logo="https://static.epg.best/us/SportsmanChannel.us.png" group-title="DE",260: Sportsman Channel
 http://46.4.77.157:4000/stream/ba97586949ae57cb07719dc55d586729
-#EXTINF:0 channelID="x-ID.89" tvg-chno="261" tvg-name="261: Outdoor Channel" tvg-id="261" tvg-logo="https://static.epg.best/allsports/OutdoorChannel.us.png" group-title="DE",261: Outdoor Channel
+#EXTINF:0 channelID="x-ID.89" tvg-chno="261" tvg-name="261: Outdoor Channel" tvg-id="261" tvg-logo="https://static.epg.best/us/OutdoorChannel.us.png" group-title="DE",261: Outdoor Channel
 http://46.4.77.157:4000/stream/a76eb52a4dc611a2189a6981a72acbc5
 #EXTINF:0 channelID="x-ID.107" tvg-chno="262" tvg-name="262: World Fishing Network" tvg-id="262" tvg-logo="https://static.epg.best/us/WorldFishingNetwork.us.png" group-title="DE",262: World Fishing Network
 http://46.4.77.157:4000/stream/c2f06765f640f1c256a2e8d110a743ed
@@ -4189,31 +4199,31 @@ http://46.4.77.157:4004/stream/5edb510242e199705625c8bedd8443c1
 http://46.4.77.157:4004/stream/a6a45b084fc9253d7f923a0df7538b31
 #EXTINF:0 channelID="x-ID.37" tvg-chno="139" tvg-name="139: TBS (East)" tvg-id="139" tvg-logo="https://static.epg.best/us/TBS.us.png" group-title="DE",139: TBS (East)
 http://46.4.77.157:4004/stream/068e8a3e36532fddaffceb766909cd66
-#EXTINF:0 channelID="x-ID.95" tvg-chno="141" tvg-name="141: ESPN" tvg-id="141" tvg-logo="https://static.epg.best/allsports/ESPN.us.png" group-title="DE",141: ESPN
+#EXTINF:0 channelID="x-ID.95" tvg-chno="141" tvg-name="141: ESPN" tvg-id="141" tvg-logo="https://static.epg.best/us/ESPN.us.png" group-title="DE",141: ESPN
 http://46.4.77.157:4004/stream/6dbfced7ca67f9ba7721c5bc6447db65
-#EXTINF:0 channelID="x-ID.96" tvg-chno="143" tvg-name="143: ESPN2" tvg-id="143" tvg-logo="https://static.epg.best/allsports/ESPN2.us.png" group-title="DE",143: ESPN2
+#EXTINF:0 channelID="x-ID.96" tvg-chno="143" tvg-name="143: ESPN2" tvg-id="143" tvg-logo="https://static.epg.best/us/ESPN2.us.png" group-title="DE",143: ESPN2
 http://46.4.77.157:4004/stream/b28685556c398e19a654f51b9beb8c16
-#EXTINF:0 channelID="x-ID.97" tvg-chno="144" tvg-name="144: ESPNU" tvg-id="144" tvg-logo="https://static.epg.best/allsports/ESPNU.us.png" group-title="DE",144: ESPNU
+#EXTINF:0 channelID="x-ID.97" tvg-chno="144" tvg-name="144: ESPNU" tvg-id="144" tvg-logo="https://static.epg.best/us/ESPNU.us.png" group-title="DE",144: ESPNU
 http://46.4.77.157:4004/stream/952e7d3eb362aa851ab9215f25f77c4b
-#EXTINF:0 channelID="x-ID.98" tvg-chno="149" tvg-name="149: FOX Sports 2" tvg-id="149" tvg-logo="https://static.epg.best/allsports/FoxSports2.us.png" group-title="DE",149: FOX Sports 2
+#EXTINF:0 channelID="x-ID.98" tvg-chno="149" tvg-name="149: FOX Sports 2" tvg-id="149" tvg-logo="https://static.epg.best/us/FoxSports2.us.png" group-title="DE",149: FOX Sports 2
 http://46.4.77.157:4004/stream/ac20d7c61a227418a87890bf76c19639
-#EXTINF:0 channelID="x-ID.99" tvg-chno="150" tvg-name="150: FOX Sports 1" tvg-id="150" tvg-logo="https://static.epg.best/allsports/FoxSports1.us.png" group-title="DE",150: FOX Sports 1
+#EXTINF:0 channelID="x-ID.99" tvg-chno="150" tvg-name="150: FOX Sports 1" tvg-id="150" tvg-logo="https://static.epg.best/us/FoxSports1.us.png" group-title="DE",150: FOX Sports 1
 http://46.4.77.157:4004/stream/a6a2e77da43e75c790066ddc18b5fa84
 #EXTINF:0 channelID="x-ID.160" tvg-chno="151" tvg-name="151: MLB Stikezone" tvg-id="151" tvg-logo="http://fanc.tmsimg.com/assets/s75219_ll_h3_aa.png" group-title="DE",151: MLB Stikezone
 http://46.4.77.157:4004/stream/559adb1f0796540e91f8231f6e2a70fd
-#EXTINF:0 channelID="x-ID.161" tvg-chno="152" tvg-name="152: MLB Network" tvg-id="152" tvg-logo="https://static.epg.best/allsports/MLBNetwork.us.png" group-title="DE",152: MLB Network
+#EXTINF:0 channelID="x-ID.161" tvg-chno="152" tvg-name="152: MLB Network" tvg-id="152" tvg-logo="https://static.epg.best/us/MLBNetwork.us.png" group-title="DE",152: MLB Network
 http://46.4.77.157:4004/stream/e59c78a05cd1aa707ea9c568c2b93d25
-#EXTINF:0 channelID="x-ID.100" tvg-chno="153" tvg-name="153: The Golf Channel" tvg-id="153" tvg-logo="https://static.epg.best/allsports/GolfChannel.us.png" group-title="DE",153: The Golf Channel
+#EXTINF:0 channelID="x-ID.100" tvg-chno="153" tvg-name="153: The Golf Channel" tvg-id="153" tvg-logo="https://static.epg.best/us/GolfChannel.us.png" group-title="DE",153: The Golf Channel
 http://46.4.77.157:4004/stream/bdab8b67d0194ff193eb5f7cecbf8780
-#EXTINF:0 channelID="x-ID.101" tvg-chno="154" tvg-name="154: Tennis Channel" tvg-id="154" tvg-logo="https://static.epg.best/allsports/TennisChannel.us.png" group-title="DE",154: Tennis Channel
+#EXTINF:0 channelID="x-ID.101" tvg-chno="154" tvg-name="154: Tennis Channel" tvg-id="154" tvg-logo="https://static.epg.best/us/TennisChannel.us.png" group-title="DE",154: Tennis Channel
 http://46.4.77.157:4004/stream/9a24e7a644e5da23b1099be3955a72b1
-#EXTINF:0 channelID="x-ID.163" tvg-chno="155" tvg-name="155: NFL Redzone" tvg-id="155" tvg-logo="https://static.epg.best/allsports/NFLRedZone.us.png" group-title="DE",155: NFL Redzone
+#EXTINF:0 channelID="x-ID.163" tvg-chno="155" tvg-name="155: NFL Redzone" tvg-id="155" tvg-logo="https://static.epg.best/us/NFLRedZone.us.png" group-title="DE",155: NFL Redzone
 http://46.4.77.157:4004/stream/6ed118cdae114aac3b1cf85936123e69
-#EXTINF:0 channelID="x-ID.164" tvg-chno="156" tvg-name="156: NFL Network" tvg-id="156" tvg-logo="https://static.epg.best/allsports/NFLNetwork.us.png" group-title="DE",156: NFL Network
+#EXTINF:0 channelID="x-ID.164" tvg-chno="156" tvg-name="156: NFL Network" tvg-id="156" tvg-logo="https://static.epg.best/us/NFLNetwork.us.png" group-title="DE",156: NFL Network
 http://46.4.77.157:4004/stream/ac76464c2ae8546854074d3435de42b1
-#EXTINF:0 channelID="x-ID.162" tvg-chno="157" tvg-name="157: NHL Network" tvg-id="157" tvg-logo="https://static.epg.best/allsports/NHLNetwork.us.png" group-title="DE",157: NHL Network
+#EXTINF:0 channelID="x-ID.162" tvg-chno="157" tvg-name="157: NHL Network" tvg-id="157" tvg-logo="https://static.epg.best/us/NHLNetwork.us.png" group-title="DE",157: NHL Network
 http://46.4.77.157:4004/stream/099c73a8aa8e494391c84476c463684d
-#EXTINF:0 channelID="x-ID.102" tvg-chno="158" tvg-name="158: CBSSN" tvg-id="158" tvg-logo="https://static.epg.best/allsports/CBSSportsNetwork.us.png" group-title="DE",158: CBSSN
+#EXTINF:0 channelID="x-ID.102" tvg-chno="158" tvg-name="158: CBSSN" tvg-id="158" tvg-logo="https://static.epg.best/us/CBSSportsNetwork.us.png" group-title="DE",158: CBSSN
 http://46.4.77.157:4004/stream/d5087be1fae4c395ffe3698246155bfa
 #EXTINF:0 channelID="x-ID.38" tvg-chno="160" tvg-name="160: MTV" tvg-id="160" tvg-logo="https://static.epg.best/us/MTV.us.png" group-title="DE",160: MTV
 http://46.4.77.157:4004/stream/ddb64919741bc9fcabc46be96ecff855
@@ -4305,7 +4315,7 @@ http://46.4.77.157:4004/stream/b9973d468346e221464835e1d2edd9e0
 http://46.4.77.157:4004/stream/4e2000393cb5d5d821686c184c3dd43a
 #EXTINF:0 channelID="x-ID.83" tvg-chno="243" tvg-name="243: Law & Crime" tvg-id="243" tvg-logo="https://static.epg.best/us/LawAndCrime.us.png" group-title="DE",243: Law & Crime
 http://46.4.77.157:4004/stream/825d5078cf20000d51f975a427c36c4d
-#EXTINF:0 channelID="x-ID.85" tvg-chno="246" tvg-name="246: MotorTrend" tvg-id="246" tvg-logo="https://static.epg.best/allsports/MotorTrend.us.png" group-title="DE",246: MotorTrend
+#EXTINF:0 channelID="x-ID.85" tvg-chno="246" tvg-name="246: MotorTrend" tvg-id="246" tvg-logo="https://static.epg.best/us/MotorTrend.us.png" group-title="DE",246: MotorTrend
 http://46.4.77.157:4004/stream/6a76368fa1459520ecaca4e9dd0cdca5
 #EXTINF:0 channelID="x-ID.105" tvg-chno="248" tvg-name="248: MAV TV" tvg-id="248" tvg-logo="https://static.epg.best/us/MAVTV.us.png" group-title="DE",248: MAV TV
 http://46.4.77.157:4004/stream/1bb58bfc142393a9c1503b44e916de26
@@ -4315,9 +4325,9 @@ http://46.4.77.157:4004/stream/e17766ef5944fd8aac35fff6766f6f7c
 http://46.4.77.157:4004/stream/7db2e2b2e681fac3dac031662604e3fd
 #EXTINF:0 channelID="x-ID.88" tvg-chno="259" tvg-name="259: INSP" tvg-id="259" tvg-logo="https://static.epg.best/us/INSP.us.png" group-title="DE",259: INSP
 http://46.4.77.157:4004/stream/75c287af89c463e307a065ebfd6217a5
-#EXTINF:0 channelID="x-ID.106" tvg-chno="260" tvg-name="260: Sportsman Channel" tvg-id="260" tvg-logo="https://static.epg.best/allsports/SportsmanChannel.us.png" group-title="DE",260: Sportsman Channel
+#EXTINF:0 channelID="x-ID.106" tvg-chno="260" tvg-name="260: Sportsman Channel" tvg-id="260" tvg-logo="https://static.epg.best/us/SportsmanChannel.us.png" group-title="DE",260: Sportsman Channel
 http://46.4.77.157:4004/stream/f359d198503dd8ffac38aac5f0cf6b20
-#EXTINF:0 channelID="x-ID.89" tvg-chno="261" tvg-name="261: Outdoor Channel" tvg-id="261" tvg-logo="https://static.epg.best/allsports/OutdoorChannel.us.png" group-title="DE",261: Outdoor Channel
+#EXTINF:0 channelID="x-ID.89" tvg-chno="261" tvg-name="261: Outdoor Channel" tvg-id="261" tvg-logo="https://static.epg.best/us/OutdoorChannel.us.png" group-title="DE",261: Outdoor Channel
 http://46.4.77.157:4004/stream/8e0e40b0a2ad48d8442818e17345f25e
 #EXTINF:0 channelID="x-ID.107" tvg-chno="262" tvg-name="262: World Fishing Network" tvg-id="262" tvg-logo="https://static.epg.best/us/WorldFishingNetwork.us.png" group-title="DE",262: World Fishing Network
 http://46.4.77.157:4004/stream/660e994f07fd644797934aef0b2ce43e
@@ -4459,31 +4469,31 @@ http://46.4.77.157:4003/stream/9f75e238469d5dd57262d006f5415128
 http://46.4.77.157:4003/stream/53c878ee49ebcff01e9caac111e386c1
 #EXTINF:0 channelID="x-ID.30" tvg-chno="139" tvg-name="139: TBS (East)" tvg-id="139" tvg-logo="https://static.epg.best/us/TBS.us.png" group-title="DE",139: TBS (East)
 http://46.4.77.157:4003/stream/bb0b5fdb8186d68d6181caccbe201e46
-#EXTINF:0 channelID="x-ID.86" tvg-chno="141" tvg-name="141: ESPN" tvg-id="141" tvg-logo="https://static.epg.best/allsports/ESPN.us.png" group-title="DE",141: ESPN
+#EXTINF:0 channelID="x-ID.86" tvg-chno="141" tvg-name="141: ESPN" tvg-id="141" tvg-logo="https://static.epg.best/us/ESPN.us.png" group-title="DE",141: ESPN
 http://46.4.77.157:4003/stream/73205912c5bdebe36c7b7f3a98a52965
-#EXTINF:0 channelID="x-ID.87" tvg-chno="143" tvg-name="143: ESPN2" tvg-id="143" tvg-logo="https://static.epg.best/allsports/ESPN2.us.png" group-title="DE",143: ESPN2
+#EXTINF:0 channelID="x-ID.87" tvg-chno="143" tvg-name="143: ESPN2" tvg-id="143" tvg-logo="https://static.epg.best/us/ESPN2.us.png" group-title="DE",143: ESPN2
 http://46.4.77.157:4003/stream/a12f03794ba4dffb760294f5ae7196b3
-#EXTINF:0 channelID="x-ID.88" tvg-chno="144" tvg-name="144: ESPNU" tvg-id="144" tvg-logo="https://static.epg.best/allsports/ESPNU.us.png" group-title="DE",144: ESPNU
+#EXTINF:0 channelID="x-ID.88" tvg-chno="144" tvg-name="144: ESPNU" tvg-id="144" tvg-logo="https://static.epg.best/us/ESPNU.us.png" group-title="DE",144: ESPNU
 http://46.4.77.157:4003/stream/28e65795bf70a0188c02455848ed4c08
-#EXTINF:0 channelID="x-ID.89" tvg-chno="149" tvg-name="149: FOX Sports 2" tvg-id="149" tvg-logo="https://static.epg.best/allsports/FoxSports2.us.png" group-title="DE",149: FOX Sports 2
+#EXTINF:0 channelID="x-ID.89" tvg-chno="149" tvg-name="149: FOX Sports 2" tvg-id="149" tvg-logo="https://static.epg.best/us/FoxSports2.us.png" group-title="DE",149: FOX Sports 2
 http://46.4.77.157:4003/stream/7e90269ba75bf75174fefbfad410e7e8
-#EXTINF:0 channelID="x-ID.90" tvg-chno="150" tvg-name="150: FOX Sports 1" tvg-id="150" tvg-logo="https://static.epg.best/allsports/FoxSports1.us.png" group-title="DE",150: FOX Sports 1
+#EXTINF:0 channelID="x-ID.90" tvg-chno="150" tvg-name="150: FOX Sports 1" tvg-id="150" tvg-logo="https://static.epg.best/us/FoxSports1.us.png" group-title="DE",150: FOX Sports 1
 http://46.4.77.157:4003/stream/85dd2b58ace9840b25fdb3baff27c531
 #EXTINF:0 channelID="x-ID.149" tvg-chno="151" tvg-name="151: MLB Stikezone" tvg-id="151" tvg-logo="http://fanc.tmsimg.com/assets/s75219_ll_h3_aa.png" group-title="DE",151: MLB Stikezone
 http://46.4.77.157:4003/stream/48d47a21a41d01ee8ace435271a4dc73
-#EXTINF:0 channelID="x-ID.150" tvg-chno="152" tvg-name="152: MLB Network" tvg-id="152" tvg-logo="https://static.epg.best/allsports/MLBNetwork.us.png" group-title="DE",152: MLB Network
+#EXTINF:0 channelID="x-ID.150" tvg-chno="152" tvg-name="152: MLB Network" tvg-id="152" tvg-logo="https://static.epg.best/us/MLBNetwork.us.png" group-title="DE",152: MLB Network
 http://46.4.77.157:4003/stream/d5dd1fbc3997dbb8d55549acd790a0a8
-#EXTINF:0 channelID="x-ID.91" tvg-chno="153" tvg-name="153: The Golf Channel" tvg-id="153" tvg-logo="https://static.epg.best/allsports/GolfChannel.us.png" group-title="DE",153: The Golf Channel
+#EXTINF:0 channelID="x-ID.91" tvg-chno="153" tvg-name="153: The Golf Channel" tvg-id="153" tvg-logo="https://static.epg.best/us/GolfChannel.us.png" group-title="DE",153: The Golf Channel
 http://46.4.77.157:4003/stream/91f90c9711d4c8b551cc04e064a4f732
-#EXTINF:0 channelID="x-ID.92" tvg-chno="154" tvg-name="154: Tennis Channel" tvg-id="154" tvg-logo="https://static.epg.best/allsports/TennisChannel.us.png" group-title="DE",154: Tennis Channel
+#EXTINF:0 channelID="x-ID.92" tvg-chno="154" tvg-name="154: Tennis Channel" tvg-id="154" tvg-logo="https://static.epg.best/us/TennisChannel.us.png" group-title="DE",154: Tennis Channel
 http://46.4.77.157:4003/stream/81dffb4e053570853977b297b2a774ba
 #EXTINF:0 channelID="x-ID.153" tvg-chno="155" tvg-name="155: NFL Redzone" tvg-id="155" tvg-logo="https://static.epg.best/us/NFLRedZone.us.png" group-title="DE",155: NFL Redzone
 http://46.4.77.157:4003/stream/f0348afdc3b3d24428b31bbfa65093e8
-#EXTINF:0 channelID="x-ID.154" tvg-chno="156" tvg-name="156: NFL Network" tvg-id="156" tvg-logo="https://static.epg.best/allsports/NFLNetwork.us.png" group-title="DE",156: NFL Network
+#EXTINF:0 channelID="x-ID.154" tvg-chno="156" tvg-name="156: NFL Network" tvg-id="156" tvg-logo="https://static.epg.best/us/NFLNetwork.us.png" group-title="DE",156: NFL Network
 http://46.4.77.157:4003/stream/a4733483b7f6ca49ef10543112327ddb
 #EXTINF:0 channelID="x-ID.151" tvg-chno="157" tvg-name="157: NHL Network" tvg-id="157" tvg-logo="https://static.epg.best/us/NHLNetwork.us.png" group-title="DE",157: NHL Network
 http://46.4.77.157:4003/stream/2b383463456bb4c783d30cbaf0c7923a
-#EXTINF:0 channelID="x-ID.93" tvg-chno="158" tvg-name="158: CBSSN" tvg-id="158" tvg-logo="https://static.epg.best/allsports/CBSSportsNetwork.us.png" group-title="DE",158: CBSSN
+#EXTINF:0 channelID="x-ID.93" tvg-chno="158" tvg-name="158: CBSSN" tvg-id="158" tvg-logo="https://static.epg.best/us/CBSSportsNetwork.us.png" group-title="DE",158: CBSSN
 http://46.4.77.157:4003/stream/59d8c1b18c098e21090897b45ef7c4e1
 #EXTINF:0 channelID="x-ID.31" tvg-chno="160" tvg-name="160: MTV" tvg-id="160" tvg-logo="https://static.epg.best/us/MTV.us.png" group-title="DE",160: MTV
 http://46.4.77.157:4003/stream/fd0229bae7d5d5acc9819d5e016f45c2
@@ -4575,7 +4585,7 @@ http://46.4.77.157:4003/stream/9beb3fded7225846fd138685691f9be7
 http://46.4.77.157:4003/stream/b5f97e78f5b120a4a2e58116da345aed
 #EXTINF:0 channelID="x-ID.76" tvg-chno="243" tvg-name="243: Law & Crime" tvg-id="243" tvg-logo="https://static.epg.best/us/LawAndCrime.us.png" group-title="DE",243: Law & Crime
 http://46.4.77.157:4003/stream/378f7c9a9b314fad7ccaf90e613137d9
-#EXTINF:0 channelID="x-ID.78" tvg-chno="246" tvg-name="246: MotorTrend" tvg-id="246" tvg-logo="https://static.epg.best/allsports/MotorTrend.us.png" group-title="DE",246: MotorTrend
+#EXTINF:0 channelID="x-ID.78" tvg-chno="246" tvg-name="246: MotorTrend" tvg-id="246" tvg-logo="https://static.epg.best/us/MotorTrend.us.png" group-title="DE",246: MotorTrend
 http://46.4.77.157:4003/stream/c5ec9b0fc16f31376a1fe7c054311500
 #EXTINF:0 channelID="x-ID.96" tvg-chno="248" tvg-name="248: MAV TV" tvg-id="248" tvg-logo="https://static.epg.best/us/MAVTV.us.png" group-title="DE",248: MAV TV
 http://46.4.77.157:4003/stream/f91f3c714a0a6e1ce2591ff4b8959916
@@ -4585,9 +4595,9 @@ http://46.4.77.157:4003/stream/a2da49ee5cc20df73d30c0cb67ed3853
 http://46.4.77.157:4003/stream/bbd09be6f5e5be4ac53c31a3301648a0
 #EXTINF:0 channelID="x-ID.81" tvg-chno="259" tvg-name="259: INSP" tvg-id="259" tvg-logo="https://static.epg.best/us/INSP.us.png" group-title="DE",259: INSP
 http://46.4.77.157:4003/stream/8637d4a6cf26455e74c50275140f3b5e
-#EXTINF:0 channelID="x-ID.97" tvg-chno="260" tvg-name="260: Sportsman Channel" tvg-id="260" tvg-logo="https://static.epg.best/allsports/SportsmanChannel.us.png" group-title="DE",260: Sportsman Channel
+#EXTINF:0 channelID="x-ID.97" tvg-chno="260" tvg-name="260: Sportsman Channel" tvg-id="260" tvg-logo="https://static.epg.best/us/SportsmanChannel.us.png" group-title="DE",260: Sportsman Channel
 http://46.4.77.157:4003/stream/cb62d5d97bf2d8f17cda900d5483bb39
-#EXTINF:0 channelID="x-ID.82" tvg-chno="261" tvg-name="261: Outdoor Channel" tvg-id="261" tvg-logo="https://static.epg.best/allsports/OutdoorChannel.us.png" group-title="DE",261: Outdoor Channel
+#EXTINF:0 channelID="x-ID.82" tvg-chno="261" tvg-name="261: Outdoor Channel" tvg-id="261" tvg-logo="https://static.epg.best/us/OutdoorChannel.us.png" group-title="DE",261: Outdoor Channel
 http://46.4.77.157:4003/stream/ded71c10080c8c0eaf1d104a0a51dda2
 #EXTINF:0 channelID="x-ID.98" tvg-chno="262" tvg-name="262: World Fishing Network" tvg-id="262" tvg-logo="https://static.epg.best/us/WorldFishingNetwork.us.png" group-title="DE",262: World Fishing Network
 http://46.4.77.157:4003/stream/37df695b15e0102685674a8e29987a76
@@ -5272,47 +5282,53 @@ http://141.147.174.228:4433/stream/81128468d925b8c43ea1c708323e7c18
 #EXTINF:0 channelID="x-ID.215" tvg-chno="1215" tvg-name="哈哈炫动" tvg-id="1215" tvg-logo="https://epg.v1.mk/logo/哈哈炫动.png" group-title="JP",哈哈炫动
 http://141.147.174.228:4433/stream/3ff91a07c91553971879799c982b03eb
 #EXTINF:0 channelID="x-ID.216" tvg-chno="1216" tvg-name="周星驰" tvg-id="1216" tvg-logo="" group-title="JP",周星驰
-http://141.147.174.228:4433/stream/40033d5431f2b917ada93265f8e570f8
+http://141.147.174.228:4433/stream/6e9ae90de962cfb74870b45a5f5a5745
 #EXTINF:0 channelID="x-ID.217" tvg-chno="1217" tvg-name="林正英" tvg-id="1217" tvg-logo="" group-title="JP",林正英
-http://141.147.174.228:4433/stream/86256b021de3278d30ef9c54cf4c8cc0
+http://141.147.174.228:4433/stream/76eda593d022fb7d2bf91932d5145650
 #EXTINF:0 channelID="x-ID.218" tvg-chno="1218" tvg-name="成龙" tvg-id="1218" tvg-logo="" group-title="JP",成龙
-http://141.147.174.228:4433/stream/dd490291d3bc8e4231259f82f1442fcb
+http://141.147.174.228:4433/stream/acde88fd00b430da85e4b95d31fc19e3
 #EXTINF:0 channelID="x-ID.219" tvg-chno="1219" tvg-name="沈腾" tvg-id="1219" tvg-logo="" group-title="JP",沈腾
-http://141.147.174.228:4433/stream/ae2ba0952f1aae3f611746962fc45c61
+http://141.147.174.228:4433/stream/84796bcd6e2fe2b326ddf1712947d207
 #EXTINF:0 channelID="x-ID.220" tvg-chno="1220" tvg-name="刘德华" tvg-id="1220" tvg-logo="" group-title="JP",刘德华
-http://141.147.174.228:4433/stream/91704a3e198d563542099e97ae4a039b
+http://141.147.174.228:4433/stream/33b842498cee7158cedee3aed546710d
 #EXTINF:0 channelID="x-ID.221" tvg-chno="1221" tvg-name="甄子丹" tvg-id="1221" tvg-logo="" group-title="JP",甄子丹
-http://141.147.174.228:4433/stream/19ced91e071663c3daefe1a021e2f5c5
+http://141.147.174.228:4433/stream/7661bc833c78db6fef01f34878367d34
 #EXTINF:0 channelID="x-ID.222" tvg-chno="1222" tvg-name="李连杰" tvg-id="1222" tvg-logo="" group-title="JP",李连杰
-http://141.147.174.228:4433/stream/8cebd1318b6960312c6850fef32081fd
+http://141.147.174.228:4433/stream/f81f20d1abb2aae1158eb69f8dbb04a9
 #EXTINF:0 channelID="x-ID.223" tvg-chno="1223" tvg-name="周润发" tvg-id="1223" tvg-logo="" group-title="JP",周润发
-http://141.147.174.228:4433/stream/7dd78dce4fe7854fd1ff47d7c7be6290
+http://141.147.174.228:4433/stream/5b40c32a0c6a4a1618b5115aa5d328ad
 #EXTINF:0 channelID="x-ID.224" tvg-chno="1224" tvg-name="洪金宝" tvg-id="1224" tvg-logo="" group-title="JP",洪金宝
-http://141.147.174.228:4433/stream/54c2e3d70fde6a1ed74bec7749beeb2e
+http://141.147.174.228:4433/stream/653504d8c834be3a0fe6a3973865fbde
 #EXTINF:0 channelID="x-ID.225" tvg-chno="1225" tvg-name="许氏三杰" tvg-id="1225" tvg-logo="" group-title="JP",许氏三杰
-http://141.147.174.228:4433/stream/19488a763fcc2497769131b775db5641
+http://141.147.174.228:4433/stream/7279b70613caf28ff725d44f48a9de5a
 #EXTINF:0 channelID="x-ID.226" tvg-chno="1226" tvg-name="五福星" tvg-id="1226" tvg-logo="" group-title="JP",五福星
-http://141.147.174.228:4433/stream/3157cdebcc52ceda860c5bb4b61934e7
+http://141.147.174.228:4433/stream/9198a13e651e3f6224646812c9ae8db1
 #EXTINF:0 channelID="x-ID.227" tvg-chno="1227" tvg-name="香港贺岁片" tvg-id="1227" tvg-logo="" group-title="JP",香港贺岁片
-http://141.147.174.228:4433/stream/401295846a44116ebad1c8efe39fe4d0
+http://141.147.174.228:4433/stream/26f554a7460117e71a12602e3abcdb84
 #EXTINF:0 channelID="x-ID.228" tvg-chno="1228" tvg-name="王晶导演" tvg-id="1228" tvg-logo="" group-title="JP",王晶导演
-http://141.147.174.228:4433/stream/8c540515e1fddbc0e51c50878100e1e1
+http://141.147.174.228:4433/stream/dc880cc588698d491f22c02a8afbe8d3
 #EXTINF:0 channelID="x-ID.229" tvg-chno="1229" tvg-name="校园热血电影" tvg-id="1229" tvg-logo="" group-title="JP",校园热血电影
-http://141.147.174.228:4433/stream/5edc1294d8d61b9fe16869606b0feff9
+http://141.147.174.228:4433/stream/7848931c720475f2551a35558f23ea98
+#EXTINF:0 channelID="x-ID.230" tvg-chno="1230" tvg-name="贺岁大片" tvg-id="1230" tvg-logo="" group-title="JP",贺岁大片
+http://141.147.174.228:4433/stream/0d1f5115abb04f401e67533a78801556
 #EXTINF:0 channelID="x-ID.231" tvg-chno="1231" tvg-name="历年贺岁档" tvg-id="1231" tvg-logo="" group-title="JP",历年贺岁档
-http://141.147.174.228:4433/stream/72f68be64ea465355434f3eeddcd8b8e
+http://141.147.174.228:4433/stream/d7fa377cb0ac8c3b61d0677c699da973
 #EXTINF:0 channelID="x-ID.232" tvg-chno="1232" tvg-name="情人节：港片教你追女仔" tvg-id="1232" tvg-logo="" group-title="JP",情人节：港片教你追女仔
-http://141.147.174.228:4433/stream/1c13176e4597ac2a3ac213e1550bc970
+http://141.147.174.228:4433/stream/f8726eb13a03381254f5990f973e95a5
 #EXTINF:0 channelID="x-ID.233" tvg-chno="1233" tvg-name="DC宇宙来" tvg-id="1233" tvg-logo="" group-title="JP",DC宇宙来
-http://141.147.174.228:4433/stream/4298ed8851ca6b921e7746de487e2fd1
+http://141.147.174.228:4433/stream/8eea8188843acecf3f4db1acc8501133
 #EXTINF:0 channelID="x-ID.234" tvg-chno="1234" tvg-name="金庸的武侠世界" tvg-id="1234" tvg-logo="" group-title="JP",金庸的武侠世界
-http://141.147.174.228:4433/stream/6e66029512d6050fab46bb8cd2f84da9
+http://141.147.174.228:4433/stream/253b0f7f770c12725d4d60b1796ba9cf
+#EXTINF:0 channelID="x-ID.235" tvg-chno="1235" tvg-name="女神系列" tvg-id="1235" tvg-logo="" group-title="JP",女神系列
+http://141.147.174.228:4433/stream/62d4dffb7e23220f5a3bf95dd59f8a05
 #EXTINF:0 channelID="x-ID.236" tvg-chno="1236" tvg-name="永远的经典女神" tvg-id="1236" tvg-logo="" group-title="JP",永远的经典女神
-http://141.147.174.228:4433/stream/f5b7127639cacd470c6359f104fb8ebe
+http://141.147.174.228:4433/stream/e31c927d23fcffe7abd2f777d3141a60
 #EXTINF:0 channelID="x-ID.237" tvg-chno="1237" tvg-name="红楼梦1987经典版" tvg-id="1237" tvg-logo="" group-title="JP",红楼梦1987经典版
-http://141.147.174.228:4433/stream/d88a4906a55ed81386ec36443028e325
+http://141.147.174.228:4433/stream/85a836b058ed33ebcd7613822f4427a8
 #EXTINF:0 channelID="x-ID.238" tvg-chno="1238" tvg-name="灌篮高手" tvg-id="1238" tvg-logo="" group-title="JP",灌篮高手
-http://141.147.174.228:4433/stream/e884bcc6531590493e5792973b79b5a6
+http://141.147.174.228:4433/stream/369dc163337cd34ada7c4e431fea8c66
+#EXTINF:0 channelID="x-ID.239" tvg-chno="1239" tvg-name="火影忍者" tvg-id="1239" tvg-logo="" group-title="JP",火影忍者
+http://141.147.174.228:4433/stream/dde5cc4f8b41b320716e8649f4e19a68
 #EXTINF:0 channelID="x-ID.240" tvg-chno="1240" tvg-name="小片片说大片" tvg-id="1240" tvg-logo="https://apic.douyucdn.cn/upload/avanew/face/201802/03/18/7040873fd91e01c09fa1706d39f314b4_big.jpg" group-title="JP",小片片说大片
 http://141.147.174.228:4433/stream/701974cb58639d2c2c6feea0815014c6
 #EXTINF:0 channelID="x-ID.241" tvg-chno="1241" tvg-name="星际老男孩" tvg-id="1241" tvg-logo="https://apic.douyucdn.cn/upload/avatar_v3/202110/0a7a8221602b4285a0c16e06a8acf8fc_big.jpg" group-title="JP",星际老男孩
@@ -5335,8 +5351,6 @@ http://141.147.174.228:4433/stream/2ebdbbc02c8b63b7acad1e0b952ce95c
 http://141.147.174.228:4433/stream/45534c0165367f23b443a0ec76cf6223
 #EXTINF:0 channelID="x-ID.290" tvg-chno="1290" tvg-name="广东珠江" tvg-id="1290" tvg-logo="" group-title="JP",广东珠江
 http://141.147.174.228:4433/stream/35bf9295a15025ed1ed92e5d475d89e6
-#EXTINF:0 channelID="x-ID.294" tvg-chno="1294" tvg-name="广州电视台综合频道" tvg-id="1294" tvg-logo="" group-title="JP",广州电视台综合频道
-http://141.147.174.228:4433/stream/23fc87c1cdc71676c8fa3856eb07787d
 #EXTINF:0 channelID="x-ID.295" tvg-chno="1295" tvg-name="广州电视台影视频道" tvg-id="1295" tvg-logo="" group-title="JP",广州电视台影视频道
 http://141.147.174.228:4433/stream/1ff6495c0445bb439d8a8e439386a804
 #EXTINF:0 channelID="x-ID.297" tvg-chno="1297" tvg-name="广州电视台新闻频道" tvg-id="1297" tvg-logo="" group-title="JP",广州电视台新闻频道
@@ -5345,8 +5359,6 @@ http://141.147.174.228:4433/stream/61d1bce5ae5ad1d728ab44ea68f0cd1b
 http://141.147.174.228:4433/stream/ed720efc8c0e70ff2f2db72d69ea51fb
 #EXTINF:0 channelID="x-ID.299" tvg-chno="1299" tvg-name="广州竞赛频道" tvg-id="1299" tvg-logo="" group-title="JP",广州竞赛频道
 http://141.147.174.228:4433/stream/c830ce3fe67b527a381c3c2564983ffa
-#EXTINF:0 channelID="x-ID.300" tvg-chno="1300" tvg-name="广州电视台法治频道" tvg-id="1300" tvg-logo="" group-title="JP",广州电视台法治频道
-http://141.147.174.228:4433/stream/ea518f1ab46cafc42147fa39067b071d
 #EXTINF:0 channelID="x-ID.304" tvg-chno="1304" tvg-name="三沙卫视" tvg-id="1304" tvg-logo="" group-title="JP",三沙卫视
 http://141.147.174.228:4433/stream/f76856f88c559764e2f76f09909ba424
 #EXTINF:0 channelID="x-ID.305" tvg-chno="1305" tvg-name="CCTV-电视指南" tvg-id="1305" tvg-logo="" group-title="JP",CCTV-电视指南
@@ -5901,16 +5913,10 @@ http://iptv.pd1.pl/stream/2e16926a278b45c8cd62eab108948417
 http://tv.kinte.net/stream/ccb2328e0b3606ce0cbc668b76a28105
 #EXTINF:0 channelID="x-ID.21" tvg-chno="9021" tvg-name="HBO Comedy (West)" tvg-id="9021" tvg-logo="https://media.starlite.best/hbo.comedy.pacific.us.png" group-title="US",HBO Comedy (West)
 http://tv.kinte.net/stream/a71f510c0d75763e8ebebc3150bde446
-#EXTINF:0 channelID="x-ID.30" tvg-chno="9030" tvg-name="Mtv Live US" tvg-id="9030" tvg-logo="https://media.starlite.best/mtv.live.us.png" group-title="US",Mtv Live US
-http://tv.kinte.net/stream/fc59a08315ee328e7a525b0fdd59048b
-#EXTINF:0 channelID="x-ID.37" tvg-chno="9037" tvg-name="CBS KCAL Los Angeles" tvg-id="9037" tvg-logo="https://media.starlite.best/kcal.los.angeles.us.png" group-title="US",CBS KCAL Los Angeles
-http://tv.kinte.net/stream/6756d57652d8428d222ad26adbac9483
 #EXTINF:0 channelID="x-ID.48" tvg-chno="9048" tvg-name="BET Gospel" tvg-id="9048" tvg-logo="https://media.starlite.best/bet.gospel.us.png" group-title="US",BET Gospel
 http://tv.kinte.net/stream/0ad0637b61f737a643156d50e9665d07
 #EXTINF:0 channelID="x-ID.87" tvg-chno="9087" tvg-name="MUTV UK" tvg-id="9087" tvg-logo="https://media.starlite.best/mutv.uk.png" group-title="US",MUTV UK
 http://tv.kinte.net/stream/28062d629b20419a07b52a325830e877
-#EXTINF:0 channelID="x-ID.94" tvg-chno="9094" tvg-name="The Word Network" tvg-id="9094" tvg-logo="https://media.starlite.best/the.word.network.us.png" group-title="US",The Word Network
-http://tv.kinte.net/stream/84067d0c0bdaf81e8e2fce253acf5204
 #EXTINF:0 channelID="x-ID.96" tvg-chno="9096" tvg-name="FOX Sports" tvg-id="9096" tvg-logo="https://media.starlite.best/fox.sports.br.png" group-title="US",FOX Sports
 http://tv.kinte.net/stream/dd125260320d575933e956e3a4a0617d
 #EXTINF:0 channelID="x-ID.110" tvg-chno="9110" tvg-name="Blue Sport 2 CH" tvg-id="9110" tvg-logo="https://media.starlite.best/blue.sport.2.ch.png" group-title="US",Blue Sport 2 CH
@@ -5919,14 +5925,18 @@ http://tv.kinte.net/stream/7e1b68cdee08529b6067b1be3cf6cb34
 http://tv.kinte.net/stream/8dfcb324379bd06df4771a990896c970
 #EXTINF:0 channelID="x-ID.124" tvg-chno="9124" tvg-name="TNT Sports 4 UK" tvg-id="9124" tvg-logo="https://media.starlite.best/bt.sport.4.uk.png" group-title="US",TNT Sports 4 UK
 http://tv.kinte.net/stream/6a263847eae7a1c005a1ed97b51a666b
-#EXTINF:0 channelID="x-ID.142" tvg-chno="9142" tvg-name="Cartoon Network (West) US" tvg-id="9142" tvg-logo="https://media.starlite.best/cartoon.network.usa.pacific.us.png" group-title="US",Cartoon Network (West) US
-http://tv.kinte.net/stream/09779f38718954f1c488c401fadb239e
-#EXTINF:0 channelID="x-ID.446" tvg-chno="9335" tvg-name="5 Star Max (East)" tvg-id="9335" tvg-logo="https://media.starlite.best/5.star.max.eastern.us.png" group-title="US",5 Star Max (East)
-http://tv.kinte.net/stream/9c4c5034607fd551ff21aaacfca9ae74
+#EXTINF:0 channelID="x-ID.135" tvg-chno="9135" tvg-name="Bola TV" tvg-id="9135" tvg-logo="https://media.starlite.best/bola.tv.pt.png" group-title="US",Bola TV
+http://tv.kinte.net/stream/c87b9737ee847fa9bf6139737094997c
+#EXTINF:0 channelID="x-ID.138" tvg-chno="9138" tvg-name="ESPN U US" tvg-id="9138" tvg-logo="https://media.starlite.best/espn.u.us.png" group-title="US",ESPN U US
+http://tv.kinte.net/stream/f4c430400d2514031cfa757f704140ef
+#EXTINF:0 channelID="x-ID.139" tvg-chno="9139" tvg-name="HPItv" tvg-id="9139" tvg-logo="https://media.starlite.best/hpitv.ca.png" group-title="US",HPItv
+http://tv.kinte.net/stream/654bb702a62ca9f6a8f22066c236e14c
+#EXTINF:0 channelID="x-ID.142" tvg-chno="9142" tvg-name="Canal 11" tvg-id="9142" tvg-logo="https://media.starlite.best/canal.11.pt.png" group-title="US",Canal 11
+http://tv.kinte.net/stream/e2f1e30f7e60546fc340738adf21e45b
+#EXTINF:0 channelID="x-ID.146" tvg-chno="9146" tvg-name="Premiere Clubes" tvg-id="9146" tvg-logo="https://media.starlite.best/premiere.clubes.br.png" group-title="US",Premiere Clubes
+http://tv.kinte.net/stream/b5bc01515fc7883d7401b3986b7ba0cb
 #EXTINF:0 channelID="x-ID.447" tvg-chno="9441" tvg-name="A&E (East) US" tvg-id="9441" tvg-logo="https://media.starlite.best/ae.us.eastern.us.png" group-title="US",A&E (East) US
 http://tv.kinte.net/stream/540d0cbdff187436016acf61ea68a511
-#EXTINF:0 channelID="x-ID.448" tvg-chno="9442" tvg-name="ABC News Live" tvg-id="9442" tvg-logo="https://media.starlite.best/abc.news.live.us.png" group-title="US",ABC News Live
-http://tv.kinte.net/stream/552f6384c6164636b3439b3ac3ddac55
 #EXTINF:0 channelID="x-ID.449" tvg-chno="9443" tvg-name="ActionMax (East)" tvg-id="9443" tvg-logo="https://media.starlite.best/actionmax.eastern.us.png" group-title="US",ActionMax (East)
 http://tv.kinte.net/stream/707f776dbacc21fe68fecdf2a546d44a
 #EXTINF:0 channelID="x-ID.450" tvg-chno="9444" tvg-name="Adult Swim" tvg-id="9444" tvg-logo="https://media.starlite.best/adult.swim.east.us.png" group-title="US",Adult Swim
@@ -5949,8 +5959,6 @@ http://tv.kinte.net/stream/e96b8b4c9b615fb936e9444a3a40173a
 http://tv.kinte.net/stream/eae0abcf9067314e39c1ab3040ce4369
 #EXTINF:0 channelID="x-ID.459" tvg-chno="9453" tvg-name="AXS TV" tvg-id="9453" tvg-logo="https://media.starlite.best/axs.tv.usa.us.png" group-title="US",AXS TV
 http://tv.kinte.net/stream/641d9fdfc5603279f8517a34575f9074
-#EXTINF:0 channelID="x-ID.460" tvg-chno="9454" tvg-name="Baby First US" tvg-id="9454" tvg-logo="https://media.starlite.best/baby.first.tv.us.png" group-title="US",Baby First US
-http://tv.kinte.net/stream/a9aeb4711d06b8b5d12ef424402ef81a
 #EXTINF:0 channelID="x-ID.461" tvg-chno="9455" tvg-name="Baby TV" tvg-id="9455" tvg-logo="https://media.starlite.best/baby.tv.us.png" group-title="US",Baby TV
 http://tv.kinte.net/stream/c9153e13961f7f8aae4dcb193e36f7e4
 #EXTINF:0 channelID="x-ID.462" tvg-chno="9456" tvg-name="BBC America" tvg-id="9456" tvg-logo="https://media.starlite.best/bbc.america.east.us.png" group-title="US",BBC America
@@ -5973,14 +5981,8 @@ http://tv.kinte.net/stream/61c319c363c105d64b61edfcb99094fd
 http://tv.kinte.net/stream/4b0b46a7ef440ab6c0f2951ac4d902a2
 #EXTINF:0 channelID="x-ID.474" tvg-chno="9468" tvg-name="Bounce Network" tvg-id="9468" tvg-logo="https://media.starlite.best/bounce.network.us.png" group-title="US",Bounce Network
 http://tv.kinte.net/stream/73e852bb28b6d9a02ca3d06c7ecd0002
-#EXTINF:0 channelID="x-ID.475" tvg-chno="9469" tvg-name="Bravo (East)" tvg-id="9469" tvg-logo="https://media.starlite.best/bravo.usa.eastern.us.png" group-title="US",Bravo (East)
-http://tv.kinte.net/stream/bcdf99bda084be6db2ee585ce7a8294a
-#EXTINF:0 channelID="x-ID.476" tvg-chno="9470" tvg-name="Bravo (West)" tvg-id="9470" tvg-logo="https://media.starlite.best/bravo.usa.pacific.us.png" group-title="US",Bravo (West)
-http://tv.kinte.net/stream/890148aa852c17e38ed9b2ea88957387
 #EXTINF:0 channelID="x-ID.477" tvg-chno="9471" tvg-name="Buzzr TV" tvg-id="9471" tvg-logo="https://media.starlite.best/buzzr.tv.us.png" group-title="US",Buzzr TV
 http://tv.kinte.net/stream/d8559d9b00f1b6989a22cc4c56be296c
-#EXTINF:0 channelID="x-ID.479" tvg-chno="9473" tvg-name="Cartoon Network (East) US" tvg-id="9473" tvg-logo="https://media.starlite.best/cartoon.network.usa.eastern.us.png" group-title="US",Cartoon Network (East) US
-http://tv.kinte.net/stream/4ef3f58bbadfe7b626afc38eace65b21
 #EXTINF:0 channelID="x-ID.480" tvg-chno="9474" tvg-name="CBS East" tvg-id="9474" tvg-logo="https://media.starlite.best/cbs.eastern.us.png" group-title="US",CBS East
 http://tv.kinte.net/stream/2980135178dfe7609133302cc25603f8
 #EXTINF:0 channelID="x-ID.482" tvg-chno="9476" tvg-name="Charge" tvg-id="9476" tvg-logo="https://media.starlite.best/charge.us.png" group-title="US",Charge
@@ -5999,10 +6001,6 @@ http://tv.kinte.net/stream/cb54710e559d235923bcf3018bd6be96
 http://tv.kinte.net/stream/a95ff9781535caee43122e9e2a048be2
 #EXTINF:0 channelID="x-ID.490" tvg-chno="9484" tvg-name="CNN International North America" tvg-id="9484" tvg-logo="https://media.starlite.best/cnn.international.north.america.us.png" group-title="US",CNN International North America
 http://tv.kinte.net/stream/ebc55348e69a7e5dd833d4e9be5baa6b
-#EXTINF:0 channelID="x-ID.491" tvg-chno="9485" tvg-name="CNN US" tvg-id="9485" tvg-logo="https://media.starlite.best/cnn.us.png" group-title="US",CNN US
-http://tv.kinte.net/stream/96f3fb400ad34cc63129ee7d58441a4a
-#EXTINF:0 channelID="x-ID.492" tvg-chno="9486" tvg-name="Comedy Central US" tvg-id="9486" tvg-logo="https://media.starlite.best/comedy.central.eastern.us.png" group-title="US",Comedy Central US
-http://tv.kinte.net/stream/30fa478766b7fb29ceb33f583c3e09c9
 #EXTINF:0 channelID="x-ID.495" tvg-chno="9489" tvg-name="Cornerstone Television" tvg-id="9489" tvg-logo="https://media.starlite.best/cornerstone.television.us.png" group-title="US",Cornerstone Television
 http://tv.kinte.net/stream/13790fdcc3021454441db79fe3577cbb
 #EXTINF:0 channelID="x-ID.496" tvg-chno="9490" tvg-name="Court TV" tvg-id="9490" tvg-logo="https://media.starlite.best/court.tv.network.us.png" group-title="US",Court TV
@@ -6023,30 +6021,14 @@ http://tv.kinte.net/stream/5beebe2e614b227a3b2612a228dfe4dd
 http://tv.kinte.net/stream/205001b5c699f4cb1cf6f8ecb0648c28
 #EXTINF:0 channelID="x-ID.504" tvg-chno="9498" tvg-name="Destination America US" tvg-id="9498" tvg-logo="https://media.starlite.best/destination.america.us.png" group-title="US",Destination America US
 http://tv.kinte.net/stream/ac3af47f65d831cc74dbd12ffda3a5d7
-#EXTINF:0 channelID="x-ID.506" tvg-chno="9500" tvg-name="Discovery Channel (East) US" tvg-id="9500" tvg-logo="https://media.starlite.best/discovery.channel.us.eastern.us.png" group-title="US",Discovery Channel (East) US
-http://tv.kinte.net/stream/9f0ce986c97a8527ceba6b5fe90bd6ef
-#EXTINF:0 channelID="x-ID.507" tvg-chno="9501" tvg-name="Discovery Channel (West)" tvg-id="9501" tvg-logo="https://media.starlite.best/discovery.channel.pacific.us.png" group-title="US",Discovery Channel (West)
-http://tv.kinte.net/stream/144c38451f290f2d46888bfd464e7349
-#EXTINF:0 channelID="x-ID.508" tvg-chno="9502" tvg-name="Discovery Family US" tvg-id="9502" tvg-logo="https://media.starlite.best/discovery.family.channel.us.png" group-title="US",Discovery Family US
-http://tv.kinte.net/stream/9c6134366abcbbb0d7b9bb30d132107c
 #EXTINF:0 channelID="x-ID.509" tvg-chno="9503" tvg-name="Discovery Life" tvg-id="9503" tvg-logo="https://media.starlite.best/discovery.life.channel.us.png" group-title="US",Discovery Life
 http://tv.kinte.net/stream/6a4142ea370571744259a9a82d1b5e38
-#EXTINF:0 channelID="x-ID.510" tvg-chno="9504" tvg-name="Disney Channel (East) US" tvg-id="9504" tvg-logo="https://media.starlite.best/disney.eastern.us.png" group-title="US",Disney Channel (East) US
-http://tv.kinte.net/stream/02c68bc12d0fb7dd10c9bb27b42d2afc
-#EXTINF:0 channelID="x-ID.511" tvg-chno="9505" tvg-name="Disney Jr (East) US" tvg-id="9505" tvg-logo="https://media.starlite.best/disney.junior.usa.east.us.png" group-title="US",Disney Jr (East) US
-http://tv.kinte.net/stream/0d6dc07b1f66558d9ab0be7a5423a4ba
 #EXTINF:0 channelID="x-ID.512" tvg-chno="9506" tvg-name="Disney XC West" tvg-id="9506" tvg-logo="https://media.starlite.best/disney.xd.usa.pacific.us.png" group-title="US",Disney XC West
 http://tv.kinte.net/stream/e4aa3a48a0820a976c016ce0935a67fa
-#EXTINF:0 channelID="x-ID.513" tvg-chno="9507" tvg-name="Disney Xd (East) US" tvg-id="9507" tvg-logo="https://media.starlite.best/disney.xd.usa.eastern.us.png" group-title="US",Disney Xd (East) US
-http://tv.kinte.net/stream/1b97f1001f0a6917dd4ab034a5877e87
-#EXTINF:0 channelID="x-ID.514" tvg-chno="9508" tvg-name="Do It Yourself Network (East) US" tvg-id="9508" tvg-logo="https://media.starlite.best/do.it.yourself.network.usa.east.us.png" group-title="US",Do It Yourself Network (East) US
-http://tv.kinte.net/stream/2d382de00941cc40b6eafad1547ecee9
 #EXTINF:0 channelID="x-ID.515" tvg-chno="9509" tvg-name="Dog TV" tvg-id="9509" tvg-logo="https://media.starlite.best/dog.tv.us.png" group-title="US",Dog TV
 http://tv.kinte.net/stream/f77ba57a109f0e6153b26142f475934b
 #EXTINF:0 channelID="x-ID.516" tvg-chno="9510" tvg-name="DW Deutsch" tvg-id="9510" tvg-logo="https://media.starlite.best/dw.english.us.png" group-title="US",DW Deutsch
 http://tv.kinte.net/stream/a7a62b012d9841f9b4b9afbbdb366bef
-#EXTINF:0 channelID="x-ID.517" tvg-chno="9511" tvg-name="E! Entertainment (Eest)" tvg-id="9511" tvg-logo="https://media.starlite.best/e.entertainment.usa.eastern.us.png" group-title="US",E! Entertainment (Eest)
-http://tv.kinte.net/stream/6fa5043b138140c6d9a08df6569bb440
 #EXTINF:0 channelID="x-ID.520" tvg-chno="9514" tvg-name="EPIX (East)" tvg-id="9514" tvg-logo="https://media.starlite.best/epix.east.us.png" group-title="US",EPIX (East)
 http://tv.kinte.net/stream/218168b4956113e0dadb3ca94ea307cd
 #EXTINF:0 channelID="x-ID.521" tvg-chno="9515" tvg-name="Epix 2" tvg-id="9515" tvg-logo="https://media.starlite.best/epix2.east.us.png" group-title="US",Epix 2
@@ -6057,14 +6039,8 @@ http://tv.kinte.net/stream/be072ed40bfbe3e43ff9e353295b18f0
 http://tv.kinte.net/stream/824e5ee93b240bbd70a9d4fa5a34064c
 #EXTINF:0 channelID="x-ID.524" tvg-chno="9518" tvg-name="EWTN Latin America" tvg-id="9518" tvg-logo="https://media.starlite.best/ewtn.latin.america.us.png" group-title="US",EWTN Latin America
 http://tv.kinte.net/stream/61054c059897086ac0d69c821bf7f9b1
-#EXTINF:0 channelID="x-ID.525" tvg-chno="9519" tvg-name="FETV Family Entertainment Television" tvg-id="9519" tvg-logo="https://media.starlite.best/fetv.family.entertainment.television.us.png" group-title="US",FETV Family Entertainment Television
-http://tv.kinte.net/stream/3d5f0878a85681c059eae19e9c84f587
-#EXTINF:0 channelID="x-ID.528" tvg-chno="9522" tvg-name="Food Network (East)" tvg-id="9522" tvg-logo="https://media.starlite.best/food.network.usa.eastern.us.png" group-title="US",Food Network (East)
-http://tv.kinte.net/stream/dd33ad9fe8589dd733ed55ea66f285f5
 #EXTINF:0 channelID="x-ID.529" tvg-chno="9523" tvg-name="FOX Business Network" tvg-id="9523" tvg-logo="https://media.starlite.best/fox.business.us.png" group-title="US",FOX Business Network
 http://tv.kinte.net/stream/2c3722c275408ad518ab2ca13065eecf
-#EXTINF:0 channelID="x-ID.530" tvg-chno="9524" tvg-name="FOX News US" tvg-id="9524" tvg-logo="https://media.starlite.best/fox.news.us.png" group-title="US",FOX News US
-http://tv.kinte.net/stream/366e219ceaa34ba1f9ca192c77d7474b
 #EXTINF:0 channelID="x-ID.531" tvg-chno="9525" tvg-name="France 24 EN" tvg-id="9525" tvg-logo="https://media.starlite.best/france.24.english.us.png" group-title="US",France 24 EN
 http://tv.kinte.net/stream/4578f72b865dc55bef4983b8fb15c2de
 #EXTINF:0 channelID="x-ID.532" tvg-chno="9526" tvg-name="Free Speech Network" tvg-id="9526" tvg-logo="https://media.starlite.best/free.speech.network.us.png" group-title="US",Free Speech Network
@@ -6073,8 +6049,6 @@ http://tv.kinte.net/stream/9c0458e353fc53dc66b777e35290e31d
 http://tv.kinte.net/stream/d12d5e51045ff27ff20da2c6ac104c09
 #EXTINF:0 channelID="x-ID.534" tvg-chno="9528" tvg-name="FUSE TV (East)" tvg-id="9528" tvg-logo="https://media.starlite.best/fuse.tv.eastern.us.png" group-title="US",FUSE TV (East)
 http://tv.kinte.net/stream/c7366b9fdc330d8280bb9aad8dad0098
-#EXTINF:0 channelID="x-ID.535" tvg-chno="9529" tvg-name="FX Movie Channel" tvg-id="9529" tvg-logo="https://media.starlite.best/fx.movie.channel.us.png" group-title="US",FX Movie Channel
-http://tv.kinte.net/stream/5c0cc284210ede537ef6be12a4f62dc4
 #EXTINF:0 channelID="x-ID.536" tvg-chno="9530" tvg-name="FX Network (West) US" tvg-id="9530" tvg-logo="https://media.starlite.best/fxpacific.us.png" group-title="US",FX Network (West) US
 http://tv.kinte.net/stream/dbee9063f63a5776d41ce0b6f4dc6e0f
 #EXTINF:0 channelID="x-ID.537" tvg-chno="9531" tvg-name="FX Networks (East) US" tvg-id="9531" tvg-logo="https://media.starlite.best/fx.networks.east.coast.us.png" group-title="US",FX Networks (East) US
@@ -6091,10 +6065,6 @@ http://tv.kinte.net/stream/6a9b1e6f1de1783f09fc467e3d448634
 http://tv.kinte.net/stream/3eb274353e1127bd63cdf8d55f3cde4e
 #EXTINF:0 channelID="x-ID.544" tvg-chno="9538" tvg-name="Hallmark Channel (East) US" tvg-id="9538" tvg-logo="https://media.starlite.best/hallmark.channel.eastern.us.png" group-title="US",Hallmark Channel (East) US
 http://tv.kinte.net/stream/353fa0db2b818d6c8682021fdf37ea86
-#EXTINF:0 channelID="x-ID.545" tvg-chno="9539" tvg-name="Hallmark Family US" tvg-id="9539" tvg-logo="https://media.starlite.best/hallmark.drama.us.png" group-title="US",Hallmark Family US
-http://tv.kinte.net/stream/6a11fc4d22e46a431f0812b5d5a45891
-#EXTINF:0 channelID="x-ID.546" tvg-chno="9540" tvg-name="Hallmark Movies Mysteries US" tvg-id="9540" tvg-logo="https://media.starlite.best/hallmark.movies.mysteries.eastern.us.png" group-title="US",Hallmark Movies Mysteries US
-http://tv.kinte.net/stream/33f5409e29245dddbe1f4c9dcc750149
 #EXTINF:0 channelID="x-ID.547" tvg-chno="9541" tvg-name="HBO (East) US" tvg-id="9541" tvg-logo="https://media.starlite.best/hbo.eastern.us.png" group-title="US",HBO (East) US
 http://tv.kinte.net/stream/9b2826b966dd9a0b5febaf193568d118
 #EXTINF:0 channelID="x-ID.548" tvg-chno="9542" tvg-name="HBO (West) US" tvg-id="9542" tvg-logo="https://media.starlite.best/hbo.west.us.png" group-title="US",HBO (West) US
@@ -6103,8 +6073,6 @@ http://tv.kinte.net/stream/1e1bfc932681763cb6c10912daf28a7f
 http://tv.kinte.net/stream/7ba998b7357e08a4761fb776ece719db
 #EXTINF:0 channelID="x-ID.550" tvg-chno="9544" tvg-name="HBO 2 (West) US" tvg-id="9544" tvg-logo="https://media.starlite.best/hbo.2.pacific.us.png" group-title="US",HBO 2 (West) US
 http://tv.kinte.net/stream/6cb130f76916acff4c5d385a59fc47ac
-#EXTINF:0 channelID="x-ID.551" tvg-chno="9545" tvg-name="HBO Comedy (East) US" tvg-id="9545" tvg-logo="https://media.starlite.best/hbo.comedy.east.us.png" group-title="US",HBO Comedy (East) US
-http://tv.kinte.net/stream/b8023b3e1dd8b1bbf4c1982205f65b59
 #EXTINF:0 channelID="x-ID.554" tvg-chno="9548" tvg-name="HBO Zone (East) US" tvg-id="9548" tvg-logo="https://media.starlite.best/hbo.zone.east.us.png" group-title="US",HBO Zone (East) US
 http://tv.kinte.net/stream/e7f96204f8de683e8f215906235f58cb
 #EXTINF:0 channelID="x-ID.555" tvg-chno="9549" tvg-name="HBO Zone (West)" tvg-id="9549" tvg-logo="https://media.starlite.best/hbo.zone.pacific.us.png" group-title="US",HBO Zone (West)
@@ -6113,14 +6081,8 @@ http://tv.kinte.net/stream/db5dbdb632bdb20c5c7d96c105aa1d2b
 http://tv.kinte.net/stream/a7ab52e4e6aff8b26ebdec65bed23a72
 #EXTINF:0 channelID="x-ID.557" tvg-chno="9551" tvg-name="Heroes & Icons Network" tvg-id="9551" tvg-logo="https://media.starlite.best/hi.heroes.icons.network.us.png" group-title="US",Heroes & Icons Network
 http://tv.kinte.net/stream/98989685374e76272dd384bb7cf1559a
-#EXTINF:0 channelID="x-ID.558" tvg-chno="9552" tvg-name="HGTV (East) US" tvg-id="9552" tvg-logo="https://media.starlite.best/hgtv.usa.eastern.us.png" group-title="US",HGTV (East) US
-http://tv.kinte.net/stream/4e9ca159ee8fa391f10a12e1a445ff95
 #EXTINF:0 channelID="x-ID.559" tvg-chno="9553" tvg-name="HGTV (West) US" tvg-id="9553" tvg-logo="https://media.starlite.best/hgtv.usa.pacific.us.png" group-title="US",HGTV (West) US
 http://tv.kinte.net/stream/cdeb8896080a35b80a46155a49eb7819
-#EXTINF:0 channelID="x-ID.561" tvg-chno="9555" tvg-name="History Channel US" tvg-id="9555" tvg-logo="https://media.starlite.best/history.channel.us.east.us.png" group-title="US",History Channel US
-http://tv.kinte.net/stream/256fcdc2b0ad85325a19a3d6dc30993d
-#EXTINF:0 channelID="x-ID.562" tvg-chno="9556" tvg-name="History en Espanol US" tvg-id="9556" tvg-logo="https://media.starlite.best/history.en.espanol.us.png" group-title="US",History en Espanol US
-http://tv.kinte.net/stream/0feeac9d81da6545b0ff3953e86f24c8
 #EXTINF:0 channelID="x-ID.563" tvg-chno="9557" tvg-name="HLN" tvg-id="9557" tvg-logo="https://media.starlite.best/hln.us.png" group-title="US",HLN
 http://tv.kinte.net/stream/b5411fe86752b76e810eeb4a8a746d8b
 #EXTINF:0 channelID="x-ID.564" tvg-chno="9558" tvg-name="Hollywire" tvg-id="9558" tvg-logo="https://media.starlite.best/hollywire.us.png" group-title="US",Hollywire
@@ -6129,12 +6091,8 @@ http://tv.kinte.net/stream/e36d4df8d6ab0f444238142d3743091e
 http://tv.kinte.net/stream/bbd0fcd52169a499a329f51cafe23ce4
 #EXTINF:0 channelID="x-ID.566" tvg-chno="9560" tvg-name="HSN Home Shopping Network" tvg-id="9560" tvg-logo="https://media.starlite.best/hsn.home.shopping.network.us.png" group-title="US",HSN Home Shopping Network
 http://tv.kinte.net/stream/f10dca9536f523c689bfa5f375eed4e2
-#EXTINF:0 channelID="x-ID.568" tvg-chno="9562" tvg-name="IFC" tvg-id="9562" tvg-logo="https://media.starlite.best/ifc.us.png" group-title="US",IFC
-http://tv.kinte.net/stream/124e6a5f5be1f3875d7a43d1fc9d0fd1
 #EXTINF:0 channelID="x-ID.571" tvg-chno="9565" tvg-name="INSP" tvg-id="9565" tvg-logo="https://media.starlite.best/insp.us.png" group-title="US",INSP
 http://tv.kinte.net/stream/b1435c324c86afcfbe95147449c06cd0
-#EXTINF:0 channelID="x-ID.572" tvg-chno="9566" tvg-name="Investigation Discovery US" tvg-id="9566" tvg-logo="https://media.starlite.best/investigation.discovery.usa.eastern.us.png" group-title="US",Investigation Discovery US
-http://tv.kinte.net/stream/868f8edb39dd3f7a8586193d4294704c
 #EXTINF:0 channelID="x-ID.573" tvg-chno="9567" tvg-name="ION" tvg-id="9567" tvg-logo="https://media.starlite.best/ion.central.us.png" group-title="US",ION
 http://tv.kinte.net/stream/044c48f2858dc7c620752a2911f0ed47
 #EXTINF:0 channelID="x-ID.575" tvg-chno="9569" tvg-name="Justice Central" tvg-id="9569" tvg-logo="https://media.starlite.best/justice.central.us.png" group-title="US",Justice Central
@@ -6161,60 +6119,26 @@ http://tv.kinte.net/stream/c0bb3631fb535434485cdf8b90e1b045
 http://tv.kinte.net/stream/728a4f56cf54ddeb982c6cfc8f081ed3
 #EXTINF:0 channelID="x-ID.590" tvg-chno="9584" tvg-name="MoreMax (West)" tvg-id="9584" tvg-logo="https://media.starlite.best/moremax.pacific.us.png" group-title="US",MoreMax (West)
 http://tv.kinte.net/stream/3200eb87368955244b4746d78ef97b42
-#EXTINF:0 channelID="x-ID.591" tvg-chno="9585" tvg-name="MotorTrend US" tvg-id="9585" tvg-logo="https://media.starlite.best/motor.trend.us.png" group-title="US",MotorTrend US
-http://tv.kinte.net/stream/712f293bfbb98fd446bbad6193e71653
-#EXTINF:0 channelID="x-ID.592" tvg-chno="9586" tvg-name="MovieMax" tvg-id="9586" tvg-logo="https://media.starlite.best/moviemax.us.png" group-title="US",MovieMax
-http://tv.kinte.net/stream/6001f539b813f3da0f7a45623ee72159
 #EXTINF:0 channelID="x-ID.593" tvg-chno="9587" tvg-name="Movies!" tvg-id="9587" tvg-logo="https://media.starlite.best/movies.us.png" group-title="US",Movies!
 http://tv.kinte.net/stream/5d9eda3e6d358a6aa33740c3901f60d7
 #EXTINF:0 channelID="x-ID.594" tvg-chno="9588" tvg-name="MSNBC US" tvg-id="9588" tvg-logo="https://media.starlite.best/msnbc.usa.us.png" group-title="US",MSNBC US
 http://tv.kinte.net/stream/efd14c3aeda07f9b759a31c1bbab626a
-#EXTINF:0 channelID="x-ID.595" tvg-chno="9589" tvg-name="MTV (East) US" tvg-id="9589" tvg-logo="https://media.starlite.best/mtv.usa.eastern.us.png" group-title="US",MTV (East) US
-http://tv.kinte.net/stream/8a3c522051c07e404dc21dea4545c42e
-#EXTINF:0 channelID="x-ID.596" tvg-chno="9590" tvg-name="MTV 2 US" tvg-id="9590" tvg-logo="https://media.starlite.best/mtv.2.east.us.png" group-title="US",MTV 2 US
-http://tv.kinte.net/stream/bdc8757e77f7e4475f82acfeb42e5187
 #EXTINF:0 channelID="x-ID.597" tvg-chno="9591" tvg-name="MTV Classic US" tvg-id="9591" tvg-logo="https://media.starlite.best/mtv.classic.east.us.png" group-title="US",MTV Classic US
 http://tv.kinte.net/stream/73cb4ad804f507c15bbddf4c2a31df67
-#EXTINF:0 channelID="x-ID.598" tvg-chno="9592" tvg-name="MTV USA (West)" tvg-id="9592" tvg-logo="https://media.starlite.best/mtv.usa.pacific.us.png" group-title="US",MTV USA (West)
-http://tv.kinte.net/stream/3de85fbb39bc8ccd4afd2f9c3fe2965a
-#EXTINF:0 channelID="x-ID.599" tvg-chno="9593" tvg-name="Music Choice" tvg-id="9593" tvg-logo="https://media.starlite.best/music.choice.us.png" group-title="US",Music Choice
-http://tv.kinte.net/stream/31e28b62e5932d65d274aab94a805178
 #EXTINF:0 channelID="x-ID.605" tvg-chno="9599" tvg-name="National Geographic US" tvg-id="9599" tvg-logo="https://media.starlite.best/national.geographic.us.png" group-title="US",National Geographic US
 http://tv.kinte.net/stream/d99a9870326ce5e6a1b8af56d66092cc
-#EXTINF:0 channelID="x-ID.606" tvg-chno="9600" tvg-name="National Geographic US (East)" tvg-id="9600" tvg-logo="https://media.starlite.best/national.geographic.us.eastern.us.png" group-title="US",National Geographic US (East)
-http://tv.kinte.net/stream/f8f71320bf401db5bcb68cd3ae78bd78
-#EXTINF:0 channelID="x-ID.607" tvg-chno="9601" tvg-name="National Geographic Wild" tvg-id="9601" tvg-logo="https://media.starlite.best/national.geographic.wild.us.png" group-title="US",National Geographic Wild
-http://tv.kinte.net/stream/d9fa6cd44eff96c93ab76aad290fbe01
-#EXTINF:0 channelID="x-ID.608" tvg-chno="9602" tvg-name="NBC News Now (US)" tvg-id="9602" tvg-logo="https://media.starlite.best/nbc.news.now.us.png" group-title="US",NBC News Now (US)
-http://tv.kinte.net/stream/b57e8487b27f2ca6b9caae66f0187cf8
-#EXTINF:0 channelID="x-ID.609" tvg-chno="9603" tvg-name="NewsMax TV" tvg-id="9603" tvg-logo="https://media.starlite.best/newsmax.tv.us.png" group-title="US",NewsMax TV
-http://tv.kinte.net/stream/6ffdd90dbfc97c102b9ad45e9885a281
 #EXTINF:0 channelID="x-ID.610" tvg-chno="9604" tvg-name="NewsNation (East)" tvg-id="9604" tvg-logo="https://media.starlite.best/newsnation.eastern.us.png" group-title="US",NewsNation (East)
 http://tv.kinte.net/stream/4cd3679a29fc39cea6831fe4cdd6e3de
 #EXTINF:0 channelID="x-ID.611" tvg-chno="9605" tvg-name="NHL Network US" tvg-id="9605" tvg-logo="https://media.starlite.best/nhl.network.usa.us.png" group-title="US",NHL Network US
 http://tv.kinte.net/stream/372b36b89e5cf4dd6de74c512fd064b7
-#EXTINF:0 channelID="x-ID.612" tvg-chno="9606" tvg-name="Nick Jr US" tvg-id="9606" tvg-logo="https://media.starlite.best/nick.jr.us.png" group-title="US",Nick Jr US
-http://tv.kinte.net/stream/631aa29a6ad457e263fb4793356a8410
-#EXTINF:0 channelID="x-ID.613" tvg-chno="9607" tvg-name="Nickelodeon (East) US" tvg-id="9607" tvg-logo="https://media.starlite.best/nickelodeon.usa.east.us.png" group-title="US",Nickelodeon (East) US
-http://tv.kinte.net/stream/7e704f890a88bfa64e89e35dafb04c21
-#EXTINF:0 channelID="x-ID.614" tvg-chno="9608" tvg-name="Nickelodeon (West) US" tvg-id="9608" tvg-logo="https://media.starlite.best/nickelodeon.usa.pacific.us.png" group-title="US",Nickelodeon (West) US
-http://tv.kinte.net/stream/eb087bced0ce189f4982d8bb438291c8
-#EXTINF:0 channelID="x-ID.616" tvg-chno="9610" tvg-name="Nicktoons US" tvg-id="9610" tvg-logo="https://media.starlite.best/nicktoons.east.us.png" group-title="US",Nicktoons US
-http://tv.kinte.net/stream/39ce7206e253f66a520a49620bb2f735
 #EXTINF:0 channelID="x-ID.617" tvg-chno="9611" tvg-name="One America News Network" tvg-id="9611" tvg-logo="https://media.starlite.best/one.america.news.network.us.png" group-title="US",One America News Network
 http://tv.kinte.net/stream/516f0b22f48139b5fdda969dbd716aca
 #EXTINF:0 channelID="x-ID.618" tvg-chno="9612" tvg-name="Outdoor Channel" tvg-id="9612" tvg-logo="https://media.starlite.best/outdoor.channel.us.us.png" group-title="US",Outdoor Channel
 http://tv.kinte.net/stream/ba3dea395ce15fcce15b94295ec8b0a4
 #EXTINF:0 channelID="x-ID.619" tvg-chno="9613" tvg-name="Ovation" tvg-id="9613" tvg-logo="https://media.starlite.best/ovation.us.png" group-title="US",Ovation
 http://tv.kinte.net/stream/e20c88020d453fc15305ce2b346ae6d0
-#EXTINF:0 channelID="x-ID.620" tvg-chno="9614" tvg-name="OWN (East) US" tvg-id="9614" tvg-logo="https://media.starlite.best/oprah.winfrey.network.usa.eastern.us.png" group-title="US",OWN (East) US
-http://tv.kinte.net/stream/da240b2df0f97caf7c18559fc76d93ca
 #EXTINF:0 channelID="x-ID.622" tvg-chno="9616" tvg-name="Oxygen (West)" tvg-id="9616" tvg-logo="https://media.starlite.best/oxygen.pacific.us.png" group-title="US",Oxygen (West)
 http://tv.kinte.net/stream/8485ce2a09ac30f8f35705a23f8fa807
-#EXTINF:0 channelID="x-ID.623" tvg-chno="9617" tvg-name="Paramount Network (East) US" tvg-id="9617" tvg-logo="https://media.starlite.best/paramount.network.usa.eastern.us.png" group-title="US",Paramount Network (East) US
-http://tv.kinte.net/stream/9c08bde0dbd94933c7c67cd898c027e3
-#EXTINF:0 channelID="x-ID.624" tvg-chno="9618" tvg-name="PBS Kids US" tvg-id="9618" tvg-logo="https://media.starlite.best/pbs.kids.us.png" group-title="US",PBS Kids US
-http://tv.kinte.net/stream/9840c891bb87dd424d0c643348338656
 #EXTINF:0 channelID="x-ID.625" tvg-chno="9619" tvg-name="PixL TV" tvg-id="9619" tvg-logo="https://media.starlite.best/pixl.tv.us.png" group-title="US",PixL TV
 http://tv.kinte.net/stream/a9029c70c56c794a3b247533fbaba439
 #EXTINF:0 channelID="x-ID.626" tvg-chno="9620" tvg-name="POP (East)" tvg-id="9620" tvg-logo="https://media.starlite.best/pop.east.us.png" group-title="US",POP (East)
@@ -6233,10 +6157,6 @@ http://tv.kinte.net/stream/b27d4331d352a58a987cdc4a02ecc652
 http://tv.kinte.net/stream/be5e958ab233bd8c9f34321c1fff66e6
 #EXTINF:0 channelID="x-ID.634" tvg-chno="9628" tvg-name="RFD TV" tvg-id="9628" tvg-logo="https://media.starlite.best/rfd.tv.us.png" group-title="US",RFD TV
 http://tv.kinte.net/stream/f1742774ec167159401773f3381690aa
-#EXTINF:0 channelID="x-ID.635" tvg-chno="9629" tvg-name="RT US" tvg-id="9629" tvg-logo="https://media.starlite.best/rt.russia.today.us.png" group-title="US",RT US
-http://tv.kinte.net/stream/d3953aaf583da7a07d94bce3bfb800df
-#EXTINF:0 channelID="x-ID.636" tvg-chno="9630" tvg-name="Science US" tvg-id="9630" tvg-logo="https://media.starlite.best/science.us.png" group-title="US",Science US
-http://tv.kinte.net/stream/606ec7b01afe15d58a4a528fbb1e192f
 #EXTINF:0 channelID="x-ID.637" tvg-chno="9631" tvg-name="ScreenPix" tvg-id="9631" tvg-logo="https://media.starlite.best/screenpix.us.png" group-title="US",ScreenPix
 http://tv.kinte.net/stream/4cc6c590539f5eeaddbf57b27353ea70
 #EXTINF:0 channelID="x-ID.638" tvg-chno="9632" tvg-name="ScreenPix Action" tvg-id="9632" tvg-logo="https://media.starlite.best/screenpix.action.us.png" group-title="US",ScreenPix Action
@@ -6245,28 +6165,10 @@ http://tv.kinte.net/stream/34d8bcce20aa8b5f9a3fbe3afa680ab6
 http://tv.kinte.net/stream/2f4864ab56a3a6d2c6f97c46fa822a99
 #EXTINF:0 channelID="x-ID.640" tvg-chno="9634" tvg-name="ScreenPix Westerns" tvg-id="9634" tvg-logo="https://media.starlite.best/screenpix.westerns.us.png" group-title="US",ScreenPix Westerns
 http://tv.kinte.net/stream/8c53ba18051989f701816cd5f20977c4
-#EXTINF:0 channelID="x-ID.641" tvg-chno="9635" tvg-name="Showtime (East) US" tvg-id="9635" tvg-logo="https://media.starlite.best/showtime.eastern.us.png" group-title="US",Showtime (East) US
-http://tv.kinte.net/stream/a81aabb51f99134d4993c45358ac94c9
-#EXTINF:0 channelID="x-ID.642" tvg-chno="9636" tvg-name="Showtime (West) US" tvg-id="9636" tvg-logo="https://media.starlite.best/showtime.west.us.png" group-title="US",Showtime (West) US
-http://tv.kinte.net/stream/a4d4ee2435d2d40f37b65020a2793434
-#EXTINF:0 channelID="x-ID.644" tvg-chno="9638" tvg-name="Showtime 2 (West) US" tvg-id="9638" tvg-logo="https://media.starlite.best/showtime.2.pacific.us.png" group-title="US",Showtime 2 (West) US
-http://tv.kinte.net/stream/fb796a4fb7231149dc8c2b0e6386f474
-#EXTINF:0 channelID="x-ID.645" tvg-chno="9639" tvg-name="Showtime Extreme (East) US" tvg-id="9639" tvg-logo="https://media.starlite.best/showtime.extreme.eastern.us.png" group-title="US",Showtime Extreme (East) US
-http://tv.kinte.net/stream/9f49da6a9bf0d109fdf651776c5d6144
 #EXTINF:0 channelID="x-ID.646" tvg-chno="9640" tvg-name="Showtime Extreme (West) US" tvg-id="9640" tvg-logo="https://media.starlite.best/showtime.extreme.pacific.us.png" group-title="US",Showtime Extreme (West) US
 http://tv.kinte.net/stream/6021f3d209f58a5e0ced62b82c3d9c97
-#EXTINF:0 channelID="x-ID.647" tvg-chno="9641" tvg-name="Showtime Family Zone (East) US" tvg-id="9641" tvg-logo="https://media.starlite.best/showtime.family.zone.eastern.us.png" group-title="US",Showtime Family Zone (East) US
-http://tv.kinte.net/stream/61ba2ac3f7bc2e6ad4de77bb08eee798
-#EXTINF:0 channelID="x-ID.649" tvg-chno="9643" tvg-name="Showtime Next (West) US" tvg-id="9643" tvg-logo="https://media.starlite.best/showtime.next.pacific.us.png" group-title="US",Showtime Next (West) US
-http://tv.kinte.net/stream/a332c6da4ea63986a234ff8b7e5c681f
 #EXTINF:0 channelID="x-ID.650" tvg-chno="9644" tvg-name="Showtime Next US (East) US" tvg-id="9644" tvg-logo="https://media.starlite.best/showtime.next.eastern.us.png" group-title="US",Showtime Next US (East) US
 http://tv.kinte.net/stream/6b1d4a7c83fc99dce227f5ac9469acb5
-#EXTINF:0 channelID="x-ID.651" tvg-chno="9645" tvg-name="Showtime Showcase (East) US" tvg-id="9645" tvg-logo="https://media.starlite.best/showtime.showcase.eastern.us.png" group-title="US",Showtime Showcase (East) US
-http://tv.kinte.net/stream/a609bfc97f63992de6009b0dffff331e
-#EXTINF:0 channelID="x-ID.652" tvg-chno="9646" tvg-name="Showtime Showcase (West) US" tvg-id="9646" tvg-logo="https://media.starlite.best/showtime.showcase.pacific.us.png" group-title="US",Showtime Showcase (West) US
-http://tv.kinte.net/stream/8b8ec387e626eddf31e61f47028062a8
-#EXTINF:0 channelID="x-ID.654" tvg-chno="9648" tvg-name="Showtime Women (West) US" tvg-id="9648" tvg-logo="https://media.starlite.best/showtime.women.pacific.us.png" group-title="US",Showtime Women (West) US
-http://tv.kinte.net/stream/413461f84cade23768c53d6bef52ee9f
 #EXTINF:0 channelID="x-ID.655" tvg-chno="9649" tvg-name="SHOXBET (East) US" tvg-id="9649" tvg-logo="https://media.starlite.best/shoxbet.eastern.us.png" group-title="US",SHOXBET (East) US
 http://tv.kinte.net/stream/695d9ae810b0fb31da505cd979419610
 #EXTINF:0 channelID="x-ID.656" tvg-chno="9650" tvg-name="SHOXBET (West) US" tvg-id="9650" tvg-logo="https://media.starlite.best/shoxbet.pacific.us.png" group-title="US",SHOXBET (West) US
@@ -6277,46 +6179,20 @@ http://tv.kinte.net/stream/c5a6a79813dfa2f21e4131f4da9dc809
 http://tv.kinte.net/stream/382b0d213eec37eb3856693c3d4dddf0
 #EXTINF:0 channelID="x-ID.660" tvg-chno="9654" tvg-name="Start TV" tvg-id="9654" tvg-logo="https://media.starlite.best/start.tv.us.png" group-title="US",Start TV
 http://tv.kinte.net/stream/9b2603838db4e88b5ff74e42b8b2c0fa
-#EXTINF:0 channelID="x-ID.661" tvg-chno="9655" tvg-name="Starz (East) US" tvg-id="9655" tvg-logo="https://media.starlite.best/starz.eastern.us.png" group-title="US",Starz (East) US
-http://tv.kinte.net/stream/50e039aa83162c4fea39e37413a100dd
-#EXTINF:0 channelID="x-ID.662" tvg-chno="9656" tvg-name="Starz (West) US" tvg-id="9656" tvg-logo="https://media.starlite.best/starz.pacific.us.png" group-title="US",Starz (West) US
-http://tv.kinte.net/stream/dfb321a4b10833a9f83799e0adfeec04
-#EXTINF:0 channelID="x-ID.663" tvg-chno="9657" tvg-name="Starz Cinema (East) US" tvg-id="9657" tvg-logo="https://media.starlite.best/starz.cinema.eastern.us.png" group-title="US",Starz Cinema (East) US
-http://tv.kinte.net/stream/97a14f7b8dc4482afe46f63e6618b74c
 #EXTINF:0 channelID="x-ID.665" tvg-chno="9659" tvg-name="Starz Comedy (East) US" tvg-id="9659" tvg-logo="https://media.starlite.best/starz.comedy.eastern.us.png" group-title="US",Starz Comedy (East) US
 http://tv.kinte.net/stream/581f0b56be3cb2bc5c6b91edd6eaa467
 #EXTINF:0 channelID="x-ID.670" tvg-chno="9664" tvg-name="Starz Encore (West) US" tvg-id="9664" tvg-logo="https://media.starlite.best/starz.encore.pacific.us.png" group-title="US",Starz Encore (West) US
 http://tv.kinte.net/stream/f61ef415a11482cfb7950d2a0ca3cae2
-#EXTINF:0 channelID="x-ID.671" tvg-chno="9665" tvg-name="Starz Encore Action (East) US" tvg-id="9665" tvg-logo="https://media.starlite.best/starz.encore.action.eastern.us.png" group-title="US",Starz Encore Action (East) US
-http://tv.kinte.net/stream/3ac3a9d34a48ca6ee26c6ca35f70c172
-#EXTINF:0 channelID="x-ID.672" tvg-chno="9666" tvg-name="Starz Encore Action (West) US" tvg-id="9666" tvg-logo="https://media.starlite.best/starz.encore.action.pacific.us.png" group-title="US",Starz Encore Action (West) US
-http://tv.kinte.net/stream/df400ce66f24e134927080ba489df388
 #EXTINF:0 channelID="x-ID.673" tvg-chno="9667" tvg-name="Starz Encore Black (East) US" tvg-id="9667" tvg-logo="https://media.starlite.best/starz.encore.black.eastern.us.png" group-title="US",Starz Encore Black (East) US
 http://tv.kinte.net/stream/7da93875ecbbfc70548b06df7c347b1d
 #EXTINF:0 channelID="x-ID.675" tvg-chno="9669" tvg-name="Starz Encore Classic (East) US" tvg-id="9669" tvg-logo="https://media.starlite.best/starz.encore.classic.eastern.us.png" group-title="US",Starz Encore Classic (East) US
 http://tv.kinte.net/stream/85834c45d23c9cf71024b1d07bb170ce
-#EXTINF:0 channelID="x-ID.677" tvg-chno="9671" tvg-name="Starz Encore Family (East) US" tvg-id="9671" tvg-logo="https://media.starlite.best/starz.encore.family.eastern.us.png" group-title="US",Starz Encore Family (East) US
-http://tv.kinte.net/stream/abd67c4d8000e818056264002496aece
-#EXTINF:0 channelID="x-ID.678" tvg-chno="9672" tvg-name="Starz Encore Family (West) US" tvg-id="9672" tvg-logo="https://media.starlite.best/starz.encore.family.pacific.us.png" group-title="US",Starz Encore Family (West) US
-http://tv.kinte.net/stream/8f78dbfceefa5597d79ddc6f6df6e948
 #EXTINF:0 channelID="x-ID.679" tvg-chno="9673" tvg-name="Starz Encore Suspense (West) US" tvg-id="9673" tvg-logo="https://media.starlite.best/starz.encore.suspense.pacific.us.png" group-title="US",Starz Encore Suspense (West) US
 http://tv.kinte.net/stream/98bfa31dfd8d1674692ae42e3c4d19de
-#EXTINF:0 channelID="x-ID.680" tvg-chno="9674" tvg-name="Starz Encore Westerns (West) US" tvg-id="9674" tvg-logo="https://media.starlite.best/starz.encore.westerns.pacific.us.png" group-title="US",Starz Encore Westerns (West) US
-http://tv.kinte.net/stream/1e9cc94874451988dacf721801786cc6
 #EXTINF:0 channelID="x-ID.681" tvg-chno="9675" tvg-name="Starz In Black (East) US" tvg-id="9675" tvg-logo="https://media.starlite.best/starz.in.black.eastern.us.png" group-title="US",Starz In Black (East) US
 http://tv.kinte.net/stream/33d146001c3398fa30d752cb3419383a
 #EXTINF:0 channelID="x-ID.683" tvg-chno="9677" tvg-name="Starz Kids Family (East) US" tvg-id="9677" tvg-logo="https://media.starlite.best/starz.kids.family.eastern.us.png" group-title="US",Starz Kids Family (East) US
 http://tv.kinte.net/stream/648182f0d27e5d2d46a2e224bdd60dc4
-#EXTINF:0 channelID="x-ID.684" tvg-chno="9678" tvg-name="Starz Suspense (East) US" tvg-id="9678" tvg-logo="https://media.starlite.best/starz.encore.suspense.eastern.us.png" group-title="US",Starz Suspense (East) US
-http://tv.kinte.net/stream/587e2df509b803d4385cf3e15f4c041b
-#EXTINF:0 channelID="x-ID.685" tvg-chno="9679" tvg-name="Starz Westerns US (East) US" tvg-id="9679" tvg-logo="https://media.starlite.best/starz.encore.westerns.eastern.us.png" group-title="US",Starz Westerns US (East) US
-http://tv.kinte.net/stream/02504e4688c118211d822b8d270cd568
-#EXTINF:0 channelID="x-ID.686" tvg-chno="9680" tvg-name="SundanceTV (East) US" tvg-id="9680" tvg-logo="https://media.starlite.best/sundancetv.usa.east.us.png" group-title="US",SundanceTV (East) US
-http://tv.kinte.net/stream/3fea7df48dd70221e2a80c470ae4f4af
-#EXTINF:0 channelID="x-ID.687" tvg-chno="9681" tvg-name="Syfy (East) US" tvg-id="9681" tvg-logo="https://media.starlite.best/syfy.eastern.us.png" group-title="US",Syfy (East) US
-http://tv.kinte.net/stream/b1f34a90ff5994cdc2733bfb904f6a6c
-#EXTINF:0 channelID="x-ID.688" tvg-chno="9682" tvg-name="Syfy (West) US" tvg-id="9682" tvg-logo="https://media.starlite.best/syfy.pacific.us.png" group-title="US",Syfy (West) US
-http://tv.kinte.net/stream/a249bf5d1c54a42dc3b7be16bfece003
 #EXTINF:0 channelID="x-ID.689" tvg-chno="9683" tvg-name="Tastemade" tvg-id="9683" tvg-logo="https://media.starlite.best/tastemade.us.png" group-title="US",Tastemade
 http://tv.kinte.net/stream/3fd2038d000368b3893f8937f08c9445
 #EXTINF:0 channelID="x-ID.690" tvg-chno="9684" tvg-name="TBN Trinity Broadcasting Network East" tvg-id="9684" tvg-logo="https://media.starlite.best/tbn.trinity.broadcasting.network.east.us.png" group-title="US",TBN Trinity Broadcasting Network East
@@ -6327,14 +6203,8 @@ http://tv.kinte.net/stream/f106ab583b6c9186fc57fc46a78eee9d
 http://tv.kinte.net/stream/5fe2f12accec9cf808720b788b168afa
 #EXTINF:0 channelID="x-ID.693" tvg-chno="9687" tvg-name="Teen Nick" tvg-id="9687" tvg-logo="https://media.starlite.best/teen.nick.us.png" group-title="US",Teen Nick
 http://tv.kinte.net/stream/c0aab5f7c6bb14f430d0d3a844dad9c4
-#EXTINF:0 channelID="x-ID.694" tvg-chno="9688" tvg-name="TeenNick (East) US" tvg-id="9688" tvg-logo="https://media.starlite.best/teennick.eastern.us.png" group-title="US",TeenNick (East) US
-http://tv.kinte.net/stream/6711022d96e530979392babcde1c3a73
-#EXTINF:0 channelID="x-ID.696" tvg-chno="9690" tvg-name="The Dove" tvg-id="9690" tvg-logo="https://media.starlite.best/the.dove.us.png" group-title="US",The Dove
-http://tv.kinte.net/stream/5541864ddd742738b85698e1faa3aa71
 #EXTINF:0 channelID="x-ID.697" tvg-chno="9691" tvg-name="The First" tvg-id="9691" tvg-logo="https://media.starlite.best/the.first.us.png" group-title="US",The First
 http://tv.kinte.net/stream/9f7970235fe64298904a993884256065
-#EXTINF:0 channelID="x-ID.699" tvg-chno="9693" tvg-name="The Weather Channel US" tvg-id="9693" tvg-logo="https://media.starlite.best/the.weather.channel.us.png" group-title="US",The Weather Channel US
-http://tv.kinte.net/stream/cda4f8f22a17764e4cfa66c76232d83d
 #EXTINF:0 channelID="x-ID.701" tvg-chno="9695" tvg-name="TLC (East)" tvg-id="9695" tvg-logo="https://media.starlite.best/tlc.usa.eastern.us.png" group-title="US",TLC (East)
 http://tv.kinte.net/stream/a0e09473236be771bd2c237052198bcc
 #EXTINF:0 channelID="x-ID.702" tvg-chno="9696" tvg-name="TLC West" tvg-id="9696" tvg-logo="https://media.starlite.best/tlc.pacific.us.png" group-title="US",TLC West
@@ -6343,20 +6213,12 @@ http://tv.kinte.net/stream/5eb798830100a7583fda0f7814d55603
 http://tv.kinte.net/stream/32525481a632ec8473bd44d89ee8f11d
 #EXTINF:0 channelID="x-ID.704" tvg-chno="9698" tvg-name="TNT (East) US" tvg-id="9698" tvg-logo="https://media.starlite.best/tnt.east.us.png" group-title="US",TNT (East) US
 http://tv.kinte.net/stream/9606eb4869c92923b9cfc334900d05df
-#EXTINF:0 channelID="x-ID.705" tvg-chno="9699" tvg-name="TNT (West) US" tvg-id="9699" tvg-logo="https://media.starlite.best/tnt.pacific.us.png" group-title="US",TNT (West) US
-http://tv.kinte.net/stream/66c74f9c2ee679f57b88f310a1903b65
 #EXTINF:0 channelID="x-ID.706" tvg-chno="9700" tvg-name="Travel Channel US" tvg-id="9700" tvg-logo="https://media.starlite.best/travel.us.east.us.png" group-title="US",Travel Channel US
 http://tv.kinte.net/stream/05f4494fb38ea6c53733f70c18584760
 #EXTINF:0 channelID="x-ID.707" tvg-chno="9701" tvg-name="True Crime Network" tvg-id="9701" tvg-logo="https://media.starlite.best/true.crime.network.us.png" group-title="US",True Crime Network
 http://tv.kinte.net/stream/9c6fb3677c570752682bdb04f3127a25
-#EXTINF:0 channelID="x-ID.708" tvg-chno="9702" tvg-name="TruTV East US" tvg-id="9702" tvg-logo="https://media.starlite.best/trutv.usa.east.us.png" group-title="US",TruTV East US
-http://tv.kinte.net/stream/3cc279141c8be115af2c8c00b1e56321
-#EXTINF:0 channelID="x-ID.709" tvg-chno="9703" tvg-name="TruTV West" tvg-id="9703" tvg-logo="https://media.starlite.best/trutv.pacific.us.png" group-title="US",TruTV West
-http://tv.kinte.net/stream/2f199505ffac5e97c4322ac2b50a7632
 #EXTINF:0 channelID="x-ID.710" tvg-chno="9704" tvg-name="Turner Classic Movies US" tvg-id="9704" tvg-logo="https://media.starlite.best/turner.classic.movies.usa.us.png" group-title="US",Turner Classic Movies US
 http://tv.kinte.net/stream/330cacef10a089ac75de0720636252bb
-#EXTINF:0 channelID="x-ID.711" tvg-chno="9705" tvg-name="Tv Land US" tvg-id="9705" tvg-logo="https://media.starlite.best/tv.land.eastern.us.png" group-title="US",Tv Land US
-http://tv.kinte.net/stream/661c2f2d400febb884b9735cfe2784c7
 #EXTINF:0 channelID="x-ID.712" tvg-chno="9706" tvg-name="TV One" tvg-id="9706" tvg-logo="https://media.starlite.best/tv.one.us.png" group-title="US",TV One
 http://tv.kinte.net/stream/26164c1921800266abfa493eafcfcbd4
 #EXTINF:0 channelID="x-ID.714" tvg-chno="9708" tvg-name="UP" tvg-id="9708" tvg-logo="https://media.starlite.best/up.us.png" group-title="US",UP
@@ -6365,8 +6227,6 @@ http://tv.kinte.net/stream/63ffc367211a8a420bb710b0f2daed19
 http://tv.kinte.net/stream/97a30da098619b173288542d7643dd47
 #EXTINF:0 channelID="x-ID.716" tvg-chno="9710" tvg-name="USA Network (West)" tvg-id="9710" tvg-logo="https://media.starlite.best/usa.network.pacific.us.png" group-title="US",USA Network (West)
 http://tv.kinte.net/stream/7e7c1a7e55fc5e56b143fa5aeb509247
-#EXTINF:0 channelID="x-ID.717" tvg-chno="9711" tvg-name="VH1 (East) US" tvg-id="9711" tvg-logo="https://media.starlite.best/vh1.eastern.us.png" group-title="US",VH1 (East) US
-http://tv.kinte.net/stream/3e04ab1fe1d5ac61278e9529b9aa8f8e
 #EXTINF:0 channelID="x-ID.718" tvg-chno="9712" tvg-name="VICE" tvg-id="9712" tvg-logo="https://media.starlite.best/vice.us.png" group-title="US",VICE
 http://tv.kinte.net/stream/4a02403dd7dbfebece74ced084c3cad7
 #EXTINF:0 channelID="x-ID.719" tvg-chno="9713" tvg-name="WE TV" tvg-id="9713" tvg-logo="https://media.starlite.best/we.us.png" group-title="US",WE TV
@@ -6561,30 +6421,18 @@ http://xteve.donleynexus.com/stream/be1fe466d6956202b63e67552d787197
 http://xteve.donleynexus.com/stream/a742ceffa379f1006497b86d095b6b0c
 #EXTINF:0 channelID="x-ID.676" tvg-chno="228" tvg-name="GEM Shopping Network" tvg-id="228" tvg-logo="https://media.starlite.best/gem.shopping.network.us.png" group-title="US",GEM Shopping Network
 http://xteve.donleynexus.com/stream/06039aae21dd43348b56c5314a01b319
-#EXTINF:0 channelID="x-ID.1681" tvg-chno="229" tvg-name="HGTV (East) US" tvg-id="229" tvg-logo="https://media.starlite.best/hgtv.usa.eastern.us.png" group-title="US",HGTV (East) US
-http://xteve.donleynexus.com/stream/b5a6f2bd59d9fa23826004642a5ee374
 #EXTINF:0 channelID="x-ID.858" tvg-chno="230" tvg-name="Magnolia Network" tvg-id="230" tvg-logo="https://media.starlite.best/do.it.yourself.network.canada.ca.png" group-title="US",Magnolia Network
 http://xteve.donleynexus.com/stream/1f1af47d86eaf95ce49eefd5f9c80e2f
-#EXTINF:0 channelID="x-ID.81" tvg-chno="231" tvg-name="Food Network (East)" tvg-id="231" tvg-logo="https://media.starlite.best/food.network.usa.eastern.us.png" group-title="US",Food Network (East)
-http://xteve.donleynexus.com/stream/65814178513eaac01db94939b41050d5
 #EXTINF:0 channelID="x-ID.49" tvg-chno="232" tvg-name="Cooking Channel US" tvg-id="232" tvg-logo="https://media.starlite.best/the.cooking.channel.us.png" group-title="US",Cooking Channel US
 http://xteve.donleynexus.com/stream/4762f697d95a04d62b8e66e01e7ceaa2
 #EXTINF:0 channelID="x-ID.92" tvg-chno="233" tvg-name="Game Show Network (East)" tvg-id="233" tvg-logo="https://media.starlite.best/game.show.network.east.us.png" group-title="US",Game Show Network (East)
 http://xteve.donleynexus.com/stream/e4f3cf280a892949e2f6534d915d8865
-#EXTINF:0 channelID="x-ID.1660" tvg-chno="236" tvg-name="E! Entertainment (Eest)" tvg-id="236" tvg-logo="https://media.starlite.best/e.entertainment.usa.eastern.us.png" group-title="US",E! Entertainment (Eest)
-http://xteve.donleynexus.com/stream/db3d08b77a85a5a91808b4ae120b68d0
-#EXTINF:0 channelID="x-ID.1653" tvg-chno="237" tvg-name="Bravo (East)" tvg-id="237" tvg-logo="https://media.starlite.best/bravo.usa.eastern.us.png" group-title="US",Bravo (East)
-http://xteve.donleynexus.com/stream/c4d3eba698ec04728e0d05198e0045ba
 #EXTINF:0 channelID="x-ID.174" tvg-chno="238" tvg-name="ReelzChannel" tvg-id="238" tvg-logo="https://media.starlite.best/reelzchannel.us.png" group-title="US",ReelzChannel
 http://xteve.donleynexus.com/stream/ee18e08daf95a945df072bc115e677c5
-#EXTINF:0 channelID="x-ID.229" tvg-chno="239" tvg-name="SundanceTV (East) US" tvg-id="239" tvg-logo="https://media.starlite.best/sundancetv.usa.east.us.png" group-title="US",SundanceTV (East) US
-http://xteve.donleynexus.com/stream/17ca373d0f0def4d8fd8c3faceecb8cb
 #EXTINF:0 channelID="x-ID.1688" tvg-chno="241" tvg-name="Paramount Network (East) US" tvg-id="241" tvg-logo="https://media.starlite.best/paramount.network.usa.eastern.us.png" group-title="US",Paramount Network (East) US
 http://xteve.donleynexus.com/stream/b8231fdd384c3d7759f6639415211038
 #EXTINF:0 channelID="x-ID.259" tvg-chno="242" tvg-name="USA Network (East)" tvg-id="242" tvg-logo="https://media.starlite.best/usa.network.east.us.png" group-title="US",USA Network (East)
 http://xteve.donleynexus.com/stream/8b9f4177cc3675ab0b540c126ee37dcd
-#EXTINF:0 channelID="x-ID.1742" tvg-chno="244" tvg-name="Syfy (East) US" tvg-id="244" tvg-logo="https://media.starlite.best/syfy.eastern.us.png" group-title="US",Syfy (East) US
-http://xteve.donleynexus.com/stream/bfc22f93f58cbd3709e250179135da50
 #EXTINF:0 channelID="x-ID.248" tvg-chno="245" tvg-name="TNT (East) US" tvg-id="245" tvg-logo="https://media.starlite.best/tnt.east.us.png" group-title="US",TNT (East) US
 http://xteve.donleynexus.com/stream/f05611fc9f2ea729ef12d10c9a0c3d94
 #EXTINF:0 channelID="x-ID.16" tvg-chno="264" tvg-name="BBC America" tvg-id="264" tvg-logo="https://media.starlite.best/bbc.america.east.us.png" group-title="US",BBC America
@@ -6609,3 +6457,33 @@ http://xteve.donleynexus.com/stream/a3dad90ff36f9b3c003a0cc97b8acf4e
 http://xteve.donleynexus.com/stream/f77e97135702fb479b1d97118c9b2ef5
 #EXTINF:0 channelID="x-ID.51" tvg-chno="4230" tvg-name="Court TV" tvg-id="4230" tvg-logo="https://media.starlite.best/court.tv.network.us.png" group-title="US",Court TV
 http://xteve.donleynexus.com/stream/c64734749eff46d069361e0b63a4022d
+#EXTINF:0 channelID="x-ID.0" tvg-chno="1000" tvg-name="TF1" tvg-id="1000" tvg-logo="" group-title="US",TF1
+http://xteve.cineworld.ovh/stream/ebf352e91b938382e82938d7074953ef
+#EXTINF:0 channelID="x-ID.1" tvg-chno="1001" tvg-name="FRANCE 2" tvg-id="1001" tvg-logo="" group-title="US",FRANCE 2
+http://xteve.cineworld.ovh/stream/a326dcd96444104fe1e5976d42a923ae
+#EXTINF:0 channelID="x-ID.2" tvg-chno="1002" tvg-name="FRANCE 3" tvg-id="1002" tvg-logo="" group-title="US",FRANCE 3
+http://xteve.cineworld.ovh/stream/55c86215c845a5f8d82aec4dbf213f90
+#EXTINF:0 channelID="x-ID.4" tvg-chno="1004" tvg-name="FRANCE 5" tvg-id="1004" tvg-logo="" group-title="US",FRANCE 5
+http://xteve.cineworld.ovh/stream/0b82958a0ec9ea8e3d089d1236711862
+#EXTINF:0 channelID="x-ID.5" tvg-chno="1005" tvg-name="M6" tvg-id="1005" tvg-logo="" group-title="US",M6
+http://xteve.cineworld.ovh/stream/74a79070bf0ea104ebf48bb39f4a9eaa
+#EXTINF:0 channelID="x-ID.6" tvg-chno="1006" tvg-name="ARTE" tvg-id="1006" tvg-logo="" group-title="US",ARTE
+http://xteve.cineworld.ovh/stream/e0c94c9d0bfd1500d86a02ae5a0f7e29
+#EXTINF:0 channelID="x-ID.7" tvg-chno="1007" tvg-name="CANAL+ SPORT" tvg-id="1007" tvg-logo="" group-title="US",CANAL+ SPORT
+http://xteve.cineworld.ovh/stream/9a16cbce40a9ade6f49fcfee68bb85cd
+#EXTINF:0 channelID="x-ID.8" tvg-chno="1008" tvg-name="AB1" tvg-id="1008" tvg-logo="" group-title="US",AB1
+http://xteve.cineworld.ovh/stream/be001ccb5368eb8036aa09fcded26016
+#EXTINF:0 channelID="x-ID.9" tvg-chno="1009" tvg-name="BEIN SPORTS 1" tvg-id="1009" tvg-logo="" group-title="US",BEIN SPORTS 1
+http://xteve.cineworld.ovh/stream/2ddefc4901537a555503de18cf908a0c
+#EXTINF:0 channelID="x-ID.10" tvg-chno="1010" tvg-name="BEIN SPORTS 2" tvg-id="1010" tvg-logo="" group-title="US",BEIN SPORTS 2
+http://xteve.cineworld.ovh/stream/e4aac79b5dcd04868070deb862409676
+#EXTINF:0 channelID="x-ID.11" tvg-chno="1011" tvg-name="DAZN 1" tvg-id="1011" tvg-logo="" group-title="US",DAZN 1
+http://xteve.cineworld.ovh/stream/96badf8cf1f39f24d9c0a1c56e7446db
+#EXTINF:0 channelID="x-ID.12" tvg-chno="1012" tvg-name="RMC SPORT 1" tvg-id="1012" tvg-logo="" group-title="US",RMC SPORT 1
+http://xteve.cineworld.ovh/stream/cd6f54ca46bdfc8bac2c4ccfd91fa4b2
+#EXTINF:0 channelID="x-ID.13" tvg-chno="1013" tvg-name="RMC SPORT 2" tvg-id="1013" tvg-logo="" group-title="US",RMC SPORT 2
+http://xteve.cineworld.ovh/stream/9bfc765872c81e78ceb90689b585a884
+#EXTINF:0 channelID="x-ID.14" tvg-chno="1014" tvg-name="EUROSPORT 1" tvg-id="1014" tvg-logo="" group-title="US",EUROSPORT 1
+http://xteve.cineworld.ovh/stream/116dd18105c407827f7b084db528f751
+#EXTINF:0 channelID="x-ID.15" tvg-chno="1015" tvg-name="EUROSPORT 2" tvg-id="1015" tvg-logo="" group-title="US",EUROSPORT 2
+http://xteve.cineworld.ovh/stream/66efcf9ea6e1596786c6498e75316f8c
