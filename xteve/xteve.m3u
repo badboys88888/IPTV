@@ -1,11 +1,11 @@
 #EXTM3U
-# 更新时间: 2026-09-21 02:11:33
+# 更新时间: 2026-09-23 02:16:40
 
 # ── CA ──
 #EXTINF:-1 group-title="CA",xteve [92频道]
-http://169.150.219.151:12151/m3u/xteve.m3u
-#EXTINF:-1 group-title="CA",xteve [92频道]
 http://169.150.219.152:12151/m3u/xteve.m3u
+#EXTINF:-1 group-title="CA",xteve [92频道]
+http://169.150.219.151:12151/m3u/xteve.m3u
 #EXTINF:-1 group-title="CA",xteve [73频道]
 http://144.217.68.109:8181/m3u/xteve.m3u
 #EXTINF:-1 group-title="CA",xteve [10频道]
@@ -64,10 +64,10 @@ http://211.225.62.76:5678/m3u/xteve.m3u
 http://iptv.pd1.pl/m3u/xteve.m3u
 
 # ── US ──
-#EXTINF:-1 group-title="US",xteve [236频道]
+#EXTINF:-1 group-title="US",xteve [235频道]
 http://tv.kinte.net/m3u/xteve.m3u
+#EXTINF:-1 group-title="US",xteve [195频道]
+http://67.161.193.132:32768/m3u/xteve.m3u
 #EXTINF:-1 group-title="US",xteve [39频道]
 http://xteve.donleynexus.com/m3u/xteve.m3u
-#EXTINF:-1 group-title="US",xteve [16频道]
-http://xteve.cineworld.ovh/m3u/xteve.m3u
 
