@@ -1,5 +1,5 @@
 #EXTM3U
-# 更新时间: 2026-10-27 02:47:08
+# 更新时间: 2026-10-29 03:20:06
 
 # ── CA ──
 #EXTINF:-1 group-title="CA",xteve [92频道]
@@ -18,6 +18,8 @@ http://47.93.47.174:443/m3u/xteve.m3u
 http://us.199301.xyz:34400/m3u/xteve.m3u
 #EXTINF:-1 group-title="CN",xteve [83频道]
 http://xteve.yhlee.net/m3u/xteve.m3u
+#EXTINF:-1 group-title="CN",xteve [60频道]
+http://nas.netwalksimon.top:34400/m3u/xteve.m3u
 
 # ── DE ──
 #EXTINF:-1 group-title="DE",xteve [140频道]
