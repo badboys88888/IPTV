@@ -1,5 +1,5 @@
 #EXTM3U
-# 展开版，更新时间: 2026-10-29 03:20:06
+# 展开版，更新时间: 2026-10-31 03:06:27
 
 #EXTINF:0 channelID="x-ID.0" tvg-chno="1000" tvg-name="US: TNT" tvg-id="1000" tvg-logo="https://logo.m3uassets.com/tnt.png" group-title="CA",US: TNT
 http://169.150.219.151:12151/stream/20f98d85bf094be9cf633637e0536758
@@ -1519,172 +1519,6 @@ http://us.199301.xyz:34400/stream/ee38446fefd572901a6dc9aa8da5746a
 http://us.199301.xyz:34400/stream/26f9a7944c5bed6fe393339f974d5dd0
 #EXTINF:0 channelID="x-ID.154" tvg-chno="1633" tvg-name=" 美亞電影台" tvg-id="1633" tvg-logo="https://epg.199301.dpdns.org/logo/美亞電影台.png" group-title="CN", 美亞電影台
 http://us.199301.xyz:34400/stream/49a57db5cab8010479a5633fb41f3569
-#EXTINF:0 channelID="x-ID.0" tvg-chno="1000" tvg-name="RTHK 31" tvg-id="1000" tvg-logo="https://www.rthk.hk/img/tv_logo_31_s.svg" group-title="CN",RTHK 31
-http://xteve.yhlee.net/stream/0ae83199329aef51a558c95b5a1e6c55
-#EXTINF:0 channelID="x-ID.1" tvg-chno="1001" tvg-name="RTHK 32" tvg-id="1001" tvg-logo="https://www.rthk.hk/img/tv_logo_32_s.svg" group-title="CN",RTHK 32
-http://xteve.yhlee.net/stream/9d4ba46261eeab0a6d5fd0bc9c6b528a
-#EXTINF:0 channelID="x-ID.2" tvg-chno="1002" tvg-name="CCTV-1" tvg-id="1002" tvg-logo="https://www.rthk.hk/img/tv_logo_33_s.svg" group-title="CN",CCTV-1
-http://xteve.yhlee.net/stream/7947007addd11fc8f836c92043d56e35
-#EXTINF:0 channelID="x-ID.3" tvg-chno="1003" tvg-name="CGTN Documentary" tvg-id="1003" tvg-logo="https://www.rthk.hk/img/tv_logo_34_s.svg" group-title="CN",CGTN Documentary
-http://xteve.yhlee.net/stream/f7371110b273120ad068351a1a304200
-#EXTINF:0 channelID="x-ID.4" tvg-chno="1004" tvg-name="CGTN" tvg-id="1004" tvg-logo="https://www.rthk.hk/img/tv_logo_35_s.svg" group-title="CN",CGTN
-http://xteve.yhlee.net/stream/5c95de4d8c34775f6fb84f7e1ecd96c7
-#EXTINF:0 channelID="x-ID.5" tvg-chno="1005" tvg-name="HKIBC" tvg-id="1005" tvg-logo="https://yhlee.net/dtmb/HOY76.png" group-title="CN",HKIBC
-http://xteve.yhlee.net/stream/236bc8575c7bf23f4d2a99af9845f7bb
-#EXTINF:0 channelID="x-ID.6" tvg-chno="1006" tvg-name="HOY TV" tvg-id="1006" tvg-logo="https://yhlee.net/dtmb/HOY77.png" group-title="CN",HOY TV
-http://xteve.yhlee.net/stream/f91afa22713b0ab8d5f006f6ffb2c908
-#EXTINF:0 channelID="x-ID.7" tvg-chno="1007" tvg-name="HOY資訊台" tvg-id="1007" tvg-logo="https://yhlee.net/dtmb/HOY78.png" group-title="CN",HOY資訊台
-http://xteve.yhlee.net/stream/cab950b402a72b1bbd6973e7a598aca7
-#EXTINF:0 channelID="x-ID.8" tvg-chno="1008" tvg-name="CNN" tvg-id="1008" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnn-us.png?raw=true" group-title="CN",CNN
-http://xteve.yhlee.net/stream/7bb19270c1cd45690c408e0d2e68cfa1
-#EXTINF:0 channelID="x-ID.9" tvg-chno="1009" tvg-name="BBC News" tvg-id="1009" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/BBC_News_2022_%28Alt%29.svg/330px-BBC_News_2022_%28Alt%29.svg.png" group-title="CN",BBC News
-http://xteve.yhlee.net/stream/bd73e1886bf16ba07299290550f3d9a3
-#EXTINF:0 channelID="x-ID.10" tvg-chno="1010" tvg-name="Channel NewsAsia" tvg-id="1010" tvg-logo="https://www.channelnewsasia.com/sites/default/themes/mc_cna_theme/images/logo.svg" group-title="CN",Channel NewsAsia
-http://xteve.yhlee.net/stream/6185278669b938b446a076178d710171
-#EXTINF:0 channelID="x-ID.11" tvg-chno="1011" tvg-name="NHK World" tvg-id="1011" tvg-logo="https://images.now-tv.com/shares/channelPreview/img/zh_tw/color/ch328_110_80" group-title="CN",NHK World
-http://xteve.yhlee.net/stream/9280a3d246665d81c5f269a3ff3edba9
-#EXTINF:0 channelID="x-ID.12" tvg-chno="1012" tvg-name="RT" tvg-id="1012" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/international/russia-today-int.png?raw=true" group-title="CN",RT
-http://xteve.yhlee.net/stream/ee8d2aed3d4ecbad18bb6dfcd2e2e38b
-#EXTINF:0 channelID="x-ID.13" tvg-chno="1013" tvg-name="澳視澳門 91" tvg-id="1013" tvg-logo="https://cdn2.tdm.com.mo/uploads/attachment/2021-03/a8fbac1841a5372178278304967c69fb.png" group-title="CN",澳視澳門 91
-http://xteve.yhlee.net/stream/108b2acc098f513e482d54d5c7eab086
-#EXTINF:0 channelID="x-ID.14" tvg-chno="1014" tvg-name="澳門資訊 94" tvg-id="1014" tvg-logo="https://cdn2.tdm.com.mo/uploads/attachment/2021-03/5bde9db9db093ab310ceef6976cd0ee2.png" group-title="CN",澳門資訊 94
-http://xteve.yhlee.net/stream/f642b1aeb084ea1e83048aeff09869be
-#EXTINF:0 channelID="x-ID.15" tvg-chno="1015" tvg-name="翡翠台" tvg-id="1015" tvg-logo="https://epg.112114.xyz/logo/翡翠台.png" group-title="CN",翡翠台
-http://xteve.yhlee.net/stream/595ecb7d70c84e616c272778202d4113
-#EXTINF:0 channelID="x-ID.16" tvg-chno="1016" tvg-name="TVB Plus" tvg-id="1016" tvg-logo="https://epg.112114.xyz/logo/TVBPLUS.png" group-title="CN",TVB Plus
-http://xteve.yhlee.net/stream/a8f2c3b004de52c9934a6239b73d3033
-#EXTINF:0 channelID="x-ID.17" tvg-chno="1017" tvg-name="無綫新聞台" tvg-id="1017" tvg-logo="https://epg.112114.xyz/logo/无线新闻.png" group-title="CN",無綫新聞台
-http://xteve.yhlee.net/stream/9299f1da53abda33df65d4b33b21005b
-#EXTINF:0 channelID="x-ID.18" tvg-chno="1018" tvg-name="TVB Pearl" tvg-id="1018" tvg-logo="https://epg.112114.xyz/logo/明珠台.png" group-title="CN",TVB Pearl
-http://xteve.yhlee.net/stream/21667f99d2d153b92ffbcbcabd77bf71
-#EXTINF:0 channelID="x-ID.19" tvg-chno="1019" tvg-name="凤凰香港" tvg-id="1019" tvg-logo="https://epg.112114.xyz/logo/凤凰香港.png" group-title="CN",凤凰香港
-http://xteve.yhlee.net/stream/588f7edc2f0964526819216eae8b469e
-#EXTINF:0 channelID="x-ID.20" tvg-chno="1020" tvg-name="凤凰中文" tvg-id="1020" tvg-logo="https://epg.112114.xyz/logo/凤凰中文.png" group-title="CN",凤凰中文
-http://xteve.yhlee.net/stream/1242cf81d5e6f41f1e46c906f47c94c8
-#EXTINF:0 channelID="x-ID.21" tvg-chno="1021" tvg-name="凤凰资讯" tvg-id="1021" tvg-logo="https://epg.112114.xyz/logo/凤凰资讯.png" group-title="CN",凤凰资讯
-http://xteve.yhlee.net/stream/a6250c33f8ad78bef44868ec7111ca50
-#EXTINF:0 channelID="x-ID.22" tvg-chno="1022" tvg-name="ViuTVsix Ch.96" tvg-id="1022" tvg-logo="https://yhlee.net/dtmb/ch96_110_80.png" group-title="CN",ViuTVsix Ch.96
-http://xteve.yhlee.net/stream/686db71bf1b9d717a52e678645257206
-#EXTINF:0 channelID="x-ID.23" tvg-chno="1023" tvg-name="ViuTV Ch.99" tvg-id="1023" tvg-logo="https://yhlee.net/dtmb/ch99_110_80.png" group-title="CN",ViuTV Ch.99
-http://xteve.yhlee.net/stream/a0b449937244658dee84050ab041793b
-#EXTINF:0 channelID="x-ID.24" tvg-chno="1024" tvg-name="Discovery Channel" tvg-id="1024" tvg-logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch209_170_122" group-title="CN",Discovery Channel
-http://xteve.yhlee.net/stream/c9ef74d325d20b58f39ce357f4003a55
-#EXTINF:0 channelID="x-ID.25" tvg-chno="1025" tvg-name="Animal Planet" tvg-id="1025" tvg-logo="https://images.now-tv.com/shares/channelPreview/img/zh_tw/color/ch210_110_80" group-title="CN",Animal Planet
-http://xteve.yhlee.net/stream/7e3f2ab0857aec77b9e7b38e91218c02
-#EXTINF:0 channelID="x-ID.26" tvg-chno="1026" tvg-name="Discovery Science" tvg-id="1026" tvg-logo="https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch211_170_122" group-title="CN",Discovery Science
-http://xteve.yhlee.net/stream/90bea97c65ae511a6a90cda6680f09c4
-#EXTINF:0 channelID="x-ID.27" tvg-chno="1027" tvg-name="National Geographic" tvg-id="1027" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Natgeologo.svg/500px-Natgeologo.svg.png" group-title="CN",National Geographic
-http://xteve.yhlee.net/stream/a8634a980a8b351d7b41dd894b759ad5
-#EXTINF:0 channelID="x-ID.28" tvg-chno="1028" tvg-name="Outdoor" tvg-id="1028" tvg-logo="https://images.now-tv.com/shares/channelPreview/img/zh_tw/color/ch221_110_80" group-title="CN",Outdoor
-http://xteve.yhlee.net/stream/0ad9bcc97b97c41ee5587ab9a62701b6
-#EXTINF:0 channelID="x-ID.29" tvg-chno="1029" tvg-name="CI" tvg-id="1029" tvg-logo="https://images.now-tv.com/shares/channelPreview/img/zh_tw/color/ch222_110_80" group-title="CN",CI
-http://xteve.yhlee.net/stream/2e602e882fa5660a34a23be9f652d1a1
-#EXTINF:0 channelID="x-ID.30" tvg-chno="1030" tvg-name="NOW新聞" tvg-id="1030" tvg-logo="https://epg.112114.xyz/logo/NOW新闻台.png" group-title="CN",NOW新聞
-http://xteve.yhlee.net/stream/c389b0569aba13797fba72f74fe59ca9
-#EXTINF:0 channelID="x-ID.31" tvg-chno="1031" tvg-name="Now Business News" tvg-id="1031" tvg-logo="" group-title="CN",Now Business News
-http://xteve.yhlee.net/stream/efa2cdd7d637d0e5e9ff505feb493741
-#EXTINF:0 channelID="x-ID.32" tvg-chno="1032" tvg-name="大湾区卫视" tvg-id="1032" tvg-logo="https://epg.112114.xyz/logo/大湾区卫视.png" group-title="CN",大湾区卫视
-http://xteve.yhlee.net/stream/17137ea5029bde5560dd71bbb82e4db5
-#EXTINF:0 channelID="x-ID.33" tvg-chno="1033" tvg-name="CCTV 1 綜合" tvg-id="1033" tvg-logo="https://iptv.yang-1989.xyz/logo/CCTV1.webp" group-title="CN",CCTV 1 綜合
-http://xteve.yhlee.net/stream/ab2478ca527d552d83274483ac2b0039
-#EXTINF:0 channelID="x-ID.34" tvg-chno="1034" tvg-name="CCTV 2 財經" tvg-id="1034" tvg-logo="https://iptv.yang-1989.xyz/logo/CCTV2.webp" group-title="CN",CCTV 2 財經
-http://xteve.yhlee.net/stream/dde976b383fa199ca64643b85c4f70aa
-#EXTINF:0 channelID="x-ID.35" tvg-chno="1035" tvg-name="CCTV 3 綜藝" tvg-id="1035" tvg-logo="https://iptv.yang-1989.xyz/logo/CCTV3.webp" group-title="CN",CCTV 3 綜藝
-http://xteve.yhlee.net/stream/710ea8773e43ac328d3b5134f9b2b62c
-#EXTINF:0 channelID="x-ID.36" tvg-chno="1036" tvg-name="CCTV 4 中文國際" tvg-id="1036" tvg-logo="https://iptv.yang-1989.xyz/logo/CCTV4.webp" group-title="CN",CCTV 4 中文國際
-http://xteve.yhlee.net/stream/ca154e56b772c53fe7dc288c0562f0b5
-#EXTINF:0 channelID="x-ID.37" tvg-chno="1037" tvg-name="CCTV 5 體育" tvg-id="1037" tvg-logo="https://iptv.yang-1989.xyz/logo/CCTV5.webp" group-title="CN",CCTV 5 體育
-http://xteve.yhlee.net/stream/3cf1557ce36c094eef0ed877edef8fd9
-#EXTINF:0 channelID="x-ID.38" tvg-chno="1038" tvg-name="CCTV 5+ 體育賽事" tvg-id="1038" tvg-logo="https://iptv.yang-1989.xyz/logo/CCTV5%2B.webp" group-title="CN",CCTV 5+ 體育賽事
-http://xteve.yhlee.net/stream/723a90338ba633cc07b9a56e7825e5a9
-#EXTINF:0 channelID="x-ID.39" tvg-chno="1039" tvg-name="CCTV 6 電影" tvg-id="1039" tvg-logo="https://iptv.yang-1989.xyz/logo/CCTV6.webp" group-title="CN",CCTV 6 電影
-http://xteve.yhlee.net/stream/491823687a6c62d879049382a64b5a51
-#EXTINF:0 channelID="x-ID.40" tvg-chno="1040" tvg-name="CCTV 7 國防軍事" tvg-id="1040" tvg-logo="https://iptv.yang-1989.xyz/logo/CCTV7.webp" group-title="CN",CCTV 7 國防軍事
-http://xteve.yhlee.net/stream/0d3cd8389a64e52e47b1c0653152e7b3
-#EXTINF:0 channelID="x-ID.41" tvg-chno="1041" tvg-name="CCTV 8 電視劇" tvg-id="1041" tvg-logo="https://iptv.yang-1989.xyz/logo/CCTV8.webp" group-title="CN",CCTV 8 電視劇
-http://xteve.yhlee.net/stream/2da549c2450573ca08832079d6925304
-#EXTINF:0 channelID="x-ID.42" tvg-chno="1042" tvg-name="CCTV 9 記錄" tvg-id="1042" tvg-logo="https://iptv.yang-1989.xyz/logo/CCTV9.webp" group-title="CN",CCTV 9 記錄
-http://xteve.yhlee.net/stream/1c343b030968f171802cf13664cf91b8
-#EXTINF:0 channelID="x-ID.43" tvg-chno="1043" tvg-name="CCTV 10 科教" tvg-id="1043" tvg-logo="https://iptv.yang-1989.xyz/logo/CCTV10.webp" group-title="CN",CCTV 10 科教
-http://xteve.yhlee.net/stream/e3cd8575beaee57b53e2ca67fc40e270
-#EXTINF:0 channelID="x-ID.44" tvg-chno="1044" tvg-name="CCTV 11 戲曲" tvg-id="1044" tvg-logo="https://iptv.yang-1989.xyz/logo/CCTV11.webp" group-title="CN",CCTV 11 戲曲
-http://xteve.yhlee.net/stream/9aa0419cd07fbdfaee41d9d581a528ad
-#EXTINF:0 channelID="x-ID.45" tvg-chno="1045" tvg-name="CCTV 12 社會與法" tvg-id="1045" tvg-logo="https://iptv.yang-1989.xyz/logo/CCTV12.webp" group-title="CN",CCTV 12 社會與法
-http://xteve.yhlee.net/stream/75584b7911c0a71c1e3d5c710f36f344
-#EXTINF:0 channelID="x-ID.46" tvg-chno="1046" tvg-name="CCTV 13 新聞" tvg-id="1046" tvg-logo="https://iptv.yang-1989.xyz/logo/CCTV13.webp" group-title="CN",CCTV 13 新聞
-http://xteve.yhlee.net/stream/3f91d6dadbb7af2521bc2491d84dbb51
-#EXTINF:0 channelID="x-ID.47" tvg-chno="1047" tvg-name="CCTV 14 少兒" tvg-id="1047" tvg-logo="https://iptv.yang-1989.xyz/logo/CCTV14.webp" group-title="CN",CCTV 14 少兒
-http://xteve.yhlee.net/stream/55737098469f8c2ba0843e037fb7d3da
-#EXTINF:0 channelID="x-ID.48" tvg-chno="1048" tvg-name="CCTV 15 音樂" tvg-id="1048" tvg-logo="https://iptv.yang-1989.xyz/logo/CCTV15.webp" group-title="CN",CCTV 15 音樂
-http://xteve.yhlee.net/stream/63cad9c575b214f82d0e000d89c5eade
-#EXTINF:0 channelID="x-ID.49" tvg-chno="1049" tvg-name="CCTV 16 奥林匹克" tvg-id="1049" tvg-logo="https://iptv.yang-1989.xyz/logo/CCTV16.webp" group-title="CN",CCTV 16 奥林匹克
-http://xteve.yhlee.net/stream/534aa5223333c8a80dbcdad930436e45
-#EXTINF:0 channelID="x-ID.50" tvg-chno="1050" tvg-name="CCTV 17 农业农村" tvg-id="1050" tvg-logo="https://iptv.yang-1989.xyz/logo/CCTV17.webp" group-title="CN",CCTV 17 农业农村
-http://xteve.yhlee.net/stream/09210f14efcbcad2b8e1fbe07bc64437
-#EXTINF:0 channelID="x-ID.51" tvg-chno="1051" tvg-name="鳳凰衛視·中文「72小时回看」" tvg-id="1051" tvg-logo="https://iptv.yang-1989.xyz/logo/凤凰中文台.webp" group-title="CN",鳳凰衛視·中文「72小时回看」
-http://xteve.yhlee.net/stream/5cef74cf6fc9425ad5b47b47f4f0bd65
-#EXTINF:0 channelID="x-ID.52" tvg-chno="1052" tvg-name="鳳凰衛視·資訊「72小时回看」" tvg-id="1052" tvg-logo="https://iptv.yang-1989.xyz/logo/凤凰资讯台.webp" group-title="CN",鳳凰衛視·資訊「72小时回看」
-http://xteve.yhlee.net/stream/0bb6b9adb1664b4aa812bd866865778f
-#EXTINF:0 channelID="x-ID.53" tvg-chno="1053" tvg-name="鳳凰衛視·香港「72小时回看」" tvg-id="1053" tvg-logo="https://iptv.yang-1989.xyz/logo/凤凰香港台.webp" group-title="CN",鳳凰衛視·香港「72小时回看」
-http://xteve.yhlee.net/stream/7f7850e37a8586a7c934f81882a0d7e4
-#EXTINF:0 channelID="x-ID.54" tvg-chno="1054" tvg-name="Love Nature 4K「Relay」" tvg-id="1054" tvg-logo="https://iptv.yang-1989.xyz/logo/Love%20Nature%204K.webp" group-title="CN",Love Nature 4K「Relay」
-http://xteve.yhlee.net/stream/0f17a2013474e9a709d4c4d5182bac53
-#EXTINF:0 channelID="x-ID.55" tvg-chno="1055" tvg-name="翡翠台「24小时回看」" tvg-id="1055" tvg-logo="https://iptv.yang-1989.xyz/logo/翡翠台.webp" group-title="CN",翡翠台「24小时回看」
-http://xteve.yhlee.net/stream/5a2c4abdc7246752e18209d9c48a3c4e
-#EXTINF:0 channelID="x-ID.56" tvg-chno="1056" tvg-name="無綫新聞台「3小时回看」" tvg-id="1056" tvg-logo="https://iptv.yang-1989.xyz/logo/無綫新聞台.webp" group-title="CN",無綫新聞台「3小时回看」
-http://xteve.yhlee.net/stream/26f114ac36d4c25961d44cb8222f14bb
-#EXTINF:0 channelID="x-ID.57" tvg-chno="1057" tvg-name="明珠台「Relay」" tvg-id="1057" tvg-logo="https://iptv.yang-1989.xyz/logo/明珠台.webp" group-title="CN",明珠台「Relay」
-http://xteve.yhlee.net/stream/abf765738e71b221d6b039d774ebca68
-#EXTINF:0 channelID="x-ID.58" tvg-chno="1058" tvg-name="TVB Plus「Relay」" tvg-id="1058" tvg-logo="https://iptv.yang-1989.xyz/logo/TVB%20Plus.webp" group-title="CN",TVB Plus「Relay」
-http://xteve.yhlee.net/stream/063dfc62eb860bd0cc3e16412a12cc40
-#EXTINF:0 channelID="x-ID.59" tvg-chno="1059" tvg-name="美亞電影台「Relay」" tvg-id="1059" tvg-logo="https://iptv.yang-1989.xyz/logo/美亞電影台.webp" group-title="CN",美亞電影台「Relay」
-http://xteve.yhlee.net/stream/2d1b42e4cc5b2e0e55c3a54165730f76
-#EXTINF:0 channelID="x-ID.60" tvg-chno="1060" tvg-name="PopC「Relay」" tvg-id="1060" tvg-logo="https://iptv.yang-1989.xyz/logo/PopC.webp" group-title="CN",PopC「Relay」
-http://xteve.yhlee.net/stream/b9743bdcaeea97fc3c5c8081a9bc9cef
-#EXTINF:0 channelID="x-ID.61" tvg-chno="1061" tvg-name="ViuTV「Relay」" tvg-id="1061" tvg-logo="https://iptv.yang-1989.xyz/logo/ViuTV.webp" group-title="CN",ViuTV「Relay」
-http://xteve.yhlee.net/stream/a915edc67b584201ca14cc81b2ec6300
-#EXTINF:0 channelID="x-ID.62" tvg-chno="1062" tvg-name="ViuTVsix「Relay」" tvg-id="1062" tvg-logo="https://iptv.yang-1989.xyz/logo/ViuTVsix.webp" group-title="CN",ViuTVsix「Relay」
-http://xteve.yhlee.net/stream/b30987297d3c75ad1687d28e45896592
-#EXTINF:0 channelID="x-ID.63" tvg-chno="1063" tvg-name="Now直播台「Relay」" tvg-id="1063" tvg-logo="https://iptv.yang-1989.xyz/logo/Now直播台.webp" group-title="CN",Now直播台「Relay」
-http://xteve.yhlee.net/stream/7bf035614aaec5af4c7f1a2bd1ca26bb
-#EXTINF:0 channelID="x-ID.64" tvg-chno="1064" tvg-name="Now新聞台「Relay」" tvg-id="1064" tvg-logo="https://iptv.yang-1989.xyz/logo/Now新聞台.webp" group-title="CN",Now新聞台「Relay」
-http://xteve.yhlee.net/stream/5532223e4f56b65dbe3fd81bb6825ade
-#EXTINF:0 channelID="x-ID.65" tvg-chno="1065" tvg-name="Now財經台「Relay」" tvg-id="1065" tvg-logo="https://iptv.yang-1989.xyz/logo/Now財經台.webp" group-title="CN",Now財經台「Relay」
-http://xteve.yhlee.net/stream/3d557b7680202accf34c00a8e0b5eef1
-#EXTINF:0 channelID="x-ID.66" tvg-chno="1066" tvg-name="Now Sports 精選「Relay」" tvg-id="1066" tvg-logo="https://iptv.yang-1989.xyz/logo/Now%20Sports%20精選.webp" group-title="CN",Now Sports 精選「Relay」
-http://xteve.yhlee.net/stream/804f95149c974a4bce9a516f3bb7939c
-#EXTINF:0 channelID="x-ID.67" tvg-chno="1067" tvg-name="雷霆881「電台」" tvg-id="1067" tvg-logo="https://iptv.yang-1989.xyz/logo/雷霆881.webp" group-title="CN",雷霆881「電台」
-http://xteve.yhlee.net/stream/7d68a862c73ad98ecdd7a802b0f98b74
-#EXTINF:0 channelID="x-ID.68" tvg-chno="1068" tvg-name="叱咤903「電台」" tvg-id="1068" tvg-logo="https://iptv.yang-1989.xyz/logo/叱咤903.webp" group-title="CN",叱咤903「電台」
-http://xteve.yhlee.net/stream/3b6568e8b8a0a3d753390b4c3f02207e
-#EXTINF:0 channelID="x-ID.69" tvg-chno="1069" tvg-name="AM864「電台」" tvg-id="1069" tvg-logo="https://iptv.yang-1989.xyz/logo/AM864.webp" group-title="CN",AM864「電台」
-http://xteve.yhlee.net/stream/bcbc8cf7ede22a7d0cfa60b4c579ed15
-#EXTINF:0 channelID="x-ID.70" tvg-chno="1070" tvg-name="HOY 國際財經台「官方」" tvg-id="1070" tvg-logo="https://iptv.yang-1989.xyz/logo/HOY%20國際財經台.webp" group-title="CN",HOY 國際財經台「官方」
-http://xteve.yhlee.net/stream/1dda32db4b85072e6623d10363215099
-#EXTINF:0 channelID="x-ID.71" tvg-chno="1071" tvg-name="HOY TV「官方」" tvg-id="1071" tvg-logo="https://iptv.yang-1989.xyz/logo/HOY%20TV.webp" group-title="CN",HOY TV「官方」
-http://xteve.yhlee.net/stream/df2a845eccb0dc015b6c9cda5cf91b31
-#EXTINF:0 channelID="x-ID.72" tvg-chno="1072" tvg-name="HOY 資訊台「官方」" tvg-id="1072" tvg-logo="https://iptv.yang-1989.xyz/logo/HOY%20資訊台.webp" group-title="CN",HOY 資訊台「官方」
-http://xteve.yhlee.net/stream/465e1fe32da1afd0d2a2a59061883b94
-#EXTINF:0 channelID="x-ID.73" tvg-chno="1073" tvg-name="RTHK 31「官方」" tvg-id="1073" tvg-logo="https://iptv.yang-1989.xyz/logo/RTHK31.webp" group-title="CN",RTHK 31「官方」
-http://xteve.yhlee.net/stream/289fafeab87caafcf82b70d26b399960
-#EXTINF:0 channelID="x-ID.74" tvg-chno="1074" tvg-name="RTHK 32「官方」" tvg-id="1074" tvg-logo="https://iptv.yang-1989.xyz/logo/RTHK32.webp" group-title="CN",RTHK 32「官方」
-http://xteve.yhlee.net/stream/db1b60e51bf6e6f94654b01fae19fb71
-#EXTINF:0 channelID="x-ID.75" tvg-chno="1075" tvg-name="RTHK 33「官方」" tvg-id="1075" tvg-logo="https://iptv.yang-1989.xyz/logo/RTHK33.webp" group-title="CN",RTHK 33「官方」
-http://xteve.yhlee.net/stream/ae2661b9bdb308afecafddbbd15d8897
-#EXTINF:0 channelID="x-ID.78" tvg-chno="1078" tvg-name="澳視澳門「官方」" tvg-id="1078" tvg-logo="https://iptv.yang-1989.xyz/logo/澳視澳門.webp" group-title="CN",澳視澳門「官方」
-http://xteve.yhlee.net/stream/8c45ef259d233781a62fb82d99d9b85a
-#EXTINF:0 channelID="x-ID.79" tvg-chno="1079" tvg-name="澳門資訊「官方」" tvg-id="1079" tvg-logo="https://iptv.yang-1989.xyz/logo/澳門資訊.webp" group-title="CN",澳門資訊「官方」
-http://xteve.yhlee.net/stream/98bad31415b32855444ec8b5e8ffacb3
-#EXTINF:0 channelID="x-ID.80" tvg-chno="1080" tvg-name="澳門體育「官方」" tvg-id="1080" tvg-logo="https://iptv.yang-1989.xyz/logo/澳門體育.webp" group-title="CN",澳門體育「官方」
-http://xteve.yhlee.net/stream/145069c79d6cda95a747be9529007bf9
-#EXTINF:0 channelID="x-ID.81" tvg-chno="1081" tvg-name="澳門綜藝「官方」" tvg-id="1081" tvg-logo="https://iptv.yang-1989.xyz/logo/澳門綜藝.webp" group-title="CN",澳門綜藝「官方」
-http://xteve.yhlee.net/stream/00d4997d4113a2477ae753de89e80357
-#EXTINF:0 channelID="x-ID.82" tvg-chno="1082" tvg-name="澳門蓮花「官方」" tvg-id="1082" tvg-logo="https://iptv.yang-1989.xyz/logo/澳門蓮花衛視.webp" group-title="CN",澳門蓮花「官方」
-http://xteve.yhlee.net/stream/3287c9e98292418c8ae4152751d99741
-#EXTINF:0 channelID="x-ID.83" tvg-chno="1083" tvg-name="澳門Macau「官方」" tvg-id="1083" tvg-logo="https://iptv.yang-1989.xyz/logo/澳門Macau.webp" group-title="CN",澳門Macau「官方」
-http://xteve.yhlee.net/stream/9cdb6491ad0b76bf1acfef4462b48894
-#EXTINF:0 channelID="x-ID.84" tvg-chno="1084" tvg-name="澳視葡文「官方」" tvg-id="1084" tvg-logo="https://iptv.yang-1989.xyz/logo/澳視葡文.webp" group-title="CN",澳視葡文「官方」
-http://xteve.yhlee.net/stream/4be29b14964c8b3fb55280636b4daf53
 #EXTINF:0 channelID="x-ID.0" tvg-chno="1000" tvg-name="CCTV1" tvg-id="1000" tvg-logo="https://gcore.jsdelivr.net/gh/fanmingming/live/tv/CCTV1.png" group-title="CN",CCTV1
 http://nas.netwalksimon.top:34400/stream/0986e8769496999691f270f7dcba7ccf
 #EXTINF:0 channelID="x-ID.1" tvg-chno="1001" tvg-name="CCTV2" tvg-id="1001" tvg-logo="https://gcore.jsdelivr.net/gh/fanmingming/live/tv/CCTV2.png" group-title="CN",CCTV2
@@ -3759,8 +3593,6 @@ http://10.10.10.11:34400/stream/d7bc73ab2b7b1c3bf8167920d9291d88
 http://10.10.10.11:34400/stream/25c906698ea5c596a74ad0fafc6dc7ce
 #EXTINF:0 channelID="x-ID.2" tvg-chno="9002" tvg-name="A&E (East) US" tvg-id="9002" tvg-logo="https://media.starlite.best/ae.us.eastern.us.png" group-title="US",A&E (East) US
 http://10.10.10.11:34400/stream/540d0cbdff187436016acf61ea68a511
-#EXTINF:0 channelID="x-ID.3" tvg-chno="9003" tvg-name="CBS KCAL Los Angeles" tvg-id="9003" tvg-logo="https://media.starlite.best/kcal.los.angeles.us.png" group-title="US",CBS KCAL Los Angeles
-http://10.10.10.11:34400/stream/6756d57652d8428d222ad26adbac9483
 #EXTINF:0 channelID="x-ID.4" tvg-chno="9004" tvg-name="ActionMax (West)" tvg-id="9004" tvg-logo="https://media.starlite.best/actionmax.pacific.us.png" group-title="US",ActionMax (West)
 http://10.10.10.11:34400/stream/dbfc4fa8812c74f590631d2f9592ba88
 #EXTINF:0 channelID="x-ID.5" tvg-chno="9005" tvg-name="Hollywire" tvg-id="9005" tvg-logo="https://media.starlite.best/hollywire.us.png" group-title="US",Hollywire
@@ -3771,6 +3603,8 @@ http://10.10.10.11:34400/stream/ab3c2e986c0bc137257a6df1e3bcf0aa
 http://10.10.10.11:34400/stream/cee2274aac504148e6aedd4070d32705
 #EXTINF:0 channelID="x-ID.14" tvg-chno="9014" tvg-name="ASPiRE TV" tvg-id="9014" tvg-logo="https://media.starlite.best/aspire.tv.us.png" group-title="US",ASPiRE TV
 http://10.10.10.11:34400/stream/e96b8b4c9b615fb936e9444a3a40173a
+#EXTINF:0 channelID="x-ID.17" tvg-chno="9017" tvg-name="CBS KCAL Los Angeles" tvg-id="9017" tvg-logo="https://media.starlite.best/kcal.los.angeles.us.png" group-title="US",CBS KCAL Los Angeles
+http://10.10.10.11:34400/stream/6756d57652d8428d222ad26adbac9483
 #EXTINF:0 channelID="x-ID.18" tvg-chno="9018" tvg-name="AXS TV" tvg-id="9018" tvg-logo="https://media.starlite.best/axs.tv.usa.us.png" group-title="US",AXS TV
 http://10.10.10.11:34400/stream/641d9fdfc5603279f8517a34575f9074
 #EXTINF:0 channelID="x-ID.24" tvg-chno="9024" tvg-name="Sportsnet West CA" tvg-id="9024" tvg-logo="https://media.starlite.best/sportsnet.west.ca.png" group-title="US",Sportsnet West CA
@@ -3831,8 +3665,6 @@ http://10.10.10.11:34400/stream/6a4142ea370571744259a9a82d1b5e38
 http://10.10.10.11:34400/stream/e4aa3a48a0820a976c016ce0935a67fa
 #EXTINF:0 channelID="x-ID.92" tvg-chno="9092" tvg-name="Dog TV" tvg-id="9092" tvg-logo="https://media.starlite.best/dog.tv.us.png" group-title="US",Dog TV
 http://10.10.10.11:34400/stream/f77ba57a109f0e6153b26142f475934b
-#EXTINF:0 channelID="x-ID.94" tvg-chno="9094" tvg-name="BET Gospel" tvg-id="9094" tvg-logo="https://media.starlite.best/bet.gospel.us.png" group-title="US",BET Gospel
-http://10.10.10.11:34400/stream/0ad0637b61f737a643156d50e9665d07
 #EXTINF:0 channelID="x-ID.103" tvg-chno="9103" tvg-name="EPIX (East)" tvg-id="9103" tvg-logo="https://media.starlite.best/epix.east.us.png" group-title="US",EPIX (East)
 http://10.10.10.11:34400/stream/218168b4956113e0dadb3ca94ea307cd
 #EXTINF:0 channelID="x-ID.104" tvg-chno="9104" tvg-name="Epix 2" tvg-id="9104" tvg-logo="https://media.starlite.best/epix2.east.us.png" group-title="US",Epix 2
@@ -3857,8 +3689,6 @@ http://10.10.10.11:34400/stream/e2f1e30f7e60546fc340738adf21e45b
 http://10.10.10.11:34400/stream/2c3722c275408ad518ab2ca13065eecf
 #EXTINF:0 channelID="x-ID.146" tvg-chno="9146" tvg-name="Premiere Clubes" tvg-id="9146" tvg-logo="https://media.starlite.best/premiere.clubes.br.png" group-title="US",Premiere Clubes
 http://10.10.10.11:34400/stream/b5bc01515fc7883d7401b3986b7ba0cb
-#EXTINF:0 channelID="x-ID.160" tvg-chno="9160" tvg-name="ESPN CO" tvg-id="9160" tvg-logo="https://media.starlite.best/espn.co.png" group-title="US",ESPN CO
-http://10.10.10.11:34400/stream/1dce566d6ee689d64838472aa2d5f661
 #EXTINF:0 channelID="x-ID.164" tvg-chno="9161" tvg-name="France 24 EN" tvg-id="9161" tvg-logo="https://media.starlite.best/france.24.english.us.png" group-title="US",France 24 EN
 http://10.10.10.11:34400/stream/4578f72b865dc55bef4983b8fb15c2de
 #EXTINF:0 channelID="x-ID.165" tvg-chno="9162" tvg-name="Free Speech Network" tvg-id="9162" tvg-logo="https://media.starlite.best/free.speech.network.us.png" group-title="US",Free Speech Network
@@ -4109,8 +3939,6 @@ http://10.10.10.11:34400/stream/c4579882918cf09f5cfac3b7a4bc1629
 http://10.10.10.11:34400/stream/367956d521fc3279956686a10524e9cd
 #EXTINF:0 channelID="x-ID.470" tvg-chno="9464" tvg-name="Big Ten Network US" tvg-id="9464" tvg-logo="https://media.starlite.best/big.ten.network.us.png" group-title="US",Big Ten Network US
 http://10.10.10.11:34400/stream/89cb232576cafdb1495041758aeb02b7
-#EXTINF:0 channelID="x-ID.476" tvg-chno="9467" tvg-name="GAME+" tvg-id="9467" tvg-logo="https://media.starlite.best/game.us.png" group-title="US",GAME+
-http://10.10.10.11:34400/stream/7de0819dcc67de58a376c6621a109df7
 #EXTINF:0 channelID="x-ID.489" tvg-chno="9471" tvg-name="AT&T Sportsnet Pittsburgh" tvg-id="9471" tvg-logo="https://media.starlite.best/att.sportsnet.pittsburgh.us.png" group-title="US",AT&T Sportsnet Pittsburgh
 http://10.10.10.11:34400/stream/da8e7961a0dba0a3287c8255fd1c8484
 #EXTINF:0 channelID="x-ID.483" tvg-chno="9474" tvg-name="POLSAT Sport" tvg-id="9474" tvg-logo="https://media.starlite.best/polsat.sport.pl.png" group-title="US",POLSAT Sport
@@ -4157,8 +3985,6 @@ http://10.10.10.11:34400/stream/1aff518e81261d4ffa8ee212521edd32
 http://10.10.10.11:34400/stream/2f50574239b2b24d53a7e28e42a338a1
 #EXTINF:0 channelID="x-ID.552" tvg-chno="9543" tvg-name="Teledeporte" tvg-id="9543" tvg-logo="https://media.starlite.best/teledeporte.es.png" group-title="US",Teledeporte
 http://10.10.10.11:34400/stream/895c14ccefbdae895e684c11b38cd500
-#EXTINF:0 channelID="x-ID.691" tvg-chno="9547" tvg-name="TVA Sports 2" tvg-id="9547" tvg-logo="https://media.starlite.best/tva.sports.2.ca.png" group-title="US",TVA Sports 2
-http://10.10.10.11:34400/stream/4fe61d768b3851c30304ccb911e0765c
 #EXTINF:0 channelID="x-ID.558" tvg-chno="9549" tvg-name="TUDN US" tvg-id="9549" tvg-logo="https://media.starlite.best/tudn.us.png" group-title="US",TUDN US
 http://10.10.10.11:34400/stream/13ba3793f6577489215529efa9afde5c
 #EXTINF:0 channelID="x-ID.559" tvg-chno="9550" tvg-name="TV 2 Sportskanalen NO" tvg-id="9550" tvg-logo="https://media.starlite.best/tv2.sport.1.no.png" group-title="US",TV 2 Sportskanalen NO
