@@ -1,5 +1,5 @@
 #EXTM3U
-# 更新时间: 2026-10-31 03:06:27
+# 更新时间: 2026-11-01 03:01:06
 
 # ── CA ──
 #EXTINF:-1 group-title="CA",xteve [92频道]
@@ -12,10 +12,10 @@ http://144.217.68.109:8181/m3u/xteve.m3u
 http://xteve.tv.ncbr.wtf/m3u/xteve.m3u
 
 # ── CN ──
-#EXTINF:-1 group-title="CN",xteve [325频道]
-http://47.93.47.174:443/m3u/xteve.m3u
 #EXTINF:-1 group-title="CN",xteve [208频道]
 http://us.199301.xyz:34400/m3u/xteve.m3u
+#EXTINF:-1 group-title="CN",xteve [113频道]
+http://47.93.47.174:443/m3u/xteve.m3u
 #EXTINF:-1 group-title="CN",xteve [60频道]
 http://nas.netwalksimon.top:34400/m3u/xteve.m3u
 
@@ -46,7 +46,7 @@ http://158.140.175.101:8887/m3u/xteve.m3u
 http://144.24.131.5/m3u/xteve.m3u
 
 # ── JP ──
-#EXTINF:-1 group-title="JP",xteve [325频道]
+#EXTINF:-1 group-title="JP",xteve [113频道]
 http://141.147.174.228:4433/m3u/xteve.m3u
 
 # ── KR ──
@@ -54,9 +54,9 @@ http://141.147.174.228:4433/m3u/xteve.m3u
 http://211.225.62.76:5678/m3u/xteve.m3u
 
 # ── US ──
-#EXTINF:-1 group-title="US",xteve [388频道]
+#EXTINF:-1 group-title="US",xteve [390频道]
 http://tv.kinte.net/m3u/xteve.m3u
-#EXTINF:-1 group-title="US",xteve [194频道]
+#EXTINF:-1 group-title="US",xteve [192频道]
 http://xteve.donleynexus.com/m3u/xteve.m3u
 #EXTINF:-1 group-title="US",xteve [16频道]
 http://xteve.cineworld.ovh/m3u/xteve.m3u
