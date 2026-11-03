@@ -1,5 +1,5 @@
 #EXTM3U
-# 展开版，更新时间: 2026-11-01 03:01:06
+# 展开版，更新时间: 2026-11-03 04:27:50
 
 #EXTINF:0 channelID="x-ID.0" tvg-chno="1000" tvg-name="US: TNT" tvg-id="1000" tvg-logo="https://logo.m3uassets.com/tnt.png" group-title="CA",US: TNT
 http://169.150.219.151:12151/stream/20f98d85bf094be9cf633637e0536758
@@ -1227,10 +1227,6 @@ http://nas.netwalksimon.top:34400/stream/4e25d75ca4c36e89c38c3314643343e5
 http://nas.netwalksimon.top:34400/stream/553450d6d60310fc1a7223d7b6829135
 #EXTINF:0 channelID="x-ID.24" tvg-chno="1024" tvg-name="深圳卫视" tvg-id="1024" tvg-logo="https://gcore.jsdelivr.net/gh/fanmingming/live/tv/深圳卫视.png" group-title="CN",深圳卫视
 http://nas.netwalksimon.top:34400/stream/651ee9a5a25bd7c7b66750cb95dc48c5
-#EXTINF:0 channelID="x-ID.25" tvg-chno="1025" tvg-name="湖北卫视" tvg-id="1025" tvg-logo="https://gcore.jsdelivr.net/gh/fanmingming/live/tv/湖北卫视.png" group-title="CN",湖北卫视
-http://nas.netwalksimon.top:34400/stream/245ca9dadfe6e2c81ad472885dbd43f0
-#EXTINF:0 channelID="x-ID.26" tvg-chno="1026" tvg-name="湖南卫视" tvg-id="1026" tvg-logo="https://gcore.jsdelivr.net/gh/fanmingming/live/tv/湖南卫视.png" group-title="CN",湖南卫视
-http://nas.netwalksimon.top:34400/stream/e5e77d63c67b2a89296b53f0014feb8d
 #EXTINF:0 channelID="x-ID.27" tvg-chno="1027" tvg-name="重庆卫视" tvg-id="1027" tvg-logo="https://gcore.jsdelivr.net/gh/fanmingming/live/tv/重庆卫视.png" group-title="CN",重庆卫视
 http://nas.netwalksimon.top:34400/stream/87f52be2bbb05b17ad9a11e43f0ec7ad
 #EXTINF:0 channelID="x-ID.28" tvg-chno="1028" tvg-name="四川卫视" tvg-id="1028" tvg-logo="https://gcore.jsdelivr.net/gh/fanmingming/live/tv/四川卫视.png" group-title="CN",四川卫视
@@ -2931,6 +2927,8 @@ http://10.10.10.11:34400/stream/a4bc785bc51a01577bb33a91eaf761cc
 http://10.10.10.11:34400/stream/76c0cf96efdcd17721d8eb5d9321a569
 #EXTINF:0 channelID="x-ID.27" tvg-chno="9027" tvg-name="BET Soul" tvg-id="9027" tvg-logo="https://media.starlite.best/bet.soul.us.png" group-title="US",BET Soul
 http://10.10.10.11:34400/stream/b01ae83183b9b91de0f896b3edb6994d
+#EXTINF:0 channelID="x-ID.30" tvg-chno="9030" tvg-name="CBS East" tvg-id="9030" tvg-logo="https://media.starlite.best/cbs.eastern.us.png" group-title="US",CBS East
+http://10.10.10.11:34400/stream/2980135178dfe7609133302cc25603f8
 #EXTINF:0 channelID="x-ID.33" tvg-chno="9033" tvg-name="Canal Sport 3" tvg-id="9033" tvg-logo="https://media.starlite.best/canal.sport.3.pl.png" group-title="US",Canal Sport 3
 http://10.10.10.11:34400/stream/c71f59cc495174b584fcb483fefceaab
 #EXTINF:0 channelID="x-ID.34" tvg-chno="9034" tvg-name="Boomerang" tvg-id="9034" tvg-logo="https://media.starlite.best/boomerang.us.png" group-title="US",Boomerang
@@ -3201,6 +3199,8 @@ http://10.10.10.11:34400/stream/9c628705dfbf9c644345a50f34110ff5
 http://10.10.10.11:34400/stream/45087ebdfa69bea9c71b17cb1e24dac3
 #EXTINF:0 channelID="x-ID.376" tvg-chno="9367" tvg-name="Combate" tvg-id="9367" tvg-logo="https://media.starlite.best/combate.br.png" group-title="US",Combate
 http://10.10.10.11:34400/stream/0df0cdc69b3641b6c50d88822be24f3e
+#EXTINF:0 channelID="x-ID.433" tvg-chno="9375" tvg-name="Ginx eSports TV CA" tvg-id="9375" tvg-logo="https://media.starlite.best/ginx.esports.tv.canada.us.png" group-title="US",Ginx eSports TV CA
+http://10.10.10.11:34400/stream/8dfcb324379bd06df4771a990896c970
 #EXTINF:0 channelID="x-ID.394" tvg-chno="9385" tvg-name="DIGI Sport 1" tvg-id="9385" tvg-logo="https://media.starlite.best/digi.sport.1.ro.png" group-title="US",DIGI Sport 1
 http://10.10.10.11:34400/stream/2a7ba3cb7273e4822ff3da5c785b1958
 #EXTINF:0 channelID="x-ID.395" tvg-chno="9386" tvg-name="DIGI Sport 2" tvg-id="9386" tvg-logo="https://media.starlite.best/digi.sport.2.ro.png" group-title="US",DIGI Sport 2
@@ -3235,8 +3235,6 @@ http://10.10.10.11:34400/stream/a802b66c833e6763a2f74a56841ece9f
 http://10.10.10.11:34400/stream/02eb8efbaf557bdc9626948e78645484
 #EXTINF:0 channelID="x-ID.422" tvg-chno="9413" tvg-name="Eurosport 1" tvg-id="9413" tvg-logo="https://media.starlite.best/eurosport.1.ro.png" group-title="US",Eurosport 1
 http://10.10.10.11:34400/stream/e4cd1e60e3a6370906818d2b67da8750
-#EXTINF:0 channelID="x-ID.433" tvg-chno="9415" tvg-name="Ginx eSports TV CA" tvg-id="9415" tvg-logo="https://media.starlite.best/ginx.esports.tv.canada.us.png" group-title="US",Ginx eSports TV CA
-http://10.10.10.11:34400/stream/8dfcb324379bd06df4771a990896c970
 #EXTINF:0 channelID="x-ID.426" tvg-chno="9417" tvg-name="Eurosport 2" tvg-id="9417" tvg-logo="https://media.starlite.best/eurosport.2.es.png" group-title="US",Eurosport 2
 http://10.10.10.11:34400/stream/2df2e52ee6bca467e7f85255b43c081e
 #EXTINF:0 channelID="x-ID.428" tvg-chno="9419" tvg-name="Eurosport 2" tvg-id="9419" tvg-logo="https://media.starlite.best/eurosport.2.ro.png" group-title="US",Eurosport 2
@@ -3245,16 +3243,20 @@ http://10.10.10.11:34400/stream/e6dcb3b2aa0165fbafc0c4e61af87910
 http://10.10.10.11:34400/stream/c65ddb20fd2e3c91d6660deaeee1af37
 #EXTINF:0 channelID="x-ID.416" tvg-chno="9424" tvg-name="TBS" tvg-id="9424" tvg-logo="https://media.starlite.best/tbs.east.us.png" group-title="US",TBS
 http://10.10.10.11:34400/stream/f106ab583b6c9186fc57fc46a78eee9d
+#EXTINF:0 channelID="x-ID.438" tvg-chno="9427" tvg-name="TVA Sports 2" tvg-id="9427" tvg-logo="https://media.starlite.best/tva.sports.2.ca.png" group-title="US",TVA Sports 2
+http://10.10.10.11:34400/stream/4fe61d768b3851c30304ccb911e0765c
+#EXTINF:0 channelID="x-ID.462" tvg-chno="9429" tvg-name="Win Sports" tvg-id="9429" tvg-logo="https://media.starlite.best/win.sports.co.png" group-title="US",Win Sports
+http://10.10.10.11:34400/stream/9ca896da9791c67f8a37a3304de310a9
 #EXTINF:0 channelID="x-ID.440" tvg-chno="9431" tvg-name="Gol" tvg-id="9431" tvg-logo="https://media.starlite.best/gol.es.png" group-title="US",Gol
 http://10.10.10.11:34400/stream/fccec83aabe4ec4ba0bb1bb51a2738ae
 #EXTINF:0 channelID="x-ID.441" tvg-chno="9432" tvg-name="Infosport+" tvg-id="9432" tvg-logo="https://media.starlite.best/infosport.fr.png" group-title="US",Infosport+
 http://10.10.10.11:34400/stream/c4579882918cf09f5cfac3b7a4bc1629
 #EXTINF:0 channelID="x-ID.459" tvg-chno="9450" tvg-name="Movistar Deportes" tvg-id="9450" tvg-logo="https://media.starlite.best/movistar.deportes.es.png" group-title="US",Movistar Deportes
 http://10.10.10.11:34400/stream/367956d521fc3279956686a10524e9cd
+#EXTINF:0 channelID="x-ID.476" tvg-chno="9460" tvg-name="Willow Cricket" tvg-id="9460" tvg-logo="https://media.starlite.best/willow.cricket.us.png" group-title="US",Willow Cricket
+http://10.10.10.11:34400/stream/0710c90397c5f41375c4e0ca0d885ec6
 #EXTINF:0 channelID="x-ID.470" tvg-chno="9464" tvg-name="Big Ten Network US" tvg-id="9464" tvg-logo="https://media.starlite.best/big.ten.network.us.png" group-title="US",Big Ten Network US
 http://10.10.10.11:34400/stream/89cb232576cafdb1495041758aeb02b7
-#EXTINF:0 channelID="x-ID.489" tvg-chno="9471" tvg-name="AT&T Sportsnet Pittsburgh" tvg-id="9471" tvg-logo="https://media.starlite.best/att.sportsnet.pittsburgh.us.png" group-title="US",AT&T Sportsnet Pittsburgh
-http://10.10.10.11:34400/stream/da8e7961a0dba0a3287c8255fd1c8484
 #EXTINF:0 channelID="x-ID.483" tvg-chno="9474" tvg-name="POLSAT Sport" tvg-id="9474" tvg-logo="https://media.starlite.best/polsat.sport.pl.png" group-title="US",POLSAT Sport
 http://10.10.10.11:34400/stream/312cfaaba67c593f22ff514908df40e4
 #EXTINF:0 channelID="x-ID.484" tvg-chno="9475" tvg-name="Polsat Sport News" tvg-id="9475" tvg-logo="https://media.starlite.best/polsat.sport.news.pl.png" group-title="US",Polsat Sport News
@@ -3307,8 +3309,6 @@ http://10.10.10.11:34400/stream/cea7254fb1fc73fd646faf95ecbaa5a8
 http://10.10.10.11:34400/stream/e1bf89b940721ebfe1a957ecbe0365c2
 #EXTINF:0 channelID="x-ID.569" tvg-chno="9560" tvg-name="Viasat Sport" tvg-id="9560" tvg-logo="https://media.starlite.best/viasat.sport.ru.png" group-title="US",Viasat Sport
 http://10.10.10.11:34400/stream/7d0514e5c76f4927d38dc6519a236c75
-#EXTINF:0 channelID="x-ID.570" tvg-chno="9561" tvg-name="Win Sports" tvg-id="9561" tvg-logo="https://media.starlite.best/win.sports.co.png" group-title="US",Win Sports
-http://10.10.10.11:34400/stream/9ca896da9791c67f8a37a3304de310a9
 #EXTINF:0 channelID="x-ID.571" tvg-chno="9562" tvg-name="WooHoo" tvg-id="9562" tvg-logo="https://media.starlite.best/woohoo.br.png" group-title="US",WooHoo
 http://10.10.10.11:34400/stream/1166a14505d57df0a9c406650300fa73
 #EXTINF:0 channelID="x-ID.574" tvg-chno="9565" tvg-name="Ziggo Sport Golf" tvg-id="9565" tvg-logo="https://media.starlite.best/ziggo.sport.golf.nl.png" group-title="US",Ziggo Sport Golf
@@ -3461,8 +3461,6 @@ http://10.10.10.11:34400/stream/4e0486a2567fe6daf018d8c3b034bb44
 http://10.10.10.11:34400/stream/44a920b36bece8e05ea6020a9ac8b42b
 #EXTINF:0 channelID="x-ID.888" tvg-chno="9882" tvg-name="VSIN" tvg-id="9882" tvg-logo="https://media.starlite.best/vsin.us.png" group-title="US",VSIN
 http://10.10.10.11:34400/stream/43494172a71ed4b9bde7f87577581c62
-#EXTINF:0 channelID="x-ID.889" tvg-chno="9883" tvg-name="Willow Cricket" tvg-id="9883" tvg-logo="https://media.starlite.best/willow.cricket.us.png" group-title="US",Willow Cricket
-http://10.10.10.11:34400/stream/0710c90397c5f41375c4e0ca0d885ec6
 #EXTINF:0 channelID="x-ID.891" tvg-chno="9885" tvg-name="YES Network US" tvg-id="9885" tvg-logo="https://media.starlite.best/yes.network.us.png" group-title="US",YES Network US
 http://10.10.10.11:34400/stream/5daecd343bf3cddf58ee48a87ba33447
 #EXTINF:0 channelID="x-ID.344" tvg-chno="2.1" tvg-name="ABC (WMAR) Baltimore MD" tvg-id="2.1" tvg-logo="https://media.starlite.best/abc.wmar.baltimore.md.us.png" group-title="US",ABC (WMAR) Baltimore MD
